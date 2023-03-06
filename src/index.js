@@ -6,8 +6,7 @@ module.exports = {
     return chains.reduce((networks, chain) => {
       networks[chain.alias] = {
         accounts: {
-          mnemonic:
-            "test test test test test test test test test test test junk",
+          mnemonic: "",
         },
         chainId: Number(chain.id),
         url: chain.providerUrl,
