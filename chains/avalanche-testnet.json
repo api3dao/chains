@@ -1,0 +1,8 @@
+{
+  "name": "Avalanche testnet",
+  "alias": "avalanche-testnet",
+  "id": "43113",
+  "symbol": "testAVAX",
+  "providerUrl": "https://api.avax-test.network/ext/bc/C/rpc",
+  "explorerUrl": "https://testnet.snowtrace.io/"
+}

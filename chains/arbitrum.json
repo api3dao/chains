@@ -1,0 +1,8 @@
+{
+  "name": "Arbitrum",
+  "alias": "arbitrum",
+  "id": "42161",
+  "symbol": "ETH",
+  "providerUrl": "https://arb1.arbitrum.io/rpc",
+  "explorerUrl": "https://arbiscan.io/"
+}

@@ -1,0 +1,8 @@
+{
+  "name": "Moonriver",
+  "alias": "moonriver",
+  "id": "1285",
+  "symbol": "MOVR",
+  "providerUrl": "https://rpc.api.moonriver.moonbeam.network",
+  "explorerUrl": "https://moonriver.moonscan.io/"
+}

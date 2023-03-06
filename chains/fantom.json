@@ -1,0 +1,8 @@
+{
+  "name": "Fantom",
+  "alias": "fantom",
+  "id": "250",
+  "symbol": "FTM",
+  "providerUrl": "https://rpcapi.fantom.network/",
+  "explorerUrl": "https://ftmscan.com/"
+}

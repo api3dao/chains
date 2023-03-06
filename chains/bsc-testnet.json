@@ -1,0 +1,8 @@
+{
+  "name": "BSC testnet",
+  "alias": "bsc-testnet",
+  "id": "97",
+  "symbol": "testBNB",
+  "providerUrl": "https://data-seed-prebsc-1-s3.binance.org:8545/",
+  "explorerUrl": "https://testnet.bscscan.com/"
+}

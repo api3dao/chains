@@ -1,0 +1,8 @@
+{
+  "name": "Moonbeam",
+  "alias": "moonbeam",
+  "id": "1284",
+  "symbol": "GLMR",
+  "providerUrl": "https://rpc.api.moonbeam.network",
+  "explorerUrl": "https://moonscan.io/"
+}

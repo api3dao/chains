@@ -1,0 +1,8 @@
+{
+  "name": "Avalanche",
+  "alias": "avalanche",
+  "id": "43114",
+  "symbol": "AVAX",
+  "providerUrl": "https://api.avax.network/ext/bc/C/rpc",
+  "explorerUrl": "https://snowtrace.io/"
+}

@@ -1,0 +1,8 @@
+{
+  "name": "BSC",
+  "alias": "bsc",
+  "id": "56",
+  "symbol": "BNB",
+  "providerUrl": "https://rpc.ankr.com/bsc",
+  "explorerUrl": "https://bscscan.com/"
+}

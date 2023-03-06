@@ -1,0 +1,8 @@
+{
+  "name": "Gnosis Chain",
+  "alias": "gnosis",
+  "id": "100",
+  "symbol": "xDAI",
+  "providerUrl": "https://rpc.gnosischain.com",
+  "explorerUrl": "https://gnosisscan.io/"
+}

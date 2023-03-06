@@ -1,0 +1,8 @@
+{
+  "name": "Gnosis Chain testnet",
+  "alias": "gnosis-testnet",
+  "id": "10200",
+  "symbol": "testxDAI",
+  "providerUrl": "https://rpc.chiadochain.net",
+  "explorerUrl": "https://blockscout.com/gnosis/chiado"
+}

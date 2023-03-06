@@ -1,0 +1,8 @@
+{
+  "name": "Moonbeam testnet",
+  "alias": "moonbeam-testnet",
+  "id": "1287",
+  "symbol": "testGLMR",
+  "providerUrl": "https://rpc.api.moonbase.moonbeam.network",
+  "explorerUrl": "https://moonbase.moonscan.io/"
+}

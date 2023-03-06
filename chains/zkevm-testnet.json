@@ -1,0 +1,8 @@
+{
+  "name": "zkEVM testnet",
+  "alias": "zkevm-testnet",
+  "id": "1442",
+  "symbol": "testETH",
+  "providerUrl": "https://rpc.public.zkevm-test.net",
+  "explorerUrl": "https://explorer.public.zkevm-test.net"
+}

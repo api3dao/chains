@@ -1,0 +1,8 @@
+{
+  "name": "Ethereum Sepolia testnet",
+  "alias": "ethereum-sepolia-testnet",
+  "id": "11155111",
+  "symbol": "testETH",
+  "providerUrl": "https://rpc-sepolia.rockx.com",
+  "explorerUrl": "https://sepolia.etherscan.io/"
+}

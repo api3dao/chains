@@ -1,0 +1,8 @@
+{
+  "name": "Polygon",
+  "alias": "polygon",
+  "id": "137",
+  "symbol": "MATIC",
+  "providerUrl": "https://polygon-bor.publicnode.com",
+  "explorerUrl": "https://polygonscan.com/"
+}

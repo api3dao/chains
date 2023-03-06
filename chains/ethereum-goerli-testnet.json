@@ -1,0 +1,8 @@
+{
+  "name": "Ethereum Goerli testnet",
+  "alias": "ethereum-goerli-testnet",
+  "id": "5",
+  "symbol": "testETH",
+  "providerUrl": "https://rpc.ankr.com/eth_goerli",
+  "explorerUrl": "https://goerli.etherscan.io/"
+}

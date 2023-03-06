@@ -1,0 +1,8 @@
+{
+  "name": "Fantom testnet",
+  "alias": "fantom-testnet",
+  "id": "4002",
+  "symbol": "testFTM",
+  "providerUrl": "https://rpc.ankr.com/fantom_testnet",
+  "explorerUrl": "https://testnet.ftmscan.com/"
+}

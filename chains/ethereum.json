@@ -1,0 +1,8 @@
+{
+  "name": "Ethereum",
+  "alias": "ethereum",
+  "id": "1",
+  "symbol": "ETH",
+  "providerUrl": "https://ethereum.publicnode.com",
+  "explorerUrl": "https://etherscan.io/"
+}
