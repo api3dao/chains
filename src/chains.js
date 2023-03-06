@@ -2,7 +2,7 @@ const fs = require("fs");
 const path = require("path");
 
 function getChainFilePaths() {
-  const chainsDirectory = "chains";
+  const chainsDirectory = path.resolve(__dirname, "..", "chains");
   const chainFileNames = fs.readdirSync(chainsDirectory);
   return chainFileNames.map((chainFileName) => {
     return path.join(chainsDirectory, chainFileName);
