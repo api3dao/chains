@@ -9,7 +9,7 @@ module.exports = {
           mnemonic:
             "test test test test test test test test test test test junk",
         },
-        chainId: chain.id,
+        chainId: Number(chain.id),
         url: chain.providerUrl,
       };
       return networks;
