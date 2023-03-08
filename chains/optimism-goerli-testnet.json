@@ -1,6 +1,6 @@
 {
   "name": "Optimism testnet",
-  "alias": "optimism-testnet",
+  "alias": "optimism-goerli-testnet",
   "id": "420",
   "symbol": "testETH",
   "providerUrl": "https://goerli.optimism.io",

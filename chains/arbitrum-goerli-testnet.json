@@ -1,6 +1,6 @@
 {
   "name": "Arbitrum testnet",
-  "alias": "arbitrum-testnet",
+  "alias": "arbitrum-goerli-testnet",
   "id": "421613",
   "symbol": "testETH",
   "providerUrl": "https://goerli-rollup.arbitrum.io/rpc",

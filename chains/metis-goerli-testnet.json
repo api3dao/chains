@@ -1,6 +1,6 @@
 {
   "name": "Metis testnet",
-  "alias": "metis-testnet",
+  "alias": "metis-goerli-testnet",
   "id": "599",
   "symbol": "testMETIS",
   "providerUrl": "https://goerli.gateway.metisdevops.link",
