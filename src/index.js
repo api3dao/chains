@@ -16,7 +16,7 @@ module.exports = {
   hardhatEtherscan: () => {
     return getChains().reduce(
       (etherscan, chain) => {
-        if (chain.explorer.api) {
+        if (chain.explorer && chain.explorer.api) {
           etherscan.customChains.push({
             network: chain.alias,
             chainId: chain.id,
