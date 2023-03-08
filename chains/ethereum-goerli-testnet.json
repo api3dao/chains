@@ -7,7 +7,10 @@
   "explorer": {
     "api": {
       "url": "https://api-goerli.etherscan.io/api",
-      "requiresKey": true
+      "key": {
+        "required": true,
+        "hardhat-etherscan-alias": "goerli"
+      }
     },
     "browserUrl": "https://goerli.etherscan.io/"
   }

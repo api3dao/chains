@@ -7,7 +7,10 @@
   "explorer": {
     "api": {
       "url": "https://api.bscscan.com/api",
-      "requiresKey": true
+      "key": {
+        "required": true,
+        "hardhat-etherscan-alias": "bsc"
+      }
     },
     "browserUrl": "https://bscscan.com/"
   }

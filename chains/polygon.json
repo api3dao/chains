@@ -7,7 +7,10 @@
   "explorer": {
     "api": {
       "url": "https://api.polygonscan.com/api",
-      "requiresKey": true
+      "key": {
+        "required": true,
+        "hardhat-etherscan-alias": "polygon"
+      }
     },
     "browserUrl": "https://polygonscan.com/"
   }

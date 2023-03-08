@@ -7,7 +7,10 @@
   "explorer": {
     "api": {
       "url": "https://api-testnet.bscscan.com/api",
-      "requiresKey": true
+      "key": {
+        "required": true,
+        "hardhat-etherscan-alias": "bscTestnet"
+      }
     },
     "browserUrl": "https://testnet.bscscan.com/"
   }

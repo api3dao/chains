@@ -1,4 +1,4 @@
-const fs = require('fs');
+const fs = require("fs");
 const { getChains } = require("./chains");
 
 module.exports = {
@@ -18,16 +18,24 @@ module.exports = {
     return getChains().reduce(
       (etherscan, chain) => {
         if (chain.explorer && chain.explorer.api) {
-          etherscan.customChains.push({
-            network: chain.alias,
-            chainId: chain.id,
-            urls: {
-              apiURL: chain.explorer.api.url,
-              browserURL: chain.explorer.browserUrl,
-            },
-          });
-          if (chain.explorer.api.requiresKey) {
-            etherscan.apiKey[chain.alias] = "";
+          if (chain.explorer.api.key["hardhat-etherscan-alias"]) {
+            if (chain.explorer.api.key.required) {
+              etherscan.apiKey[
+                chain.explorer.api.key["hardhat-etherscan-alias"]
+              ] = chain.alias;
+            }
+          } else {
+            etherscan.customChains.push({
+              network: chain.alias,
+              chainId: chain.id,
+              urls: {
+                apiURL: chain.explorer.api.url,
+                browserURL: chain.explorer.browserUrl,
+              },
+            });
+            if (chain.explorer.api.key.required) {
+              etherscan.apiKey[chain.alias] = chain.alias;
+            }
           }
         }
         return etherscan;
@@ -39,14 +47,21 @@ module.exports = {
     );
   },
   writeEnvFile: (path) => {
-    const envVariableNames = ['MNEMONIC'];
+    const envVariableNames = ["MNEMONIC"];
     Object.values(getChains()).map((chain) => {
-      if (chain.explorer && chain.explorer.api && chain.explorer.api.requiresKey) {
+      if (
+        chain.explorer &&
+        chain.explorer.api &&
+        chain.explorer.api.key.required
+      ) {
         envVariableNames.push(`ETHERSCAN_API_KEY_${chain.alias}`);
       }
     });
-    fs.writeFileSync( path, envVariableNames.reduce((fileContents, envVariableName) => {
-      return fileContents + `${envVariableName}=""\n`;
-    }, '') );
-  }
+    fs.writeFileSync(
+      path,
+      envVariableNames.reduce((fileContents, envVariableName) => {
+        return fileContents + `${envVariableName}=""\n`;
+      }, "")
+    );
+  },
 };

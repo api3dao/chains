@@ -8,7 +8,9 @@
   "explorer": {
     "api": {
       "url": "https://goerli.explorer.metisdevops.link/api",
-      "requiresKey": false
+      "key": {
+        "required": false
+      }
     },
     "browserUrl": "https://goerli.explorer.metisdevops.link/"
   }

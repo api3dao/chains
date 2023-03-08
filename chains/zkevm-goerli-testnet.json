@@ -7,7 +7,9 @@
   "explorer": {
     "api": {
       "url": "https://explorer.public.zkevm-test.net/api",
-      "requiresKey": false
+      "key": {
+        "required": false
+      }
     },
     "browserUrl": "https://explorer.public.zkevm-test.net"
   }

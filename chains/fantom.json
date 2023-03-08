@@ -7,7 +7,10 @@
   "explorer": {
     "api": {
       "url": "https://api.ftmscan.com/api",
-      "requiresKey": true
+      "key": {
+        "required": true,
+        "hardhat-etherscan-alias": "opera"
+      }
     },
     "browserUrl": "https://ftmscan.com/"
   }

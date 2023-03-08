@@ -7,7 +7,9 @@
   "explorer": {
     "api": {
       "url": "https://explorer-devnet-cardano-evm.c1.milkomeda.com/api",
-      "requiresKey": false
+      "key": {
+        "required": false
+      }
     },
     "browserUrl": "https://explorer-devnet-cardano-evm.c1.milkomeda.com/"
   }
