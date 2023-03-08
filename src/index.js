@@ -23,6 +23,10 @@ module.exports = {
               etherscan.apiKey[
                 chain.explorer.api.key["hardhat-etherscan-alias"]
               ] = chain.alias;
+            } else {
+              etherscan.apiKey[
+                chain.explorer.api.key["hardhat-etherscan-alias"]
+              ] = 'DUMMY_VALUE';
             }
           } else {
             etherscan.customChains.push({
@@ -35,6 +39,8 @@ module.exports = {
             });
             if (chain.explorer.api.key.required) {
               etherscan.apiKey[chain.alias] = chain.alias;
+            } else {
+              etherscan.apiKey[chain.alias] = 'DUMMY_VALUE';
             }
           }
         }
