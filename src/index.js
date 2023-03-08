@@ -27,7 +27,7 @@ module.exports = {
           } else {
             etherscan.customChains.push({
               network: chain.alias,
-              chainId: chain.id,
+              chainId: Number(chain.id),
               urls: {
                 apiURL: chain.explorer.api.url,
                 browserURL: chain.explorer.browserUrl,
