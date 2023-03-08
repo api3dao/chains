@@ -4,5 +4,11 @@
   "id": "10200",
   "symbol": "testxDAI",
   "providerUrl": "https://rpc.chiadochain.net",
-  "explorerUrl": "https://blockscout.com/gnosis/chiado"
+  "explorer": {
+    "api": {
+      "url": "https://blockscout.chiadochain.net/api",
+      "requiresKey": false
+    },
+    "browserUrl": "https://blockscout.com/gnosis/chiado/"
+  }
 }

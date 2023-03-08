@@ -4,5 +4,11 @@
   "id": "250",
   "symbol": "FTM",
   "providerUrl": "https://rpcapi.fantom.network/",
-  "explorerUrl": "https://ftmscan.com/"
+  "explorer": {
+    "api": {
+      "url": "https://api.ftmscan.com/api",
+      "requiresKey": true
+    },
+    "browserUrl": "https://ftmscan.com/"
+  }
 }

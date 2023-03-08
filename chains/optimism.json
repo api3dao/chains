@@ -4,5 +4,11 @@
   "id": "10",
   "symbol": "ETH",
   "providerUrl": "https://mainnet.optimism.io",
-  "explorerUrl": "https://optimistic.etherscan.io/"
+  "explorer": {
+    "api": {
+      "url": "https://api-optimistic.etherscan.io/api",
+      "requiresKey": true
+    },
+    "browserUrl": "https://optimistic.etherscan.io/"
+  }
 }

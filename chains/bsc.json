@@ -4,5 +4,11 @@
   "id": "56",
   "symbol": "BNB",
   "providerUrl": "https://rpc.ankr.com/bsc",
-  "explorerUrl": "https://bscscan.com/"
+  "explorer": {
+    "api": {
+      "url": "https://api.bscscan.com/api",
+      "requiresKey": true
+    },
+    "browserUrl": "https://bscscan.com/"
+  }
 }

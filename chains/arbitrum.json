@@ -4,5 +4,11 @@
   "id": "42161",
   "symbol": "ETH",
   "providerUrl": "https://arb1.arbitrum.io/rpc",
-  "explorerUrl": "https://arbiscan.io/"
+  "explorer": {
+    "api": {
+      "url": "https://api.arbiscan.io/api",
+      "requiresKey": true
+    },
+    "browserUrl": "https://arbiscan.io/"
+  }
 }

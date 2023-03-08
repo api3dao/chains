@@ -4,5 +4,11 @@
   "id": "1",
   "symbol": "ETH",
   "providerUrl": "https://ethereum.publicnode.com",
-  "explorerUrl": "https://etherscan.io/"
+  "explorer": {
+    "api": {
+      "url": "https://api.etherscan.io/api",
+      "requiresKey": true
+    },
+    "browserUrl": "https://etherscan.io/"
+  }
 }

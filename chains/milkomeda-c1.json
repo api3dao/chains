@@ -4,5 +4,11 @@
   "id": "2001",
   "symbol": "milkADA",
   "providerUrl": "https://rpc-mainnet-cardano-evm.c1.milkomeda.com",
-  "explorerUrl": "https://explorer-mainnet-cardano-evm.c1.milkomeda.com/"
+  "explorer": {
+    "api": {
+      "url": "https://explorer-mainnet-cardano-evm.c1.milkomeda.com/api",
+      "requiresKey": false
+    },
+    "browserUrl": "https://explorer-mainnet-cardano-evm.c1.milkomeda.com/"
+  }
 }

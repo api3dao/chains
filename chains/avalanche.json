@@ -4,5 +4,11 @@
   "id": "43114",
   "symbol": "AVAX",
   "providerUrl": "https://api.avax.network/ext/bc/C/rpc",
-  "explorerUrl": "https://snowtrace.io/"
+  "explorer": {
+    "api": {
+      "url": "https://api.snowtrace.io/api",
+      "requiresKey": true
+    },
+    "browserUrl": "https://snowtrace.io/"
+  }
 }

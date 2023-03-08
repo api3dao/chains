@@ -4,5 +4,11 @@
   "id": "1284",
   "symbol": "GLMR",
   "providerUrl": "https://rpc.api.moonbeam.network",
-  "explorerUrl": "https://moonscan.io/"
+  "explorer": {
+    "api": {
+      "url": "https://api-moonbeam.moonscan.io/api",
+      "requiresKey": true
+    },
+    "browserUrl": "https://moonscan.io/"
+  }
 }

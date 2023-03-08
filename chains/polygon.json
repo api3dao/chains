@@ -4,5 +4,11 @@
   "id": "137",
   "symbol": "MATIC",
   "providerUrl": "https://polygon-bor.publicnode.com",
-  "explorerUrl": "https://polygonscan.com/"
+  "explorer": {
+    "api": {
+      "url": "https://api.polygonscan.com/api",
+      "requiresKey": true
+    },
+    "browserUrl": "https://polygonscan.com/"
+  }
 }

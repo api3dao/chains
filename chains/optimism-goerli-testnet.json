@@ -4,5 +4,11 @@
   "id": "420",
   "symbol": "testETH",
   "providerUrl": "https://goerli.optimism.io",
-  "explorerUrl": "https://goerli-optimism.etherscan.io/"
+  "explorer": {
+    "api": {
+      "url": "https://api-goerli-optimism.etherscan.io/api",
+      "requiresKey": true
+    },
+    "browserUrl": "https://goerli-optimism.etherscan.io/"
+  }
 }

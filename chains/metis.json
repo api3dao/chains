@@ -4,5 +4,11 @@
   "id": "1088",
   "symbol": "METIS",
   "providerUrl": "https://andromeda.metis.io/?owner=1088",
-  "explorerUrl": "https://andromeda-explorer.metis.io/"
+  "explorer": {
+    "api": {
+      "url": "https://andromeda-explorer.metis.io/api",
+      "requiresKey": false
+    },
+    "browserUrl": "https://andromeda-explorer.metis.io/"
+  }
 }

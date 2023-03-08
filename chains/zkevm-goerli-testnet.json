@@ -4,5 +4,11 @@
   "id": "1442",
   "symbol": "testETH",
   "providerUrl": "https://rpc.public.zkevm-test.net",
-  "explorerUrl": "https://explorer.public.zkevm-test.net"
+  "explorer": {
+    "api": {
+      "url": "https://explorer.public.zkevm-test.net/api",
+      "requiresKey": false
+    },
+    "browserUrl": "https://explorer.public.zkevm-test.net"
+  }
 }

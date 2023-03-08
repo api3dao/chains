@@ -4,5 +4,12 @@
   "id": "599",
   "symbol": "testMETIS",
   "providerUrl": "https://goerli.gateway.metisdevops.link",
-  "explorerUrl": "https://goerli.explorer.metisdevops.link/"
+  "explorerUrl": "https://goerli.explorer.metisdevops.link/",
+  "explorer": {
+    "api": {
+      "url": "https://goerli.explorer.metisdevops.link/api",
+      "requiresKey": false
+    },
+    "browserUrl": "https://goerli.explorer.metisdevops.link/"
+  }
 }
