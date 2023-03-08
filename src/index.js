@@ -1,3 +1,4 @@
+const fs = require('fs');
 const { getChains } = require("./chains");
 
 module.exports = {
@@ -37,4 +38,15 @@ module.exports = {
       }
     );
   },
+  writeEnvFile: (path) => {
+    const envVariableNames = ['MNEMONIC'];
+    Object.values(getChains()).map((chain) => {
+      if (chain.explorer && chain.explorer.api && chain.explorer.api.requiresKey) {
+        envVariableNames.push(`ETHERSCAN_API_KEY_${chain.alias}`);
+      }
+    });
+    fs.writeFileSync( path, envVariableNames.reduce((fileContents, envVariableName) => {
+      return fileContents + `${envVariableName}=""\n`;
+    }, '') );
+  }
 };
