@@ -9,7 +9,7 @@
       "url": "https://api.polygonscan.com/api",
       "key": {
         "required": true,
-        "hardhat-etherscan-alias": "polygon"
+        "hardhatEtherscanAlias": "polygon"
       }
     },
     "browserUrl": "https://polygonscan.com/"

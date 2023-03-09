@@ -9,7 +9,7 @@
       "url": "https://api.arbiscan.io/api",
       "key": {
         "required": true,
-        "hardhat-etherscan-alias": "arbitrumOne"
+        "hardhatEtherscanAlias": "arbitrumOne"
       }
     },
     "browserUrl": "https://arbiscan.io/"

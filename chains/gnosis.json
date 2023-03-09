@@ -9,7 +9,7 @@
       "url": "https://api.gnosisscan.io/api",
       "key": {
         "required": true,
-        "hardhat-etherscan-alias": "gnosis"
+        "hardhatEtherscanAlias": "gnosis"
       }
     },
     "browserUrl": "https://gnosisscan.io/"

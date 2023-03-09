@@ -9,7 +9,7 @@
       "url": "https://api.snowtrace.io/api",
       "key": {
         "required": true,
-        "hardhat-etherscan-alias": "avalanche"
+        "hardhatEtherscanAlias": "avalanche"
       }
     },
     "browserUrl": "https://snowtrace.io/"

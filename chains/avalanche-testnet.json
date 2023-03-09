@@ -9,7 +9,7 @@
       "url": "https://api-testnet.snowtrace.io/api",
       "key": {
         "required": true,
-        "hardhat-etherscan-alias": "avalancheFujiTestnet"
+        "hardhatEtherscanAlias": "avalancheFujiTestnet"
       }
     },
     "browserUrl": "https://testnet.snowtrace.io/"

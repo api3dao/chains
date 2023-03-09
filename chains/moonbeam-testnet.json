@@ -9,7 +9,7 @@
       "url": "https://api-moonbase.moonscan.io/api",
       "key": {
         "required": true,
-        "hardhat-etherscan-alias": "moonbaseAlpha"
+        "hardhatEtherscanAlias": "moonbaseAlpha"
       }
     },
     "browserUrl": "https://moonbase.moonscan.io/"

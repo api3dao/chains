@@ -9,7 +9,7 @@
       "url": "https://api.ftmscan.com/api",
       "key": {
         "required": true,
-        "hardhat-etherscan-alias": "opera"
+        "hardhatEtherscanAlias": "opera"
       }
     },
     "browserUrl": "https://ftmscan.com/"

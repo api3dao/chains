@@ -9,7 +9,7 @@
       "url": "https://api-testnet.ftmscan.com/api",
       "key": {
         "required": true,
-        "hardhat-etherscan-alias": "ftmTestnet"
+        "hardhatEtherscanAlias": "ftmTestnet"
       }
     },
     "browserUrl": "https://testnet.ftmscan.com/"

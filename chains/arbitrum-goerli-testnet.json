@@ -9,7 +9,7 @@
       "url": "https://api-goerli.arbiscan.io/api",
       "key": {
         "required": true,
-        "hardhat-etherscan-alias": "arbitrumGoerli"
+        "hardhatEtherscanAlias": "arbitrumGoerli"
       }
     },
     "browserUrl": "https://testnet.arbiscan.io/"

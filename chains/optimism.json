@@ -9,7 +9,7 @@
       "url": "https://api-optimistic.etherscan.io/api",
       "key": {
         "required": true,
-        "hardhat-etherscan-alias": "optimisticEthereum"
+        "hardhatEtherscanAlias": "optimisticEthereum"
       }
     },
     "browserUrl": "https://optimistic.etherscan.io/"

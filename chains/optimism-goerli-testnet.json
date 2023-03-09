@@ -9,7 +9,7 @@
       "url": "https://api-goerli-optimism.etherscan.io/api",
       "key": {
         "required": true,
-        "hardhat-etherscan-alias": "optimisticGoerli"
+        "hardhatEtherscanAlias": "optimisticGoerli"
       }
     },
     "browserUrl": "https://goerli-optimism.etherscan.io/"

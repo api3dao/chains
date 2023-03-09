@@ -9,7 +9,7 @@
       "url": "https://blockscout.chiadochain.net/api",
       "key": {
         "required": false,
-        "hardhat-etherscan-alias": "chiado"
+        "hardhatEtherscanAlias": "chiado"
       }
     },
     "browserUrl": "https://blockscout.com/gnosis/chiado/"

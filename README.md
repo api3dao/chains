@@ -17,7 +17,7 @@
 ## hardhat-etherscan
 
 - `hardhat-etherscan` requires us to use a dummy API key with Blockscout block explorer APIs.
-We use `"DUMMY_VALUE"` but it could have been anything else.
+  We use `"DUMMY_VALUE"` but it could have been anything else.
 
 - In general, mainnet and testnet block explorer API keys are the same.
 

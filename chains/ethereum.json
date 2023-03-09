@@ -9,7 +9,7 @@
       "url": "https://api.etherscan.io/api",
       "key": {
         "required": true,
-        "hardhat-etherscan-alias": "mainnet"
+        "hardhatEtherscanAlias": "mainnet"
       }
     },
     "browserUrl": "https://etherscan.io/"

@@ -9,7 +9,7 @@
       "url": "https://api-moonriver.moonscan.io/api",
       "key": {
         "required": true,
-        "hardhat-etherscan-alias": "moonriver"
+        "hardhatEtherscanAlias": "moonriver"
       }
     },
     "browserUrl": "https://moonriver.moonscan.io/"

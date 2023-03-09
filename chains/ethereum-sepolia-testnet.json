@@ -9,7 +9,7 @@
       "url": "https://api-sepolia.etherscan.io/api",
       "key": {
         "required": true,
-        "hardhat-etherscan-alias": "sepolia"
+        "hardhatEtherscanAlias": "sepolia"
       }
     },
     "browserUrl": "https://sepolia.etherscan.io/"

@@ -9,7 +9,7 @@
       "url": "https://api-testnet.polygonscan.com/api",
       "key": {
         "required": true,
-        "hardhat-etherscan-alias": "polygonMumbai"
+        "hardhatEtherscanAlias": "polygonMumbai"
       }
     },
     "browserUrl": "https://mumbai.polygonscan.com/"

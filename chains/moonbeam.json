@@ -9,7 +9,7 @@
       "url": "https://api-moonbeam.moonscan.io/api",
       "key": {
         "required": true,
-        "hardhat-etherscan-alias": "moonbeam"
+        "hardhatEtherscanAlias": "moonbeam"
       }
     },
     "browserUrl": "https://moonscan.io/"

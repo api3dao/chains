@@ -9,7 +9,7 @@
       "url": "https://api-goerli.etherscan.io/api",
       "key": {
         "required": true,
-        "hardhat-etherscan-alias": "goerli"
+        "hardhatEtherscanAlias": "goerli"
       }
     },
     "browserUrl": "https://goerli.etherscan.io/"
