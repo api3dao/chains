@@ -1,7 +1,7 @@
 {
   "name": "@api3/chains",
   "license": "MIT",
-  "version": "1.1.2",
+  "version": "1.2.0",
   "private": false,
   "main": "src/index",
   "files": [
