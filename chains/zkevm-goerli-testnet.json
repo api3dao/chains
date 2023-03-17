@@ -6,9 +6,9 @@
   "providerUrl": "https://rpc.public.zkevm-test.net",
   "explorer": {
     "api": {
-      "url": "https://explorer.public.zkevm-test.net/api",
+      "url": "https://api-testnet-zkevm.polygonscan.com/api",
       "key": {
-        "required": false
+        "required": true
       }
     },
     "browserUrl": "https://explorer.public.zkevm-test.net"
