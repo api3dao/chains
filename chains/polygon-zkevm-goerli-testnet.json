@@ -1,6 +1,6 @@
 {
-  "name": "zkEVM testnet",
-  "alias": "zkevm-goerli-testnet",
+  "name": "Polygon zkEVM testnet",
+  "alias": "polygon-zkevm-goerli-testnet",
   "id": "1442",
   "symbol": "testETH",
   "providerUrl": "https://rpc.public.zkevm-test.net",

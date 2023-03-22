@@ -18,7 +18,6 @@
   We use `"DUMMY_VALUE"` but it could have been anything else.
 
 - In general, mainnet and testnet block explorer API keys are the same.
-  `zkevm-goerli-testnet` block explorer API key is the same as `polygon`.
 
 - `fantom-testnet` block explorer contract verification API does not work.
 
