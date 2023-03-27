@@ -1,0 +1,16 @@
+{
+  "name": "Polygon zkEVM",
+  "alias": "polygon-zkevm",
+  "id": "1101",
+  "symbol": "ETH",
+  "providerUrl": "https://zkevm-rpc.com",
+  "explorer": {
+    "api": {
+      "url": "https://api-zkevm.polygonscan.com/api",
+      "key": {
+        "required": true
+      }
+    },
+    "browserUrl": "https://zkevm.polygonscan.com/"
+  }
+}
