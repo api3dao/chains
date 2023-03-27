@@ -1,0 +1,10 @@
+{
+  "name": "zkSync testnet",
+  "alias": "zksync-goerli-testnet",
+  "id": "280",
+  "symbol": "testETH",
+  "providerUrl": "https://testnet.era.zksync.dev",
+  "explorer": {
+    "browserUrl": "https://goerli.explorer.zksync.io/"
+  }
+}

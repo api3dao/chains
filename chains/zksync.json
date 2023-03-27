@@ -1,0 +1,10 @@
+{
+  "name": "zkSync",
+  "alias": "zksync",
+  "id": "324",
+  "symbol": "ETH",
+  "providerUrl": "https://mainnet.era.zksync.io",
+  "explorer": {
+    "browserUrl": "https://explorer.zksync.io/"
+  }
+}
