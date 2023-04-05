@@ -24,7 +24,6 @@ export const ChainSchema = z.object({
   explorer: ChainExplorerSchema,
 });
 
-
 export type Chain = z.infer<typeof ChainSchema>;
 export type ChainExplorer = z.infer<typeof ChainExplorerSchema>;
 export type ChainExplorerAPI = z.infer<typeof ChainExplorerAPISchema>;
