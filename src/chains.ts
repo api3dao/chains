@@ -1,15 +1,16 @@
-const fs = require("fs");
-const path = require("path");
+import fs from 'fs';
+import path from 'path';
+import { Chain } from './types';
 
-function getChainFilePaths() {
+export function getChainFilePaths() {
   const chainsDirectory = path.resolve(__dirname, "..", "chains");
   const chainFileNames = fs.readdirSync(chainsDirectory);
-  return chainFileNames.map((chainFileName) => {
+  return chainFileNames.map((chainFileName: string) => {
     return path.join(chainsDirectory, chainFileName);
   });
 }
 
-function getChains() {
+export function getChains(): Chain[] {
   return getChainFilePaths().map((chainFilePath) => {
     return JSON.parse(fs.readFileSync(chainFilePath, "utf8"));
   });
@@ -18,7 +19,7 @@ function getChains() {
 module.exports = {
   getChainFilePaths,
   getChains,
-  getChain: (alias) => {
+  getChain: (alias: string) => {
     const chains = getChains().filter((chain) => {
       return chain.alias === alias;
     });
