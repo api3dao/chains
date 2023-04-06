@@ -1,6 +1,6 @@
 import fs from 'fs';
 import path from 'path';
-import { ChainSchema } from '../src/types';
+import { CHAINS, ChainSchema } from '../src';
 
 const INPUT_DIR = './chains';
 
@@ -27,6 +27,11 @@ combinedChains.forEach((chain: any) => {
     valid = false;
   }
 });
+
+if (CHAINS.length !== combinedChains.length) {
+  console.log('Generated chains differs in length to the number of JSON files');
+  valid = false;
+}
 
 if (!valid) {
   process.exit(1);

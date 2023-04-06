@@ -27,7 +27,7 @@
     "gen:chains": "ts-node scripts/combine-chains.ts",
     "prettier": "prettier --write \"./**/*.{js,md,json}\"",
     "validate:chains": "ts-node scripts/validate-chains.ts",
-    "validate:providers": "ts-node scripts/check-provider.ts"
+    "validate:providers": "ts-node scripts/validate-providers.ts"
   },
   "dependencies": {
     "zod": "^3.21.4"
@@ -35,7 +35,7 @@
   "devDependencies": {
     "@types/node": "^18.15.11",
     "chokidar": "^3.5.3",
-    "ethers": "^6.0.8",
+    "ethers": "^6.2.3",
     "prettier": "^2.8.4",
     "rimraf": "^4.4.1",
     "ts-node": "^10.9.1",
