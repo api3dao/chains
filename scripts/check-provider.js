@@ -1,7 +1,7 @@
-const ethers = require("ethers");
-const { getChains, getChain } = require("../src/chains");
+import ethers from 'ethers';
+import { CHAINS, getChainByAlias } from '../src';
 
-const chains = process.env.CHAIN ? [getChain(process.env.CHAIN)] : getChains();
+const chains = process.env.CHAIN ? [getChainByAlias(process.env.CHAIN)] : CHAINS;
 
 chains.map(async (chain) => {
   const provider = new ethers.JsonRpcProvider(chain.providerUrl);

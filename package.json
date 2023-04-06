@@ -9,7 +9,8 @@
     "src"
   ],
   "scripts": {
-    "build": "tsc",
+    "build": "build:chains && tsc",
+    "build:chains": "ts-node scripts/combine-chains.ts",
     "dev": "ts-node scripts/combine-chains.ts --watch",
     "check-provider": "node scripts/check-provider",
     "prettier": "prettier --write \"./**/*.{js,md,json}\"",
