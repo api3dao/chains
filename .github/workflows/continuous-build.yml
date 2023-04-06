@@ -35,7 +35,7 @@ jobs:
         run: echo "dir=$(yarn cache dir)" >> $GITHUB_OUTPUT
 
       - uses: actions/cache@v3
-        id: yarn-cache
+        id: deps-cache
         with:
           path: ${{ steps.deps-cache-dir-path.outputs.dir }}
           key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
@@ -43,6 +43,7 @@ jobs:
             ${{ runner.os }}-yarn-
 
       - name: Install Dependencies
+        if: steps.deps-cache.outputs.cache-hit != 'true'
         run: yarn install --frozen-lockfile
 
       - name: Validate chains
