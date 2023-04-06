@@ -25,6 +25,7 @@
     "chains:rename": "ts-node scripts/rename-chain-file.tss",
     "env:write": "ts-node scripts/write-env-variables.ts",
     "gen:chains": "ts-node scripts/combine-chains.ts",
+    "prepublishOnly": "yarn validate:chains",
     "prettier": "prettier --write \"./**/*.{js,md,json}\"",
     "validate:chains": "ts-node scripts/validate-chains.ts",
     "validate:providers": "ts-node scripts/validate-providers.ts"
