@@ -2,18 +2,29 @@
   "name": "@api3/chains",
   "license": "MIT",
   "version": "1.4.0",
+  "author": "API3 DAO",
   "private": false,
-  "main": "src/index",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "browser": "./dist/es6/index.js",
+  "repository": "git@github.com:api3dao/chains",
+  "bugs": {
+    "url": "https://github.com/api3dao/chains/issues"
+  },
   "files": [
-    "chains",
+    "dist",
     "src"
   ],
   "scripts": {
-    "build": "yarn build:chains && tsc",
-    "build:chains": "ts-node scripts/combine-chains.ts",
+    "build:cjs": "yarn tsc -p tsconfig.build-cjs.json",
+    "build:es6": "yarn tsc -p tsconfig.build-es6.json",
+    "build:esm": "yarn tsc -p tsconfig.build-esm.json",
+    "build": "yarn clean && yarn gen:chains && yarn build:cjs && yarn build:es6 && yarn build:esm",
+    "clean": "rimraf ./dist",
     "dev": "ts-node scripts/combine-chains.ts --watch",
     "chains:rename": "ts-node scripts/rename-chain-file.tss",
     "env:write": "ts-node scripts/write-env-variables.ts",
+    "gen:chains": "ts-node scripts/combine-chains.ts",
     "prettier": "prettier --write \"./**/*.{js,md,json}\"",
     "validate:chains": "ts-node scripts/validate-chains.ts",
     "validate:providers": "ts-node scripts/check-provider.ts"
@@ -26,6 +37,7 @@
     "chokidar": "^3.5.3",
     "ethers": "^6.0.8",
     "prettier": "^2.8.4",
+    "rimraf": "^4.4.1",
     "ts-node": "^10.9.1",
     "typescript": "^5.0.3"
   }

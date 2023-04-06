@@ -58,12 +58,11 @@ export function hardhatEtherscan(): HardhatEtherscanNetworks {
 }
 
 export function getEnvVariables(): string[] {
-  const envVariableNames: string[] = ["MNEMONIC"];
-  Object.values(CHAINS).map((chain) => {
+  return Object.values(CHAINS).reduce((envNames, chain) => {
     if (chain.explorer?.api?.key?.required) {
-      envVariableNames.push(`ETHERSCAN_API_KEY_${chain.alias}`);
+      return [...envNames, `ETHERSCAN_API_KEY_${chain.alias}`];
     }
-  });
-  return envVariableNames;
+    return envNames;
+  }, ['MNEMONIC']);
 }
 
