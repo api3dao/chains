@@ -9,14 +9,14 @@
     "src"
   ],
   "scripts": {
-    "build": "build:chains && tsc",
+    "build": "yarn build:chains && tsc",
     "build:chains": "ts-node scripts/combine-chains.ts",
     "dev": "ts-node scripts/combine-chains.ts --watch",
-    "check-provider": "node scripts/check-provider",
+    "chains:rename": "ts-node scripts/rename-chain-file.tss",
+    "env:write": "ts-node scripts/write-env-variables.ts",
     "prettier": "prettier --write \"./**/*.{js,md,json}\"",
-    "rename-chain-files": "node scripts/rename-chain-files",
-    "validate-chains": "ts-node scripts/validate-chains.ts",
-    "write-env": "ts-node scripts/write-env-variables"
+    "validate:chains": "ts-node scripts/validate-chains.ts",
+    "validate:providers": "ts-node scripts/check-provider.ts"
   },
   "dependencies": {
     "zod": "^3.21.4"

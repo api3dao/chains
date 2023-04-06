@@ -33,7 +33,7 @@ async function mergeJsonFiles() {
     combinedChains.push(fileContent);
   }
 
-  const tsContent = `${BASE_CONTENT}\nexport const CHAINS: Chain[] = ${JSON.stringify(combinedChains, null, 2)};\n`;
+  const tsContent = `${BASE_CONTENT}\nexport const CHAINS: Chain[] = ${JSON.stringify(combinedChains, null, 2)};\n\n`;
 
   if (!fs.existsSync(OUTPUT_DIR)) {
     await fs.promises.mkdir(OUTPUT_DIR);
