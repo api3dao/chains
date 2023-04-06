@@ -58,7 +58,7 @@ export function hardhatEtherscan(): HardhatEtherscanNetworks {
 }
 
 export function getEnvVariables(): string[] {
-  return Object.values(CHAINS).reduce((envNames, chain) => {
+  return CHAINS.reduce((envNames, chain) => {
     if (chain.explorer?.api?.key?.required) {
       return [...envNames, `ETHERSCAN_API_KEY_${chain.alias}`];
     }
