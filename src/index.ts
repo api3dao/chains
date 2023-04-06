@@ -1,84 +1,69 @@
-// ===========================================================================
-// DO NOT EDIT MANUALLY
-//
-// The following exports have been added automatically.
-// See: scripts/combine-chains.ts for more information
-
-export { CHAINS } from './generated/chains';
-// ===========================================================================
-
-import fs from 'fs';
-import { getChains } from './chains';
+import { CHAINS } from './generated/chains';
+import { Chain, HardhatConfigNetworks, HardhatEtherscanNetworks } from './types';
 
 export * from './types';
 
-export function hardhatConfigNetworks() {
-  return getChains().reduce((networks, chain) => {
+// NOTE: the following file is generated with the combine-chains.ts script
+export { CHAINS } from './generated/chains';
+
+export function getChainByAlias(alias: string): Chain {
+  const chains = CHAINS.filter((c) => c.alias === alias);
+  if (!chains) {
+    throw new Error(`Chain with alias:${alias} not found`);
+  }
+  if (chains.length > 1) {
+    throw new Error(`Multiple instances of chain with alias:${alias} found`);
+  }
+  return chains[0]!;
+}
+
+export function hardhatConfigNetworks(): HardhatConfigNetworks {
+  return CHAINS.reduce((networks, chain) => {
     networks[chain.alias] = {
-      accounts: {
-        mnemonic: "",
-      },
+      accounts: { mnemonic: '' },
       chainId: Number(chain.id),
       url: chain.providerUrl,
     };
     return networks;
-  }, {});
+  }, {} as HardhatConfigNetworks);
 }
 
-
-export function hardhatEtherscan() {
-  return getChains().reduce(
-    (etherscan, chain) => {
-      if (chain.explorer && chain.explorer.api) {
-        if (chain.explorer.api.key.hardhatEtherscanAlias) {
-          if (chain.explorer.api.key.required) {
-            etherscan.apiKey[chain.explorer.api.key.hardhatEtherscanAlias] =
-              chain.alias;
-          } else {
-            etherscan.apiKey[chain.explorer.api.key.hardhatEtherscanAlias] =
-              "DUMMY_VALUE";
-          }
-        } else {
-          etherscan.customChains.push({
-            network: chain.alias,
-            chainId: Number(chain.id),
-            urls: {
-              apiURL: chain.explorer.api.url,
-              browserURL: chain.explorer.browserUrl,
-            },
-          });
-          if (chain.explorer.api.key.required) {
-            etherscan.apiKey[chain.alias] = chain.alias;
-          } else {
-            etherscan.apiKey[chain.alias] = "DUMMY_VALUE";
-          }
-        }
-      }
+export function hardhatEtherscan(): HardhatEtherscanNetworks {
+  return CHAINS.reduce((etherscan, chain) => {
+    if (!chain.explorer || !chain.explorer.api) {
       return etherscan;
-    },
-    {
-      apiKey: {},
-      customChains: [],
     }
-  );
+
+    const apiKey = chain.explorer.api.key;
+    const explorer = chain.explorer;
+    const apiKeyValue = apiKey.required ? chain.alias : "DUMMY_VALUE";
+
+    if (apiKey.hardhatEtherscanAlias) {
+      etherscan.apiKey[apiKey.hardhatEtherscanAlias] = apiKeyValue;
+      return etherscan;
+    }
+
+    etherscan.customChains.push({
+      network: chain.alias,
+      chainId: Number(chain.id),
+      urls: {
+        apiURL: explorer.api!.url,
+        browserURL: explorer.browserUrl,
+      },
+    });
+    etherscan.apiKey[chain.alias] = apiKeyValue;
+
+    return etherscan;
+  }, { apiKey: {}, customChains: [] } as HardhatEtherscanNetworks);
 }
 
-export function writeEnvFile(path: string) {
-  const envVariableNames = ["MNEMONIC"];
-  Object.values(getChains()).map((chain) => {
-    if (
-      chain.explorer &&
-      chain.explorer.api &&
-      chain.explorer.api.key.required
-    ) {
+export function getEnvVariables(): string[] {
+  const envVariableNames: string[] = ["MNEMONIC"];
+  Object.values(CHAINS).map((chain) => {
+    if (chain.explorer?.api?.key?.required) {
       envVariableNames.push(`ETHERSCAN_API_KEY_${chain.alias}`);
     }
   });
-  fs.writeFileSync(
-    path,
-    envVariableNames.reduce((fileContents, envVariableName) => {
-      return fileContents + `${envVariableName}=""\n`;
-    }, "")
-  );
+  return envVariableNames;
 }
 

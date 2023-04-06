@@ -13,7 +13,12 @@
     "dev": "ts-node scripts/combine-chains.ts --watch",
     "check-provider": "node scripts/check-provider",
     "prettier": "prettier --write \"./**/*.{js,md,json}\"",
-    "rename-chain-files": "node scripts/rename-chain-files"
+    "rename-chain-files": "node scripts/rename-chain-files",
+    "validate-chains": "ts-node scripts/validate-chains.ts",
+    "write-env": "ts-node scripts/write-env-variables"
+  },
+  "dependencies": {
+    "zod": "^3.21.4"
   },
   "devDependencies": {
     "@types/node": "^18.15.11",
@@ -21,7 +26,6 @@
     "ethers": "^6.0.8",
     "prettier": "^2.8.4",
     "ts-node": "^10.9.1",
-    "typescript": "^5.0.3",
-    "zod": "^3.21.4"
+    "typescript": "^5.0.3"
   }
 }
