@@ -44,6 +44,9 @@ function mergeJsonFiles() {
 }
 
 function watchJsonFiles() {
+  // ignored: by default we want to ignore dotfiles while watching
+  // persistent: continue the process as long as the directory is being watched
+  // See: https://github.com/paulmillr/chokidar#api
   const watcher = chokidar.watch([INPUT_DIR], { ignored: /^\./, persistent: true });
 
   watcher
