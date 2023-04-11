@@ -1,6 +1,6 @@
 import fs from 'fs';
 import path from 'path';
-import { CHAINS, ChainSchema } from '../src';
+import { CHAINS, chainSchema } from '../src';
 
 const INPUT_DIR = './chains';
 
@@ -16,7 +16,7 @@ for (const jsonFile of jsonFiles) {
 }
 
 combinedChains.forEach((chain: any) => {
-  const res = ChainSchema.safeParse(chain);
+  const res = chainSchema.safeParse(chain);
   if (!res.success) {
     const errors = res.error.issues.map((issue) => {
       return `  path: '${issue.path.join('.')}' => '${issue.message}' `;
@@ -28,7 +28,7 @@ combinedChains.forEach((chain: any) => {
 
 if (CHAINS.length !== combinedChains.length) {
   console.log('Generated chains differs in length to the number of JSON files');
-  console.log(`Number of generated chains:${CHAINS.length}. Expected:${combinedChains.length}`);
+  console.log(`Generated CHAINS length = ${CHAINS.length}. Expected ${combinedChains.length} chains`);
   process.exit(1);
 }
 
