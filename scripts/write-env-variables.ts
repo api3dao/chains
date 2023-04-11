@@ -11,11 +11,9 @@ if (pathArgIndex === -1 || pathArgIndex === args.length - 1) {
 
 const path = args[pathArgIndex + 1]!;
 
-const fileContents = getEnvVariables().reduce((contents, envVar) => {
-  return `${contents}${envVar}=""\n`;
-}, '');
-
+const fileContents = getEnvVariables().map((env) => `${env}=""\n`).join('');
 fs.writeFileSync(path, fileContents);
+
 console.log(`Successfully wrote chain environment variables to ${path}`);
 process.exit(0);
 
