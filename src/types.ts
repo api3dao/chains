@@ -18,6 +18,9 @@ export const chainExplorerSchema = z.object({
 export const chainSchema = z.object({
   alias: z.string(),
   name: z.string(),
+  // Most chain IDs are numbers, but to remain flexible this has purposefully been kept as a string
+  // It can be adjusted if we want to support chains that don't use numbers.
+  // See: https://github.com/api3dao/chains/pull/1#discussion_r1161102392
   id: z.string().regex(/^\d+$/),
   providerUrl: z.string().url(),
   symbol: z.string(),
@@ -32,7 +35,7 @@ export type ChainExplorerAPIKey = z.infer<typeof chainExplorerAPIKeySchema>;
 export interface HardhatConfigNetworks {
   [key: string]: {
     accounts: { mnemonic: '' };
-    chainId: number;
+    chainId: string;
     url: string;
   }
 }
@@ -41,7 +44,7 @@ export interface HardhatEtherscanNetworks {
   apiKey: { [etherscanAlias: string]: string; }
   customChains: {
     network: string;
-    chainId: number;
+    chainId: string;
     urls: { apiURL: string; browserURL: string; }
   }[]
 }
