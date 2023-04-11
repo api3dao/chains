@@ -46,9 +46,6 @@ jobs:
         if: steps.deps-cache.outputs.cache-hit != 'true'
         run: yarn install --frozen-lockfile
 
-      - name: Validate chains
-        run: yarn validate:chains
-
-      - name: Validate providers
-        run: yarn validate:providers
+      - name: Run Validations
+        run: yarn validate
 
