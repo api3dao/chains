@@ -17,14 +17,14 @@ const HEADER_CONTENT = `// =====================================================
 import { Chain } from '../types';
 `;
 
-async function mergeJsonFiles() {
-  const fileNames = await fs.promises.readdir(INPUT_DIR);
+function mergeJsonFiles() {
+  const fileNames = fs.readdirSync(INPUT_DIR);
   const jsonFiles = fileNames.filter((fileName) => fileName.endsWith('.json'));
   const combinedChains: any = [];
 
   for (const jsonFile of jsonFiles) {
     const filePath = path.join(INPUT_DIR, jsonFile);
-    const fileContentRaw = await fs.promises.readFile(filePath, 'utf-8');
+    const fileContentRaw = fs.readFileSync(filePath, 'utf-8');
     const fileContent = JSON.parse(fileContentRaw);
     combinedChains.push(fileContent);
   }
@@ -33,10 +33,10 @@ async function mergeJsonFiles() {
   const formattedContent = prettier.format(rawContent, { parser: 'typescript' });
 
   if (!fs.existsSync(OUTPUT_DIR)) {
-    await fs.promises.mkdir(OUTPUT_DIR);
+    fs.mkdirSync(OUTPUT_DIR);
   }
 
-  await fs.promises.writeFile(OUTPUT_FILE, formattedContent);
+  fs.writeFileSync(OUTPUT_FILE, formattedContent);
   console.log(`Combined chains been saved as ${OUTPUT_FILE}`);
 }
 
@@ -46,21 +46,21 @@ function watchJsonFiles() {
   watcher
     .on('add', (path) => {
       console.log(`File ${path} has been added`);
-      mergeJsonFiles().catch(console.error);
+      mergeJsonFiles()
     })
     .on('change', (path) => {
       console.log(`File ${path} has been changed`);
-      mergeJsonFiles().catch(console.error);
+      mergeJsonFiles()
     })
     .on('unlink', (path) => {
       console.log(`File ${path} has been removed`);
-      mergeJsonFiles().catch(console.error);
+      mergeJsonFiles()
     });
 }
 
 if (process.argv.includes('--watch')) {
   watchJsonFiles();
 } else {
-  mergeJsonFiles().catch(console.error);
+  mergeJsonFiles()
 }
 
