@@ -21,7 +21,7 @@
     "build:esm": "yarn tsc -p tsconfig.build-esm.json",
     "build": "yarn clean && yarn generate:chains && yarn build:cjs && yarn build:es6 && yarn build:esm",
     "clean": "rimraf ./dist",
-    "dev": "ts-node scripts/combine-chains.ts --watch",
+    "dev": "ts-node scripts/generate-chains.ts --watch",
     "chains:rename": "ts-node scripts/rename-chain-file.ts",
     "env:write": "ts-node scripts/write-env-variables.ts",
     "generate:chains": "ts-node scripts/generate-chains.ts",
@@ -36,6 +36,7 @@
   },
   "devDependencies": {
     "@types/node": "^18.15.11",
+    "@types/prettier": "^2.7.2",
     "chokidar": "^3.5.3",
     "ethers": "^6.2.3",
     "prettier": "^2.8.4",

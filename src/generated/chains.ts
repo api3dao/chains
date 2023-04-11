@@ -5,484 +5,403 @@
 // See: scripts/combine-chains.ts for more information
 // ===========================================================================
 
-import { Chain } from '../types';
+import { Chain } from "../types";
 
 export const CHAINS: Chain[] = [
   {
-    "name": "Arbitrum testnet",
-    "alias": "arbitrum-goerli-testnet",
-    "id": "421613",
-    "symbol": "testETH",
-    "providerUrl": "https://goerli-rollup.arbitrum.io/rpc",
-    "explorer": {
-      "api": {
-        "url": "https://api-goerli.arbiscan.io/api",
-        "key": {
-          "required": true,
-          "hardhatEtherscanAlias": "arbitrumGoerli"
-        }
+    name: "Arbitrum testnet",
+    alias: "arbitrum-goerli-testnet",
+    id: "421613",
+    symbol: "testETH",
+    providerUrl: "https://goerli-rollup.arbitrum.io/rpc",
+    explorer: {
+      api: {
+        url: "https://api-goerli.arbiscan.io/api",
+        key: { required: true, hardhatEtherscanAlias: "arbitrumGoerli" },
       },
-      "browserUrl": "https://testnet.arbiscan.io/"
-    }
+      browserUrl: "https://testnet.arbiscan.io/",
+    },
   },
   {
-    "name": "Arbitrum",
-    "alias": "arbitrum",
-    "id": "42161",
-    "symbol": "ETH",
-    "providerUrl": "https://arb1.arbitrum.io/rpc",
-    "explorer": {
-      "api": {
-        "url": "https://api.arbiscan.io/api",
-        "key": {
-          "required": true,
-          "hardhatEtherscanAlias": "arbitrumOne"
-        }
+    name: "Arbitrum",
+    alias: "arbitrum",
+    id: "42161",
+    symbol: "ETH",
+    providerUrl: "https://arb1.arbitrum.io/rpc",
+    explorer: {
+      api: {
+        url: "https://api.arbiscan.io/api",
+        key: { required: true, hardhatEtherscanAlias: "arbitrumOne" },
       },
-      "browserUrl": "https://arbiscan.io/"
-    }
+      browserUrl: "https://arbiscan.io/",
+    },
   },
   {
-    "name": "Avalanche testnet",
-    "alias": "avalanche-testnet",
-    "id": "43113",
-    "symbol": "testAVAX",
-    "providerUrl": "https://api.avax-test.network/ext/bc/C/rpc",
-    "explorer": {
-      "api": {
-        "url": "https://api-testnet.snowtrace.io/api",
-        "key": {
-          "required": true,
-          "hardhatEtherscanAlias": "avalancheFujiTestnet"
-        }
+    name: "Avalanche testnet",
+    alias: "avalanche-testnet",
+    id: "43113",
+    symbol: "testAVAX",
+    providerUrl: "https://api.avax-test.network/ext/bc/C/rpc",
+    explorer: {
+      api: {
+        url: "https://api-testnet.snowtrace.io/api",
+        key: { required: true, hardhatEtherscanAlias: "avalancheFujiTestnet" },
       },
-      "browserUrl": "https://testnet.snowtrace.io/"
-    }
+      browserUrl: "https://testnet.snowtrace.io/",
+    },
   },
   {
-    "name": "Avalanche",
-    "alias": "avalanche",
-    "id": "43114",
-    "symbol": "AVAX",
-    "providerUrl": "https://api.avax.network/ext/bc/C/rpc",
-    "explorer": {
-      "api": {
-        "url": "https://api.snowtrace.io/api",
-        "key": {
-          "required": true,
-          "hardhatEtherscanAlias": "avalanche"
-        }
+    name: "Avalanche",
+    alias: "avalanche",
+    id: "43114",
+    symbol: "AVAX",
+    providerUrl: "https://api.avax.network/ext/bc/C/rpc",
+    explorer: {
+      api: {
+        url: "https://api.snowtrace.io/api",
+        key: { required: true, hardhatEtherscanAlias: "avalanche" },
       },
-      "browserUrl": "https://snowtrace.io/"
-    }
+      browserUrl: "https://snowtrace.io/",
+    },
   },
   {
-    "name": "BSC testnet",
-    "alias": "bsc-testnet",
-    "id": "97",
-    "symbol": "testBNB",
-    "providerUrl": "https://data-seed-prebsc-1-s3.binance.org:8545/",
-    "explorer": {
-      "api": {
-        "url": "https://api-testnet.bscscan.com/api",
-        "key": {
-          "required": true,
-          "hardhatEtherscanAlias": "bscTestnet"
-        }
+    name: "BSC testnet",
+    alias: "bsc-testnet",
+    id: "97",
+    symbol: "testBNB",
+    providerUrl: "https://data-seed-prebsc-1-s3.binance.org:8545/",
+    explorer: {
+      api: {
+        url: "https://api-testnet.bscscan.com/api",
+        key: { required: true, hardhatEtherscanAlias: "bscTestnet" },
       },
-      "browserUrl": "https://testnet.bscscan.com/"
-    }
+      browserUrl: "https://testnet.bscscan.com/",
+    },
   },
   {
-    "name": "BSC",
-    "alias": "bsc",
-    "id": "56",
-    "symbol": "BNB",
-    "providerUrl": "https://rpc.ankr.com/bsc",
-    "explorer": {
-      "api": {
-        "url": "https://api.bscscan.com/api",
-        "key": {
-          "required": true,
-          "hardhatEtherscanAlias": "bsc"
-        }
+    name: "BSC",
+    alias: "bsc",
+    id: "56",
+    symbol: "BNB",
+    providerUrl: "https://rpc.ankr.com/bsc",
+    explorer: {
+      api: {
+        url: "https://api.bscscan.com/api",
+        key: { required: true, hardhatEtherscanAlias: "bsc" },
       },
-      "browserUrl": "https://bscscan.com/"
-    }
+      browserUrl: "https://bscscan.com/",
+    },
   },
   {
-    "name": "Ethereum Goerli testnet",
-    "alias": "ethereum-goerli-testnet",
-    "id": "5",
-    "symbol": "testETH",
-    "providerUrl": "https://rpc.ankr.com/eth_goerli",
-    "explorer": {
-      "api": {
-        "url": "https://api-goerli.etherscan.io/api",
-        "key": {
-          "required": true,
-          "hardhatEtherscanAlias": "goerli"
-        }
+    name: "Ethereum Goerli testnet",
+    alias: "ethereum-goerli-testnet",
+    id: "5",
+    symbol: "testETH",
+    providerUrl: "https://rpc.ankr.com/eth_goerli",
+    explorer: {
+      api: {
+        url: "https://api-goerli.etherscan.io/api",
+        key: { required: true, hardhatEtherscanAlias: "goerli" },
       },
-      "browserUrl": "https://goerli.etherscan.io/"
-    }
+      browserUrl: "https://goerli.etherscan.io/",
+    },
   },
   {
-    "name": "Ethereum Sepolia testnet",
-    "alias": "ethereum-sepolia-testnet",
-    "id": "11155111",
-    "symbol": "testETH",
-    "providerUrl": "https://rpc-sepolia.rockx.com",
-    "explorer": {
-      "api": {
-        "url": "https://api-sepolia.etherscan.io/api",
-        "key": {
-          "required": true,
-          "hardhatEtherscanAlias": "sepolia"
-        }
+    name: "Ethereum Sepolia testnet",
+    alias: "ethereum-sepolia-testnet",
+    id: "11155111",
+    symbol: "testETH",
+    providerUrl: "https://rpc-sepolia.rockx.com",
+    explorer: {
+      api: {
+        url: "https://api-sepolia.etherscan.io/api",
+        key: { required: true, hardhatEtherscanAlias: "sepolia" },
       },
-      "browserUrl": "https://sepolia.etherscan.io/"
-    }
+      browserUrl: "https://sepolia.etherscan.io/",
+    },
   },
   {
-    "name": "Ethereum",
-    "alias": "ethereum",
-    "id": "1",
-    "symbol": "ETH",
-    "providerUrl": "https://ethereum.publicnode.com",
-    "explorer": {
-      "api": {
-        "url": "https://api.etherscan.io/api",
-        "key": {
-          "required": true,
-          "hardhatEtherscanAlias": "mainnet"
-        }
+    name: "Ethereum",
+    alias: "ethereum",
+    id: "1",
+    symbol: "ETH",
+    providerUrl: "https://ethereum.publicnode.com",
+    explorer: {
+      api: {
+        url: "https://api.etherscan.io/api",
+        key: { required: true, hardhatEtherscanAlias: "mainnet" },
       },
-      "browserUrl": "https://etherscan.io/"
-    }
+      browserUrl: "https://etherscan.io/",
+    },
   },
   {
-    "name": "Fantom testnet",
-    "alias": "fantom-testnet",
-    "id": "4002",
-    "symbol": "testFTM",
-    "providerUrl": "https://rpc.ankr.com/fantom_testnet",
-    "explorer": {
-      "api": {
-        "url": "https://api-testnet.ftmscan.com/api",
-        "key": {
-          "required": true,
-          "hardhatEtherscanAlias": "ftmTestnet"
-        }
+    name: "Fantom testnet",
+    alias: "fantom-testnet",
+    id: "4002",
+    symbol: "testFTM",
+    providerUrl: "https://rpc.ankr.com/fantom_testnet",
+    explorer: {
+      api: {
+        url: "https://api-testnet.ftmscan.com/api",
+        key: { required: true, hardhatEtherscanAlias: "ftmTestnet" },
       },
-      "browserUrl": "https://testnet.ftmscan.com/"
-    }
+      browserUrl: "https://testnet.ftmscan.com/",
+    },
   },
   {
-    "name": "Fantom",
-    "alias": "fantom",
-    "id": "250",
-    "symbol": "FTM",
-    "providerUrl": "https://rpcapi.fantom.network/",
-    "explorer": {
-      "api": {
-        "url": "https://api.ftmscan.com/api",
-        "key": {
-          "required": true,
-          "hardhatEtherscanAlias": "opera"
-        }
+    name: "Fantom",
+    alias: "fantom",
+    id: "250",
+    symbol: "FTM",
+    providerUrl: "https://rpcapi.fantom.network/",
+    explorer: {
+      api: {
+        url: "https://api.ftmscan.com/api",
+        key: { required: true, hardhatEtherscanAlias: "opera" },
       },
-      "browserUrl": "https://ftmscan.com/"
-    }
+      browserUrl: "https://ftmscan.com/",
+    },
   },
   {
-    "name": "Gnosis Chain testnet",
-    "alias": "gnosis-testnet",
-    "id": "10200",
-    "symbol": "testxDAI",
-    "providerUrl": "https://rpc.chiadochain.net",
-    "explorer": {
-      "api": {
-        "url": "https://blockscout.chiadochain.net/api",
-        "key": {
-          "required": false,
-          "hardhatEtherscanAlias": "chiado"
-        }
+    name: "Gnosis Chain testnet",
+    alias: "gnosis-testnet",
+    id: "10200",
+    symbol: "testxDAI",
+    providerUrl: "https://rpc.chiadochain.net",
+    explorer: {
+      api: {
+        url: "https://blockscout.chiadochain.net/api",
+        key: { required: false, hardhatEtherscanAlias: "chiado" },
       },
-      "browserUrl": "https://blockscout.com/gnosis/chiado/"
-    }
+      browserUrl: "https://blockscout.com/gnosis/chiado/",
+    },
   },
   {
-    "name": "Gnosis Chain",
-    "alias": "gnosis",
-    "id": "100",
-    "symbol": "xDAI",
-    "providerUrl": "https://rpc.gnosischain.com",
-    "explorer": {
-      "api": {
-        "url": "https://api.gnosisscan.io/api",
-        "key": {
-          "required": true,
-          "hardhatEtherscanAlias": "gnosis"
-        }
+    name: "Gnosis Chain",
+    alias: "gnosis",
+    id: "100",
+    symbol: "xDAI",
+    providerUrl: "https://rpc.gnosischain.com",
+    explorer: {
+      api: {
+        url: "https://api.gnosisscan.io/api",
+        key: { required: true, hardhatEtherscanAlias: "gnosis" },
       },
-      "browserUrl": "https://gnosisscan.io/"
-    }
+      browserUrl: "https://gnosisscan.io/",
+    },
   },
   {
-    "name": "Metis testnet",
-    "alias": "metis-goerli-testnet",
-    "id": "599",
-    "symbol": "testMETIS",
-    "providerUrl": "https://goerli.gateway.metisdevops.link",
-    "explorer": {
-      "api": {
-        "url": "https://goerli.explorer.metisdevops.link/api",
-        "key": {
-          "required": false
-        }
+    name: "Metis testnet",
+    alias: "metis-goerli-testnet",
+    id: "599",
+    symbol: "testMETIS",
+    providerUrl: "https://goerli.gateway.metisdevops.link",
+    explorer: {
+      api: {
+        url: "https://goerli.explorer.metisdevops.link/api",
+        key: { required: false },
       },
-      "browserUrl": "https://goerli.explorer.metisdevops.link/"
-    }
+      browserUrl: "https://goerli.explorer.metisdevops.link/",
+    },
   },
   {
-    "name": "Metis",
-    "alias": "metis",
-    "id": "1088",
-    "symbol": "METIS",
-    "providerUrl": "https://andromeda.metis.io/?owner=1088",
-    "explorer": {
-      "api": {
-        "url": "https://andromeda-explorer.metis.io/api",
-        "key": {
-          "required": false
-        }
+    name: "Metis",
+    alias: "metis",
+    id: "1088",
+    symbol: "METIS",
+    providerUrl: "https://andromeda.metis.io/?owner=1088",
+    explorer: {
+      api: {
+        url: "https://andromeda-explorer.metis.io/api",
+        key: { required: false },
       },
-      "browserUrl": "https://andromeda-explorer.metis.io/"
-    }
+      browserUrl: "https://andromeda-explorer.metis.io/",
+    },
   },
   {
-    "name": "Milkomeda C1 testnet",
-    "alias": "milkomeda-c1-testnet",
-    "id": "200101",
-    "symbol": "testmilkADA",
-    "providerUrl": "https://rpc-devnet-cardano-evm.c1.milkomeda.com",
-    "explorer": {
-      "api": {
-        "url": "https://explorer-devnet-cardano-evm.c1.milkomeda.com/api",
-        "key": {
-          "required": false
-        }
+    name: "Milkomeda C1 testnet",
+    alias: "milkomeda-c1-testnet",
+    id: "200101",
+    symbol: "testmilkADA",
+    providerUrl: "https://rpc-devnet-cardano-evm.c1.milkomeda.com",
+    explorer: {
+      api: {
+        url: "https://explorer-devnet-cardano-evm.c1.milkomeda.com/api",
+        key: { required: false },
       },
-      "browserUrl": "https://explorer-devnet-cardano-evm.c1.milkomeda.com/"
-    }
+      browserUrl: "https://explorer-devnet-cardano-evm.c1.milkomeda.com/",
+    },
   },
   {
-    "name": "Milkomeda C1",
-    "alias": "milkomeda-c1",
-    "id": "2001",
-    "symbol": "milkADA",
-    "providerUrl": "https://rpc-mainnet-cardano-evm.c1.milkomeda.com",
-    "explorer": {
-      "api": {
-        "url": "https://explorer-mainnet-cardano-evm.c1.milkomeda.com/api",
-        "key": {
-          "required": false
-        }
+    name: "Milkomeda C1",
+    alias: "milkomeda-c1",
+    id: "2001",
+    symbol: "milkADA",
+    providerUrl: "https://rpc-mainnet-cardano-evm.c1.milkomeda.com",
+    explorer: {
+      api: {
+        url: "https://explorer-mainnet-cardano-evm.c1.milkomeda.com/api",
+        key: { required: false },
       },
-      "browserUrl": "https://explorer-mainnet-cardano-evm.c1.milkomeda.com/"
-    }
+      browserUrl: "https://explorer-mainnet-cardano-evm.c1.milkomeda.com/",
+    },
   },
   {
-    "name": "Moonbeam testnet",
-    "alias": "moonbeam-testnet",
-    "id": "1287",
-    "symbol": "testGLMR",
-    "providerUrl": "https://rpc.api.moonbase.moonbeam.network",
-    "explorer": {
-      "api": {
-        "url": "https://api-moonbase.moonscan.io/api",
-        "key": {
-          "required": true,
-          "hardhatEtherscanAlias": "moonbaseAlpha"
-        }
+    name: "Moonbeam testnet",
+    alias: "moonbeam-testnet",
+    id: "1287",
+    symbol: "testGLMR",
+    providerUrl: "https://rpc.api.moonbase.moonbeam.network",
+    explorer: {
+      api: {
+        url: "https://api-moonbase.moonscan.io/api",
+        key: { required: true, hardhatEtherscanAlias: "moonbaseAlpha" },
       },
-      "browserUrl": "https://moonbase.moonscan.io/"
-    }
+      browserUrl: "https://moonbase.moonscan.io/",
+    },
   },
   {
-    "name": "Moonbeam",
-    "alias": "moonbeam",
-    "id": "1284",
-    "symbol": "GLMR",
-    "providerUrl": "https://rpc.api.moonbeam.network",
-    "explorer": {
-      "api": {
-        "url": "https://api-moonbeam.moonscan.io/api",
-        "key": {
-          "required": true,
-          "hardhatEtherscanAlias": "moonbeam"
-        }
+    name: "Moonbeam",
+    alias: "moonbeam",
+    id: "1284",
+    symbol: "GLMR",
+    providerUrl: "https://rpc.api.moonbeam.network",
+    explorer: {
+      api: {
+        url: "https://api-moonbeam.moonscan.io/api",
+        key: { required: true, hardhatEtherscanAlias: "moonbeam" },
       },
-      "browserUrl": "https://moonscan.io/"
-    }
+      browserUrl: "https://moonscan.io/",
+    },
   },
   {
-    "name": "Moonriver",
-    "alias": "moonriver",
-    "id": "1285",
-    "symbol": "MOVR",
-    "providerUrl": "https://rpc.api.moonriver.moonbeam.network",
-    "explorer": {
-      "api": {
-        "url": "https://api-moonriver.moonscan.io/api",
-        "key": {
-          "required": true,
-          "hardhatEtherscanAlias": "moonriver"
-        }
+    name: "Moonriver",
+    alias: "moonriver",
+    id: "1285",
+    symbol: "MOVR",
+    providerUrl: "https://rpc.api.moonriver.moonbeam.network",
+    explorer: {
+      api: {
+        url: "https://api-moonriver.moonscan.io/api",
+        key: { required: true, hardhatEtherscanAlias: "moonriver" },
       },
-      "browserUrl": "https://moonriver.moonscan.io/"
-    }
+      browserUrl: "https://moonriver.moonscan.io/",
+    },
   },
   {
-    "name": "Optimism testnet",
-    "alias": "optimism-goerli-testnet",
-    "id": "420",
-    "symbol": "testETH",
-    "providerUrl": "https://goerli.optimism.io",
-    "explorer": {
-      "api": {
-        "url": "https://api-goerli-optimism.etherscan.io/api",
-        "key": {
-          "required": true,
-          "hardhatEtherscanAlias": "optimisticGoerli"
-        }
+    name: "Optimism testnet",
+    alias: "optimism-goerli-testnet",
+    id: "420",
+    symbol: "testETH",
+    providerUrl: "https://goerli.optimism.io",
+    explorer: {
+      api: {
+        url: "https://api-goerli-optimism.etherscan.io/api",
+        key: { required: true, hardhatEtherscanAlias: "optimisticGoerli" },
       },
-      "browserUrl": "https://goerli-optimism.etherscan.io/"
-    }
+      browserUrl: "https://goerli-optimism.etherscan.io/",
+    },
   },
   {
-    "name": "Optimism",
-    "alias": "optimism",
-    "id": "10",
-    "symbol": "ETH",
-    "providerUrl": "https://mainnet.optimism.io",
-    "explorer": {
-      "api": {
-        "url": "https://api-optimistic.etherscan.io/api",
-        "key": {
-          "required": true,
-          "hardhatEtherscanAlias": "optimisticEthereum"
-        }
+    name: "Optimism",
+    alias: "optimism",
+    id: "10",
+    symbol: "ETH",
+    providerUrl: "https://mainnet.optimism.io",
+    explorer: {
+      api: {
+        url: "https://api-optimistic.etherscan.io/api",
+        key: { required: true, hardhatEtherscanAlias: "optimisticEthereum" },
       },
-      "browserUrl": "https://optimistic.etherscan.io/"
-    }
+      browserUrl: "https://optimistic.etherscan.io/",
+    },
   },
   {
-    "name": "Polygon testnet",
-    "alias": "polygon-testnet",
-    "id": "80001",
-    "symbol": "testMATIC",
-    "providerUrl": "https://rpc.ankr.com/polygon_mumbai",
-    "explorer": {
-      "api": {
-        "url": "https://api-testnet.polygonscan.com/api",
-        "key": {
-          "required": true,
-          "hardhatEtherscanAlias": "polygonMumbai"
-        }
+    name: "Polygon testnet",
+    alias: "polygon-testnet",
+    id: "80001",
+    symbol: "testMATIC",
+    providerUrl: "https://rpc.ankr.com/polygon_mumbai",
+    explorer: {
+      api: {
+        url: "https://api-testnet.polygonscan.com/api",
+        key: { required: true, hardhatEtherscanAlias: "polygonMumbai" },
       },
-      "browserUrl": "https://mumbai.polygonscan.com/"
-    }
+      browserUrl: "https://mumbai.polygonscan.com/",
+    },
   },
   {
-    "name": "Polygon zkEVM testnet",
-    "alias": "polygon-zkevm-goerli-testnet",
-    "id": "1442",
-    "symbol": "testETH",
-    "providerUrl": "https://rpc.public.zkevm-test.net",
-    "explorer": {
-      "api": {
-        "url": "https://api-testnet-zkevm.polygonscan.com/api",
-        "key": {
-          "required": true
-        }
+    name: "Polygon zkEVM testnet",
+    alias: "polygon-zkevm-goerli-testnet",
+    id: "1442",
+    symbol: "testETH",
+    providerUrl: "https://rpc.public.zkevm-test.net",
+    explorer: {
+      api: {
+        url: "https://api-testnet-zkevm.polygonscan.com/api",
+        key: { required: true },
       },
-      "browserUrl": "https://explorer.public.zkevm-test.net"
-    }
+      browserUrl: "https://explorer.public.zkevm-test.net",
+    },
   },
   {
-    "name": "Polygon zkEVM",
-    "alias": "polygon-zkevm",
-    "id": "1101",
-    "symbol": "ETH",
-    "providerUrl": "https://zkevm-rpc.com",
-    "explorer": {
-      "api": {
-        "url": "https://api-zkevm.polygonscan.com/api",
-        "key": {
-          "required": true
-        }
+    name: "Polygon zkEVM",
+    alias: "polygon-zkevm",
+    id: "1101",
+    symbol: "ETH",
+    providerUrl: "https://zkevm-rpc.com",
+    explorer: {
+      api: {
+        url: "https://api-zkevm.polygonscan.com/api",
+        key: { required: true },
       },
-      "browserUrl": "https://zkevm.polygonscan.com/"
-    }
+      browserUrl: "https://zkevm.polygonscan.com/",
+    },
   },
   {
-    "name": "Polygon",
-    "alias": "polygon",
-    "id": "137",
-    "symbol": "MATIC",
-    "providerUrl": "https://polygon-bor.publicnode.com",
-    "explorer": {
-      "api": {
-        "url": "https://api.polygonscan.com/api",
-        "key": {
-          "required": true,
-          "hardhatEtherscanAlias": "polygon"
-        }
+    name: "Polygon",
+    alias: "polygon",
+    id: "137",
+    symbol: "MATIC",
+    providerUrl: "https://polygon-bor.publicnode.com",
+    explorer: {
+      api: {
+        url: "https://api.polygonscan.com/api",
+        key: { required: true, hardhatEtherscanAlias: "polygon" },
       },
-      "browserUrl": "https://polygonscan.com/"
-    }
+      browserUrl: "https://polygonscan.com/",
+    },
   },
   {
-    "name": "RSK testnet",
-    "alias": "rsk-testnet",
-    "id": "31",
-    "symbol": "testRBTC",
-    "providerUrl": "https://public-node.testnet.rsk.co",
-    "explorer": {
-      "browserUrl": "https://explorer.testnet.rsk.co/"
-    }
+    name: "RSK testnet",
+    alias: "rsk-testnet",
+    id: "31",
+    symbol: "testRBTC",
+    providerUrl: "https://public-node.testnet.rsk.co",
+    explorer: { browserUrl: "https://explorer.testnet.rsk.co/" },
   },
   {
-    "name": "RSK",
-    "alias": "rsk",
-    "id": "30",
-    "symbol": "RBTC",
-    "providerUrl": "https://mainnet.sovryn.app/rpc",
-    "explorer": {
-      "browserUrl": "https://explorer.rsk.co/"
-    }
+    name: "RSK",
+    alias: "rsk",
+    id: "30",
+    symbol: "RBTC",
+    providerUrl: "https://mainnet.sovryn.app/rpc",
+    explorer: { browserUrl: "https://explorer.rsk.co/" },
   },
   {
-    "name": "zkSync testnet",
-    "alias": "zksync-goerli-testnet",
-    "id": "280",
-    "symbol": "testETH",
-    "providerUrl": "https://testnet.era.zksync.dev",
-    "explorer": {
-      "browserUrl": "https://goerli.explorer.zksync.io/"
-    }
+    name: "zkSync testnet",
+    alias: "zksync-goerli-testnet",
+    id: "280",
+    symbol: "testETH",
+    providerUrl: "https://testnet.era.zksync.dev",
+    explorer: { browserUrl: "https://goerli.explorer.zksync.io/" },
   },
   {
-    "name": "zkSync",
-    "alias": "zksync",
-    "id": "324",
-    "symbol": "ETH",
-    "providerUrl": "https://mainnet.era.zksync.io",
-    "explorer": {
-      "browserUrl": "https://explorer.zksync.io/"
-    }
-  }
+    name: "zkSync",
+    alias: "zksync",
+    id: "324",
+    symbol: "ETH",
+    providerUrl: "https://mainnet.era.zksync.io",
+    explorer: { browserUrl: "https://explorer.zksync.io/" },
+  },
 ];
-
