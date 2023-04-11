@@ -3,8 +3,9 @@ import path from 'path';
 import chokidar from 'chokidar';
 import prettier from 'prettier';
 
-const INPUT_DIR = './chains';
-const OUTPUT_DIR = './src/generated';
+const PRETTIER_CONFIG = path.join(__dirname, '../.prettierrc');
+const INPUT_DIR = path.join(__dirname, '../chains');
+const OUTPUT_DIR = path.join(__dirname, '../src/generated');
 const OUTPUT_FILE = `${OUTPUT_DIR}/chains.ts`;
 
 const HEADER_CONTENT = `// ===========================================================================
@@ -30,7 +31,9 @@ function mergeJsonFiles() {
   }
 
   const rawContent = `${HEADER_CONTENT}\nexport const CHAINS: Chain[] = ${JSON.stringify(combinedChains)};\n\n`;
-  const formattedContent = prettier.format(rawContent, { parser: 'typescript' });
+
+  const prettierConfig = JSON.parse(fs.readFileSync(PRETTIER_CONFIG, 'utf-8'));
+  const formattedContent = prettier.format(rawContent, { parser: 'typescript', ...prettierConfig });
 
   if (!fs.existsSync(OUTPUT_DIR)) {
     fs.mkdirSync(OUTPUT_DIR);
