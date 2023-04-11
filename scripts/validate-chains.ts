@@ -15,8 +15,6 @@ for (const jsonFile of jsonFiles) {
   combinedChains.push(fileContent);
 }
 
-let valid: boolean = true;
-
 combinedChains.forEach((chain: any) => {
   const res = ChainSchema.safeParse(chain);
   if (!res.success) {
@@ -24,19 +22,16 @@ combinedChains.forEach((chain: any) => {
       return `  path: '${issue.path.join('.')}' => '${issue.message}' `;
     });
     console.log(`Chain name:${chain.name} contains the following errors:\n${errors.join('\n')}\n`);
-    valid = false;
+    process.exit(1);
   }
 });
 
 if (CHAINS.length !== combinedChains.length) {
   console.log('Generated chains differs in length to the number of JSON files');
-  valid = false;
+  console.log(`Number of generated chains:${CHAINS.length}. Expected:${combinedChains.length}`);
+  process.exit(1);
 }
 
-if (!valid) {
-  process.exit(1);
-} else {
-  console.log('Successfully validated chains!');
-  process.exit(0);
-}
+console.log('Successfully validated chains!');
+process.exit(0);
 
