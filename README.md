@@ -65,6 +65,7 @@ console.log(CHAINS);
   },
   ...
 ]   
+*/
 ```
 
 ### getChainByAlias
