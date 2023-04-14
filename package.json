@@ -24,9 +24,9 @@
     "prepare": "husky install",
     "prepublishOnly": "yarn validate:chains",
     "prettier": "prettier --write \"./**/*.{js,md,json}\"",
-    "validate": "yarn validate:chains && yarn validate:providers",
-    "validate:chains": "ts-node scripts/validate-chains.ts",
-    "validate:providers": "ts-node scripts/validate-providers.ts"
+    "providers:ping": "ts-node scripts/ping-providers.ts",
+    "validate": "yarn validate:chains",
+    "validate:chains": "ts-node scripts/validate-chains.ts"
   },
   "dependencies": {
     "zod": "^3.21.4"
