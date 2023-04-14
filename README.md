@@ -42,8 +42,6 @@
 
 - `gnosis-testnet` block explorer contract verification API does not work.
 
-- `rsk` and `rsk-testnet` block explorers do not have contract verification APIs.
-
 ## API
 
 The following variables/functions are exported from this package
@@ -204,4 +202,3 @@ The TypeScript project can be compiled by running the following command. This re
 ```sh
 yarn build
 ```
-
