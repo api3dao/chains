@@ -2,24 +2,25 @@
 
 > The single source of truth for chain-related information
 
-- [Notes](#notes)
-  - [General](#general)
-  - [Deployment](#deployment)
-  - [hardhat-etherscan](#hardhat-etherscan)
-- [API](#api)
-  - [CHAINS](#chains)
-  - [getChainByAlias](#getchainbyalias)
-  - [hardhatConfigNetworks](#hardhatconfignetworks)
-  - [hardhatEtherscan](#hardhatetherscan)
-  - [getEnvVariables](#getenvvariables)
-  - [Types](#types)
-- [Scripts](#scripts)
+- [@api3/chains](#api3chains)
+  - [Notes](#notes)
+    - [General](#general)
+    - [Deployment](#deployment)
+    - [hardhat-etherscan](#hardhat-etherscan)
+  - [API](#api)
+    - [CHAINS](#chains)
+    - [getChainByAlias](#getchainbyalias)
+    - [hardhatConfigNetworks](#hardhatconfignetworks)
+    - [hardhatEtherscan](#hardhatetherscan)
+    - [getEnvVariables](#getenvvariables)
+    - [Types](#types)
+  - [Scripts](#scripts)
     - [chains:generate](#chainsgenerate)
     - [chains:rename](#chainsrename)
     - [env:write](#envwrite)
-- [Development](#development)
+  - [Development](#development)
     - [Validation](#validation)
-- [Building](#building)
+  - [Building](#building)
 
 ## Notes
 
@@ -41,8 +42,6 @@
 - `fantom-testnet` block explorer contract verification API does not work.
 
 - `gnosis-testnet` block explorer contract verification API does not work.
-
-- `rsk` and `rsk-testnet` block explorers do not have contract verification APIs.
 
 ## API
 
@@ -204,4 +203,3 @@ The TypeScript project can be compiled by running the following command. This re
 ```sh
 yarn build
 ```
-
