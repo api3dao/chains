@@ -2,19 +2,43 @@
   "name": "@api3/chains",
   "license": "MIT",
   "version": "1.4.0",
+  "author": "API3 DAO",
   "private": false,
-  "main": "src/index",
+  "main": "./dist/index.js",
+  "repository": "git@github.com:api3dao/chains",
+  "bugs": {
+    "url": "https://github.com/api3dao/chains/issues"
+  },
   "files": [
-    "chains",
+    "dist",
     "src"
   ],
   "scripts": {
-    "check-provider": "node scripts/check-provider",
+    "build": "yarn clean && yarn chains:generate && tsc -p tsconfig.build.json",
+    "clean": "rimraf ./dist",
+    "dev": "ts-node scripts/generate-chains.ts --watch",
+    "chains:generate": "ts-node scripts/generate-chains.ts",
+    "env:write": "ts-node scripts/write-env-variables.ts",
+    "lint": "exit 0",
+    "prepare": "husky install",
+    "prepublishOnly": "yarn validate:chains",
     "prettier": "prettier --write \"./**/*.{js,md,json}\"",
-    "rename-chain-files": "node scripts/rename-chain-files"
+    "providers:ping": "ts-node scripts/ping-providers.ts",
+    "validate": "yarn validate:chains",
+    "validate:chains": "ts-node scripts/validate-chains.ts"
+  },
+  "dependencies": {
+    "zod": "^3.21.4"
   },
   "devDependencies": {
-    "ethers": "^6.0.8",
-    "prettier": "^2.8.4"
+    "@types/node": "^18.15.11",
+    "@types/prettier": "^2.7.2",
+    "chokidar": "^3.5.3",
+    "ethers": "^6.2.3",
+    "husky": "^8.0.3",
+    "prettier": "^2.8.4",
+    "rimraf": "^4.4.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.3"
   }
 }
