@@ -3,7 +3,7 @@
   "alias": "ethereum",
   "id": "1",
   "symbol": "ETH",
-  "providerUrl": "https://ethereum.publicnode.com",
+  "providerUrl": "https://eth.llamarpc.com",
   "explorer": {
     "api": {
       "url": "https://api.etherscan.io/api",

@@ -3,7 +3,7 @@
   "alias": "polygon",
   "id": "137",
   "symbol": "MATIC",
-  "providerUrl": "https://polygon-bor.publicnode.com",
+  "providerUrl": "https://rpc.ankr.com/polygon",
   "explorer": {
     "api": {
       "url": "https://api.polygonscan.com/api",
