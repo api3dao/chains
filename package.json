@@ -34,7 +34,7 @@
     "@types/node": "^18.15.11",
     "@types/prettier": "^2.7.2",
     "chokidar": "^3.5.3",
-    "ethers": "^6.2.3",
+    "ethers": "^6.3.0",
     "husky": "^8.0.3",
     "prettier": "^2.8.4",
     "rimraf": "^4.4.1",
