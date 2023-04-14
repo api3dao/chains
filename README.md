@@ -22,5 +22,3 @@
 - `fantom-testnet` block explorer contract verification API does not work.
 
 - `gnosis-testnet` block explorer contract verification API does not work.
-
-- `rsk` and `rsk-testnet` block explorers do not have contract verification APIs.
