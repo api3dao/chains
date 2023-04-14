@@ -18,7 +18,6 @@
     "clean": "rimraf ./dist",
     "dev": "ts-node scripts/generate-chains.ts --watch",
     "chains:generate": "ts-node scripts/generate-chains.ts",
-    "chains:rename": "ts-node scripts/rename-chain-file.ts",
     "env:write": "ts-node scripts/write-env-variables.ts",
     "lint": "exit 0",
     "prepare": "husky install",
