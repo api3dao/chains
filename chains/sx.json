@@ -1,0 +1,16 @@
+{
+  "name": "SX Network",
+  "alias": "sx",
+  "id": "416",
+  "symbol": "SX",
+  "providerUrl": "https://rpc.sx.technology",
+  "explorer": {
+    "api": {
+      "url": "https://explorer.sx.technology/api",
+      "key": {
+        "required": false
+      }
+    },
+    "browserUrl": "https://explorer.sx.technology/"
+  }
+}

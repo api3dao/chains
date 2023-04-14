@@ -1,0 +1,16 @@
+{
+  "name": "Boba/Avalanche",
+  "alias": "boba-avalanche",
+  "id": "43288",
+  "symbol": "BOBA",
+  "providerUrl": "https://replica.avax.boba.network/",
+  "explorer": {
+    "api": {
+      "url": "https://blockexplorer.avax.boba.network/api",
+      "key": {
+        "required": false
+      }
+    },
+    "browserUrl": "https://blockexplorer.avax.boba.network/"
+  }
+}

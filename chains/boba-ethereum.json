@@ -1,0 +1,16 @@
+{
+  "name": "Boba/Ethereum",
+  "alias": "boba-ethereum",
+  "id": "288",
+  "symbol": "BOBA",
+  "providerUrl": "https://lightning-replica.boba.network/",
+  "explorer": {
+    "api": {
+      "url": "https://api.bobascan.com/api",
+      "key": {
+        "required": true
+      }
+    },
+    "browserUrl": "https://bobascan.com/"
+  }
+}

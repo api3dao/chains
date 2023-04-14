@@ -1,0 +1,16 @@
+{
+  "name": "Boba/BNB",
+  "alias": "boba-bnb",
+  "id": "56288",
+  "symbol": "BOBA",
+  "providerUrl": "https://replica.bnb.boba.network/",
+  "explorer": {
+    "api": {
+      "url": "https://blockexplorer.bnb.boba.network/api",
+      "key": {
+        "required": false
+      }
+    },
+    "browserUrl": "https://blockexplorer.bnb.boba.network/"
+  }
+}

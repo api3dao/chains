@@ -1,0 +1,17 @@
+{
+  "name": "Aurora testnet",
+  "alias": "aurora-testnet",
+  "id": "1313161555",
+  "symbol": "testETH",
+  "providerUrl": "https://testnet.aurora.dev/",
+  "explorer": {
+    "api": {
+      "url": "https://explorer.testnet.aurora.dev/api",
+      "key": {
+        "required": false,
+        "hardhatEtherscanAlias": "auroraTestnet"
+      }
+    },
+    "browserUrl": "https://explorer.testnet.aurora.dev/"
+  }
+}

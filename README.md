@@ -19,6 +19,8 @@
 
 - In general, mainnet and testnet block explorer API keys are the same.
 
+- `arbitrum` and `arbitrum-nova` block explorer API keys are not the same.
+
 - `fantom-testnet` block explorer contract verification API does not work.
 
 - `gnosis-testnet` block explorer contract verification API does not work.
