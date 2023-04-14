@@ -106,7 +106,7 @@ console.log(hardhatConfigNetworks());
 
 ### hardhatEtherscan
 
-Returns an object that can be used with Etherscan.
+Returns an object where the key is each chain's alias and the value is an object that can be used as the `etherscan` field of [`hardhat.config.js`](https://hardhat.org/hardhat-runner/docs/config) (requires the [`hardhat-etherscan` plugin](https://hardhat.org/hardhat-runner/plugins/nomiclabs-hardhat-etherscan)).
 
 ```ts
 import { hardhatEtherscan } from '@api3/chains';
