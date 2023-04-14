@@ -87,7 +87,7 @@ console.log(getChainByAlias('ethereum'));
 
 ### hardhatConfigNetworks
 
-Returns an object where the key is each chain's alias and the value is an object that can be used with [hardhat](https://hardhat.org).
+Returns an object where the key is each chain's alias and the value is an object that can be used as the `networks` field of [`hardhat.config.js`](https://hardhat.org/hardhat-runner/docs/config).
 
 ```ts
 import { hardhatConfigNetworks } from '@api3/chains';
