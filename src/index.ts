@@ -3,7 +3,7 @@ import { Chain, HardhatConfigNetworks, HardhatEtherscanNetworks } from './types'
 
 export * from './types';
 
-// NOTE: the following file is generated with the combine-chains.ts script
+// NOTE: the following file is generated with the generate-chains.ts script
 export { CHAINS } from './generated/chains';
 
 export function getChainByAlias(alias: string): Chain {
