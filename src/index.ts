@@ -21,7 +21,7 @@ export function hardhatConfigNetworks(): HardhatConfigNetworks {
   return CHAINS.reduce((networks, chain) => {
     networks[chain.alias] = {
       accounts: { mnemonic: '' },
-      chainId: parseInt(chain.id),
+      chainId: Number(chain.id),
       url: chain.providerUrl,
     };
     return networks;
