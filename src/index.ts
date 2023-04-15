@@ -21,7 +21,7 @@ export function hardhatConfigNetworks(): HardhatConfigNetworks {
   return CHAINS.reduce((networks, chain) => {
     networks[chain.alias] = {
       accounts: { mnemonic: '' },
-      chainId: chain.id,
+      chainId: Number(chain.id),
       url: chain.providerUrl,
     };
     return networks;
@@ -45,7 +45,7 @@ export function hardhatEtherscan(): HardhatEtherscanNetworks {
 
     etherscan.customChains.push({
       network: chain.alias,
-      chainId: chain.id,
+      chainId: Number(chain.id),
       urls: {
         apiURL: explorer.api!.url,
         browserURL: explorer.browserUrl,
