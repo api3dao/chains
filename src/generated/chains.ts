@@ -23,6 +23,17 @@ export const CHAINS: Chain[] = [
     },
   },
   {
+    name: 'Arbitrum Nova',
+    alias: 'arbitrum-nova',
+    id: '42170',
+    symbol: 'ETH',
+    providerUrl: 'https://nova.arbitrum.io/rpc',
+    explorer: {
+      api: { url: 'https://api-nova.arbiscan.io/api', key: { required: true } },
+      browserUrl: 'https://nova.arbiscan.io/',
+    },
+  },
+  {
     name: 'Arbitrum',
     alias: 'arbitrum',
     id: '42161',
@@ -31,6 +42,34 @@ export const CHAINS: Chain[] = [
     explorer: {
       api: { url: 'https://api.arbiscan.io/api', key: { required: true, hardhatEtherscanAlias: 'arbitrumOne' } },
       browserUrl: 'https://arbiscan.io/',
+    },
+  },
+  {
+    name: 'Aurora testnet',
+    alias: 'aurora-testnet',
+    id: '1313161555',
+    symbol: 'testETH',
+    providerUrl: 'https://testnet.aurora.dev/',
+    explorer: {
+      api: {
+        url: 'https://explorer.testnet.aurora.dev/api',
+        key: { required: false, hardhatEtherscanAlias: 'auroraTestnet' },
+      },
+      browserUrl: 'https://explorer.testnet.aurora.dev/',
+    },
+  },
+  {
+    name: 'Aurora',
+    alias: 'aurora',
+    id: '1313161554',
+    symbol: 'ETH',
+    providerUrl: 'https://mainnet.aurora.dev/',
+    explorer: {
+      api: {
+        url: 'https://explorer.mainnet.aurora.dev/api',
+        key: { required: false, hardhatEtherscanAlias: 'aurora' },
+      },
+      browserUrl: 'https://explorer.aurora.dev/',
     },
   },
   {
@@ -56,6 +95,50 @@ export const CHAINS: Chain[] = [
     explorer: {
       api: { url: 'https://api.snowtrace.io/api', key: { required: true, hardhatEtherscanAlias: 'avalanche' } },
       browserUrl: 'https://snowtrace.io/',
+    },
+  },
+  {
+    name: 'Boba/Avalanche',
+    alias: 'boba-avalanche',
+    id: '43288',
+    symbol: 'BOBA',
+    providerUrl: 'https://replica.avax.boba.network/',
+    explorer: {
+      api: { url: 'https://blockexplorer.avax.boba.network/api', key: { required: false } },
+      browserUrl: 'https://blockexplorer.avax.boba.network/',
+    },
+  },
+  {
+    name: 'Boba/BNB',
+    alias: 'boba-bnb',
+    id: '56288',
+    symbol: 'BOBA',
+    providerUrl: 'https://replica.bnb.boba.network/',
+    explorer: {
+      api: { url: 'https://blockexplorer.bnb.boba.network/api', key: { required: false } },
+      browserUrl: 'https://blockexplorer.bnb.boba.network/',
+    },
+  },
+  {
+    name: 'Boba/Ethereum',
+    alias: 'boba-ethereum',
+    id: '288',
+    symbol: 'BOBA',
+    providerUrl: 'https://lightning-replica.boba.network/',
+    explorer: {
+      api: { url: 'https://api.bobascan.com/api', key: { required: true } },
+      browserUrl: 'https://bobascan.com/',
+    },
+  },
+  {
+    name: 'Boba/Moonbeam',
+    alias: 'boba-moonbeam',
+    id: '1294',
+    symbol: 'BOBA',
+    providerUrl: 'https://replica.bobabeam.boba.network/',
+    explorer: {
+      api: { url: 'https://blockexplorer.bobabase.boba.network/api', key: { required: false } },
+      browserUrl: 'https://blockexplorer.bobabase.boba.network/',
     },
   },
   {
@@ -156,6 +239,22 @@ export const CHAINS: Chain[] = [
       api: { url: 'https://api.gnosisscan.io/api', key: { required: true, hardhatEtherscanAlias: 'gnosis' } },
       browserUrl: 'https://gnosisscan.io/',
     },
+  },
+  {
+    name: 'Godwoken testnet',
+    alias: 'godwoken-testnet',
+    id: '71401',
+    symbol: 'testpCKB',
+    providerUrl: 'https://v1.testnet.godwoken.io/rpc',
+    explorer: { browserUrl: 'https://v1.testnet.gwscan.com/' },
+  },
+  {
+    name: 'Godwoken',
+    alias: 'godwoken',
+    id: '71402',
+    symbol: 'pCKB',
+    providerUrl: 'https://v1.mainnet.godwoken.io/rpc',
+    explorer: { browserUrl: 'https://v1.gwscan.com/' },
   },
   {
     name: 'Metis testnet',
@@ -330,6 +429,28 @@ export const CHAINS: Chain[] = [
     symbol: 'RBTC',
     providerUrl: 'https://mainnet.sovryn.app/rpc',
     explorer: { browserUrl: 'https://explorer.rsk.co/' },
+  },
+  {
+    name: 'SX Network testnet',
+    alias: 'sx-testnet',
+    id: '647',
+    symbol: 'testSX',
+    providerUrl: 'https://rpc.toronto.sx.technology',
+    explorer: {
+      api: { url: 'https://explorer.toronto.sx.technology/api', key: { required: false } },
+      browserUrl: 'https://explorer.toronto.sx.technology/',
+    },
+  },
+  {
+    name: 'SX Network',
+    alias: 'sx',
+    id: '416',
+    symbol: 'SX',
+    providerUrl: 'https://rpc.sx.technology',
+    explorer: {
+      api: { url: 'https://explorer.sx.technology/api', key: { required: false } },
+      browserUrl: 'https://explorer.sx.technology/',
+    },
   },
   {
     name: 'zkSync testnet',
