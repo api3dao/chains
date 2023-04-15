@@ -1,0 +1,17 @@
+{
+  "name": "Aurora",
+  "alias": "aurora",
+  "id": "1313161554",
+  "symbol": "ETH",
+  "providerUrl": "https://mainnet.aurora.dev/",
+  "explorer": {
+    "api": {
+      "url": "https://explorer.mainnet.aurora.dev/api",
+      "key": {
+        "required": false,
+        "hardhatEtherscanAlias": "aurora"
+      }
+    },
+    "browserUrl": "https://explorer.aurora.dev/"
+  }
+}
