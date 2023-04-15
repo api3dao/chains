@@ -18,7 +18,7 @@ const HEADER_CONTENT = `// =====================================================
 import { Chain } from '../types';
 `;
 
-function mergeJsonFiles() {
+function mergeJsonFiles(): void {
   const fileNames = fs.readdirSync(INPUT_DIR);
   const jsonFiles = fileNames.filter((fileName) => fileName.endsWith('.json'));
   const combinedChains: any = [];
@@ -43,7 +43,7 @@ function mergeJsonFiles() {
   console.log(`Combined chains been saved as ${OUTPUT_FILE}`);
 }
 
-function watchJsonFiles() {
+function watchJsonFiles(): void {
   // ignored: by default we want to ignore dotfiles while watching
   // persistent: continue the process as long as the directory is being watched
   // See: https://github.com/paulmillr/chokidar#api
@@ -52,21 +52,21 @@ function watchJsonFiles() {
   watcher
     .on('add', (path) => {
       console.log(`File ${path} has been added`);
-      mergeJsonFiles()
+      mergeJsonFiles();
     })
     .on('change', (path) => {
       console.log(`File ${path} has been changed`);
-      mergeJsonFiles()
+      mergeJsonFiles();
     })
     .on('unlink', (path) => {
       console.log(`File ${path} has been removed`);
-      mergeJsonFiles()
+      mergeJsonFiles();
     });
 }
 
 if (process.argv.includes('--watch')) {
   watchJsonFiles();
 } else {
-  mergeJsonFiles()
+  mergeJsonFiles();
 }
 
