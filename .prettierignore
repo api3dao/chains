@@ -1,0 +1,14 @@
+# NOTE: Keep in sync with .gitignore
+
+# Dependencies
+/node_modules
+
+# Build files
+/coverage
+/dist
+
+# Logs
+*.log
+
+# IDEs
+.vscode
