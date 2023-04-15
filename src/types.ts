@@ -44,7 +44,7 @@ export interface HardhatEtherscanNetworks {
   apiKey: { [etherscanAlias: string]: string; }
   customChains: {
     network: string;
-    chainId: string;
+    chainId: number;
     urls: { apiURL: string; browserURL: string; }
   }[]
 }

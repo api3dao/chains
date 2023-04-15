@@ -45,7 +45,7 @@ export function hardhatEtherscan(): HardhatEtherscanNetworks {
 
     etherscan.customChains.push({
       network: chain.alias,
-      chainId: chain.id,
+      chainId: parseInt(chain.id),
       urls: {
         apiURL: explorer.api!.url,
         browserURL: explorer.browserUrl,
