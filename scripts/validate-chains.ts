@@ -14,7 +14,15 @@ const jsonChains: any[] = jsonFiles.map((filePath: string) => {
   return JSON.parse(fileContentRaw);
 });
 
-// Validation: Ensure that each JSON file is named by the chain's alias
+// Validation: Ensure that each JSON file is represented in the CHAINS array
+if (CHAINS.length !== jsonChains.length) {
+  console.log('Generated chains differs in length to the number of JSON files');
+  console.log(`Generated CHAINS length = ${CHAINS.length}. Expected ${jsonChains.length} chains`);
+  console.log('Try regenerating chains');
+  process.exit(1);
+}
+
+// Validation: Ensure that each JSON file is named using the chain's alias
 jsonFiles.forEach((filePath: string, index: number) => {
   const chain = jsonChains[index]!;
   if (filePath.replace('.json', '') !== chain.alias) {

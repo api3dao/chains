@@ -51,6 +51,9 @@ jobs:
       - name: Run Validations
         run: yarn validate
 
+      - name: Run Tests
+        run: yarn test
+
   required-checks-passed:
     name: All required checks passed
     runs-on: ubuntu-latest
