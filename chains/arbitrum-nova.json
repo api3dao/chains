@@ -1,0 +1,16 @@
+{
+  "name": "Arbitrum Nova",
+  "alias": "arbitrum-nova",
+  "id": "42170",
+  "symbol": "ETH",
+  "providerUrl": "https://nova.arbitrum.io/rpc",
+  "explorer": {
+    "api": {
+      "url": "https://api-nova.arbiscan.io/api",
+      "key": {
+        "required": true
+      }
+    },
+    "browserUrl": "https://nova.arbiscan.io/"
+  }
+}

@@ -11,10 +11,7 @@ module.exports = {
     'plugin:import/recommended',
     'plugin:import/typescript',
   ],
-  plugins: [
-    '@typescript-eslint',
-    'import',
-  ],
+  plugins: ['@typescript-eslint', 'import'],
   rules: {
     // TypeScript
     '@typescript-eslint/ban-ts-comment': 0,
@@ -36,10 +33,13 @@ module.exports = {
 
     // eslint-plugin-import
     'import/namespace': [2, { allowComputed: true }],
-    'import/order': ['error', {
-      groups: ['builtin', 'external', 'internal', 'sibling', 'parent', 'index', 'object', 'type'],
-      pathGroups: [{ pattern: 'mock-utils', group: 'builtin', patternOptions: { matchBase: true, nocomment: true } }],
-    }],
+    'import/order': [
+      'error',
+      {
+        groups: ['builtin', 'external', 'internal', 'sibling', 'parent', 'index', 'object', 'type'],
+        pathGroups: [{ pattern: 'mock-utils', group: 'builtin', patternOptions: { matchBase: true, nocomment: true } }],
+      },
+    ],
 
     // ESLint
     'comma-dangle': [2, 'only-multiline'],
@@ -48,8 +48,11 @@ module.exports = {
     'no-console': 0,
     'no-useless-escape': 0,
     semi: 2,
-    'sort-imports': ['error', {
-      ignoreDeclarationSort: true,
-    }],
+    'sort-imports': [
+      'error',
+      {
+        ignoreDeclarationSort: true,
+      },
+    ],
   },
 };

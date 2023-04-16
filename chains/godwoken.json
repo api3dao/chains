@@ -1,0 +1,10 @@
+{
+  "name": "Godwoken",
+  "alias": "godwoken",
+  "id": "71402",
+  "symbol": "pCKB",
+  "providerUrl": "https://v1.mainnet.godwoken.io/rpc",
+  "explorer": {
+    "browserUrl": "https://v1.gwscan.com/"
+  }
+}
