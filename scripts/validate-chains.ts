@@ -55,4 +55,3 @@ jsonChains.forEach((chain: any, index: number) => {
 console.log('Successfully validated chains!');
 process.exit(0);
 
-
