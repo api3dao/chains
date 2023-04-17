@@ -1,6 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import { CHAINS, chainSchema } from '../src';
+import { deepEqual } from '../src/validations/deep-equal';
 
 const INPUT_DIR = './chains';
 
@@ -21,7 +22,7 @@ if (CHAINS.length !== jsonChains.length) {
   process.exit(1);
 }
 
-// Validation: Ensure that each JSON file is named by the chain's alias
+// Validation: Ensure that each JSON file is named using the chain's alias
 jsonFiles.forEach((filePath: string, index: number) => {
   const chain = jsonChains[index]!;
   if (filePath.replace('.json', '') !== chain.alias) {
@@ -31,14 +32,22 @@ jsonFiles.forEach((filePath: string, index: number) => {
   }
 });
 
-// Validation: Ensure each JSON file content conforms to the required schema
-jsonChains.forEach((chain: any) => {
+jsonChains.forEach((chain: any, index: number) => {
   const res = chainSchema.safeParse(chain);
+  // Validation: Ensure each JSON file content conforms to the required schema
   if (!res.success) {
     const errors = res.error.issues.map((issue) => {
       return `  path: '${issue.path.join('.')}' => '${issue.message}' `;
     });
-    console.log(`Chain name:${chain.name} contains the following errors:\n${errors.join('\n')}\n`);
+    console.log(`Chain '${chain.name}' contains the following errors:\n${errors.join('\n')}\n`);
+    process.exit(1);
+  }
+
+  // Validation: Ensure that the latest JSON content is represented in each Chain object
+  const existingChain = CHAINS[index];
+  if (!deepEqual(chain, existingChain)) {
+    console.log(`Chain '${chain.name}' differs to the currently generated Chain object in CHAINS`);
+    console.log('Try regenerating chains');
     process.exit(1);
   }
 });
