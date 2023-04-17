@@ -40,9 +40,7 @@
 
 - `arbitrum` and `arbitrum-nova` block explorer API keys are not the same.
 
-- `fantom-testnet` block explorer contract verification API does not work.
-
-- `gnosis-testnet` block explorer contract verification API does not work.
+- `aurora-testnet`, `aurora`, `boba-avalanche`, `boba-moonbeam`, `fantom-testnet`, `gnosis-testnet`, `sx-testnet`, `sx` block explorer APIs exist but do not work for contract verification.
 
 ## API
 
