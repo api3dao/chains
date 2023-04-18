@@ -164,6 +164,14 @@ Generates the default content for a `.env` file using the output of `getEnvVaria
 yarn env:write --path .env
 ```
 
+### providers:ping
+
+Iterates through the list of chains to check that the chain is configured correctly and is responsive.
+
+```sh
+yarn providers:ping
+```
+
 ## Development
 
 This project works by combining the various JSON files defined in the `chains/` directory into a single generated TypeScript file.
