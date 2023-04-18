@@ -14,8 +14,7 @@
   - [getEnvVariables](#getenvvariables)
   - [Types](#types)
 - [Scripts](#scripts)
-  - [chains:generate](#chainsgenerate)
-  - [chains:rename](#chainsrename)
+  - [generate:chains](#generatechains)
   - [env:write](#envwrite)
 - [Development](#development)
   - [Validation](#validation)
@@ -149,20 +148,12 @@ These schemas are also used to validate each chain.
 
 The following utility scripts are available
 
-### chains:generate
+### generate:chains
 
 Generates the latest `CHAINS` array and outputs the file to `src/generated/chains.ts`
 
 ```sh
 yarn chains:generate
-```
-
-### chains:rename
-
-Renames each JSON file using the `alias` as the filename.
-
-```sh
-yarn chains:rename
 ```
 
 ### env:write
