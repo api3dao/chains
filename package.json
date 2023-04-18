@@ -14,11 +14,11 @@
     "src"
   ],
   "scripts": {
-    "build": "pnpm clean && pnpm chains:generate && tsc -p tsconfig.build.json",
+    "build": "pnpm clean && pnpm generate:chains && tsc -p tsconfig.build.json",
     "clean": "rimraf ./dist",
     "dev": "ts-node scripts/generate-chains.ts --watch",
-    "chains:generate": "ts-node scripts/generate-chains.ts",
     "env:write": "ts-node scripts/write-env-variables.ts",
+    "generate:chains": "ts-node scripts/generate-chains.ts",
     "lint": "eslint . --ext .js,.ts",
     "prepare": "husky install",
     "prepublishOnly": "pnpm validate:chains",
