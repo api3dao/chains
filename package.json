@@ -14,18 +14,18 @@
     "src"
   ],
   "scripts": {
-    "build": "yarn clean && yarn chains:generate && tsc -p tsconfig.build.json",
+    "build": "pnpm clean && pnpm chains:generate && tsc -p tsconfig.build.json",
     "clean": "rimraf ./dist",
     "dev": "ts-node scripts/generate-chains.ts --watch",
     "chains:generate": "ts-node scripts/generate-chains.ts",
     "env:write": "ts-node scripts/write-env-variables.ts",
     "lint": "eslint . --ext .js,.ts",
     "prepare": "husky install",
-    "prepublishOnly": "yarn validate:chains",
+    "prepublishOnly": "pnpm validate:chains",
     "prettier": "prettier --write \"./**/*.{js,md,json}\"",
     "providers:ping": "ts-node scripts/ping-providers.ts",
     "test": "node --test --loader ts-node/esm ./src/**/*.test.ts",
-    "validate": "yarn validate:chains",
+    "validate": "pnpm validate:chains",
     "validate:chains": "ts-node scripts/validate-chains.ts"
   },
   "dependencies": {
