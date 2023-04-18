@@ -173,6 +173,14 @@ Iterates through the list of chains to check that the chain is configured correc
 pnpm providers:ping
 ```
 
+### providers:ping
+
+Iterates through the list of chains to check that the chain is configured correctly and is responsive.
+
+```sh
+yarn providers:ping
+```
+
 ## Development
 
 This project works by combining the various JSON files defined in the `chains/` directory into a single generated TypeScript file.
