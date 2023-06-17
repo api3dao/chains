@@ -8,7 +8,6 @@
   - [hardhat-etherscan](#hardhat-etherscan)
 - [API](#api)
   - [CHAINS](#chains)
-  - [getChainByAlias](#getchainbyalias)
   - [hardhatConfigNetworks](#hardhatconfignetworks)
   - [hardhatEtherscan](#hardhatetherscan)
   - [getEnvVariables](#getenvvariables)
@@ -64,24 +63,6 @@ console.log(CHAINS);
   },
   ...
 ]   
-*/
-```
-
-### getChainByAlias
-
-Returns a single `Chain` record found by it's alias.
-Throws an error if the `Chain` is not found.
-
-```ts
-import { getChainByAlias } from '@api3/chains';
-console.log(getChainByAlias('ethereum'));
-/*
-{
-  "name": "Ethereum",
-  "alias": "ethereum",
-  "id": "1",
-  ...
-}
 */
 ```
 
