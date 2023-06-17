@@ -3,6 +3,7 @@
   "alias": "boba-moonbeam",
   "id": "1294",
   "symbol": "BOBA",
+  "testnet": false,
   "providerUrl": "https://replica.bobabeam.boba.network/",
   "explorer": {
     "api": {

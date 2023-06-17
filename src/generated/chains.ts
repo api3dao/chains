@@ -145,6 +145,7 @@ export const CHAINS: Chain[] = [
     alias: 'boba-moonbeam',
     id: '1294',
     symbol: 'BOBA',
+    testnet: false,
     providerUrl: 'https://replica.bobabeam.boba.network/',
     explorer: {
       api: { url: 'https://blockexplorer.bobabase.boba.network/api', key: { required: false } },
