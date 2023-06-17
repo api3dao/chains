@@ -15,7 +15,6 @@
   - [Types](#types)
 - [Scripts](#scripts)
   - [generate:chains](#generatechains)
-  - [env:write](#envwrite)
 - [Development](#development)
   - [Validation](#validation)
 - [Building](#building)
@@ -156,14 +155,6 @@ Generates the latest `CHAINS` array and outputs the file to `src/generated/chain
 
 ```sh
 yarn generate:chains
-```
-
-### env:write
-
-Generates the default content for a `.env` file using the output of `getEnvVariables` as the keys.
-
-```sh
-yarn env:write --path .env
 ```
 
 ### providers:ping
