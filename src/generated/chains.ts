@@ -13,6 +13,7 @@ export const CHAINS: Chain[] = [
     alias: 'arbitrum-goerli-testnet',
     id: '421613',
     symbol: 'testETH',
+    testnet: true,
     providerUrl: 'https://goerli-rollup.arbitrum.io/rpc',
     explorer: {
       api: {
@@ -27,6 +28,7 @@ export const CHAINS: Chain[] = [
     alias: 'arbitrum-nova',
     id: '42170',
     symbol: 'ETH',
+    testnet: false,
     providerUrl: 'https://nova.arbitrum.io/rpc',
     explorer: {
       api: { url: 'https://api-nova.arbiscan.io/api', key: { required: true } },
@@ -38,6 +40,7 @@ export const CHAINS: Chain[] = [
     alias: 'arbitrum',
     id: '42161',
     symbol: 'ETH',
+    testnet: false,
     providerUrl: 'https://arb1.arbitrum.io/rpc',
     explorer: {
       api: { url: 'https://api.arbiscan.io/api', key: { required: true, hardhatEtherscanAlias: 'arbitrumOne' } },
@@ -49,6 +52,7 @@ export const CHAINS: Chain[] = [
     alias: 'aurora-testnet',
     id: '1313161555',
     symbol: 'testETH',
+    testnet: true,
     providerUrl: 'https://testnet.aurora.dev/',
     explorer: {
       api: {
@@ -63,6 +67,7 @@ export const CHAINS: Chain[] = [
     alias: 'aurora',
     id: '1313161554',
     symbol: 'ETH',
+    testnet: false,
     providerUrl: 'https://mainnet.aurora.dev/',
     explorer: {
       api: {
@@ -77,6 +82,7 @@ export const CHAINS: Chain[] = [
     alias: 'avalanche-testnet',
     id: '43113',
     symbol: 'testAVAX',
+    testnet: true,
     providerUrl: 'https://api.avax-test.network/ext/bc/C/rpc',
     explorer: {
       api: {
@@ -91,6 +97,7 @@ export const CHAINS: Chain[] = [
     alias: 'avalanche',
     id: '43114',
     symbol: 'AVAX',
+    testnet: false,
     providerUrl: 'https://api.avax.network/ext/bc/C/rpc',
     explorer: {
       api: { url: 'https://api.snowtrace.io/api', key: { required: true, hardhatEtherscanAlias: 'avalanche' } },
@@ -102,6 +109,7 @@ export const CHAINS: Chain[] = [
     alias: 'boba-avalanche',
     id: '43288',
     symbol: 'BOBA',
+    testnet: false,
     providerUrl: 'https://replica.avax.boba.network/',
     explorer: {
       api: { url: 'https://blockexplorer.avax.boba.network/api', key: { required: false } },
@@ -113,6 +121,7 @@ export const CHAINS: Chain[] = [
     alias: 'boba-bnb',
     id: '56288',
     symbol: 'BOBA',
+    testnet: false,
     providerUrl: 'https://replica.bnb.boba.network/',
     explorer: {
       api: { url: 'https://blockexplorer.bnb.boba.network/api', key: { required: false } },
@@ -124,6 +133,7 @@ export const CHAINS: Chain[] = [
     alias: 'boba-ethereum',
     id: '288',
     symbol: 'BOBA',
+    testnet: false,
     providerUrl: 'https://lightning-replica.boba.network/',
     explorer: {
       api: { url: 'https://api.bobascan.com/api', key: { required: true } },
@@ -146,6 +156,7 @@ export const CHAINS: Chain[] = [
     alias: 'bsc-testnet',
     id: '97',
     symbol: 'testBNB',
+    testnet: true,
     providerUrl: 'https://data-seed-prebsc-1-s3.binance.org:8545/',
     explorer: {
       api: { url: 'https://api-testnet.bscscan.com/api', key: { required: true, hardhatEtherscanAlias: 'bscTestnet' } },
@@ -157,6 +168,7 @@ export const CHAINS: Chain[] = [
     alias: 'bsc',
     id: '56',
     symbol: 'BNB',
+    testnet: false,
     providerUrl: 'https://rpc.ankr.com/bsc',
     explorer: {
       api: { url: 'https://api.bscscan.com/api', key: { required: true, hardhatEtherscanAlias: 'bsc' } },
@@ -168,6 +180,7 @@ export const CHAINS: Chain[] = [
     alias: 'ethereum-goerli-testnet',
     id: '5',
     symbol: 'testETH',
+    testnet: true,
     providerUrl: 'https://rpc.ankr.com/eth_goerli',
     explorer: {
       api: { url: 'https://api-goerli.etherscan.io/api', key: { required: true, hardhatEtherscanAlias: 'goerli' } },
@@ -179,6 +192,7 @@ export const CHAINS: Chain[] = [
     alias: 'ethereum-sepolia-testnet',
     id: '11155111',
     symbol: 'testETH',
+    testnet: true,
     providerUrl: 'https://rpc-sepolia.rockx.com',
     explorer: {
       api: { url: 'https://api-sepolia.etherscan.io/api', key: { required: true, hardhatEtherscanAlias: 'sepolia' } },
@@ -190,6 +204,7 @@ export const CHAINS: Chain[] = [
     alias: 'ethereum',
     id: '1',
     symbol: 'ETH',
+    testnet: false,
     providerUrl: 'https://eth.llamarpc.com',
     explorer: {
       api: { url: 'https://api.etherscan.io/api', key: { required: true, hardhatEtherscanAlias: 'mainnet' } },
@@ -201,6 +216,7 @@ export const CHAINS: Chain[] = [
     alias: 'fantom-testnet',
     id: '4002',
     symbol: 'testFTM',
+    testnet: true,
     providerUrl: 'https://rpc.ankr.com/fantom_testnet',
     explorer: {
       api: { url: 'https://api-testnet.ftmscan.com/api', key: { required: true, hardhatEtherscanAlias: 'ftmTestnet' } },
@@ -212,6 +228,7 @@ export const CHAINS: Chain[] = [
     alias: 'fantom',
     id: '250',
     symbol: 'FTM',
+    testnet: false,
     providerUrl: 'https://rpcapi.fantom.network/',
     explorer: {
       api: { url: 'https://api.ftmscan.com/api', key: { required: true, hardhatEtherscanAlias: 'opera' } },
@@ -223,6 +240,7 @@ export const CHAINS: Chain[] = [
     alias: 'gnosis-testnet',
     id: '10200',
     symbol: 'testxDAI',
+    testnet: true,
     providerUrl: 'https://rpc.chiadochain.net',
     explorer: {
       api: { url: 'https://blockscout.chiadochain.net/api', key: { required: false, hardhatEtherscanAlias: 'chiado' } },
@@ -234,6 +252,7 @@ export const CHAINS: Chain[] = [
     alias: 'gnosis',
     id: '100',
     symbol: 'xDAI',
+    testnet: false,
     providerUrl: 'https://rpc.gnosischain.com',
     explorer: {
       api: { url: 'https://api.gnosisscan.io/api', key: { required: true, hardhatEtherscanAlias: 'gnosis' } },
@@ -245,6 +264,7 @@ export const CHAINS: Chain[] = [
     alias: 'godwoken-testnet',
     id: '71401',
     symbol: 'testpCKB',
+    testnet: true,
     providerUrl: 'https://v1.testnet.godwoken.io/rpc',
     explorer: { browserUrl: 'https://v1.testnet.gwscan.com/' },
   },
@@ -253,6 +273,7 @@ export const CHAINS: Chain[] = [
     alias: 'godwoken',
     id: '71402',
     symbol: 'pCKB',
+    testnet: false,
     providerUrl: 'https://v1.mainnet.godwoken.io/rpc',
     explorer: { browserUrl: 'https://v1.gwscan.com/' },
   },
@@ -261,6 +282,7 @@ export const CHAINS: Chain[] = [
     alias: 'metis-goerli-testnet',
     id: '599',
     symbol: 'testMETIS',
+    testnet: true,
     providerUrl: 'https://goerli.gateway.metisdevops.link',
     explorer: {
       api: { url: 'https://goerli.explorer.metisdevops.link/api', key: { required: false } },
@@ -272,6 +294,7 @@ export const CHAINS: Chain[] = [
     alias: 'metis',
     id: '1088',
     symbol: 'METIS',
+    testnet: false,
     providerUrl: 'https://andromeda.metis.io/?owner=1088',
     explorer: {
       api: { url: 'https://andromeda-explorer.metis.io/api', key: { required: false } },
@@ -283,6 +306,7 @@ export const CHAINS: Chain[] = [
     alias: 'milkomeda-c1-testnet',
     id: '200101',
     symbol: 'testmilkADA',
+    testnet: true,
     providerUrl: 'https://rpc-devnet-cardano-evm.c1.milkomeda.com',
     explorer: {
       api: { url: 'https://explorer-devnet-cardano-evm.c1.milkomeda.com/api', key: { required: false } },
@@ -294,6 +318,7 @@ export const CHAINS: Chain[] = [
     alias: 'milkomeda-c1',
     id: '2001',
     symbol: 'milkADA',
+    testnet: false,
     providerUrl: 'https://rpc-mainnet-cardano-evm.c1.milkomeda.com',
     explorer: {
       api: { url: 'https://explorer-mainnet-cardano-evm.c1.milkomeda.com/api', key: { required: false } },
@@ -305,6 +330,7 @@ export const CHAINS: Chain[] = [
     alias: 'moonbeam-testnet',
     id: '1287',
     symbol: 'testGLMR',
+    testnet: true,
     providerUrl: 'https://rpc.api.moonbase.moonbeam.network',
     explorer: {
       api: {
@@ -319,6 +345,7 @@ export const CHAINS: Chain[] = [
     alias: 'moonbeam',
     id: '1284',
     symbol: 'GLMR',
+    testnet: false,
     providerUrl: 'https://rpc.api.moonbeam.network',
     explorer: {
       api: { url: 'https://api-moonbeam.moonscan.io/api', key: { required: true, hardhatEtherscanAlias: 'moonbeam' } },
@@ -330,6 +357,7 @@ export const CHAINS: Chain[] = [
     alias: 'moonriver',
     id: '1285',
     symbol: 'MOVR',
+    testnet: false,
     providerUrl: 'https://rpc.api.moonriver.moonbeam.network',
     explorer: {
       api: {
@@ -344,6 +372,7 @@ export const CHAINS: Chain[] = [
     alias: 'optimism-goerli-testnet',
     id: '420',
     symbol: 'testETH',
+    testnet: true,
     providerUrl: 'https://goerli.optimism.io',
     explorer: {
       api: {
@@ -358,6 +387,7 @@ export const CHAINS: Chain[] = [
     alias: 'optimism',
     id: '10',
     symbol: 'ETH',
+    testnet: false,
     providerUrl: 'https://mainnet.optimism.io',
     explorer: {
       api: {
@@ -372,6 +402,7 @@ export const CHAINS: Chain[] = [
     alias: 'polygon-testnet',
     id: '80001',
     symbol: 'testMATIC',
+    testnet: true,
     providerUrl: 'https://rpc.ankr.com/polygon_mumbai',
     explorer: {
       api: {
@@ -386,6 +417,7 @@ export const CHAINS: Chain[] = [
     alias: 'polygon-zkevm-goerli-testnet',
     id: '1442',
     symbol: 'testETH',
+    testnet: true,
     providerUrl: 'https://rpc.public.zkevm-test.net',
     explorer: {
       api: { url: 'https://api-testnet-zkevm.polygonscan.com/api', key: { required: true } },
@@ -397,6 +429,7 @@ export const CHAINS: Chain[] = [
     alias: 'polygon-zkevm',
     id: '1101',
     symbol: 'ETH',
+    testnet: false,
     providerUrl: 'https://zkevm-rpc.com',
     explorer: {
       api: { url: 'https://api-zkevm.polygonscan.com/api', key: { required: true } },
@@ -408,6 +441,7 @@ export const CHAINS: Chain[] = [
     alias: 'polygon',
     id: '137',
     symbol: 'MATIC',
+    testnet: false,
     providerUrl: 'https://rpc.ankr.com/polygon',
     explorer: {
       api: { url: 'https://api.polygonscan.com/api', key: { required: true, hardhatEtherscanAlias: 'polygon' } },
@@ -419,6 +453,7 @@ export const CHAINS: Chain[] = [
     alias: 'rsk-testnet',
     id: '31',
     symbol: 'testRBTC',
+    testnet: true,
     providerUrl: 'https://public-node.testnet.rsk.co',
     explorer: { browserUrl: 'https://explorer.testnet.rsk.co/' },
   },
@@ -427,6 +462,7 @@ export const CHAINS: Chain[] = [
     alias: 'rsk',
     id: '30',
     symbol: 'RBTC',
+    testnet: false,
     providerUrl: 'https://mainnet.sovryn.app/rpc',
     explorer: { browserUrl: 'https://explorer.rsk.co/' },
   },
@@ -435,6 +471,7 @@ export const CHAINS: Chain[] = [
     alias: 'sx-testnet',
     id: '647',
     symbol: 'testSX',
+    testnet: true,
     providerUrl: 'https://rpc.toronto.sx.technology',
     explorer: {
       api: { url: 'https://explorer.toronto.sx.technology/api', key: { required: false } },
@@ -446,6 +483,7 @@ export const CHAINS: Chain[] = [
     alias: 'sx',
     id: '416',
     symbol: 'SX',
+    testnet: false,
     providerUrl: 'https://rpc.sx.technology',
     explorer: {
       api: { url: 'https://explorer.sx.technology/api', key: { required: false } },
@@ -457,6 +495,7 @@ export const CHAINS: Chain[] = [
     alias: 'zksync-goerli-testnet',
     id: '280',
     symbol: 'testETH',
+    testnet: true,
     providerUrl: 'https://testnet.era.zksync.dev',
     explorer: { browserUrl: 'https://goerli.explorer.zksync.io/' },
   },
@@ -465,6 +504,7 @@ export const CHAINS: Chain[] = [
     alias: 'zksync',
     id: '324',
     symbol: 'ETH',
+    testnet: false,
     providerUrl: 'https://mainnet.era.zksync.io',
     explorer: { browserUrl: 'https://explorer.zksync.io/' },
   },

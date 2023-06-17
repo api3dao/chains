@@ -3,6 +3,7 @@
   "alias": "sx-testnet",
   "id": "647",
   "symbol": "testSX",
+  "testnet": true,
   "providerUrl": "https://rpc.toronto.sx.technology",
   "explorer": {
     "api": {

@@ -3,6 +3,7 @@
   "alias": "ethereum-sepolia-testnet",
   "id": "11155111",
   "symbol": "testETH",
+  "testnet": true,
   "providerUrl": "https://rpc-sepolia.rockx.com",
   "explorer": {
     "api": {

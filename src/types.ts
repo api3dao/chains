@@ -24,6 +24,7 @@ export const chainSchema = z.object({
   id: z.string().regex(/^\d+$/),
   providerUrl: z.string().url(),
   symbol: z.string(),
+  testnet: z.boolean(),
   explorer: chainExplorerSchema,
 });
 

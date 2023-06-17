@@ -3,6 +3,7 @@
   "alias": "moonbeam-testnet",
   "id": "1287",
   "symbol": "testGLMR",
+  "testnet": true,
   "providerUrl": "https://rpc.api.moonbase.moonbeam.network",
   "explorer": {
     "api": {

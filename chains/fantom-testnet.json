@@ -3,6 +3,7 @@
   "alias": "fantom-testnet",
   "id": "4002",
   "symbol": "testFTM",
+  "testnet": true,
   "providerUrl": "https://rpc.ankr.com/fantom_testnet",
   "explorer": {
     "api": {

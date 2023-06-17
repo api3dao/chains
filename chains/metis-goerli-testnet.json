@@ -3,6 +3,7 @@
   "alias": "metis-goerli-testnet",
   "id": "599",
   "symbol": "testMETIS",
+  "testnet": true,
   "providerUrl": "https://goerli.gateway.metisdevops.link",
   "explorer": {
     "api": {

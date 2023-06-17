@@ -3,6 +3,7 @@
   "alias": "rsk",
   "id": "30",
   "symbol": "RBTC",
+  "testnet": false,
   "providerUrl": "https://mainnet.sovryn.app/rpc",
   "explorer": {
     "browserUrl": "https://explorer.rsk.co/"

@@ -3,6 +3,7 @@
   "alias": "optimism",
   "id": "10",
   "symbol": "ETH",
+  "testnet": false,
   "providerUrl": "https://mainnet.optimism.io",
   "explorer": {
     "api": {

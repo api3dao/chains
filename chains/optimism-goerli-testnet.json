@@ -3,6 +3,7 @@
   "alias": "optimism-goerli-testnet",
   "id": "420",
   "symbol": "testETH",
+  "testnet": true,
   "providerUrl": "https://goerli.optimism.io",
   "explorer": {
     "api": {

@@ -3,6 +3,7 @@
   "alias": "bsc",
   "id": "56",
   "symbol": "BNB",
+  "testnet": false,
   "providerUrl": "https://rpc.ankr.com/bsc",
   "explorer": {
     "api": {

@@ -3,6 +3,7 @@
   "alias": "boba-ethereum",
   "id": "288",
   "symbol": "BOBA",
+  "testnet": false,
   "providerUrl": "https://lightning-replica.boba.network/",
   "explorer": {
     "api": {

@@ -3,6 +3,7 @@
   "alias": "milkomeda-c1",
   "id": "2001",
   "symbol": "milkADA",
+  "testnet": false,
   "providerUrl": "https://rpc-mainnet-cardano-evm.c1.milkomeda.com",
   "explorer": {
     "api": {

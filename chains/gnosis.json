@@ -3,6 +3,7 @@
   "alias": "gnosis",
   "id": "100",
   "symbol": "xDAI",
+  "testnet": false,
   "providerUrl": "https://rpc.gnosischain.com",
   "explorer": {
     "api": {

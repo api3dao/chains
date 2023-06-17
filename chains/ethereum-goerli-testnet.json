@@ -3,6 +3,7 @@
   "alias": "ethereum-goerli-testnet",
   "id": "5",
   "symbol": "testETH",
+  "testnet": true,
   "providerUrl": "https://rpc.ankr.com/eth_goerli",
   "explorer": {
     "api": {

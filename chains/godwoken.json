@@ -3,6 +3,7 @@
   "alias": "godwoken",
   "id": "71402",
   "symbol": "pCKB",
+  "testnet": false,
   "providerUrl": "https://v1.mainnet.godwoken.io/rpc",
   "explorer": {
     "browserUrl": "https://v1.gwscan.com/"
