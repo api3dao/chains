@@ -8,14 +8,12 @@
   - [hardhat-etherscan](#hardhat-etherscan)
 - [API](#api)
   - [CHAINS](#chains)
-  - [getChainByAlias](#getchainbyalias)
   - [hardhatConfigNetworks](#hardhatconfignetworks)
   - [hardhatEtherscan](#hardhatetherscan)
   - [getEnvVariables](#getenvvariables)
   - [Types](#types)
 - [Scripts](#scripts)
   - [generate:chains](#generatechains)
-  - [env:write](#envwrite)
 - [Development](#development)
   - [Validation](#validation)
 - [Building](#building)
@@ -65,24 +63,6 @@ console.log(CHAINS);
   },
   ...
 ]   
-*/
-```
-
-### getChainByAlias
-
-Returns a single `Chain` record found by it's alias.
-Throws an error if the `Chain` is not found.
-
-```ts
-import { getChainByAlias } from '@api3/chains';
-console.log(getChainByAlias('ethereum'));
-/*
-{
-  "name": "Ethereum",
-  "alias": "ethereum",
-  "id": "1",
-  ...
-}
 */
 ```
 
@@ -156,14 +136,6 @@ Generates the latest `CHAINS` array and outputs the file to `src/generated/chain
 
 ```sh
 yarn generate:chains
-```
-
-### env:write
-
-Generates the default content for a `.env` file using the output of `getEnvVariables` as the keys.
-
-```sh
-yarn env:write --path .env
 ```
 
 ### providers:ping

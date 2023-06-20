@@ -1,21 +1,10 @@
 import { CHAINS } from './generated/chains';
-import { Chain, HardhatConfigNetworks, HardhatEtherscanNetworks } from './types';
+import { HardhatConfigNetworks, HardhatEtherscanNetworks } from './types';
 
 export * from './types';
 
 // NOTE: the following file is generated with the generate-chains.ts script
 export { CHAINS } from './generated/chains';
-
-export function getChainByAlias(alias: string): Chain {
-  const chains = CHAINS.filter((c) => c.alias === alias);
-  if (!chains) {
-    throw new Error(`Chain with alias:${alias} not found`);
-  }
-  if (chains.length > 1) {
-    throw new Error(`Multiple instances of chain with alias:${alias} found`);
-  }
-  return chains[0]!;
-}
 
 export function hardhatConfigNetworks(): HardhatConfigNetworks {
   return CHAINS.reduce((networks, chain) => {
