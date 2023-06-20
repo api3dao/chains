@@ -3,6 +3,7 @@
   "alias": "polygon-zkevm-goerli-testnet",
   "id": "1442",
   "symbol": "testETH",
+  "testnet": true,
   "providerUrl": "https://rpc.public.zkevm-test.net",
   "explorer": {
     "api": {

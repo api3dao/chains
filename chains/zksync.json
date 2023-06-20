@@ -3,6 +3,7 @@
   "alias": "zksync",
   "id": "324",
   "symbol": "ETH",
+  "testnet": false,
   "providerUrl": "https://mainnet.era.zksync.io",
   "explorer": {
     "browserUrl": "https://explorer.zksync.io/"

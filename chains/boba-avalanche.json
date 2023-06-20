@@ -3,6 +3,7 @@
   "alias": "boba-avalanche",
   "id": "43288",
   "symbol": "BOBA",
+  "testnet": false,
   "providerUrl": "https://replica.avax.boba.network/",
   "explorer": {
     "api": {

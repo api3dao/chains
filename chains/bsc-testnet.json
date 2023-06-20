@@ -3,6 +3,7 @@
   "alias": "bsc-testnet",
   "id": "97",
   "symbol": "testBNB",
+  "testnet": true,
   "providerUrl": "https://data-seed-prebsc-1-s3.binance.org:8545/",
   "explorer": {
     "api": {

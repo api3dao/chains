@@ -3,6 +3,7 @@
   "alias": "metis",
   "id": "1088",
   "symbol": "METIS",
+  "testnet": false,
   "providerUrl": "https://andromeda.metis.io/?owner=1088",
   "explorer": {
     "api": {

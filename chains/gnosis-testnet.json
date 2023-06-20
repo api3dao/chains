@@ -3,6 +3,7 @@
   "alias": "gnosis-testnet",
   "id": "10200",
   "symbol": "testxDAI",
+  "testnet": true,
   "providerUrl": "https://rpc.chiadochain.net",
   "explorer": {
     "api": {

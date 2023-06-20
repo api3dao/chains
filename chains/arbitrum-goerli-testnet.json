@@ -3,6 +3,7 @@
   "alias": "arbitrum-goerli-testnet",
   "id": "421613",
   "symbol": "testETH",
+  "testnet": true,
   "providerUrl": "https://goerli-rollup.arbitrum.io/rpc",
   "explorer": {
     "api": {

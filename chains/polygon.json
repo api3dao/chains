@@ -3,6 +3,7 @@
   "alias": "polygon",
   "id": "137",
   "symbol": "MATIC",
+  "testnet": false,
   "providerUrl": "https://rpc.ankr.com/polygon",
   "explorer": {
     "api": {

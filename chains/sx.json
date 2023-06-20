@@ -3,6 +3,7 @@
   "alias": "sx",
   "id": "416",
   "symbol": "SX",
+  "testnet": false,
   "providerUrl": "https://rpc.sx.technology",
   "explorer": {
     "api": {

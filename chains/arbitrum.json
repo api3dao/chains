@@ -3,6 +3,7 @@
   "alias": "arbitrum",
   "id": "42161",
   "symbol": "ETH",
+  "testnet": false,
   "providerUrl": "https://arb1.arbitrum.io/rpc",
   "explorer": {
     "api": {

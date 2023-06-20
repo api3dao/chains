@@ -3,6 +3,7 @@
   "alias": "polygon-testnet",
   "id": "80001",
   "symbol": "testMATIC",
+  "testnet": true,
   "providerUrl": "https://rpc.ankr.com/polygon_mumbai",
   "explorer": {
     "api": {
