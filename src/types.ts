@@ -35,7 +35,7 @@ export type ChainExplorerAPIKey = z.infer<typeof chainExplorerAPIKeySchema>;
 
 export interface HardhatNetworksConfig {
   [key: string]: {
-    accounts: { mnemonic: '' };
+    accounts: { mnemonic: string };
     chainId: number;
     url: string;
   }

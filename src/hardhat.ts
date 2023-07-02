@@ -53,7 +53,7 @@ export function buildEtherscanConfig(): HardhatEtherscanConfig {
 export function buildNetworksConfig(): HardhatNetworksConfig {
   return CHAINS.reduce((networks, chain) => {
     networks[chain.alias] = {
-      accounts: { mnemonic: '' },
+      accounts: { mnemonic: process.env.MNEMONIC || '' },
       chainId: Number(chain.id),
       url: chain.providerUrl,
     };
