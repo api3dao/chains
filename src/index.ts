@@ -1,19 +1,14 @@
-import { CHAINS } from './generated/chains';
-import { buildEtherscanConfig, buildNetworksConfig } from './hardhat';
-import { toUpperSnakeCase } from './utils/strings';
-
-export * from './types';
+import * as hardhat from './hardhat';
 
 // NOTE: the following file is generated with the generate-chains.ts script
 export { CHAINS } from './generated/chains';
 
-export const hardhat = { buildEtherscanConfig, buildNetworksConfig };
+export * as hardhat from './hardhat';
+export * from './types';
 
 export function getEnvVariables(): string[] {
-  const keys = CHAINS
-    .filter((chain) => chain.explorer?.api?.key?.required)
-    .map((chain) => `${toUpperSnakeCase(chain.alias)}_ETHERSCAN_API_KEY`);
+  const hardhatEnvVariables = hardhat.buildEnvVariables();
 
-  return ['MNEMONIC', ...keys];
+  return ['MNEMONIC', ...hardhatEnvVariables];
 }
 

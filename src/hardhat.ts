@@ -1,6 +1,16 @@
 import { CHAINS } from './generated/chains';
 import { toUpperSnakeCase } from './utils/strings';
-import { HardhatEtherscanConfig, HardhatNetworksConfig } from './types';
+import { Chain, HardhatEtherscanConfig, HardhatNetworksConfig } from './types';
+
+export function buildEnvVariables(): string[] {
+  return CHAINS
+    .filter((chain) => chain.explorer?.api?.key?.required)
+    .map((chain) => buildEtherscanApiKeyName(chain));
+}
+
+export function buildEtherscanApiKeyName(chain: Chain): string {
+  return `${toUpperSnakeCase(chain.alias)}_ETHERSCAN_API_KEY`;
+}
 
 // https://hardhat.org/hardhat-runner/plugins/nomicfoundation-hardhat-verify#multiple-api-keys-and-alternative-block-explorers
 export function buildEtherscanConfig(): HardhatEtherscanConfig {
@@ -17,7 +27,7 @@ export function buildEtherscanConfig(): HardhatEtherscanConfig {
     const explorer = chain.explorer;
     const apiKey = chain.explorer.api.key;
 
-    const apiKeyEnvName = `${toUpperSnakeCase(chain.alias)}_ETHERSCAN_API_KEY`;
+    const apiKeyEnvName = buildEtherscanApiKeyName(chain);
     const apiKeyValue = apiKey.required ? chain.alias : process.env[apiKeyEnvName];
 
     if (apiKey.hardhatEtherscanAlias) {
