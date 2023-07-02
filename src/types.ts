@@ -33,7 +33,7 @@ export type ChainExplorer = z.infer<typeof chainExplorerSchema>;
 export type ChainExplorerAPI = z.infer<typeof chainExplorerAPISchema>;
 export type ChainExplorerAPIKey = z.infer<typeof chainExplorerAPIKeySchema>;
 
-export interface HardhatConfigNetworks {
+export interface HardhatNetworksConfig {
   [key: string]: {
     accounts: { mnemonic: '' };
     chainId: number;
@@ -41,11 +41,15 @@ export interface HardhatConfigNetworks {
   }
 }
 
-export interface HardhatEtherscanNetworks {
-  apiKey: { [etherscanAlias: string]: string; }
-  customChains: {
-    network: string;
-    chainId: number;
-    urls: { apiURL: string; browserURL: string; }
-  }[]
+// https://hardhat.org/hardhat-runner/plugins/nomicfoundation-hardhat-verify#adding-support-for-other-networks
+export interface HardhatEtherscanCustomChain {
+  network: string;
+  chainId: number;
+  urls: { apiURL: string; browserURL: string; }
 }
+
+export interface HardhatEtherscanConfig {
+  apiKey: { [alias: string]: string; }
+  customChains: HardhatEtherscanCustomChain[];
+}
+
