@@ -51,6 +51,11 @@ export function buildEtherscanConfig(): HardhatEtherscanConfig {
 }
 
 export function buildNetworksConfig(): HardhatNetworksConfig {
+  // Not usable outside of a Node.js environment
+  if (typeof window !== 'undefined') {
+    return {};
+  }
+
   return CHAINS.reduce((networks, chain) => {
     networks[chain.alias] = {
       accounts: { mnemonic: process.env.MNEMONIC || '' },
