@@ -5,6 +5,7 @@
   "symbol": "testRBTC",
   "testnet": true,
   "providerUrl": "https://public-node.testnet.rsk.co",
+  "averageBlockTimeMs": 30000,
   "explorer": {
     "browserUrl": "https://explorer.testnet.rsk.co/"
   }

@@ -5,6 +5,7 @@
   "symbol": "RBTC",
   "testnet": false,
   "providerUrl": "https://mainnet.sovryn.app/rpc",
+  "averageBlockTimeMs": 30000,
   "explorer": {
     "browserUrl": "https://explorer.rsk.co/"
   }

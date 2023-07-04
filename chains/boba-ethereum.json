@@ -5,6 +5,7 @@
   "symbol": "BOBA",
   "testnet": false,
   "providerUrl": "https://lightning-replica.boba.network/",
+  "averageBlockTimeMs": 0,
   "explorer": {
     "api": {
       "url": "https://api.bobascan.com/api",

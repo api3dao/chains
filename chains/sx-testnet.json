@@ -5,6 +5,7 @@
   "symbol": "testSX",
   "testnet": true,
   "providerUrl": "https://rpc.toronto.sx.technology",
+  "averageBlockTimeMs": 0,
   "explorer": {
     "api": {
       "url": "https://explorer.toronto.sx.technology/api",

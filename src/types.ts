@@ -26,6 +26,7 @@ export const chainSchema = z.object({
   symbol: z.string(),
   testnet: z.boolean(),
   explorer: chainExplorerSchema,
+  averageBlockTimeMs: z.number().positive(),
 });
 
 export type Chain = z.infer<typeof chainSchema>;

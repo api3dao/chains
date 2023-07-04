@@ -5,6 +5,7 @@
   "symbol": "testETH",
   "testnet": true,
   "providerUrl": "https://testnet.era.zksync.dev",
+  "averageBlockTimeMs": 0,
   "explorer": {
     "browserUrl": "https://goerli.explorer.zksync.io/"
   }

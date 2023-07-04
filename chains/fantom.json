@@ -5,6 +5,7 @@
   "symbol": "FTM",
   "testnet": false,
   "providerUrl": "https://rpcapi.fantom.network/",
+  "averageBlockTimeMs": 0,
   "explorer": {
     "api": {
       "url": "https://api.ftmscan.com/api",

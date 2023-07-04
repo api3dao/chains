@@ -5,6 +5,7 @@
   "symbol": "testMATIC",
   "testnet": true,
   "providerUrl": "https://rpc.ankr.com/polygon_mumbai",
+  "averageBlockTimeMs": 2300,
   "explorer": {
     "api": {
       "url": "https://api-testnet.polygonscan.com/api",

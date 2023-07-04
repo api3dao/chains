@@ -5,6 +5,7 @@
   "symbol": "xDAI",
   "testnet": false,
   "providerUrl": "https://rpc.gnosischain.com",
+  "averageBlockTimeMs": 0,
   "explorer": {
     "api": {
       "url": "https://api.gnosisscan.io/api",

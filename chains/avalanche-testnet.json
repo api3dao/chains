@@ -5,6 +5,7 @@
   "symbol": "testAVAX",
   "testnet": true,
   "providerUrl": "https://api.avax-test.network/ext/bc/C/rpc",
+  "averageBlockTimeMs": 19800,
   "explorer": {
     "api": {
       "url": "https://api-testnet.snowtrace.io/api",

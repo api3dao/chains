@@ -5,6 +5,7 @@
   "symbol": "BNB",
   "testnet": false,
   "providerUrl": "https://rpc.ankr.com/bsc",
+  "averageBlockTimeMs": 3010,
   "explorer": {
     "api": {
       "url": "https://api.bscscan.com/api",

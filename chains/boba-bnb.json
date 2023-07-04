@@ -5,6 +5,7 @@
   "symbol": "BOBA",
   "testnet": false,
   "providerUrl": "https://replica.bnb.boba.network/",
+  "averageBlockTimeMs": 0,
   "explorer": {
     "api": {
       "url": "https://blockexplorer.bnb.boba.network/api",

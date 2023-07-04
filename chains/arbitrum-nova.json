@@ -5,6 +5,7 @@
   "symbol": "ETH",
   "testnet": false,
   "providerUrl": "https://nova.arbitrum.io/rpc",
+  "averageBlockTimeMs": 0,
   "explorer": {
     "api": {
       "url": "https://api-nova.arbiscan.io/api",

@@ -5,6 +5,7 @@
   "symbol": "ETH",
   "testnet": false,
   "providerUrl": "https://mainnet.optimism.io",
+  "averageBlockTimeMs": 0,
   "explorer": {
     "api": {
       "url": "https://api-optimistic.etherscan.io/api",

@@ -5,6 +5,7 @@
   "symbol": "SX",
   "testnet": false,
   "providerUrl": "https://rpc.sx.technology",
+  "averageBlockTimeMs": 0,
   "explorer": {
     "api": {
       "url": "https://explorer.sx.technology/api",

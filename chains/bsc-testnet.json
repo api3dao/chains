@@ -5,6 +5,7 @@
   "symbol": "testBNB",
   "testnet": true,
   "providerUrl": "https://data-seed-prebsc-1-s3.binance.org:8545/",
+  "averageBlockTimeMs": 0,
   "explorer": {
     "api": {
       "url": "https://api-testnet.bscscan.com/api",

@@ -5,6 +5,7 @@
   "symbol": "testETH",
   "testnet": true,
   "providerUrl": "https://goerli-rollup.arbitrum.io/rpc",
+  "averageBlockTimeMs": 0,
   "explorer": {
     "api": {
       "url": "https://api-goerli.arbiscan.io/api",

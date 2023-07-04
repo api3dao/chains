@@ -5,6 +5,7 @@
   "symbol": "ETH",
   "testnet": false,
   "providerUrl": "https://eth.llamarpc.com",
+  "averageBlockTimeMs": 12100,
   "explorer": {
     "api": {
       "url": "https://api.etherscan.io/api",

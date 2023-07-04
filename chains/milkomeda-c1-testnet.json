@@ -5,6 +5,7 @@
   "symbol": "testmilkADA",
   "testnet": true,
   "providerUrl": "https://rpc-devnet-cardano-evm.c1.milkomeda.com",
+  "averageBlockTimeMs": 4000,
   "explorer": {
     "api": {
       "url": "https://explorer-devnet-cardano-evm.c1.milkomeda.com/api",

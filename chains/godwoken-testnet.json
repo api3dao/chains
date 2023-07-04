@@ -5,6 +5,7 @@
   "symbol": "testpCKB",
   "testnet": true,
   "providerUrl": "https://v1.testnet.godwoken.io/rpc",
+  "averageBlockTimeMs": 0,
   "explorer": {
     "browserUrl": "https://v1.testnet.gwscan.com/"
   }

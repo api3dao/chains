@@ -5,6 +5,7 @@
   "symbol": "testGLMR",
   "testnet": true,
   "providerUrl": "https://rpc.api.moonbase.moonbeam.network",
+  "averageBlockTimeMs": 0,
   "explorer": {
     "api": {
       "url": "https://api-moonbase.moonscan.io/api",

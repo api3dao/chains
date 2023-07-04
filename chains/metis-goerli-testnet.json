@@ -5,6 +5,7 @@
   "symbol": "testMETIS",
   "testnet": true,
   "providerUrl": "https://goerli.gateway.metisdevops.link",
+  "averageBlockTimeMs": 0,
   "explorer": {
     "api": {
       "url": "https://goerli.explorer.metisdevops.link/api",

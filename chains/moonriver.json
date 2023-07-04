@@ -5,6 +5,7 @@
   "symbol": "MOVR",
   "testnet": false,
   "providerUrl": "https://rpc.api.moonriver.moonbeam.network",
+  "averageBlockTimeMs": 0,
   "explorer": {
     "api": {
       "url": "https://api-moonriver.moonscan.io/api",

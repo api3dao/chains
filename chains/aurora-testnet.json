@@ -5,6 +5,7 @@
   "symbol": "testETH",
   "testnet": true,
   "providerUrl": "https://testnet.aurora.dev/",
+  "averageBlockTimeMs": 0,
   "explorer": {
     "api": {
       "url": "https://explorer.testnet.aurora.dev/api",
