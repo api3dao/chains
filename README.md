@@ -8,12 +8,13 @@
   - [hardhat-etherscan](#hardhat-etherscan)
 - [API](#api)
   - [CHAINS](#chains)
-  - [hardhatConfigNetworks](#hardhatconfignetworks)
-  - [hardhatEtherscan](#hardhatetherscan)
-  - [getEnvVariables](#getenvvariables)
+  - [hardhatConfig.networks()](#hardhatconfignetworks)
+  - [hardhatConfig.etherscan()](#hardhatconfigetherscan)
+  - [hardhatConfig.getEnvVariableNames()](#hardhatconfiggetenvvariablenames)
   - [Types](#types)
 - [Scripts](#scripts)
   - [generate:chains](#generatechains)
+  - [providers:ping](#providersping)
 - [Development](#development)
   - [Validation](#validation)
 - [Building](#building)
@@ -53,7 +54,7 @@ A static array of `Chain` objects.
 ```ts
 import { CHAINS } from '@api3/chains';
 console.log(CHAINS);
-/* 
+/*
 [
   {
     name: 'Arbitrum testnet',
@@ -62,17 +63,17 @@ console.log(CHAINS);
     ...
   },
   ...
-]   
+]
 */
 ```
 
-### hardhatConfigNetworks
+### hardhatConfig.networks()
 
 Returns an object where the key is each chain's alias and the value is an object that can be used as the `networks` field of [`hardhat.config.js`](https://hardhat.org/hardhat-runner/docs/config).
 
 ```ts
-import { hardhatConfigNetworks } from '@api3/chains';
-console.log(hardhatConfigNetworks());
+import { hardhatConfig } from '@api3/chains';
+console.log(hardhatConfig.networks());
 /*
 {
   "arbitrum-goerli-testnet": {
@@ -85,13 +86,13 @@ console.log(hardhatConfigNetworks());
 */
 ```
 
-### hardhatEtherscan
+### hardhatConfig.etherscan()
 
 Returns an object where the key is each chain's alias and the value is an object that can be used as the `etherscan` field of [`hardhat.config.js`](https://hardhat.org/hardhat-runner/docs/config) (requires the [`hardhat-etherscan` plugin](https://hardhat.org/hardhat-runner/plugins/nomiclabs-hardhat-etherscan)).
 
 ```ts
-import { hardhatEtherscan } from '@api3/chains';
-console.log(hardhatEtherscan());
+import { hardhatConfig } from '@api3/chains';
+console.log(hardhatConfig.etherscan());
 /*
 {
   apiKey: {
@@ -104,17 +105,19 @@ console.log(hardhatEtherscan());
 */
 ```
 
-### getEnvVariables
+### hardhatConfig.getEnvVariableNames()
 
 Returns an array of expected environment variable names for chains that have an API key required for the explorer.
 
+NOTE: Each `ETHERSCAN_API_KEY_` environment variable has the chain alias as a suffix, where the alias has been converted to upper snake case.
+
 ```ts
-import { getEnvVariables } from '@api3/chains';
-console.log(getEnvVariables());
+import { hardhatConfig } from '@api3/chains';
+console.log(hardhatConfig.getEnvVariableNames());
 /*
 [
   'MNEMONIC',
-  'ETHERSCAN_API_KEY_arbitrum-goerli-testnet',
+  'ETHERSCAN_API_KEY_ARBITRUM_GOERLI_TESTNET',
   ...
 ]
 */
