@@ -2,58 +2,60 @@ import { CHAINS } from './generated/chains';
 import { toUpperSnakeCase } from './utils/strings';
 import { Chain, HardhatEtherscanConfig, HardhatNetworksConfig } from './types';
 
-export function buildEnvVariables(): string[] {
-  return CHAINS
-    .filter((chain) => chain.explorer?.api?.key?.required)
-    .map((chain) => buildEtherscanApiKeyName(chain));
+export function getEnvVariableNames(): string[] {
+  const hardhatApiKeyEnvNames = CHAINS.filter((chain) => chain.explorer?.api?.key?.required).map((chain) =>
+    buildEtherscanApiKeyName(chain)
+  );
+
+  return ['MNEMONIC', ...hardhatApiKeyEnvNames];
 }
 
 export function buildEtherscanApiKeyName(chain: Chain): string {
-  return `${toUpperSnakeCase(chain.alias)}_ETHERSCAN_API_KEY`;
+  return `ETHERSCAN_API_KEY_${toUpperSnakeCase(chain.alias)}`;
 }
 
 // https://hardhat.org/hardhat-runner/plugins/nomicfoundation-hardhat-verify#multiple-api-keys-and-alternative-block-explorers
 export function buildEtherscanConfig(): HardhatEtherscanConfig {
-  // Not usable outside of a Node.js environment
   if (typeof window !== 'undefined') {
-    return { apiKey: {}, customChains: [] };
+    throw new Error('Cannot be run outside of a Node.js environment');
   }
 
-  return CHAINS.reduce((etherscan, chain) => {
-    if (!chain.explorer || !chain.explorer.api) {
+  return CHAINS.reduce(
+    (etherscan, chain) => {
+      if (!chain.explorer || !chain.explorer.api) {
+        return etherscan;
+      }
+
+      const apiKey = chain.explorer.api.key;
+
+      const apiKeyEnvName = buildEtherscanApiKeyName(chain);
+      const apiKeyValue = apiKey.required ? process.env[apiKeyEnvName] || 'NOT_FOUND' : 'DUMMY_VALUE';
+
+      if (apiKey.hardhatEtherscanAlias) {
+        etherscan.apiKey[apiKey.hardhatEtherscanAlias] = apiKeyValue;
+        return etherscan;
+      }
+
+      etherscan.customChains.push({
+        network: chain.alias,
+        chainId: Number(chain.id),
+        urls: {
+          apiURL: chain.explorer.api.url,
+          browserURL: chain.explorer.browserUrl,
+        },
+      });
+
+      etherscan.apiKey[chain.alias] = apiKeyValue || '';
+
       return etherscan;
-    }
-
-    const explorer = chain.explorer;
-    const apiKey = chain.explorer.api.key;
-
-    const apiKeyEnvName = buildEtherscanApiKeyName(chain);
-    const apiKeyValue = apiKey.required ? chain.alias : process.env[apiKeyEnvName];
-
-    if (apiKey.hardhatEtherscanAlias) {
-      etherscan.apiKey[apiKey.hardhatEtherscanAlias] = apiKeyValue || '';
-      return etherscan;
-    }
-
-    etherscan.customChains.push({
-      network: chain.alias,
-      chainId: Number(chain.id),
-      urls: {
-        apiURL: explorer.api?.url || '',
-        browserURL: explorer.browserUrl,
-      },
-    });
-
-    etherscan.apiKey[chain.alias] = apiKeyValue || '';
-
-    return etherscan;
-  }, { apiKey: {}, customChains: [] } as HardhatEtherscanConfig);
+    },
+    { apiKey: {}, customChains: [] } as HardhatEtherscanConfig
+  );
 }
 
 export function buildNetworksConfig(): HardhatNetworksConfig {
-  // Not usable outside of a Node.js environment
   if (typeof window !== 'undefined') {
-    return {};
+    throw new Error('Cannot be called outside of a Node.js environment');
   }
 
   return CHAINS.reduce((networks, chain) => {
