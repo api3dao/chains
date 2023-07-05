@@ -15,7 +15,6 @@ export const CHAINS: Chain[] = [
     symbol: 'testETH',
     testnet: true,
     providerUrl: 'https://goerli-rollup.arbitrum.io/rpc',
-    averageBlockTimeMs: 0,
     explorer: {
       api: {
         url: 'https://api-goerli.arbiscan.io/api',
@@ -23,6 +22,7 @@ export const CHAINS: Chain[] = [
       },
       browserUrl: 'https://testnet.arbiscan.io/',
     },
+    blockTimeMs: 641,
   },
   {
     name: 'Arbitrum Nova',
@@ -31,11 +31,11 @@ export const CHAINS: Chain[] = [
     symbol: 'ETH',
     testnet: false,
     providerUrl: 'https://nova.arbitrum.io/rpc',
-    averageBlockTimeMs: 0,
     explorer: {
       api: { url: 'https://api-nova.arbiscan.io/api', key: { required: true } },
       browserUrl: 'https://nova.arbiscan.io/',
     },
+    blockTimeMs: 862,
   },
   {
     name: 'Arbitrum',
@@ -44,11 +44,11 @@ export const CHAINS: Chain[] = [
     symbol: 'ETH',
     testnet: false,
     providerUrl: 'https://arb1.arbitrum.io/rpc',
-    averageBlockTimeMs: 0,
     explorer: {
       api: { url: 'https://api.arbiscan.io/api', key: { required: true, hardhatEtherscanAlias: 'arbitrumOne' } },
       browserUrl: 'https://arbiscan.io/',
     },
+    blockTimeMs: 265,
   },
   {
     name: 'Aurora testnet',
@@ -57,7 +57,6 @@ export const CHAINS: Chain[] = [
     symbol: 'testETH',
     testnet: true,
     providerUrl: 'https://testnet.aurora.dev/',
-    averageBlockTimeMs: 0,
     explorer: {
       api: {
         url: 'https://explorer.testnet.aurora.dev/api',
@@ -65,6 +64,7 @@ export const CHAINS: Chain[] = [
       },
       browserUrl: 'https://explorer.testnet.aurora.dev/',
     },
+    blockTimeMs: 988,
   },
   {
     name: 'Aurora',
@@ -73,7 +73,6 @@ export const CHAINS: Chain[] = [
     symbol: 'ETH',
     testnet: false,
     providerUrl: 'https://mainnet.aurora.dev/',
-    averageBlockTimeMs: 0,
     explorer: {
       api: {
         url: 'https://explorer.mainnet.aurora.dev/api',
@@ -81,6 +80,7 @@ export const CHAINS: Chain[] = [
       },
       browserUrl: 'https://explorer.aurora.dev/',
     },
+    blockTimeMs: 1135,
   },
   {
     name: 'Avalanche testnet',
@@ -89,7 +89,6 @@ export const CHAINS: Chain[] = [
     symbol: 'testAVAX',
     testnet: true,
     providerUrl: 'https://api.avax-test.network/ext/bc/C/rpc',
-    averageBlockTimeMs: 19800,
     explorer: {
       api: {
         url: 'https://api-testnet.snowtrace.io/api',
@@ -97,6 +96,7 @@ export const CHAINS: Chain[] = [
       },
       browserUrl: 'https://testnet.snowtrace.io/',
     },
+    blockTimeMs: 2398,
   },
   {
     name: 'Avalanche',
@@ -105,11 +105,11 @@ export const CHAINS: Chain[] = [
     symbol: 'AVAX',
     testnet: false,
     providerUrl: 'https://api.avax.network/ext/bc/C/rpc',
-    averageBlockTimeMs: 19800,
     explorer: {
       api: { url: 'https://api.snowtrace.io/api', key: { required: true, hardhatEtherscanAlias: 'avalanche' } },
       browserUrl: 'https://snowtrace.io/',
     },
+    blockTimeMs: 2036,
   },
   {
     name: 'Boba/Avalanche',
@@ -118,11 +118,11 @@ export const CHAINS: Chain[] = [
     symbol: 'BOBA',
     testnet: false,
     providerUrl: 'https://replica.avax.boba.network/',
-    averageBlockTimeMs: 0,
     explorer: {
       api: { url: 'https://blockexplorer.avax.boba.network/api', key: { required: false } },
       browserUrl: 'https://blockexplorer.avax.boba.network/',
     },
+    blockTimeMs: 70618,
   },
   {
     name: 'Boba/BNB',
@@ -131,11 +131,11 @@ export const CHAINS: Chain[] = [
     symbol: 'BOBA',
     testnet: false,
     providerUrl: 'https://replica.bnb.boba.network/',
-    averageBlockTimeMs: 0,
     explorer: {
       api: { url: 'https://blockexplorer.bnb.boba.network/api', key: { required: false } },
       browserUrl: 'https://blockexplorer.bnb.boba.network/',
     },
+    blockTimeMs: 636,
   },
   {
     name: 'Boba/Ethereum',
@@ -144,11 +144,11 @@ export const CHAINS: Chain[] = [
     symbol: 'BOBA',
     testnet: false,
     providerUrl: 'https://lightning-replica.boba.network/',
-    averageBlockTimeMs: 0,
     explorer: {
       api: { url: 'https://api.bobascan.com/api', key: { required: true } },
       browserUrl: 'https://bobascan.com/',
     },
+    blockTimeMs: 86994,
   },
   {
     name: 'BSC testnet',
@@ -157,11 +157,11 @@ export const CHAINS: Chain[] = [
     symbol: 'testBNB',
     testnet: true,
     providerUrl: 'https://data-seed-prebsc-1-s3.binance.org:8545/',
-    averageBlockTimeMs: 0,
     explorer: {
       api: { url: 'https://api-testnet.bscscan.com/api', key: { required: true, hardhatEtherscanAlias: 'bscTestnet' } },
       browserUrl: 'https://testnet.bscscan.com/',
     },
+    blockTimeMs: 3002,
   },
   {
     name: 'BSC',
@@ -170,11 +170,11 @@ export const CHAINS: Chain[] = [
     symbol: 'BNB',
     testnet: false,
     providerUrl: 'https://rpc.ankr.com/bsc',
-    averageBlockTimeMs: 3010,
     explorer: {
       api: { url: 'https://api.bscscan.com/api', key: { required: true, hardhatEtherscanAlias: 'bsc' } },
       browserUrl: 'https://bscscan.com/',
     },
+    blockTimeMs: 3009,
   },
   {
     name: 'Ethereum Goerli testnet',
@@ -183,11 +183,11 @@ export const CHAINS: Chain[] = [
     symbol: 'testETH',
     testnet: true,
     providerUrl: 'https://rpc.ankr.com/eth_goerli',
-    averageBlockTimeMs: 0,
     explorer: {
       api: { url: 'https://api-goerli.etherscan.io/api', key: { required: true, hardhatEtherscanAlias: 'goerli' } },
       browserUrl: 'https://goerli.etherscan.io/',
     },
+    blockTimeMs: 15140,
   },
   {
     name: 'Ethereum Sepolia testnet',
@@ -196,11 +196,11 @@ export const CHAINS: Chain[] = [
     symbol: 'testETH',
     testnet: true,
     providerUrl: 'https://rpc-sepolia.rockx.com',
-    averageBlockTimeMs: 0,
     explorer: {
       api: { url: 'https://api-sepolia.etherscan.io/api', key: { required: true, hardhatEtherscanAlias: 'sepolia' } },
       browserUrl: 'https://sepolia.etherscan.io/',
     },
+    blockTimeMs: 12982,
   },
   {
     name: 'Ethereum',
@@ -209,11 +209,11 @@ export const CHAINS: Chain[] = [
     symbol: 'ETH',
     testnet: false,
     providerUrl: 'https://eth.llamarpc.com',
-    averageBlockTimeMs: 12100,
     explorer: {
       api: { url: 'https://api.etherscan.io/api', key: { required: true, hardhatEtherscanAlias: 'mainnet' } },
       browserUrl: 'https://etherscan.io/',
     },
+    blockTimeMs: 12167,
   },
   {
     name: 'Fantom testnet',
@@ -222,11 +222,11 @@ export const CHAINS: Chain[] = [
     symbol: 'testFTM',
     testnet: true,
     providerUrl: 'https://rpc.ankr.com/fantom_testnet',
-    averageBlockTimeMs: 0,
     explorer: {
       api: { url: 'https://api-testnet.ftmscan.com/api', key: { required: true, hardhatEtherscanAlias: 'ftmTestnet' } },
       browserUrl: 'https://testnet.ftmscan.com/',
     },
+    blockTimeMs: 1665,
   },
   {
     name: 'Fantom',
@@ -235,11 +235,11 @@ export const CHAINS: Chain[] = [
     symbol: 'FTM',
     testnet: false,
     providerUrl: 'https://rpcapi.fantom.network/',
-    averageBlockTimeMs: 0,
     explorer: {
       api: { url: 'https://api.ftmscan.com/api', key: { required: true, hardhatEtherscanAlias: 'opera' } },
       browserUrl: 'https://ftmscan.com/',
     },
+    blockTimeMs: 1636,
   },
   {
     name: 'Gnosis Chain testnet',
@@ -248,11 +248,11 @@ export const CHAINS: Chain[] = [
     symbol: 'testxDAI',
     testnet: true,
     providerUrl: 'https://rpc.chiadochain.net',
-    averageBlockTimeMs: 0,
     explorer: {
       api: { url: 'https://blockscout.chiadochain.net/api', key: { required: false, hardhatEtherscanAlias: 'chiado' } },
       browserUrl: 'https://blockscout.com/gnosis/chiado/',
     },
+    blockTimeMs: 5015,
   },
   {
     name: 'Gnosis Chain',
@@ -261,11 +261,11 @@ export const CHAINS: Chain[] = [
     symbol: 'xDAI',
     testnet: false,
     providerUrl: 'https://rpc.gnosischain.com',
-    averageBlockTimeMs: 0,
     explorer: {
       api: { url: 'https://api.gnosisscan.io/api', key: { required: true, hardhatEtherscanAlias: 'gnosis' } },
       browserUrl: 'https://gnosisscan.io/',
     },
+    blockTimeMs: 5244,
   },
   {
     name: 'Godwoken testnet',
@@ -274,8 +274,8 @@ export const CHAINS: Chain[] = [
     symbol: 'testpCKB',
     testnet: true,
     providerUrl: 'https://v1.testnet.godwoken.io/rpc',
-    averageBlockTimeMs: 0,
     explorer: { browserUrl: 'https://v1.testnet.gwscan.com/' },
+    blockTimeMs: 8127,
   },
   {
     name: 'Godwoken',
@@ -284,8 +284,8 @@ export const CHAINS: Chain[] = [
     symbol: 'pCKB',
     testnet: false,
     providerUrl: 'https://v1.mainnet.godwoken.io/rpc',
-    averageBlockTimeMs: 0,
     explorer: { browserUrl: 'https://v1.gwscan.com/' },
+    blockTimeMs: 45041,
   },
   {
     name: 'Metis testnet',
@@ -294,11 +294,11 @@ export const CHAINS: Chain[] = [
     symbol: 'testMETIS',
     testnet: true,
     providerUrl: 'https://goerli.gateway.metisdevops.link',
-    averageBlockTimeMs: 0,
     explorer: {
       api: { url: 'https://goerli.explorer.metisdevops.link/api', key: { required: false } },
       browserUrl: 'https://goerli.explorer.metisdevops.link/',
     },
+    blockTimeMs: 5911,
   },
   {
     name: 'Metis',
@@ -307,11 +307,11 @@ export const CHAINS: Chain[] = [
     symbol: 'METIS',
     testnet: false,
     providerUrl: 'https://andromeda.metis.io/?owner=1088',
-    averageBlockTimeMs: 0,
     explorer: {
       api: { url: 'https://andromeda-explorer.metis.io/api', key: { required: false } },
       browserUrl: 'https://andromeda-explorer.metis.io/',
     },
+    blockTimeMs: 2564,
   },
   {
     name: 'Milkomeda C1 testnet',
@@ -320,11 +320,11 @@ export const CHAINS: Chain[] = [
     symbol: 'testmilkADA',
     testnet: true,
     providerUrl: 'https://rpc-devnet-cardano-evm.c1.milkomeda.com',
-    averageBlockTimeMs: 4000,
     explorer: {
       api: { url: 'https://explorer-devnet-cardano-evm.c1.milkomeda.com/api', key: { required: false } },
       browserUrl: 'https://explorer-devnet-cardano-evm.c1.milkomeda.com/',
     },
+    blockTimeMs: 2000,
   },
   {
     name: 'Milkomeda C1',
@@ -333,11 +333,11 @@ export const CHAINS: Chain[] = [
     symbol: 'milkADA',
     testnet: false,
     providerUrl: 'https://rpc-mainnet-cardano-evm.c1.milkomeda.com',
-    averageBlockTimeMs: 4000,
     explorer: {
       api: { url: 'https://explorer-mainnet-cardano-evm.c1.milkomeda.com/api', key: { required: false } },
       browserUrl: 'https://explorer-mainnet-cardano-evm.c1.milkomeda.com/',
     },
+    blockTimeMs: 2000,
   },
   {
     name: 'Moonbeam testnet',
@@ -346,7 +346,6 @@ export const CHAINS: Chain[] = [
     symbol: 'testGLMR',
     testnet: true,
     providerUrl: 'https://rpc.api.moonbase.moonbeam.network',
-    averageBlockTimeMs: 0,
     explorer: {
       api: {
         url: 'https://api-moonbase.moonscan.io/api',
@@ -354,6 +353,7 @@ export const CHAINS: Chain[] = [
       },
       browserUrl: 'https://moonbase.moonscan.io/',
     },
+    blockTimeMs: 13654,
   },
   {
     name: 'Moonbeam',
@@ -362,11 +362,11 @@ export const CHAINS: Chain[] = [
     symbol: 'GLMR',
     testnet: false,
     providerUrl: 'https://rpc.api.moonbeam.network',
-    averageBlockTimeMs: 0,
     explorer: {
       api: { url: 'https://api-moonbeam.moonscan.io/api', key: { required: true, hardhatEtherscanAlias: 'moonbeam' } },
       browserUrl: 'https://moonscan.io/',
     },
+    blockTimeMs: 12233,
   },
   {
     name: 'Moonriver',
@@ -375,7 +375,6 @@ export const CHAINS: Chain[] = [
     symbol: 'MOVR',
     testnet: false,
     providerUrl: 'https://rpc.api.moonriver.moonbeam.network',
-    averageBlockTimeMs: 0,
     explorer: {
       api: {
         url: 'https://api-moonriver.moonscan.io/api',
@@ -383,6 +382,7 @@ export const CHAINS: Chain[] = [
       },
       browserUrl: 'https://moonriver.moonscan.io/',
     },
+    blockTimeMs: 12312,
   },
   {
     name: 'Optimism testnet',
@@ -391,7 +391,6 @@ export const CHAINS: Chain[] = [
     symbol: 'testETH',
     testnet: true,
     providerUrl: 'https://goerli.optimism.io',
-    averageBlockTimeMs: 0,
     explorer: {
       api: {
         url: 'https://api-goerli-optimism.etherscan.io/api',
@@ -399,6 +398,7 @@ export const CHAINS: Chain[] = [
       },
       browserUrl: 'https://goerli-optimism.etherscan.io/',
     },
+    blockTimeMs: 2000,
   },
   {
     name: 'Optimism',
@@ -407,7 +407,6 @@ export const CHAINS: Chain[] = [
     symbol: 'ETH',
     testnet: false,
     providerUrl: 'https://mainnet.optimism.io',
-    averageBlockTimeMs: 0,
     explorer: {
       api: {
         url: 'https://api-optimistic.etherscan.io/api',
@@ -415,6 +414,7 @@ export const CHAINS: Chain[] = [
       },
       browserUrl: 'https://optimistic.etherscan.io/',
     },
+    blockTimeMs: 2000,
   },
   {
     name: 'Polygon testnet',
@@ -423,7 +423,6 @@ export const CHAINS: Chain[] = [
     symbol: 'testMATIC',
     testnet: true,
     providerUrl: 'https://rpc.ankr.com/polygon_mumbai',
-    averageBlockTimeMs: 2300,
     explorer: {
       api: {
         url: 'https://api-testnet.polygonscan.com/api',
@@ -431,6 +430,7 @@ export const CHAINS: Chain[] = [
       },
       browserUrl: 'https://mumbai.polygonscan.com/',
     },
+    blockTimeMs: 2576,
   },
   {
     name: 'Polygon zkEVM testnet',
@@ -439,11 +439,11 @@ export const CHAINS: Chain[] = [
     symbol: 'testETH',
     testnet: true,
     providerUrl: 'https://rpc.public.zkevm-test.net',
-    averageBlockTimeMs: 0,
     explorer: {
       api: { url: 'https://api-testnet-zkevm.polygonscan.com/api', key: { required: true } },
       browserUrl: 'https://explorer.public.zkevm-test.net',
     },
+    blockTimeMs: 6587,
   },
   {
     name: 'Polygon zkEVM',
@@ -452,11 +452,11 @@ export const CHAINS: Chain[] = [
     symbol: 'ETH',
     testnet: false,
     providerUrl: 'https://zkevm-rpc.com',
-    averageBlockTimeMs: 0,
     explorer: {
       api: { url: 'https://api-zkevm.polygonscan.com/api', key: { required: true } },
       browserUrl: 'https://zkevm.polygonscan.com/',
     },
+    blockTimeMs: 1658,
   },
   {
     name: 'Polygon',
@@ -465,11 +465,11 @@ export const CHAINS: Chain[] = [
     symbol: 'MATIC',
     testnet: false,
     providerUrl: 'https://rpc.ankr.com/polygon',
-    averageBlockTimeMs: 2300,
     explorer: {
       api: { url: 'https://api.polygonscan.com/api', key: { required: true, hardhatEtherscanAlias: 'polygon' } },
       browserUrl: 'https://polygonscan.com/',
     },
+    blockTimeMs: 2210,
   },
   {
     name: 'RSK testnet',
@@ -478,8 +478,8 @@ export const CHAINS: Chain[] = [
     symbol: 'testRBTC',
     testnet: true,
     providerUrl: 'https://public-node.testnet.rsk.co',
-    averageBlockTimeMs: 30000,
     explorer: { browserUrl: 'https://explorer.testnet.rsk.co/' },
+    blockTimeMs: 26036,
   },
   {
     name: 'RSK',
@@ -488,8 +488,8 @@ export const CHAINS: Chain[] = [
     symbol: 'RBTC',
     testnet: false,
     providerUrl: 'https://mainnet.sovryn.app/rpc',
-    averageBlockTimeMs: 30000,
     explorer: { browserUrl: 'https://explorer.rsk.co/' },
+    blockTimeMs: 30946,
   },
   {
     name: 'SX Network testnet',
@@ -498,11 +498,11 @@ export const CHAINS: Chain[] = [
     symbol: 'testSX',
     testnet: true,
     providerUrl: 'https://rpc.toronto.sx.technology',
-    averageBlockTimeMs: 0,
     explorer: {
       api: { url: 'https://explorer.toronto.sx.technology/api', key: { required: false } },
       browserUrl: 'https://explorer.toronto.sx.technology/',
     },
+    blockTimeMs: 2000,
   },
   {
     name: 'SX Network',
@@ -511,11 +511,11 @@ export const CHAINS: Chain[] = [
     symbol: 'SX',
     testnet: false,
     providerUrl: 'https://rpc.sx.technology',
-    averageBlockTimeMs: 0,
     explorer: {
       api: { url: 'https://explorer.sx.technology/api', key: { required: false } },
       browserUrl: 'https://explorer.sx.technology/',
     },
+    blockTimeMs: 2035,
   },
   {
     name: 'zkSync testnet',
@@ -524,8 +524,8 @@ export const CHAINS: Chain[] = [
     symbol: 'testETH',
     testnet: true,
     providerUrl: 'https://testnet.era.zksync.dev',
-    averageBlockTimeMs: 0,
     explorer: { browserUrl: 'https://goerli.explorer.zksync.io/' },
+    blockTimeMs: 1069,
   },
   {
     name: 'zkSync',
@@ -534,7 +534,7 @@ export const CHAINS: Chain[] = [
     symbol: 'ETH',
     testnet: false,
     providerUrl: 'https://mainnet.era.zksync.io',
-    averageBlockTimeMs: 0,
     explorer: { browserUrl: 'https://explorer.zksync.io/' },
+    blockTimeMs: 1020,
   },
 ];
