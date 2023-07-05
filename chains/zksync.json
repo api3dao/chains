@@ -5,8 +5,8 @@
   "symbol": "ETH",
   "testnet": false,
   "providerUrl": "https://mainnet.era.zksync.io",
-  "averageBlockTimeMs": 0,
   "explorer": {
     "browserUrl": "https://explorer.zksync.io/"
-  }
+  },
+  "blockTimeMs": 1020
 }

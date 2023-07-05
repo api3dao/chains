@@ -5,8 +5,8 @@
   "symbol": "pCKB",
   "testnet": false,
   "providerUrl": "https://v1.mainnet.godwoken.io/rpc",
-  "averageBlockTimeMs": 0,
   "explorer": {
     "browserUrl": "https://v1.gwscan.com/"
-  }
+  },
+  "blockTimeMs": 45041
 }

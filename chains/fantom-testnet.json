@@ -5,7 +5,6 @@
   "symbol": "testFTM",
   "testnet": true,
   "providerUrl": "https://rpc.ankr.com/fantom_testnet",
-  "averageBlockTimeMs": 0,
   "explorer": {
     "api": {
       "url": "https://api-testnet.ftmscan.com/api",
@@ -15,5 +14,6 @@
       }
     },
     "browserUrl": "https://testnet.ftmscan.com/"
-  }
+  },
+  "blockTimeMs": 1665
 }

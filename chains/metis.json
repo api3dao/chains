@@ -5,7 +5,6 @@
   "symbol": "METIS",
   "testnet": false,
   "providerUrl": "https://andromeda.metis.io/?owner=1088",
-  "averageBlockTimeMs": 0,
   "explorer": {
     "api": {
       "url": "https://andromeda-explorer.metis.io/api",
@@ -14,5 +13,6 @@
       }
     },
     "browserUrl": "https://andromeda-explorer.metis.io/"
-  }
+  },
+  "blockTimeMs": 2564
 }

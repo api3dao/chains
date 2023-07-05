@@ -5,7 +5,6 @@
   "symbol": "MATIC",
   "testnet": false,
   "providerUrl": "https://rpc.ankr.com/polygon",
-  "averageBlockTimeMs": 2300,
   "explorer": {
     "api": {
       "url": "https://api.polygonscan.com/api",
@@ -15,5 +14,6 @@
       }
     },
     "browserUrl": "https://polygonscan.com/"
-  }
+  },
+  "blockTimeMs": 2210
 }

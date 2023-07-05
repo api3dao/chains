@@ -5,7 +5,6 @@
   "symbol": "AVAX",
   "testnet": false,
   "providerUrl": "https://api.avax.network/ext/bc/C/rpc",
-  "averageBlockTimeMs": 19800,
   "explorer": {
     "api": {
       "url": "https://api.snowtrace.io/api",
@@ -15,5 +14,6 @@
       }
     },
     "browserUrl": "https://snowtrace.io/"
-  }
+  },
+  "blockTimeMs": 2036
 }
