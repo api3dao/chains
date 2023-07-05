@@ -107,7 +107,7 @@ console.log(hardhatConfig.etherscan());
 
 ### hardhatConfig.getEnvVariableNames()
 
-Returns an array of expected environment variable names for chains that have an API key required for the explorer.
+Returns an array of expected environment variable names for chains that have an API key required for the explorer. The array also includes a single `MNEMONIC` variable that can be used to configure all networks.
 
 NOTE: Each `ETHERSCAN_API_KEY_` environment variable has the chain alias as a suffix, where the alias has been converted to upper snake case.
 

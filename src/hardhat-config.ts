@@ -45,7 +45,7 @@ export function etherscan(): HardhatEtherscanConfig {
         },
       });
 
-      etherscan.apiKey[chain.alias] = apiKeyValue || '';
+      etherscan.apiKey[chain.alias] = apiKeyValue;
 
       return etherscan;
     },
