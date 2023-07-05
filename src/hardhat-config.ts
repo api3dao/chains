@@ -4,18 +4,18 @@ import { Chain, HardhatEtherscanConfig, HardhatNetworksConfig } from './types';
 
 export function getEnvVariableNames(): string[] {
   const hardhatApiKeyEnvNames = CHAINS.filter((chain) => chain.explorer?.api?.key?.required).map((chain) =>
-    buildEtherscanApiKeyName(chain)
+    etherscanApiKeyName(chain)
   );
 
   return ['MNEMONIC', ...hardhatApiKeyEnvNames];
 }
 
-export function buildEtherscanApiKeyName(chain: Chain): string {
+export function etherscanApiKeyName(chain: Chain): string {
   return `ETHERSCAN_API_KEY_${toUpperSnakeCase(chain.alias)}`;
 }
 
 // https://hardhat.org/hardhat-runner/plugins/nomicfoundation-hardhat-verify#multiple-api-keys-and-alternative-block-explorers
-export function buildEtherscanConfig(): HardhatEtherscanConfig {
+export function etherscan(): HardhatEtherscanConfig {
   if (typeof window !== 'undefined') {
     throw new Error('Cannot be run outside of a Node.js environment');
   }
@@ -28,7 +28,7 @@ export function buildEtherscanConfig(): HardhatEtherscanConfig {
 
       const apiKey = chain.explorer.api.key;
 
-      const apiKeyEnvName = buildEtherscanApiKeyName(chain);
+      const apiKeyEnvName = etherscanApiKeyName(chain);
       const apiKeyValue = apiKey.required ? process.env[apiKeyEnvName] || 'NOT_FOUND' : 'DUMMY_VALUE';
 
       if (apiKey.hardhatEtherscanAlias) {
@@ -53,7 +53,7 @@ export function buildEtherscanConfig(): HardhatEtherscanConfig {
   );
 }
 
-export function buildNetworksConfig(): HardhatNetworksConfig {
+export function networks(): HardhatNetworksConfig {
   if (typeof window !== 'undefined') {
     throw new Error('Cannot be called outside of a Node.js environment');
   }
