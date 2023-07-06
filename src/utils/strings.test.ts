@@ -19,6 +19,11 @@ describe('toUpperSnakeCase', () => {
   });
 
   test('converts special characters to underscores', () => {
+    const result = toUpperSnakeCase('hello,world!');
+    assert.equal(result, 'HELLO_WORLD');
+  });
+
+  test('converts special characters and spaces to underscores', () => {
     const result = toUpperSnakeCase('hello, world!');
     assert.equal(result, 'HELLO_WORLD');
   });
