@@ -14,5 +14,6 @@
       }
     },
     "browserUrl": "https://polygonscan.com/"
-  }
+  },
+  "blockTimeMs": 2210
 }

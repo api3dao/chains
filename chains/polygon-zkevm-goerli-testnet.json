@@ -13,5 +13,6 @@
       }
     },
     "browserUrl": "https://explorer.public.zkevm-test.net"
-  }
+  },
+  "blockTimeMs": 6587
 }

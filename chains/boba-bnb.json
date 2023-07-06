@@ -13,5 +13,6 @@
       }
     },
     "browserUrl": "https://blockexplorer.bnb.boba.network/"
-  }
+  },
+  "blockTimeMs": 636
 }

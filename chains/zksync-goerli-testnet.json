@@ -7,5 +7,6 @@
   "providerUrl": "https://testnet.era.zksync.dev",
   "explorer": {
     "browserUrl": "https://goerli.explorer.zksync.io/"
-  }
+  },
+  "blockTimeMs": 1069
 }

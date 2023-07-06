@@ -13,5 +13,6 @@
       }
     },
     "browserUrl": "https://goerli.explorer.metisdevops.link/"
-  }
+  },
+  "blockTimeMs": 5911
 }

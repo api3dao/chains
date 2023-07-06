@@ -13,5 +13,6 @@
       }
     },
     "browserUrl": "https://bobascan.com/"
-  }
+  },
+  "blockTimeMs": 86994
 }

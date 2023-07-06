@@ -7,5 +7,6 @@
   "providerUrl": "https://v1.testnet.godwoken.io/rpc",
   "explorer": {
     "browserUrl": "https://v1.testnet.gwscan.com/"
-  }
+  },
+  "blockTimeMs": 8127
 }

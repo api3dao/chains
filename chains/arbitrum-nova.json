@@ -13,5 +13,6 @@
       }
     },
     "browserUrl": "https://nova.arbiscan.io/"
-  }
+  },
+  "blockTimeMs": 862
 }

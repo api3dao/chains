@@ -14,5 +14,6 @@
       }
     },
     "browserUrl": "https://blockscout.com/gnosis/chiado/"
-  }
+  },
+  "blockTimeMs": 5015
 }

@@ -13,5 +13,6 @@
       }
     },
     "browserUrl": "https://explorer.toronto.sx.technology/"
-  }
+  },
+  "blockTimeMs": 2000
 }

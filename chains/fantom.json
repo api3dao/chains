@@ -14,5 +14,6 @@
       }
     },
     "browserUrl": "https://ftmscan.com/"
-  }
+  },
+  "blockTimeMs": 1636
 }

@@ -14,5 +14,6 @@
       }
     },
     "browserUrl": "https://etherscan.io/"
-  }
+  },
+  "blockTimeMs": 12167
 }

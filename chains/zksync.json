@@ -7,5 +7,6 @@
   "providerUrl": "https://mainnet.era.zksync.io",
   "explorer": {
     "browserUrl": "https://explorer.zksync.io/"
-  }
+  },
+  "blockTimeMs": 1020
 }

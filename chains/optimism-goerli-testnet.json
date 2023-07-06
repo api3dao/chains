@@ -14,5 +14,6 @@
       }
     },
     "browserUrl": "https://goerli-optimism.etherscan.io/"
-  }
+  },
+  "blockTimeMs": 2000
 }

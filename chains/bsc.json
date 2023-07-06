@@ -14,5 +14,6 @@
       }
     },
     "browserUrl": "https://bscscan.com/"
-  }
+  },
+  "blockTimeMs": 3009
 }

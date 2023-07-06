@@ -14,5 +14,6 @@
       }
     },
     "browserUrl": "https://gnosisscan.io/"
-  }
+  },
+  "blockTimeMs": 5244
 }

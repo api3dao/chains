@@ -14,5 +14,6 @@
       }
     },
     "browserUrl": "https://explorer.aurora.dev/"
-  }
+  },
+  "blockTimeMs": 1135
 }

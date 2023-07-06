@@ -14,5 +14,6 @@
       }
     },
     "browserUrl": "https://explorer.testnet.aurora.dev/"
-  }
+  },
+  "blockTimeMs": 988
 }

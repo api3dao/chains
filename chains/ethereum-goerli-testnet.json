@@ -14,5 +14,6 @@
       }
     },
     "browserUrl": "https://goerli.etherscan.io/"
-  }
+  },
+  "blockTimeMs": 15140
 }

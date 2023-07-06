@@ -14,5 +14,6 @@
       }
     },
     "browserUrl": "https://moonriver.moonscan.io/"
-  }
+  },
+  "blockTimeMs": 12312
 }

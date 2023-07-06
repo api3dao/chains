@@ -14,5 +14,6 @@
       }
     },
     "browserUrl": "https://testnet.arbiscan.io/"
-  }
+  },
+  "blockTimeMs": 641
 }

@@ -13,5 +13,6 @@
       }
     },
     "browserUrl": "https://andromeda-explorer.metis.io/"
-  }
+  },
+  "blockTimeMs": 2564
 }

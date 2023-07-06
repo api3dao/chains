@@ -7,5 +7,6 @@
   "providerUrl": "https://public-node.testnet.rsk.co",
   "explorer": {
     "browserUrl": "https://explorer.testnet.rsk.co/"
-  }
+  },
+  "blockTimeMs": 26036
 }

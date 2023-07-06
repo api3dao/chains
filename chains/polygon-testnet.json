@@ -14,5 +14,6 @@
       }
     },
     "browserUrl": "https://mumbai.polygonscan.com/"
-  }
+  },
+  "blockTimeMs": 2576
 }

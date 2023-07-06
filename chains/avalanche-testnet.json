@@ -14,5 +14,6 @@
       }
     },
     "browserUrl": "https://testnet.snowtrace.io/"
-  }
+  },
+  "blockTimeMs": 2398
 }

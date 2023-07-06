@@ -14,5 +14,6 @@
       }
     },
     "browserUrl": "https://moonscan.io/"
-  }
+  },
+  "blockTimeMs": 12233
 }

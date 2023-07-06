@@ -14,5 +14,6 @@
       }
     },
     "browserUrl": "https://sepolia.etherscan.io/"
-  }
+  },
+  "blockTimeMs": 12982
 }

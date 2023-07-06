@@ -14,5 +14,6 @@
       }
     },
     "browserUrl": "https://moonbase.moonscan.io/"
-  }
+  },
+  "blockTimeMs": 13654
 }

@@ -14,5 +14,6 @@
       }
     },
     "browserUrl": "https://optimistic.etherscan.io/"
-  }
+  },
+  "blockTimeMs": 2000
 }
