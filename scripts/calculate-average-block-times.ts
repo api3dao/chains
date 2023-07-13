@@ -6,8 +6,11 @@ import { CHAINS } from '../src';
 const BLOCK_LOOKBACK = 400_000;
 
 async function calculateAverageBlockTimes(): Promise<void> {
+  const specifiedChain = CHAINS.find(chain => chain.alias === process.env.CHAIN);
+  const chains = specifiedChain ? [specifiedChain] : CHAINS;
+
   const results = await Promise.allSettled(
-    CHAINS.map(async (chain) => {
+    chains.map(async (chain) => {
       const provider = new JsonRpcProvider(chain.providerUrl);
       const chainId = (await provider.getNetwork()).chainId;
       if (chainId.toString() !== chain.id) {
