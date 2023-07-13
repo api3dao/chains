@@ -1,0 +1,18 @@
+{
+  "name": "Cronos testnet",
+  "alias": "cronos-testnet",
+  "id": "338",
+  "symbol": "testCRO",
+  "testnet": true,
+  "providerUrl": "https://evm-t3.cronos.org",
+  "explorer": {
+    "api": {
+      "url": "https://cronos.org/explorer/testnet3/api",
+      "key": {
+        "required": false
+      }
+    },
+    "browserUrl": "https://cronos.org/explorer/testnet3/"
+  },
+  "blockTimeMs": 2446
+}
