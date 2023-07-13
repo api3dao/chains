@@ -1,7 +1,8 @@
 import { JsonRpcProvider } from 'ethers';
-import { CHAINS, getChainByAlias } from '../src';
+import { CHAINS } from '../src';
 
-const chains = process.env.CHAIN ? [getChainByAlias(process.env.CHAIN)] : CHAINS;
+const specifiedChain = CHAINS.find(chain => chain.alias === process.env.CHAIN);
+const chains = specifiedChain ? [specifiedChain] : CHAINS;
 
 chains.forEach(async (chain) => {
   const provider = new JsonRpcProvider(chain.providerUrl);
