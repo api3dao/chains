@@ -1,0 +1,18 @@
+{
+  "name": "Scroll Goerli testnet",
+  "alias": "scroll-goerli-testnet",
+  "id": "534353",
+  "symbol": "testETH",
+  "testnet": true,
+  "providerUrl": "https://alpha-rpc.scroll.io/l2",
+  "explorer": {
+    "api": {
+      "url": "https://blockscout.scroll.io/api",
+      "key": {
+        "required": false
+      }
+    },
+    "browserUrl": "https://blockscout.scroll.io/"
+  },
+  "blockTimeMs": 3002
+}
