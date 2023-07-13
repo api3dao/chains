@@ -12,7 +12,7 @@
         "required": true
       }
     },
-    "browserUrl": "https://explorer.public.zkevm-test.net"
+    "browserUrl": "https://testnet-zkevm.polygonscan.com/"
   },
   "blockTimeMs": 6587
 }
