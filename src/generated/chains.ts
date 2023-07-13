@@ -441,7 +441,7 @@ export const CHAINS: Chain[] = [
     providerUrl: 'https://rpc.public.zkevm-test.net',
     explorer: {
       api: { url: 'https://api-testnet-zkevm.polygonscan.com/api', key: { required: true } },
-      browserUrl: 'https://explorer.public.zkevm-test.net',
+      browserUrl: 'https://testnet-zkevm.polygonscan.com/',
     },
     blockTimeMs: 6587,
   },
