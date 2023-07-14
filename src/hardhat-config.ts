@@ -3,15 +3,19 @@ import { toUpperSnakeCase } from './utils/strings';
 import { Chain, HardhatEtherscanConfig, HardhatNetworksConfig } from './types';
 
 export function getEnvVariableNames(): string[] {
-  const hardhatApiKeyEnvNames = CHAINS.filter((chain) => chain.explorer?.api?.key?.required).map((chain) =>
-    etherscanApiKeyName(chain)
-  );
+  const apiKeyEnvNames = CHAINS.filter((chain) => chain.explorer?.api?.key?.required).map((chain) => etherscanApiKeyName(chain));
 
-  return ['MNEMONIC', ...hardhatApiKeyEnvNames];
+  const networkRpcUrlNames = CHAINS.map((chain) => chain.providerUrl);
+
+  return ['MNEMONIC', ...apiKeyEnvNames, ...networkRpcUrlNames];
 }
 
 export function etherscanApiKeyName(chain: Chain): string {
   return `ETHERSCAN_API_KEY_${toUpperSnakeCase(chain.alias)}`;
+}
+
+export function networkHttpRpcUrlName(chain: Chain): string {
+  return `HARDHAT_HTTP_RPC_URL_${toUpperSnakeCase(chain.alias)}`;
 }
 
 // https://hardhat.org/hardhat-runner/plugins/nomicfoundation-hardhat-verify#multiple-api-keys-and-alternative-block-explorers
@@ -62,7 +66,7 @@ export function networks(): HardhatNetworksConfig {
     networks[chain.alias] = {
       accounts: { mnemonic: process.env.MNEMONIC || '' },
       chainId: Number(chain.id),
-      url: chain.providerUrl,
+      url: process.env[networkHttpRpcUrlName(chain)] || chain.providerUrl,
     };
     return networks;
   }, {} as HardhatNetworksConfig);
