@@ -1,0 +1,18 @@
+{
+    "name": "Mantle",
+    "alias": "mantle",
+    "id": "5000",
+    "symbol": "MNT",
+    "testnet": false,
+    "providerUrl": "https://rpc.testnet.mantle.xyz/",
+    "explorer": {
+      "api": {
+        "url": "https://explorer.mantle.xyz/api",
+        "key": {
+          "required": false
+        }
+      },
+      "browserUrl": "https://explorer.mantle.xyz/"
+    },
+    "blockTimeMs": 362
+  }
