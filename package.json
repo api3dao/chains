@@ -33,7 +33,7 @@
   },
   "devDependencies": {
     "@types/node": "^20.4.5",
-    "@types/prettier": "^3.0.0",
+    "@types/prettier": "^2.7.3",
     "@typescript-eslint/eslint-plugin": "^6.2.1",
     "@typescript-eslint/parser": "^6.2.1",
     "chokidar": "^3.5.3",
@@ -41,7 +41,7 @@
     "eslint-plugin-import": "^2.28.0",
     "ethers": "^6.6.7",
     "husky": "^8.0.3",
-    "prettier": "^3.0.0",
+    "prettier": "^2.8.8",
     "rimraf": "^5.0.1",
     "ts-node": "^10.9.1",
     "typescript": "^5.1.6"
