@@ -2,7 +2,7 @@
   "name": "Mantle Goerli testnet",
   "alias": "mantle-goerli-testnet",
   "id": "5001",
-  "symbol": "testETH",
+  "symbol": "MNT",
   "testnet": true,
   "providerUrl": "https://rpc.testnet.mantle.xyz",
   "explorer": {
