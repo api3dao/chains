@@ -66,7 +66,6 @@ function watchJsonFiles(): void {
 
 if (process.argv.includes('--watch')) {
   watchJsonFiles();
-  
 } else {
   mergeJsonFiles()
     .then(() => process.exit(0))
