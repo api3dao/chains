@@ -18,7 +18,7 @@ const HEADER_CONTENT = `// =====================================================
 import { Chain } from '../types';
 `;
 
-function mergeJsonFiles(): void {
+async function mergeJsonFiles(): Promise<void> {
   const fileNames = fs.readdirSync(INPUT_DIR);
   const jsonFiles = fileNames.filter((fileName) => fileName.endsWith('.json'));
   const combinedChains: any = [];
@@ -33,7 +33,7 @@ function mergeJsonFiles(): void {
   const rawContent = `${HEADER_CONTENT}\nexport const CHAINS: Chain[] = ${JSON.stringify(combinedChains)};\n\n`;
 
   const prettierConfig = JSON.parse(fs.readFileSync(PRETTIER_CONFIG, 'utf-8'));
-  const formattedContent = prettier.format(rawContent, { parser: 'typescript', ...prettierConfig });
+  const formattedContent = await prettier.format(rawContent, { ...prettierConfig, parser: 'typescript' });
 
   if (!fs.existsSync(OUTPUT_DIR)) {
     fs.mkdirSync(OUTPUT_DIR);
@@ -67,6 +67,11 @@ function watchJsonFiles(): void {
 if (process.argv.includes('--watch')) {
   watchJsonFiles();
 } else {
-  mergeJsonFiles();
+  mergeJsonFiles()
+    .then(() => process.exit(0))
+    .catch((error) => {
+      console.log(error);
+      process.exit(1);
+    });
 }
 
