@@ -345,9 +345,9 @@ export const CHAINS: Chain[] = [
     id: '59140',
     symbol: 'testETH',
     testnet: true,
-    providerUrl: 'https://rpc.goerli.linea.build',
+    providerUrl: 'https://goerli.lineascan.build/',
     explorer: {
-      api: { url: 'https://explorer.goerli.linea.build/api', key: { required: false } },
+      api: { url: 'https://api-testnet.lineascan.build/api', key: { required: false } },
       browserUrl: 'https://explorer.goerli.linea.build/',
     },
     blockTimeMs: 12099,
