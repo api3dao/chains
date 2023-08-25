@@ -3,7 +3,9 @@ import { toUpperSnakeCase } from './utils/strings';
 import { Chain, HardhatEtherscanConfig, HardhatNetworksConfig } from './types';
 
 export function getEnvVariableNames(): string[] {
-  const apiKeyEnvNames = CHAINS.filter((chain) => chain.explorer?.api?.key?.required).map((chain) => etherscanApiKeyName(chain));
+  const apiKeyEnvNames = CHAINS.filter((chain) => chain.explorer?.api?.key?.required).map((chain) =>
+    etherscanApiKeyName(chain)
+  );
 
   const networkRpcUrlNames = CHAINS.map((chain) => chain.providerUrl);
 
@@ -71,4 +73,3 @@ export function networks(): HardhatNetworksConfig {
     return networks;
   }, {} as HardhatNetworksConfig);
 }
-

@@ -54,4 +54,3 @@ describe('deepEqual', () => {
     assert.equal(deepEqual(func1, func2), false);
   });
 });
-

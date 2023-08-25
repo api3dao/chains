@@ -26,7 +26,7 @@ if (CHAINS.length !== jsonChains.length) {
 jsonFiles.forEach((filePath: string, index: number) => {
   const chain = jsonChains[index]!;
   if (filePath.replace('.json', '') !== chain.alias) {
-    console.log('JSON file name must match the chain\'s alias');
+    console.log("JSON file name must match the chain's alias");
     console.log(`Current value: ${filePath}.json. Expected: ${chain.alias}.json`);
     process.exit(1);
   }
@@ -54,4 +54,3 @@ jsonChains.forEach((chain: any, index: number) => {
 
 console.log('Successfully validated chains!');
 process.exit(0);
-
