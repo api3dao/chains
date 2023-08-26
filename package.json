@@ -21,7 +21,7 @@
     "lint:eslint": "eslint . --ext .js,.ts",
     "lint:prettier": "prettier --check \"./**/*.{ts,js,md,json}\"",
     "prepare": "husky install",
-    "prepublishOnly": "yarn validate:chains",
+    "prepublishOnly": "yarn validate:chains && yarn build",
     "prettier": "prettier --write \"./**/*.{ts,js,md,json}\"",
     "providers:ping": "ts-node scripts/ping-providers.ts",
     "providers:time": "ts-node scripts/calculate-average-block-times.ts",
