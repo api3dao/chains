@@ -4,7 +4,7 @@
   "id": "59140",
   "symbol": "testETH",
   "testnet": true,
-  "providerUrl": "https://goerli.lineascan.build/",
+  "providerUrl": "https://rpc.goerli.linea.build",
   "explorer": {
     "api": {
       "url": "https://api-testnet.lineascan.build/api",
@@ -12,7 +12,7 @@
         "required": false
       }
     },
-    "browserUrl": "https://explorer.goerli.linea.build/"
+    "browserUrl": "https://goerli.lineascan.build/"
   },
   "blockTimeMs": 12099
 }
