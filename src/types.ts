@@ -39,18 +39,17 @@ export interface HardhatNetworksConfig {
     accounts: { mnemonic: string };
     chainId: number;
     url: string;
-  }
+  };
 }
 
 // https://hardhat.org/hardhat-runner/plugins/nomicfoundation-hardhat-verify#adding-support-for-other-networks
 export interface HardhatEtherscanCustomChain {
   network: string;
   chainId: number;
-  urls: { apiURL: string; browserURL: string; }
+  urls: { apiURL: string; browserURL: string };
 }
 
 export interface HardhatEtherscanConfig {
-  apiKey: { [alias: string]: string; }
+  apiKey: { [alias: string]: string };
   customChains: HardhatEtherscanCustomChain[];
 }
-

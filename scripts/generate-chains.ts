@@ -1,6 +1,5 @@
 import fs from 'fs';
 import path from 'path';
-import chokidar from 'chokidar';
 import prettier from 'prettier';
 
 const PRETTIER_CONFIG = path.join(__dirname, '../.prettierrc');
@@ -43,35 +42,9 @@ async function mergeJsonFiles(): Promise<void> {
   console.log(`Combined chains been saved as ${OUTPUT_FILE}`);
 }
 
-function watchJsonFiles(): void {
-  // ignored: by default we want to ignore dotfiles while watching
-  // persistent: continue the process as long as the directory is being watched
-  // See: https://github.com/paulmillr/chokidar#api
-  const watcher = chokidar.watch([INPUT_DIR], { ignored: /^\./, persistent: true });
-
-  watcher
-    .on('add', (path) => {
-      console.log(`File ${path} has been added`);
-      mergeJsonFiles();
-    })
-    .on('change', (path) => {
-      console.log(`File ${path} has been changed`);
-      mergeJsonFiles();
-    })
-    .on('unlink', (path) => {
-      console.log(`File ${path} has been removed`);
-      mergeJsonFiles();
-    });
-}
-
-if (process.argv.includes('--watch')) {
-  watchJsonFiles();
-} else {
-  mergeJsonFiles()
-    .then(() => process.exit(0))
-    .catch((error) => {
-      console.log(error);
-      process.exit(1);
-    });
-}
-
+mergeJsonFiles()
+  .then(() => process.exit(0))
+  .catch((error) => {
+    console.log(error);
+    process.exit(1);
+  });
