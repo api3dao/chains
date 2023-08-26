@@ -345,10 +345,10 @@ export const CHAINS: Chain[] = [
     id: '59140',
     symbol: 'testETH',
     testnet: true,
-    providerUrl: 'https://goerli.lineascan.build/',
+    providerUrl: 'https://rpc.goerli.linea.build',
     explorer: {
       api: { url: 'https://api-testnet.lineascan.build/api', key: { required: false } },
-      browserUrl: 'https://explorer.goerli.linea.build/',
+      browserUrl: 'https://goerli.lineascan.build/',
     },
     blockTimeMs: 12099,
   },
@@ -384,7 +384,7 @@ export const CHAINS: Chain[] = [
     id: '5000',
     symbol: 'MNT',
     testnet: false,
-    providerUrl: 'https://rpc.testnet.mantle.xyz/',
+    providerUrl: 'https://rpc.mantle.xyz',
     explorer: {
       api: { url: 'https://explorer.mantle.xyz/api', key: { required: false } },
       browserUrl: 'https://explorer.mantle.xyz/',
