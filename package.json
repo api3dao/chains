@@ -30,7 +30,7 @@
     "validate:chains": "ts-node scripts/validate-chains.ts"
   },
   "dependencies": {
-    "zod": "^3.21.4"
+    "zod": "^3.22.2"
   },
   "devDependencies": {
     "@types/node": "^20.4.5",
