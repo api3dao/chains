@@ -9,7 +9,7 @@
     "api": {
       "url": "https://api-testnet.lineascan.build/api",
       "key": {
-        "required": false
+        "required": true
       }
     },
     "browserUrl": "https://goerli.lineascan.build/"

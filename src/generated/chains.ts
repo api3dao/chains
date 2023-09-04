@@ -350,7 +350,7 @@ export const CHAINS: Chain[] = [
     testnet: true,
     providerUrl: 'https://rpc.goerli.linea.build',
     explorer: {
-      api: { url: 'https://api-testnet.lineascan.build/api', key: { required: false } },
+      api: { url: 'https://api-testnet.lineascan.build/api', key: { required: true } },
       browserUrl: 'https://goerli.lineascan.build/',
     },
     blockTimeMs: 12099,
