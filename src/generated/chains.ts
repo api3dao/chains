@@ -288,8 +288,11 @@ export const CHAINS: Chain[] = [
     testnet: true,
     providerUrl: 'https://rpc.chiadochain.net',
     explorer: {
-      api: { url: 'https://blockscout.chiadochain.net/api', key: { required: false, hardhatEtherscanAlias: 'chiado' } },
-      browserUrl: 'https://blockscout.com/gnosis/chiado/',
+      api: {
+        url: 'https://gnosis-chiado.blockscout.com/api',
+        key: { required: false, hardhatEtherscanAlias: 'chiado' },
+      },
+      browserUrl: 'https://gnosis-chiado.blockscout.com/',
     },
     blockTimeMs: 5015,
   },
