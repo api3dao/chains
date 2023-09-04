@@ -334,8 +334,8 @@ export const CHAINS: Chain[] = [
     testnet: true,
     providerUrl: 'https://evm.testnet.kava.io/',
     explorer: {
-      api: { url: 'https://explorer.testnet.kava.io/api', key: { required: false } },
-      browserUrl: 'https://explorer.testnet.kava.io/',
+      api: { url: 'https://testnet.kavascan.com/api', key: { required: false } },
+      browserUrl: 'https://testnet.kavascan.com/',
     },
     blockTimeMs: 5201,
   },
