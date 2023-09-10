@@ -30,6 +30,7 @@
     "validate:chains": "ts-node scripts/validate-chains.ts"
   },
   "dependencies": {
+    "viem": "^1.10.8",
     "zod": "^3.22.2"
   },
   "devDependencies": {
