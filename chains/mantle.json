@@ -14,5 +14,6 @@
     },
     "browserUrl": "https://explorer.mantle.xyz/"
   },
-  "blockTimeMs": 362
+  "blockTimeMs": 362,
+  "supports": ["API3Market", "dAPIs"]
 }

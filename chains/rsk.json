@@ -8,5 +8,6 @@
   "explorer": {
     "browserUrl": "https://explorer.rsk.co/"
   },
-  "blockTimeMs": 30946
+  "blockTimeMs": 30946,
+  "supports": ["dAPIs"]
 }

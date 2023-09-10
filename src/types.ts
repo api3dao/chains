@@ -1,5 +1,7 @@
 import { z } from 'zod';
 
+export const SUPPORTS = ['API3Market', 'ChainAPI', 'dAPIs', 'OEVRelay'];
+
 export const chainExplorerAPIKeySchema = z.object({
   required: z.boolean(),
   hardhatEtherscanAlias: z.string().optional(),
@@ -27,6 +29,13 @@ export const chainSchema = z.object({
   testnet: z.boolean(),
   explorer: chainExplorerSchema,
   blockTimeMs: z.number().positive(),
+  supports: z
+    .string()
+    .array()
+    .refine(
+      (supports) => !supports.some((support) => !SUPPORTS.includes(support)),
+      (supports) => ({ message: `Invalid values: ${supports}` })
+    ),
 });
 
 export type Chain = z.infer<typeof chainSchema>;

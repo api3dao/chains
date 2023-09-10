@@ -14,5 +14,6 @@
     },
     "browserUrl": "https://zkevm.polygonscan.com/"
   },
-  "blockTimeMs": 1658
+  "blockTimeMs": 1658,
+  "supports": ["API3Market", "dAPIs"]
 }

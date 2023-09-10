@@ -8,5 +8,6 @@
   "explorer": {
     "browserUrl": "https://v1.gwscan.com/"
   },
-  "blockTimeMs": 45041
+  "blockTimeMs": 45041,
+  "supports": []
 }

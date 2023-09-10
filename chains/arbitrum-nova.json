@@ -14,5 +14,6 @@
     },
     "browserUrl": "https://nova.arbiscan.io/"
   },
-  "blockTimeMs": 862
+  "blockTimeMs": 862,
+  "supports": []
 }

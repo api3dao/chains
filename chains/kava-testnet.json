@@ -14,5 +14,6 @@
     },
     "browserUrl": "https://explorer.testnet.kava.io/"
   },
-  "blockTimeMs": 5201
+  "blockTimeMs": 5201,
+  "supports": ["dAPIs"]
 }

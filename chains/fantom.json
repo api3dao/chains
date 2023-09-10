@@ -15,5 +15,6 @@
     },
     "browserUrl": "https://ftmscan.com/"
   },
-  "blockTimeMs": 1636
+  "blockTimeMs": 1636,
+  "supports": ["API3Market", "dAPIs"]
 }

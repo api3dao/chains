@@ -8,5 +8,6 @@
   "explorer": {
     "browserUrl": "https://explorer.zksync.io/"
   },
-  "blockTimeMs": 1020
+  "blockTimeMs": 1020,
+  "supports": ["dAPIs"]
 }

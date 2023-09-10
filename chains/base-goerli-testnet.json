@@ -14,5 +14,6 @@
     },
     "browserUrl": "https://goerli.basescan.org/"
   },
-  "blockTimeMs": 2000
+  "blockTimeMs": 2000,
+  "supports": ["dAPIs"]
 }

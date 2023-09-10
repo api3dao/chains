@@ -15,5 +15,6 @@
     },
     "browserUrl": "https://mumbai.polygonscan.com/"
   },
-  "blockTimeMs": 2576
+  "blockTimeMs": 2576,
+  "supports": ["dAPIs", "OEVRelay"]
 }

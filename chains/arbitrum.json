@@ -15,5 +15,6 @@
     },
     "browserUrl": "https://arbiscan.io/"
   },
-  "blockTimeMs": 265
+  "blockTimeMs": 265,
+  "supports": ["API3Market", "dAPIs"]
 }

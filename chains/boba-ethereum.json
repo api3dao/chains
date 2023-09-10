@@ -14,5 +14,6 @@
     },
     "browserUrl": "https://bobascan.com/"
   },
-  "blockTimeMs": 86994
+  "blockTimeMs": 86994,
+  "supports": []
 }

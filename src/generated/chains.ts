@@ -23,6 +23,7 @@ export const CHAINS: Chain[] = [
       browserUrl: 'https://testnet.arbiscan.io/',
     },
     blockTimeMs: 641,
+    supports: ['dAPIs'],
   },
   {
     name: 'Arbitrum Nova',
@@ -36,6 +37,7 @@ export const CHAINS: Chain[] = [
       browserUrl: 'https://nova.arbiscan.io/',
     },
     blockTimeMs: 862,
+    supports: [],
   },
   {
     name: 'Arbitrum',
@@ -49,6 +51,7 @@ export const CHAINS: Chain[] = [
       browserUrl: 'https://arbiscan.io/',
     },
     blockTimeMs: 265,
+    supports: ['API3Market', 'dAPIs'],
   },
   {
     name: 'Aurora testnet',
@@ -65,6 +68,7 @@ export const CHAINS: Chain[] = [
       browserUrl: 'https://explorer.testnet.aurora.dev/',
     },
     blockTimeMs: 988,
+    supports: [],
   },
   {
     name: 'Aurora',
@@ -81,6 +85,7 @@ export const CHAINS: Chain[] = [
       browserUrl: 'https://explorer.aurora.dev/',
     },
     blockTimeMs: 1135,
+    supports: [],
   },
   {
     name: 'Avalanche testnet',
@@ -97,6 +102,7 @@ export const CHAINS: Chain[] = [
       browserUrl: 'https://testnet.snowtrace.io/',
     },
     blockTimeMs: 2398,
+    supports: ['dAPIs'],
   },
   {
     name: 'Avalanche',
@@ -110,6 +116,7 @@ export const CHAINS: Chain[] = [
       browserUrl: 'https://snowtrace.io/',
     },
     blockTimeMs: 2036,
+    supports: ['API3Market', 'dAPIs'],
   },
   {
     name: 'Base Goerli testnet',
@@ -123,6 +130,7 @@ export const CHAINS: Chain[] = [
       browserUrl: 'https://goerli.basescan.org/',
     },
     blockTimeMs: 2000,
+    supports: ['dAPIs'],
   },
   {
     name: 'Base',
@@ -136,6 +144,7 @@ export const CHAINS: Chain[] = [
       browserUrl: 'https://basescan.org/',
     },
     blockTimeMs: 2000,
+    supports: ['dAPIs'],
   },
   {
     name: 'Boba/Avalanche',
@@ -149,6 +158,7 @@ export const CHAINS: Chain[] = [
       browserUrl: 'https://blockexplorer.avax.boba.network/',
     },
     blockTimeMs: 70618,
+    supports: [],
   },
   {
     name: 'Boba/BNB',
@@ -162,6 +172,7 @@ export const CHAINS: Chain[] = [
       browserUrl: 'https://blockexplorer.bnb.boba.network/',
     },
     blockTimeMs: 636,
+    supports: [],
   },
   {
     name: 'Boba/Ethereum',
@@ -175,6 +186,7 @@ export const CHAINS: Chain[] = [
       browserUrl: 'https://bobascan.com/',
     },
     blockTimeMs: 86994,
+    supports: [],
   },
   {
     name: 'BSC testnet',
@@ -188,6 +200,7 @@ export const CHAINS: Chain[] = [
       browserUrl: 'https://testnet.bscscan.com/',
     },
     blockTimeMs: 3002,
+    supports: ['dAPIs'],
   },
   {
     name: 'BSC',
@@ -201,6 +214,7 @@ export const CHAINS: Chain[] = [
       browserUrl: 'https://bscscan.com/',
     },
     blockTimeMs: 3009,
+    supports: ['API3Market', 'dAPIs'],
   },
   {
     name: 'Cronos testnet',
@@ -214,6 +228,7 @@ export const CHAINS: Chain[] = [
       browserUrl: 'https://cronos.org/explorer/testnet3/',
     },
     blockTimeMs: 2446,
+    supports: ['dAPIs'],
   },
   {
     name: 'Ethereum Goerli testnet',
@@ -227,6 +242,7 @@ export const CHAINS: Chain[] = [
       browserUrl: 'https://goerli.etherscan.io/',
     },
     blockTimeMs: 15140,
+    supports: ['ChainAPI', 'dAPIs', 'OEVRelay'],
   },
   {
     name: 'Ethereum Sepolia testnet',
@@ -240,6 +256,7 @@ export const CHAINS: Chain[] = [
       browserUrl: 'https://sepolia.etherscan.io/',
     },
     blockTimeMs: 12982,
+    supports: ['dAPIs'],
   },
   {
     name: 'Ethereum',
@@ -253,6 +270,7 @@ export const CHAINS: Chain[] = [
       browserUrl: 'https://etherscan.io/',
     },
     blockTimeMs: 12167,
+    supports: ['API3Market', 'ChainAPI', 'dAPIs', 'OEVRelay'],
   },
   {
     name: 'Fantom testnet',
@@ -266,6 +284,7 @@ export const CHAINS: Chain[] = [
       browserUrl: 'https://testnet.ftmscan.com/',
     },
     blockTimeMs: 1665,
+    supports: ['dAPIs'],
   },
   {
     name: 'Fantom',
@@ -279,6 +298,7 @@ export const CHAINS: Chain[] = [
       browserUrl: 'https://ftmscan.com/',
     },
     blockTimeMs: 1636,
+    supports: ['API3Market', 'dAPIs'],
   },
   {
     name: 'Gnosis Chain testnet',
@@ -292,6 +312,7 @@ export const CHAINS: Chain[] = [
       browserUrl: 'https://blockscout.com/gnosis/chiado/',
     },
     blockTimeMs: 5015,
+    supports: ['dAPIs'],
   },
   {
     name: 'Gnosis Chain',
@@ -305,6 +326,7 @@ export const CHAINS: Chain[] = [
       browserUrl: 'https://gnosisscan.io/',
     },
     blockTimeMs: 5244,
+    supports: ['API3Market', 'dAPIs'],
   },
   {
     name: 'Godwoken testnet',
@@ -315,6 +337,7 @@ export const CHAINS: Chain[] = [
     providerUrl: 'https://v1.testnet.godwoken.io/rpc',
     explorer: { browserUrl: 'https://v1.testnet.gwscan.com/' },
     blockTimeMs: 8127,
+    supports: [],
   },
   {
     name: 'Godwoken',
@@ -325,6 +348,7 @@ export const CHAINS: Chain[] = [
     providerUrl: 'https://v1.mainnet.godwoken.io/rpc',
     explorer: { browserUrl: 'https://v1.gwscan.com/' },
     blockTimeMs: 45041,
+    supports: [],
   },
   {
     name: 'Kava testnet',
@@ -338,6 +362,7 @@ export const CHAINS: Chain[] = [
       browserUrl: 'https://explorer.testnet.kava.io/',
     },
     blockTimeMs: 5201,
+    supports: ['dAPIs'],
   },
   {
     name: 'Linea Goerli testnet',
@@ -351,6 +376,7 @@ export const CHAINS: Chain[] = [
       browserUrl: 'https://goerli.lineascan.build/',
     },
     blockTimeMs: 12099,
+    supports: ['dAPIs'],
   },
   {
     name: 'Linea',
@@ -364,6 +390,7 @@ export const CHAINS: Chain[] = [
       browserUrl: 'https://lineascan.build/',
     },
     blockTimeMs: 12099,
+    supports: [],
   },
   {
     name: 'Mantle Goerli testnet',
@@ -377,6 +404,7 @@ export const CHAINS: Chain[] = [
       browserUrl: 'https://explorer.testnet.mantle.xyz/',
     },
     blockTimeMs: 362,
+    supports: ['dAPIs'],
   },
   {
     name: 'Mantle',
@@ -390,6 +418,7 @@ export const CHAINS: Chain[] = [
       browserUrl: 'https://explorer.mantle.xyz/',
     },
     blockTimeMs: 362,
+    supports: ['API3Market', 'dAPIs'],
   },
   {
     name: 'Metis testnet',
@@ -403,6 +432,7 @@ export const CHAINS: Chain[] = [
       browserUrl: 'https://goerli.explorer.metisdevops.link/',
     },
     blockTimeMs: 5911,
+    supports: ['dAPIs'],
   },
   {
     name: 'Metis',
@@ -416,6 +446,7 @@ export const CHAINS: Chain[] = [
       browserUrl: 'https://andromeda-explorer.metis.io/',
     },
     blockTimeMs: 2564,
+    supports: ['dAPIs'],
   },
   {
     name: 'Milkomeda C1 testnet',
@@ -429,6 +460,7 @@ export const CHAINS: Chain[] = [
       browserUrl: 'https://explorer-devnet-cardano-evm.c1.milkomeda.com/',
     },
     blockTimeMs: 2000,
+    supports: ['dAPIs'],
   },
   {
     name: 'Milkomeda C1',
@@ -442,6 +474,7 @@ export const CHAINS: Chain[] = [
       browserUrl: 'https://explorer-mainnet-cardano-evm.c1.milkomeda.com/',
     },
     blockTimeMs: 2000,
+    supports: ['dAPIs'],
   },
   {
     name: 'Moonbeam testnet',
@@ -458,6 +491,7 @@ export const CHAINS: Chain[] = [
       browserUrl: 'https://moonbase.moonscan.io/',
     },
     blockTimeMs: 13654,
+    supports: ['dAPIs'],
   },
   {
     name: 'Moonbeam',
@@ -471,6 +505,7 @@ export const CHAINS: Chain[] = [
       browserUrl: 'https://moonscan.io/',
     },
     blockTimeMs: 12233,
+    supports: ['API3Market', 'dAPIs'],
   },
   {
     name: 'Moonriver',
@@ -487,6 +522,7 @@ export const CHAINS: Chain[] = [
       browserUrl: 'https://moonriver.moonscan.io/',
     },
     blockTimeMs: 12312,
+    supports: ['API3Market', 'dAPIs'],
   },
   {
     name: 'Optimism testnet',
@@ -503,6 +539,7 @@ export const CHAINS: Chain[] = [
       browserUrl: 'https://goerli-optimism.etherscan.io/',
     },
     blockTimeMs: 2000,
+    supports: ['dAPIs'],
   },
   {
     name: 'Optimism',
@@ -519,6 +556,7 @@ export const CHAINS: Chain[] = [
       browserUrl: 'https://optimistic.etherscan.io/',
     },
     blockTimeMs: 2000,
+    supports: ['API3Market', 'dAPIs'],
   },
   {
     name: 'Polygon testnet',
@@ -535,6 +573,7 @@ export const CHAINS: Chain[] = [
       browserUrl: 'https://mumbai.polygonscan.com/',
     },
     blockTimeMs: 2576,
+    supports: ['dAPIs', 'OEVRelay'],
   },
   {
     name: 'Polygon zkEVM testnet',
@@ -548,6 +587,7 @@ export const CHAINS: Chain[] = [
       browserUrl: 'https://testnet-zkevm.polygonscan.com/',
     },
     blockTimeMs: 6587,
+    supports: ['dAPIs'],
   },
   {
     name: 'Polygon zkEVM',
@@ -561,6 +601,7 @@ export const CHAINS: Chain[] = [
       browserUrl: 'https://zkevm.polygonscan.com/',
     },
     blockTimeMs: 1658,
+    supports: ['API3Market', 'dAPIs'],
   },
   {
     name: 'Polygon',
@@ -574,6 +615,7 @@ export const CHAINS: Chain[] = [
       browserUrl: 'https://polygonscan.com/',
     },
     blockTimeMs: 2210,
+    supports: ['API3Market', 'dAPIs'],
   },
   {
     name: 'RSK testnet',
@@ -584,6 +626,7 @@ export const CHAINS: Chain[] = [
     providerUrl: 'https://public-node.testnet.rsk.co',
     explorer: { browserUrl: 'https://explorer.testnet.rsk.co/' },
     blockTimeMs: 26036,
+    supports: ['dAPIs'],
   },
   {
     name: 'RSK',
@@ -594,6 +637,7 @@ export const CHAINS: Chain[] = [
     providerUrl: 'https://mainnet.sovryn.app/rpc',
     explorer: { browserUrl: 'https://explorer.rsk.co/' },
     blockTimeMs: 30946,
+    supports: ['dAPIss'],
   },
   {
     name: 'Scroll Goerli testnet',
@@ -607,6 +651,7 @@ export const CHAINS: Chain[] = [
       browserUrl: 'https://blockscout.scroll.io/',
     },
     blockTimeMs: 3002,
+    supports: ['dAPIs'],
   },
   {
     name: 'SX Network testnet',
@@ -620,6 +665,7 @@ export const CHAINS: Chain[] = [
       browserUrl: 'https://explorer.toronto.sx.technology/',
     },
     blockTimeMs: 2000,
+    supports: [],
   },
   {
     name: 'SX Network',
@@ -633,6 +679,7 @@ export const CHAINS: Chain[] = [
       browserUrl: 'https://explorer.sx.technology/',
     },
     blockTimeMs: 2035,
+    supports: [],
   },
   {
     name: 'zkSync testnet',
@@ -643,6 +690,7 @@ export const CHAINS: Chain[] = [
     providerUrl: 'https://testnet.era.zksync.dev',
     explorer: { browserUrl: 'https://goerli.explorer.zksync.io/' },
     blockTimeMs: 1069,
+    supports: ['dAPIs'],
   },
   {
     name: 'zkSync',
@@ -653,5 +701,6 @@ export const CHAINS: Chain[] = [
     providerUrl: 'https://mainnet.era.zksync.io',
     explorer: { browserUrl: 'https://explorer.zksync.io/' },
     blockTimeMs: 1020,
+    supports: ['dAPIs'],
   },
 ];

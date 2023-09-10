@@ -15,5 +15,6 @@
     },
     "browserUrl": "https://polygonscan.com/"
   },
-  "blockTimeMs": 2210
+  "blockTimeMs": 2210,
+  "supports": ["API3Market", "dAPIs"]
 }

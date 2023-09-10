@@ -15,5 +15,6 @@
     },
     "browserUrl": "https://moonbase.moonscan.io/"
   },
-  "blockTimeMs": 13654
+  "blockTimeMs": 13654,
+  "supports": ["dAPIs"]
 }

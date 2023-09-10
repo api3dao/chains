@@ -14,5 +14,6 @@
     },
     "browserUrl": "https://cronos.org/explorer/testnet3/"
   },
-  "blockTimeMs": 2446
+  "blockTimeMs": 2446,
+  "supports": ["dAPIs"]
 }

@@ -14,5 +14,6 @@
     },
     "browserUrl": "https://explorer.sx.technology/"
   },
-  "blockTimeMs": 2035
+  "blockTimeMs": 2035,
+  "supports": []
 }

@@ -14,5 +14,6 @@
     },
     "browserUrl": "https://blockscout.scroll.io/"
   },
-  "blockTimeMs": 3002
+  "blockTimeMs": 3002,
+  "supports": ["dAPIs"]
 }

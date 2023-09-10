@@ -14,5 +14,6 @@
     },
     "browserUrl": "https://lineascan.build/"
   },
-  "blockTimeMs": 12099
+  "blockTimeMs": 12099,
+  "supports": []
 }

@@ -15,5 +15,6 @@
     },
     "browserUrl": "https://etherscan.io/"
   },
-  "blockTimeMs": 12167
+  "blockTimeMs": 12167,
+  "supports": ["API3Market", "ChainAPI", "dAPIs", "OEVRelay"]
 }

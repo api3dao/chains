@@ -8,5 +8,6 @@
   "explorer": {
     "browserUrl": "https://goerli.explorer.zksync.io/"
   },
-  "blockTimeMs": 1069
+  "blockTimeMs": 1069,
+  "supports": ["dAPIs"]
 }

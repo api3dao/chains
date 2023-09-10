@@ -15,5 +15,6 @@
     },
     "browserUrl": "https://testnet.bscscan.com/"
   },
-  "blockTimeMs": 3002
+  "blockTimeMs": 3002,
+  "supports": ["dAPIs"]
 }

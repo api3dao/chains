@@ -14,5 +14,6 @@
     },
     "browserUrl": "https://explorer.testnet.mantle.xyz/"
   },
-  "blockTimeMs": 362
+  "blockTimeMs": 362,
+  "supports": ["dAPIs"]
 }

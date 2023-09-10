@@ -14,5 +14,6 @@
     },
     "browserUrl": "https://testnet-zkevm.polygonscan.com/"
   },
-  "blockTimeMs": 6587
+  "blockTimeMs": 6587,
+  "supports": ["dAPIs"]
 }

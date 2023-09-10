@@ -15,5 +15,6 @@
     },
     "browserUrl": "https://goerli-optimism.etherscan.io/"
   },
-  "blockTimeMs": 2000
+  "blockTimeMs": 2000,
+  "supports": ["dAPIs"]
 }

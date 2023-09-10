@@ -15,5 +15,6 @@
     },
     "browserUrl": "https://testnet.snowtrace.io/"
   },
-  "blockTimeMs": 2398
+  "blockTimeMs": 2398,
+  "supports": ["dAPIs"]
 }

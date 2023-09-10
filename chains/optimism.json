@@ -15,5 +15,6 @@
     },
     "browserUrl": "https://optimistic.etherscan.io/"
   },
-  "blockTimeMs": 2000
+  "blockTimeMs": 2000,
+  "supports": ["API3Market", "dAPIs"]
 }

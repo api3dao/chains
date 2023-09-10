@@ -15,5 +15,6 @@
     },
     "browserUrl": "https://moonscan.io/"
   },
-  "blockTimeMs": 12233
+  "blockTimeMs": 12233,
+  "supports": ["API3Market", "dAPIs"]
 }
