@@ -637,7 +637,7 @@ export const CHAINS: Chain[] = [
     providerUrl: 'https://mainnet.sovryn.app/rpc',
     explorer: { browserUrl: 'https://explorer.rsk.co/' },
     blockTimeMs: 30946,
-    supports: ['dAPIss'],
+    supports: ['dAPIs'],
   },
   {
     name: 'Scroll Goerli testnet',
