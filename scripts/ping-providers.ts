@@ -35,7 +35,6 @@ async function notifySlack(errors: Error[]): Promise<Error[]> {
   if (errors.length > 0 && slackChannel) {
     const text = errors.reduce((acc, error) => `${acc}\n${error.message}`, '');
     await slackClient.chat.postMessage({ channel: slackChannel, text });
-    return errors;
   }
   return errors;
 }
