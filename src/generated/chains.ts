@@ -376,7 +376,7 @@ export const CHAINS: Chain[] = [
     testnet: false,
     providerUrl: 'https://rpc.linea.build',
     explorer: {
-      api: { url: 'https://lineascan.build/api', key: { required: true } },
+      api: { url: 'https://api.lineascan.build/api', key: { required: true } },
       browserUrl: 'https://lineascan.build/',
     },
     blockTimeMs: 12099,
