@@ -40,7 +40,7 @@
 
 - `polygon` and `polygon-zkevm` block explorer API keys are not the same.
 
-- `aurora-testnet`, `aurora`, `boba-avalanche`, `boba-moonbeam`, `fantom-testnet`, `gnosis-testnet`, `kava-testnet`, `sx-testnet`, `sx` block explorer APIs exist but do not work for contract verification.
+- `aurora-testnet`, `aurora`, `boba-avalanche`, `boba-moonbeam`, `fantom-testnet`, `gnosis-testnet`, `kava-testnet`, `kava`, `sx-testnet`, `sx` block explorer APIs exist but do not work for contract verification.
 
 ## API
 
