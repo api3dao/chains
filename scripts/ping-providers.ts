@@ -1,5 +1,6 @@
 import { WebClient } from '@slack/web-api';
 import { createPublicClient, http } from 'viem';
+import { go } from '@api3/promise-utils';
 import { CHAINS } from '../src';
 
 const specifiedChain = CHAINS.find((chain) => chain.alias === process.env.CHAIN);
@@ -14,12 +15,20 @@ async function pingAll(): Promise<PromiseSettledResult<void>[]> {
   const promises = chains.map(async (chain) => {
     const client = createPublicClient({ transport: http(chain.providerUrl) });
 
-    const chainId = await client.getChainId();
+    const chainIdRes = await go(() => client.getChainId(), { retries: 1 });
+    if (!chainIdRes.success) {
+      throw new Error(`Unable to fetch chain ID for ${chain.alias}`);
+    }
+    const chainId = chainIdRes.data;
     if (chainId.toString() !== chain.id) {
       throw new Error(`${chain.alias} provider reports chain ID as ${chainId}, while it is defined as ${chain.id}`);
     }
 
-    const block = await client.getBlock({ blockTag: 'latest' });
+    const blockRes = await go(() => client.getBlock({ blockTag: 'latest' }), { retries: 1 });
+    if (!blockRes.success) {
+      throw new Error(`Unable to fetch latest block for ${chain.alias}`);
+    }
+    const block = blockRes.data;
     const blockTimestamp = block.timestamp;
     const deltaTime = Number(BigInt(Math.floor(new Date().getTime() / 1000)) - blockTimestamp);
     const tolerance = 5 * 60; // 5 minutes

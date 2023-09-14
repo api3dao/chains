@@ -33,6 +33,7 @@
     "zod": "^3.22.2"
   },
   "devDependencies": {
+    "@api3/promise-utils": "^0.4.0",
     "@slack/web-api": "^6.9.0",
     "@types/node": "^20.5.7",
     "@types/prettier": "^3.0.0",
