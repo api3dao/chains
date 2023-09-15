@@ -24,14 +24,18 @@ async function pingAll(): Promise<PromiseSettledResult<void>[]> {
       throw new Error(`${chain.alias} provider reports chain ID as ${chainId}, while it is defined as ${chain.id}`);
     }
 
-    const blockRes = await go(() => client.getBlock({ blockTag: 'latest' }), { retries: 1 });
+    const blockRes = await go(() => client.getBlock({ blockTag: 'latest' }), {
+      retries: 3,
+      delay: { type: 'static', delayMs: 60_000 },
+    });
     if (!blockRes.success) {
       throw new Error(`Unable to fetch latest block for ${chain.alias}`);
     }
     const block = blockRes.data;
     const blockTimestamp = block.timestamp;
     const deltaTime = Number(BigInt(Math.floor(new Date().getTime() / 1000)) - blockTimestamp);
-    const tolerance = 5 * 60; // 5 minutes
+    // The block time in seconds multiplied by an arbitrary tolerance multiplier
+    const tolerance = chain.blockTimeMs * 60 * 5;
     if (Math.abs(deltaTime) > tolerance) {
       throw new Error(`${chain.alias} latest block timestamp is ${deltaTime} seconds behind the system clock`);
     }
