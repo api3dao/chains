@@ -4,8 +4,9 @@ on:
   pull_request:
     branches:
       - main
-  schedule:
-    - cron: "0 12 * * *"
+    paths:
+      - 'chains/**'
+    types: [opened, synchronize, reopened]
 
 jobs:
   check-providers:
