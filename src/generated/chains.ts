@@ -343,6 +343,19 @@ export const CHAINS: Chain[] = [
     blockTimeMs: 5201,
   },
   {
+    name: 'Kava',
+    alias: 'kava',
+    id: '2222',
+    symbol: 'KAVA',
+    testnet: false,
+    providerUrl: 'https://evm.kava.io/',
+    explorer: {
+      api: { url: 'https://kavascan.com/api', key: { required: false } },
+      browserUrl: 'https://kavascan.com/',
+    },
+    blockTimeMs: 6318,
+  },
+  {
     name: 'Linea Goerli testnet',
     alias: 'linea-goerli-testnet',
     id: '59140',
@@ -363,7 +376,7 @@ export const CHAINS: Chain[] = [
     testnet: false,
     providerUrl: 'https://rpc.linea.build',
     explorer: {
-      api: { url: 'https://lineascan.build/api', key: { required: true } },
+      api: { url: 'https://api.lineascan.build/api', key: { required: true } },
       browserUrl: 'https://lineascan.build/',
     },
     blockTimeMs: 12099,
