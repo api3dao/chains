@@ -148,7 +148,7 @@ export const CHAINS: Chain[] = [
       api: { url: 'https://blockexplorer.avax.boba.network/api', key: { required: false } },
       browserUrl: 'https://blockexplorer.avax.boba.network/',
     },
-    blockTimeMs: 70618,
+    blockTimeMs: 120000,
   },
   {
     name: 'Boba/BNB',
