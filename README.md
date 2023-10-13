@@ -6,9 +6,10 @@
 
 <a href="">![npm](https://img.shields.io/npm/v/%40api3%2Fchains)</a>
 <a href="">![npm](https://img.shields.io/npm/dw/%40api3/chains)</a>
-<a href="">![GitHub Workflow Status (with event)](https://img.shields.io/github/actions/workflow/status/api3dao/chains/continuous-build.yml?label=Continuous&nbsp;Build)</a>
-<a href="">![GitHub Workflow Status (with event)](https://img.shields.io/github/actions/workflow/status/api3dao/chains/check-providers.yml?label=Check&nbsp;Providers)</a>
+<a href="">![GitHub Workflow Status (with event)](https://img.shields.io/github/actions/workflow/status/api3dao/chains/continuous-build.yml?label=Continuous Build)</a>
+<a href="">![GitHub Workflow Status (with event)](https://img.shields.io/github/actions/workflow/status/api3dao/chains/check-providers.yml?label=Check Providers)</a>
 <a href="">![NPM](https://img.shields.io/npm/l/%40api3%2Fchains)</a>
+
 </div>
 
 <h4 align="center">
