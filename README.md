@@ -111,6 +111,29 @@ console.log(hardhatConfig.getEnvVariableNames());
 */
 ```
 
+### viemConfig.chains()
+
+Returns an array of chains in the format that [Viem](https://viem.sh/docs/clients/chains.html) expects. Each Chain object can be used to [create a Viem public client](https://viem.sh/docs/clients/chains.html#usage).
+
+```ts
+import { viemConfig } from '@api3/chains';
+console.log(viemConfig.chains());
+/*
+[
+  {
+    id: 421613,
+    name: 'Arbitrum testnet',
+    network: 'arbitrum-goerli-testnet',
+    nativeCurrency: { ... },
+    rpcUrls: { default: ..., public: ... }
+    blockExplorers: { default: ..., public: ... }
+    ...
+  },
+  ...
+]
+*/
+```
+
 ### Types
 
 Types are also exported and can be found in `src/types.ts`.
