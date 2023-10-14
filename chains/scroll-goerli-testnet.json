@@ -2,7 +2,11 @@
   "name": "Scroll Goerli testnet",
   "alias": "scroll-goerli-testnet",
   "id": "534353",
-  "symbol": "testETH",
+  "nativeCurrency": {
+    "name": "Ether",
+    "symbol": "ETH",
+    "decimals": 18
+  },
   "testnet": true,
   "providerUrl": "https://alpha-rpc.scroll.io/l2",
   "explorer": {

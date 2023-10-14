@@ -2,7 +2,11 @@
   "name": "Moonbeam",
   "alias": "moonbeam",
   "id": "1284",
-  "symbol": "GLMR",
+  "nativeCurrency": {
+    "name": "GLMR",
+    "symbol": "GLMR",
+    "decimals": 18
+  },
   "testnet": false,
   "providerUrl": "https://rpc.api.moonbeam.network",
   "explorer": {

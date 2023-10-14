@@ -2,7 +2,11 @@
   "name": "Avalanche",
   "alias": "avalanche",
   "id": "43114",
-  "symbol": "AVAX",
+  "nativeCurrency": {
+    "name": "Avalanche",
+    "symbol": "AVAX",
+    "decimals": 18
+  },
   "testnet": false,
   "providerUrl": "https://api.avax.network/ext/bc/C/rpc",
   "explorer": {

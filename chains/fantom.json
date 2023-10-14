@@ -2,7 +2,11 @@
   "name": "Fantom",
   "alias": "fantom",
   "id": "250",
-  "symbol": "FTM",
+  "nativeCurrency": {
+    "name": "Fantom",
+    "symbol": "FTM",
+    "decimals": 18
+  },
   "testnet": false,
   "providerUrl": "https://rpcapi.fantom.network/",
   "explorer": {

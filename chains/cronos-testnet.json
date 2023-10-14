@@ -2,7 +2,11 @@
   "name": "Cronos testnet",
   "alias": "cronos-testnet",
   "id": "338",
-  "symbol": "testCRO",
+  "nativeCurrency": {
+    "name": "Cronos",
+    "symbol": "CRO",
+    "decimals": 18
+  },
   "testnet": true,
   "providerUrl": "https://evm-t3.cronos.org",
   "explorer": {

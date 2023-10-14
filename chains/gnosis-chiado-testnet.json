@@ -1,8 +1,12 @@
 {
-  "name": "Gnosis Chain testnet",
+  "name": "Gnosis Chiado testnet",
   "alias": "gnosis-testnet",
   "id": "10200",
-  "symbol": "testxDAI",
+  "nativeCurrency": {
+    "name": "Gnosis",
+    "symbol": "xDAI",
+    "decimals": 18
+  },
   "testnet": true,
   "providerUrl": "https://rpc.chiadochain.net",
   "explorer": {

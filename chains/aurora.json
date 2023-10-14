@@ -2,7 +2,11 @@
   "name": "Aurora",
   "alias": "aurora",
   "id": "1313161554",
-  "symbol": "ETH",
+  "nativeCurrency": {
+    "name": "Ether",
+    "symbol": "ETH",
+    "decimals": 18
+  },
   "testnet": false,
   "providerUrl": "https://mainnet.aurora.dev/",
   "explorer": {

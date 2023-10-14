@@ -2,7 +2,11 @@
   "name": "Avalanche testnet",
   "alias": "avalanche-testnet",
   "id": "43113",
-  "symbol": "testAVAX",
+  "nativeCurrency": {
+    "name": "Avalanche Fuji",
+    "symbol": "AVAX",
+    "decimals": 18
+  },
   "testnet": true,
   "providerUrl": "https://api.avax-test.network/ext/bc/C/rpc",
   "explorer": {

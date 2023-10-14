@@ -2,7 +2,11 @@
   "name": "Polygon testnet",
   "alias": "polygon-testnet",
   "id": "80001",
-  "symbol": "testMATIC",
+  "nativeCurrency": {
+    "name": "MATIC",
+    "symbol": "MATIC",
+    "decimals": 18
+  },
   "testnet": true,
   "providerUrl": "https://rpc.ankr.com/polygon_mumbai",
   "explorer": {

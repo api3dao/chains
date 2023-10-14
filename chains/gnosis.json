@@ -2,7 +2,11 @@
   "name": "Gnosis Chain",
   "alias": "gnosis",
   "id": "100",
-  "symbol": "xDAI",
+  "nativeCurrency": {
+    "name": "Gnosis",
+    "symbol": "xDAI",
+    "decimals": 18
+  },
   "testnet": false,
   "providerUrl": "https://rpc.gnosischain.com",
   "explorer": {

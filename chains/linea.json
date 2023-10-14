@@ -2,7 +2,11 @@
   "name": "Linea",
   "alias": "linea",
   "id": "59144",
-  "symbol": "ETH",
+  "nativeCurrency": {
+    "name": "Linea Ether",
+    "symbol": "ETH",
+    "decimals": 18
+  },
   "testnet": false,
   "providerUrl": "https://rpc.linea.build",
   "explorer": {

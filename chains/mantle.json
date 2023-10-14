@@ -2,7 +2,11 @@
   "name": "Mantle",
   "alias": "mantle",
   "id": "5000",
-  "symbol": "MNT",
+  "nativeCurrency": {
+    "name": "MNT",
+    "symbol": "MNT",
+    "decimals": 18
+  },
   "testnet": false,
   "providerUrl": "https://rpc.mantle.xyz",
   "explorer": {

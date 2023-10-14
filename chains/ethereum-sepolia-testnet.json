@@ -2,7 +2,11 @@
   "name": "Ethereum Sepolia testnet",
   "alias": "ethereum-sepolia-testnet",
   "id": "11155111",
-  "symbol": "testETH",
+  "nativeCurrency": {
+    "name": "Sepolia Ether",
+    "symbol": "SEP",
+    "decimals": 18
+  },
   "testnet": true,
   "providerUrl": "https://rpc-sepolia.rockx.com",
   "explorer": {

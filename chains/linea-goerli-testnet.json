@@ -2,7 +2,11 @@
   "name": "Linea Goerli testnet",
   "alias": "linea-goerli-testnet",
   "id": "59140",
-  "symbol": "testETH",
+  "nativeCurrency": {
+    "name": "Linea Ether",
+    "symbol": "ETH",
+    "decimals": 18
+  },
   "testnet": true,
   "providerUrl": "https://rpc.goerli.linea.build",
   "explorer": {

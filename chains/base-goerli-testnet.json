@@ -2,7 +2,11 @@
   "name": "Base Goerli testnet",
   "alias": "base-goerli-testnet",
   "id": "84531",
-  "symbol": "testETH",
+  "nativeCurrency": {
+    "name": "Goerli Ether",
+    "symbol": "ETH",
+    "decimals": 18
+  },
   "testnet": true,
   "providerUrl": "https://goerli.base.org",
   "explorer": {

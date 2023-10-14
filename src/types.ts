@@ -15,6 +15,12 @@ export const chainExplorerSchema = z.object({
   browserUrl: z.string().url(),
 });
 
+export const chainNativeCurrency = z.object({
+  name: z.string(),
+  symbol: z.string(),
+  decimals: z.number(),
+});
+
 export const chainSchema = z.object({
   alias: z.string(),
   name: z.string(),
@@ -23,7 +29,7 @@ export const chainSchema = z.object({
   // See: https://github.com/api3dao/chains/pull/1#discussion_r1161102392
   id: z.string().regex(/^\d+$/),
   providerUrl: z.string().url(),
-  symbol: z.string(),
+  nativeCurrency: chainNativeCurrency,
   testnet: z.boolean(),
   explorer: chainExplorerSchema,
   blockTimeMs: z.number().positive(),

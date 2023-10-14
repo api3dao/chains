@@ -2,7 +2,11 @@
   "name": "Mantle Goerli testnet",
   "alias": "mantle-goerli-testnet",
   "id": "5001",
-  "symbol": "MNT",
+  "nativeCurrency": {
+    "name": "MNT",
+    "symbol": "MNT",
+    "decimals": 18
+  },
   "testnet": true,
   "providerUrl": "https://rpc.testnet.mantle.xyz",
   "explorer": {

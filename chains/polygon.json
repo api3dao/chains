@@ -2,7 +2,11 @@
   "name": "Polygon",
   "alias": "polygon",
   "id": "137",
-  "symbol": "MATIC",
+  "nativeCurrency": {
+    "name": "MATIC",
+    "symbol": "MATIC",
+    "decimals": 18
+  },
   "testnet": false,
   "providerUrl": "https://rpc.ankr.com/polygon",
   "explorer": {

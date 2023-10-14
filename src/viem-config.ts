@@ -1,41 +1,29 @@
-import { Chain as ViemChain, defineChain } from 'viem';
-import * as viemChains from 'viem/chains';
+import { defineChain } from 'viem';
 import { CHAINS } from './generated/chains';
 
-export function chains(): Array<ViemChain> {
-  const exportedChains: Array<ViemChain> = [];
-
-  for (const name in viemChains) {
-    const viemChain = (viemChains as { [name: string]: ViemChain })[name];
-    if (!viemChain) {
-      continue;
-    }
-
-    const api3Chain = CHAINS.find((c) => c.id === viemChain.id.toString());
-    if (!api3Chain) {
-      continue;
-    }
-
-    const customisedChain = {
+export function chains() {
+  return CHAINS.map((chain) => {
+    const viemChain = defineChain({
+      id: Number(chain.id),
+      name: chain.name,
+      network: chain.alias,
+      nativeCurrency: chain.nativeCurrency,
       rpcUrls: {
         default: {
-          http: [api3Chain.providerUrl],
+          http: [chain.providerUrl],
         },
         public: {
-          http: [api3Chain.providerUrl],
+          http: [chain.providerUrl],
         },
       },
       blockExplorers: {
         default: {
           name: 'Explorer',
-          url: api3Chain.explorer.browserUrl,
+          url: chain.explorer.browserUrl,
         },
       },
-    };
+    });
 
-    const mergedChain = defineChain({ ...viemChain, ...customisedChain });
-    exportedChains.push(mergedChain);
-  }
-
-  return exportedChains;
+    return viemChain;
+  });
 }

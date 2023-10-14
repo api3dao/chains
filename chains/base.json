@@ -2,7 +2,11 @@
   "name": "Base",
   "alias": "base",
   "id": "8453",
-  "symbol": "ETH",
+  "nativeCurrency": {
+    "name": "Ether",
+    "symbol": "ETH",
+    "decimals": 18
+  },
   "testnet": false,
   "providerUrl": "https://mainnet.base.org",
   "explorer": {

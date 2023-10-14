@@ -2,7 +2,11 @@
   "name": "Fantom testnet",
   "alias": "fantom-testnet",
   "id": "4002",
-  "symbol": "testFTM",
+  "nativeCurrency": {
+    "name": "Fantom",
+    "symbol": "FTM",
+    "decimals": 18
+  },
   "testnet": true,
   "providerUrl": "https://rpc.ankr.com/fantom_testnet",
   "explorer": {

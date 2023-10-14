@@ -2,7 +2,11 @@
   "name": "Arbitrum Nova",
   "alias": "arbitrum-nova",
   "id": "42170",
-  "symbol": "ETH",
+  "nativeCurrency": {
+    "name": "Ether",
+    "symbol": "ETH",
+    "decimals": 18
+  },
   "testnet": false,
   "providerUrl": "https://nova.arbitrum.io/rpc",
   "explorer": {

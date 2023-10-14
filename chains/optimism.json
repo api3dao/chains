@@ -2,7 +2,11 @@
   "name": "Optimism",
   "alias": "optimism",
   "id": "10",
-  "symbol": "ETH",
+  "nativeCurrency": {
+    "name": "Ether",
+    "symbol": "ETH",
+    "decimals": 18
+  },
   "testnet": false,
   "providerUrl": "https://mainnet.optimism.io",
   "explorer": {

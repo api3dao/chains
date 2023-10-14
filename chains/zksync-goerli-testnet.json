@@ -2,7 +2,11 @@
   "name": "zkSync testnet",
   "alias": "zksync-goerli-testnet",
   "id": "280",
-  "symbol": "testETH",
+  "nativeCurrency": {
+    "name": "Ether",
+    "symbol": "ETH",
+    "decimals": 18
+  },
   "testnet": true,
   "providerUrl": "https://testnet.era.zksync.dev",
   "explorer": {

@@ -2,7 +2,11 @@
   "name": "Optimism testnet",
   "alias": "optimism-goerli-testnet",
   "id": "420",
-  "symbol": "testETH",
+  "nativeCurrency": {
+    "name": "Goerli Ether",
+    "symbol": "ETH",
+    "decimals": 18
+  },
   "testnet": true,
   "providerUrl": "https://goerli.optimism.io",
   "explorer": {

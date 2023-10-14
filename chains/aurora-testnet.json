@@ -2,7 +2,11 @@
   "name": "Aurora testnet",
   "alias": "aurora-testnet",
   "id": "1313161555",
-  "symbol": "testETH",
+  "nativeCurrency": {
+    "name": "Ether",
+    "symbol": "ETH",
+    "decimals": 18
+  },
   "testnet": true,
   "providerUrl": "https://testnet.aurora.dev/",
   "explorer": {

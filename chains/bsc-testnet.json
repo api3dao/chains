@@ -2,7 +2,11 @@
   "name": "BSC testnet",
   "alias": "bsc-testnet",
   "id": "97",
-  "symbol": "testBNB",
+  "nativeCurrency": {
+    "name": "BNB",
+    "symbol": "tBNB",
+    "decimals": 18
+  },
   "testnet": true,
   "providerUrl": "https://data-seed-prebsc-1-s3.binance.org:8545/",
   "explorer": {
