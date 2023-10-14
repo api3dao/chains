@@ -148,7 +148,7 @@ export const CHAINS: Chain[] = [
       api: { url: 'https://blockexplorer.avax.boba.network/api', key: { required: false } },
       browserUrl: 'https://blockexplorer.avax.boba.network/',
     },
-    blockTimeMs: 70618,
+    blockTimeMs: 120000,
   },
   {
     name: 'Boba/BNB',
@@ -288,8 +288,11 @@ export const CHAINS: Chain[] = [
     testnet: true,
     providerUrl: 'https://rpc.chiadochain.net',
     explorer: {
-      api: { url: 'https://blockscout.chiadochain.net/api', key: { required: false, hardhatEtherscanAlias: 'chiado' } },
-      browserUrl: 'https://blockscout.com/gnosis/chiado/',
+      api: {
+        url: 'https://gnosis-chiado.blockscout.com/api',
+        key: { required: false, hardhatEtherscanAlias: 'chiado' },
+      },
+      browserUrl: 'https://gnosis-chiado.blockscout.com/',
     },
     blockTimeMs: 5015,
   },
@@ -334,10 +337,23 @@ export const CHAINS: Chain[] = [
     testnet: true,
     providerUrl: 'https://evm.testnet.kava.io/',
     explorer: {
-      api: { url: 'https://explorer.testnet.kava.io/api', key: { required: false } },
-      browserUrl: 'https://explorer.testnet.kava.io/',
+      api: { url: 'https://testnet.kavascan.com/api', key: { required: false } },
+      browserUrl: 'https://testnet.kavascan.com/',
     },
     blockTimeMs: 5201,
+  },
+  {
+    name: 'Kava',
+    alias: 'kava',
+    id: '2222',
+    symbol: 'KAVA',
+    testnet: false,
+    providerUrl: 'https://evm.kava.io/',
+    explorer: {
+      api: { url: 'https://kavascan.com/api', key: { required: false } },
+      browserUrl: 'https://kavascan.com/',
+    },
+    blockTimeMs: 6318,
   },
   {
     name: 'Linea Goerli testnet',
@@ -347,7 +363,7 @@ export const CHAINS: Chain[] = [
     testnet: true,
     providerUrl: 'https://rpc.goerli.linea.build',
     explorer: {
-      api: { url: 'https://api-testnet.lineascan.build/api', key: { required: false } },
+      api: { url: 'https://api-testnet.lineascan.build/api', key: { required: true } },
       browserUrl: 'https://goerli.lineascan.build/',
     },
     blockTimeMs: 12099,
@@ -360,7 +376,7 @@ export const CHAINS: Chain[] = [
     testnet: false,
     providerUrl: 'https://rpc.linea.build',
     explorer: {
-      api: { url: 'https://lineascan.build/api', key: { required: true } },
+      api: { url: 'https://api.lineascan.build/api', key: { required: true } },
       browserUrl: 'https://lineascan.build/',
     },
     blockTimeMs: 12099,

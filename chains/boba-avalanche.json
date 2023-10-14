@@ -14,5 +14,5 @@
     },
     "browserUrl": "https://blockexplorer.avax.boba.network/"
   },
-  "blockTimeMs": 70618
+  "blockTimeMs": 120000
 }

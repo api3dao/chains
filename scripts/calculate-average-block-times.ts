@@ -1,41 +1,39 @@
 import fs from 'fs';
 import path from 'path';
-import { JsonRpcProvider } from 'ethers';
+import { createPublicClient, http } from 'viem';
 import { CHAINS } from '../src';
 
-const BLOCK_LOOKBACK = 400_000;
+const BLOCK_LOOKBACK = BigInt(400_000);
+
+const specifiedChain = CHAINS.find((chain) => chain.alias === process.env.CHAIN);
+const chains = specifiedChain ? [specifiedChain] : CHAINS;
 
 async function calculateAverageBlockTimes(): Promise<void> {
-  const specifiedChain = CHAINS.find((chain) => chain.alias === process.env.CHAIN);
-  const chains = specifiedChain ? [specifiedChain] : CHAINS;
-
   const results = await Promise.allSettled(
     chains.map(async (chain) => {
-      const provider = new JsonRpcProvider(chain.providerUrl);
-      const chainId = (await provider.getNetwork()).chainId;
+      const client = createPublicClient({ transport: http(chain.providerUrl) });
+      const chainId = await client.getChainId();
       if (chainId.toString() !== chain.id) {
-        throw new Error(
-          `${chain.alias} provider reports chain ID to be ${chainId}, while it is defined to be ${chain.id}`
-        );
+        throw new Error(`${chain.alias} provider reports chain ID as ${chainId}, while it is defined as ${chain.id}`);
       }
 
-      const latestBlock = await provider.getBlock('latest');
+      const latestBlock = await client.getBlock({ blockTag: 'latest' });
       if (!latestBlock) {
         throw new Error(`Failed to get latest block for ${chain.alias}.`);
       }
 
       const latestBlockNumber = latestBlock.number;
-      const latestBlockTimestamp = latestBlock.timestamp * 1000;
-
       const blockDiff = latestBlockNumber - BLOCK_LOOKBACK;
-      const referenceBlock = await provider.getBlock(blockDiff);
-      if (!latestBlock || !referenceBlock) {
+
+      const referenceBlock = await client.getBlock({ blockNumber: blockDiff });
+      if (!referenceBlock) {
         throw new Error(`Failed to get reference block for ${chain.alias}.`);
       }
 
-      const referenceBlockBlockTimestamp = referenceBlock.timestamp * 1000;
+      const referenceBlockBlockTimestamp = referenceBlock.timestamp * BigInt(1000);
+      const latestBlockTimestamp = latestBlock.timestamp * BigInt(1000);
       const timeDiff = latestBlockTimestamp - referenceBlockBlockTimestamp;
-      const blockTimeMs = Math.ceil(timeDiff / BLOCK_LOOKBACK);
+      const blockTimeMs = Math.ceil(Number(timeDiff / BLOCK_LOOKBACK));
 
       if (blockTimeMs) {
         const filePath = path.join(__dirname, `../chains/${chain.alias}.json`);
