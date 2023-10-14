@@ -1,7 +1,7 @@
-import { defineChain } from 'viem';
+import { Chain, defineChain } from 'viem';
 import { CHAINS } from './generated/chains';
 
-export function chains() {
+export function chains(): Chain[] {
   return CHAINS.map((chain) => {
     const viemChain = defineChain({
       id: Number(chain.id),
