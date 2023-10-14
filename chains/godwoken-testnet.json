@@ -2,7 +2,11 @@
   "name": "Godwoken testnet",
   "alias": "godwoken-testnet",
   "id": "71401",
-  "symbol": "testpCKB",
+  "nativeCurrency": {
+    "name": "pCKB",
+    "symbol": "pCKB",
+    "decimals": 18
+  },
   "testnet": true,
   "providerUrl": "https://v1.testnet.godwoken.io/rpc",
   "explorer": {

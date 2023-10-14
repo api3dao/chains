@@ -2,7 +2,11 @@
   "name": "Godwoken",
   "alias": "godwoken",
   "id": "71402",
-  "symbol": "pCKB",
+  "nativeCurrency": {
+    "name": "pCKB",
+    "symbol": "pCKB",
+    "decimals": 18
+  },
   "testnet": false,
   "providerUrl": "https://v1.mainnet.godwoken.io/rpc",
   "explorer": {

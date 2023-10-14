@@ -1,6 +1,6 @@
 {
   "name": "Avalanche Fuji testnet",
-  "alias": "avalanche-testnet",
+  "alias": "avalanche-fuji-testnet",
   "id": "43113",
   "nativeCurrency": {
     "name": "Avalanche Fuji",

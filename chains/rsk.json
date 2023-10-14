@@ -2,7 +2,11 @@
   "name": "RSK",
   "alias": "rsk",
   "id": "30",
-  "symbol": "RBTC",
+  "nativeCurrency": {
+    "name": "RSK Bitcoin",
+    "symbol": "RBTC",
+    "decimals": 18
+  },
   "testnet": false,
   "providerUrl": "https://mainnet.sovryn.app/rpc",
   "explorer": {

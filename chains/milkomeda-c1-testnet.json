@@ -2,7 +2,11 @@
   "name": "Milkomeda C1 testnet",
   "alias": "milkomeda-c1-testnet",
   "id": "200101",
-  "symbol": "testmilkADA",
+  "nativeCurrency": {
+    "name": "mTADA",
+    "symbol": "mTADA",
+    "decimals": 18
+  },
   "testnet": true,
   "providerUrl": "https://rpc-devnet-cardano-evm.c1.milkomeda.com",
   "explorer": {

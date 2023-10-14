@@ -2,7 +2,11 @@
   "name": "Kava testnet",
   "alias": "kava-testnet",
   "id": "2221",
-  "symbol": "testKAVA",
+  "nativeCurrency": {
+    "name": "KAVA",
+    "symbol": "KAVA",
+    "decimals": 18
+  },
   "testnet": true,
   "providerUrl": "https://evm.testnet.kava.io/",
   "explorer": {

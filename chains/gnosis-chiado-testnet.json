@@ -1,6 +1,6 @@
 {
   "name": "Gnosis Chiado testnet",
-  "alias": "gnosis-testnet",
+  "alias": "gnosis-chiado-testnet",
   "id": "10200",
   "nativeCurrency": {
     "name": "Gnosis",

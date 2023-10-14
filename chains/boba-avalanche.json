@@ -2,7 +2,11 @@
   "name": "Boba/Avalanche",
   "alias": "boba-avalanche",
   "id": "43288",
-  "symbol": "BOBA",
+  "nativeCurrency": {
+    "name": "Boba",
+    "symbol": "BOBA",
+    "decimals": 18
+  },
   "testnet": false,
   "providerUrl": "https://replica.avax.boba.network/",
   "explorer": {

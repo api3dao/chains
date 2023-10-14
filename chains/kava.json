@@ -2,7 +2,11 @@
   "name": "Kava",
   "alias": "kava",
   "id": "2222",
-  "symbol": "KAVA",
+  "nativeCurrency": {
+    "name": "KAVA",
+    "symbol": "KAVA",
+    "decimals": 18
+  },
   "testnet": false,
   "providerUrl": "https://evm.kava.io/",
   "explorer": {

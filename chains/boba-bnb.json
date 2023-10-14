@@ -2,7 +2,11 @@
   "name": "Boba/BNB",
   "alias": "boba-bnb",
   "id": "56288",
-  "symbol": "BOBA",
+  "nativeCurrency": {
+    "name": "Boba",
+    "symbol": "BOBA",
+    "decimals": 18
+  },
   "testnet": false,
   "providerUrl": "https://replica.bnb.boba.network/",
   "explorer": {
