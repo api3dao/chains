@@ -1,6 +1,6 @@
 import { etherscanApiKeyName, getEnvVariableNames, networkHttpRpcUrlName } from './hardhat-config';
 import { Chain } from './types';
-import { CHAINS } from './generated/chains'
+import { CHAINS } from './generated/chains';
 import { toUpperSnakeCase } from './utils/strings';
 
 function getRandomChain(): Chain {
