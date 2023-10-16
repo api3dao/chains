@@ -1,6 +1,6 @@
 import { toUpperSnakeCase } from './strings';
 
-describe('toUpperSnakeCase', () => {
+describe(toUpperSnakeCase.name, () => {
   test('converts simple words', () => {
     const result = toUpperSnakeCase('hello world');
     expect(result).toEqual('HELLO_WORLD');
@@ -11,7 +11,7 @@ describe('toUpperSnakeCase', () => {
     expect(result).toEqual('HELLO_WORLD_4');
   });
 
-  test('trims leading and trailing whitespaces', () => {
+  test('trims leading and trailing whtestespaces', () => {
     const result = toUpperSnakeCase('  hello world  ');
     expect(result).toEqual('HELLO_WORLD');
   });
@@ -41,3 +41,4 @@ describe('toUpperSnakeCase', () => {
     expect(result).toEqual('HELLO_WORLD');
   });
 });
+
