@@ -7,4 +7,3 @@ export function toUpperSnakeCase(input: string): string {
     .join('_')
     .toUpperCase();
 }
-

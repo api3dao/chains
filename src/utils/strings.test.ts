@@ -41,4 +41,3 @@ describe(toUpperSnakeCase.name, () => {
     expect(result).toEqual('HELLO_WORLD');
   });
 });
-

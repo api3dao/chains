@@ -112,8 +112,10 @@ describe(etherscan.name, () => {
     test('sets the API key value to dummy value for chains with a hardhat alias', () => {
       const chains = CHAINS.filter((c) => !!c.explorer && !!c.explorer.api);
       const chainsWithAlias = chains.filter((c) => {
-        return !!c.explorer.api!.key.hardhatEtherscanAlias && // has a hardhatEtherscanAlias
-          !c.explorer.api!.key.required; // but not required
+        return (
+          !!c.explorer.api!.key.hardhatEtherscanAlias && // has a hardhatEtherscanAlias
+          !c.explorer.api!.key.required
+        ); // but not required
       });
 
       const { apiKey } = etherscan();
@@ -125,8 +127,10 @@ describe(etherscan.name, () => {
     test('sets the API key value to not found for chains with a hardhat alias', () => {
       const chains = CHAINS.filter((c) => !!c.explorer && !!c.explorer.api);
       const chainsWithAlias = chains.filter((c) => {
-        return !!c.explorer.api!.key.hardhatEtherscanAlias && // has a hardhatEtherscanAlias
-          c.explorer.api!.key.required; // and is required
+        return (
+          !!c.explorer.api!.key.hardhatEtherscanAlias && // has a hardhatEtherscanAlias
+          c.explorer.api!.key.required
+        ); // and is required
       });
 
       const { apiKey } = etherscan();
@@ -138,8 +142,10 @@ describe(etherscan.name, () => {
     test('sets the API value to the env variable value for chains with a hardhat alias', () => {
       const chains = CHAINS.filter((c) => !!c.explorer && !!c.explorer.api);
       const chainsWithAlias = chains.filter((c) => {
-        return !!c.explorer.api!.key.hardhatEtherscanAlias && // has a hardhatEtherscanAlias
-          c.explorer.api!.key.required; // and is required
+        return (
+          !!c.explorer.api!.key.hardhatEtherscanAlias && // has a hardhatEtherscanAlias
+          c.explorer.api!.key.required
+        ); // and is required
       });
 
       chainsWithAlias.forEach((chain) => {
