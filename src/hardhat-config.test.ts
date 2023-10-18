@@ -1,4 +1,4 @@
-import { etherscan, etherscanApiKeyName, getEnvVariableNames, networkHttpRpcUrlName } from './hardhat-config';
+import { etherscan, etherscanApiKeyName, getEnvVariableNames, networkHttpRpcUrlName, networks } from './hardhat-config';
 import { Chain } from './types';
 import { CHAINS } from './generated/chains';
 import { toUpperSnakeCase } from './utils/strings';
@@ -46,6 +46,19 @@ describe(networkHttpRpcUrlName.name, () => {
 });
 
 describe(etherscan.name, () => {
+  beforeEach(() => {
+    expect((global as any).window).toBeUndefined();
+  });
+
+  afterEach(() => {
+    delete (global as any).window;
+  });
+
+  test('throws an error if called in a browser-like environment', () => {
+    (global as any).window = {};
+    expect(() => etherscan()).toThrow('Cannot be called outside of a Node.js environment');
+  });
+
   describe('customChains', () => {
     test('ignores chains without an explorer', () => {
       const { customChains } = etherscan();
@@ -150,8 +163,7 @@ describe(etherscan.name, () => {
 
       chainsWithAlias.forEach((chain) => {
         const envKey = etherscanApiKeyName(chain);
-        const newEnvValue = `api-key-${chain.id}`;
-        process.env[envKey] = newEnvValue;
+        process.env[envKey] = `api-key-${chain.id}`;
       });
 
       // needs to be called AFTER env values are set
@@ -159,6 +171,63 @@ describe(etherscan.name, () => {
 
       chainsWithAlias.forEach((chain) => {
         expect(apiKey[chain.explorer.api!.key.hardhatEtherscanAlias!]).toEqual(`api-key-${chain.id}`);
+      });
+    });
+  });
+});
+
+describe(networks.name, () => {
+  beforeEach(() => {
+    expect((global as any).window).toBeUndefined();
+  });
+
+  afterEach(() => {
+    delete (global as any).window;
+  });
+
+  test('throws an error if called in a browser-like environment', () => {
+    (global as any).window = {};
+    expect(() => networks()).toThrow('Cannot be called outside of a Node.js environment');
+  });
+
+  test('builds a network object for each chain', () => {
+    const result = networks();
+    expect(Object.keys(result).length).toEqual(CHAINS.length);
+
+    CHAINS.forEach((chain) => {
+      expect(result[chain.alias]).toEqual({
+        accounts: { mnemonic: '' },
+        chainId: Number(chain.id),
+        url: chain.providerUrl,
+      });
+    });
+  });
+
+  test('sets the mnemonic using the MNEMONIC env variable if it exists', () => {
+    process.env.MNEMONIC = 'test test test test test test test test test test test junk';
+    const result = networks();
+    CHAINS.forEach((chain) => {
+      expect(result[chain.alias]).toEqual({
+        accounts: { mnemonic: 'test test test test test test test test test test test junk' },
+        chainId: Number(chain.id),
+        url: chain.providerUrl,
+      });
+    });
+  });
+
+  test('sets the provider URL using the chain alias env variable if it exists', () => {
+    CHAINS.forEach((chain) => {
+      const alias = toUpperSnakeCase(chain.alias);
+      process.env[`HARDHAT_HTTP_RPC_URL_${alias}`] = `https://${chain.id}.xyz`;
+    });
+
+    const result = networks();
+
+    CHAINS.forEach((chain) => {
+      expect(result[chain.alias]).toEqual({
+        accounts: { mnemonic: '' },
+        chainId: Number(chain.id),
+        url: `https://${chain.id}.xyz`,
       });
     });
   });
