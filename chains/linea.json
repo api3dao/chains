@@ -7,7 +7,7 @@
   "providerUrl": "https://rpc.linea.build",
   "explorer": {
     "api": {
-      "url": "https://lineascan.build/api",
+      "url": "https://api.lineascan.build/api",
       "key": {
         "required": true
       }

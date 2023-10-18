@@ -1,0 +1,18 @@
+{
+  "name": "Kava",
+  "alias": "kava",
+  "id": "2222",
+  "symbol": "KAVA",
+  "testnet": false,
+  "providerUrl": "https://evm.kava.io/",
+  "explorer": {
+    "api": {
+      "url": "https://kavascan.com/api",
+      "key": {
+        "required": false
+      }
+    },
+    "browserUrl": "https://kavascan.com/"
+  },
+  "blockTimeMs": 6318
+}
