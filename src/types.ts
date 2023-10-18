@@ -1,6 +1,6 @@
 import { z } from 'zod';
 
-export const SUPPORTS = ['API3Market', 'ChainAPI', 'dAPIs', 'OEVRelay'];
+export const SUPPORTS = ['api3market', 'chainapi', 'dapis', 'oevrelay'];
 
 export const chainExplorerAPIKeySchema = z.object({
   required: z.boolean(),

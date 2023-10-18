@@ -16,5 +16,5 @@
     "browserUrl": "https://goerli.etherscan.io/"
   },
   "blockTimeMs": 15140,
-  "supports": ["ChainAPI", "dAPIs", "OEVRelay"]
+  "supports": ["chainapi", "dapis", "oevrelay"]
 }

@@ -16,5 +16,5 @@
     "browserUrl": "https://snowtrace.io/"
   },
   "blockTimeMs": 2036,
-  "supports": ["API3Market", "dAPIs"]
+  "supports": ["api3market", "dapis"]
 }

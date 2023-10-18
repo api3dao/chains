@@ -16,5 +16,5 @@
     "browserUrl": "https://moonriver.moonscan.io/"
   },
   "blockTimeMs": 12312,
-  "supports": ["API3Market", "dAPIs"]
+  "supports": ["api3market", "dapis"]
 }

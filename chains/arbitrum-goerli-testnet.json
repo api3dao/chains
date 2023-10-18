@@ -16,5 +16,5 @@
     "browserUrl": "https://testnet.arbiscan.io/"
   },
   "blockTimeMs": 641,
-  "supports": ["dAPIs"]
+  "supports": ["dapis"]
 }

@@ -16,5 +16,5 @@
     "browserUrl": "https://testnet.ftmscan.com/"
   },
   "blockTimeMs": 1665,
-  "supports": ["dAPIs"]
+  "supports": ["dapis"]
 }

@@ -15,5 +15,5 @@
     "browserUrl": "https://goerli.lineascan.build/"
   },
   "blockTimeMs": 12099,
-  "supports": ["dAPIs"]
+  "supports": ["dapis"]
 }

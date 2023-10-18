@@ -15,5 +15,5 @@
     "browserUrl": "https://explorer-devnet-cardano-evm.c1.milkomeda.com/"
   },
   "blockTimeMs": 2000,
-  "supports": ["dAPIs"]
+  "supports": ["dapis"]
 }

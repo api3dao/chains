@@ -15,5 +15,5 @@
     "browserUrl": "https://andromeda-explorer.metis.io/"
   },
   "blockTimeMs": 2564,
-  "supports": ["dAPIs"]
+  "supports": ["dapis"]
 }

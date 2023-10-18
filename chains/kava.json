@@ -14,5 +14,6 @@
     },
     "browserUrl": "https://kavascan.com/"
   },
-  "blockTimeMs": 6318
+  "blockTimeMs": 6318,
+  "supports": []
 }

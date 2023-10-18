@@ -16,5 +16,5 @@
     "browserUrl": "https://gnosisscan.io/"
   },
   "blockTimeMs": 5244,
-  "supports": ["API3Market", "dAPIs"]
+  "supports": ["api3market", "dapis"]
 }

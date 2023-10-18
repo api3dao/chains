@@ -16,5 +16,5 @@
     "browserUrl": "https://mumbai.polygonscan.com/"
   },
   "blockTimeMs": 2576,
-  "supports": ["dAPIs", "OEVRelay"]
+  "supports": ["dapis", "oevrelay"]
 }

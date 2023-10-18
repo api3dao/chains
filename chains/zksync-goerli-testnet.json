@@ -9,5 +9,5 @@
     "browserUrl": "https://goerli.explorer.zksync.io/"
   },
   "blockTimeMs": 1069,
-  "supports": ["dAPIs"]
+  "supports": ["dapis"]
 }

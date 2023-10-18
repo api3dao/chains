@@ -15,5 +15,5 @@
     "browserUrl": "https://testnet.kavascan.com/"
   },
   "blockTimeMs": 5201,
-  "supports": ["dAPIs"]
+  "supports": ["dapis"]
 }

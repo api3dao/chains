@@ -16,5 +16,5 @@
     "browserUrl": "https://gnosis-chiado.blockscout.com/"
   },
   "blockTimeMs": 5015,
-  "supports": ["dAPIs"]
+  "supports": ["dapis"]
 }

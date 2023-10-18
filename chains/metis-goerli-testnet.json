@@ -15,5 +15,5 @@
     "browserUrl": "https://goerli.explorer.metisdevops.link/"
   },
   "blockTimeMs": 5911,
-  "supports": ["dAPIs"]
+  "supports": ["dapis"]
 }

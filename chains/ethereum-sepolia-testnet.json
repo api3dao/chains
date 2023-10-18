@@ -16,5 +16,5 @@
     "browserUrl": "https://sepolia.etherscan.io/"
   },
   "blockTimeMs": 12982,
-  "supports": ["dAPIs"]
+  "supports": ["dapis"]
 }

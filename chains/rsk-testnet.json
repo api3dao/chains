@@ -9,5 +9,5 @@
     "browserUrl": "https://explorer.testnet.rsk.co/"
   },
   "blockTimeMs": 26036,
-  "supports": ["dAPIs"]
+  "supports": ["dapis"]
 }
