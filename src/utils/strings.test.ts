@@ -11,7 +11,7 @@ describe(toUpperSnakeCase.name, () => {
     expect(result).toEqual('HELLO_WORLD_4');
   });
 
-  test('trims leading and trailing whtestespaces', () => {
+  test('trims leading and trailing whitespaces', () => {
     const result = toUpperSnakeCase('  hello world  ');
     expect(result).toEqual('HELLO_WORLD');
   });
