@@ -4,7 +4,12 @@
   "id": "43288",
   "symbol": "BOBA",
   "testnet": false,
-  "providerUrl": "https://replica.avax.boba.network/",
+  "providers": [
+    {
+      "alias": "boba",
+      "rpcUrl": "https://replica.avax.boba.network/"
+    }
+  ],
   "explorer": {
     "api": {
       "url": "https://blockexplorer.avax.boba.network/api",

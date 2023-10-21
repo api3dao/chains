@@ -4,7 +4,12 @@
   "id": "2222",
   "symbol": "KAVA",
   "testnet": false,
-  "providerUrl": "https://evm.kava.io/",
+  "providers": [
+    {
+      "alias": "kava",
+      "rpcUrl": "https://evm.kava.io/"
+    }
+  ],
   "explorer": {
     "api": {
       "url": "https://kavascan.com/api",

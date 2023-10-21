@@ -4,7 +4,12 @@
   "id": "1313161555",
   "symbol": "testETH",
   "testnet": true,
-  "providerUrl": "https://testnet.aurora.dev/",
+  "providers": [
+    {
+      "alias": "aurora",
+      "rpcUrl": "https://testnet.aurora.dev/"
+    }
+  ],
   "explorer": {
     "api": {
       "url": "https://explorer.testnet.aurora.dev/api",

@@ -4,7 +4,12 @@
   "id": "1",
   "symbol": "ETH",
   "testnet": false,
-  "providerUrl": "https://eth.llamarpc.com",
+  "providers": [
+    {
+      "alias": "llamarpc",
+      "rpcUrl": "https://eth.llamarpc.com"
+    }
+  ],
   "explorer": {
     "api": {
       "url": "https://api.etherscan.io/api",

@@ -4,7 +4,12 @@
   "id": "56",
   "symbol": "BNB",
   "testnet": false,
-  "providerUrl": "https://rpc.ankr.com/bsc",
+  "providers": [
+    {
+      "alias": "ankr",
+      "rpcUrl": "https://rpc.ankr.com/bsc"
+    }
+  ],
   "explorer": {
     "api": {
       "url": "https://api.bscscan.com/api",

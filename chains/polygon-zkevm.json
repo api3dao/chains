@@ -4,7 +4,12 @@
   "id": "1101",
   "symbol": "ETH",
   "testnet": false,
-  "providerUrl": "https://zkevm-rpc.com",
+  "providers": [
+    {
+      "alias": "zkevm-rpc",
+      "rpcUrl": "https://zkevm-rpc.com"
+    }
+  ],
   "explorer": {
     "api": {
       "url": "https://api-zkevm.polygonscan.com/api",

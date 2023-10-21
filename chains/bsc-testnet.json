@@ -4,7 +4,12 @@
   "id": "97",
   "symbol": "testBNB",
   "testnet": true,
-  "providerUrl": "https://data-seed-prebsc-1-s3.binance.org:8545/",
+  "providers": [
+    {
+      "alias": "binance",
+      "rpcUrl": "https://data-seed-prebsc-1-s3.binance.org:8545/"
+    }
+  ],
   "explorer": {
     "api": {
       "url": "https://api-testnet.bscscan.com/api",

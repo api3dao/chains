@@ -4,7 +4,12 @@
   "id": "280",
   "symbol": "testETH",
   "testnet": true,
-  "providerUrl": "https://testnet.era.zksync.dev",
+  "providers": [
+    {
+      "alias": "zksync",
+      "rpcUrl": "https://testnet.era.zksync.dev"
+    }
+  ],
   "explorer": {
     "browserUrl": "https://goerli.explorer.zksync.io/"
   },

@@ -4,7 +4,12 @@
   "id": "338",
   "symbol": "testCRO",
   "testnet": true,
-  "providerUrl": "https://evm-t3.cronos.org",
+  "providers": [
+    {
+      "alias": "cronos",
+      "rpcUrl": "https://evm-t3.cronos.org"
+    }
+  ],
   "explorer": {
     "api": {
       "url": "https://cronos.org/explorer/testnet3/api",

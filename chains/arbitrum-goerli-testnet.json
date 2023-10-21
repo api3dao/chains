@@ -4,7 +4,12 @@
   "id": "421613",
   "symbol": "testETH",
   "testnet": true,
-  "providerUrl": "https://goerli-rollup.arbitrum.io/rpc",
+  "providers": [
+    {
+      "alias": "arbitrum",
+      "rpcUrl": "https://goerli-rollup.arbitrum.io/rpc"
+    }
+  ],
   "explorer": {
     "api": {
       "url": "https://api-goerli.arbiscan.io/api",

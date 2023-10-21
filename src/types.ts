@@ -15,6 +15,12 @@ export const chainExplorerSchema = z.object({
   browserUrl: z.string().url(),
 });
 
+export const chainProviderSchema = z.object({
+  alias: z.string(),
+  homepageUrl: z.string().url().optional(),
+  rpcUrl: z.string().url().optional(),
+});
+
 export const chainSchema = z.object({
   alias: z.string(),
   name: z.string(),
@@ -22,7 +28,7 @@ export const chainSchema = z.object({
   // It can be adjusted if we want to support chains that don't use numbers.
   // See: https://github.com/api3dao/chains/pull/1#discussion_r1161102392
   id: z.string().regex(/^\d+$/),
-  providerUrl: z.string().url(),
+  providers: z.array(chainProviderSchema),
   symbol: z.string(),
   testnet: z.boolean(),
   explorer: chainExplorerSchema,

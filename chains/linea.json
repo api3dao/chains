@@ -4,7 +4,12 @@
   "id": "59144",
   "symbol": "ETH",
   "testnet": false,
-  "providerUrl": "https://rpc.linea.build",
+  "providers": [
+    {
+      "alias": "linea",
+      "rpcUrl": "https://rpc.linea.build"
+    }
+  ],
   "explorer": {
     "api": {
       "url": "https://api.lineascan.build/api",

@@ -4,7 +4,12 @@
   "id": "30",
   "symbol": "RBTC",
   "testnet": false,
-  "providerUrl": "https://mainnet.sovryn.app/rpc",
+  "providers": [
+    {
+      "alias": "sovryn",
+      "rpcUrl": "https://mainnet.sovryn.app/rpc"
+    }
+  ],
   "explorer": {
     "browserUrl": "https://explorer.rsk.co/"
   },

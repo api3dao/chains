@@ -4,7 +4,12 @@
   "id": "71401",
   "symbol": "testpCKB",
   "testnet": true,
-  "providerUrl": "https://v1.testnet.godwoken.io/rpc",
+  "providers": [
+    {
+      "alias": "godwoken",
+      "rpcUrl": "https://v1.testnet.godwoken.io/rpc"
+    }
+  ],
   "explorer": {
     "browserUrl": "https://v1.testnet.gwscan.com/"
   },

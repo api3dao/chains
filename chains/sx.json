@@ -4,7 +4,12 @@
   "id": "416",
   "symbol": "SX",
   "testnet": false,
-  "providerUrl": "https://rpc.sx.technology",
+  "providers": [
+    {
+      "alias": "sx",
+      "rpcUrl": "https://rpc.sx.technology"
+    }
+  ],
   "explorer": {
     "api": {
       "url": "https://explorer.sx.technology/api",

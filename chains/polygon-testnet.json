@@ -4,7 +4,12 @@
   "id": "80001",
   "symbol": "testMATIC",
   "testnet": true,
-  "providerUrl": "https://rpc.ankr.com/polygon_mumbai",
+  "providers": [
+    {
+      "alias": "ankr",
+      "rpcUrl": "https://rpc.ankr.com/polygon_mumbai"
+    }
+  ],
   "explorer": {
     "api": {
       "url": "https://api-testnet.polygonscan.com/api",

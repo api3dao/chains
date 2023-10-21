@@ -4,7 +4,12 @@
   "id": "599",
   "symbol": "testMETIS",
   "testnet": true,
-  "providerUrl": "https://goerli.gateway.metisdevops.link",
+  "providers": [
+    {
+      "alias": "metisdevops",
+      "rpcUrl": "https://goerli.gateway.metisdevops.link"
+    }
+  ],
   "explorer": {
     "api": {
       "url": "https://goerli.explorer.metisdevops.link/api",

@@ -4,7 +4,12 @@
   "id": "5001",
   "symbol": "MNT",
   "testnet": true,
-  "providerUrl": "https://rpc.testnet.mantle.xyz",
+  "providers": [
+    {
+      "alias": "mantle",
+      "rpcUrl": "https://rpc.testnet.mantle.xyz"
+    }
+  ],
   "explorer": {
     "api": {
       "url": "https://explorer.testnet.mantle.xyz/api",

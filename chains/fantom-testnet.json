@@ -4,7 +4,12 @@
   "id": "4002",
   "symbol": "testFTM",
   "testnet": true,
-  "providerUrl": "https://rpc.ankr.com/fantom_testnet",
+  "providers": [
+    {
+      "alias": "ankr",
+      "rpcUrl": "https://rpc.ankr.com/fantom_testnet"
+    }
+  ],
   "explorer": {
     "api": {
       "url": "https://api-testnet.ftmscan.com/api",
