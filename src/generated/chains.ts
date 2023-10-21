@@ -88,7 +88,7 @@ export const CHAINS: Chain[] = [
     id: '43113',
     symbol: 'testAVAX',
     testnet: true,
-    providers: [{ alias: 'avalanche', rpcUrl: 'https://api.avax-test.network/ext/bc/C/rpc' }],
+    providers: [{ alias: 'avax-test', rpcUrl: 'https://api.avax-test.network/ext/bc/C/rpc' }],
     explorer: {
       api: {
         url: 'https://api-testnet.snowtrace.io/api',
@@ -104,7 +104,7 @@ export const CHAINS: Chain[] = [
     id: '43114',
     symbol: 'AVAX',
     testnet: false,
-    providers: [{ alias: 'avalanche', rpcUrl: 'https://api.avax.network/ext/bc/C/rpc' }],
+    providers: [{ alias: 'avax', rpcUrl: 'https://api.avax.network/ext/bc/C/rpc' }],
     explorer: {
       api: { url: 'https://api.snowtrace.io/api', key: { required: true, hardhatEtherscanAlias: 'avalanche' } },
       browserUrl: 'https://snowtrace.io/',
