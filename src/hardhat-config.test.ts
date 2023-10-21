@@ -195,10 +195,11 @@ describe(networks.name, () => {
     expect(Object.keys(result).length).toEqual(CHAINS.length);
 
     CHAINS.forEach((chain) => {
+      const firstProviderRpcUrl = chain.providers.find((p) => p.rpcUrl)?.rpcUrl;
       expect(result[chain.alias]).toEqual({
         accounts: { mnemonic: '' },
         chainId: Number(chain.id),
-        url: chain.providerUrl,
+        url: firstProviderRpcUrl,
       });
     });
   });
@@ -207,10 +208,11 @@ describe(networks.name, () => {
     process.env.MNEMONIC = 'test test test test test test test test test test test junk';
     const result = networks();
     CHAINS.forEach((chain) => {
+      const firstProviderRpcUrl = chain.providers.find((p) => p.rpcUrl)?.rpcUrl;
       expect(result[chain.alias]).toEqual({
         accounts: { mnemonic: 'test test test test test test test test test test test junk' },
         chainId: Number(chain.id),
-        url: chain.providerUrl,
+        url: firstProviderRpcUrl,
       });
     });
   });

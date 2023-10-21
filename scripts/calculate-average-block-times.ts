@@ -11,7 +11,9 @@ const chains = specifiedChain ? [specifiedChain] : CHAINS;
 async function calculateAverageBlockTimes(): Promise<void> {
   const results = await Promise.allSettled(
     chains.map(async (chain) => {
-      const client = createPublicClient({ transport: http(chain.providerUrl) });
+      // Every provider should have at least 1 publicly accessible rpcUrl
+      const firstProviderRpcUrl = chain.providers.find((p) => p.rpcUrl)?.rpcUrl;
+      const client = createPublicClient({ transport: http(firstProviderRpcUrl!) });
       const chainId = await client.getChainId();
       if (chainId.toString() !== chain.id) {
         throw new Error(`${chain.alias} provider reports chain ID as ${chainId}, while it is defined as ${chain.id}`);
