@@ -19,7 +19,11 @@ export const chainProviderSchema = z.object({
   alias: z.string(),
   homepageUrl: z.string().url().optional(),
   rpcUrl: z.string().url().optional(),
-});
+}).refine(
+  // Either rpcUrl or homepageUrl must be present
+  (provider) => provider.rpcUrl || provider.homepageUrl,
+  { message: 'rpcUrl or homepageUrl is required' } 
+);
 
 export const chainSchema = z.object({
   alias: z.string(),
