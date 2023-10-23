@@ -1,4 +1,4 @@
-export function hasUniqueObjects(items: Array<any>, field: string) {
+export function hasUniqueObjects(items: Array<any>, field: string): boolean {
   const uniqueFields = new Set();
 
   const duplicates = items.filter((item) => {
