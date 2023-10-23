@@ -6,7 +6,7 @@
   "testnet": true,
   "providers": [
     {
-      "alias": "scroll",
+      "alias": "default",
       "rpcUrl": "https://alpha-rpc.scroll.io/l2"
     }
   ],

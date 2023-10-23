@@ -6,7 +6,7 @@
   "testnet": true,
   "providers": [
     {
-      "alias": "sx",
+      "alias": "default",
       "rpcUrl": "https://rpc.toronto.sx.technology"
     }
   ],

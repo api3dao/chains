@@ -1,4 +1,5 @@
 import { z } from 'zod';
+import { hasUniqueObjects } from './utils/arrays';
 
 export const chainExplorerAPIKeySchema = z.object({
   required: z.boolean(),
@@ -27,6 +28,22 @@ export const chainProviderSchema = z
     { message: 'rpcUrl or homepageUrl is required' }
   );
 
+export const chainProvidersSchema = z.array(chainProviderSchema).superRefine((providers, ctx) => {
+  if (!providers.some((p) => p.alias === 'default')) {
+    ctx.addIssue({
+      code: z.ZodIssueCode.custom,
+      message: "a provider with alias 'default' is required",
+    });
+  }
+
+  if (!hasUniqueObjects(providers, 'alias')) {
+    ctx.addIssue({
+      code: z.ZodIssueCode.custom,
+      message: "cannot contain duplicate 'alias' values",
+    });
+  }
+});
+
 export const chainSchema = z.object({
   alias: z.string(),
   name: z.string(),
@@ -34,7 +51,7 @@ export const chainSchema = z.object({
   // It can be adjusted if we want to support chains that don't use numbers.
   // See: https://github.com/api3dao/chains/pull/1#discussion_r1161102392
   id: z.string().regex(/^\d+$/),
-  providers: z.array(chainProviderSchema),
+  providers: chainProvidersSchema,
   symbol: z.string(),
   testnet: z.boolean(),
   explorer: chainExplorerSchema,

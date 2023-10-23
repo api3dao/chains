@@ -6,7 +6,7 @@
   "testnet": false,
   "providers": [
     {
-      "alias": "boba",
+      "alias": "default",
       "rpcUrl": "https://replica.avax.boba.network/"
     }
   ],

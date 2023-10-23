@@ -6,7 +6,7 @@
   "testnet": false,
   "providers": [
     {
-      "alias": "optimism",
+      "alias": "default",
       "rpcUrl": "https://mainnet.optimism.io"
     }
   ],

@@ -6,7 +6,7 @@
   "testnet": true,
   "providers": [
     {
-      "alias": "zkevm-test",
+      "alias": "default",
       "rpcUrl": "https://rpc.public.zkevm-test.net"
     }
   ],

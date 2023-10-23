@@ -6,7 +6,7 @@
   "testnet": false,
   "providers": [
     {
-      "alias": "arbitrum",
+      "alias": "default",
       "rpcUrl": "https://arb1.arbitrum.io/rpc"
     }
   ],

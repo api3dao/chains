@@ -6,7 +6,7 @@
   "testnet": false,
   "providers": [
     {
-      "alias": "avax",
+      "alias": "default",
       "rpcUrl": "https://api.avax.network/ext/bc/C/rpc"
     }
   ],

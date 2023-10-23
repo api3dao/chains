@@ -6,7 +6,7 @@
   "testnet": true,
   "providers": [
     {
-      "alias": "metisdevops",
+      "alias": "default",
       "rpcUrl": "https://goerli.gateway.metisdevops.link"
     }
   ],

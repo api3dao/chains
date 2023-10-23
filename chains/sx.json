@@ -6,7 +6,7 @@
   "testnet": false,
   "providers": [
     {
-      "alias": "sx",
+      "alias": "default",
       "rpcUrl": "https://rpc.sx.technology"
     }
   ],

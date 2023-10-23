@@ -6,7 +6,7 @@
   "testnet": true,
   "providers": [
     {
-      "alias": "rockx",
+      "alias": "default",
       "rpcUrl": "https://rpc-sepolia.rockx.com"
     }
   ],

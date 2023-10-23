@@ -6,7 +6,7 @@
   "testnet": true,
   "providers": [
     {
-      "alias": "optimism",
+      "alias": "default",
       "rpcUrl": "https://goerli.optimism.io"
     }
   ],

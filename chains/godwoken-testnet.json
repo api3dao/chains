@@ -6,7 +6,7 @@
   "testnet": true,
   "providers": [
     {
-      "alias": "godwoken",
+      "alias": "default",
       "rpcUrl": "https://v1.testnet.godwoken.io/rpc"
     }
   ],

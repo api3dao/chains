@@ -6,7 +6,7 @@
   "testnet": true,
   "providers": [
     {
-      "alias": "aurora",
+      "alias": "default",
       "rpcUrl": "https://testnet.aurora.dev/"
     }
   ],

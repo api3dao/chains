@@ -6,7 +6,7 @@
   "testnet": true,
   "providers": [
     {
-      "alias": "cronos",
+      "alias": "default",
       "rpcUrl": "https://evm-t3.cronos.org"
     }
   ],

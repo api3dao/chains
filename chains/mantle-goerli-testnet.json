@@ -6,7 +6,7 @@
   "testnet": true,
   "providers": [
     {
-      "alias": "mantle",
+      "alias": "default",
       "rpcUrl": "https://rpc.testnet.mantle.xyz"
     }
   ],

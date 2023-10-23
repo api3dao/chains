@@ -6,7 +6,7 @@
   "testnet": true,
   "providers": [
     {
-      "alias": "binance",
+      "alias": "default",
       "rpcUrl": "https://data-seed-prebsc-1-s3.binance.org:8545/"
     }
   ],

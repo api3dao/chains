@@ -6,7 +6,7 @@
   "testnet": true,
   "providers": [
     {
-      "alias": "rsk",
+      "alias": "default",
       "rpcUrl": "https://public-node.testnet.rsk.co"
     }
   ],

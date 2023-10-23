@@ -6,7 +6,7 @@
   "testnet": true,
   "providers": [
     {
-      "alias": "chiadochain",
+      "alias": "default",
       "rpcUrl": "https://rpc.chiadochain.net"
     }
   ],

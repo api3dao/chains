@@ -6,7 +6,7 @@
   "testnet": false,
   "providers": [
     {
-      "alias": "moonbeam",
+      "alias": "default",
       "rpcUrl": "https://rpc.api.moonbeam.network"
     }
   ],

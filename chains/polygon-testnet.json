@@ -6,7 +6,7 @@
   "testnet": true,
   "providers": [
     {
-      "alias": "ankr",
+      "alias": "default",
       "rpcUrl": "https://rpc.ankr.com/polygon_mumbai"
     }
   ],

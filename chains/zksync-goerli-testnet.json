@@ -6,7 +6,7 @@
   "testnet": true,
   "providers": [
     {
-      "alias": "zksync",
+      "alias": "default",
       "rpcUrl": "https://testnet.era.zksync.dev"
     }
   ],
