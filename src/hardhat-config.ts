@@ -65,12 +65,12 @@ export function networks(): HardhatNetworksConfig {
   }
 
   return CHAINS.reduce((networks, chain) => {
-    const firstProviderRpcUrl = chain.providers.find((p) => p.rpcUrl)?.rpcUrl;
+    const defaultProvider = chain.providers.find((p) => p.alias === 'default');
 
     networks[chain.alias] = {
       accounts: { mnemonic: process.env.MNEMONIC || '' },
       chainId: Number(chain.id),
-      url: process.env[networkHttpRpcUrlName(chain)] || firstProviderRpcUrl || '',
+      url: process.env[networkHttpRpcUrlName(chain)] || defaultProvider!.rpcUrl!,
     };
     return networks;
   }, {} as HardhatNetworksConfig);

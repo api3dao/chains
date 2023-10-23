@@ -42,6 +42,15 @@ export const chainProvidersSchema = z.array(chainProviderSchema).superRefine((pr
       message: "cannot contain duplicate 'alias' values",
     });
   }
+
+  providers.forEach((p) => {
+    if ((p.alias === 'default' || p.alias === 'public') && !p.rpcUrl) {
+      ctx.addIssue({
+        code: z.ZodIssueCode.custom,
+        message: "providers with alias 'default' or 'public' must also have an 'rpcUrl'",
+      });
+    }
+  });
 });
 
 export const chainSchema = z.object({

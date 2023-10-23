@@ -17,9 +17,9 @@ const slackClient = new WebClient(slackToken);
 
 async function main(): Promise<PromiseSettledResult<void>[]> {
   const promises = chains.map(async (chain) => {
-    // Every provider should have at least 1 publicly accessible rpcUrl
-    const firstProviderRpcUrl = chain.providers.find((p) => p.rpcUrl)?.rpcUrl;
-    const client = createPublicClient({ transport: http(firstProviderRpcUrl!) });
+    // Every chain should have at least a default provider with an RPC URL
+    const defaultProvider = chain.providers.find((p) => p.alias === 'default')!;
+    const client = createPublicClient({ transport: http(defaultProvider.rpcUrl!) });
 
     await validateChain(client, chain);
     await go(() => validateLatestBlock(client, chain), { retries: 3, delay: { type: 'static', delayMs: 60_000 } });
