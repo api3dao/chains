@@ -3,7 +3,7 @@
   "alias": "aurora",
   "id": "1313161554",
   "nativeCurrency": {
-    "name": "Ether",
+    "name": "ETH",
     "symbol": "ETH",
     "decimals": 18
   },

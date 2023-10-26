@@ -3,8 +3,8 @@
   "alias": "moonbeam-testnet",
   "id": "1287",
   "nativeCurrency": {
-    "name": "DEV",
-    "symbol": "DEV",
+    "name": "Testnet DEV",
+    "symbol": "testDEV",
     "decimals": 18
   },
   "testnet": true,

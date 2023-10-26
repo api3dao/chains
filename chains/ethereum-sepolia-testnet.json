@@ -3,8 +3,8 @@
   "alias": "ethereum-sepolia-testnet",
   "id": "11155111",
   "nativeCurrency": {
-    "name": "Sepolia Ether",
-    "symbol": "SEP",
+    "name": "Testnet ETH",
+    "symbol": "testETH",
     "decimals": 18
   },
   "testnet": true,

@@ -3,8 +3,8 @@
   "alias": "zksync-goerli-testnet",
   "id": "280",
   "nativeCurrency": {
-    "name": "Ether",
-    "symbol": "ETH",
+    "name": "Testnet ETH",
+    "symbol": "testETH",
     "decimals": 18
   },
   "testnet": true,

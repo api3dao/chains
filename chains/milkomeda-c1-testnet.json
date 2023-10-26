@@ -3,8 +3,8 @@
   "alias": "milkomeda-c1-testnet",
   "id": "200101",
   "nativeCurrency": {
-    "name": "mTADA",
-    "symbol": "mTADA",
+    "name": "Testnet milkADA",
+    "symbol": "testmilkADA",
     "decimals": 18
   },
   "testnet": true,

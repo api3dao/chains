@@ -3,7 +3,7 @@
   "alias": "rsk",
   "id": "30",
   "nativeCurrency": {
-    "name": "RSK Bitcoin",
+    "name": "RBTC",
     "symbol": "RBTC",
     "decimals": 18
   },

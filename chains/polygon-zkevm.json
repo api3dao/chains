@@ -3,7 +3,7 @@
   "alias": "polygon-zkevm",
   "id": "1101",
   "nativeCurrency": {
-    "name": "Ether",
+    "name": "ETH",
     "symbol": "ETH",
     "decimals": 18
   },

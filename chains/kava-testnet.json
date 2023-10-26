@@ -3,8 +3,8 @@
   "alias": "kava-testnet",
   "id": "2221",
   "nativeCurrency": {
-    "name": "KAVA",
-    "symbol": "KAVA",
+    "name": "Testnet KAVA",
+    "symbol": "testKAVA",
     "decimals": 18
   },
   "testnet": true,

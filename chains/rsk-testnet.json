@@ -3,8 +3,8 @@
   "alias": "rsk-testnet",
   "id": "31",
   "nativeCurrency": {
-    "name": "RSK Bitcoin",
-    "symbol": "RBTC",
+    "name": "Tesnet RBTC",
+    "symbol": "testRBTC",
     "decimals": 18
   },
   "testnet": true,

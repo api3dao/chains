@@ -5,7 +5,7 @@ export function chains(): Chain[] {
   return CHAINS.map((chain) => {
     return defineChain({
       id: Number(chain.id),
-      name: chain.name,
+      name: chain.alias,
       network: chain.alias,
       nativeCurrency: chain.nativeCurrency,
       rpcUrls: {

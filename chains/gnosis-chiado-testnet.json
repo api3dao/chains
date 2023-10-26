@@ -1,10 +1,10 @@
 {
-  "name": "Gnosis Chiado testnet",
-  "alias": "gnosis-chiado-testnet",
+  "name": "Gnosis Chain testnet",
+  "alias": "gnosis-testnet",
   "id": "10200",
   "nativeCurrency": {
-    "name": "Gnosis",
-    "symbol": "xDAI",
+    "name": "Testnet xDAI",
+    "symbol": "testxDAI",
     "decimals": 18
   },
   "testnet": true,

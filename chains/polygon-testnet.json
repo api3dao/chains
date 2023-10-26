@@ -3,8 +3,8 @@
   "alias": "polygon-testnet",
   "id": "80001",
   "nativeCurrency": {
-    "name": "MATIC",
-    "symbol": "MATIC",
+    "name": "Testnet MATIC",
+    "symbol": "testMATIC",
     "decimals": 18
   },
   "testnet": true,

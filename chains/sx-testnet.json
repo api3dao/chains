@@ -3,8 +3,8 @@
   "alias": "sx-testnet",
   "id": "647",
   "nativeCurrency": {
-    "name": "SX",
-    "symbol": "SX",
+    "name": "Testnet SX",
+    "symbol": "testSX",
     "decimals": 18
   },
   "testnet": true,

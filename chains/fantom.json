@@ -3,7 +3,7 @@
   "alias": "fantom",
   "id": "250",
   "nativeCurrency": {
-    "name": "Fantom",
+    "name": "FTM",
     "symbol": "FTM",
     "decimals": 18
   },

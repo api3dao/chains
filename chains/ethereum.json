@@ -3,7 +3,7 @@
   "alias": "ethereum",
   "id": "1",
   "nativeCurrency": {
-    "name": "Ether",
+    "name": "ETH",
     "symbol": "ETH",
     "decimals": 18
   },

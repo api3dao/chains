@@ -3,8 +3,8 @@
   "alias": "linea-goerli-testnet",
   "id": "59140",
   "nativeCurrency": {
-    "name": "Linea Ether",
-    "symbol": "ETH",
+    "name": "Testnet ETH",
+    "symbol": "testETH",
     "decimals": 18
   },
   "testnet": true,

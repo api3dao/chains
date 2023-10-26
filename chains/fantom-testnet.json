@@ -3,7 +3,7 @@
   "alias": "fantom-testnet",
   "id": "4002",
   "nativeCurrency": {
-    "name": "Fantom",
+    "name": "Testnet FTM",
     "symbol": "FTM",
     "decimals": 18
   },

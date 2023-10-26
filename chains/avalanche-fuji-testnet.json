@@ -1,10 +1,10 @@
 {
-  "name": "Avalanche Fuji testnet",
-  "alias": "avalanche-fuji-testnet",
+  "name": "Avalanche testnet",
+  "alias": "avalanche-testnet",
   "id": "43113",
   "nativeCurrency": {
-    "name": "Avalanche Fuji",
-    "symbol": "AVAX",
+    "name": "Testnet AVAX",
+    "symbol": "testAVAX",
     "decimals": 18
   },
   "testnet": true,

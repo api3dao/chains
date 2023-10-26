@@ -3,7 +3,7 @@
   "alias": "gnosis",
   "id": "100",
   "nativeCurrency": {
-    "name": "Gnosis",
+    "name": "xDAI",
     "symbol": "xDAI",
     "decimals": 18
   },

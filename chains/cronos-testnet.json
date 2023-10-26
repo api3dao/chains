@@ -3,8 +3,8 @@
   "alias": "cronos-testnet",
   "id": "338",
   "nativeCurrency": {
-    "name": "Cronos",
-    "symbol": "CRO",
+    "name": "Testnet CRO",
+    "symbol": "testCRO",
     "decimals": 18
   },
   "testnet": true,

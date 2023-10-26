@@ -3,7 +3,7 @@
   "alias": "optimism",
   "id": "10",
   "nativeCurrency": {
-    "name": "Ether",
+    "name": "ETH",
     "symbol": "ETH",
     "decimals": 18
   },

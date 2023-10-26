@@ -3,7 +3,7 @@
   "alias": "zksync",
   "id": "324",
   "nativeCurrency": {
-    "name": "Ether",
+    "name": "ETH",
     "symbol": "ETH",
     "decimals": 18
   },

@@ -3,7 +3,7 @@
   "alias": "linea",
   "id": "59144",
   "nativeCurrency": {
-    "name": "Linea Ether",
+    "name": "ETH",
     "symbol": "ETH",
     "decimals": 18
   },

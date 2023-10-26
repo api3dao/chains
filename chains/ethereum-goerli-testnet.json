@@ -3,8 +3,8 @@
   "alias": "ethereum-goerli-testnet",
   "id": "5",
   "nativeCurrency": {
-    "name": "Goerli Ether",
-    "symbol": "ETH",
+    "name": "Testnet ETH",
+    "symbol": "testETH",
     "decimals": 18
   },
   "testnet": true,

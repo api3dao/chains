@@ -3,8 +3,8 @@
   "alias": "metis-goerli-testnet",
   "id": "599",
   "nativeCurrency": {
-    "name": "Metis Goerli",
-    "symbol": "METIS",
+    "name": "Testnet METIS",
+    "symbol": "testMETIS",
     "decimals": 18
   },
   "testnet": true,

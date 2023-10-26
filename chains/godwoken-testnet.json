@@ -3,8 +3,8 @@
   "alias": "godwoken-testnet",
   "id": "71401",
   "nativeCurrency": {
-    "name": "pCKB",
-    "symbol": "pCKB",
+    "name": "Testnet pCKB",
+    "symbol": "testpCKB",
     "decimals": 18
   },
   "testnet": true,

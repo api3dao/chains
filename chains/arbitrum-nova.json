@@ -3,7 +3,7 @@
   "alias": "arbitrum-nova",
   "id": "42170",
   "nativeCurrency": {
-    "name": "Ether",
+    "name": "ETH",
     "symbol": "ETH",
     "decimals": 18
   },

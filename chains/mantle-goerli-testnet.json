@@ -3,8 +3,8 @@
   "alias": "mantle-goerli-testnet",
   "id": "5001",
   "nativeCurrency": {
-    "name": "MNT",
-    "symbol": "MNT",
+    "name": "Testnet MNT",
+    "symbol": "testMNT",
     "decimals": 18
   },
   "testnet": true,

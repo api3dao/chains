@@ -3,8 +3,8 @@
   "alias": "aurora-testnet",
   "id": "1313161555",
   "nativeCurrency": {
-    "name": "Ether",
-    "symbol": "ETH",
+    "name": "Testnet ETH",
+    "symbol": "testETH",
     "decimals": 18
   },
   "testnet": true,

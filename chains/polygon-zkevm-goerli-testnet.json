@@ -3,8 +3,8 @@
   "alias": "polygon-zkevm-goerli-testnet",
   "id": "1442",
   "nativeCurrency": {
-    "name": "Ether",
-    "symbol": "ETH",
+    "name": "Testnet ETH",
+    "symbol": "testETH",
     "decimals": 18
   },
   "testnet": true,
