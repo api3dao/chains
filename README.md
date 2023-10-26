@@ -122,7 +122,7 @@ console.log(viemConfig.chains());
 [
   {
     id: 421613,
-    name: 'Arbitrum testnet',
+    name: 'arbitrum-goerli-testnet',
     network: 'arbitrum-goerli-testnet',
     nativeCurrency: { ... },
     rpcUrls: { default: ..., public: ... }
