@@ -12,7 +12,7 @@ export const CHAINS: Chain[] = [
     name: 'Arbitrum testnet',
     alias: 'arbitrum-goerli-testnet',
     id: '421613',
-    nativeCurrency: { name: 'Arbitrum Goerli Ether', symbol: 'ETH', decimals: 18 },
+    nativeCurrency: { name: 'Testnet ETH', symbol: 'testETH', decimals: 18 },
     testnet: true,
     providerUrl: 'https://goerli-rollup.arbitrum.io/rpc',
     explorer: {
@@ -28,7 +28,7 @@ export const CHAINS: Chain[] = [
     name: 'Arbitrum Nova',
     alias: 'arbitrum-nova',
     id: '42170',
-    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    nativeCurrency: { name: 'ETH', symbol: 'ETH', decimals: 18 },
     testnet: false,
     providerUrl: 'https://nova.arbitrum.io/rpc',
     explorer: {
@@ -41,7 +41,7 @@ export const CHAINS: Chain[] = [
     name: 'Arbitrum',
     alias: 'arbitrum',
     id: '42161',
-    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    nativeCurrency: { name: 'ETH', symbol: 'ETH', decimals: 18 },
     testnet: false,
     providerUrl: 'https://arb1.arbitrum.io/rpc',
     explorer: {
@@ -54,7 +54,7 @@ export const CHAINS: Chain[] = [
     name: 'Aurora testnet',
     alias: 'aurora-testnet',
     id: '1313161555',
-    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    nativeCurrency: { name: 'Testnet ETH', symbol: 'testETH', decimals: 18 },
     testnet: true,
     providerUrl: 'https://testnet.aurora.dev/',
     explorer: {
@@ -70,7 +70,7 @@ export const CHAINS: Chain[] = [
     name: 'Aurora',
     alias: 'aurora',
     id: '1313161554',
-    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    nativeCurrency: { name: 'ETH', symbol: 'ETH', decimals: 18 },
     testnet: false,
     providerUrl: 'https://mainnet.aurora.dev/',
     explorer: {
@@ -83,10 +83,10 @@ export const CHAINS: Chain[] = [
     blockTimeMs: 1135,
   },
   {
-    name: 'Avalanche Fuji testnet',
-    alias: 'avalanche-fuji-testnet',
+    name: 'Avalanche testnet',
+    alias: 'avalanche-testnet',
     id: '43113',
-    nativeCurrency: { name: 'Avalanche Fuji', symbol: 'AVAX', decimals: 18 },
+    nativeCurrency: { name: 'Testnet AVAX', symbol: 'testAVAX', decimals: 18 },
     testnet: true,
     providerUrl: 'https://api.avax-test.network/ext/bc/C/rpc',
     explorer: {
@@ -102,7 +102,7 @@ export const CHAINS: Chain[] = [
     name: 'Avalanche',
     alias: 'avalanche',
     id: '43114',
-    nativeCurrency: { name: 'Avalanche', symbol: 'AVAX', decimals: 18 },
+    nativeCurrency: { name: 'AVAX', symbol: 'AVAX', decimals: 18 },
     testnet: false,
     providerUrl: 'https://api.avax.network/ext/bc/C/rpc',
     explorer: {
@@ -115,7 +115,7 @@ export const CHAINS: Chain[] = [
     name: 'Base Goerli testnet',
     alias: 'base-goerli-testnet',
     id: '84531',
-    nativeCurrency: { name: 'Goerli Ether', symbol: 'ETH', decimals: 18 },
+    nativeCurrency: { name: 'Testnet ETH', symbol: 'testETH', decimals: 18 },
     testnet: true,
     providerUrl: 'https://goerli.base.org',
     explorer: {
@@ -128,7 +128,7 @@ export const CHAINS: Chain[] = [
     name: 'Base',
     alias: 'base',
     id: '8453',
-    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    nativeCurrency: { name: 'ETH', symbol: 'ETH', decimals: 18 },
     testnet: false,
     providerUrl: 'https://mainnet.base.org',
     explorer: {
@@ -141,7 +141,7 @@ export const CHAINS: Chain[] = [
     name: 'Boba/Avalanche',
     alias: 'boba-avalanche',
     id: '43288',
-    nativeCurrency: { name: 'Boba', symbol: 'BOBA', decimals: 18 },
+    nativeCurrency: { name: 'BOBA', symbol: 'BOBA', decimals: 18 },
     testnet: false,
     providerUrl: 'https://replica.avax.boba.network/',
     explorer: {
@@ -154,7 +154,7 @@ export const CHAINS: Chain[] = [
     name: 'Boba/BNB',
     alias: 'boba-bnb',
     id: '56288',
-    nativeCurrency: { name: 'Boba', symbol: 'BOBA', decimals: 18 },
+    nativeCurrency: { name: 'BOBA', symbol: 'BOBA', decimals: 18 },
     testnet: false,
     providerUrl: 'https://replica.bnb.boba.network/',
     explorer: {
@@ -167,7 +167,7 @@ export const CHAINS: Chain[] = [
     name: 'Boba/Ethereum',
     alias: 'boba-ethereum',
     id: '288',
-    nativeCurrency: { name: 'Boba', symbol: 'BOBA', decimals: 18 },
+    nativeCurrency: { name: 'BOBA', symbol: 'BOBA', decimals: 18 },
     testnet: false,
     providerUrl: 'https://lightning-replica.boba.network/',
     explorer: {
@@ -180,7 +180,7 @@ export const CHAINS: Chain[] = [
     name: 'BSC testnet',
     alias: 'bsc-testnet',
     id: '97',
-    nativeCurrency: { name: 'BNB', symbol: 'tBNB', decimals: 18 },
+    nativeCurrency: { name: 'Testnet BNB', symbol: 'testBNB', decimals: 18 },
     testnet: true,
     providerUrl: 'https://data-seed-prebsc-1-s3.binance.org:8545/',
     explorer: {
@@ -206,7 +206,7 @@ export const CHAINS: Chain[] = [
     name: 'Cronos testnet',
     alias: 'cronos-testnet',
     id: '338',
-    nativeCurrency: { name: 'Cronos', symbol: 'CRO', decimals: 18 },
+    nativeCurrency: { name: 'Testnet CRO', symbol: 'testCRO', decimals: 18 },
     testnet: true,
     providerUrl: 'https://evm-t3.cronos.org',
     explorer: {
@@ -219,7 +219,7 @@ export const CHAINS: Chain[] = [
     name: 'Ethereum Goerli testnet',
     alias: 'ethereum-goerli-testnet',
     id: '5',
-    nativeCurrency: { name: 'Goerli Ether', symbol: 'ETH', decimals: 18 },
+    nativeCurrency: { name: 'Testnet ETH', symbol: 'testETH', decimals: 18 },
     testnet: true,
     providerUrl: 'https://rpc.ankr.com/eth_goerli',
     explorer: {
@@ -232,7 +232,7 @@ export const CHAINS: Chain[] = [
     name: 'Ethereum Sepolia testnet',
     alias: 'ethereum-sepolia-testnet',
     id: '11155111',
-    nativeCurrency: { name: 'Sepolia Ether', symbol: 'SEP', decimals: 18 },
+    nativeCurrency: { name: 'Testnet ETH', symbol: 'testETH', decimals: 18 },
     testnet: true,
     providerUrl: 'https://rpc-sepolia.rockx.com',
     explorer: {
@@ -245,7 +245,7 @@ export const CHAINS: Chain[] = [
     name: 'Ethereum',
     alias: 'ethereum',
     id: '1',
-    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    nativeCurrency: { name: 'ETH', symbol: 'ETH', decimals: 18 },
     testnet: false,
     providerUrl: 'https://eth.llamarpc.com',
     explorer: {
@@ -258,7 +258,7 @@ export const CHAINS: Chain[] = [
     name: 'Fantom testnet',
     alias: 'fantom-testnet',
     id: '4002',
-    nativeCurrency: { name: 'Fantom', symbol: 'FTM', decimals: 18 },
+    nativeCurrency: { name: 'Testnet FTM', symbol: 'FTM', decimals: 18 },
     testnet: true,
     providerUrl: 'https://rpc.ankr.com/fantom_testnet',
     explorer: {
@@ -271,7 +271,7 @@ export const CHAINS: Chain[] = [
     name: 'Fantom',
     alias: 'fantom',
     id: '250',
-    nativeCurrency: { name: 'Fantom', symbol: 'FTM', decimals: 18 },
+    nativeCurrency: { name: 'FTM', symbol: 'FTM', decimals: 18 },
     testnet: false,
     providerUrl: 'https://rpcapi.fantom.network/',
     explorer: {
@@ -281,10 +281,10 @@ export const CHAINS: Chain[] = [
     blockTimeMs: 1636,
   },
   {
-    name: 'Gnosis Chiado testnet',
-    alias: 'gnosis-chiado-testnet',
+    name: 'Gnosis Chain testnet',
+    alias: 'gnosis-testnet',
     id: '10200',
-    nativeCurrency: { name: 'Gnosis', symbol: 'xDAI', decimals: 18 },
+    nativeCurrency: { name: 'Testnet xDAI', symbol: 'testxDAI', decimals: 18 },
     testnet: true,
     providerUrl: 'https://rpc.chiadochain.net',
     explorer: {
@@ -300,7 +300,7 @@ export const CHAINS: Chain[] = [
     name: 'Gnosis Chain',
     alias: 'gnosis',
     id: '100',
-    nativeCurrency: { name: 'Gnosis', symbol: 'xDAI', decimals: 18 },
+    nativeCurrency: { name: 'xDAI', symbol: 'xDAI', decimals: 18 },
     testnet: false,
     providerUrl: 'https://rpc.gnosischain.com',
     explorer: {
@@ -313,7 +313,7 @@ export const CHAINS: Chain[] = [
     name: 'Godwoken testnet',
     alias: 'godwoken-testnet',
     id: '71401',
-    nativeCurrency: { name: 'pCKB', symbol: 'pCKB', decimals: 18 },
+    nativeCurrency: { name: 'Testnet pCKB', symbol: 'testpCKB', decimals: 18 },
     testnet: true,
     providerUrl: 'https://v1.testnet.godwoken.io/rpc',
     explorer: { browserUrl: 'https://v1.testnet.gwscan.com/' },
@@ -333,7 +333,7 @@ export const CHAINS: Chain[] = [
     name: 'Kava testnet',
     alias: 'kava-testnet',
     id: '2221',
-    nativeCurrency: { name: 'KAVA', symbol: 'KAVA', decimals: 18 },
+    nativeCurrency: { name: 'Testnet KAVA', symbol: 'testKAVA', decimals: 18 },
     testnet: true,
     providerUrl: 'https://evm.testnet.kava.io/',
     explorer: {
@@ -359,7 +359,7 @@ export const CHAINS: Chain[] = [
     name: 'Linea Goerli testnet',
     alias: 'linea-goerli-testnet',
     id: '59140',
-    nativeCurrency: { name: 'Linea Ether', symbol: 'ETH', decimals: 18 },
+    nativeCurrency: { name: 'Testnet ETH', symbol: 'testETH', decimals: 18 },
     testnet: true,
     providerUrl: 'https://rpc.goerli.linea.build',
     explorer: {
@@ -372,7 +372,7 @@ export const CHAINS: Chain[] = [
     name: 'Linea',
     alias: 'linea',
     id: '59144',
-    nativeCurrency: { name: 'Linea Ether', symbol: 'ETH', decimals: 18 },
+    nativeCurrency: { name: 'ETH', symbol: 'ETH', decimals: 18 },
     testnet: false,
     providerUrl: 'https://rpc.linea.build',
     explorer: {
@@ -385,7 +385,7 @@ export const CHAINS: Chain[] = [
     name: 'Mantle Goerli testnet',
     alias: 'mantle-goerli-testnet',
     id: '5001',
-    nativeCurrency: { name: 'MNT', symbol: 'MNT', decimals: 18 },
+    nativeCurrency: { name: 'Testnet MNT', symbol: 'testMNT', decimals: 18 },
     testnet: true,
     providerUrl: 'https://rpc.testnet.mantle.xyz',
     explorer: {
@@ -411,7 +411,7 @@ export const CHAINS: Chain[] = [
     name: 'Metis testnet',
     alias: 'metis-goerli-testnet',
     id: '599',
-    nativeCurrency: { name: 'Metis Goerli', symbol: 'METIS', decimals: 18 },
+    nativeCurrency: { name: 'Testnet METIS', symbol: 'testMETIS', decimals: 18 },
     testnet: true,
     providerUrl: 'https://goerli.gateway.metisdevops.link',
     explorer: {
@@ -424,7 +424,7 @@ export const CHAINS: Chain[] = [
     name: 'Metis',
     alias: 'metis',
     id: '1088',
-    nativeCurrency: { name: 'Metis', symbol: 'METIS', decimals: 18 },
+    nativeCurrency: { name: 'METIS', symbol: 'METIS', decimals: 18 },
     testnet: false,
     providerUrl: 'https://andromeda.metis.io/?owner=1088',
     explorer: {
@@ -437,7 +437,7 @@ export const CHAINS: Chain[] = [
     name: 'Milkomeda C1 testnet',
     alias: 'milkomeda-c1-testnet',
     id: '200101',
-    nativeCurrency: { name: 'mTADA', symbol: 'mTADA', decimals: 18 },
+    nativeCurrency: { name: 'Testnet milkADA', symbol: 'testmilkADA', decimals: 18 },
     testnet: true,
     providerUrl: 'https://rpc-devnet-cardano-evm.c1.milkomeda.com',
     explorer: {
@@ -463,7 +463,7 @@ export const CHAINS: Chain[] = [
     name: 'Moonbeam testnet',
     alias: 'moonbeam-testnet',
     id: '1287',
-    nativeCurrency: { name: 'DEV', symbol: 'DEV', decimals: 18 },
+    nativeCurrency: { name: 'Testnet DEV', symbol: 'testDEV', decimals: 18 },
     testnet: true,
     providerUrl: 'https://rpc.api.moonbase.moonbeam.network',
     explorer: {
@@ -508,7 +508,7 @@ export const CHAINS: Chain[] = [
     name: 'Optimism testnet',
     alias: 'optimism-goerli-testnet',
     id: '420',
-    nativeCurrency: { name: 'Goerli Ether', symbol: 'ETH', decimals: 18 },
+    nativeCurrency: { name: 'Testnet ETH', symbol: 'testETH', decimals: 18 },
     testnet: true,
     providerUrl: 'https://goerli.optimism.io',
     explorer: {
@@ -524,7 +524,7 @@ export const CHAINS: Chain[] = [
     name: 'Optimism',
     alias: 'optimism',
     id: '10',
-    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    nativeCurrency: { name: 'ETH', symbol: 'ETH', decimals: 18 },
     testnet: false,
     providerUrl: 'https://mainnet.optimism.io',
     explorer: {
@@ -540,7 +540,7 @@ export const CHAINS: Chain[] = [
     name: 'Polygon testnet',
     alias: 'polygon-testnet',
     id: '80001',
-    nativeCurrency: { name: 'MATIC', symbol: 'MATIC', decimals: 18 },
+    nativeCurrency: { name: 'Testnet MATIC', symbol: 'testMATIC', decimals: 18 },
     testnet: true,
     providerUrl: 'https://rpc.ankr.com/polygon_mumbai',
     explorer: {
@@ -556,7 +556,7 @@ export const CHAINS: Chain[] = [
     name: 'Polygon zkEVM testnet',
     alias: 'polygon-zkevm-goerli-testnet',
     id: '1442',
-    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    nativeCurrency: { name: 'Testnet ETH', symbol: 'testETH', decimals: 18 },
     testnet: true,
     providerUrl: 'https://rpc.public.zkevm-test.net',
     explorer: {
@@ -569,7 +569,7 @@ export const CHAINS: Chain[] = [
     name: 'Polygon zkEVM',
     alias: 'polygon-zkevm',
     id: '1101',
-    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    nativeCurrency: { name: 'ETH', symbol: 'ETH', decimals: 18 },
     testnet: false,
     providerUrl: 'https://zkevm-rpc.com',
     explorer: {
@@ -595,7 +595,7 @@ export const CHAINS: Chain[] = [
     name: 'RSK testnet',
     alias: 'rsk-testnet',
     id: '31',
-    nativeCurrency: { name: 'RSK Bitcoin', symbol: 'RBTC', decimals: 18 },
+    nativeCurrency: { name: 'Tesnet RBTC', symbol: 'testRBTC', decimals: 18 },
     testnet: true,
     providerUrl: 'https://public-node.testnet.rsk.co',
     explorer: { browserUrl: 'https://explorer.testnet.rsk.co/' },
@@ -605,7 +605,7 @@ export const CHAINS: Chain[] = [
     name: 'RSK',
     alias: 'rsk',
     id: '30',
-    nativeCurrency: { name: 'RSK Bitcoin', symbol: 'RBTC', decimals: 18 },
+    nativeCurrency: { name: 'RBTC', symbol: 'RBTC', decimals: 18 },
     testnet: false,
     providerUrl: 'https://mainnet.sovryn.app/rpc',
     explorer: { browserUrl: 'https://explorer.rsk.co/' },
@@ -615,7 +615,7 @@ export const CHAINS: Chain[] = [
     name: 'Scroll Goerli testnet',
     alias: 'scroll-goerli-testnet',
     id: '534353',
-    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    nativeCurrency: { name: 'Testnet ETH', symbol: 'testETH', decimals: 18 },
     testnet: true,
     providerUrl: 'https://alpha-rpc.scroll.io/l2',
     explorer: {
@@ -628,7 +628,7 @@ export const CHAINS: Chain[] = [
     name: 'SX Network testnet',
     alias: 'sx-testnet',
     id: '647',
-    nativeCurrency: { name: 'SX', symbol: 'SX', decimals: 18 },
+    nativeCurrency: { name: 'Testnet SX', symbol: 'testSX', decimals: 18 },
     testnet: true,
     providerUrl: 'https://rpc.toronto.sx.technology',
     explorer: {
@@ -654,7 +654,7 @@ export const CHAINS: Chain[] = [
     name: 'zkSync testnet',
     alias: 'zksync-goerli-testnet',
     id: '280',
-    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    nativeCurrency: { name: 'Testnet ETH', symbol: 'testETH', decimals: 18 },
     testnet: true,
     providerUrl: 'https://testnet.era.zksync.dev',
     explorer: { browserUrl: 'https://goerli.explorer.zksync.io/' },
@@ -664,7 +664,7 @@ export const CHAINS: Chain[] = [
     name: 'zkSync',
     alias: 'zksync',
     id: '324',
-    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    nativeCurrency: { name: 'ETH', symbol: 'ETH', decimals: 18 },
     testnet: false,
     providerUrl: 'https://mainnet.era.zksync.io',
     explorer: { browserUrl: 'https://explorer.zksync.io/' },
