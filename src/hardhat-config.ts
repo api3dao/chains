@@ -23,7 +23,7 @@ export function networkHttpRpcUrlName(chain: Chain): string {
 // https://hardhat.org/hardhat-runner/plugins/nomicfoundation-hardhat-verify#multiple-api-keys-and-alternative-block-explorers
 export function etherscan(): HardhatEtherscanConfig {
   if (typeof window !== 'undefined') {
-    throw new Error('Cannot be run outside of a Node.js environment');
+    throw new Error('Cannot be called outside of a Node.js environment');
   }
 
   return CHAINS.reduce(
