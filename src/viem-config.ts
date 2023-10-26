@@ -3,7 +3,7 @@ import { CHAINS } from './generated/chains';
 
 export function chains(): Chain[] {
   return CHAINS.map((chain) => {
-    const viemChain = defineChain({
+    return defineChain({
       id: Number(chain.id),
       name: chain.name,
       network: chain.alias,
@@ -23,7 +23,5 @@ export function chains(): Chain[] {
         },
       },
     });
-
-    return viemChain;
   });
 }
