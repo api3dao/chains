@@ -65,10 +65,13 @@ export function networks(): HardhatNetworksConfig {
   }
 
   return CHAINS.reduce((networks, chain) => {
+    const overrides = chain.hardhatConfigOverrides || {};
+
     networks[chain.alias] = {
       accounts: { mnemonic: process.env.MNEMONIC || '' },
       chainId: Number(chain.id),
       url: process.env[networkHttpRpcUrlName(chain)] || chain.providerUrl,
+      ...overrides,
     };
     return networks;
   }, {} as HardhatNetworksConfig);

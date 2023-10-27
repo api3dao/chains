@@ -195,10 +195,13 @@ describe(networks.name, () => {
     expect(Object.keys(result).length).toEqual(CHAINS.length);
 
     CHAINS.forEach((chain) => {
+      const overrides = chain.hardhatConfigOverrides || {};
+
       expect(result[chain.alias]).toEqual({
         accounts: { mnemonic: '' },
         chainId: Number(chain.id),
         url: chain.providerUrl,
+        ...overrides,
       });
     });
   });
@@ -207,10 +210,13 @@ describe(networks.name, () => {
     process.env.MNEMONIC = 'test test test test test test test test test test test junk';
     const result = networks();
     CHAINS.forEach((chain) => {
+      const overrides = chain.hardhatConfigOverrides || {};
+
       expect(result[chain.alias]).toEqual({
         accounts: { mnemonic: 'test test test test test test test test test test test junk' },
         chainId: Number(chain.id),
         url: chain.providerUrl,
+        ...overrides,
       });
     });
   });
@@ -224,10 +230,43 @@ describe(networks.name, () => {
     const result = networks();
 
     CHAINS.forEach((chain) => {
+      const overrides = chain.hardhatConfigOverrides || {};
+
       expect(result[chain.alias]).toEqual({
         accounts: { mnemonic: '' },
         chainId: Number(chain.id),
         url: `https://${chain.id}.xyz`,
+        ...overrides,
+      });
+    });
+  });
+
+  describe('hardhatConfigOverrides', () => {
+    test('has overrides for zksync', () => {
+      const alias = 'zksync';
+      const chain = CHAINS.find((chain) => chain.alias === alias)!;
+
+      expect(networks()[alias]).toEqual({
+        accounts: { mnemonic: '' },
+        chainId: Number(chain.id),
+        ethNetwork: 'ethereum',
+        url: chain.providerUrl,
+        verifyURL: 'https://zksync2-mainnet-explorer.zksync.io/contract_verification',
+        zksync: true,
+      });
+    });
+
+    test('has overrides for zksync-goerli-testnet', () => {
+      const alias = 'zksync-goerli-testnet';
+      const chain = CHAINS.find((chain) => chain.alias === alias)!;
+
+      expect(networks()[alias]).toEqual({
+        accounts: { mnemonic: '' },
+        chainId: Number(chain.id),
+        ethNetwork: 'ethereum-goerli-testnet',
+        url: chain.providerUrl,
+        verifyURL: 'https://zksync2-testnet-explorer.zksync.dev/contract_verification',
+        zksync: true,
       });
     });
   });
