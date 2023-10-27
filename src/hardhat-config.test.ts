@@ -242,21 +242,7 @@ describe(networks.name, () => {
   });
 
   describe('hardhatConfigOverrides', () => {
-    test('has overrides for zksync', () => {
-      const alias = 'zksync';
-      const chain = CHAINS.find((chain) => chain.alias === alias)!;
-
-      expect(networks()[alias]).toEqual({
-        accounts: { mnemonic: '' },
-        chainId: Number(chain.id),
-        ethNetwork: 'ethereum',
-        url: chain.providerUrl,
-        verifyURL: 'https://zksync2-mainnet-explorer.zksync.io/contract_verification',
-        zksync: true,
-      });
-    });
-
-    test('has overrides for zksync-goerli-testnet', () => {
+    test('zksync-goerli-testnet', () => {
       const alias = 'zksync-goerli-testnet';
       const chain = CHAINS.find((chain) => chain.alias === alias)!;
 
@@ -266,6 +252,20 @@ describe(networks.name, () => {
         ethNetwork: 'ethereum-goerli-testnet',
         url: chain.providerUrl,
         verifyURL: 'https://zksync2-testnet-explorer.zksync.dev/contract_verification',
+        zksync: true,
+      });
+    });
+
+    test('zksync', () => {
+      const alias = 'zksync';
+      const chain = CHAINS.find((chain) => chain.alias === alias)!;
+
+      expect(networks()[alias]).toEqual({
+        accounts: { mnemonic: '' },
+        chainId: Number(chain.id),
+        ethNetwork: 'ethereum',
+        url: chain.providerUrl,
+        verifyURL: 'https://zksync2-mainnet-explorer.zksync.io/contract_verification',
         zksync: true,
       });
     });
