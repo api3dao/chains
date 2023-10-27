@@ -27,7 +27,7 @@ export const chainSchema = z.object({
   testnet: z.boolean(),
   explorer: chainExplorerSchema,
   blockTimeMs: z.number().positive(),
-  hardhatConfigOverrides: z.record(z.string(), z.any()).optional()
+  hardhatConfigOverrides: z.record(z.string(), z.any()).optional(),
 });
 
 export type Chain = z.infer<typeof chainSchema>;
