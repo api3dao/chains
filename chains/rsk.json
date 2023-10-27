@@ -1,10 +1,10 @@
 {
-  "name": "RSK",
+  "name": "Rootstock",
   "alias": "rsk",
   "id": "30",
   "symbol": "RBTC",
   "testnet": false,
-  "providerUrl": "https://mainnet.sovryn.app/rpc",
+  "providerUrl": "https://public-node.rsk.co",
   "explorer": {
     "browserUrl": "https://explorer.rsk.co/"
   },
