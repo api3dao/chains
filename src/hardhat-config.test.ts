@@ -195,7 +195,7 @@ describe(networks.name, () => {
     expect(Object.keys(result).length).toEqual(CHAINS.length);
 
     CHAINS.forEach((chain) => {
-      const overrides = chain.hardhatConfigOverrides || {};
+      const overrides = chain.hardhatConfigOverrides?.networks || {};
 
       expect(result[chain.alias]).toEqual({
         accounts: { mnemonic: '' },
@@ -210,7 +210,7 @@ describe(networks.name, () => {
     process.env.MNEMONIC = 'test test test test test test test test test test test junk';
     const result = networks();
     CHAINS.forEach((chain) => {
-      const overrides = chain.hardhatConfigOverrides || {};
+      const overrides = chain.hardhatConfigOverrides?.networks || {};
 
       expect(result[chain.alias]).toEqual({
         accounts: { mnemonic: 'test test test test test test test test test test test junk' },
@@ -230,7 +230,7 @@ describe(networks.name, () => {
     const result = networks();
 
     CHAINS.forEach((chain) => {
-      const overrides = chain.hardhatConfigOverrides || {};
+      const overrides = chain.hardhatConfigOverrides?.networks || {};
 
       expect(result[chain.alias]).toEqual({
         accounts: { mnemonic: '' },
