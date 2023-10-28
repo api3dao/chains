@@ -18,11 +18,13 @@ async function main(): Promise<PromiseSettledResult<void>[]> {
 }
 
 async function pingExplorerApi(chain: Chain): Promise<void> {
-  const url =chain.explorer.api?.url;
+  const url = chain.explorer.api?.url;
   if (url) {
     const res = await go(() => axios.head(url, { timeout: TIMEOUT_MS }), { totalTimeoutMs: TIMEOUT_MS });
     if (!res.success || res.error || res.data.status >= 400) {
-      throw new Error(`Unable to get a successful block explorer API response for chain:${chain.alias} url:${url} error:${res.error?.message}`);
+      throw new Error(
+        `Unable to get a successful block explorer API response for chain:${chain.alias} url:${url} error:${res.error?.message}`
+      );
     }
   }
   return Promise.resolve();
