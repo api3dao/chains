@@ -1,14 +1,13 @@
 import fs from 'fs';
 import path from 'path';
 import { createPublicClient, http } from 'viem';
-import { CHAINS } from '../src';
+import { getScriptChains } from './utils/cli';
 
 const BLOCK_LOOKBACK = BigInt(400_000);
 
-const specifiedChain = CHAINS.find((chain) => chain.alias === process.env.CHAIN);
-const chains = specifiedChain ? [specifiedChain] : CHAINS;
-
 async function calculateAverageBlockTimes(): Promise<void> {
+  const chains = getScriptChains();
+
   const results = await Promise.allSettled(
     chains.map(async (chain) => {
       const client = createPublicClient({ transport: http(chain.providerUrl) });

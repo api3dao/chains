@@ -1,32 +1,27 @@
-import { WebClient } from '@slack/web-api';
 import { PublicClient, createPublicClient, http } from 'viem';
 import { go } from '@api3/promise-utils';
-import { CHAINS, Chain } from '../src';
-
-const specifiedChain = CHAINS.find((chain) => chain.alias === process.env.CHAIN);
-const chains = specifiedChain ? [specifiedChain] : CHAINS;
+import { getScriptChains } from './utils/cli';
+import { postSlackMessage } from './utils/slack';
+import { Chain } from '../src';
 
 // A somewhat arbitrary multiplier applied to the average block ms to determine whether
 // or not the reported latest block is recent or not
 const BLOCK_TOLERANCE_MULTIPLIER = 8;
 
-// Set the following environment variables to also notify to Slack
-const slackToken = process.env.SLACK_TOKEN;
-const slackChannel = process.env.SLACK_CHANNEL;
-const slackClient = new WebClient(slackToken);
-
 async function main(): Promise<PromiseSettledResult<void>[]> {
+  const chains = getScriptChains();
+
   const promises = chains.map(async (chain) => {
     const client = createPublicClient({ transport: http(chain.providerUrl) });
 
-    await validateChain(client, chain);
+    await validateChainId(client, chain);
     await go(() => validateLatestBlock(client, chain), { retries: 3, delay: { type: 'static', delayMs: 60_000 } });
   });
 
   return await Promise.allSettled(promises);
 }
 
-async function validateChain(client: PublicClient, chain: Chain): Promise<void> {
+async function validateChainId(client: PublicClient, chain: Chain): Promise<void> {
   const chainIdRes = await go(() => client.getChainId(), { retries: 1 });
   if (!chainIdRes.success) {
     throw new Error(`Unable to fetch chain ID for ${chain.alias}`);
@@ -53,9 +48,9 @@ async function validateLatestBlock(client: PublicClient, chain: Chain): Promise<
 }
 
 async function notifySlack(errors: Error[]): Promise<Error[]> {
-  if (errors.length > 0 && slackChannel) {
+  if (errors.length > 0) {
     const text = errors.reduce((acc, error) => `${acc}\n${error.message}`, '');
-    await slackClient.chat.postMessage({ channel: slackChannel, text });
+    await postSlackMessage(text);
   }
   return errors;
 }
