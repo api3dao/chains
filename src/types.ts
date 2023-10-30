@@ -1,5 +1,5 @@
 import { z } from 'zod';
-import { hasUniqueObjects } from './utils/arrays';
+import { hasUniqueEntries } from './utils/arrays';
 
 export const chainExplorerAPIKeySchema = z.object({
   required: z.boolean(),
@@ -36,7 +36,7 @@ export const chainProvidersSchema = z.array(chainProviderSchema).superRefine((pr
     });
   }
 
-  if (!hasUniqueObjects(providers, 'alias')) {
+  if (!hasUniqueEntries(providers, 'alias')) {
     ctx.addIssue({
       code: z.ZodIssueCode.custom,
       message: "cannot contain duplicate 'alias' values",
