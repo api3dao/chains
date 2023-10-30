@@ -57,21 +57,30 @@ export const hardhatConfigOverrides = z.object({
   networks: z.record(z.string(), z.any()).optional(),
 });
 
-export const chainSchema = z.object({
-  alias: z.string(),
-  name: z.string(),
-  // Most chain IDs are numbers, but to remain flexible this has purposefully been kept as a string
-  // It can be adjusted if we want to support chains that don't use numbers.
-  // See: https://github.com/api3dao/chains/pull/1#discussion_r1161102392
-  id: z.string().regex(/^\d+$/),
-  providers: chainProvidersSchema,
-  symbol: z.string(),
-  decimals: z.number().positive(),
-  testnet: z.boolean(),
-  explorer: chainExplorerSchema,
-  blockTimeMs: z.number().positive(),
-  hardhatConfigOverrides: hardhatConfigOverrides.optional(),
-});
+export const chainSchema = z
+  .object({
+    alias: z.string(),
+    name: z.string(),
+    // Most chain IDs are numbers, but to remain flexible this has purposefully been kept as a string
+    // It can be adjusted if we want to support chains that don't use numbers.
+    // See: https://github.com/api3dao/chains/pull/1#discussion_r1161102392
+    id: z.string().regex(/^\d+$/),
+    providers: chainProvidersSchema,
+    symbol: z.string(),
+    decimals: z.number().positive(),
+    testnet: z.boolean(),
+    explorer: chainExplorerSchema,
+    blockTimeMs: z.number().positive(),
+    hardhatConfigOverrides: hardhatConfigOverrides.optional(),
+  })
+  .superRefine((chain, ctx) => {
+    if (chain.testnet && !chain.symbol.startsWith('test')) {
+      ctx.addIssue({
+        code: z.ZodIssueCode.custom,
+        message: "testnet chains must prefix 'symbol' with 'test'",
+      });
+    }
+  });
 
 export type Chain = z.infer<typeof chainSchema>;
 export type ChainExplorer = z.infer<typeof chainExplorerSchema>;

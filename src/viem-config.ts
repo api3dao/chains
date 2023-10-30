@@ -1,19 +1,27 @@
-import { Chain, defineChain } from 'viem';
+import { defineChain } from 'viem';
+import { Chain } from './types';
 import { CHAINS } from './generated/chains';
 
-export function chains(): Chain[] {
+export function chains() {
   return CHAINS.map((chain) => {
+    // All chains must have at least a default provider
+    const defaultProvider = chain.providers.find((c) => c.alias === 'default')!;
+
     return defineChain({
       id: Number(chain.id),
       name: chain.alias,
       network: chain.alias,
-      nativeCurrency: chain.nativeCurrency,
+      nativeCurrency: {
+        name: buildName(chain),
+        symbol: chain.symbol,
+        decimals: chain.decimals,
+      },
       rpcUrls: {
         default: {
-          http: [chain.providerUrl],
+          http: [defaultProvider.rpcUrl!],
         },
         public: {
-          http: [chain.providerUrl],
+          http: [defaultProvider.rpcUrl!],
         },
       },
       blockExplorers: {
@@ -24,4 +32,12 @@ export function chains(): Chain[] {
       },
     });
   });
+}
+
+function buildName(chain: Chain): string {
+  if (chain.testnet) {
+    const symbolWithoutPrefix = chain.symbol.replace(/^(test\.)/, '');
+    return `Testnet ${symbolWithoutPrefix}`;
+  }
+  return chain.symbol;
 }

@@ -2,7 +2,7 @@
   "name": "Fantom testnet",
   "alias": "fantom-testnet",
   "id": "4002",
-  "symbol": "FTM",
+  "symbol": "testFTM",
   "decimals": 18,
   "testnet": true,
   "providers": [
