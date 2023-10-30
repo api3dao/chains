@@ -1,5 +1,5 @@
 {
-  "name": "RSK",
+  "name": "Rootstock",
   "alias": "rsk",
   "id": "30",
   "symbol": "RBTC",
@@ -7,7 +7,7 @@
   "providers": [
     {
       "alias": "default",
-      "rpcUrl": "https://mainnet.sovryn.app/rpc"
+      "rpcUrl": "https://public-node.rsk.co"
     }
   ],
   "explorer": {

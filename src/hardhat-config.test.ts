@@ -196,10 +196,13 @@ describe(networks.name, () => {
 
     CHAINS.forEach((chain) => {
       const defaultProvider = chain.providers.find((p) => p.alias === 'default')!;
+      const overrides = chain.hardhatConfigOverrides?.networks || {};
+
       expect(result[chain.alias]).toEqual({
         accounts: { mnemonic: '' },
         chainId: Number(chain.id),
         url: defaultProvider.rpcUrl,
+        ...overrides,
       });
     });
   });
@@ -209,10 +212,13 @@ describe(networks.name, () => {
     const result = networks();
     CHAINS.forEach((chain) => {
       const defaultProvider = chain.providers.find((p) => p.alias === 'default')!;
+      const overrides = chain.hardhatConfigOverrides?.networks || {};
+
       expect(result[chain.alias]).toEqual({
         accounts: { mnemonic: 'test test test test test test test test test test test junk' },
         chainId: Number(chain.id),
         url: defaultProvider.rpcUrl,
+        ...overrides,
       });
     });
   });
@@ -226,10 +232,37 @@ describe(networks.name, () => {
     const result = networks();
 
     CHAINS.forEach((chain) => {
+      const overrides = chain.hardhatConfigOverrides?.networks || {};
+
       expect(result[chain.alias]).toEqual({
         accounts: { mnemonic: '' },
         chainId: Number(chain.id),
         url: `https://${chain.id}.xyz`,
+        ...overrides,
+      });
+    });
+  });
+
+  describe('hardhatConfigOverrides', () => {
+    test('zksync-goerli-testnet', () => {
+      expect(networks()['zksync-goerli-testnet']).toEqual({
+        accounts: { mnemonic: '' },
+        chainId: 280,
+        ethNetwork: 'ethereum-goerli-testnet',
+        url: 'https://testnet.era.zksync.dev',
+        verifyURL: 'https://zksync2-testnet-explorer.zksync.dev/contract_verification',
+        zksync: true,
+      });
+    });
+
+    test('zksync', () => {
+      expect(networks()['zksync']).toEqual({
+        accounts: { mnemonic: '' },
+        chainId: 324,
+        ethNetwork: 'ethereum',
+        url: 'https://mainnet.era.zksync.io',
+        verifyURL: 'https://zksync2-mainnet-explorer.zksync.io/contract_verification',
+        zksync: true,
       });
     });
   });

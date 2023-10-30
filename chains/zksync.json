@@ -13,5 +13,12 @@
   "explorer": {
     "browserUrl": "https://explorer.zksync.io/"
   },
-  "blockTimeMs": 1020
+  "blockTimeMs": 1020,
+  "hardhatConfigOverrides": {
+    "networks": {
+      "ethNetwork": "ethereum",
+      "zksync": true,
+      "verifyURL": "https://zksync2-mainnet-explorer.zksync.io/contract_verification"
+    }
+  }
 }

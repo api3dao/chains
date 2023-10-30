@@ -592,7 +592,7 @@ export const CHAINS: Chain[] = [
     blockTimeMs: 2210,
   },
   {
-    name: 'RSK testnet',
+    name: 'Rootstock testnet',
     alias: 'rsk-testnet',
     id: '31',
     symbol: 'testRBTC',
@@ -602,12 +602,12 @@ export const CHAINS: Chain[] = [
     blockTimeMs: 26036,
   },
   {
-    name: 'RSK',
+    name: 'Rootstock',
     alias: 'rsk',
     id: '30',
     symbol: 'RBTC',
     testnet: false,
-    providers: [{ alias: 'default', rpcUrl: 'https://mainnet.sovryn.app/rpc' }],
+    providers: [{ alias: 'default', rpcUrl: 'https://public-node.rsk.co' }],
     explorer: { browserUrl: 'https://explorer.rsk.co/' },
     blockTimeMs: 30946,
   },
@@ -659,6 +659,13 @@ export const CHAINS: Chain[] = [
     providers: [{ alias: 'default', rpcUrl: 'https://testnet.era.zksync.dev' }],
     explorer: { browserUrl: 'https://goerli.explorer.zksync.io/' },
     blockTimeMs: 1069,
+    hardhatConfigOverrides: {
+      networks: {
+        ethNetwork: 'ethereum-goerli-testnet',
+        zksync: true,
+        verifyURL: 'https://zksync2-testnet-explorer.zksync.dev/contract_verification',
+      },
+    },
   },
   {
     name: 'zkSync',
@@ -669,5 +676,12 @@ export const CHAINS: Chain[] = [
     providers: [{ alias: 'default', rpcUrl: 'https://mainnet.era.zksync.io' }],
     explorer: { browserUrl: 'https://explorer.zksync.io/' },
     blockTimeMs: 1020,
+    hardhatConfigOverrides: {
+      networks: {
+        ethNetwork: 'ethereum',
+        zksync: true,
+        verifyURL: 'https://zksync2-mainnet-explorer.zksync.io/contract_verification',
+      },
+    },
   },
 ];
