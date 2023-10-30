@@ -4,7 +4,12 @@
   "id": "1088",
   "symbol": "METIS",
   "testnet": false,
-  "providerUrl": "https://andromeda.metis.io/?owner=1088",
+  "providers": [
+    {
+      "alias": "default",
+      "rpcUrl": "https://andromeda.metis.io/?owner=1088"
+    }
+  ],
   "explorer": {
     "api": {
       "url": "https://andromeda-explorer.metis.io/api",

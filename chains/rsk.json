@@ -4,7 +4,12 @@
   "id": "30",
   "symbol": "RBTC",
   "testnet": false,
-  "providerUrl": "https://public-node.rsk.co",
+  "providers": [
+    {
+      "alias": "default",
+      "rpcUrl": "https://public-node.rsk.co"
+    }
+  ],
   "explorer": {
     "browserUrl": "https://explorer.rsk.co/"
   },

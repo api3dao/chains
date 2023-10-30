@@ -4,7 +4,12 @@
   "id": "420",
   "symbol": "testETH",
   "testnet": true,
-  "providerUrl": "https://goerli.optimism.io",
+  "providers": [
+    {
+      "alias": "default",
+      "rpcUrl": "https://goerli.optimism.io"
+    }
+  ],
   "explorer": {
     "api": {
       "url": "https://api-goerli-optimism.etherscan.io/api",

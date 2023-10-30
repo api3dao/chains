@@ -4,7 +4,12 @@
   "id": "324",
   "symbol": "ETH",
   "testnet": false,
-  "providerUrl": "https://mainnet.era.zksync.io",
+  "providers": [
+    {
+      "alias": "default",
+      "rpcUrl": "https://mainnet.era.zksync.io"
+    }
+  ],
   "explorer": {
     "browserUrl": "https://explorer.zksync.io/"
   },

@@ -4,7 +4,12 @@
   "id": "43113",
   "symbol": "testAVAX",
   "testnet": true,
-  "providerUrl": "https://api.avax-test.network/ext/bc/C/rpc",
+  "providers": [
+    {
+      "alias": "default",
+      "rpcUrl": "https://api.avax-test.network/ext/bc/C/rpc"
+    }
+  ],
   "explorer": {
     "api": {
       "url": "https://api-testnet.snowtrace.io/api",

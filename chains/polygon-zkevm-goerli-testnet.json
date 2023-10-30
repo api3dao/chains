@@ -4,7 +4,12 @@
   "id": "1442",
   "symbol": "testETH",
   "testnet": true,
-  "providerUrl": "https://rpc.public.zkevm-test.net",
+  "providers": [
+    {
+      "alias": "default",
+      "rpcUrl": "https://rpc.public.zkevm-test.net"
+    }
+  ],
   "explorer": {
     "api": {
       "url": "https://api-testnet-zkevm.polygonscan.com/api",

@@ -4,7 +4,12 @@
   "id": "100",
   "symbol": "xDAI",
   "testnet": false,
-  "providerUrl": "https://rpc.gnosischain.com",
+  "providers": [
+    {
+      "alias": "default",
+      "rpcUrl": "https://rpc.gnosischain.com"
+    }
+  ],
   "explorer": {
     "api": {
       "url": "https://api.gnosisscan.io/api",

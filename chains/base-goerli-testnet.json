@@ -4,7 +4,12 @@
   "id": "84531",
   "symbol": "testETH",
   "testnet": true,
-  "providerUrl": "https://goerli.base.org",
+  "providers": [
+    {
+      "alias": "default",
+      "rpcUrl": "https://goerli.base.org"
+    }
+  ],
   "explorer": {
     "api": {
       "url": "https://api-goerli.basescan.org/api",

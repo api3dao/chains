@@ -4,7 +4,12 @@
   "id": "56288",
   "symbol": "BOBA",
   "testnet": false,
-  "providerUrl": "https://replica.bnb.boba.network/",
+  "providers": [
+    {
+      "alias": "default",
+      "rpcUrl": "https://replica.bnb.boba.network/"
+    }
+  ],
   "explorer": {
     "api": {
       "url": "https://blockexplorer.bnb.boba.network/api",

@@ -4,7 +4,12 @@
   "id": "1285",
   "symbol": "MOVR",
   "testnet": false,
-  "providerUrl": "https://rpc.api.moonriver.moonbeam.network",
+  "providers": [
+    {
+      "alias": "default",
+      "rpcUrl": "https://rpc.api.moonriver.moonbeam.network"
+    }
+  ],
   "explorer": {
     "api": {
       "url": "https://api-moonriver.moonscan.io/api",

@@ -4,7 +4,12 @@
   "id": "137",
   "symbol": "MATIC",
   "testnet": false,
-  "providerUrl": "https://rpc.ankr.com/polygon",
+  "providers": [
+    {
+      "alias": "default",
+      "rpcUrl": "https://rpc.ankr.com/polygon"
+    }
+  ],
   "explorer": {
     "api": {
       "url": "https://api.polygonscan.com/api",

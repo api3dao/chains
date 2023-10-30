@@ -4,7 +4,12 @@
   "id": "42170",
   "symbol": "ETH",
   "testnet": false,
-  "providerUrl": "https://nova.arbitrum.io/rpc",
+  "providers": [
+    {
+      "alias": "default",
+      "rpcUrl": "https://nova.arbitrum.io/rpc"
+    }
+  ],
   "explorer": {
     "api": {
       "url": "https://api-nova.arbiscan.io/api",

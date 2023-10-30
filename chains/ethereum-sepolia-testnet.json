@@ -4,7 +4,12 @@
   "id": "11155111",
   "symbol": "testETH",
   "testnet": true,
-  "providerUrl": "https://rpc-sepolia.rockx.com",
+  "providers": [
+    {
+      "alias": "default",
+      "rpcUrl": "https://rpc-sepolia.rockx.com"
+    }
+  ],
   "explorer": {
     "api": {
       "url": "https://api-sepolia.etherscan.io/api",

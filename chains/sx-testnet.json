@@ -4,7 +4,12 @@
   "id": "647",
   "symbol": "testSX",
   "testnet": true,
-  "providerUrl": "https://rpc.toronto.sx.technology",
+  "providers": [
+    {
+      "alias": "default",
+      "rpcUrl": "https://rpc.toronto.sx.technology"
+    }
+  ],
   "explorer": {
     "api": {
       "url": "https://explorer.toronto.sx.technology/api",

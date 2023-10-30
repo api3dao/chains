@@ -195,12 +195,13 @@ describe(networks.name, () => {
     expect(Object.keys(result).length).toEqual(CHAINS.length);
 
     CHAINS.forEach((chain) => {
+      const defaultProvider = chain.providers.find((p) => p.alias === 'default')!;
       const overrides = chain.hardhatConfigOverrides?.networks || {};
 
       expect(result[chain.alias]).toEqual({
         accounts: { mnemonic: '' },
         chainId: Number(chain.id),
-        url: chain.providerUrl,
+        url: defaultProvider.rpcUrl,
         ...overrides,
       });
     });
@@ -210,12 +211,13 @@ describe(networks.name, () => {
     process.env.MNEMONIC = 'test test test test test test test test test test test junk';
     const result = networks();
     CHAINS.forEach((chain) => {
+      const defaultProvider = chain.providers.find((p) => p.alias === 'default')!;
       const overrides = chain.hardhatConfigOverrides?.networks || {};
 
       expect(result[chain.alias]).toEqual({
         accounts: { mnemonic: 'test test test test test test test test test test test junk' },
         chainId: Number(chain.id),
-        url: chain.providerUrl,
+        url: defaultProvider.rpcUrl,
         ...overrides,
       });
     });
@@ -243,28 +245,22 @@ describe(networks.name, () => {
 
   describe('hardhatConfigOverrides', () => {
     test('zksync-goerli-testnet', () => {
-      const alias = 'zksync-goerli-testnet';
-      const chain = CHAINS.find((chain) => chain.alias === alias)!;
-
-      expect(networks()[alias]).toEqual({
+      expect(networks()['zksync-goerli-testnet']).toEqual({
         accounts: { mnemonic: '' },
-        chainId: Number(chain.id),
+        chainId: 280,
         ethNetwork: 'ethereum-goerli-testnet',
-        url: chain.providerUrl,
+        url: 'https://testnet.era.zksync.dev',
         verifyURL: 'https://zksync2-testnet-explorer.zksync.dev/contract_verification',
         zksync: true,
       });
     });
 
     test('zksync', () => {
-      const alias = 'zksync';
-      const chain = CHAINS.find((chain) => chain.alias === alias)!;
-
-      expect(networks()[alias]).toEqual({
+      expect(networks()['zksync']).toEqual({
         accounts: { mnemonic: '' },
-        chainId: Number(chain.id),
+        chainId: 324,
         ethNetwork: 'ethereum',
-        url: chain.providerUrl,
+        url: 'https://mainnet.era.zksync.io',
         verifyURL: 'https://zksync2-mainnet-explorer.zksync.io/contract_verification',
         zksync: true,
       });

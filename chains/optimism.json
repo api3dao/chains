@@ -4,7 +4,12 @@
   "id": "10",
   "symbol": "ETH",
   "testnet": false,
-  "providerUrl": "https://mainnet.optimism.io",
+  "providers": [
+    {
+      "alias": "default",
+      "rpcUrl": "https://mainnet.optimism.io"
+    }
+  ],
   "explorer": {
     "api": {
       "url": "https://api-optimistic.etherscan.io/api",

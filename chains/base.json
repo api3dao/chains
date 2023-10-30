@@ -4,7 +4,12 @@
   "id": "8453",
   "symbol": "ETH",
   "testnet": false,
-  "providerUrl": "https://mainnet.base.org",
+  "providers": [
+    {
+      "alias": "default",
+      "rpcUrl": "https://mainnet.base.org"
+    }
+  ],
   "explorer": {
     "api": {
       "url": "https://api.basescan.org/api",

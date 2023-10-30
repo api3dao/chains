@@ -4,7 +4,12 @@
   "id": "288",
   "symbol": "BOBA",
   "testnet": false,
-  "providerUrl": "https://lightning-replica.boba.network/",
+  "providers": [
+    {
+      "alias": "default",
+      "rpcUrl": "https://lightning-replica.boba.network/"
+    }
+  ],
   "explorer": {
     "api": {
       "url": "https://api.bobascan.com/api",

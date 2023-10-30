@@ -4,7 +4,12 @@
   "id": "534353",
   "symbol": "testETH",
   "testnet": true,
-  "providerUrl": "https://alpha-rpc.scroll.io/l2",
+  "providers": [
+    {
+      "alias": "default",
+      "rpcUrl": "https://alpha-rpc.scroll.io/l2"
+    }
+  ],
   "explorer": {
     "api": {
       "url": "https://blockscout.scroll.io/api",

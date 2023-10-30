@@ -65,12 +65,13 @@ export function networks(): HardhatNetworksConfig {
   }
 
   return CHAINS.reduce((networks, chain) => {
+    const defaultProvider = chain.providers.find((p) => p.alias === 'default');
     const overrides = chain.hardhatConfigOverrides?.networks || {};
 
     networks[chain.alias] = {
       accounts: { mnemonic: process.env.MNEMONIC || '' },
       chainId: Number(chain.id),
-      url: process.env[networkHttpRpcUrlName(chain)] || chain.providerUrl,
+      url: process.env[networkHttpRpcUrlName(chain)] || defaultProvider!.rpcUrl!,
       ...overrides,
     };
     return networks;

@@ -4,7 +4,12 @@
   "id": "5",
   "symbol": "testETH",
   "testnet": true,
-  "providerUrl": "https://rpc.ankr.com/eth_goerli",
+  "providers": [
+    {
+      "alias": "default",
+      "rpcUrl": "https://rpc.ankr.com/eth_goerli"
+    }
+  ],
   "explorer": {
     "api": {
       "url": "https://api-goerli.etherscan.io/api",
