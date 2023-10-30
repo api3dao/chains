@@ -1,24 +1,24 @@
 {
-  "name": "Cronos testnet",
   "alias": "cronos-testnet",
-  "id": "338",
-  "symbol": "testCRO",
+  "blockTimeMs": 2446,
   "decimals": 18,
-  "testnet": true,
+  "explorer": {
+    "api": {
+      "key": {
+        "required": false
+      },
+      "url": "https://cronos.org/explorer/testnet3/api"
+    },
+    "browserUrl": "https://cronos.org/explorer/testnet3/"
+  },
+  "id": "338",
+  "name": "Cronos testnet",
   "providers": [
     {
       "alias": "default",
       "rpcUrl": "https://evm-t3.cronos.org"
     }
   ],
-  "explorer": {
-    "api": {
-      "url": "https://cronos.org/explorer/testnet3/api",
-      "key": {
-        "required": false
-      }
-    },
-    "browserUrl": "https://cronos.org/explorer/testnet3/"
-  },
-  "blockTimeMs": 2446
+  "symbol": "testCRO",
+  "testnet": true
 }

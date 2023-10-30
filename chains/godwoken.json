@@ -1,18 +1,18 @@
 {
-  "name": "Godwoken",
   "alias": "godwoken",
-  "id": "71402",
-  "symbol": "pCKB",
+  "blockTimeMs": 45041,
   "decimals": 18,
-  "testnet": false,
+  "explorer": {
+    "browserUrl": "https://v1.gwscan.com/"
+  },
+  "id": "71402",
+  "name": "Godwoken",
   "providers": [
     {
       "alias": "default",
       "rpcUrl": "https://v1.mainnet.godwoken.io/rpc"
     }
   ],
-  "explorer": {
-    "browserUrl": "https://v1.gwscan.com/"
-  },
-  "blockTimeMs": 45041
+  "symbol": "pCKB",
+  "testnet": false
 }

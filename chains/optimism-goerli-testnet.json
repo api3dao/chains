@@ -1,25 +1,25 @@
 {
-  "name": "Optimism testnet",
   "alias": "optimism-goerli-testnet",
-  "id": "420",
-  "symbol": "testETH",
+  "blockTimeMs": 2000,
   "decimals": 18,
-  "testnet": true,
+  "explorer": {
+    "api": {
+      "key": {
+        "hardhatEtherscanAlias": "optimisticGoerli",
+        "required": true
+      },
+      "url": "https://api-goerli-optimism.etherscan.io/api"
+    },
+    "browserUrl": "https://goerli-optimism.etherscan.io/"
+  },
+  "id": "420",
+  "name": "Optimism testnet",
   "providers": [
     {
       "alias": "default",
       "rpcUrl": "https://goerli.optimism.io"
     }
   ],
-  "explorer": {
-    "api": {
-      "url": "https://api-goerli-optimism.etherscan.io/api",
-      "key": {
-        "required": true,
-        "hardhatEtherscanAlias": "optimisticGoerli"
-      }
-    },
-    "browserUrl": "https://goerli-optimism.etherscan.io/"
-  },
-  "blockTimeMs": 2000
+  "symbol": "testETH",
+  "testnet": true
 }

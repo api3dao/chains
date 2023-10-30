@@ -1,24 +1,24 @@
 {
-  "name": "Milkomeda C1 testnet",
   "alias": "milkomeda-c1-testnet",
-  "id": "200101",
-  "symbol": "testmilkADA",
+  "blockTimeMs": 2000,
   "decimals": 18,
-  "testnet": true,
+  "explorer": {
+    "api": {
+      "key": {
+        "required": false
+      },
+      "url": "https://explorer-devnet-cardano-evm.c1.milkomeda.com/api"
+    },
+    "browserUrl": "https://explorer-devnet-cardano-evm.c1.milkomeda.com/"
+  },
+  "id": "200101",
+  "name": "Milkomeda C1 testnet",
   "providers": [
     {
       "alias": "default",
       "rpcUrl": "https://rpc-devnet-cardano-evm.c1.milkomeda.com"
     }
   ],
-  "explorer": {
-    "api": {
-      "url": "https://explorer-devnet-cardano-evm.c1.milkomeda.com/api",
-      "key": {
-        "required": false
-      }
-    },
-    "browserUrl": "https://explorer-devnet-cardano-evm.c1.milkomeda.com/"
-  },
-  "blockTimeMs": 2000
+  "symbol": "testmilkADA",
+  "testnet": true
 }

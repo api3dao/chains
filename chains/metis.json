@@ -1,24 +1,24 @@
 {
-  "name": "Metis",
   "alias": "metis",
-  "id": "1088",
-  "symbol": "METIS",
+  "blockTimeMs": 2564,
   "decimals": 18,
-  "testnet": false,
+  "explorer": {
+    "api": {
+      "key": {
+        "required": false
+      },
+      "url": "https://andromeda-explorer.metis.io/api"
+    },
+    "browserUrl": "https://andromeda-explorer.metis.io/"
+  },
+  "id": "1088",
+  "name": "Metis",
   "providers": [
     {
       "alias": "default",
       "rpcUrl": "https://andromeda.metis.io/?owner=1088"
     }
   ],
-  "explorer": {
-    "api": {
-      "url": "https://andromeda-explorer.metis.io/api",
-      "key": {
-        "required": false
-      }
-    },
-    "browserUrl": "https://andromeda-explorer.metis.io/"
-  },
-  "blockTimeMs": 2564
+  "symbol": "METIS",
+  "testnet": false
 }

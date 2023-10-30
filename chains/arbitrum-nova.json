@@ -1,24 +1,24 @@
 {
-  "name": "Arbitrum Nova",
   "alias": "arbitrum-nova",
-  "id": "42170",
-  "symbol": "ETH",
+  "blockTimeMs": 862,
   "decimals": 18,
-  "testnet": false,
+  "explorer": {
+    "api": {
+      "key": {
+        "required": true
+      },
+      "url": "https://api-nova.arbiscan.io/api"
+    },
+    "browserUrl": "https://nova.arbiscan.io/"
+  },
+  "id": "42170",
+  "name": "Arbitrum Nova",
   "providers": [
     {
       "alias": "default",
       "rpcUrl": "https://nova.arbitrum.io/rpc"
     }
   ],
-  "explorer": {
-    "api": {
-      "url": "https://api-nova.arbiscan.io/api",
-      "key": {
-        "required": true
-      }
-    },
-    "browserUrl": "https://nova.arbiscan.io/"
-  },
-  "blockTimeMs": 862
+  "symbol": "ETH",
+  "testnet": false
 }

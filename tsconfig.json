@@ -1,19 +1,19 @@
 {
   "compilerOptions": {
-    "exactOptionalPropertyTypes": true,
     "esModuleInterop": true,
+    "exactOptionalPropertyTypes": true,
     "forceConsistentCasingInFileNames": true,
-    "noUncheckedIndexedAccess": true,
-    "noFallthroughCasesInSwitch": true,
-    "noImplicitReturns": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
     "isolatedModules": true,
     "noEmit": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitReturns": true,
+    "noUncheckedIndexedAccess": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
     "outDir": "dist",
     "skipLibCheck": true,
     "strict": true
   },
-  "include": ["src"],
-  "exclude": ["scripts", "chains"]
+  "exclude": ["scripts", "chains"],
+  "include": ["src"]
 }

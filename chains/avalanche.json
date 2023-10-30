@@ -1,25 +1,25 @@
 {
-  "name": "Avalanche",
   "alias": "avalanche",
-  "id": "43114",
-  "symbol": "AVAX",
+  "blockTimeMs": 2036,
   "decimals": 18,
-  "testnet": false,
+  "explorer": {
+    "api": {
+      "key": {
+        "hardhatEtherscanAlias": "avalanche",
+        "required": true
+      },
+      "url": "https://api.snowtrace.io/api"
+    },
+    "browserUrl": "https://snowtrace.io/"
+  },
+  "id": "43114",
+  "name": "Avalanche",
   "providers": [
     {
       "alias": "default",
       "rpcUrl": "https://api.avax.network/ext/bc/C/rpc"
     }
   ],
-  "explorer": {
-    "api": {
-      "url": "https://api.snowtrace.io/api",
-      "key": {
-        "required": true,
-        "hardhatEtherscanAlias": "avalanche"
-      }
-    },
-    "browserUrl": "https://snowtrace.io/"
-  },
-  "blockTimeMs": 2036
+  "symbol": "AVAX",
+  "testnet": false
 }

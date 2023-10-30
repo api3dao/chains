@@ -1,25 +1,25 @@
 {
-  "name": "Ethereum Goerli testnet",
   "alias": "ethereum-goerli-testnet",
-  "id": "5",
-  "symbol": "testETH",
+  "blockTimeMs": 15140,
   "decimals": 18,
-  "testnet": true,
+  "explorer": {
+    "api": {
+      "key": {
+        "hardhatEtherscanAlias": "goerli",
+        "required": true
+      },
+      "url": "https://api-goerli.etherscan.io/api"
+    },
+    "browserUrl": "https://goerli.etherscan.io/"
+  },
+  "id": "5",
+  "name": "Ethereum Goerli testnet",
   "providers": [
     {
       "alias": "default",
       "rpcUrl": "https://rpc.ankr.com/eth_goerli"
     }
   ],
-  "explorer": {
-    "api": {
-      "url": "https://api-goerli.etherscan.io/api",
-      "key": {
-        "required": true,
-        "hardhatEtherscanAlias": "goerli"
-      }
-    },
-    "browserUrl": "https://goerli.etherscan.io/"
-  },
-  "blockTimeMs": 15140
+  "symbol": "testETH",
+  "testnet": true
 }

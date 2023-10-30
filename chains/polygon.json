@@ -1,25 +1,25 @@
 {
-  "name": "Polygon",
   "alias": "polygon",
-  "id": "137",
-  "symbol": "MATIC",
+  "blockTimeMs": 2210,
   "decimals": 18,
-  "testnet": false,
+  "explorer": {
+    "api": {
+      "key": {
+        "hardhatEtherscanAlias": "polygon",
+        "required": true
+      },
+      "url": "https://api.polygonscan.com/api"
+    },
+    "browserUrl": "https://polygonscan.com/"
+  },
+  "id": "137",
+  "name": "Polygon",
   "providers": [
     {
       "alias": "default",
       "rpcUrl": "https://rpc.ankr.com/polygon"
     }
   ],
-  "explorer": {
-    "api": {
-      "url": "https://api.polygonscan.com/api",
-      "key": {
-        "required": true,
-        "hardhatEtherscanAlias": "polygon"
-      }
-    },
-    "browserUrl": "https://polygonscan.com/"
-  },
-  "blockTimeMs": 2210
+  "symbol": "MATIC",
+  "testnet": false
 }

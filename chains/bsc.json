@@ -1,25 +1,25 @@
 {
-  "name": "BSC",
   "alias": "bsc",
-  "id": "56",
-  "symbol": "BNB",
+  "blockTimeMs": 3009,
   "decimals": 18,
-  "testnet": false,
+  "explorer": {
+    "api": {
+      "key": {
+        "hardhatEtherscanAlias": "bsc",
+        "required": true
+      },
+      "url": "https://api.bscscan.com/api"
+    },
+    "browserUrl": "https://bscscan.com/"
+  },
+  "id": "56",
+  "name": "BSC",
   "providers": [
     {
       "alias": "default",
       "rpcUrl": "https://rpc.ankr.com/bsc"
     }
   ],
-  "explorer": {
-    "api": {
-      "url": "https://api.bscscan.com/api",
-      "key": {
-        "required": true,
-        "hardhatEtherscanAlias": "bsc"
-      }
-    },
-    "browserUrl": "https://bscscan.com/"
-  },
-  "blockTimeMs": 3009
+  "symbol": "BNB",
+  "testnet": false
 }

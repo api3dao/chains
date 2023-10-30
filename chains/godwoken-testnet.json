@@ -1,18 +1,18 @@
 {
-  "name": "Godwoken testnet",
   "alias": "godwoken-testnet",
-  "id": "71401",
-  "symbol": "testpCKB",
+  "blockTimeMs": 8127,
   "decimals": 18,
-  "testnet": true,
+  "explorer": {
+    "browserUrl": "https://v1.testnet.gwscan.com/"
+  },
+  "id": "71401",
+  "name": "Godwoken testnet",
   "providers": [
     {
       "alias": "default",
       "rpcUrl": "https://v1.testnet.godwoken.io/rpc"
     }
   ],
-  "explorer": {
-    "browserUrl": "https://v1.testnet.gwscan.com/"
-  },
-  "blockTimeMs": 8127
+  "symbol": "testpCKB",
+  "testnet": true
 }

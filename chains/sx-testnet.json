@@ -1,24 +1,24 @@
 {
-  "name": "SX Network testnet",
   "alias": "sx-testnet",
-  "id": "647",
-  "symbol": "testSX",
+  "blockTimeMs": 2000,
   "decimals": 18,
-  "testnet": true,
+  "explorer": {
+    "api": {
+      "key": {
+        "required": false
+      },
+      "url": "https://explorer.toronto.sx.technology/api"
+    },
+    "browserUrl": "https://explorer.toronto.sx.technology/"
+  },
+  "id": "647",
+  "name": "SX Network testnet",
   "providers": [
     {
       "alias": "default",
       "rpcUrl": "https://rpc.toronto.sx.technology"
     }
   ],
-  "explorer": {
-    "api": {
-      "url": "https://explorer.toronto.sx.technology/api",
-      "key": {
-        "required": false
-      }
-    },
-    "browserUrl": "https://explorer.toronto.sx.technology/"
-  },
-  "blockTimeMs": 2000
+  "symbol": "testSX",
+  "testnet": true
 }

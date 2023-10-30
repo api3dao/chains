@@ -1,25 +1,25 @@
 {
-  "name": "Optimism",
   "alias": "optimism",
-  "id": "10",
-  "symbol": "ETH",
+  "blockTimeMs": 2000,
   "decimals": 18,
-  "testnet": false,
+  "explorer": {
+    "api": {
+      "key": {
+        "hardhatEtherscanAlias": "optimisticEthereum",
+        "required": true
+      },
+      "url": "https://api-optimistic.etherscan.io/api"
+    },
+    "browserUrl": "https://optimistic.etherscan.io/"
+  },
+  "id": "10",
+  "name": "Optimism",
   "providers": [
     {
       "alias": "default",
       "rpcUrl": "https://mainnet.optimism.io"
     }
   ],
-  "explorer": {
-    "api": {
-      "url": "https://api-optimistic.etherscan.io/api",
-      "key": {
-        "required": true,
-        "hardhatEtherscanAlias": "optimisticEthereum"
-      }
-    },
-    "browserUrl": "https://optimistic.etherscan.io/"
-  },
-  "blockTimeMs": 2000
+  "symbol": "ETH",
+  "testnet": false
 }

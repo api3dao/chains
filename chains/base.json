@@ -1,24 +1,24 @@
 {
-  "name": "Base",
   "alias": "base",
-  "id": "8453",
-  "symbol": "ETH",
+  "blockTimeMs": 2000,
   "decimals": 18,
-  "testnet": false,
+  "explorer": {
+    "api": {
+      "key": {
+        "required": true
+      },
+      "url": "https://api.basescan.org/api"
+    },
+    "browserUrl": "https://basescan.org/"
+  },
+  "id": "8453",
+  "name": "Base",
   "providers": [
     {
       "alias": "default",
       "rpcUrl": "https://mainnet.base.org"
     }
   ],
-  "explorer": {
-    "api": {
-      "url": "https://api.basescan.org/api",
-      "key": {
-        "required": true
-      }
-    },
-    "browserUrl": "https://basescan.org/"
-  },
-  "blockTimeMs": 2000
+  "symbol": "ETH",
+  "testnet": false
 }

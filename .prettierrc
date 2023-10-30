@@ -1,9 +1,11 @@
 {
+  "plugins": ["prettier-plugin-sort-json"],
   "bracketSpacing": true,
   "printWidth": 120,
   "singleQuote": true,
   "trailingComma": "es5",
   "useTabs": false,
+  "jsonRecursiveSort": true,
   "overrides": [
     {
       "files": "*.ts",

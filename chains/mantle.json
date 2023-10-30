@@ -1,24 +1,24 @@
 {
-  "name": "Mantle",
   "alias": "mantle",
-  "id": "5000",
-  "symbol": "MNT",
+  "blockTimeMs": 362,
   "decimals": 18,
-  "testnet": false,
+  "explorer": {
+    "api": {
+      "key": {
+        "required": false
+      },
+      "url": "https://explorer.mantle.xyz/api"
+    },
+    "browserUrl": "https://explorer.mantle.xyz/"
+  },
+  "id": "5000",
+  "name": "Mantle",
   "providers": [
     {
       "alias": "default",
       "rpcUrl": "https://rpc.mantle.xyz"
     }
   ],
-  "explorer": {
-    "api": {
-      "url": "https://explorer.mantle.xyz/api",
-      "key": {
-        "required": false
-      }
-    },
-    "browserUrl": "https://explorer.mantle.xyz/"
-  },
-  "blockTimeMs": 362
+  "symbol": "MNT",
+  "testnet": false
 }

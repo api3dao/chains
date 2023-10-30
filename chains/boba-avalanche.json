@@ -1,24 +1,24 @@
 {
-  "name": "Boba/Avalanche",
   "alias": "boba-avalanche",
-  "id": "43288",
-  "symbol": "BOBA",
+  "blockTimeMs": 120000,
   "decimals": 18,
-  "testnet": false,
+  "explorer": {
+    "api": {
+      "key": {
+        "required": false
+      },
+      "url": "https://blockexplorer.avax.boba.network/api"
+    },
+    "browserUrl": "https://blockexplorer.avax.boba.network/"
+  },
+  "id": "43288",
+  "name": "Boba/Avalanche",
   "providers": [
     {
       "alias": "default",
       "rpcUrl": "https://replica.avax.boba.network/"
     }
   ],
-  "explorer": {
-    "api": {
-      "url": "https://blockexplorer.avax.boba.network/api",
-      "key": {
-        "required": false
-      }
-    },
-    "browserUrl": "https://blockexplorer.avax.boba.network/"
-  },
-  "blockTimeMs": 120000
+  "symbol": "BOBA",
+  "testnet": false
 }

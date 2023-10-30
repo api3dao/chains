@@ -1,25 +1,25 @@
 {
-  "name": "Arbitrum testnet",
   "alias": "arbitrum-goerli-testnet",
-  "id": "421613",
-  "symbol": "testETH",
+  "blockTimeMs": 641,
   "decimals": 18,
-  "testnet": true,
+  "explorer": {
+    "api": {
+      "key": {
+        "hardhatEtherscanAlias": "arbitrumGoerli",
+        "required": true
+      },
+      "url": "https://api-goerli.arbiscan.io/api"
+    },
+    "browserUrl": "https://testnet.arbiscan.io/"
+  },
+  "id": "421613",
+  "name": "Arbitrum testnet",
   "providers": [
     {
       "alias": "default",
       "rpcUrl": "https://goerli-rollup.arbitrum.io/rpc"
     }
   ],
-  "explorer": {
-    "api": {
-      "url": "https://api-goerli.arbiscan.io/api",
-      "key": {
-        "required": true,
-        "hardhatEtherscanAlias": "arbitrumGoerli"
-      }
-    },
-    "browserUrl": "https://testnet.arbiscan.io/"
-  },
-  "blockTimeMs": 641
+  "symbol": "testETH",
+  "testnet": true
 }

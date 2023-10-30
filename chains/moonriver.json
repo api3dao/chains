@@ -1,25 +1,25 @@
 {
-  "name": "Moonriver",
   "alias": "moonriver",
-  "id": "1285",
-  "symbol": "MOVR",
+  "blockTimeMs": 12312,
   "decimals": 18,
-  "testnet": false,
+  "explorer": {
+    "api": {
+      "key": {
+        "hardhatEtherscanAlias": "moonriver",
+        "required": true
+      },
+      "url": "https://api-moonriver.moonscan.io/api"
+    },
+    "browserUrl": "https://moonriver.moonscan.io/"
+  },
+  "id": "1285",
+  "name": "Moonriver",
   "providers": [
     {
       "alias": "default",
       "rpcUrl": "https://rpc.api.moonriver.moonbeam.network"
     }
   ],
-  "explorer": {
-    "api": {
-      "url": "https://api-moonriver.moonscan.io/api",
-      "key": {
-        "required": true,
-        "hardhatEtherscanAlias": "moonriver"
-      }
-    },
-    "browserUrl": "https://moonriver.moonscan.io/"
-  },
-  "blockTimeMs": 12312
+  "symbol": "MOVR",
+  "testnet": false
 }
