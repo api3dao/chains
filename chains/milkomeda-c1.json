@@ -2,7 +2,7 @@
   "name": "Milkomeda C1",
   "alias": "milkomeda-c1",
   "id": "2001",
-  "symbol": "mADA",
+  "symbol": "milkADA",
   "decimals": 18,
   "testnet": false,
   "providers": [
