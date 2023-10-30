@@ -592,7 +592,7 @@ export const CHAINS: Chain[] = [
     blockTimeMs: 2210,
   },
   {
-    name: 'RSK testnet',
+    name: 'Rootstock testnet',
     alias: 'rsk-testnet',
     id: '31',
     symbol: 'testRBTC',
