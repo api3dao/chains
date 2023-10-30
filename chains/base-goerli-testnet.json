@@ -1,24 +1,24 @@
 {
-  "name": "Base Goerli testnet",
   "alias": "base-goerli-testnet",
-  "id": "84531",
-  "symbol": "testETH",
+  "blockTimeMs": 2000,
   "decimals": 18,
-  "testnet": true,
+  "explorer": {
+    "api": {
+      "key": {
+        "required": false
+      },
+      "url": "https://api-goerli.basescan.org/api"
+    },
+    "browserUrl": "https://goerli.basescan.org/"
+  },
+  "id": "84531",
+  "name": "Base Goerli testnet",
   "providers": [
     {
       "alias": "default",
       "rpcUrl": "https://goerli.base.org"
     }
   ],
-  "explorer": {
-    "api": {
-      "url": "https://api-goerli.basescan.org/api",
-      "key": {
-        "required": false
-      }
-    },
-    "browserUrl": "https://goerli.basescan.org/"
-  },
-  "blockTimeMs": 2000
+  "symbol": "testETH",
+  "testnet": true
 }

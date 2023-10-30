@@ -1,24 +1,24 @@
 {
-  "name": "Kava",
   "alias": "kava",
-  "id": "2222",
-  "symbol": "KAVA",
+  "blockTimeMs": 6318,
   "decimals": 18,
-  "testnet": false,
+  "explorer": {
+    "api": {
+      "key": {
+        "required": false
+      },
+      "url": "https://kavascan.com/api"
+    },
+    "browserUrl": "https://kavascan.com/"
+  },
+  "id": "2222",
+  "name": "Kava",
   "providers": [
     {
       "alias": "default",
       "rpcUrl": "https://evm.kava.io/"
     }
   ],
-  "explorer": {
-    "api": {
-      "url": "https://kavascan.com/api",
-      "key": {
-        "required": false
-      }
-    },
-    "browserUrl": "https://kavascan.com/"
-  },
-  "blockTimeMs": 6318
+  "symbol": "KAVA",
+  "testnet": false
 }

@@ -1,25 +1,25 @@
 {
-  "name": "Ethereum",
   "alias": "ethereum",
-  "id": "1",
-  "symbol": "ETH",
+  "blockTimeMs": 12167,
   "decimals": 18,
-  "testnet": false,
+  "explorer": {
+    "api": {
+      "key": {
+        "hardhatEtherscanAlias": "mainnet",
+        "required": true
+      },
+      "url": "https://api.etherscan.io/api"
+    },
+    "browserUrl": "https://etherscan.io/"
+  },
+  "id": "1",
+  "name": "Ethereum",
   "providers": [
     {
       "alias": "default",
       "rpcUrl": "https://eth.llamarpc.com"
     }
   ],
-  "explorer": {
-    "api": {
-      "url": "https://api.etherscan.io/api",
-      "key": {
-        "required": true,
-        "hardhatEtherscanAlias": "mainnet"
-      }
-    },
-    "browserUrl": "https://etherscan.io/"
-  },
-  "blockTimeMs": 12167
+  "symbol": "ETH",
+  "testnet": false
 }

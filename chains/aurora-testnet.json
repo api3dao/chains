@@ -1,25 +1,25 @@
 {
-  "name": "Aurora testnet",
   "alias": "aurora-testnet",
-  "id": "1313161555",
-  "symbol": "testETH",
+  "blockTimeMs": 988,
   "decimals": 18,
-  "testnet": true,
+  "explorer": {
+    "api": {
+      "key": {
+        "hardhatEtherscanAlias": "auroraTestnet",
+        "required": false
+      },
+      "url": "https://explorer.testnet.aurora.dev/api"
+    },
+    "browserUrl": "https://explorer.testnet.aurora.dev/"
+  },
+  "id": "1313161555",
+  "name": "Aurora testnet",
   "providers": [
     {
       "alias": "default",
       "rpcUrl": "https://testnet.aurora.dev/"
     }
   ],
-  "explorer": {
-    "api": {
-      "url": "https://explorer.testnet.aurora.dev/api",
-      "key": {
-        "required": false,
-        "hardhatEtherscanAlias": "auroraTestnet"
-      }
-    },
-    "browserUrl": "https://explorer.testnet.aurora.dev/"
-  },
-  "blockTimeMs": 988
+  "symbol": "testETH",
+  "testnet": true
 }

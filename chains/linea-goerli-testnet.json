@@ -1,24 +1,24 @@
 {
-  "name": "Linea Goerli testnet",
   "alias": "linea-goerli-testnet",
-  "id": "59140",
-  "symbol": "testETH",
+  "blockTimeMs": 12099,
   "decimals": 18,
-  "testnet": true,
+  "explorer": {
+    "api": {
+      "key": {
+        "required": true
+      },
+      "url": "https://api-testnet.lineascan.build/api"
+    },
+    "browserUrl": "https://goerli.lineascan.build/"
+  },
+  "id": "59140",
+  "name": "Linea Goerli testnet",
   "providers": [
     {
       "alias": "default",
       "rpcUrl": "https://rpc.goerli.linea.build"
     }
   ],
-  "explorer": {
-    "api": {
-      "url": "https://api-testnet.lineascan.build/api",
-      "key": {
-        "required": true
-      }
-    },
-    "browserUrl": "https://goerli.lineascan.build/"
-  },
-  "blockTimeMs": 12099
+  "symbol": "testETH",
+  "testnet": true
 }

@@ -1,25 +1,25 @@
 {
-  "name": "zkSync",
   "alias": "zksync",
-  "id": "324",
-  "symbol": "ETH",
+  "blockTimeMs": 1020,
   "decimals": 18,
-  "testnet": false,
+  "explorer": {
+    "browserUrl": "https://explorer.zksync.io/"
+  },
+  "hardhatConfigOverrides": {
+    "networks": {
+      "ethNetwork": "ethereum",
+      "verifyURL": "https://zksync2-mainnet-explorer.zksync.io/contract_verification",
+      "zksync": true
+    }
+  },
+  "id": "324",
+  "name": "zkSync",
   "providers": [
     {
       "alias": "default",
       "rpcUrl": "https://mainnet.era.zksync.io"
     }
   ],
-  "explorer": {
-    "browserUrl": "https://explorer.zksync.io/"
-  },
-  "blockTimeMs": 1020,
-  "hardhatConfigOverrides": {
-    "networks": {
-      "ethNetwork": "ethereum",
-      "zksync": true,
-      "verifyURL": "https://zksync2-mainnet-explorer.zksync.io/contract_verification"
-    }
-  }
+  "symbol": "ETH",
+  "testnet": false
 }

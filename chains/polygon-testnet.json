@@ -1,25 +1,25 @@
 {
-  "name": "Polygon testnet",
   "alias": "polygon-testnet",
-  "id": "80001",
-  "symbol": "testMATIC",
+  "blockTimeMs": 2576,
   "decimals": 18,
-  "testnet": true,
+  "explorer": {
+    "api": {
+      "key": {
+        "hardhatEtherscanAlias": "polygonMumbai",
+        "required": true
+      },
+      "url": "https://api-testnet.polygonscan.com/api"
+    },
+    "browserUrl": "https://mumbai.polygonscan.com/"
+  },
+  "id": "80001",
+  "name": "Polygon testnet",
   "providers": [
     {
       "alias": "default",
       "rpcUrl": "https://rpc.ankr.com/polygon_mumbai"
     }
   ],
-  "explorer": {
-    "api": {
-      "url": "https://api-testnet.polygonscan.com/api",
-      "key": {
-        "required": true,
-        "hardhatEtherscanAlias": "polygonMumbai"
-      }
-    },
-    "browserUrl": "https://mumbai.polygonscan.com/"
-  },
-  "blockTimeMs": 2576
+  "symbol": "testMATIC",
+  "testnet": true
 }

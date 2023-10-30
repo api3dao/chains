@@ -1,18 +1,18 @@
 {
-  "name": "Rootstock",
   "alias": "rsk",
-  "id": "30",
-  "symbol": "RBTC",
+  "blockTimeMs": 30946,
   "decimals": 18,
-  "testnet": false,
+  "explorer": {
+    "browserUrl": "https://explorer.rsk.co/"
+  },
+  "id": "30",
+  "name": "Rootstock",
   "providers": [
     {
       "alias": "default",
       "rpcUrl": "https://public-node.rsk.co"
     }
   ],
-  "explorer": {
-    "browserUrl": "https://explorer.rsk.co/"
-  },
-  "blockTimeMs": 30946
+  "symbol": "RBTC",
+  "testnet": false
 }

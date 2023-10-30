@@ -1,24 +1,24 @@
 {
-  "name": "Linea",
   "alias": "linea",
-  "id": "59144",
-  "symbol": "ETH",
+  "blockTimeMs": 12099,
   "decimals": 18,
-  "testnet": false,
+  "explorer": {
+    "api": {
+      "key": {
+        "required": true
+      },
+      "url": "https://api.lineascan.build/api"
+    },
+    "browserUrl": "https://lineascan.build/"
+  },
+  "id": "59144",
+  "name": "Linea",
   "providers": [
     {
       "alias": "default",
       "rpcUrl": "https://rpc.linea.build"
     }
   ],
-  "explorer": {
-    "api": {
-      "url": "https://api.lineascan.build/api",
-      "key": {
-        "required": true
-      }
-    },
-    "browserUrl": "https://lineascan.build/"
-  },
-  "blockTimeMs": 12099
+  "symbol": "ETH",
+  "testnet": false
 }

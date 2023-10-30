@@ -1,24 +1,24 @@
 {
-  "name": "Boba/BNB",
   "alias": "boba-bnb",
-  "id": "56288",
-  "symbol": "BOBA",
+  "blockTimeMs": 636,
   "decimals": 18,
-  "testnet": false,
+  "explorer": {
+    "api": {
+      "key": {
+        "required": false
+      },
+      "url": "https://blockexplorer.bnb.boba.network/api"
+    },
+    "browserUrl": "https://blockexplorer.bnb.boba.network/"
+  },
+  "id": "56288",
+  "name": "Boba/BNB",
   "providers": [
     {
       "alias": "default",
       "rpcUrl": "https://replica.bnb.boba.network/"
     }
   ],
-  "explorer": {
-    "api": {
-      "url": "https://blockexplorer.bnb.boba.network/api",
-      "key": {
-        "required": false
-      }
-    },
-    "browserUrl": "https://blockexplorer.bnb.boba.network/"
-  },
-  "blockTimeMs": 636
+  "symbol": "BOBA",
+  "testnet": false
 }

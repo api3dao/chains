@@ -1,25 +1,25 @@
 {
-  "name": "Aurora",
   "alias": "aurora",
-  "id": "1313161554",
-  "symbol": "ETH",
+  "blockTimeMs": 1135,
   "decimals": 18,
-  "testnet": false,
+  "explorer": {
+    "api": {
+      "key": {
+        "hardhatEtherscanAlias": "aurora",
+        "required": false
+      },
+      "url": "https://explorer.mainnet.aurora.dev/api"
+    },
+    "browserUrl": "https://explorer.aurora.dev/"
+  },
+  "id": "1313161554",
+  "name": "Aurora",
   "providers": [
     {
       "alias": "default",
       "rpcUrl": "https://mainnet.aurora.dev/"
     }
   ],
-  "explorer": {
-    "api": {
-      "url": "https://explorer.mainnet.aurora.dev/api",
-      "key": {
-        "required": false,
-        "hardhatEtherscanAlias": "aurora"
-      }
-    },
-    "browserUrl": "https://explorer.aurora.dev/"
-  },
-  "blockTimeMs": 1135
+  "symbol": "ETH",
+  "testnet": false
 }

@@ -1,25 +1,25 @@
 {
-  "name": "Fantom",
   "alias": "fantom",
-  "id": "250",
-  "symbol": "FTM",
+  "blockTimeMs": 1636,
   "decimals": 18,
-  "testnet": false,
+  "explorer": {
+    "api": {
+      "key": {
+        "hardhatEtherscanAlias": "opera",
+        "required": true
+      },
+      "url": "https://api.ftmscan.com/api"
+    },
+    "browserUrl": "https://ftmscan.com/"
+  },
+  "id": "250",
+  "name": "Fantom",
   "providers": [
     {
       "alias": "default",
       "rpcUrl": "https://rpcapi.fantom.network/"
     }
   ],
-  "explorer": {
-    "api": {
-      "url": "https://api.ftmscan.com/api",
-      "key": {
-        "required": true,
-        "hardhatEtherscanAlias": "opera"
-      }
-    },
-    "browserUrl": "https://ftmscan.com/"
-  },
-  "blockTimeMs": 1636
+  "symbol": "FTM",
+  "testnet": false
 }

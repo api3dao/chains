@@ -1,25 +1,25 @@
 {
-  "name": "Avalanche testnet",
   "alias": "avalanche-testnet",
-  "id": "43113",
-  "symbol": "testAVAX",
+  "blockTimeMs": 2398,
   "decimals": 18,
-  "testnet": true,
+  "explorer": {
+    "api": {
+      "key": {
+        "hardhatEtherscanAlias": "avalancheFujiTestnet",
+        "required": true
+      },
+      "url": "https://api-testnet.snowtrace.io/api"
+    },
+    "browserUrl": "https://testnet.snowtrace.io/"
+  },
+  "id": "43113",
+  "name": "Avalanche testnet",
   "providers": [
     {
       "alias": "default",
       "rpcUrl": "https://api.avax-test.network/ext/bc/C/rpc"
     }
   ],
-  "explorer": {
-    "api": {
-      "url": "https://api-testnet.snowtrace.io/api",
-      "key": {
-        "required": true,
-        "hardhatEtherscanAlias": "avalancheFujiTestnet"
-      }
-    },
-    "browserUrl": "https://testnet.snowtrace.io/"
-  },
-  "blockTimeMs": 2398
+  "symbol": "testAVAX",
+  "testnet": true
 }

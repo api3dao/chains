@@ -1,24 +1,24 @@
 {
-  "name": "Metis testnet",
   "alias": "metis-goerli-testnet",
-  "id": "599",
-  "symbol": "testMETIS",
+  "blockTimeMs": 5911,
   "decimals": 18,
-  "testnet": true,
+  "explorer": {
+    "api": {
+      "key": {
+        "required": false
+      },
+      "url": "https://goerli.explorer.metisdevops.link/api"
+    },
+    "browserUrl": "https://goerli.explorer.metisdevops.link/"
+  },
+  "id": "599",
+  "name": "Metis testnet",
   "providers": [
     {
       "alias": "default",
       "rpcUrl": "https://goerli.gateway.metisdevops.link"
     }
   ],
-  "explorer": {
-    "api": {
-      "url": "https://goerli.explorer.metisdevops.link/api",
-      "key": {
-        "required": false
-      }
-    },
-    "browserUrl": "https://goerli.explorer.metisdevops.link/"
-  },
-  "blockTimeMs": 5911
+  "symbol": "testMETIS",
+  "testnet": true
 }

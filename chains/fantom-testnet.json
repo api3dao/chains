@@ -1,25 +1,25 @@
 {
-  "name": "Fantom testnet",
   "alias": "fantom-testnet",
-  "id": "4002",
-  "symbol": "testFTM",
+  "blockTimeMs": 1665,
   "decimals": 18,
-  "testnet": true,
+  "explorer": {
+    "api": {
+      "key": {
+        "hardhatEtherscanAlias": "ftmTestnet",
+        "required": true
+      },
+      "url": "https://api-testnet.ftmscan.com/api"
+    },
+    "browserUrl": "https://testnet.ftmscan.com/"
+  },
+  "id": "4002",
+  "name": "Fantom testnet",
   "providers": [
     {
       "alias": "default",
       "rpcUrl": "https://rpc.ankr.com/fantom_testnet"
     }
   ],
-  "explorer": {
-    "api": {
-      "url": "https://api-testnet.ftmscan.com/api",
-      "key": {
-        "required": true,
-        "hardhatEtherscanAlias": "ftmTestnet"
-      }
-    },
-    "browserUrl": "https://testnet.ftmscan.com/"
-  },
-  "blockTimeMs": 1665
+  "symbol": "testFTM",
+  "testnet": true
 }

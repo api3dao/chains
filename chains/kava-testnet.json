@@ -1,24 +1,24 @@
 {
-  "name": "Kava testnet",
   "alias": "kava-testnet",
-  "id": "2221",
-  "symbol": "testKAVA",
+  "blockTimeMs": 5201,
   "decimals": 18,
-  "testnet": true,
+  "explorer": {
+    "api": {
+      "key": {
+        "required": false
+      },
+      "url": "https://testnet.kavascan.com/api"
+    },
+    "browserUrl": "https://testnet.kavascan.com/"
+  },
+  "id": "2221",
+  "name": "Kava testnet",
   "providers": [
     {
       "alias": "default",
       "rpcUrl": "https://evm.testnet.kava.io/"
     }
   ],
-  "explorer": {
-    "api": {
-      "url": "https://testnet.kavascan.com/api",
-      "key": {
-        "required": false
-      }
-    },
-    "browserUrl": "https://testnet.kavascan.com/"
-  },
-  "blockTimeMs": 5201
+  "symbol": "testKAVA",
+  "testnet": true
 }

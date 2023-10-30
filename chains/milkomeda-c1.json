@@ -1,24 +1,24 @@
 {
-  "name": "Milkomeda C1",
   "alias": "milkomeda-c1",
-  "id": "2001",
-  "symbol": "milkADA",
+  "blockTimeMs": 2000,
   "decimals": 18,
-  "testnet": false,
+  "explorer": {
+    "api": {
+      "key": {
+        "required": false
+      },
+      "url": "https://explorer-mainnet-cardano-evm.c1.milkomeda.com/api"
+    },
+    "browserUrl": "https://explorer-mainnet-cardano-evm.c1.milkomeda.com/"
+  },
+  "id": "2001",
+  "name": "Milkomeda C1",
   "providers": [
     {
       "alias": "default",
       "rpcUrl": "https://rpc-mainnet-cardano-evm.c1.milkomeda.com"
     }
   ],
-  "explorer": {
-    "api": {
-      "url": "https://explorer-mainnet-cardano-evm.c1.milkomeda.com/api",
-      "key": {
-        "required": false
-      }
-    },
-    "browserUrl": "https://explorer-mainnet-cardano-evm.c1.milkomeda.com/"
-  },
-  "blockTimeMs": 2000
+  "symbol": "milkADA",
+  "testnet": false
 }

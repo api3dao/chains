@@ -1,25 +1,25 @@
 {
-  "name": "Gnosis Chain",
   "alias": "gnosis",
-  "id": "100",
-  "symbol": "xDAI",
+  "blockTimeMs": 5244,
   "decimals": 18,
-  "testnet": false,
+  "explorer": {
+    "api": {
+      "key": {
+        "hardhatEtherscanAlias": "gnosis",
+        "required": true
+      },
+      "url": "https://api.gnosisscan.io/api"
+    },
+    "browserUrl": "https://gnosisscan.io/"
+  },
+  "id": "100",
+  "name": "Gnosis Chain",
   "providers": [
     {
       "alias": "default",
       "rpcUrl": "https://rpc.gnosischain.com"
     }
   ],
-  "explorer": {
-    "api": {
-      "url": "https://api.gnosisscan.io/api",
-      "key": {
-        "required": true,
-        "hardhatEtherscanAlias": "gnosis"
-      }
-    },
-    "browserUrl": "https://gnosisscan.io/"
-  },
-  "blockTimeMs": 5244
+  "symbol": "xDAI",
+  "testnet": false
 }

@@ -1,24 +1,24 @@
 {
-  "name": "Mantle Goerli testnet",
   "alias": "mantle-goerli-testnet",
-  "id": "5001",
-  "symbol": "testMNT",
+  "blockTimeMs": 362,
   "decimals": 18,
-  "testnet": true,
+  "explorer": {
+    "api": {
+      "key": {
+        "required": false
+      },
+      "url": "https://explorer.testnet.mantle.xyz/api"
+    },
+    "browserUrl": "https://explorer.testnet.mantle.xyz/"
+  },
+  "id": "5001",
+  "name": "Mantle Goerli testnet",
   "providers": [
     {
       "alias": "default",
       "rpcUrl": "https://rpc.testnet.mantle.xyz"
     }
   ],
-  "explorer": {
-    "api": {
-      "url": "https://explorer.testnet.mantle.xyz/api",
-      "key": {
-        "required": false
-      }
-    },
-    "browserUrl": "https://explorer.testnet.mantle.xyz/"
-  },
-  "blockTimeMs": 362
+  "symbol": "testMNT",
+  "testnet": true
 }

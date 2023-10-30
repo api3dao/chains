@@ -1,25 +1,25 @@
 {
-  "name": "BSC testnet",
   "alias": "bsc-testnet",
-  "id": "97",
-  "symbol": "testBNB",
+  "blockTimeMs": 3002,
   "decimals": 18,
-  "testnet": true,
+  "explorer": {
+    "api": {
+      "key": {
+        "hardhatEtherscanAlias": "bscTestnet",
+        "required": true
+      },
+      "url": "https://api-testnet.bscscan.com/api"
+    },
+    "browserUrl": "https://testnet.bscscan.com/"
+  },
+  "id": "97",
+  "name": "BSC testnet",
   "providers": [
     {
       "alias": "default",
       "rpcUrl": "https://data-seed-prebsc-1-s3.binance.org:8545/"
     }
   ],
-  "explorer": {
-    "api": {
-      "url": "https://api-testnet.bscscan.com/api",
-      "key": {
-        "required": true,
-        "hardhatEtherscanAlias": "bscTestnet"
-      }
-    },
-    "browserUrl": "https://testnet.bscscan.com/"
-  },
-  "blockTimeMs": 3002
+  "symbol": "testBNB",
+  "testnet": true
 }

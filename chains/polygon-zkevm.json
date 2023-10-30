@@ -1,24 +1,24 @@
 {
-  "name": "Polygon zkEVM",
   "alias": "polygon-zkevm",
-  "id": "1101",
-  "symbol": "ETH",
+  "blockTimeMs": 1658,
   "decimals": 18,
-  "testnet": false,
+  "explorer": {
+    "api": {
+      "key": {
+        "required": true
+      },
+      "url": "https://api-zkevm.polygonscan.com/api"
+    },
+    "browserUrl": "https://zkevm.polygonscan.com/"
+  },
+  "id": "1101",
+  "name": "Polygon zkEVM",
   "providers": [
     {
       "alias": "default",
       "rpcUrl": "https://zkevm-rpc.com"
     }
   ],
-  "explorer": {
-    "api": {
-      "url": "https://api-zkevm.polygonscan.com/api",
-      "key": {
-        "required": true
-      }
-    },
-    "browserUrl": "https://zkevm.polygonscan.com/"
-  },
-  "blockTimeMs": 1658
+  "symbol": "ETH",
+  "testnet": false
 }
