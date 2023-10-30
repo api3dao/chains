@@ -2,13 +2,15 @@
   "name": "Fantom testnet",
   "alias": "fantom-testnet",
   "id": "4002",
-  "nativeCurrency": {
-    "name": "Testnet FTM",
-    "symbol": "FTM",
-    "decimals": 18
-  },
+  "symbol": "FTM",
+  "decimals": 18,
   "testnet": true,
-  "providerUrl": "https://rpc.ankr.com/fantom_testnet",
+  "providers": [
+    {
+      "alias": "default",
+      "rpcUrl": "https://rpc.ankr.com/fantom_testnet"
+    }
+  ],
   "explorer": {
     "api": {
       "url": "https://api-testnet.ftmscan.com/api",

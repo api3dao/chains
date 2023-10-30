@@ -2,13 +2,15 @@
   "name": "Milkomeda C1 testnet",
   "alias": "milkomeda-c1-testnet",
   "id": "200101",
-  "nativeCurrency": {
-    "name": "Testnet milkADA",
-    "symbol": "testmilkADA",
-    "decimals": 18
-  },
+  "symbol": "testmilkADA",
+  "decimals": 18,
   "testnet": true,
-  "providerUrl": "https://rpc-devnet-cardano-evm.c1.milkomeda.com",
+  "providers": [
+    {
+      "alias": "default",
+      "rpcUrl": "https://rpc-devnet-cardano-evm.c1.milkomeda.com"
+    }
+  ],
   "explorer": {
     "api": {
       "url": "https://explorer-devnet-cardano-evm.c1.milkomeda.com/api",

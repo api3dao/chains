@@ -2,13 +2,15 @@
   "name": "Kava testnet",
   "alias": "kava-testnet",
   "id": "2221",
-  "nativeCurrency": {
-    "name": "Testnet KAVA",
-    "symbol": "testKAVA",
-    "decimals": 18
-  },
+  "symbol": "testKAVA",
+  "decimals": 18,
   "testnet": true,
-  "providerUrl": "https://evm.testnet.kava.io/",
+  "providers": [
+    {
+      "alias": "default",
+      "rpcUrl": "https://evm.testnet.kava.io/"
+    }
+  ],
   "explorer": {
     "api": {
       "url": "https://testnet.kavascan.com/api",

@@ -2,13 +2,15 @@
   "name": "Cronos testnet",
   "alias": "cronos-testnet",
   "id": "338",
-  "nativeCurrency": {
-    "name": "Testnet CRO",
-    "symbol": "testCRO",
-    "decimals": 18
-  },
+  "symbol": "testCRO",
+  "decimals": 18,
   "testnet": true,
-  "providerUrl": "https://evm-t3.cronos.org",
+  "providers": [
+    {
+      "alias": "default",
+      "rpcUrl": "https://evm-t3.cronos.org"
+    }
+  ],
   "explorer": {
     "api": {
       "url": "https://cronos.org/explorer/testnet3/api",

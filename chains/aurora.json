@@ -2,13 +2,15 @@
   "name": "Aurora",
   "alias": "aurora",
   "id": "1313161554",
-  "nativeCurrency": {
-    "name": "ETH",
-    "symbol": "ETH",
-    "decimals": 18
-  },
+  "symbol": "ETH",
+  "decimals": 18,
   "testnet": false,
-  "providerUrl": "https://mainnet.aurora.dev/",
+  "providers": [
+    {
+      "alias": "default",
+      "rpcUrl": "https://mainnet.aurora.dev/"
+    }
+  ],
   "explorer": {
     "api": {
       "url": "https://explorer.mainnet.aurora.dev/api",

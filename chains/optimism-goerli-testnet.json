@@ -2,13 +2,15 @@
   "name": "Optimism testnet",
   "alias": "optimism-goerli-testnet",
   "id": "420",
-  "nativeCurrency": {
-    "name": "Testnet ETH",
-    "symbol": "testETH",
-    "decimals": 18
-  },
+  "symbol": "testETH",
+  "decimals": 18,
   "testnet": true,
-  "providerUrl": "https://goerli.optimism.io",
+  "providers": [
+    {
+      "alias": "default",
+      "rpcUrl": "https://goerli.optimism.io"
+    }
+  ],
   "explorer": {
     "api": {
       "url": "https://api-goerli-optimism.etherscan.io/api",

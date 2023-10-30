@@ -2,13 +2,15 @@
   "name": "SX Network",
   "alias": "sx",
   "id": "416",
-  "nativeCurrency": {
-    "name": "SX",
-    "symbol": "SX",
-    "decimals": 18
-  },
+  "symbol": "SX",
+  "decimals": 18,
   "testnet": false,
-  "providerUrl": "https://rpc.sx.technology",
+  "providers": [
+    {
+      "alias": "default",
+      "rpcUrl": "https://rpc.sx.technology"
+    }
+  ],
   "explorer": {
     "api": {
       "url": "https://explorer.sx.technology/api",

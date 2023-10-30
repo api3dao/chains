@@ -2,13 +2,15 @@
   "name": "Moonbeam testnet",
   "alias": "moonbeam-testnet",
   "id": "1287",
-  "nativeCurrency": {
-    "name": "Testnet DEV",
-    "symbol": "testDEV",
-    "decimals": 18
-  },
+  "symbol": "testDEV",
+  "decimals": 18,
   "testnet": true,
-  "providerUrl": "https://rpc.api.moonbase.moonbeam.network",
+  "providers": [
+    {
+      "alias": "default",
+      "rpcUrl": "https://rpc.api.moonbase.moonbeam.network"
+    }
+  ],
   "explorer": {
     "api": {
       "url": "https://api-moonbase.moonscan.io/api",

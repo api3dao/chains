@@ -2,15 +2,24 @@
   "name": "zkSync testnet",
   "alias": "zksync-goerli-testnet",
   "id": "280",
-  "nativeCurrency": {
-    "name": "Testnet ETH",
-    "symbol": "testETH",
-    "decimals": 18
-  },
+  "symbol": "testETH",
+  "decimals": 18,
   "testnet": true,
-  "providerUrl": "https://testnet.era.zksync.dev",
+  "providers": [
+    {
+      "alias": "default",
+      "rpcUrl": "https://testnet.era.zksync.dev"
+    }
+  ],
   "explorer": {
     "browserUrl": "https://goerli.explorer.zksync.io/"
   },
-  "blockTimeMs": 1069
+  "blockTimeMs": 1069,
+  "hardhatConfigOverrides": {
+    "networks": {
+      "ethNetwork": "ethereum-goerli-testnet",
+      "zksync": true,
+      "verifyURL": "https://zksync2-testnet-explorer.zksync.dev/contract_verification"
+    }
+  }
 }

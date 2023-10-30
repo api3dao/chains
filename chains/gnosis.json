@@ -2,13 +2,15 @@
   "name": "Gnosis Chain",
   "alias": "gnosis",
   "id": "100",
-  "nativeCurrency": {
-    "name": "xDAI",
-    "symbol": "xDAI",
-    "decimals": 18
-  },
+  "symbol": "xDAI",
+  "decimals": 18,
   "testnet": false,
-  "providerUrl": "https://rpc.gnosischain.com",
+  "providers": [
+    {
+      "alias": "default",
+      "rpcUrl": "https://rpc.gnosischain.com"
+    }
+  ],
   "explorer": {
     "api": {
       "url": "https://api.gnosisscan.io/api",

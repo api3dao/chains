@@ -2,13 +2,15 @@
   "name": "Linea Goerli testnet",
   "alias": "linea-goerli-testnet",
   "id": "59140",
-  "nativeCurrency": {
-    "name": "Testnet ETH",
-    "symbol": "testETH",
-    "decimals": 18
-  },
+  "symbol": "testETH",
+  "decimals": 18,
   "testnet": true,
-  "providerUrl": "https://rpc.goerli.linea.build",
+  "providers": [
+    {
+      "alias": "default",
+      "rpcUrl": "https://rpc.goerli.linea.build"
+    }
+  ],
   "explorer": {
     "api": {
       "url": "https://api-testnet.lineascan.build/api",

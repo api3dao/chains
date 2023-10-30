@@ -2,13 +2,15 @@
   "name": "Ethereum",
   "alias": "ethereum",
   "id": "1",
-  "nativeCurrency": {
-    "name": "ETH",
-    "symbol": "ETH",
-    "decimals": 18
-  },
+  "symbol": "ETH",
+  "decimals": 18,
   "testnet": false,
-  "providerUrl": "https://eth.llamarpc.com",
+  "providers": [
+    {
+      "alias": "default",
+      "rpcUrl": "https://eth.llamarpc.com"
+    }
+  ],
   "explorer": {
     "api": {
       "url": "https://api.etherscan.io/api",

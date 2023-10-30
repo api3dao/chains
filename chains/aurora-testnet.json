@@ -2,13 +2,15 @@
   "name": "Aurora testnet",
   "alias": "aurora-testnet",
   "id": "1313161555",
-  "nativeCurrency": {
-    "name": "Testnet ETH",
-    "symbol": "testETH",
-    "decimals": 18
-  },
+  "symbol": "testETH",
+  "decimals": 18,
   "testnet": true,
-  "providerUrl": "https://testnet.aurora.dev/",
+  "providers": [
+    {
+      "alias": "default",
+      "rpcUrl": "https://testnet.aurora.dev/"
+    }
+  ],
   "explorer": {
     "api": {
       "url": "https://explorer.testnet.aurora.dev/api",

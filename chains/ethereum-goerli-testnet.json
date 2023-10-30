@@ -2,13 +2,15 @@
   "name": "Ethereum Goerli testnet",
   "alias": "ethereum-goerli-testnet",
   "id": "5",
-  "nativeCurrency": {
-    "name": "Testnet ETH",
-    "symbol": "testETH",
-    "decimals": 18
-  },
+  "symbol": "testETH",
+  "decimals": 18,
   "testnet": true,
-  "providerUrl": "https://rpc.ankr.com/eth_goerli",
+  "providers": [
+    {
+      "alias": "default",
+      "rpcUrl": "https://rpc.ankr.com/eth_goerli"
+    }
+  ],
   "explorer": {
     "api": {
       "url": "https://api-goerli.etherscan.io/api",

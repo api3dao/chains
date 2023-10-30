@@ -2,13 +2,15 @@
   "name": "Scroll Goerli testnet",
   "alias": "scroll-goerli-testnet",
   "id": "534353",
-  "nativeCurrency": {
-    "name": "Testnet ETH",
-    "symbol": "testETH",
-    "decimals": 18
-  },
+  "symbol": "testETH",
+  "decimals": 18,
   "testnet": true,
-  "providerUrl": "https://alpha-rpc.scroll.io/l2",
+  "providers": [
+    {
+      "alias": "default",
+      "rpcUrl": "https://alpha-rpc.scroll.io/l2"
+    }
+  ],
   "explorer": {
     "api": {
       "url": "https://blockscout.scroll.io/api",

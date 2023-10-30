@@ -2,13 +2,15 @@
   "name": "Mantle",
   "alias": "mantle",
   "id": "5000",
-  "nativeCurrency": {
-    "name": "MNT",
-    "symbol": "MNT",
-    "decimals": 18
-  },
+  "symbol": "MNT",
+  "decimals": 18,
   "testnet": false,
-  "providerUrl": "https://rpc.mantle.xyz",
+  "providers": [
+    {
+      "alias": "default",
+      "rpcUrl": "https://rpc.mantle.xyz"
+    }
+  ],
   "explorer": {
     "api": {
       "url": "https://explorer.mantle.xyz/api",

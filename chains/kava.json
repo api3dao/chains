@@ -2,13 +2,15 @@
   "name": "Kava",
   "alias": "kava",
   "id": "2222",
-  "nativeCurrency": {
-    "name": "KAVA",
-    "symbol": "KAVA",
-    "decimals": 18
-  },
+  "symbol": "KAVA",
+  "decimals": 18,
   "testnet": false,
-  "providerUrl": "https://evm.kava.io/",
+  "providers": [
+    {
+      "alias": "default",
+      "rpcUrl": "https://evm.kava.io/"
+    }
+  ],
   "explorer": {
     "api": {
       "url": "https://kavascan.com/api",

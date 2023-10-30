@@ -1,14 +1,16 @@
 {
-  "name": "RSK testnet",
+  "name": "Rootstock testnet",
   "alias": "rsk-testnet",
   "id": "31",
-  "nativeCurrency": {
-    "name": "Tesnet RBTC",
-    "symbol": "testRBTC",
-    "decimals": 18
-  },
+  "symbol": "testRBTC",
+  "decimals": 18,
   "testnet": true,
-  "providerUrl": "https://public-node.testnet.rsk.co",
+  "providers": [
+    {
+      "alias": "default",
+      "rpcUrl": "https://public-node.testnet.rsk.co"
+    }
+  ],
   "explorer": {
     "browserUrl": "https://explorer.testnet.rsk.co/"
   },

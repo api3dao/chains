@@ -2,13 +2,15 @@
   "name": "Boba/Avalanche",
   "alias": "boba-avalanche",
   "id": "43288",
-  "nativeCurrency": {
-    "name": "BOBA",
-    "symbol": "BOBA",
-    "decimals": 18
-  },
+  "symbol": "BOBA",
+  "decimals": 18,
   "testnet": false,
-  "providerUrl": "https://replica.avax.boba.network/",
+  "providers": [
+    {
+      "alias": "default",
+      "rpcUrl": "https://replica.avax.boba.network/"
+    }
+  ],
   "explorer": {
     "api": {
       "url": "https://blockexplorer.avax.boba.network/api",

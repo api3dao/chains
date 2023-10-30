@@ -2,13 +2,15 @@
   "name": "Polygon zkEVM",
   "alias": "polygon-zkevm",
   "id": "1101",
-  "nativeCurrency": {
-    "name": "ETH",
-    "symbol": "ETH",
-    "decimals": 18
-  },
+  "symbol": "ETH",
+  "decimals": 18,
   "testnet": false,
-  "providerUrl": "https://zkevm-rpc.com",
+  "providers": [
+    {
+      "alias": "default",
+      "rpcUrl": "https://zkevm-rpc.com"
+    }
+  ],
   "explorer": {
     "api": {
       "url": "https://api-zkevm.polygonscan.com/api",

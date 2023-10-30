@@ -1,14 +1,16 @@
 {
-  "name": "RSK",
+  "name": "Rootstock",
   "alias": "rsk",
   "id": "30",
-  "nativeCurrency": {
-    "name": "RBTC",
-    "symbol": "RBTC",
-    "decimals": 18
-  },
+  "symbol": "RBTC",
+  "decimals": 18,
   "testnet": false,
-  "providerUrl": "https://mainnet.sovryn.app/rpc",
+  "providers": [
+    {
+      "alias": "default",
+      "rpcUrl": "https://public-node.rsk.co"
+    }
+  ],
   "explorer": {
     "browserUrl": "https://explorer.rsk.co/"
   },

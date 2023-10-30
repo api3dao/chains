@@ -2,13 +2,15 @@
   "name": "Moonriver",
   "alias": "moonriver",
   "id": "1285",
-  "nativeCurrency": {
-    "name": "MOVR",
-    "symbol": "MOVR",
-    "decimals": 18
-  },
+  "symbol": "MOVR",
+  "decimals": 18,
   "testnet": false,
-  "providerUrl": "https://rpc.api.moonriver.moonbeam.network",
+  "providers": [
+    {
+      "alias": "default",
+      "rpcUrl": "https://rpc.api.moonriver.moonbeam.network"
+    }
+  ],
   "explorer": {
     "api": {
       "url": "https://api-moonriver.moonscan.io/api",

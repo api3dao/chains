@@ -2,13 +2,15 @@
   "name": "Avalanche testnet",
   "alias": "avalanche-testnet",
   "id": "43113",
-  "nativeCurrency": {
-    "name": "Testnet AVAX",
-    "symbol": "testAVAX",
-    "decimals": 18
-  },
+  "symbol": "testAVAX",
+  "decimals": 18,
   "testnet": true,
-  "providerUrl": "https://api.avax-test.network/ext/bc/C/rpc",
+  "providers": [
+    {
+      "alias": "default",
+      "rpcUrl": "https://api.avax-test.network/ext/bc/C/rpc"
+    }
+  ],
   "explorer": {
     "api": {
       "url": "https://api-testnet.snowtrace.io/api",

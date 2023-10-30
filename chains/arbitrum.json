@@ -2,13 +2,15 @@
   "name": "Arbitrum",
   "alias": "arbitrum",
   "id": "42161",
-  "nativeCurrency": {
-    "name": "ETH",
-    "symbol": "ETH",
-    "decimals": 18
-  },
+  "symbol": "ETH",
+  "decimals": 18,
   "testnet": false,
-  "providerUrl": "https://arb1.arbitrum.io/rpc",
+  "providers": [
+    {
+      "alias": "default",
+      "rpcUrl": "https://arb1.arbitrum.io/rpc"
+    }
+  ],
   "explorer": {
     "api": {
       "url": "https://api.arbiscan.io/api",

@@ -2,13 +2,15 @@
   "name": "Avalanche",
   "alias": "avalanche",
   "id": "43114",
-  "nativeCurrency": {
-    "name": "AVAX",
-    "symbol": "AVAX",
-    "decimals": 18
-  },
+  "symbol": "AVAX",
+  "decimals": 18,
   "testnet": false,
-  "providerUrl": "https://api.avax.network/ext/bc/C/rpc",
+  "providers": [
+    {
+      "alias": "default",
+      "rpcUrl": "https://api.avax.network/ext/bc/C/rpc"
+    }
+  ],
   "explorer": {
     "api": {
       "url": "https://api.snowtrace.io/api",

@@ -2,13 +2,15 @@
   "name": "SX Network testnet",
   "alias": "sx-testnet",
   "id": "647",
-  "nativeCurrency": {
-    "name": "Testnet SX",
-    "symbol": "testSX",
-    "decimals": 18
-  },
+  "symbol": "testSX",
+  "decimals": 18,
   "testnet": true,
-  "providerUrl": "https://rpc.toronto.sx.technology",
+  "providers": [
+    {
+      "alias": "default",
+      "rpcUrl": "https://rpc.toronto.sx.technology"
+    }
+  ],
   "explorer": {
     "api": {
       "url": "https://explorer.toronto.sx.technology/api",

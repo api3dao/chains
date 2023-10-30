@@ -2,13 +2,15 @@
   "name": "Base",
   "alias": "base",
   "id": "8453",
-  "nativeCurrency": {
-    "name": "ETH",
-    "symbol": "ETH",
-    "decimals": 18
-  },
+  "symbol": "ETH",
+  "decimals": 18,
   "testnet": false,
-  "providerUrl": "https://mainnet.base.org",
+  "providers": [
+    {
+      "alias": "default",
+      "rpcUrl": "https://mainnet.base.org"
+    }
+  ],
   "explorer": {
     "api": {
       "url": "https://api.basescan.org/api",

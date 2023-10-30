@@ -2,13 +2,15 @@
   "name": "Fantom",
   "alias": "fantom",
   "id": "250",
-  "nativeCurrency": {
-    "name": "FTM",
-    "symbol": "FTM",
-    "decimals": 18
-  },
+  "symbol": "FTM",
+  "decimals": 18,
   "testnet": false,
-  "providerUrl": "https://rpcapi.fantom.network/",
+  "providers": [
+    {
+      "alias": "default",
+      "rpcUrl": "https://rpcapi.fantom.network/"
+    }
+  ],
   "explorer": {
     "api": {
       "url": "https://api.ftmscan.com/api",

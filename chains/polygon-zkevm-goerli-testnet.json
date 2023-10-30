@@ -2,13 +2,15 @@
   "name": "Polygon zkEVM testnet",
   "alias": "polygon-zkevm-goerli-testnet",
   "id": "1442",
-  "nativeCurrency": {
-    "name": "Testnet ETH",
-    "symbol": "testETH",
-    "decimals": 18
-  },
+  "symbol": "testETH",
+  "decimals": 18,
   "testnet": true,
-  "providerUrl": "https://rpc.public.zkevm-test.net",
+  "providers": [
+    {
+      "alias": "default",
+      "rpcUrl": "https://rpc.public.zkevm-test.net"
+    }
+  ],
   "explorer": {
     "api": {
       "url": "https://api-testnet-zkevm.polygonscan.com/api",

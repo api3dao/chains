@@ -2,13 +2,15 @@
   "name": "Optimism",
   "alias": "optimism",
   "id": "10",
-  "nativeCurrency": {
-    "name": "ETH",
-    "symbol": "ETH",
-    "decimals": 18
-  },
+  "symbol": "ETH",
+  "decimals": 18,
   "testnet": false,
-  "providerUrl": "https://mainnet.optimism.io",
+  "providers": [
+    {
+      "alias": "default",
+      "rpcUrl": "https://mainnet.optimism.io"
+    }
+  ],
   "explorer": {
     "api": {
       "url": "https://api-optimistic.etherscan.io/api",

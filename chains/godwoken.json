@@ -2,13 +2,15 @@
   "name": "Godwoken",
   "alias": "godwoken",
   "id": "71402",
-  "nativeCurrency": {
-    "name": "pCKB",
-    "symbol": "pCKB",
-    "decimals": 18
-  },
+  "symbol": "pCKB",
+  "decimals": 18,
   "testnet": false,
-  "providerUrl": "https://v1.mainnet.godwoken.io/rpc",
+  "providers": [
+    {
+      "alias": "default",
+      "rpcUrl": "https://v1.mainnet.godwoken.io/rpc"
+    }
+  ],
   "explorer": {
     "browserUrl": "https://v1.gwscan.com/"
   },

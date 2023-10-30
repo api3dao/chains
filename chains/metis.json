@@ -2,13 +2,15 @@
   "name": "Metis",
   "alias": "metis",
   "id": "1088",
-  "nativeCurrency": {
-    "name": "METIS",
-    "symbol": "METIS",
-    "decimals": 18
-  },
+  "symbol": "METIS",
+  "decimals": 18,
   "testnet": false,
-  "providerUrl": "https://andromeda.metis.io/?owner=1088",
+  "providers": [
+    {
+      "alias": "default",
+      "rpcUrl": "https://andromeda.metis.io/?owner=1088"
+    }
+  ],
   "explorer": {
     "api": {
       "url": "https://andromeda-explorer.metis.io/api",

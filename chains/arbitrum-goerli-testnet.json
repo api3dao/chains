@@ -2,13 +2,15 @@
   "name": "Arbitrum testnet",
   "alias": "arbitrum-goerli-testnet",
   "id": "421613",
-  "nativeCurrency": {
-    "name": "Testnet ETH",
-    "symbol": "testETH",
-    "decimals": 18
-  },
+  "symbol": "testETH",
+  "decimals": 18,
   "testnet": true,
-  "providerUrl": "https://goerli-rollup.arbitrum.io/rpc",
+  "providers": [
+    {
+      "alias": "default",
+      "rpcUrl": "https://goerli-rollup.arbitrum.io/rpc"
+    }
+  ],
   "explorer": {
     "api": {
       "url": "https://api-goerli.arbiscan.io/api",

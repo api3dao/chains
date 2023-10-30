@@ -2,13 +2,15 @@
   "name": "Gnosis Chain testnet",
   "alias": "gnosis-testnet",
   "id": "10200",
-  "nativeCurrency": {
-    "name": "Testnet xDAI",
-    "symbol": "testxDAI",
-    "decimals": 18
-  },
+  "symbol": "testxDAI",
+  "decimals": 18,
   "testnet": true,
-  "providerUrl": "https://rpc.chiadochain.net",
+  "providers": [
+    {
+      "alias": "default",
+      "rpcUrl": "https://rpc.chiadochain.net"
+    }
+  ],
   "explorer": {
     "api": {
       "url": "https://gnosis-chiado.blockscout.com/api",

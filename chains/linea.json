@@ -2,13 +2,15 @@
   "name": "Linea",
   "alias": "linea",
   "id": "59144",
-  "nativeCurrency": {
-    "name": "ETH",
-    "symbol": "ETH",
-    "decimals": 18
-  },
+  "symbol": "ETH",
+  "decimals": 18,
   "testnet": false,
-  "providerUrl": "https://rpc.linea.build",
+  "providers": [
+    {
+      "alias": "default",
+      "rpcUrl": "https://rpc.linea.build"
+    }
+  ],
   "explorer": {
     "api": {
       "url": "https://api.lineascan.build/api",

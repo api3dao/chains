@@ -2,13 +2,15 @@
   "name": "Metis testnet",
   "alias": "metis-goerli-testnet",
   "id": "599",
-  "nativeCurrency": {
-    "name": "Testnet METIS",
-    "symbol": "testMETIS",
-    "decimals": 18
-  },
+  "symbol": "testMETIS",
+  "decimals": 18,
   "testnet": true,
-  "providerUrl": "https://goerli.gateway.metisdevops.link",
+  "providers": [
+    {
+      "alias": "default",
+      "rpcUrl": "https://goerli.gateway.metisdevops.link"
+    }
+  ],
   "explorer": {
     "api": {
       "url": "https://goerli.explorer.metisdevops.link/api",

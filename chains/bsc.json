@@ -2,13 +2,15 @@
   "name": "BSC",
   "alias": "bsc",
   "id": "56",
-  "nativeCurrency": {
-    "name": "BNB",
-    "symbol": "BNB",
-    "decimals": 18
-  },
+  "symbol": "BNB",
+  "decimals": 18,
   "testnet": false,
-  "providerUrl": "https://rpc.ankr.com/bsc",
+  "providers": [
+    {
+      "alias": "default",
+      "rpcUrl": "https://rpc.ankr.com/bsc"
+    }
+  ],
   "explorer": {
     "api": {
       "url": "https://api.bscscan.com/api",

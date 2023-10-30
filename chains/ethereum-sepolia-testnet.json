@@ -2,13 +2,15 @@
   "name": "Ethereum Sepolia testnet",
   "alias": "ethereum-sepolia-testnet",
   "id": "11155111",
-  "nativeCurrency": {
-    "name": "Testnet ETH",
-    "symbol": "testETH",
-    "decimals": 18
-  },
+  "symbol": "testETH",
+  "decimals": 18,
   "testnet": true,
-  "providerUrl": "https://rpc-sepolia.rockx.com",
+  "providers": [
+    {
+      "alias": "default",
+      "rpcUrl": "https://rpc-sepolia.rockx.com"
+    }
+  ],
   "explorer": {
     "api": {
       "url": "https://api-sepolia.etherscan.io/api",
