@@ -592,7 +592,7 @@ export const CHAINS: Chain[] = [
     blockTimeMs: 2210,
   },
   {
-    name: 'RSK testnet',
+    name: 'Rootstock testnet',
     alias: 'rsk-testnet',
     id: '31',
     symbol: 'testRBTC',
@@ -602,12 +602,12 @@ export const CHAINS: Chain[] = [
     blockTimeMs: 26036,
   },
   {
-    name: 'RSK',
+    name: 'Rootstock',
     alias: 'rsk',
     id: '30',
     symbol: 'RBTC',
     testnet: false,
-    providerUrl: 'https://mainnet.sovryn.app/rpc',
+    providerUrl: 'https://public-node.rsk.co',
     explorer: { browserUrl: 'https://explorer.rsk.co/' },
     blockTimeMs: 30946,
   },
