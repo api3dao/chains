@@ -32,6 +32,7 @@ export const chainProvidersSchema = z.array(chainProviderSchema).superRefine((pr
   if (!providers.some((p) => p.alias === 'default')) {
     ctx.addIssue({
       code: z.ZodIssueCode.custom,
+      path: ['providers', 'alias'],
       message: "a provider with alias 'default' is required",
     });
   }
@@ -39,6 +40,7 @@ export const chainProvidersSchema = z.array(chainProviderSchema).superRefine((pr
   if (!hasUniqueEntries(providers, 'alias')) {
     ctx.addIssue({
       code: z.ZodIssueCode.custom,
+      path: ['providers', 'alias'],
       message: "cannot contain duplicate 'alias' values",
     });
   }
@@ -47,6 +49,7 @@ export const chainProvidersSchema = z.array(chainProviderSchema).superRefine((pr
     if ((p.alias === 'default' || p.alias === 'public') && !p.rpcUrl) {
       ctx.addIssue({
         code: z.ZodIssueCode.custom,
+        path: ['providers', 'rpcUrl'],
         message: "providers with alias 'default' or 'public' must also have an 'rpcUrl'",
       });
     }
@@ -77,6 +80,7 @@ export const chainSchema = z
     if (chain.testnet && !chain.symbol.startsWith('test')) {
       ctx.addIssue({
         code: z.ZodIssueCode.custom,
+        path: ['symbol'],
         message: "testnet chains must prefix 'symbol' with 'test'",
       });
     }
