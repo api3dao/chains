@@ -659,6 +659,13 @@ export const CHAINS: Chain[] = [
     providerUrl: 'https://testnet.era.zksync.dev',
     explorer: { browserUrl: 'https://goerli.explorer.zksync.io/' },
     blockTimeMs: 1069,
+    hardhatConfigOverrides: {
+      networks: {
+        ethNetwork: 'ethereum-goerli-testnet',
+        zksync: true,
+        verifyURL: 'https://zksync2-testnet-explorer.zksync.dev/contract_verification',
+      },
+    },
   },
   {
     name: 'zkSync',
@@ -669,5 +676,12 @@ export const CHAINS: Chain[] = [
     providerUrl: 'https://mainnet.era.zksync.io',
     explorer: { browserUrl: 'https://explorer.zksync.io/' },
     blockTimeMs: 1020,
+    hardhatConfigOverrides: {
+      networks: {
+        ethNetwork: 'ethereum',
+        zksync: true,
+        verifyURL: 'https://zksync2-mainnet-explorer.zksync.io/contract_verification',
+      },
+    },
   },
 ];

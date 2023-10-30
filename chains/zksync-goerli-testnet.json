@@ -8,5 +8,12 @@
   "explorer": {
     "browserUrl": "https://goerli.explorer.zksync.io/"
   },
-  "blockTimeMs": 1069
+  "blockTimeMs": 1069,
+  "hardhatConfigOverrides": {
+    "networks": {
+      "ethNetwork": "ethereum-goerli-testnet",
+      "zksync": true,
+      "verifyURL": "https://zksync2-testnet-explorer.zksync.dev/contract_verification"
+    }
+  }
 }

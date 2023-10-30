@@ -15,6 +15,10 @@ export const chainExplorerSchema = z.object({
   browserUrl: z.string().url(),
 });
 
+export const hardhatConfigOverrides = z.object({
+  networks: z.record(z.string(), z.any()).optional(),
+});
+
 export const chainSchema = z.object({
   alias: z.string(),
   name: z.string(),
@@ -27,6 +31,7 @@ export const chainSchema = z.object({
   testnet: z.boolean(),
   explorer: chainExplorerSchema,
   blockTimeMs: z.number().positive(),
+  hardhatConfigOverrides: hardhatConfigOverrides.optional(),
 });
 
 export type Chain = z.infer<typeof chainSchema>;
