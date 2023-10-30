@@ -3,6 +3,7 @@
   "alias": "zksync",
   "id": "324",
   "symbol": "ETH",
+  "decimals": 18,
   "testnet": false,
   "providers": [
     {

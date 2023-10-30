@@ -3,6 +3,7 @@
   "alias": "avalanche-testnet",
   "id": "43113",
   "symbol": "testAVAX",
+  "decimals": 18,
   "testnet": true,
   "providers": [
     {

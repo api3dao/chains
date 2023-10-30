@@ -3,6 +3,7 @@
   "alias": "boba-bnb",
   "id": "56288",
   "symbol": "BOBA",
+  "decimals": 18,
   "testnet": false,
   "providers": [
     {

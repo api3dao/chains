@@ -3,6 +3,7 @@
   "alias": "optimism",
   "id": "10",
   "symbol": "ETH",
+  "decimals": 18,
   "testnet": false,
   "providers": [
     {

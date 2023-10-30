@@ -3,6 +3,7 @@
   "alias": "metis",
   "id": "1088",
   "symbol": "METIS",
+  "decimals": 18,
   "testnet": false,
   "providers": [
     {

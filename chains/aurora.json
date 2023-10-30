@@ -3,6 +3,7 @@
   "alias": "aurora",
   "id": "1313161554",
   "symbol": "ETH",
+  "decimals": 18,
   "testnet": false,
   "providers": [
     {

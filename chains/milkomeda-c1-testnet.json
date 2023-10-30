@@ -3,6 +3,7 @@
   "alias": "milkomeda-c1-testnet",
   "id": "200101",
   "symbol": "testmilkADA",
+  "decimals": 18,
   "testnet": true,
   "providers": [
     {

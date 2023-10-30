@@ -3,6 +3,7 @@
   "alias": "bsc-testnet",
   "id": "97",
   "symbol": "testBNB",
+  "decimals": 18,
   "testnet": true,
   "providers": [
     {

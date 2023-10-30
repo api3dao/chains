@@ -3,6 +3,7 @@
   "alias": "arbitrum-goerli-testnet",
   "id": "421613",
   "symbol": "testETH",
+  "decimals": 18,
   "testnet": true,
   "providers": [
     {

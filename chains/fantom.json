@@ -3,6 +3,7 @@
   "alias": "fantom",
   "id": "250",
   "symbol": "FTM",
+  "decimals": 18,
   "testnet": false,
   "providers": [
     {

@@ -3,6 +3,7 @@
   "alias": "arbitrum",
   "id": "42161",
   "symbol": "ETH",
+  "decimals": 18,
   "testnet": false,
   "providers": [
     {

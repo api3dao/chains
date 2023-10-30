@@ -13,6 +13,7 @@ export const CHAINS: Chain[] = [
     alias: 'arbitrum-goerli-testnet',
     id: '421613',
     symbol: 'testETH',
+    decimals: 18,
     testnet: true,
     providers: [{ alias: 'default', rpcUrl: 'https://goerli-rollup.arbitrum.io/rpc' }],
     explorer: {
@@ -29,6 +30,7 @@ export const CHAINS: Chain[] = [
     alias: 'arbitrum-nova',
     id: '42170',
     symbol: 'ETH',
+    decimals: 18,
     testnet: false,
     providers: [{ alias: 'default', rpcUrl: 'https://nova.arbitrum.io/rpc' }],
     explorer: {
@@ -42,6 +44,7 @@ export const CHAINS: Chain[] = [
     alias: 'arbitrum',
     id: '42161',
     symbol: 'ETH',
+    decimals: 18,
     testnet: false,
     providers: [{ alias: 'default', rpcUrl: 'https://arb1.arbitrum.io/rpc' }],
     explorer: {
@@ -55,6 +58,7 @@ export const CHAINS: Chain[] = [
     alias: 'aurora-testnet',
     id: '1313161555',
     symbol: 'testETH',
+    decimals: 18,
     testnet: true,
     providers: [{ alias: 'default', rpcUrl: 'https://testnet.aurora.dev/' }],
     explorer: {
@@ -71,6 +75,7 @@ export const CHAINS: Chain[] = [
     alias: 'aurora',
     id: '1313161554',
     symbol: 'ETH',
+    decimals: 18,
     testnet: false,
     providers: [{ alias: 'default', rpcUrl: 'https://mainnet.aurora.dev/' }],
     explorer: {
@@ -87,6 +92,7 @@ export const CHAINS: Chain[] = [
     alias: 'avalanche-testnet',
     id: '43113',
     symbol: 'testAVAX',
+    decimals: 18,
     testnet: true,
     providers: [{ alias: 'default', rpcUrl: 'https://api.avax-test.network/ext/bc/C/rpc' }],
     explorer: {
@@ -103,6 +109,7 @@ export const CHAINS: Chain[] = [
     alias: 'avalanche',
     id: '43114',
     symbol: 'AVAX',
+    decimals: 18,
     testnet: false,
     providers: [{ alias: 'default', rpcUrl: 'https://api.avax.network/ext/bc/C/rpc' }],
     explorer: {
@@ -116,6 +123,7 @@ export const CHAINS: Chain[] = [
     alias: 'base-goerli-testnet',
     id: '84531',
     symbol: 'testETH',
+    decimals: 18,
     testnet: true,
     providers: [{ alias: 'default', rpcUrl: 'https://goerli.base.org' }],
     explorer: {
@@ -129,6 +137,7 @@ export const CHAINS: Chain[] = [
     alias: 'base',
     id: '8453',
     symbol: 'ETH',
+    decimals: 18,
     testnet: false,
     providers: [{ alias: 'default', rpcUrl: 'https://mainnet.base.org' }],
     explorer: {
@@ -142,6 +151,7 @@ export const CHAINS: Chain[] = [
     alias: 'boba-avalanche',
     id: '43288',
     symbol: 'BOBA',
+    decimals: 18,
     testnet: false,
     providers: [{ alias: 'default', rpcUrl: 'https://replica.avax.boba.network/' }],
     explorer: {
@@ -155,6 +165,7 @@ export const CHAINS: Chain[] = [
     alias: 'boba-bnb',
     id: '56288',
     symbol: 'BOBA',
+    decimals: 18,
     testnet: false,
     providers: [{ alias: 'default', rpcUrl: 'https://replica.bnb.boba.network/' }],
     explorer: {
@@ -168,6 +179,7 @@ export const CHAINS: Chain[] = [
     alias: 'boba-ethereum',
     id: '288',
     symbol: 'BOBA',
+    decimals: 18,
     testnet: false,
     providers: [{ alias: 'default', rpcUrl: 'https://lightning-replica.boba.network/' }],
     explorer: {
@@ -181,6 +193,7 @@ export const CHAINS: Chain[] = [
     alias: 'bsc-testnet',
     id: '97',
     symbol: 'testBNB',
+    decimals: 18,
     testnet: true,
     providers: [{ alias: 'default', rpcUrl: 'https://data-seed-prebsc-1-s3.binance.org:8545/' }],
     explorer: {
@@ -194,6 +207,7 @@ export const CHAINS: Chain[] = [
     alias: 'bsc',
     id: '56',
     symbol: 'BNB',
+    decimals: 18,
     testnet: false,
     providers: [{ alias: 'default', rpcUrl: 'https://rpc.ankr.com/bsc' }],
     explorer: {
@@ -207,6 +221,7 @@ export const CHAINS: Chain[] = [
     alias: 'cronos-testnet',
     id: '338',
     symbol: 'testCRO',
+    decimals: 18,
     testnet: true,
     providers: [{ alias: 'default', rpcUrl: 'https://evm-t3.cronos.org' }],
     explorer: {
@@ -220,6 +235,7 @@ export const CHAINS: Chain[] = [
     alias: 'ethereum-goerli-testnet',
     id: '5',
     symbol: 'testETH',
+    decimals: 18,
     testnet: true,
     providers: [{ alias: 'default', rpcUrl: 'https://rpc.ankr.com/eth_goerli' }],
     explorer: {
@@ -233,6 +249,7 @@ export const CHAINS: Chain[] = [
     alias: 'ethereum-sepolia-testnet',
     id: '11155111',
     symbol: 'testETH',
+    decimals: 18,
     testnet: true,
     providers: [{ alias: 'default', rpcUrl: 'https://rpc-sepolia.rockx.com' }],
     explorer: {
@@ -246,6 +263,7 @@ export const CHAINS: Chain[] = [
     alias: 'ethereum',
     id: '1',
     symbol: 'ETH',
+    decimals: 18,
     testnet: false,
     providers: [{ alias: 'default', rpcUrl: 'https://eth.llamarpc.com' }],
     explorer: {
@@ -259,6 +277,7 @@ export const CHAINS: Chain[] = [
     alias: 'fantom-testnet',
     id: '4002',
     symbol: 'testFTM',
+    decimals: 18,
     testnet: true,
     providers: [{ alias: 'default', rpcUrl: 'https://rpc.ankr.com/fantom_testnet' }],
     explorer: {
@@ -272,6 +291,7 @@ export const CHAINS: Chain[] = [
     alias: 'fantom',
     id: '250',
     symbol: 'FTM',
+    decimals: 18,
     testnet: false,
     providers: [{ alias: 'default', rpcUrl: 'https://rpcapi.fantom.network/' }],
     explorer: {
@@ -285,6 +305,7 @@ export const CHAINS: Chain[] = [
     alias: 'gnosis-testnet',
     id: '10200',
     symbol: 'testxDAI',
+    decimals: 18,
     testnet: true,
     providers: [{ alias: 'default', rpcUrl: 'https://rpc.chiadochain.net' }],
     explorer: {
@@ -301,6 +322,7 @@ export const CHAINS: Chain[] = [
     alias: 'gnosis',
     id: '100',
     symbol: 'xDAI',
+    decimals: 18,
     testnet: false,
     providers: [{ alias: 'default', rpcUrl: 'https://rpc.gnosischain.com' }],
     explorer: {
@@ -314,6 +336,7 @@ export const CHAINS: Chain[] = [
     alias: 'godwoken-testnet',
     id: '71401',
     symbol: 'testpCKB',
+    decimals: 18,
     testnet: true,
     providers: [{ alias: 'default', rpcUrl: 'https://v1.testnet.godwoken.io/rpc' }],
     explorer: { browserUrl: 'https://v1.testnet.gwscan.com/' },
@@ -324,6 +347,7 @@ export const CHAINS: Chain[] = [
     alias: 'godwoken',
     id: '71402',
     symbol: 'pCKB',
+    decimals: 18,
     testnet: false,
     providers: [{ alias: 'default', rpcUrl: 'https://v1.mainnet.godwoken.io/rpc' }],
     explorer: { browserUrl: 'https://v1.gwscan.com/' },
@@ -334,6 +358,7 @@ export const CHAINS: Chain[] = [
     alias: 'kava-testnet',
     id: '2221',
     symbol: 'testKAVA',
+    decimals: 18,
     testnet: true,
     providers: [{ alias: 'default', rpcUrl: 'https://evm.testnet.kava.io/' }],
     explorer: {
@@ -347,6 +372,7 @@ export const CHAINS: Chain[] = [
     alias: 'kava',
     id: '2222',
     symbol: 'KAVA',
+    decimals: 18,
     testnet: false,
     providers: [{ alias: 'default', rpcUrl: 'https://evm.kava.io/' }],
     explorer: {
@@ -360,6 +386,7 @@ export const CHAINS: Chain[] = [
     alias: 'linea-goerli-testnet',
     id: '59140',
     symbol: 'testETH',
+    decimals: 18,
     testnet: true,
     providers: [{ alias: 'default', rpcUrl: 'https://rpc.goerli.linea.build' }],
     explorer: {
@@ -373,6 +400,7 @@ export const CHAINS: Chain[] = [
     alias: 'linea',
     id: '59144',
     symbol: 'ETH',
+    decimals: 18,
     testnet: false,
     providers: [{ alias: 'default', rpcUrl: 'https://rpc.linea.build' }],
     explorer: {
@@ -385,7 +413,8 @@ export const CHAINS: Chain[] = [
     name: 'Mantle Goerli testnet',
     alias: 'mantle-goerli-testnet',
     id: '5001',
-    symbol: 'MNT',
+    symbol: 'testMNT',
+    decimals: 18,
     testnet: true,
     providers: [{ alias: 'default', rpcUrl: 'https://rpc.testnet.mantle.xyz' }],
     explorer: {
@@ -399,6 +428,7 @@ export const CHAINS: Chain[] = [
     alias: 'mantle',
     id: '5000',
     symbol: 'MNT',
+    decimals: 18,
     testnet: false,
     providers: [{ alias: 'default', rpcUrl: 'https://rpc.mantle.xyz' }],
     explorer: {
@@ -412,6 +442,7 @@ export const CHAINS: Chain[] = [
     alias: 'metis-goerli-testnet',
     id: '599',
     symbol: 'testMETIS',
+    decimals: 18,
     testnet: true,
     providers: [{ alias: 'default', rpcUrl: 'https://goerli.gateway.metisdevops.link' }],
     explorer: {
@@ -425,6 +456,7 @@ export const CHAINS: Chain[] = [
     alias: 'metis',
     id: '1088',
     symbol: 'METIS',
+    decimals: 18,
     testnet: false,
     providers: [{ alias: 'default', rpcUrl: 'https://andromeda.metis.io/?owner=1088' }],
     explorer: {
@@ -438,6 +470,7 @@ export const CHAINS: Chain[] = [
     alias: 'milkomeda-c1-testnet',
     id: '200101',
     symbol: 'testmilkADA',
+    decimals: 18,
     testnet: true,
     providers: [{ alias: 'default', rpcUrl: 'https://rpc-devnet-cardano-evm.c1.milkomeda.com' }],
     explorer: {
@@ -451,6 +484,7 @@ export const CHAINS: Chain[] = [
     alias: 'milkomeda-c1',
     id: '2001',
     symbol: 'milkADA',
+    decimals: 18,
     testnet: false,
     providers: [{ alias: 'default', rpcUrl: 'https://rpc-mainnet-cardano-evm.c1.milkomeda.com' }],
     explorer: {
@@ -464,6 +498,7 @@ export const CHAINS: Chain[] = [
     alias: 'moonbeam-testnet',
     id: '1287',
     symbol: 'testGLMR',
+    decimals: 18,
     testnet: true,
     providers: [{ alias: 'default', rpcUrl: 'https://rpc.api.moonbase.moonbeam.network' }],
     explorer: {
@@ -480,6 +515,7 @@ export const CHAINS: Chain[] = [
     alias: 'moonbeam',
     id: '1284',
     symbol: 'GLMR',
+    decimals: 18,
     testnet: false,
     providers: [{ alias: 'default', rpcUrl: 'https://rpc.api.moonbeam.network' }],
     explorer: {
@@ -493,6 +529,7 @@ export const CHAINS: Chain[] = [
     alias: 'moonriver',
     id: '1285',
     symbol: 'MOVR',
+    decimals: 18,
     testnet: false,
     providers: [{ alias: 'default', rpcUrl: 'https://rpc.api.moonriver.moonbeam.network' }],
     explorer: {
@@ -509,6 +546,7 @@ export const CHAINS: Chain[] = [
     alias: 'optimism-goerli-testnet',
     id: '420',
     symbol: 'testETH',
+    decimals: 18,
     testnet: true,
     providers: [{ alias: 'default', rpcUrl: 'https://goerli.optimism.io' }],
     explorer: {
@@ -525,6 +563,7 @@ export const CHAINS: Chain[] = [
     alias: 'optimism',
     id: '10',
     symbol: 'ETH',
+    decimals: 18,
     testnet: false,
     providers: [{ alias: 'default', rpcUrl: 'https://mainnet.optimism.io' }],
     explorer: {
@@ -541,6 +580,7 @@ export const CHAINS: Chain[] = [
     alias: 'polygon-testnet',
     id: '80001',
     symbol: 'testMATIC',
+    decimals: 18,
     testnet: true,
     providers: [{ alias: 'default', rpcUrl: 'https://rpc.ankr.com/polygon_mumbai' }],
     explorer: {
@@ -557,6 +597,7 @@ export const CHAINS: Chain[] = [
     alias: 'polygon-zkevm-goerli-testnet',
     id: '1442',
     symbol: 'testETH',
+    decimals: 18,
     testnet: true,
     providers: [{ alias: 'default', rpcUrl: 'https://rpc.public.zkevm-test.net' }],
     explorer: {
@@ -570,6 +611,7 @@ export const CHAINS: Chain[] = [
     alias: 'polygon-zkevm',
     id: '1101',
     symbol: 'ETH',
+    decimals: 18,
     testnet: false,
     providers: [{ alias: 'default', rpcUrl: 'https://zkevm-rpc.com' }],
     explorer: {
@@ -583,6 +625,7 @@ export const CHAINS: Chain[] = [
     alias: 'polygon',
     id: '137',
     symbol: 'MATIC',
+    decimals: 18,
     testnet: false,
     providers: [{ alias: 'default', rpcUrl: 'https://rpc.ankr.com/polygon' }],
     explorer: {
@@ -596,6 +639,7 @@ export const CHAINS: Chain[] = [
     alias: 'rsk-testnet',
     id: '31',
     symbol: 'testRBTC',
+    decimals: 18,
     testnet: true,
     providers: [{ alias: 'default', rpcUrl: 'https://public-node.testnet.rsk.co' }],
     explorer: { browserUrl: 'https://explorer.testnet.rsk.co/' },
@@ -606,6 +650,7 @@ export const CHAINS: Chain[] = [
     alias: 'rsk',
     id: '30',
     symbol: 'RBTC',
+    decimals: 18,
     testnet: false,
     providers: [{ alias: 'default', rpcUrl: 'https://public-node.rsk.co' }],
     explorer: { browserUrl: 'https://explorer.rsk.co/' },
@@ -616,6 +661,7 @@ export const CHAINS: Chain[] = [
     alias: 'scroll-goerli-testnet',
     id: '534353',
     symbol: 'testETH',
+    decimals: 18,
     testnet: true,
     providers: [{ alias: 'default', rpcUrl: 'https://alpha-rpc.scroll.io/l2' }],
     explorer: {
@@ -629,6 +675,7 @@ export const CHAINS: Chain[] = [
     alias: 'sx-testnet',
     id: '647',
     symbol: 'testSX',
+    decimals: 18,
     testnet: true,
     providers: [{ alias: 'default', rpcUrl: 'https://rpc.toronto.sx.technology' }],
     explorer: {
@@ -642,6 +689,7 @@ export const CHAINS: Chain[] = [
     alias: 'sx',
     id: '416',
     symbol: 'SX',
+    decimals: 18,
     testnet: false,
     providers: [{ alias: 'default', rpcUrl: 'https://rpc.sx.technology' }],
     explorer: {
@@ -655,6 +703,7 @@ export const CHAINS: Chain[] = [
     alias: 'zksync-goerli-testnet',
     id: '280',
     symbol: 'testETH',
+    decimals: 18,
     testnet: true,
     providers: [{ alias: 'default', rpcUrl: 'https://testnet.era.zksync.dev' }],
     explorer: { browserUrl: 'https://goerli.explorer.zksync.io/' },
@@ -672,6 +721,7 @@ export const CHAINS: Chain[] = [
     alias: 'zksync',
     id: '324',
     symbol: 'ETH',
+    decimals: 18,
     testnet: false,
     providers: [{ alias: 'default', rpcUrl: 'https://mainnet.era.zksync.io' }],
     explorer: { browserUrl: 'https://explorer.zksync.io/' },

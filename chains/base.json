@@ -3,6 +3,7 @@
   "alias": "base",
   "id": "8453",
   "symbol": "ETH",
+  "decimals": 18,
   "testnet": false,
   "providers": [
     {

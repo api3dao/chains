@@ -3,6 +3,7 @@
   "alias": "aurora-testnet",
   "id": "1313161555",
   "symbol": "testETH",
+  "decimals": 18,
   "testnet": true,
   "providers": [
     {

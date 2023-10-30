@@ -3,6 +3,7 @@
   "alias": "kava",
   "id": "2222",
   "symbol": "KAVA",
+  "decimals": 18,
   "testnet": false,
   "providers": [
     {

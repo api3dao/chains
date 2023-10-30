@@ -3,6 +3,7 @@
   "alias": "base-goerli-testnet",
   "id": "84531",
   "symbol": "testETH",
+  "decimals": 18,
   "testnet": true,
   "providers": [
     {

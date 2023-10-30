@@ -3,6 +3,7 @@
   "alias": "zksync-goerli-testnet",
   "id": "280",
   "symbol": "testETH",
+  "decimals": 18,
   "testnet": true,
   "providers": [
     {

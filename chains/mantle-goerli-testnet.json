@@ -2,7 +2,8 @@
   "name": "Mantle Goerli testnet",
   "alias": "mantle-goerli-testnet",
   "id": "5001",
-  "symbol": "MNT",
+  "symbol": "testMNT",
+  "decimals": 18,
   "testnet": true,
   "providers": [
     {

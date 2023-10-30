@@ -3,6 +3,7 @@
   "alias": "polygon",
   "id": "137",
   "symbol": "MATIC",
+  "decimals": 18,
   "testnet": false,
   "providers": [
     {

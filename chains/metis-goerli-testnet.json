@@ -3,6 +3,7 @@
   "alias": "metis-goerli-testnet",
   "id": "599",
   "symbol": "testMETIS",
+  "decimals": 18,
   "testnet": true,
   "providers": [
     {

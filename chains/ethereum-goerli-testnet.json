@@ -3,6 +3,7 @@
   "alias": "ethereum-goerli-testnet",
   "id": "5",
   "symbol": "testETH",
+  "decimals": 18,
   "testnet": true,
   "providers": [
     {

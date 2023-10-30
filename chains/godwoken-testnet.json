@@ -3,6 +3,7 @@
   "alias": "godwoken-testnet",
   "id": "71401",
   "symbol": "testpCKB",
+  "decimals": 18,
   "testnet": true,
   "providers": [
     {

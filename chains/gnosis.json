@@ -3,6 +3,7 @@
   "alias": "gnosis",
   "id": "100",
   "symbol": "xDAI",
+  "decimals": 18,
   "testnet": false,
   "providers": [
     {

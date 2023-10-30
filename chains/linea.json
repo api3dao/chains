@@ -3,6 +3,7 @@
   "alias": "linea",
   "id": "59144",
   "symbol": "ETH",
+  "decimals": 18,
   "testnet": false,
   "providers": [
     {

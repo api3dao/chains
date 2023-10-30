@@ -3,6 +3,7 @@
   "alias": "moonbeam",
   "id": "1284",
   "symbol": "GLMR",
+  "decimals": 18,
   "testnet": false,
   "providers": [
     {

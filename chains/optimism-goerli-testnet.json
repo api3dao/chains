@@ -3,6 +3,7 @@
   "alias": "optimism-goerli-testnet",
   "id": "420",
   "symbol": "testETH",
+  "decimals": 18,
   "testnet": true,
   "providers": [
     {

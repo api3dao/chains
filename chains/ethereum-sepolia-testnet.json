@@ -3,6 +3,7 @@
   "alias": "ethereum-sepolia-testnet",
   "id": "11155111",
   "symbol": "testETH",
+  "decimals": 18,
   "testnet": true,
   "providers": [
     {

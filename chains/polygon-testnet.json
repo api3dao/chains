@@ -3,6 +3,7 @@
   "alias": "polygon-testnet",
   "id": "80001",
   "symbol": "testMATIC",
+  "decimals": 18,
   "testnet": true,
   "providers": [
     {

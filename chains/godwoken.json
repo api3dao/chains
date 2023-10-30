@@ -3,6 +3,7 @@
   "alias": "godwoken",
   "id": "71402",
   "symbol": "pCKB",
+  "decimals": 18,
   "testnet": false,
   "providers": [
     {

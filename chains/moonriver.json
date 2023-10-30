@@ -3,6 +3,7 @@
   "alias": "moonriver",
   "id": "1285",
   "symbol": "MOVR",
+  "decimals": 18,
   "testnet": false,
   "providers": [
     {

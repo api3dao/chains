@@ -3,6 +3,7 @@
   "alias": "polygon-zkevm-goerli-testnet",
   "id": "1442",
   "symbol": "testETH",
+  "decimals": 18,
   "testnet": true,
   "providers": [
     {

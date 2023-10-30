@@ -3,6 +3,7 @@
   "alias": "moonbeam-testnet",
   "id": "1287",
   "symbol": "testGLMR",
+  "decimals": 18,
   "testnet": true,
   "providers": [
     {

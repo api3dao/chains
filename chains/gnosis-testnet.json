@@ -3,6 +3,7 @@
   "alias": "gnosis-testnet",
   "id": "10200",
   "symbol": "testxDAI",
+  "decimals": 18,
   "testnet": true,
   "providers": [
     {

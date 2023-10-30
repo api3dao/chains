@@ -3,6 +3,7 @@
   "alias": "boba-avalanche",
   "id": "43288",
   "symbol": "BOBA",
+  "decimals": 18,
   "testnet": false,
   "providers": [
     {

@@ -3,6 +3,7 @@
   "alias": "scroll-goerli-testnet",
   "id": "534353",
   "symbol": "testETH",
+  "decimals": 18,
   "testnet": true,
   "providers": [
     {

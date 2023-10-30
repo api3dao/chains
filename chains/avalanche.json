@@ -3,6 +3,7 @@
   "alias": "avalanche",
   "id": "43114",
   "symbol": "AVAX",
+  "decimals": 18,
   "testnet": false,
   "providers": [
     {

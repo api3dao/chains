@@ -3,6 +3,7 @@
   "alias": "ethereum",
   "id": "1",
   "symbol": "ETH",
+  "decimals": 18,
   "testnet": false,
   "providers": [
     {

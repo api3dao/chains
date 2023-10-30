@@ -3,6 +3,7 @@
   "alias": "polygon-zkevm",
   "id": "1101",
   "symbol": "ETH",
+  "decimals": 18,
   "testnet": false,
   "providers": [
     {

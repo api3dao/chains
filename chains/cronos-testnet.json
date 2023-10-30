@@ -3,6 +3,7 @@
   "alias": "cronos-testnet",
   "id": "338",
   "symbol": "testCRO",
+  "decimals": 18,
   "testnet": true,
   "providers": [
     {

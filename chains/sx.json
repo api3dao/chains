@@ -3,6 +3,7 @@
   "alias": "sx",
   "id": "416",
   "symbol": "SX",
+  "decimals": 18,
   "testnet": false,
   "providers": [
     {

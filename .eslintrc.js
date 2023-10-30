@@ -18,7 +18,7 @@ module.exports = {
     '@typescript-eslint/ban-ts-ignore': 0,
     '@typescript-eslint/ban-types': 0,
     '@typescript-eslint/camelcase': 0,
-    '@typescript-eslint/explicit-function-return-type': 2,
+    '@typescript-eslint/explicit-function-return-type': 0,
     '@typescript-eslint/explicit-module-boundary-types': 0,
     // Turning off, because it conflicts with prettier
     '@typescript-eslint/indent': ['off'],

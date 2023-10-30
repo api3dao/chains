@@ -3,6 +3,7 @@
   "alias": "rsk-testnet",
   "id": "31",
   "symbol": "testRBTC",
+  "decimals": 18,
   "testnet": true,
   "providers": [
     {
