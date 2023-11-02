@@ -1,5 +1,5 @@
 {
-  "alias": "bsc",
+  "alias": "bnb-smart-chain",
   "blockTimeMs": 3009,
   "decimals": 18,
   "explorer": {
@@ -13,7 +13,7 @@
     "browserUrl": "https://bscscan.com/"
   },
   "id": "56",
-  "name": "BSC",
+  "name": "BNB Smart Chain",
   "providers": [
     {
       "alias": "default",

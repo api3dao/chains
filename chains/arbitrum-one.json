@@ -1,5 +1,5 @@
 {
-  "alias": "arbitrum",
+  "alias": "arbitrum-one",
   "blockTimeMs": 265,
   "decimals": 18,
   "explorer": {
@@ -13,7 +13,7 @@
     "browserUrl": "https://arbiscan.io/"
   },
   "id": "42161",
-  "name": "Arbitrum",
+  "name": "Arbitrum One",
   "providers": [
     {
       "alias": "default",

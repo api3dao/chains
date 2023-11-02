@@ -27,7 +27,7 @@ jsonFiles.forEach((filePath: string, index: number) => {
   const chain = jsonChains[index]!;
   if (filePath.replace('.json', '') !== chain.alias) {
     logs.push("JSON file name must match the chain's alias");
-    logs.push(`Current value: ${filePath}.json. Expected: ${chain.alias}.json\n`);
+    logs.push(`Current value: ${filePath}. Expected: ${chain.alias}.json\n`);
   }
 });
 
