@@ -90,6 +90,9 @@ export type Chain = z.infer<typeof chainSchema>;
 export type ChainExplorer = z.infer<typeof chainExplorerSchema>;
 export type ChainExplorerAPI = z.infer<typeof chainExplorerAPISchema>;
 export type ChainExplorerAPIKey = z.infer<typeof chainExplorerAPIKeySchema>;
+export type ChainHardhatConfigOverrides = z.infer<typeof hardhatConfigOverrides>;
+export type ChainProviders = z.infer<typeof chainProvidersSchema>;
+export type ChainProvider = z.infer<typeof chainProviderSchema>;
 
 export interface HardhatNetworksConfig {
   [key: string]: {
