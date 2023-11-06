@@ -13,7 +13,7 @@
     "browserUrl": "https://arbiscan.io/"
   },
   "id": "42161",
-  "name": "Arbitrum",
+  "name": "Arbitrum One",
   "providers": [
     {
       "alias": "default",

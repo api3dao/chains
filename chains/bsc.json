@@ -13,7 +13,7 @@
     "browserUrl": "https://bscscan.com/"
   },
   "id": "56",
-  "name": "BSC",
+  "name": "BNB Smart Chain",
   "providers": [
     {
       "alias": "default",

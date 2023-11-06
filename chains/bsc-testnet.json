@@ -13,7 +13,7 @@
     "browserUrl": "https://testnet.bscscan.com/"
   },
   "id": "97",
-  "name": "BSC testnet",
+  "name": "BNB Smart Chain testnet",
   "providers": [
     {
       "alias": "default",
