@@ -40,7 +40,7 @@ export const CHAINS: Chain[] = [
     testnet: false,
   },
   {
-    alias: 'arbitrum-one',
+    alias: 'arbitrum',
     blockTimeMs: 265,
     decimals: 18,
     explorer: {
@@ -147,34 +147,6 @@ export const CHAINS: Chain[] = [
     testnet: false,
   },
   {
-    alias: 'bnb-smart-chain-testnet',
-    blockTimeMs: 3002,
-    decimals: 18,
-    explorer: {
-      api: { key: { hardhatEtherscanAlias: 'bscTestnet', required: true }, url: 'https://api-testnet.bscscan.com/api' },
-      browserUrl: 'https://testnet.bscscan.com/',
-    },
-    id: '97',
-    name: 'BNB Smart Chain testnet',
-    providers: [{ alias: 'default', rpcUrl: 'https://data-seed-prebsc-1-s3.binance.org:8545/' }],
-    symbol: 'testBNB',
-    testnet: true,
-  },
-  {
-    alias: 'bnb-smart-chain',
-    blockTimeMs: 3009,
-    decimals: 18,
-    explorer: {
-      api: { key: { hardhatEtherscanAlias: 'bsc', required: true }, url: 'https://api.bscscan.com/api' },
-      browserUrl: 'https://bscscan.com/',
-    },
-    id: '56',
-    name: 'BNB Smart Chain',
-    providers: [{ alias: 'default', rpcUrl: 'https://rpc.ankr.com/bsc' }],
-    symbol: 'BNB',
-    testnet: false,
-  },
-  {
     alias: 'boba-avalanche',
     blockTimeMs: 120000,
     decimals: 18,
@@ -214,6 +186,34 @@ export const CHAINS: Chain[] = [
     name: 'Boba/Ethereum',
     providers: [{ alias: 'default', rpcUrl: 'https://lightning-replica.boba.network/' }],
     symbol: 'BOBA',
+    testnet: false,
+  },
+  {
+    alias: 'bsc-testnet',
+    blockTimeMs: 3002,
+    decimals: 18,
+    explorer: {
+      api: { key: { hardhatEtherscanAlias: 'bscTestnet', required: true }, url: 'https://api-testnet.bscscan.com/api' },
+      browserUrl: 'https://testnet.bscscan.com/',
+    },
+    id: '97',
+    name: 'BNB Smart Chain testnet',
+    providers: [{ alias: 'default', rpcUrl: 'https://data-seed-prebsc-1-s3.binance.org:8545/' }],
+    symbol: 'testBNB',
+    testnet: true,
+  },
+  {
+    alias: 'bsc',
+    blockTimeMs: 3009,
+    decimals: 18,
+    explorer: {
+      api: { key: { hardhatEtherscanAlias: 'bsc', required: true }, url: 'https://api.bscscan.com/api' },
+      browserUrl: 'https://bscscan.com/',
+    },
+    id: '56',
+    name: 'BNB Smart Chain',
+    providers: [{ alias: 'default', rpcUrl: 'https://rpc.ankr.com/bsc' }],
+    symbol: 'BNB',
     testnet: false,
   },
   {
