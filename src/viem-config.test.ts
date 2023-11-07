@@ -21,7 +21,7 @@ afterAll(() => {
 describe(chainHttpRpcUrlName.name, () => {
   test('returns the expected HTTP RPC URL name', () => {
     const randomChain = getRandomChain();
-    const expected = `VIEM_HTTP_RPC_URL_${toUpperSnakeCase(randomChain!.alias)}`;
+    const expected = `API3_CHAINS_HTTP_RPC_URL_${toUpperSnakeCase(randomChain!.alias)}`;
     expect(chainHttpRpcUrlName(randomChain!)).toStrictEqual(expected);
   });
 });
@@ -66,7 +66,7 @@ describe(chains.name, () => {
   test('allows for setting additional RPC URL values with env variables', () => {
     CHAINS.forEach((chain) => {
       const alias = toUpperSnakeCase(chain.alias);
-      process.env[`VIEM_HTTP_RPC_URL_${alias}`] = `https://${chain.id}.xyz`;
+      process.env[`API3_CHAINS_HTTP_RPC_URL_${alias}`] = `https://${chain.id}.xyz`;
     });
 
     const result = chains();

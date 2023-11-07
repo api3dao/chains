@@ -4,7 +4,7 @@ import { CHAINS } from './generated/chains';
 import { toUpperSnakeCase } from './utils/strings';
 
 export function chainHttpRpcUrlName(chain: Chain) {
-  return `VIEM_HTTP_RPC_URL_${toUpperSnakeCase(chain.alias)}`;
+  return `API3_CHAINS_HTTP_RPC_URL_${toUpperSnakeCase(chain.alias)}`;
 }
 
 export function chains() {
