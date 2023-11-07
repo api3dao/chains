@@ -1,4 +1,4 @@
-import { chains, chainHttpRpcUrlName } from './viem-config';
+import { chainHttpRpcUrlName, chains } from './viem-config';
 import { Chain } from './types';
 import { CHAINS } from './generated/chains';
 import { toUpperSnakeCase } from './utils/strings';
