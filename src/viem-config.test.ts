@@ -94,7 +94,7 @@ describe(chains.name, () => {
           },
           environment: {
             http: [`https://${chain.id}.xyz`],
-          }
+          },
         },
         blockExplorers: {
           default: {
