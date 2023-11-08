@@ -115,6 +115,8 @@ console.log(hardhatConfig.getEnvVariableNames());
 
 Returns an array of chains in the format that [Viem](https://viem.sh/docs/clients/chains.html) expects. Each Chain object can be used to [create a Viem public client](https://viem.sh/docs/clients/chains.html#usage).
 
+Additional `rpcUrls` values can (optionally) be added through the use of environment variables. These environment variables take the form of `API3_CHAINS_HTTP_RPC_URL_${toUpperSnakeCase(chain.alias)}`. If a matching environment variable is detected for a given chain, then it is added as a new `environment` property and you still have access to the existing `rpcUrls`.
+
 ```ts
 import { viemConfig } from '@api3/chains';
 console.log(viemConfig.chains());
@@ -124,9 +126,7 @@ console.log(viemConfig.chains());
     id: 421613,
     name: 'arbitrum-goerli-testnet',
     network: 'arbitrum-goerli-testnet',
-    nativeCurrency: { ... },
-    rpcUrls: { default: ..., public: ... }
-    blockExplorers: { default: ..., public: ... }
+    rpcUrls: { default: ..., public: ..., environment: ... }
     ...
   },
   ...
