@@ -1,11 +1,18 @@
 import { defineChain } from 'viem';
 import { Chain } from './types';
 import { CHAINS } from './generated/chains';
+import { toUpperSnakeCase } from './utils/strings';
+
+export function chainHttpRpcUrlName(chain: Chain) {
+  return `API3_CHAINS_HTTP_RPC_URL_${toUpperSnakeCase(chain.alias)}`;
+}
 
 export function chains() {
   return CHAINS.map((chain) => {
     // All chains must have at least a default provider
     const defaultProvider = chain.providers.find((c) => c.alias === 'default')!;
+    const envRpcUrl = process.env[chainHttpRpcUrlName(chain)];
+    const extraRpcUrls = envRpcUrl ? { environment: { http: [envRpcUrl] } } : {};
 
     return defineChain({
       id: Number(chain.id),
@@ -23,6 +30,7 @@ export function chains() {
         public: {
           http: [defaultProvider.rpcUrl!],
         },
+        ...extraRpcUrls,
       },
       blockExplorers: {
         default: {

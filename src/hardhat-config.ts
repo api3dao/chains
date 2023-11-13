@@ -17,6 +17,10 @@ export function etherscanApiKeyName(chain: Chain): string {
 }
 
 export function networkHttpRpcUrlName(chain: Chain): string {
+  // TODO: we might want to synchronise this with the way viemConfig.chains() sources
+  // env level RPC values. i.e. replacing the "HARHDAT_" prefix with something more generic
+  // Latest suggestion is "API3_CHAINS_" instead.
+  // See thread: https://github.com/api3dao/chains/pull/125/files#r1384859991
   return `HARDHAT_HTTP_RPC_URL_${toUpperSnakeCase(chain.alias)}`;
 }
 
