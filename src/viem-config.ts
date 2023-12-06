@@ -6,7 +6,7 @@ import { toUpperSnakeCase } from './utils/strings';
 interface CustomRpcUrls {
   readonly environment: {
     readonly http: string[];
-  }
+  };
 }
 
 export function chainHttpRpcUrlName(chain: Chain) {
