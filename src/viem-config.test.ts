@@ -46,12 +46,9 @@ describe(chains.name, () => {
           decimals: chain.decimals,
         },
         rpcUrls: {
-          default: {
-            http: [defaultProvider.rpcUrl!],
-          },
-          public: {
-            http: [defaultProvider.rpcUrl!],
-          },
+          default: { http: [defaultProvider.rpcUrl!] },
+          public: { http: [defaultProvider.rpcUrl!] },
+          environment: { http: [] },
         },
         blockExplorers: {
           default: {
