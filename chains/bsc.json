@@ -17,7 +17,7 @@
   "providers": [
     {
       "alias": "default",
-      "rpcUrl": "https://rpc.ankr.com/bsc"
+      "rpcUrl": "https://bsc-dataseed1.binance.org/"
     },
     {
       "alias": "publicnode",
