@@ -17,6 +17,14 @@
     {
       "alias": "default",
       "rpcUrl": "https://rpc.goerli.linea.build"
+    },
+    {
+      "alias": "blockpi",
+      "rpcUrl": "https://linea-goerli.blockpi.network/v1/rpc/public"
+    },
+    { 
+      "alias": "reblok",
+      "homepageUrl": "https://reblok.io"
     }
   ],
   "symbol": "testETH",
