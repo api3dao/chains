@@ -17,6 +17,18 @@
     {
       "alias": "default",
       "rpcUrl": "https://rpc.linea.build"
+    },
+    {
+      "alias": "blockpi",
+      "rpcUrl": "https://linea.blockpi.network/v1/rpc/public"
+    },
+    {
+      "alias": "reblok",
+      "homepageUrl": "https://reblok.io"
+    },
+    {
+      "alias": "drpc",
+      "homepageUrl": "https://drpc.org/"
     }
   ],
   "symbol": "ETH",

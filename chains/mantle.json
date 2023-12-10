@@ -17,6 +17,18 @@
     {
       "alias": "default",
       "rpcUrl": "https://rpc.mantle.xyz"
+    },
+    {
+      "alias": "publicnode",
+      "rpcUrl": "https://mantle.publicnode.com"
+    },
+    {
+      "alias": "reblok",
+      "homepageUrl": "https://reblok.io"
+    },
+    {
+      "alias": "drpc",
+      "homepageUrl": "https://drpc.org/"
     }
   ],
   "symbol": "MNT",

@@ -18,6 +18,18 @@
     {
       "alias": "default",
       "rpcUrl": "https://rpc.api.moonriver.moonbeam.network"
+    },
+    {
+      "alias": "publicnode",
+      "rpcUrl": "https://moonriver.publicnode.com"
+    },
+    {
+      "alias": "reblok",
+      "homepageUrl": "https://reblok.io"
+    },
+    {
+      "alias": "drpc",
+      "homepageUrl": "https://drpc.org/"
     }
   ],
   "symbol": "MOVR",

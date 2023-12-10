@@ -18,6 +18,22 @@
     {
       "alias": "default",
       "rpcUrl": "https://rpc-mainnet.maticvigil.com"
+    },
+    {
+      "alias": "publicnode",
+      "rpcUrl": "https://polygon-bor.publicnode.com"
+    },
+    {
+      "alias": "reblok",
+      "homepageUrl": "https://reblok.io"
+    },
+    {
+      "alias": "quicknode",
+      "homepageUrl": "https://quicknode.com"
+    },
+    {
+      "alias": "drpc",
+      "homepageUrl": "https://drpc.org/"
     }
   ],
   "symbol": "MATIC",

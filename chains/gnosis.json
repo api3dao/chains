@@ -18,6 +18,22 @@
     {
       "alias": "default",
       "rpcUrl": "https://rpc.gnosischain.com"
+    },
+    {
+      "alias": "publicnode",
+      "rpcUrl": "https://gnosis.publicnode.com"
+    },
+    {
+      "alias": "reblok",
+      "homepageUrl": "https://reblok.io"
+    },
+    {
+      "alias": "quicknode",
+      "homepageUrl": "https://quicknode.com"
+    },
+    {
+      "alias": "drpc",
+      "homepageUrl": "https://drpc.org/"
     }
   ],
   "symbol": "xDAI",

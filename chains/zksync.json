@@ -18,6 +18,14 @@
     {
       "alias": "default",
       "rpcUrl": "https://mainnet.era.zksync.io"
+    },
+    {
+      "alias": "quicknode",
+      "homepageUrl": "https://quicknode.com"
+    },
+    {
+      "alias": "drpc",
+      "homepageUrl": "https://drpc.org/"
     }
   ],
   "symbol": "ETH",
