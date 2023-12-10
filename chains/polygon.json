@@ -17,7 +17,7 @@
   "providers": [
     {
       "alias": "default",
-      "rpcUrl": "https://rpc.ankr.com/polygon"
+      "rpcUrl": "https://rpc-mainnet.maticvigil.com"
     }
   ],
   "symbol": "MATIC",

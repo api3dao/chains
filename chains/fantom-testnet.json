@@ -17,7 +17,7 @@
   "providers": [
     {
       "alias": "default",
-      "rpcUrl": "https://rpc.ankr.com/fantom_testnet"
+      "rpcUrl": "https://rpc.testnet.fantom.network"
     }
   ],
   "symbol": "testFTM",
