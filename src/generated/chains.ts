@@ -150,20 +150,6 @@ export const CHAINS: Chain[] = [
     testnet: false,
   },
   {
-    alias: 'boba-avalanche',
-    blockTimeMs: 120000,
-    decimals: 18,
-    explorer: {
-      api: { key: { required: false }, url: 'https://blockexplorer.avax.boba.network/api' },
-      browserUrl: 'https://blockexplorer.avax.boba.network/',
-    },
-    id: '43288',
-    name: 'Boba/Avalanche',
-    providers: [{ alias: 'default', rpcUrl: 'https://replica.avax.boba.network/' }],
-    symbol: 'BOBA',
-    testnet: false,
-  },
-  {
     alias: 'boba-bnb',
     blockTimeMs: 636,
     decimals: 18,
