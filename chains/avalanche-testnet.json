@@ -8,7 +8,7 @@
         "hardhatEtherscanAlias": "avalancheFujiTestnet",
         "required": true
       },
-      "url": "https://api-testnet.snowtrace.io/api"
+      "url": "https://api.routescan.io/v2/network/testnet/evm/43113/etherscan/api"
     },
     "browserUrl": "https://testnet.snowtrace.io/"
   },

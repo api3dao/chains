@@ -94,7 +94,7 @@ export const CHAINS: Chain[] = [
     explorer: {
       api: {
         key: { hardhatEtherscanAlias: 'avalancheFujiTestnet', required: true },
-        url: 'https://api-testnet.snowtrace.io/api',
+        url: 'https://api.routescan.io/v2/network/testnet/evm/43113/etherscan/api',
       },
       browserUrl: 'https://testnet.snowtrace.io/',
     },
@@ -109,7 +109,10 @@ export const CHAINS: Chain[] = [
     blockTimeMs: 2036,
     decimals: 18,
     explorer: {
-      api: { key: { hardhatEtherscanAlias: 'avalanche', required: true }, url: 'https://api.snowtrace.io/api' },
+      api: {
+        key: { hardhatEtherscanAlias: 'avalanche', required: true },
+        url: 'https://api.routescan.io/v2/network/mainnet/evm/43114/etherscan/api',
+      },
       browserUrl: 'https://snowtrace.io/',
     },
     id: '43114',
