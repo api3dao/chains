@@ -20,10 +20,6 @@
       "rpcUrl": "https://api.avax.network/ext/bc/C/rpc"
     },
     {
-      "alias": "publicnode",
-      "rpcUrl": "https://avalanche-c-chain.publicnode.com"
-    },
-    {
       "alias": "reblok",
       "homepageUrl": "https://reblok.io"
     },

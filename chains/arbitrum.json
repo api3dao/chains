@@ -20,10 +20,6 @@
       "rpcUrl": "https://arb1.arbitrum.io/rpc"
     },
     {
-      "alias": "publicnode",
-      "rpcUrl": "https://arbitrum-one.publicnode.com"
-    },
-    {
       "alias": "reblok",
       "homepageUrl": "https://reblok.io"
     },

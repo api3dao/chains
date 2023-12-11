@@ -19,10 +19,6 @@
       "rpcUrl": "https://mainnet.base.org"
     },
     {
-      "alias": "publicnode",
-      "rpcUrl": "https://base.publicnode.com"
-    },
-    {
       "alias": "reblok",
       "homepageUrl": "https://reblok.io"
     },

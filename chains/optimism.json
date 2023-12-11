@@ -20,10 +20,6 @@
       "rpcUrl": "https://mainnet.optimism.io"
     },
     {
-      "alias": "publicnode",
-      "rpcUrl": "https://optimism.publicnode.com"
-    },
-    {
       "alias": "reblok",
       "homepageUrl": "https://reblok.io"
     },

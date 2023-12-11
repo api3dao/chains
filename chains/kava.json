@@ -19,10 +19,6 @@
       "rpcUrl": "https://evm.kava.io/"
     },
     {
-      "alias": "publicnode",
-      "rpcUrl": "https://kava-evm.publicnode.com"
-    },
-    {
       "alias": "reblok",
       "homepageUrl": "https://reblok.io"
     },

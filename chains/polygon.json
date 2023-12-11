@@ -20,10 +20,6 @@
       "rpcUrl": "https://rpc-mainnet.maticvigil.com"
     },
     {
-      "alias": "publicnode",
-      "rpcUrl": "https://polygon-bor.publicnode.com"
-    },
-    {
       "alias": "reblok",
       "homepageUrl": "https://reblok.io"
     },

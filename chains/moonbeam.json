@@ -20,10 +20,6 @@
       "rpcUrl": "https://rpc.api.moonbeam.network"
     },
     {
-      "alias": "publicnode",
-      "rpcUrl": "https://moonbeam.publicnode.com"
-    },
-    {
       "alias": "reblok",
       "homepageUrl": "https://reblok.io"
     },

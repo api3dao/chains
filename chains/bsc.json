@@ -20,10 +20,6 @@
       "rpcUrl": "https://bsc-dataseed1.binance.org/"
     },
     {
-      "alias": "publicnode",
-      "rpcUrl": "https://bsc.publicnode.com"
-    },
-    {
       "alias": "reblok",
       "homepageUrl": "https://reblok.io"
     },

@@ -20,10 +20,6 @@
       "rpcUrl": "https://eth.llamarpc.com"
     },
     {
-      "alias": "publicnode",
-      "rpcUrl": "https://ethereum.publicnode.com"
-    },
-    {
       "alias": "reblok",
       "homepageUrl": "https://reblok.io"
     },

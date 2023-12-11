@@ -39,10 +39,7 @@ export const CHAINS: Chain[] = [
     },
     id: '42170',
     name: 'Arbitrum Nova',
-    providers: [
-      { alias: 'default', rpcUrl: 'https://nova.arbitrum.io/rpc' },
-      { alias: 'publicnode', rpcUrl: 'https://arbitrum-nova.publicnode.com' },
-    ],
+    providers: [{ alias: 'default', rpcUrl: 'https://nova.arbitrum.io/rpc' }],
     symbol: 'ETH',
     testnet: false,
   },
@@ -58,7 +55,6 @@ export const CHAINS: Chain[] = [
     name: 'Arbitrum One',
     providers: [
       { alias: 'default', rpcUrl: 'https://arb1.arbitrum.io/rpc' },
-      { alias: 'publicnode', rpcUrl: 'https://arbitrum-one.publicnode.com' },
       { alias: 'reblok', homepageUrl: 'https://reblok.io' },
       { alias: 'quicknode', homepageUrl: 'https://quicknode.com' },
       { alias: 'drpc', homepageUrl: 'https://drpc.org/' },
@@ -133,7 +129,6 @@ export const CHAINS: Chain[] = [
     name: 'Avalanche',
     providers: [
       { alias: 'default', rpcUrl: 'https://api.avax.network/ext/bc/C/rpc' },
-      { alias: 'publicnode', rpcUrl: 'https://avalanche-c-chain.publicnode.com' },
       { alias: 'reblok', homepageUrl: 'https://reblok.io' },
       { alias: 'quicknode', homepageUrl: 'https://quicknode.com' },
       { alias: 'drpc', homepageUrl: 'https://drpc.org/' },
@@ -170,7 +165,6 @@ export const CHAINS: Chain[] = [
     name: 'Base',
     providers: [
       { alias: 'default', rpcUrl: 'https://mainnet.base.org' },
-      { alias: 'publicnode', rpcUrl: 'https://base.publicnode.com' },
       { alias: 'reblok', homepageUrl: 'https://reblok.io' },
       { alias: 'quicknode', homepageUrl: 'https://quicknode.com' },
       { alias: 'drpc', homepageUrl: 'https://drpc.org/' },
@@ -250,7 +244,6 @@ export const CHAINS: Chain[] = [
     name: 'BNB Smart Chain',
     providers: [
       { alias: 'default', rpcUrl: 'https://bsc-dataseed1.binance.org/' },
-      { alias: 'publicnode', rpcUrl: 'https://bsc.publicnode.com' },
       { alias: 'reblok', homepageUrl: 'https://reblok.io' },
       { alias: 'quicknode', homepageUrl: 'https://quicknode.com' },
       { alias: 'drpc', homepageUrl: 'https://drpc.org/' },
@@ -320,7 +313,6 @@ export const CHAINS: Chain[] = [
     name: 'Ethereum',
     providers: [
       { alias: 'default', rpcUrl: 'https://eth.llamarpc.com' },
-      { alias: 'publicnode', rpcUrl: 'https://ethereum.publicnode.com' },
       { alias: 'reblok', homepageUrl: 'https://reblok.io' },
       { alias: 'quicknode', homepageUrl: 'https://quicknode.com' },
       { alias: 'drpc', homepageUrl: 'https://drpc.org/' },
@@ -357,7 +349,6 @@ export const CHAINS: Chain[] = [
     name: 'Fantom',
     providers: [
       { alias: 'default', rpcUrl: 'https://rpcapi.fantom.network/' },
-      { alias: 'publicnode', rpcUrl: 'https://fantom.publicnode.com' },
       { alias: 'reblok', homepageUrl: 'https://reblok.io' },
       { alias: 'quicknode', homepageUrl: 'https://quicknode.com' },
       { alias: 'drpc', homepageUrl: 'https://drpc.org/' },
@@ -397,7 +388,6 @@ export const CHAINS: Chain[] = [
     name: 'Gnosis Chain',
     providers: [
       { alias: 'default', rpcUrl: 'https://rpc.gnosischain.com' },
-      { alias: 'publicnode', rpcUrl: 'https://gnosis.publicnode.com' },
       { alias: 'reblok', homepageUrl: 'https://reblok.io' },
       { alias: 'quicknode', homepageUrl: 'https://quicknode.com' },
       { alias: 'drpc', homepageUrl: 'https://drpc.org/' },
@@ -453,7 +443,6 @@ export const CHAINS: Chain[] = [
     name: 'Kava',
     providers: [
       { alias: 'default', rpcUrl: 'https://evm.kava.io/' },
-      { alias: 'publicnode', rpcUrl: 'https://kava-evm.publicnode.com' },
       { alias: 'reblok', homepageUrl: 'https://reblok.io' },
       { alias: 'drpc', homepageUrl: 'https://drpc.org/' },
     ],
@@ -490,7 +479,6 @@ export const CHAINS: Chain[] = [
     name: 'Linea',
     providers: [
       { alias: 'default', rpcUrl: 'https://rpc.linea.build' },
-      { alias: 'blockpi', rpcUrl: 'https://linea.blockpi.network/v1/rpc/public' },
       { alias: 'reblok', homepageUrl: 'https://reblok.io' },
       { alias: 'drpc', homepageUrl: 'https://drpc.org/' },
     ],
@@ -523,7 +511,6 @@ export const CHAINS: Chain[] = [
     name: 'Mantle',
     providers: [
       { alias: 'default', rpcUrl: 'https://rpc.mantle.xyz' },
-      { alias: 'publicnode', rpcUrl: 'https://mantle.publicnode.com' },
       { alias: 'reblok', homepageUrl: 'https://reblok.io' },
       { alias: 'drpc', homepageUrl: 'https://drpc.org/' },
     ],
@@ -618,7 +605,6 @@ export const CHAINS: Chain[] = [
     name: 'Moonbeam',
     providers: [
       { alias: 'default', rpcUrl: 'https://rpc.api.moonbeam.network' },
-      { alias: 'publicnode', rpcUrl: 'https://moonbeam.publicnode.com' },
       { alias: 'reblok', homepageUrl: 'https://reblok.io' },
       { alias: 'drpc', homepageUrl: 'https://drpc.org/' },
     ],
@@ -640,7 +626,6 @@ export const CHAINS: Chain[] = [
     name: 'Moonriver',
     providers: [
       { alias: 'default', rpcUrl: 'https://rpc.api.moonriver.moonbeam.network' },
-      { alias: 'publicnode', rpcUrl: 'https://moonriver.publicnode.com' },
       { alias: 'reblok', homepageUrl: 'https://reblok.io' },
       { alias: 'drpc', homepageUrl: 'https://drpc.org/' },
     ],
@@ -682,7 +667,6 @@ export const CHAINS: Chain[] = [
     name: 'Optimism',
     providers: [
       { alias: 'default', rpcUrl: 'https://mainnet.optimism.io' },
-      { alias: 'publicnode', rpcUrl: 'https://optimism.publicnode.com' },
       { alias: 'reblok', homepageUrl: 'https://reblok.io' },
       { alias: 'quicknode', homepageUrl: 'https://quicknode.com' },
       { alias: 'drpc', homepageUrl: 'https://drpc.org/' },
@@ -740,7 +724,6 @@ export const CHAINS: Chain[] = [
     name: 'Polygon zkEVM',
     providers: [
       { alias: 'default', rpcUrl: 'https://zkevm-rpc.com' },
-      { alias: 'blockpi', rpcUrl: 'https://polygon-zkevm.blockpi.network/v1/rpc/public' },
       { alias: 'reblok', homepageUrl: 'https://reblok.io' },
       { alias: 'quicknode', homepageUrl: 'https://quicknode.com' },
       { alias: 'drpc', homepageUrl: 'https://drpc.org/' },
@@ -760,7 +743,6 @@ export const CHAINS: Chain[] = [
     name: 'Polygon',
     providers: [
       { alias: 'default', rpcUrl: 'https://rpc-mainnet.maticvigil.com' },
-      { alias: 'publicnode', rpcUrl: 'https://polygon-bor.publicnode.com' },
       { alias: 'reblok', homepageUrl: 'https://reblok.io' },
       { alias: 'quicknode', homepageUrl: 'https://quicknode.com' },
       { alias: 'drpc', homepageUrl: 'https://drpc.org/' },

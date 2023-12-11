@@ -17,10 +17,6 @@
     {
       "alias": "default",
       "rpcUrl": "https://nova.arbitrum.io/rpc"
-    },
-    {
-      "alias": "publicnode",
-      "rpcUrl": "https://arbitrum-nova.publicnode.com"
     }
   ],
   "symbol": "ETH",
