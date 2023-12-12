@@ -17,6 +17,18 @@
     {
       "alias": "default",
       "rpcUrl": "https://zkevm-rpc.com"
+    },
+    {
+      "alias": "reblok",
+      "homepageUrl": "https://reblok.io"
+    },
+    {
+      "alias": "quicknode",
+      "homepageUrl": "https://quicknode.com"
+    },
+    {
+      "alias": "drpc",
+      "homepageUrl": "https://drpc.org/"
     }
   ],
   "symbol": "ETH",

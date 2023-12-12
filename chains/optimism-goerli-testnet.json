@@ -18,6 +18,10 @@
     {
       "alias": "default",
       "rpcUrl": "https://goerli.optimism.io"
+    },
+    {
+      "alias": "publicnode",
+      "rpcUrl": "https://optimism-goerli.publicnode.com"
     }
   ],
   "symbol": "testETH",

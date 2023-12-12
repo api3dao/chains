@@ -18,6 +18,14 @@
     {
       "alias": "default",
       "rpcUrl": "https://api.avax-test.network/ext/bc/C/rpc"
+    },
+    {
+      "alias": "publicnode",
+      "rpcUrl": "https://avalanche-fuji-c-chain.publicnode.com"
+    },
+    {
+      "alias": "reblok",
+      "homepageUrl": "https://reblok.io"
     }
   ],
   "symbol": "testAVAX",

@@ -18,6 +18,10 @@
     {
       "alias": "default",
       "rpcUrl": "https://rpc.chiadochain.net"
+    },
+    {
+      "alias": "publicnode",
+      "rpcUrl": "https://gnosis-chiado.publicnode.com"
     }
   ],
   "symbol": "testxDAI",

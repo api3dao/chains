@@ -18,6 +18,14 @@
     {
       "alias": "default",
       "rpcUrl": "https://goerli-rollup.arbitrum.io/rpc"
+    },
+    {
+      "alias": "publicnode",
+      "rpcUrl": "https://arbitrum-goerli.publicnode.com"
+    },
+    {
+      "alias": "reblok",
+      "homepageUrl": "https://reblok.io"
     }
   ],
   "symbol": "testETH",

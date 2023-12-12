@@ -18,6 +18,14 @@
     {
       "alias": "default",
       "rpcUrl": "https://rpc-sepolia.rockx.com"
+    },
+    {
+      "alias": "publicnode",
+      "rpcUrl": "https://ethereum-sepolia.publicnode.com"
+    },
+    {
+      "alias": "reblok",
+      "homepageUrl": "https://reblok.io"
     }
   ],
   "symbol": "testETH",

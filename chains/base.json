@@ -17,6 +17,18 @@
     {
       "alias": "default",
       "rpcUrl": "https://mainnet.base.org"
+    },
+    {
+      "alias": "reblok",
+      "homepageUrl": "https://reblok.io"
+    },
+    {
+      "alias": "quicknode",
+      "homepageUrl": "https://quicknode.com"
+    },
+    {
+      "alias": "drpc",
+      "homepageUrl": "https://drpc.org/"
     }
   ],
   "symbol": "ETH",

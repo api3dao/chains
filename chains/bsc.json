@@ -17,7 +17,19 @@
   "providers": [
     {
       "alias": "default",
-      "rpcUrl": "https://rpc.ankr.com/bsc"
+      "rpcUrl": "https://bsc-dataseed1.binance.org/"
+    },
+    {
+      "alias": "reblok",
+      "homepageUrl": "https://reblok.io"
+    },
+    {
+      "alias": "quicknode",
+      "homepageUrl": "https://quicknode.com"
+    },
+    {
+      "alias": "drpc",
+      "homepageUrl": "https://drpc.org/"
     }
   ],
   "symbol": "BNB",

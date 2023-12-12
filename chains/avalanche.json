@@ -18,6 +18,18 @@
     {
       "alias": "default",
       "rpcUrl": "https://api.avax.network/ext/bc/C/rpc"
+    },
+    {
+      "alias": "reblok",
+      "homepageUrl": "https://reblok.io"
+    },
+    {
+      "alias": "quicknode",
+      "homepageUrl": "https://quicknode.com"
+    },
+    {
+      "alias": "drpc",
+      "homepageUrl": "https://drpc.org/"
     }
   ],
   "symbol": "AVAX",

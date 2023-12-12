@@ -17,6 +17,10 @@
     {
       "alias": "default",
       "rpcUrl": "https://rpc.public.zkevm-test.net"
+    },
+    {
+      "alias": "reblok",
+      "homepageUrl": "https://reblok.io"
     }
   ],
   "symbol": "testETH",

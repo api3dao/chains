@@ -18,6 +18,14 @@
     {
       "alias": "default",
       "rpcUrl": "https://rpc.ankr.com/eth_goerli"
+    },
+    {
+      "alias": "publicnode",
+      "rpcUrl": "https://ethereum-goerli.publicnode.com"
+    },
+    {
+      "alias": "reblok",
+      "homepageUrl": "https://reblok.io"
     }
   ],
   "symbol": "testETH",

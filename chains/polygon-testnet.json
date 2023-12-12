@@ -17,7 +17,15 @@
   "providers": [
     {
       "alias": "default",
-      "rpcUrl": "https://rpc.ankr.com/polygon_mumbai"
+      "rpcUrl": "https://rpc-mumbai.maticvigil.com"
+    },
+    {
+      "alias": "publicnode",
+      "rpcUrl": "https://polygon-mumbai-bor.publicnode.com"
+    },
+    {
+      "alias": "reblok",
+      "homepageUrl": "https://reblok.io"
     }
   ],
   "symbol": "testMATIC",
