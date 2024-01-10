@@ -1,9 +1,6 @@
 name: Trigger on release
 
 on:
-  push:
-    branches:
-      - "moving-chains-to-phase21-organization"
   release:
     types: [published]
 jobs:
@@ -15,18 +12,18 @@ jobs:
     - name: Repository Dispatch - Release logos
       uses: peter-evans/repository-dispatch@v2
       with:
-        token: ${{ secrets.GITHUB_TOKEN }}
+        token: ${{ secrets.PAT }}
         repository: api3dao/logos
         event-type: release
     - name: Repository Dispatch - Release dapi-management
       uses: peter-evans/repository-dispatch@v2
       with:
-        token: ${{ secrets.GITHUB_TOKEN }}
+        token: ${{ secrets.PAT }}
         repository: api3dao/dapi-management
         event-type: release
     - name: Repository Dispatch - Release data-collectors
       uses: peter-evans/repository-dispatch@v2
       with:
-        token: ${{ secrets.GITHUB_TOKEN }}
+        token: ${{ secrets.PAT }}
         repository: api3dao/data-collectors
         event-type: release
