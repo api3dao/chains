@@ -1,0 +1,38 @@
+# https://github.com/changesets/action
+name: Release
+
+on:
+  push:
+    branches:
+      - phase21
+
+env:
+  NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+jobs:
+  release:
+    name: Release
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "18.x"
+
+      - name: Install dependencies
+        run: yarn --network-timeout 300000
+
+      - name: Build package
+        run: yarn build
+
+      - name: Create Release Pull Request or Publish to npm
+        uses: changesets/action@master
+        with:
+          publish: yarn release
+          commit: "ci: release packages"
+          title: "ci: release packages"
+        env:
+          GITHUB_TOKEN: ${{ secrets.PAT }}
