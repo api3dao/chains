@@ -28,7 +28,7 @@
     "test": "jest",
     "validate": "yarn validate:chains",
     "validate:chains": "ts-node scripts/validate-chains.ts",
-    "release": "pnpm changeset publish"
+    "release": "yarn changeset publish"
   },
   "dependencies": {
     "viem": "^1.21.3",
