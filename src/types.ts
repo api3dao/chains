@@ -75,6 +75,7 @@ export const chainSchema = z
     explorer: chainExplorerSchema,
     blockTimeMs: z.number().positive(),
     hardhatConfigOverrides: hardhatConfigOverrides.optional(),
+    skipProviderCheck: z.boolean().optional(), // For chains not supporting dAPIs
   })
   .superRefine((chain, ctx) => {
     if (chain.testnet && !chain.symbol.startsWith('test')) {
