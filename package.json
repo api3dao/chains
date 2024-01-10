@@ -27,7 +27,8 @@
     "providers:time": "ts-node scripts/calculate-average-block-times.ts",
     "test": "jest",
     "validate": "yarn validate:chains",
-    "validate:chains": "ts-node scripts/validate-chains.ts"
+    "validate:chains": "ts-node scripts/validate-chains.ts",
+    "release": "pnpm changeset publish"
   },
   "dependencies": {
     "viem": "^1.21.3",
