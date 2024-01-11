@@ -28,11 +28,11 @@ jobs:
       - name: Build package
         run: yarn build
 
-      - name: Create Release Pull Request or Publish to npm
+      - name: Check release
         uses: changesets/action@master
         with:
           publish: yarn release
           commit: "ci: release packages"
           title: "ci: release packages"
         env:
-          GITHUB_TOKEN: ${{ secrets.PAT }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
