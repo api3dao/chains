@@ -23,7 +23,7 @@ jobs:
           node-version: "18.x"
 
       - name: Install dependencies
-        run: yarn --network-timeout 300000
+        run: yarn install --frozen-lockfile
 
       - name: Build package
         run: yarn build
