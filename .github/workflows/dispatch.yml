@@ -1,0 +1,29 @@
+name: Trigger on release
+
+on:
+  release:
+    types: [published]
+jobs:
+  Trigger:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Repository Dispatch - Release logos
+      uses: peter-evans/repository-dispatch@v2
+      with:
+        token: ${{ secrets.PAT }}
+        repository: api3dao/logos
+        event-type: release
+    - name: Repository Dispatch - Release dapi-management
+      uses: peter-evans/repository-dispatch@v2
+      with:
+        token: ${{ secrets.PAT }}
+        repository: api3dao/dapi-management
+        event-type: release
+    - name: Repository Dispatch - Release data-collectors
+      uses: peter-evans/repository-dispatch@v2
+      with:
+        token: ${{ secrets.PAT }}
+        repository: api3dao/data-collectors
+        event-type: release

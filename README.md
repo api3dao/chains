@@ -19,9 +19,9 @@ The single source of truth for chain-related information across API3 projects
 ## 📦 Installation
 
 ```sh
-npm install @api3/chains --save
-yarn add @api3/chains
-pnpm add @api3/chains
+npm install @phase21/chains --save
+yarn add @phase21/chains
+pnpm add @phase21/chains
 ```
 
 ## 📖 API
@@ -34,7 +34,7 @@ The single source of truth for the list of supported chains.
 A static array of `Chain` objects.
 
 ```ts
-import { CHAINS } from '@api3/chains';
+import { CHAINS } from '@phase21/chains';
 console.log(CHAINS);
 /*
 [
@@ -56,7 +56,7 @@ Returns an object where the key is each chain's alias and the value is an object
 The default `url` values can be overridden with chain specific environment variables. These environment variables take the form of `HARDHAT_HTTP_RPC_URL_${toUpperSnakeCase(chain.alias)}`. e.g. `HARDHAT_HTTP_RPC_URL_ARBITRUM_GOERLI_TESTNET`.
 
 ```ts
-import { hardhatConfig } from '@api3/chains';
+import { hardhatConfig } from '@phase21/chains';
 console.log(hardhatConfig.networks());
 /*
 {
@@ -77,7 +77,7 @@ Returns an object where the key is each chain's alias and the value is an object
 NOTE: [hardhat-etherscan](https://www.npmjs.com/package/@nomiclabs/hardhat-etherscan) requires us to use a dummy API key with Blockscout block explorer APIs. We use "DUMMY_VALUE" but it could have been anything else.
 
 ```ts
-import { hardhatConfig } from '@api3/chains';
+import { hardhatConfig } from '@phase21/chains';
 console.log(hardhatConfig.etherscan());
 /*
 {
@@ -98,7 +98,7 @@ Returns an array of expected environment variable names for chains that have an 
 NOTE: Each `ETHERSCAN_API_KEY_` and `HARDHAT_HTTP_RPC_URL_` environment variable has the chain alias as a suffix, where the alias has been converted to upper snake case.
 
 ```ts
-import { hardhatConfig } from '@api3/chains';
+import { hardhatConfig } from '@phase21/chains';
 console.log(hardhatConfig.getEnvVariableNames());
 /*
 [
@@ -118,7 +118,7 @@ Returns an array of chains in the format that [Viem](https://viem.sh/docs/client
 Additional `rpcUrls` values can (optionally) be added through the use of environment variables. These environment variables take the form of `API3_CHAINS_HTTP_RPC_URL_${toUpperSnakeCase(chain.alias)}`. If a matching environment variable is detected for a given chain, then it will be added to the `http` array of the `rpcUrls.environment` object. If no matching environment variable is detected, then the `http` array is left empty.
 
 ```ts
-import { viemConfig } from '@api3/chains';
+import { viemConfig } from '@phase21/chains';
 console.log(viemConfig.chains());
 /*
 [
