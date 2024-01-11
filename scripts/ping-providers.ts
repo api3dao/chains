@@ -17,6 +17,9 @@ const slackClient = new WebClient(slackToken);
 
 async function main(): Promise<PromiseSettledResult<void>[]> {
   const promises = chains.map(async (chain) => {
+    // Skip the provider check for chains not supporting dAPIs
+    if (chain.skipProviderCheck) return;
+
     // Every chain should have at least a default provider with an RPC URL
     const defaultProvider = chain.providers.find((p) => p.alias === 'default')!;
     const client = createPublicClient({ transport: http(defaultProvider.rpcUrl!) });
