@@ -8,7 +8,7 @@
         "hardhatEtherscanAlias": "avalancheFujiTestnet",
         "required": true
       },
-      "url": "https://api-testnet.snowtrace.io/api"
+      "url": "https://api.routescan.io/v2/network/testnet/evm/43113/etherscan/api"
     },
     "browserUrl": "https://testnet.snowtrace.io/"
   },
@@ -18,6 +18,14 @@
     {
       "alias": "default",
       "rpcUrl": "https://api.avax-test.network/ext/bc/C/rpc"
+    },
+    {
+      "alias": "publicnode",
+      "rpcUrl": "https://avalanche-fuji-c-chain.publicnode.com"
+    },
+    {
+      "alias": "reblok",
+      "homepageUrl": "https://reblok.io"
     }
   ],
   "symbol": "testAVAX",

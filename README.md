@@ -113,7 +113,7 @@ console.log(hardhatConfig.getEnvVariableNames());
 
 ### viemConfig.chains()
 
-Returns an array of chains in the format that [Viem](https://viem.sh/docs/clients/chains.html) expects. Each Chain object can be used to [create a Viem public client](https://viem.sh/docs/clients/chains.html#usage).
+Returns an array of chains in the format that [Viem](https://viem.sh/docs/chains/introduction) expects. Each Chain object can be used to [create a Viem public client](https://viem.sh/docs/clients/public#usage).
 
 Additional `rpcUrls` values can (optionally) be added through the use of environment variables. These environment variables take the form of `API3_CHAINS_HTTP_RPC_URL_${toUpperSnakeCase(chain.alias)}`. If a matching environment variable is detected for a given chain, then it will be added to the `http` array of the `rpcUrls.environment` object. If no matching environment variable is detected, then the `http` array is left empty.
 

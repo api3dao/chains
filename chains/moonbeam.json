@@ -18,6 +18,14 @@
     {
       "alias": "default",
       "rpcUrl": "https://rpc.api.moonbeam.network"
+    },
+    {
+      "alias": "reblok",
+      "homepageUrl": "https://reblok.io"
+    },
+    {
+      "alias": "drpc",
+      "homepageUrl": "https://drpc.org/"
     }
   ],
   "symbol": "GLMR",

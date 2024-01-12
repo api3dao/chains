@@ -8,7 +8,7 @@
         "hardhatEtherscanAlias": "avalanche",
         "required": true
       },
-      "url": "https://api.snowtrace.io/api"
+      "url": "https://api.routescan.io/v2/network/mainnet/evm/43114/etherscan/api"
     },
     "browserUrl": "https://snowtrace.io/"
   },
@@ -18,6 +18,18 @@
     {
       "alias": "default",
       "rpcUrl": "https://api.avax.network/ext/bc/C/rpc"
+    },
+    {
+      "alias": "reblok",
+      "homepageUrl": "https://reblok.io"
+    },
+    {
+      "alias": "quicknode",
+      "homepageUrl": "https://quicknode.com"
+    },
+    {
+      "alias": "drpc",
+      "homepageUrl": "https://drpc.org/"
     }
   ],
   "symbol": "AVAX",

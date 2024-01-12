@@ -17,6 +17,14 @@
     {
       "alias": "default",
       "rpcUrl": "https://evm.kava.io/"
+    },
+    {
+      "alias": "reblok",
+      "homepageUrl": "https://reblok.io"
+    },
+    {
+      "alias": "drpc",
+      "homepageUrl": "https://drpc.org/"
     }
   ],
   "symbol": "KAVA",
