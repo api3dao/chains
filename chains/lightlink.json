@@ -19,7 +19,7 @@
       "rpcUrl": "https://replicator.phoenix.lightlink.io/rpc/v1"
     }
   ],
+  "skipProviderCheck": false,
   "symbol": "ETH",
-  "testnet": false,
-  "skipProviderCheck": false
+  "testnet": false
 }
