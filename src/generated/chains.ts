@@ -451,6 +451,7 @@ export const CHAINS: Chain[] = [
     providers: [{ alias: 'default', rpcUrl: 'https://replicator.pegasus.lightlink.io/rpc/v1' }],
     symbol: 'testETH',
     testnet: true,
+    skipProviderCheck: false,
   },
   {
     alias: 'lightlink',
@@ -465,6 +466,7 @@ export const CHAINS: Chain[] = [
     providers: [{ alias: 'default', rpcUrl: 'https://replicator.phoenix.lightlink.io/rpc/v1' }],
     symbol: 'ETH',
     testnet: false,
+    skipProviderCheck: false,
   },
   {
     alias: 'linea-goerli-testnet',

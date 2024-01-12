@@ -20,5 +20,6 @@
     }
   ],
   "symbol": "ETH",
-  "testnet": false
+  "testnet": false,
+  "skipProviderCheck": false
 }
