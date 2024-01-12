@@ -449,9 +449,9 @@ export const CHAINS: Chain[] = [
     id: '1891',
     name: 'LightLink Goerli Testnet',
     providers: [{ alias: 'default', rpcUrl: 'https://replicator.pegasus.lightlink.io/rpc/v1' }],
+    skipProviderCheck: true,
     symbol: 'testETH',
     testnet: true,
-    skipProviderCheck: false,
   },
   {
     alias: 'lightlink',
@@ -464,9 +464,9 @@ export const CHAINS: Chain[] = [
     id: '1890',
     name: 'LightLink',
     providers: [{ alias: 'default', rpcUrl: 'https://replicator.phoenix.lightlink.io/rpc/v1' }],
+    skipProviderCheck: true,
     symbol: 'ETH',
     testnet: false,
-    skipProviderCheck: false,
   },
   {
     alias: 'linea-goerli-testnet',

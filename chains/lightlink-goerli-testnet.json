@@ -19,7 +19,7 @@
       "rpcUrl": "https://replicator.pegasus.lightlink.io/rpc/v1"
     }
   ],
-  "skipProviderCheck": false,
+  "skipProviderCheck": true,
   "symbol": "testETH",
   "testnet": true
 }
