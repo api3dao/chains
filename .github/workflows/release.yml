@@ -29,10 +29,10 @@ jobs:
         run: yarn build
 
       - name: Check release
-        uses: changesets/action@master
+        uses: changesets/action@v1
         with:
           publish: yarn release
           commit: "ci: release packages"
           title: "ci: release packages"
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.PAT }}

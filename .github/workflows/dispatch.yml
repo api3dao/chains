@@ -9,21 +9,10 @@ jobs:
     steps:
     - uses: actions/checkout@v4
 
-    - name: Repository Dispatch - Release logos
+    - name: Repository Dispatch - Release chains
       uses: peter-evans/repository-dispatch@v2
       with:
         token: ${{ secrets.PAT }}
-        repository: api3dao/logos
+        repository: api3dao/update-sentry
         event-type: release
-    - name: Repository Dispatch - Release dapi-management
-      uses: peter-evans/repository-dispatch@v2
-      with:
-        token: ${{ secrets.PAT }}
-        repository: api3dao/dapi-management
-        event-type: release
-    - name: Repository Dispatch - Release data-collectors
-      uses: peter-evans/repository-dispatch@v2
-      with:
-        token: ${{ secrets.PAT }}
-        repository: api3dao/data-collectors
-        event-type: release
+        client-payload: '{"repository": "chains"}'
