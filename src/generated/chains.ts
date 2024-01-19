@@ -176,6 +176,21 @@ export const CHAINS: Chain[] = [
     testnet: false,
   },
   {
+    alias: 'blast-sepolia-testnet',
+    blockTimeMs: 2000,
+    decimals: 18,
+    explorer: {
+      api: { key: { required: true }, url: 'https://api.routescan.io/v2/network/testnet/evm/168587773/etherscan/api' },
+      browserUrl: 'https://testnet.blastscan.io/',
+    },
+    id: '168587773',
+    name: 'Blast Sepolia Testnet',
+    providers: [{ alias: 'default', rpcUrl: 'https://sepolia.blast.io' }],
+    skipProviderCheck: true,
+    symbol: 'testETH',
+    testnet: true,
+  },
+  {
     alias: 'boba-bnb',
     blockTimeMs: 636,
     decimals: 18,
