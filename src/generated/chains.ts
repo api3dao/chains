@@ -687,6 +687,23 @@ export const CHAINS: Chain[] = [
     testnet: true,
   },
   {
+    alias: 'optimism-sepolia-testnet',
+    blockTimeMs: 2000,
+    decimals: 18,
+    explorer: {
+      api: { key: { required: true }, url: 'https://api-sepolia-optimistic.etherscan.io/api' },
+      browserUrl: 'https://sepolia-optimism.etherscan.io/',
+    },
+    id: '11155420',
+    name: 'Optimism sepolia testnet',
+    providers: [
+      { alias: 'default', rpcUrl: 'https://sepolia.optimism.io' },
+      { alias: 'publicnode', rpcUrl: 'https://optimism-sepolia.publicnode.com' },
+    ],
+    symbol: 'testETH',
+    testnet: true,
+  },
+  {
     alias: 'optimism',
     blockTimeMs: 2000,
     decimals: 18,
