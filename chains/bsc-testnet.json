@@ -1,6 +1,6 @@
 {
   "alias": "bsc-testnet",
-  "blockTimeMs": 3002,
+  "blockTimeMs": 3000,
   "decimals": 18,
   "explorer": {
     "api": {

@@ -1,6 +1,6 @@
 {
   "alias": "avalanche",
-  "blockTimeMs": 2036,
+  "blockTimeMs": 2050,
   "decimals": 18,
   "explorer": {
     "api": {

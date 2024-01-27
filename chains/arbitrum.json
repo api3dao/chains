@@ -1,6 +1,6 @@
 {
   "alias": "arbitrum",
-  "blockTimeMs": 265,
+  "blockTimeMs": 257,
   "decimals": 18,
   "explorer": {
     "api": {
