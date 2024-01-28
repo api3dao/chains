@@ -1,6 +1,6 @@
 {
   "alias": "moonbeam",
-  "blockTimeMs": 12233,
+  "blockTimeMs": 12214,
   "decimals": 18,
   "explorer": {
     "api": {

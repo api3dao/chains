@@ -1,6 +1,6 @@
 {
   "alias": "polygon",
-  "blockTimeMs": 2210,
+  "blockTimeMs": 2279,
   "decimals": 18,
   "explorer": {
     "api": {

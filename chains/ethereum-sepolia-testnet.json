@@ -1,6 +1,6 @@
 {
   "alias": "ethereum-sepolia-testnet",
-  "blockTimeMs": 12982,
+  "blockTimeMs": 13578,
   "decimals": 18,
   "explorer": {
     "api": {

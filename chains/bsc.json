@@ -1,6 +1,6 @@
 {
   "alias": "bsc",
-  "blockTimeMs": 3009,
+  "blockTimeMs": 3007,
   "decimals": 18,
   "explorer": {
     "api": {
