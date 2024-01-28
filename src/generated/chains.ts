@@ -316,7 +316,7 @@ export const CHAINS: Chain[] = [
     id: '1',
     name: 'Ethereum',
     providers: [
-      { alias: 'default', rpcUrl: 'https://eth.llamarpc.com' },
+      { alias: 'default', rpcUrl: 'https://cloudflare-eth.com' },
       { alias: 'reblok', homepageUrl: 'https://reblok.io' },
       { alias: 'quicknode', homepageUrl: 'https://quicknode.com' },
       { alias: 'drpc', homepageUrl: 'https://drpc.org/' },
