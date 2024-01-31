@@ -1,6 +1,6 @@
 {
   "alias": "metis-goerli-testnet",
-  "blockTimeMs": 5911,
+  "blockTimeMs": 24528,
   "decimals": 18,
   "explorer": {
     "api": {

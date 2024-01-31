@@ -1,6 +1,6 @@
 {
   "alias": "aurora",
-  "blockTimeMs": 1135,
+  "blockTimeMs": 1069,
   "decimals": 18,
   "explorer": {
     "api": {

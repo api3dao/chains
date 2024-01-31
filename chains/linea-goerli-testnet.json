@@ -1,6 +1,6 @@
 {
   "alias": "linea-goerli-testnet",
-  "blockTimeMs": 12099,
+  "blockTimeMs": 4646,
   "decimals": 18,
   "explorer": {
     "api": {

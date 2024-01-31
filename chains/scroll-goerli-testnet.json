@@ -1,6 +1,6 @@
 {
   "alias": "scroll-goerli-testnet",
-  "blockTimeMs": 3002,
+  "blockTimeMs": 28244,
   "decimals": 18,
   "explorer": {
     "api": {

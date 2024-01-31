@@ -40,7 +40,7 @@ async function calculateAverageBlockTimes(): Promise<void> {
       if (blockTimeMs) {
         const filePath = path.join(__dirname, `../chains/${chain.alias}.json`);
         const fileContent = JSON.parse(fs.readFileSync(filePath, 'utf8'));
-        fs.writeFileSync(filePath, JSON.stringify({ ...fileContent, blockTimeMs }, null, 2));
+        fs.writeFileSync(filePath, JSON.stringify({ ...fileContent, blockTimeMs }, null, 2) + '\n');
       }
 
       return { alias: chain.alias, blockTimeMs };

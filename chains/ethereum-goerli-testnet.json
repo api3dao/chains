@@ -1,6 +1,6 @@
 {
   "alias": "ethereum-goerli-testnet",
-  "blockTimeMs": 15140,
+  "blockTimeMs": 15997,
   "decimals": 18,
   "explorer": {
     "api": {

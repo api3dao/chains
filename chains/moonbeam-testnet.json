@@ -1,6 +1,6 @@
 {
   "alias": "moonbeam-testnet",
-  "blockTimeMs": 13654,
+  "blockTimeMs": 13097,
   "decimals": 18,
   "explorer": {
     "api": {
