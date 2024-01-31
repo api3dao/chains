@@ -9,24 +9,24 @@
     {
       "groupName": "other minor updates",
       "matchUpdateTypes": ["patch", "minor"],
-      "schedule": ["after 3pm on Friday"]
+      "schedule": ["before 10am on the first day of the month"]
     },
     {
       "groupName": "other major updates",
       "matchUpdateTypes": ["major"],
-      "schedule": ["after 1pm on Friday"]
+      "schedule": ["before 10am on the first day of the month"]
     },
     {
       "groupName": "api3 major updates",
       "matchPackagePatterns": ["@api3/.*", "@phase21/.*"],
       "matchUpdateTypes": ["major"],
-      "schedule": ["before 4pm"]
+      "schedule": ["before 1pm"]
     },
     {
       "groupName": "api3",
       "matchPackagePatterns": ["@api3/.*", "@phase21/.*"],
       "matchUpdateTypes": ["patch", "minor"],
-      "schedule": ["before 3pm"]
+      "schedule": ["before 1pm"]
     }
   ],
   "rangeStrategy": "bump",
