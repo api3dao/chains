@@ -13,7 +13,7 @@
     "browserUrl": "https://goerli-optimism.etherscan.io/"
   },
   "id": "420",
-  "name": "Optimism testnet",
+  "name": "Optimism Goerli testnet",
   "providers": [
     {
       "alias": "default",

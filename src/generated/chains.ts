@@ -20,7 +20,7 @@ export const CHAINS: Chain[] = [
       browserUrl: 'https://testnet.arbiscan.io/',
     },
     id: '421613',
-    name: 'Arbitrum testnet',
+    name: 'Arbitrum Goerli testnet',
     providers: [
       { alias: 'default', rpcUrl: 'https://goerli-rollup.arbitrum.io/rpc' },
       { alias: 'publicnode', rpcUrl: 'https://arbitrum-goerli.publicnode.com' },
@@ -560,7 +560,7 @@ export const CHAINS: Chain[] = [
       browserUrl: 'https://goerli.explorer.metisdevops.link/',
     },
     id: '599',
-    name: 'Metis testnet',
+    name: 'Metis Goerli testnet',
     providers: [{ alias: 'default', rpcUrl: 'https://goerli.gateway.metisdevops.link' }],
     symbol: 'testMETIS',
     testnet: true,
@@ -678,7 +678,7 @@ export const CHAINS: Chain[] = [
       browserUrl: 'https://goerli-optimism.etherscan.io/',
     },
     id: '420',
-    name: 'Optimism testnet',
+    name: 'Optimism Goerli testnet',
     providers: [
       { alias: 'default', rpcUrl: 'https://goerli.optimism.io' },
       { alias: 'publicnode', rpcUrl: 'https://optimism-goerli.publicnode.com' },
@@ -695,7 +695,7 @@ export const CHAINS: Chain[] = [
       browserUrl: 'https://sepolia-optimism.etherscan.io/',
     },
     id: '11155420',
-    name: 'Optimism sepolia testnet',
+    name: 'Optimism Sepolia testnet',
     providers: [
       { alias: 'default', rpcUrl: 'https://sepolia.optimism.io' },
       { alias: 'publicnode', rpcUrl: 'https://optimism-sepolia.publicnode.com' },
@@ -755,7 +755,7 @@ export const CHAINS: Chain[] = [
       browserUrl: 'https://testnet-zkevm.polygonscan.com/',
     },
     id: '1442',
-    name: 'Polygon zkEVM testnet',
+    name: 'Polygon zkEVM Goerli testnet',
     providers: [
       { alias: 'default', rpcUrl: 'https://rpc.public.zkevm-test.net' },
       { alias: 'reblok', homepageUrl: 'https://reblok.io' },
@@ -884,7 +884,7 @@ export const CHAINS: Chain[] = [
       },
     },
     id: '280',
-    name: 'zkSync testnet',
+    name: 'zkSync Goerli testnet',
     providers: [{ alias: 'default', rpcUrl: 'https://testnet.era.zksync.dev' }],
     symbol: 'testETH',
     testnet: true,

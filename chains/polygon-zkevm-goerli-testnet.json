@@ -12,7 +12,7 @@
     "browserUrl": "https://testnet-zkevm.polygonscan.com/"
   },
   "id": "1442",
-  "name": "Polygon zkEVM testnet",
+  "name": "Polygon zkEVM Goerli testnet",
   "providers": [
     {
       "alias": "default",
