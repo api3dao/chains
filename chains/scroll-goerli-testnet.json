@@ -19,6 +19,7 @@
       "rpcUrl": "https://alpha-rpc.scroll.io/l2"
     }
   ],
+  "skipProviderCheck": true,
   "symbol": "testETH",
   "testnet": true
 }
