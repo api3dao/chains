@@ -12,8 +12,8 @@
     "noUnusedParameters": true,
     "outDir": "dist",
     "skipLibCheck": true,
-    "strict": true
+    "strict": true,
   },
   "exclude": ["scripts", "chains"],
-  "include": ["src"]
+  "include": ["src"],
 }
