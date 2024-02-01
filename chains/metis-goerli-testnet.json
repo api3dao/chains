@@ -12,7 +12,7 @@
     "browserUrl": "https://goerli.explorer.metisdevops.link/"
   },
   "id": "599",
-  "name": "Metis testnet",
+  "name": "Metis Goerli testnet",
   "providers": [
     {
       "alias": "default",
