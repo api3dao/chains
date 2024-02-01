@@ -37,7 +37,7 @@
     "@api3/promise-utils": "^0.4.0",
     "@slack/web-api": "^7.0.1",
     "@types/jest": "^29.5.11",
-    "@types/node": "^20.11.5",
+    "@types/node": "^20.11.15",
     "@types/prettier": "^3.0.0",
     "@typescript-eslint/eslint-plugin": "^6.19.1",
     "@typescript-eslint/parser": "^6.20.0",
