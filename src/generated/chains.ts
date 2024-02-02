@@ -668,7 +668,7 @@ export const CHAINS: Chain[] = [
   },
   {
     alias: 'oev-network-sepolia-testnet',
-    blockTimeMs: 123,
+    blockTimeMs: 1686780,
     decimals: 18,
     explorer: {
       api: {
