@@ -667,6 +667,23 @@ export const CHAINS: Chain[] = [
     testnet: false,
   },
   {
+    alias: 'oev-network-sepolia-testnet',
+    blockTimeMs: 1686780,
+    decimals: 18,
+    explorer: {
+      api: {
+        key: { required: false },
+        url: 'https://oev-network-sepolia-testnet-blockscout.eu-north-2.gateway.fm/api/',
+      },
+      browserUrl: 'https://oev-network-sepolia-testnet-blockscout.eu-north-2.gateway.fm/',
+    },
+    id: '736160594',
+    name: 'OEV Network Sepolia testnet',
+    providers: [{ alias: 'default', rpcUrl: 'https://oev-network-sepolia-testnet-rpc.eu-north-2.gateway.fm' }],
+    symbol: 'testETH',
+    testnet: true,
+  },
+  {
     alias: 'optimism-goerli-testnet',
     blockTimeMs: 2000,
     decimals: 18,
