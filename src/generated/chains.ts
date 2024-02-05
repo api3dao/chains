@@ -840,6 +840,7 @@ export const CHAINS: Chain[] = [
     id: '534353',
     name: 'Scroll Goerli testnet',
     providers: [{ alias: 'default', rpcUrl: 'https://alpha-rpc.scroll.io/l2' }],
+    skipProviderCheck: true,
     symbol: 'testETH',
     testnet: true,
   },
