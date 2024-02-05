@@ -830,6 +830,21 @@ export const CHAINS: Chain[] = [
     testnet: false,
   },
   {
+    alias: 'scroll-goerli-testnet',
+    blockTimeMs: 28244,
+    decimals: 18,
+    explorer: {
+      api: { key: { required: false }, url: 'https://blockscout.scroll.io/api' },
+      browserUrl: 'https://blockscout.scroll.io/',
+    },
+    id: '534353',
+    name: 'Scroll Goerli testnet',
+    providers: [{ alias: 'default', rpcUrl: 'https://alpha-rpc.scroll.io/l2' }],
+    skipProviderCheck: true,
+    symbol: 'testETH',
+    testnet: true,
+  },
+  {
     alias: 'sx-testnet',
     blockTimeMs: 2000,
     decimals: 18,
