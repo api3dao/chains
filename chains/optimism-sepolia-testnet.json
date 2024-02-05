@@ -12,7 +12,7 @@
     "browserUrl": "https://sepolia-optimism.etherscan.io/"
   },
   "id": "11155420",
-  "name": "Optimism sepolia testnet",
+  "name": "Optimism Sepolia testnet",
   "providers": [
     {
       "alias": "default",

@@ -13,7 +13,7 @@
     }
   },
   "id": "280",
-  "name": "zkSync testnet",
+  "name": "zkSync Goerli testnet",
   "providers": [
     {
       "alias": "default",

@@ -13,7 +13,7 @@
     "browserUrl": "https://testnet.arbiscan.io/"
   },
   "id": "421613",
-  "name": "Arbitrum testnet",
+  "name": "Arbitrum Goerli testnet",
   "providers": [
     {
       "alias": "default",
