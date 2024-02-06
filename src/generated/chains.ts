@@ -298,7 +298,7 @@ export const CHAINS: Chain[] = [
     id: '11155111',
     name: 'Ethereum Sepolia testnet',
     providers: [
-      { alias: 'default', rpcUrl: 'https://rpc-sepolia.rockx.com' },
+      { alias: 'default', rpcUrl: 'https://sepolia.gateway.tenderly.co' },
       { alias: 'publicnode', rpcUrl: 'https://ethereum-sepolia.publicnode.com' },
       { alias: 'reblok', homepageUrl: 'https://reblok.io' },
     ],
