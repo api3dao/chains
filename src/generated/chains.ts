@@ -157,6 +157,23 @@ export const CHAINS: Chain[] = [
     testnet: true,
   },
   {
+    alias: 'base-sepolia-testnet',
+    blockTimeMs: 2000,
+    decimals: 18,
+    explorer: {
+      api: { key: { required: true }, url: 'https://api-sepolia.basescan.org/api' },
+      browserUrl: 'https://sepolia.basescan.org/',
+    },
+    id: '84532',
+    name: 'Base Sepolia testnet',
+    providers: [
+      { alias: 'default', rpcUrl: 'https://sepolia.base.org' },
+      { alias: 'publicnode', rpcUrl: 'https://base-sepolia.publicnode.com' },
+    ],
+    symbol: 'testETH',
+    testnet: true,
+  },
+  {
     alias: 'base',
     blockTimeMs: 2000,
     decimals: 18,
