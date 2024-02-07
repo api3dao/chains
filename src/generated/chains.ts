@@ -458,7 +458,7 @@ export const CHAINS: Chain[] = [
     blockTimeMs: 502,
     decimals: 18,
     explorer: {
-      api: { key: { required: true }, url: 'https://pegasus.lightlink.io/api' },
+      api: { key: { required: false }, url: 'https://pegasus.lightlink.io/api' },
       browserUrl: 'https://pegasus.lightlink.io/',
     },
     id: '1891',
@@ -473,7 +473,7 @@ export const CHAINS: Chain[] = [
     blockTimeMs: 505,
     decimals: 18,
     explorer: {
-      api: { key: { required: true }, url: 'https://phoenix.lightlink.io/api' },
+      api: { key: { required: false }, url: 'https://phoenix.lightlink.io/api' },
       browserUrl: 'https://phoenix.lightlink.io/',
     },
     id: '1890',
