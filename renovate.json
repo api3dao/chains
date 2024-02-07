@@ -19,16 +19,14 @@
     {
       "groupName": "api3 major updates",
       "matchPackagePatterns": ["@api3/.*", "@phase21/.*"],
-      "matchUpdateTypes": ["major"],
-      "schedule": ["before 1pm"]
+      "matchUpdateTypes": ["major"]
     },
     {
       "groupName": "api3",
       "matchPackagePatterns": ["@api3/.*", "@phase21/.*"],
-      "matchUpdateTypes": ["patch", "minor"],
-      "schedule": ["before 1pm"]
+      "matchUpdateTypes": ["patch", "minor"]
     }
   ],
   "rangeStrategy": "bump",
-  "reviewers": ["hiletmis"]
+  "reviewers": ["andreogle"]
 }
