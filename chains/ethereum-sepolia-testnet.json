@@ -17,7 +17,7 @@
   "providers": [
     {
       "alias": "default",
-      "rpcUrl": "https://rpc-sepolia.rockx.com"
+      "rpcUrl": "https://sepolia.gateway.tenderly.co"
     },
     {
       "alias": "publicnode",
