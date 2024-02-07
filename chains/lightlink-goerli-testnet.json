@@ -5,7 +5,7 @@
   "explorer": {
     "api": {
       "key": {
-        "required": true
+        "required": false
       },
       "url": "https://pegasus.lightlink.io/api"
     },
