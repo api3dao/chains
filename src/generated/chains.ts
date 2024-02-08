@@ -157,6 +157,23 @@ export const CHAINS: Chain[] = [
     testnet: true,
   },
   {
+    alias: 'base-sepolia-testnet',
+    blockTimeMs: 2000,
+    decimals: 18,
+    explorer: {
+      api: { key: { required: true }, url: 'https://api-sepolia.basescan.org/api' },
+      browserUrl: 'https://sepolia.basescan.org/',
+    },
+    id: '84532',
+    name: 'Base Sepolia testnet',
+    providers: [
+      { alias: 'default', rpcUrl: 'https://sepolia.base.org' },
+      { alias: 'publicnode', rpcUrl: 'https://base-sepolia.publicnode.com' },
+    ],
+    symbol: 'testETH',
+    testnet: true,
+  },
+  {
     alias: 'base',
     blockTimeMs: 2000,
     decimals: 18,
@@ -458,7 +475,7 @@ export const CHAINS: Chain[] = [
     blockTimeMs: 502,
     decimals: 18,
     explorer: {
-      api: { key: { required: true }, url: 'https://pegasus.lightlink.io/api' },
+      api: { key: { required: false }, url: 'https://pegasus.lightlink.io/api' },
       browserUrl: 'https://pegasus.lightlink.io/',
     },
     id: '1891',
@@ -473,7 +490,7 @@ export const CHAINS: Chain[] = [
     blockTimeMs: 505,
     decimals: 18,
     explorer: {
-      api: { key: { required: true }, url: 'https://phoenix.lightlink.io/api' },
+      api: { key: { required: false }, url: 'https://phoenix.lightlink.io/api' },
       browserUrl: 'https://phoenix.lightlink.io/',
     },
     id: '1890',
