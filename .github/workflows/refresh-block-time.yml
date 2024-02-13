@@ -1,0 +1,41 @@
+name: Refresh Block Times
+
+on:
+  schedule:
+    # Run once a month
+    - cron: '0 12 1 * *'
+
+jobs:
+  refresh-block-times:
+    runs-on: ubuntu-latest
+    env:
+      branchName: action-refresh-block-time
+    steps:
+      - name: Clone @api3/chains
+        uses: actions/checkout@v3
+
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Install Dependencies
+        run: yarn install --frozen-lockfile
+
+      - name: Run providers:time
+        run: |
+          yarn providers:time
+          yarn generate:chains
+
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com>"
+          git checkout -b ${{ env.branchName }}
+          git commit -am "Refresh block times"
+          git push origin HEAD
+
+      - name: Create pull request
+        run: gh pr create -B main -H ${{ env.branchName }} --title 'Refresh Block Times' --body 'Created by GitGub Action'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
