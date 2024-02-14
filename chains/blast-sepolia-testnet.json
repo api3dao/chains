@@ -5,7 +5,7 @@
   "explorer": {
     "api": {
       "key": {
-        "required": true
+        "required": false
       },
       "url": "https://api.routescan.io/v2/network/testnet/evm/168587773/etherscan/api"
     },
