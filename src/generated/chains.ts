@@ -180,7 +180,7 @@ export const CHAINS: Chain[] = [
     blockTimeMs: 2000,
     decimals: 18,
     explorer: {
-      api: { key: { required: true }, url: 'https://api.routescan.io/v2/network/testnet/evm/168587773/etherscan/api' },
+      api: { key: { required: false }, url: 'https://api.routescan.io/v2/network/testnet/evm/168587773/etherscan/api' },
       browserUrl: 'https://testnet.blastscan.io/',
     },
     id: '168587773',
