@@ -140,6 +140,23 @@ export const CHAINS: Chain[] = [
     testnet: false,
   },
   {
+    alias: 'base-goerli-testnet',
+    blockTimeMs: 2000,
+    decimals: 18,
+    explorer: {
+      api: { key: { required: false }, url: 'https://api-goerli.basescan.org/api' },
+      browserUrl: 'https://goerli.basescan.org/',
+    },
+    id: '84531',
+    name: 'Base Goerli testnet',
+    providers: [
+      { alias: 'default', rpcUrl: 'https://goerli.base.org' },
+      { alias: 'publicnode', rpcUrl: 'https://base-goerli.publicnode.com' },
+    ],
+    symbol: 'testETH',
+    testnet: true,
+  },
+  {
     alias: 'base-sepolia-testnet',
     blockTimeMs: 2000,
     decimals: 18,
