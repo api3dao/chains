@@ -23,6 +23,7 @@
       "rpcUrl": "https://base-goerli.publicnode.com"
     }
   ],
+  "skipProviderCheck": true,
   "symbol": "testETH",
   "testnet": true
 }
