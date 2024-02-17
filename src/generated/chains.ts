@@ -153,6 +153,7 @@ export const CHAINS: Chain[] = [
       { alias: 'default', rpcUrl: 'https://goerli.base.org' },
       { alias: 'publicnode', rpcUrl: 'https://base-goerli.publicnode.com' },
     ],
+    skipProviderCheck: true,
     symbol: 'testETH',
     testnet: true,
   },
