@@ -4,11 +4,11 @@ API3 chains
 
 <div align="center">
 
-![npm version](https://img.shields.io/npm/v/%40api3%2Fchains?link=https%3A%2F%2Fwww.npmjs.com%2Fpackage%2F%40api3%2Fchains)
-![downloads per week](https://img.shields.io/npm/dw/%40api3%2Fchains?link=https%3A%2F%2Fnpm-stat.com%2Fcharts.html%3Fpackage%3D%2540api3%252Fchains)
-![continuous build](https://img.shields.io/github/actions/workflow/status/api3dao/chains/continuous-build.yml?label=build&link=https%3A%2F%2Fgithub.com%2Fapi3dao%2Fchains%2Factions%2Fworkflows%2Fcontinuous-build.yml)
-![provider checks](https://img.shields.io/github/actions/workflow/status/api3dao/chains/check-providers.yml?label=provider%20checks&link=https%3A%2F%2Fgithub.com%2Fapi3dao%2Fchains%2Factions%2Fworkflows%2Fcheck-providers.yml)
-![license](https://img.shields.io/npm/l/%40api3%2Fchains?link=https%3A%2F%2Fwww.npmjs.com%2Fpackage%2F%40api3%2Fchains)
+[![npm version](https://img.shields.io/npm/v/%40api3%2Fchains)](https://www.npmjs.com/package/@api3/chains)
+[![downloads per week](https://img.shields.io/npm/dw/%40api3%2Fchains)](https://npm-stat.com/charts.html?package=%40api3%2Fchains)
+[![continuous build](https://img.shields.io/github/actions/workflow/status/api3dao/chains/continuous-build.yml?label=build)](https://github.com/api3dao/chains/actions/workflows/continuous-build.yml)
+[![provider checks](https://img.shields.io/github/actions/workflow/status/api3dao/chains/check-providers.yml?label=provider%20checks)](https://github.com/api3dao/chains/actions/workflows/check-providers.yml)
+[![license](https://img.shields.io/npm/l/%40api3%2Fchains)](https://www.npmjs.com/package/@api3/chains)
 
 </div>
 
