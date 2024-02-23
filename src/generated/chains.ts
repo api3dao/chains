@@ -685,6 +685,25 @@ export const CHAINS: Chain[] = [
     testnet: false,
   },
   {
+    alias: 'oev-network-sepolia-testnet-hackathon',
+    blockTimeMs: 1686780,
+    decimals: 18,
+    explorer: {
+      api: {
+        key: { required: false },
+        url: 'https://oev-network-sepolia-testnet-hackathon-blockscout.eu-north-2.gateway.fm/api/',
+      },
+      browserUrl: 'https://oev-network-sepolia-testnet-hackathon-blockscout.eu-north-2.gateway.fm/',
+    },
+    id: '1572219910',
+    name: 'OEV Network Sepolia testnet (hackathon)',
+    providers: [
+      { alias: 'default', rpcUrl: 'https://oev-network-sepolia-testnet-hackathon-rpc.eu-north-2.gateway.fm' },
+    ],
+    symbol: 'testETH',
+    testnet: true,
+  },
+  {
     alias: 'oev-network-sepolia-testnet',
     blockTimeMs: 1686780,
     decimals: 18,
