@@ -1,6 +1,6 @@
 {
   "alias": "arbitrum-nova",
-  "blockTimeMs": 317,
+  "blockTimeMs": 262,
   "decimals": 18,
   "explorer": {
     "api": {

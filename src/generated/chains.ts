@@ -10,7 +10,7 @@ import { Chain } from '../types';
 export const CHAINS: Chain[] = [
   {
     alias: 'arbitrum-goerli-testnet',
-    blockTimeMs: 1428,
+    blockTimeMs: 3431,
     decimals: 18,
     explorer: {
       api: {
@@ -31,7 +31,7 @@ export const CHAINS: Chain[] = [
   },
   {
     alias: 'arbitrum-nova',
-    blockTimeMs: 317,
+    blockTimeMs: 262,
     decimals: 18,
     explorer: {
       api: { key: { required: true }, url: 'https://api-nova.arbiscan.io/api' },
@@ -45,7 +45,7 @@ export const CHAINS: Chain[] = [
   },
   {
     alias: 'arbitrum',
-    blockTimeMs: 257,
+    blockTimeMs: 255,
     decimals: 18,
     explorer: {
       api: { key: { hardhatEtherscanAlias: 'arbitrumOne', required: true }, url: 'https://api.arbiscan.io/api' },
@@ -64,7 +64,7 @@ export const CHAINS: Chain[] = [
   },
   {
     alias: 'aurora-testnet',
-    blockTimeMs: 782,
+    blockTimeMs: 1313,
     decimals: 18,
     explorer: {
       api: {
@@ -81,7 +81,7 @@ export const CHAINS: Chain[] = [
   },
   {
     alias: 'aurora',
-    blockTimeMs: 1069,
+    blockTimeMs: 1309,
     decimals: 18,
     explorer: {
       api: {
@@ -98,7 +98,7 @@ export const CHAINS: Chain[] = [
   },
   {
     alias: 'avalanche-testnet',
-    blockTimeMs: 3994,
+    blockTimeMs: 2856,
     decimals: 18,
     explorer: {
       api: {
@@ -119,7 +119,7 @@ export const CHAINS: Chain[] = [
   },
   {
     alias: 'avalanche',
-    blockTimeMs: 2050,
+    blockTimeMs: 2075,
     decimals: 18,
     explorer: {
       api: {
@@ -225,7 +225,7 @@ export const CHAINS: Chain[] = [
   },
   {
     alias: 'boba-bnb',
-    blockTimeMs: 1206,
+    blockTimeMs: 2245,
     decimals: 18,
     explorer: {
       api: { key: { required: false }, url: 'https://blockexplorer.bnb.boba.network/api' },
@@ -239,7 +239,7 @@ export const CHAINS: Chain[] = [
   },
   {
     alias: 'boba-ethereum',
-    blockTimeMs: 124341,
+    blockTimeMs: 130197,
     decimals: 18,
     explorer: {
       api: { key: { required: true }, url: 'https://api.bobascan.com/api' },
@@ -271,7 +271,7 @@ export const CHAINS: Chain[] = [
   },
   {
     alias: 'bsc',
-    blockTimeMs: 3007,
+    blockTimeMs: 3006,
     decimals: 18,
     explorer: {
       api: { key: { hardhatEtherscanAlias: 'bsc', required: true }, url: 'https://api.bscscan.com/api' },
@@ -290,7 +290,7 @@ export const CHAINS: Chain[] = [
   },
   {
     alias: 'cronos-testnet',
-    blockTimeMs: 2463,
+    blockTimeMs: 2569,
     decimals: 18,
     explorer: {
       api: { key: { required: false }, url: 'https://cronos.org/explorer/testnet3/api' },
@@ -304,7 +304,7 @@ export const CHAINS: Chain[] = [
   },
   {
     alias: 'ethereum-goerli-testnet',
-    blockTimeMs: 15997,
+    blockTimeMs: 16535,
     decimals: 18,
     explorer: {
       api: { key: { hardhatEtherscanAlias: 'goerli', required: true }, url: 'https://api-goerli.etherscan.io/api' },
@@ -322,7 +322,7 @@ export const CHAINS: Chain[] = [
   },
   {
     alias: 'ethereum-sepolia-testnet',
-    blockTimeMs: 13578,
+    blockTimeMs: 13145,
     decimals: 18,
     explorer: {
       api: { key: { hardhatEtherscanAlias: 'sepolia', required: true }, url: 'https://api-sepolia.etherscan.io/api' },
@@ -340,7 +340,7 @@ export const CHAINS: Chain[] = [
   },
   {
     alias: 'ethereum',
-    blockTimeMs: 12167,
+    blockTimeMs: 12118,
     decimals: 18,
     explorer: {
       api: { key: { hardhatEtherscanAlias: 'mainnet', required: true }, url: 'https://api.etherscan.io/api' },
@@ -359,7 +359,7 @@ export const CHAINS: Chain[] = [
   },
   {
     alias: 'fantom-testnet',
-    blockTimeMs: 5181,
+    blockTimeMs: 5351,
     decimals: 18,
     explorer: {
       api: { key: { hardhatEtherscanAlias: 'ftmTestnet', required: true }, url: 'https://api-testnet.ftmscan.com/api' },
@@ -376,7 +376,7 @@ export const CHAINS: Chain[] = [
   },
   {
     alias: 'fantom',
-    blockTimeMs: 1761,
+    blockTimeMs: 1322,
     decimals: 18,
     explorer: {
       api: { key: { hardhatEtherscanAlias: 'opera', required: true }, url: 'https://api.ftmscan.com/api' },
@@ -395,7 +395,7 @@ export const CHAINS: Chain[] = [
   },
   {
     alias: 'gnosis-testnet',
-    blockTimeMs: 6321,
+    blockTimeMs: 5094,
     decimals: 18,
     explorer: {
       api: {
@@ -415,7 +415,7 @@ export const CHAINS: Chain[] = [
   },
   {
     alias: 'gnosis',
-    blockTimeMs: 5335,
+    blockTimeMs: 5273,
     decimals: 18,
     explorer: {
       api: { key: { hardhatEtherscanAlias: 'gnosis', required: true }, url: 'https://api.gnosisscan.io/api' },
@@ -434,7 +434,7 @@ export const CHAINS: Chain[] = [
   },
   {
     alias: 'godwoken-testnet',
-    blockTimeMs: 8051,
+    blockTimeMs: 8050,
     decimals: 18,
     explorer: { browserUrl: 'https://v1.testnet.gwscan.com/' },
     id: '71401',
@@ -445,7 +445,7 @@ export const CHAINS: Chain[] = [
   },
   {
     alias: 'godwoken',
-    blockTimeMs: 36981,
+    blockTimeMs: 36112,
     decimals: 18,
     explorer: { browserUrl: 'https://v1.gwscan.com/' },
     id: '71402',
@@ -456,7 +456,7 @@ export const CHAINS: Chain[] = [
   },
   {
     alias: 'kava-testnet',
-    blockTimeMs: 5178,
+    blockTimeMs: 5193,
     decimals: 18,
     explorer: {
       api: { key: { required: false }, url: 'https://testnet.kavascan.com/api' },
@@ -470,7 +470,7 @@ export const CHAINS: Chain[] = [
   },
   {
     alias: 'kava',
-    blockTimeMs: 6318,
+    blockTimeMs: 6207,
     decimals: 18,
     explorer: {
       api: { key: { required: false }, url: 'https://kavascan.com/api' },
@@ -503,7 +503,7 @@ export const CHAINS: Chain[] = [
   },
   {
     alias: 'lightlink',
-    blockTimeMs: 505,
+    blockTimeMs: 503,
     decimals: 18,
     explorer: {
       api: { key: { required: false }, url: 'https://phoenix.lightlink.io/api' },
@@ -518,7 +518,7 @@ export const CHAINS: Chain[] = [
   },
   {
     alias: 'linea-goerli-testnet',
-    blockTimeMs: 4646,
+    blockTimeMs: 3743,
     decimals: 18,
     explorer: {
       api: { key: { required: true }, url: 'https://api-testnet.lineascan.build/api' },
@@ -536,7 +536,7 @@ export const CHAINS: Chain[] = [
   },
   {
     alias: 'linea',
-    blockTimeMs: 5491,
+    blockTimeMs: 4003,
     decimals: 18,
     explorer: {
       api: { key: { required: true }, url: 'https://api.lineascan.build/api' },
@@ -554,7 +554,7 @@ export const CHAINS: Chain[] = [
   },
   {
     alias: 'mantle-goerli-testnet',
-    blockTimeMs: 4082,
+    blockTimeMs: 6743,
     decimals: 18,
     explorer: {
       api: { key: { required: false }, url: 'https://explorer.testnet.mantle.xyz/api' },
@@ -568,7 +568,7 @@ export const CHAINS: Chain[] = [
   },
   {
     alias: 'mantle',
-    blockTimeMs: 374,
+    blockTimeMs: 499,
     decimals: 18,
     explorer: {
       api: { key: { required: false }, url: 'https://explorer.mantle.xyz/api' },
@@ -586,7 +586,7 @@ export const CHAINS: Chain[] = [
   },
   {
     alias: 'metis-goerli-testnet',
-    blockTimeMs: 24528,
+    blockTimeMs: 24914,
     decimals: 18,
     explorer: {
       api: { key: { required: false }, url: 'https://goerli.explorer.metisdevops.link/api' },
@@ -600,7 +600,7 @@ export const CHAINS: Chain[] = [
   },
   {
     alias: 'metis',
-    blockTimeMs: 1710,
+    blockTimeMs: 559,
     decimals: 18,
     explorer: {
       api: { key: { required: false }, url: 'https://andromeda-explorer.metis.io/api' },
@@ -645,7 +645,7 @@ export const CHAINS: Chain[] = [
   },
   {
     alias: 'moonbeam-testnet',
-    blockTimeMs: 13097,
+    blockTimeMs: 13870,
     decimals: 18,
     explorer: {
       api: {
@@ -662,7 +662,7 @@ export const CHAINS: Chain[] = [
   },
   {
     alias: 'moonbeam',
-    blockTimeMs: 12214,
+    blockTimeMs: 12233,
     decimals: 18,
     explorer: {
       api: { key: { hardhatEtherscanAlias: 'moonbeam', required: true }, url: 'https://api-moonbeam.moonscan.io/api' },
@@ -680,7 +680,7 @@ export const CHAINS: Chain[] = [
   },
   {
     alias: 'moonriver',
-    blockTimeMs: 12955,
+    blockTimeMs: 13141,
     decimals: 18,
     explorer: {
       api: {
@@ -796,7 +796,7 @@ export const CHAINS: Chain[] = [
   },
   {
     alias: 'polygon-testnet',
-    blockTimeMs: 2451,
+    blockTimeMs: 2186,
     decimals: 18,
     explorer: {
       api: {
@@ -817,7 +817,7 @@ export const CHAINS: Chain[] = [
   },
   {
     alias: 'polygon-zkevm-goerli-testnet',
-    blockTimeMs: 9798,
+    blockTimeMs: 8182,
     decimals: 18,
     explorer: {
       api: { key: { required: true }, url: 'https://api-testnet-zkevm.polygonscan.com/api' },
@@ -834,7 +834,7 @@ export const CHAINS: Chain[] = [
   },
   {
     alias: 'polygon-zkevm',
-    blockTimeMs: 4061,
+    blockTimeMs: 3009,
     decimals: 18,
     explorer: {
       api: { key: { required: true }, url: 'https://api-zkevm.polygonscan.com/api' },
@@ -853,7 +853,7 @@ export const CHAINS: Chain[] = [
   },
   {
     alias: 'polygon',
-    blockTimeMs: 2279,
+    blockTimeMs: 2202,
     decimals: 18,
     explorer: {
       api: { key: { hardhatEtherscanAlias: 'polygon', required: true }, url: 'https://api.polygonscan.com/api' },
@@ -872,7 +872,7 @@ export const CHAINS: Chain[] = [
   },
   {
     alias: 'rsk-testnet',
-    blockTimeMs: 25116,
+    blockTimeMs: 25161,
     decimals: 18,
     explorer: { browserUrl: 'https://explorer.testnet.rsk.co/' },
     id: '31',
@@ -886,7 +886,7 @@ export const CHAINS: Chain[] = [
   },
   {
     alias: 'rsk',
-    blockTimeMs: 29805,
+    blockTimeMs: 29581,
     decimals: 18,
     explorer: { browserUrl: 'https://explorer.rsk.co/' },
     id: '30',
@@ -915,7 +915,7 @@ export const CHAINS: Chain[] = [
   },
   {
     alias: 'sx-testnet',
-    blockTimeMs: 2000,
+    blockTimeMs: 2190,
     decimals: 18,
     explorer: {
       api: { key: { required: false }, url: 'https://explorer.toronto.sx.technology/api' },
@@ -929,7 +929,7 @@ export const CHAINS: Chain[] = [
   },
   {
     alias: 'sx',
-    blockTimeMs: 2042,
+    blockTimeMs: 2040,
     decimals: 18,
     explorer: {
       api: { key: { required: false }, url: 'https://explorer.sx.technology/api' },
@@ -943,7 +943,7 @@ export const CHAINS: Chain[] = [
   },
   {
     alias: 'zksync-goerli-testnet',
-    blockTimeMs: 2732,
+    blockTimeMs: 7036,
     decimals: 18,
     explorer: { browserUrl: 'https://goerli.explorer.zksync.io/' },
     hardhatConfigOverrides: {
@@ -961,7 +961,7 @@ export const CHAINS: Chain[] = [
   },
   {
     alias: 'zksync',
-    blockTimeMs: 1046,
+    blockTimeMs: 1074,
     decimals: 18,
     explorer: { browserUrl: 'https://explorer.zksync.io/' },
     hardhatConfigOverrides: {

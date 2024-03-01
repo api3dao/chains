@@ -1,6 +1,6 @@
 {
   "alias": "kava-testnet",
-  "blockTimeMs": 5178,
+  "blockTimeMs": 5193,
   "decimals": 18,
   "explorer": {
     "api": {
