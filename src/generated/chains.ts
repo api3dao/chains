@@ -209,6 +209,21 @@ export const CHAINS: Chain[] = [
     testnet: true,
   },
   {
+    alias: 'blast',
+    blockTimeMs: 2000,
+    decimals: 18,
+    explorer: {
+      api: { key: { required: true }, url: 'https://api.blastscan.io/api' },
+      browserUrl: 'https://blastscan.io/',
+    },
+    id: '81457',
+    name: 'Blast',
+    providers: [{ alias: 'default', rpcUrl: 'https://rpc.blast.io' }],
+    skipProviderCheck: false,
+    symbol: 'ETH',
+    testnet: false,
+  },
+  {
     alias: 'boba-bnb',
     blockTimeMs: 1206,
     decimals: 18,
