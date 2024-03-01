@@ -153,6 +153,7 @@ export const CHAINS: Chain[] = [
       { alias: 'default', rpcUrl: 'https://goerli.base.org' },
       { alias: 'publicnode', rpcUrl: 'https://base-goerli.publicnode.com' },
     ],
+    skipProviderCheck: true,
     symbol: 'testETH',
     testnet: true,
   },
@@ -206,6 +207,21 @@ export const CHAINS: Chain[] = [
     skipProviderCheck: true,
     symbol: 'testETH',
     testnet: true,
+  },
+  {
+    alias: 'blast',
+    blockTimeMs: 2000,
+    decimals: 18,
+    explorer: {
+      api: { key: { required: true }, url: 'https://api.blastscan.io/api' },
+      browserUrl: 'https://blastscan.io/',
+    },
+    id: '81457',
+    name: 'Blast',
+    providers: [{ alias: 'default', rpcUrl: 'https://rpc.blast.io' }],
+    skipProviderCheck: false,
+    symbol: 'ETH',
+    testnet: false,
   },
   {
     alias: 'boba-bnb',
@@ -682,6 +698,25 @@ export const CHAINS: Chain[] = [
     ],
     symbol: 'MOVR',
     testnet: false,
+  },
+  {
+    alias: 'oev-network-sepolia-testnet-hackathon',
+    blockTimeMs: 1686780,
+    decimals: 18,
+    explorer: {
+      api: {
+        key: { required: false },
+        url: 'https://oev-network-sepolia-testnet-hackathon-blockscout.eu-north-2.gateway.fm/api/',
+      },
+      browserUrl: 'https://oev-network-sepolia-testnet-hackathon-blockscout.eu-north-2.gateway.fm/',
+    },
+    id: '1572219910',
+    name: 'OEV Network Sepolia testnet (hackathon)',
+    providers: [
+      { alias: 'default', rpcUrl: 'https://oev-network-sepolia-testnet-hackathon-rpc.eu-north-2.gateway.fm' },
+    ],
+    symbol: 'testETH',
+    testnet: true,
   },
   {
     alias: 'oev-network-sepolia-testnet',
