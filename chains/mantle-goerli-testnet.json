@@ -1,6 +1,6 @@
 {
   "alias": "mantle-goerli-testnet",
-  "blockTimeMs": 4082,
+  "blockTimeMs": 6743,
   "decimals": 18,
   "explorer": {
     "api": {

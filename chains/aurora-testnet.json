@@ -1,6 +1,6 @@
 {
   "alias": "aurora-testnet",
-  "blockTimeMs": 782,
+  "blockTimeMs": 1313,
   "decimals": 18,
   "explorer": {
     "api": {

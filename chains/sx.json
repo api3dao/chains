@@ -1,6 +1,6 @@
 {
   "alias": "sx",
-  "blockTimeMs": 2042,
+  "blockTimeMs": 2040,
   "decimals": 18,
   "explorer": {
     "api": {

@@ -1,6 +1,6 @@
 {
   "alias": "gnosis-testnet",
-  "blockTimeMs": 6321,
+  "blockTimeMs": 5094,
   "decimals": 18,
   "explorer": {
     "api": {

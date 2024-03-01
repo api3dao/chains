@@ -1,6 +1,6 @@
 {
   "alias": "polygon-zkevm",
-  "blockTimeMs": 4061,
+  "blockTimeMs": 3009,
   "decimals": 18,
   "explorer": {
     "api": {

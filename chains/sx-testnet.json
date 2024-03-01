@@ -1,6 +1,6 @@
 {
   "alias": "sx-testnet",
-  "blockTimeMs": 2000,
+  "blockTimeMs": 2190,
   "decimals": 18,
   "explorer": {
     "api": {

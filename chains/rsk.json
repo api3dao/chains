@@ -1,6 +1,6 @@
 {
   "alias": "rsk",
-  "blockTimeMs": 29805,
+  "blockTimeMs": 29581,
   "decimals": 18,
   "explorer": {
     "browserUrl": "https://explorer.rsk.co/"

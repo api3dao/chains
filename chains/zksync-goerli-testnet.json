@@ -1,6 +1,6 @@
 {
   "alias": "zksync-goerli-testnet",
-  "blockTimeMs": 2732,
+  "blockTimeMs": 7036,
   "decimals": 18,
   "explorer": {
     "browserUrl": "https://goerli.explorer.zksync.io/"
