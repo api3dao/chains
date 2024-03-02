@@ -218,7 +218,10 @@ export const CHAINS: Chain[] = [
     },
     id: '81457',
     name: 'Blast',
-    providers: [{ alias: 'default', rpcUrl: 'https://rpc.blast.io' }],
+    providers: [
+      { alias: 'default', rpcUrl: 'https://rpc.blast.io' },
+      { alias: 'reblok', homepageUrl: 'https://reblok.io' },
+    ],
     skipProviderCheck: false,
     symbol: 'ETH',
     testnet: false,
