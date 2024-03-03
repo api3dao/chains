@@ -17,6 +17,10 @@
     {
       "alias": "default",
       "rpcUrl": "https://rpc.blast.io"
+    },
+    {
+      "alias": "reblok",
+      "homepageUrl": "https://reblok.io"
     }
   ],
   "skipProviderCheck": false,
