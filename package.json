@@ -14,19 +14,19 @@
     "src"
   ],
   "scripts": {
-    "build": "yarn clean && yarn generate:chains && tsc -p tsconfig.build.json",
+    "build": "pnpm clean && pnpm generate:chains && tsc -p tsconfig.build.json",
     "clean": "rimraf ./dist",
     "generate:chains": "ts-node scripts/generate-chains.ts",
-    "lint": "yarn lint:eslint && yarn lint:prettier",
+    "lint": "pnpm lint:eslint && pnpm lint:prettier",
     "lint:eslint": "eslint . --ext .js,.ts",
     "lint:prettier": "prettier --check \"./**/*.{ts,js,md,json}\"",
     "prepare": "husky",
-    "prepublishOnly": "yarn validate:chains && yarn build",
+    "prepublishOnly": "pnpm validate:chains && pnpm build",
     "prettier": "prettier --write \"./**/*.{ts,js,md,json}\"",
     "providers:ping": "ts-node scripts/ping-providers.ts",
     "providers:time": "ts-node scripts/calculate-average-block-times.ts",
     "test": "jest",
-    "validate": "yarn validate:chains",
+    "validate": "pnpm validate:chains",
     "validate:chains": "ts-node scripts/validate-chains.ts"
   },
   "dependencies": {
@@ -38,7 +38,6 @@
     "@slack/web-api": "^7.0.2",
     "@types/jest": "^29.5.12",
     "@types/node": "^20.11.24",
-    "@types/prettier": "^3.0.0",
     "@typescript-eslint/eslint-plugin": "^7.1.0",
     "@typescript-eslint/parser": "^7.1.0",
     "eslint": "^8.57.0",

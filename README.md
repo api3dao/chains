@@ -149,7 +149,7 @@ The following utility scripts are available
 Generates the latest `CHAINS` array and outputs the file to `src/generated/chains.ts`
 
 ```sh
-yarn generate:chains
+pnpm generate:chains
 ```
 
 ### providers:ping
@@ -157,7 +157,7 @@ yarn generate:chains
 Iterates through the list of chains to check that the chain is configured correctly and is responsive.
 
 ```sh
-yarn providers:ping
+pnpm providers:ping
 ```
 
 ## 🛠️ Development
@@ -167,7 +167,7 @@ The most common type of change would be adding or updating a chain. This can be 
 If any changes are made to chains, you will need to "regenerate" the chains. This will compile all of the JSON files into a single TypeScript file for projects to import. This can be done with the following command
 
 ```sh
-yarn generate:chains
+pnpm generate:chains
 ```
 
 The list of TypeScript chains is also validated against all of the list of JSON files to ensure that everything is in sync.
@@ -180,8 +180,8 @@ Validations can be run with the following commands.
 
 ```sh
 # Validate each chain JSON file conforms to the zod schemas
-yarn validate:chains
+pnpm validate:chains
 
 # Run all validations
-yarn validate
+pnpm validate
 ```
