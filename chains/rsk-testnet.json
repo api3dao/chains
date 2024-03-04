@@ -1,6 +1,6 @@
 {
   "alias": "rsk-testnet",
-  "blockTimeMs": 25116,
+  "blockTimeMs": 25161,
   "decimals": 18,
   "explorer": {
     "browserUrl": "https://explorer.testnet.rsk.co/"

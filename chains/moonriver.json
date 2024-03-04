@@ -1,6 +1,6 @@
 {
   "alias": "moonriver",
-  "blockTimeMs": 12955,
+  "blockTimeMs": 13141,
   "decimals": 18,
   "explorer": {
     "api": {

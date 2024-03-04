@@ -1,6 +1,6 @@
 {
   "alias": "godwoken",
-  "blockTimeMs": 36981,
+  "blockTimeMs": 36112,
   "decimals": 18,
   "explorer": {
     "browserUrl": "https://v1.gwscan.com/"

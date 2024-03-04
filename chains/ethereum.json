@@ -1,6 +1,6 @@
 {
   "alias": "ethereum",
-  "blockTimeMs": 12167,
+  "blockTimeMs": 12118,
   "decimals": 18,
   "explorer": {
     "api": {
