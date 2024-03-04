@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Clone @api3/chains
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Check hyperlinks
         uses: gaurav-nelson/github-action-markdown-link-check@v1
@@ -22,10 +22,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Clone @api3/chains
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Setup Node
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: '18'
           cache: 'yarn'
@@ -34,7 +34,7 @@ jobs:
         id: deps-cache-dir-path
         run: echo "dir=$(yarn cache dir)" >> $GITHUB_OUTPUT
 
-      - uses: actions/cache@v3
+      - uses: actions/cache@v4
         id: deps-cache
         with:
           path: ${{ steps.deps-cache-dir-path.outputs.dir }}
