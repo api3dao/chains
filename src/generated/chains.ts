@@ -626,7 +626,7 @@ export const CHAINS: Chain[] = [
     id: '200101',
     name: 'Milkomeda C1 testnet',
     providers: [{ alias: 'default', rpcUrl: 'https://rpc-devnet-cardano-evm.c1.milkomeda.com' }],
-    symbol: 'milkADA',
+    symbol: 'ADA',
     testnet: true,
   },
   {
@@ -643,7 +643,7 @@ export const CHAINS: Chain[] = [
       { alias: 'default', rpcUrl: 'https://rpc-mainnet-cardano-evm.c1.milkomeda.com' },
       { alias: 'reblok', homepageUrl: 'https://reblok.io' },
     ],
-    symbol: 'milkADA',
+    symbol: 'ADA',
     testnet: false,
   },
   {
