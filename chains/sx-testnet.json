@@ -19,6 +19,6 @@
       "rpcUrl": "https://rpc.toronto.sx.technology"
     }
   ],
-  "symbol": "testSX",
+  "symbol": "SX",
   "testnet": true
 }

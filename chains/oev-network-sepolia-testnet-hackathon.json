@@ -19,6 +19,6 @@
       "rpcUrl": "https://oev-network-sepolia-testnet-hackathon-rpc.eu-north-2.gateway.fm"
     }
   ],
-  "symbol": "testETH",
+  "symbol": "ETH",
   "testnet": true
 }

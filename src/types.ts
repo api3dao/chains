@@ -76,15 +76,6 @@ export const chainSchema = z
     blockTimeMs: z.number().positive(),
     hardhatConfigOverrides: hardhatConfigOverrides.optional(),
     skipProviderCheck: z.boolean().optional(), // For chains not supporting dAPIs
-  })
-  .superRefine((chain, ctx) => {
-    if (chain.testnet && !chain.symbol.startsWith('test')) {
-      ctx.addIssue({
-        code: z.ZodIssueCode.custom,
-        path: ['symbol'],
-        message: "testnet chains must prefix 'symbol' with 'test'",
-      });
-    }
   });
 
 export type Chain = z.infer<typeof chainSchema>;

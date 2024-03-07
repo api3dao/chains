@@ -20,6 +20,6 @@
       "rpcUrl": "https://rpc.api.moonbase.moonbeam.network"
     }
   ],
-  "symbol": "testGLMR",
+  "symbol": "GLMR",
   "testnet": true
 }
