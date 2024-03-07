@@ -19,6 +19,6 @@
       "rpcUrl": "https://evm.testnet.kava.io/"
     }
   ],
-  "symbol": "testKAVA",
+  "symbol": "KAVA",
   "testnet": true
 }

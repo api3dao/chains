@@ -20,6 +20,6 @@
       "rpcUrl": "https://testnet.aurora.dev/"
     }
   ],
-  "symbol": "testETH",
+  "symbol": "ETH",
   "testnet": true
 }

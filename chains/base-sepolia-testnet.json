@@ -23,6 +23,6 @@
       "rpcUrl": "https://base-sepolia.publicnode.com"
     }
   ],
-  "symbol": "testETH",
+  "symbol": "ETH",
   "testnet": true
 }

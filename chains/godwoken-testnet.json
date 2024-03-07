@@ -13,6 +13,6 @@
       "rpcUrl": "https://v1.testnet.godwoken.io/rpc"
     }
   ],
-  "symbol": "testpCKB",
+  "symbol": "pCKB",
   "testnet": true
 }
