@@ -19,6 +19,6 @@
       "rpcUrl": "https://rpc.testnet.mantle.xyz"
     }
   ],
-  "symbol": "testMNT",
+  "symbol": "MNT",
   "testnet": true
 }

@@ -24,6 +24,6 @@
       "rpcUrl": "https://gnosis-chiado.publicnode.com"
     }
   ],
-  "symbol": "testxDAI",
+  "symbol": "xDAI",
   "testnet": true
 }

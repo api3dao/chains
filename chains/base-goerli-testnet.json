@@ -24,6 +24,6 @@
     }
   ],
   "skipProviderCheck": true,
-  "symbol": "testETH",
+  "symbol": "ETH",
   "testnet": true
 }
