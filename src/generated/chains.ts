@@ -570,6 +570,20 @@ export const CHAINS: Chain[] = [
     testnet: true,
   },
   {
+    alias: 'mantle-sepolia-testnet',
+    blockTimeMs: 2000,
+    decimals: 18,
+    explorer: {
+      api: { key: { required: false }, url: 'https://explorer.sepolia.mantle.xyz/api' },
+      browserUrl: 'https://explorer.sepolia.mantle.xyz/',
+    },
+    id: '5003',
+    name: 'Mantle Sepolia testnet',
+    providers: [{ alias: 'default', rpcUrl: 'https://rpc.sepolia.mantle.xyz' }],
+    symbol: 'MNT',
+    testnet: true,
+  },
+  {
     alias: 'mantle',
     blockTimeMs: 499,
     decimals: 18,
