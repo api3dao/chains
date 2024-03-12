@@ -1,5 +1,5 @@
 {
-  "name": "@api3/chains",
+  "name": "@phase21/chains",
   "license": "MIT",
   "version": "4.13.0",
   "author": "API3 DAO",
@@ -27,7 +27,8 @@
     "providers:time": "ts-node scripts/calculate-average-block-times.ts",
     "test": "jest",
     "validate": "yarn validate:chains",
-    "validate:chains": "ts-node scripts/validate-chains.ts"
+    "validate:chains": "ts-node scripts/validate-chains.ts",
+    "release": "yarn changeset publish"
   },
   "dependencies": {
     "viem": "^2.7.18",
@@ -35,6 +36,7 @@
   },
   "devDependencies": {
     "@api3/promise-utils": "^0.4.0",
+    "@changesets/cli": "^2.27.1",
     "@slack/web-api": "^7.0.2",
     "@types/jest": "^29.5.12",
     "@types/node": "^20.11.24",
