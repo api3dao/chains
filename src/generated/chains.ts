@@ -750,6 +750,7 @@ export const CHAINS: Chain[] = [
       { alias: 'default', rpcUrl: 'https://goerli.optimism.io' },
       { alias: 'publicnode', rpcUrl: 'https://optimism-goerli.publicnode.com' },
     ],
+    skipProviderCheck: true,
     symbol: 'ETH',
     testnet: true,
   },
