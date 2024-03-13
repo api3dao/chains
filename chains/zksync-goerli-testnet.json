@@ -20,6 +20,7 @@
       "rpcUrl": "https://testnet.era.zksync.dev"
     }
   ],
+  "skipProviderCheck": true,
   "symbol": "ETH",
   "testnet": true
 }
