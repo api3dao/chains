@@ -24,6 +24,7 @@
       "rpcUrl": "https://optimism-goerli.publicnode.com"
     }
   ],
+  "skipProviderCheck": true,
   "symbol": "ETH",
   "testnet": true
 }

@@ -19,6 +19,7 @@
       "rpcUrl": "https://goerli.gateway.metisdevops.link"
     }
   ],
+  "skipProviderCheck": true,
   "symbol": "METIS",
   "testnet": true
 }
