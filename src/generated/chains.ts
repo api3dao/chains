@@ -807,7 +807,7 @@ export const CHAINS: Chain[] = [
     id: '80001',
     name: 'Polygon testnet',
     providers: [
-      { alias: 'default', rpcUrl: 'https://rpc-mumbai.maticvigil.com' },
+      { alias: 'default', rpcUrl: 'https://rpc-mumbai.polygon.technology' },
       { alias: 'publicnode', rpcUrl: 'https://polygon-mumbai-bor.publicnode.com' },
       { alias: 'reblok', homepageUrl: 'https://reblok.io' },
     ],
