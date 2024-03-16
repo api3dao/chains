@@ -205,7 +205,7 @@ export const CHAINS: Chain[] = [
     id: '168587773',
     name: 'Blast Sepolia Testnet',
     providers: [{ alias: 'default', rpcUrl: 'https://sepolia.blast.io' }],
-    skipProviderCheck: true,
+    skipProviderCheck: false,
     symbol: 'ETH',
     testnet: true,
   },
