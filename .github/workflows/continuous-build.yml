@@ -22,7 +22,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [18, 20]
+        node-version: [18, 20, latest]
         pnpm-version: [8]
     steps:
       - name: Clone @api3/chains
