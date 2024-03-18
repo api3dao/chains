@@ -26,7 +26,8 @@ export const CHAINS: Chain[] = [
       { alias: 'publicnode', rpcUrl: 'https://arbitrum-goerli.publicnode.com' },
       { alias: 'reblok', homepageUrl: 'https://reblok.io' },
     ],
-    symbol: 'testETH',
+    skipProviderCheck: true,
+    symbol: 'ETH',
     testnet: true,
   },
   {
@@ -76,7 +77,7 @@ export const CHAINS: Chain[] = [
     id: '1313161555',
     name: 'Aurora testnet',
     providers: [{ alias: 'default', rpcUrl: 'https://testnet.aurora.dev/' }],
-    symbol: 'testETH',
+    symbol: 'ETH',
     testnet: true,
   },
   {
@@ -114,7 +115,7 @@ export const CHAINS: Chain[] = [
       { alias: 'publicnode', rpcUrl: 'https://avalanche-fuji-c-chain.publicnode.com' },
       { alias: 'reblok', homepageUrl: 'https://reblok.io' },
     ],
-    symbol: 'testAVAX',
+    symbol: 'AVAX',
     testnet: true,
   },
   {
@@ -154,7 +155,7 @@ export const CHAINS: Chain[] = [
       { alias: 'publicnode', rpcUrl: 'https://base-goerli.publicnode.com' },
     ],
     skipProviderCheck: true,
-    symbol: 'testETH',
+    symbol: 'ETH',
     testnet: true,
   },
   {
@@ -171,7 +172,7 @@ export const CHAINS: Chain[] = [
       { alias: 'default', rpcUrl: 'https://sepolia.base.org' },
       { alias: 'publicnode', rpcUrl: 'https://base-sepolia.publicnode.com' },
     ],
-    symbol: 'testETH',
+    symbol: 'ETH',
     testnet: true,
   },
   {
@@ -204,8 +205,8 @@ export const CHAINS: Chain[] = [
     id: '168587773',
     name: 'Blast Sepolia Testnet',
     providers: [{ alias: 'default', rpcUrl: 'https://sepolia.blast.io' }],
-    skipProviderCheck: true,
-    symbol: 'testETH',
+    skipProviderCheck: false,
+    symbol: 'ETH',
     testnet: true,
   },
   {
@@ -269,7 +270,7 @@ export const CHAINS: Chain[] = [
       { alias: 'publicnode', rpcUrl: 'https://bsc-testnet.publicnode.com' },
       { alias: 'reblok', homepageUrl: 'https://reblok.io' },
     ],
-    symbol: 'testBNB',
+    symbol: 'BNB',
     testnet: true,
   },
   {
@@ -302,7 +303,7 @@ export const CHAINS: Chain[] = [
     id: '338',
     name: 'Cronos testnet',
     providers: [{ alias: 'default', rpcUrl: 'https://evm-t3.cronos.org' }],
-    symbol: 'testCRO',
+    symbol: 'CRO',
     testnet: true,
   },
   {
@@ -320,7 +321,8 @@ export const CHAINS: Chain[] = [
       { alias: 'publicnode', rpcUrl: 'https://ethereum-goerli.publicnode.com' },
       { alias: 'reblok', homepageUrl: 'https://reblok.io' },
     ],
-    symbol: 'testETH',
+    skipProviderCheck: true,
+    symbol: 'ETH',
     testnet: true,
   },
   {
@@ -338,7 +340,7 @@ export const CHAINS: Chain[] = [
       { alias: 'publicnode', rpcUrl: 'https://ethereum-sepolia.publicnode.com' },
       { alias: 'reblok', homepageUrl: 'https://reblok.io' },
     ],
-    symbol: 'testETH',
+    symbol: 'ETH',
     testnet: true,
   },
   {
@@ -374,7 +376,7 @@ export const CHAINS: Chain[] = [
       { alias: 'default', rpcUrl: 'https://rpc.testnet.fantom.network' },
       { alias: 'publicnode', rpcUrl: 'https://fantom-testnet.publicnode.com' },
     ],
-    symbol: 'testFTM',
+    symbol: 'FTM',
     testnet: true,
   },
   {
@@ -413,7 +415,7 @@ export const CHAINS: Chain[] = [
       { alias: 'default', rpcUrl: 'https://rpc.chiadochain.net' },
       { alias: 'publicnode', rpcUrl: 'https://gnosis-chiado.publicnode.com' },
     ],
-    symbol: 'testxDAI',
+    symbol: 'xDAI',
     testnet: true,
   },
   {
@@ -443,7 +445,7 @@ export const CHAINS: Chain[] = [
     id: '71401',
     name: 'Godwoken testnet',
     providers: [{ alias: 'default', rpcUrl: 'https://v1.testnet.godwoken.io/rpc' }],
-    symbol: 'testpCKB',
+    symbol: 'pCKB',
     testnet: true,
   },
   {
@@ -468,7 +470,7 @@ export const CHAINS: Chain[] = [
     id: '2221',
     name: 'Kava testnet',
     providers: [{ alias: 'default', rpcUrl: 'https://evm.testnet.kava.io/' }],
-    symbol: 'testKAVA',
+    symbol: 'KAVA',
     testnet: true,
   },
   {
@@ -501,7 +503,7 @@ export const CHAINS: Chain[] = [
     name: 'LightLink Goerli Testnet',
     providers: [{ alias: 'default', rpcUrl: 'https://replicator.pegasus.lightlink.io/rpc/v1' }],
     skipProviderCheck: true,
-    symbol: 'testETH',
+    symbol: 'ETH',
     testnet: true,
   },
   {
@@ -534,7 +536,8 @@ export const CHAINS: Chain[] = [
       { alias: 'blockpi', rpcUrl: 'https://linea-goerli.blockpi.network/v1/rpc/public' },
       { alias: 'reblok', homepageUrl: 'https://reblok.io' },
     ],
-    symbol: 'testETH',
+    skipProviderCheck: true,
+    symbol: 'ETH',
     testnet: true,
   },
   {
@@ -566,7 +569,22 @@ export const CHAINS: Chain[] = [
     id: '5001',
     name: 'Mantle Goerli testnet',
     providers: [{ alias: 'default', rpcUrl: 'https://rpc.testnet.mantle.xyz' }],
-    symbol: 'testMNT',
+    skipProviderCheck: true,
+    symbol: 'MNT',
+    testnet: true,
+  },
+  {
+    alias: 'mantle-sepolia-testnet',
+    blockTimeMs: 2000,
+    decimals: 18,
+    explorer: {
+      api: { key: { required: false }, url: 'https://explorer.sepolia.mantle.xyz/api' },
+      browserUrl: 'https://explorer.sepolia.mantle.xyz/',
+    },
+    id: '5003',
+    name: 'Mantle Sepolia testnet',
+    providers: [{ alias: 'default', rpcUrl: 'https://rpc.sepolia.mantle.xyz' }],
+    symbol: 'MNT',
     testnet: true,
   },
   {
@@ -598,7 +616,8 @@ export const CHAINS: Chain[] = [
     id: '599',
     name: 'Metis Goerli testnet',
     providers: [{ alias: 'default', rpcUrl: 'https://goerli.gateway.metisdevops.link' }],
-    symbol: 'testMETIS',
+    skipProviderCheck: true,
+    symbol: 'METIS',
     testnet: true,
   },
   {
@@ -626,7 +645,7 @@ export const CHAINS: Chain[] = [
     id: '200101',
     name: 'Milkomeda C1 testnet',
     providers: [{ alias: 'default', rpcUrl: 'https://rpc-devnet-cardano-evm.c1.milkomeda.com' }],
-    symbol: 'testmilkADA',
+    symbol: 'ADA',
     testnet: true,
   },
   {
@@ -643,7 +662,7 @@ export const CHAINS: Chain[] = [
       { alias: 'default', rpcUrl: 'https://rpc-mainnet-cardano-evm.c1.milkomeda.com' },
       { alias: 'reblok', homepageUrl: 'https://reblok.io' },
     ],
-    symbol: 'milkADA',
+    symbol: 'ADA',
     testnet: false,
   },
   {
@@ -660,7 +679,7 @@ export const CHAINS: Chain[] = [
     id: '1287',
     name: 'Moonbeam testnet',
     providers: [{ alias: 'default', rpcUrl: 'https://rpc.api.moonbase.moonbeam.network' }],
-    symbol: 'testGLMR',
+    symbol: 'GLMR',
     testnet: true,
   },
   {
@@ -703,25 +722,6 @@ export const CHAINS: Chain[] = [
     testnet: false,
   },
   {
-    alias: 'oev-network-sepolia-testnet-hackathon',
-    blockTimeMs: 1686780,
-    decimals: 18,
-    explorer: {
-      api: {
-        key: { required: false },
-        url: 'https://oev-network-sepolia-testnet-hackathon-blockscout.eu-north-2.gateway.fm/api/',
-      },
-      browserUrl: 'https://oev-network-sepolia-testnet-hackathon-blockscout.eu-north-2.gateway.fm/',
-    },
-    id: '1572219910',
-    name: 'OEV Network Sepolia testnet (hackathon)',
-    providers: [
-      { alias: 'default', rpcUrl: 'https://oev-network-sepolia-testnet-hackathon-rpc.eu-north-2.gateway.fm' },
-    ],
-    symbol: 'testETH',
-    testnet: true,
-  },
-  {
     alias: 'oev-network-sepolia-testnet',
     blockTimeMs: 1686780,
     decimals: 18,
@@ -735,7 +735,7 @@ export const CHAINS: Chain[] = [
     id: '736160594',
     name: 'OEV Network Sepolia testnet',
     providers: [{ alias: 'default', rpcUrl: 'https://oev-network-sepolia-testnet-rpc.eu-north-2.gateway.fm' }],
-    symbol: 'testETH',
+    symbol: 'ETH',
     testnet: true,
   },
   {
@@ -755,7 +755,8 @@ export const CHAINS: Chain[] = [
       { alias: 'default', rpcUrl: 'https://goerli.optimism.io' },
       { alias: 'publicnode', rpcUrl: 'https://optimism-goerli.publicnode.com' },
     ],
-    symbol: 'testETH',
+    skipProviderCheck: true,
+    symbol: 'ETH',
     testnet: true,
   },
   {
@@ -772,7 +773,7 @@ export const CHAINS: Chain[] = [
       { alias: 'default', rpcUrl: 'https://sepolia.optimism.io' },
       { alias: 'publicnode', rpcUrl: 'https://optimism-sepolia.publicnode.com' },
     ],
-    symbol: 'testETH',
+    symbol: 'ETH',
     testnet: true,
   },
   {
@@ -811,11 +812,11 @@ export const CHAINS: Chain[] = [
     id: '80001',
     name: 'Polygon testnet',
     providers: [
-      { alias: 'default', rpcUrl: 'https://rpc-mumbai.maticvigil.com' },
+      { alias: 'default', rpcUrl: 'https://rpc-mumbai.polygon.technology' },
       { alias: 'publicnode', rpcUrl: 'https://polygon-mumbai-bor.publicnode.com' },
       { alias: 'reblok', homepageUrl: 'https://reblok.io' },
     ],
-    symbol: 'testMATIC',
+    symbol: 'MATIC',
     testnet: true,
   },
   {
@@ -832,7 +833,8 @@ export const CHAINS: Chain[] = [
       { alias: 'default', rpcUrl: 'https://rpc.public.zkevm-test.net' },
       { alias: 'reblok', homepageUrl: 'https://reblok.io' },
     ],
-    symbol: 'testETH',
+    skipProviderCheck: true,
+    symbol: 'ETH',
     testnet: true,
   },
   {
@@ -884,7 +886,7 @@ export const CHAINS: Chain[] = [
       { alias: 'default', rpcUrl: 'https://public-node.testnet.rsk.co' },
       { alias: 'reblok', homepageUrl: 'https://reblok.io' },
     ],
-    symbol: 'testRBTC',
+    symbol: 'RBTC',
     testnet: true,
   },
   {
@@ -913,7 +915,7 @@ export const CHAINS: Chain[] = [
     name: 'Scroll Goerli testnet',
     providers: [{ alias: 'default', rpcUrl: 'https://alpha-rpc.scroll.io/l2' }],
     skipProviderCheck: true,
-    symbol: 'testETH',
+    symbol: 'ETH',
     testnet: true,
   },
   {
@@ -927,7 +929,7 @@ export const CHAINS: Chain[] = [
     id: '647',
     name: 'SX Network testnet',
     providers: [{ alias: 'default', rpcUrl: 'https://rpc.toronto.sx.technology' }],
-    symbol: 'testSX',
+    symbol: 'SX',
     testnet: true,
   },
   {
@@ -959,7 +961,8 @@ export const CHAINS: Chain[] = [
     id: '280',
     name: 'zkSync Goerli testnet',
     providers: [{ alias: 'default', rpcUrl: 'https://testnet.era.zksync.dev' }],
-    symbol: 'testETH',
+    skipProviderCheck: true,
+    symbol: 'ETH',
     testnet: true,
   },
   {

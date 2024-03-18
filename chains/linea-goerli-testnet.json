@@ -27,6 +27,7 @@
       "homepageUrl": "https://reblok.io"
     }
   ],
-  "symbol": "testETH",
+  "skipProviderCheck": true,
+  "symbol": "ETH",
   "testnet": true
 }

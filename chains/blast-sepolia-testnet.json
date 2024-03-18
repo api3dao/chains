@@ -19,7 +19,7 @@
       "rpcUrl": "https://sepolia.blast.io"
     }
   ],
-  "skipProviderCheck": true,
-  "symbol": "testETH",
+  "skipProviderCheck": false,
+  "symbol": "ETH",
   "testnet": true
 }
