@@ -45,6 +45,27 @@ export const CHAINS: Chain[] = [
     testnet: false,
   },
   {
+    alias: 'arbitrum-sepolia-testnet',
+    blockTimeMs: 257,
+    decimals: 18,
+    explorer: {
+      api: {
+        key: { hardhatEtherscanAlias: 'arbitrumSepolia', required: true },
+        url: 'https://api-sepolia.arbiscan.io/api',
+      },
+      browserUrl: 'https://sepolia.arbiscan.io/',
+    },
+    id: '421614',
+    name: 'Arbitrum Sepolia testnet',
+    providers: [
+      { alias: 'default', rpcUrl: 'https://sepolia-rollup.arbitrum.io/rpc' },
+      { alias: 'publicnode', rpcUrl: 'https://arbitrum-sepolia-rpc.publicnode.com' },
+    ],
+    skipProviderCheck: true,
+    symbol: 'ETH',
+    testnet: true,
+  },
+  {
     alias: 'arbitrum',
     blockTimeMs: 255,
     decimals: 18,
@@ -621,6 +642,21 @@ export const CHAINS: Chain[] = [
     testnet: true,
   },
   {
+    alias: 'metis-sepolia-testnet',
+    blockTimeMs: 24914,
+    decimals: 18,
+    explorer: {
+      api: { key: { required: false }, url: 'https://sepolia-explorer-api.metisdevops.link/api' },
+      browserUrl: 'https://sepolia-explorer.metisdevops.link/',
+    },
+    id: '59902',
+    name: 'Metis Sepolia testnet',
+    providers: [{ alias: 'default', rpcUrl: 'https://sepolia.metisdevops.link' }],
+    skipProviderCheck: true,
+    symbol: 'tMetis',
+    testnet: true,
+  },
+  {
     alias: 'metis',
     blockTimeMs: 559,
     decimals: 18,
@@ -945,6 +981,21 @@ export const CHAINS: Chain[] = [
     providers: [{ alias: 'default', rpcUrl: 'https://rpc.sx.technology' }],
     symbol: 'SX',
     testnet: false,
+  },
+  {
+    alias: 'zkevm-cardona-testnet',
+    blockTimeMs: 3037,
+    decimals: 18,
+    explorer: {
+      api: { key: { required: true }, url: 'https://api-cardona-zkevm.polygonscan.com/api' },
+      browserUrl: 'https://cardona-zkevm.polygonscan.com/',
+    },
+    id: '2442',
+    name: 'zkEVM Cardona testnet',
+    providers: [{ alias: 'default', rpcUrl: 'https://rpc.cardona.zkevm-rpc.com' }],
+    skipProviderCheck: true,
+    symbol: 'ETH',
+    testnet: true,
   },
   {
     alias: 'zksync-goerli-testnet',
