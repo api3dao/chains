@@ -1,2 +1,2 @@
-yarn validate:chains
-yarn lint
+pnpm validate:chains
+pnpm lint
