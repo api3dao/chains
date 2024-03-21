@@ -1,5 +1,5 @@
 {
-  "alias": "zkevm-cardona-testnet",
+  "alias": "polygon-zkevm-sepolia-testnet",
   "blockTimeMs": 3037,
   "decimals": 18,
   "explorer": {
@@ -12,7 +12,7 @@
     "browserUrl": "https://cardona-zkevm.polygonscan.com/"
   },
   "id": "2442",
-  "name": "zkEVM Cardona testnet",
+  "name": "Polygon zkEVM Sepolia testnet",
   "providers": [
     {
       "alias": "default",

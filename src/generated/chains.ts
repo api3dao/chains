@@ -874,6 +874,21 @@ export const CHAINS: Chain[] = [
     testnet: true,
   },
   {
+    alias: 'polygon-zkevm-sepolia-testnet',
+    blockTimeMs: 3037,
+    decimals: 18,
+    explorer: {
+      api: { key: { required: true }, url: 'https://api-cardona-zkevm.polygonscan.com/api' },
+      browserUrl: 'https://cardona-zkevm.polygonscan.com/',
+    },
+    id: '2442',
+    name: 'Polygon zkEVM Sepolia testnet',
+    providers: [{ alias: 'default', rpcUrl: 'https://rpc.cardona.zkevm-rpc.com' }],
+    skipProviderCheck: true,
+    symbol: 'ETH',
+    testnet: true,
+  },
+  {
     alias: 'polygon-zkevm',
     blockTimeMs: 3009,
     decimals: 18,
@@ -981,21 +996,6 @@ export const CHAINS: Chain[] = [
     providers: [{ alias: 'default', rpcUrl: 'https://rpc.sx.technology' }],
     symbol: 'SX',
     testnet: false,
-  },
-  {
-    alias: 'zkevm-cardona-testnet',
-    blockTimeMs: 3037,
-    decimals: 18,
-    explorer: {
-      api: { key: { required: true }, url: 'https://api-cardona-zkevm.polygonscan.com/api' },
-      browserUrl: 'https://cardona-zkevm.polygonscan.com/',
-    },
-    id: '2442',
-    name: 'zkEVM Cardona testnet',
-    providers: [{ alias: 'default', rpcUrl: 'https://rpc.cardona.zkevm-rpc.com' }],
-    skipProviderCheck: true,
-    symbol: 'ETH',
-    testnet: true,
   },
   {
     alias: 'zksync-goerli-testnet',
