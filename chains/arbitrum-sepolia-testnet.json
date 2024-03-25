@@ -24,7 +24,7 @@
       "rpcUrl": "https://arbitrum-sepolia-rpc.publicnode.com"
     }
   ],
-  "skipProviderCheck": true,
+  "skipProviderCheck": false,
   "symbol": "ETH",
   "testnet": true
 }

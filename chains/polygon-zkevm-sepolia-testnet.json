@@ -19,7 +19,7 @@
       "rpcUrl": "https://rpc.cardona.zkevm-rpc.com"
     }
   ],
-  "skipProviderCheck": true,
+  "skipProviderCheck": false,
   "symbol": "ETH",
   "testnet": true
 }
