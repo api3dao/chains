@@ -800,7 +800,7 @@ export const CHAINS: Chain[] = [
     blockTimeMs: 2000,
     decimals: 18,
     explorer: {
-      api: { key: { required: true }, url: 'https://api-sepolia-optimistic.etherscan.io/api' },
+      api: { key: { required: true }, url: 'https://api-sepolia-optimism.etherscan.io/api' },
       browserUrl: 'https://sepolia-optimism.etherscan.io/',
     },
     id: '11155420',
