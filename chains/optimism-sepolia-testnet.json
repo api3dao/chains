@@ -7,7 +7,7 @@
       "key": {
         "required": true
       },
-      "url": "https://api-sepolia-optimistic.etherscan.io/api"
+      "url": "https://api-sepolia-optimism.etherscan.io/api"
     },
     "browserUrl": "https://sepolia-optimism.etherscan.io/"
   },
