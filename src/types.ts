@@ -68,7 +68,7 @@ export const chainSchema = z.object({
   // See: https://github.com/api3dao/chains/pull/1#discussion_r1161102392
   id: z.string().regex(/^\d+$/),
   providers: chainProvidersSchema,
-  symbol: z.string(),
+  symbol: z.string().min(1).max(6),
   decimals: z.number().positive(),
   testnet: z.boolean(),
   explorer: chainExplorerSchema,
