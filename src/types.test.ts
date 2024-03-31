@@ -53,7 +53,7 @@ describe('chainSchema', () => {
   it('should reject a symbol longer than 6 characters', () => {
     const invalidChain = {
       ...validChain,
-      symbol: 'ABCDEFGHIJK',
+      symbol: 'ABCDEFG',
     };
 
     expect(() => chainSchema.parse(invalidChain)).toThrow(z.ZodError);
