@@ -1,6 +1,6 @@
 {
   "alias": "metis-sepolia-testnet",
-  "blockTimeMs": 24914,
+  "blockTimeMs": 2951,
   "decimals": 18,
   "explorer": {
     "api": {

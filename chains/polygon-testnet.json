@@ -1,6 +1,6 @@
 {
   "alias": "polygon-testnet",
-  "blockTimeMs": 2186,
+  "blockTimeMs": 2217,
   "decimals": 18,
   "explorer": {
     "api": {

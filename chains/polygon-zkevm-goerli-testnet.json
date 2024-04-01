@@ -1,6 +1,6 @@
 {
   "alias": "polygon-zkevm-goerli-testnet",
-  "blockTimeMs": 8182,
+  "blockTimeMs": 13280,
   "decimals": 18,
   "explorer": {
     "api": {
