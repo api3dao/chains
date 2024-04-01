@@ -23,15 +23,20 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 8.12.1
       - uses: actions/setup-node@v4
         with:
           node-version: '20.x'
+          cache: 'pnpm'
 
       - name: Install dependencies
-        run: yarn install --frozen-lockfile
+        run: pnpm install --frozen-lockfile
 
       - name: Build package
-        run: yarn package:build
+        run: pnpm build
 
       - name: Ensure main is present for commit message prep
         run: |
@@ -40,13 +45,13 @@ jobs:
 
       - name: Prep commit message
         run: |
-          echo "NEW_VERSION=$(yarn changeset status --output=release.json > /dev/null && jq -r '.releases[0].newVersion' release.json && rm release.json)" >> "$GITHUB_ENV"
+          echo "NEW_VERSION=$(pnpm changeset status --output=release.json > /dev/null && jq -r '.releases[0].newVersion' release.json && rm release.json)" >> "$GITHUB_ENV"
 
       - name: Check release
         id: changesets
         uses: changesets/action@v1
         with:
-          publish: yarn release
+          publish: pnpm run release
           commit: 'ci: release chains v${{ env.NEW_VERSION }}'
           title: 'ci: release chains v${{ env.NEW_VERSION }}'
         env:
