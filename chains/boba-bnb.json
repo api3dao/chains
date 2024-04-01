@@ -1,6 +1,6 @@
 {
   "alias": "boba-bnb",
-  "blockTimeMs": 2245,
+  "blockTimeMs": 4300,
   "decimals": 18,
   "explorer": {
     "api": {

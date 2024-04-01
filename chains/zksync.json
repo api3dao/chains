@@ -1,6 +1,6 @@
 {
   "alias": "zksync",
-  "blockTimeMs": 1074,
+  "blockTimeMs": 1055,
   "decimals": 18,
   "explorer": {
     "browserUrl": "https://explorer.zksync.io/"

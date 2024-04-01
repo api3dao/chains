@@ -1,6 +1,6 @@
 {
   "alias": "godwoken-testnet",
-  "blockTimeMs": 8050,
+  "blockTimeMs": 8058,
   "decimals": 18,
   "explorer": {
     "browserUrl": "https://v1.testnet.gwscan.com/"

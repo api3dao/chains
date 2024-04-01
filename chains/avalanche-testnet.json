@@ -1,6 +1,6 @@
 {
   "alias": "avalanche-testnet",
-  "blockTimeMs": 2856,
+  "blockTimeMs": 2887,
   "decimals": 18,
   "explorer": {
     "api": {

@@ -1,6 +1,6 @@
 {
   "alias": "arbitrum-goerli-testnet",
-  "blockTimeMs": 3431,
+  "blockTimeMs": 4542,
   "decimals": 18,
   "explorer": {
     "api": {

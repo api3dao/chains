@@ -1,6 +1,6 @@
 {
   "alias": "polygon-zkevm-sepolia-testnet",
-  "blockTimeMs": 3037,
+  "blockTimeMs": 3005,
   "decimals": 18,
   "explorer": {
     "api": {
