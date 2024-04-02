@@ -188,4 +188,4 @@ pnpm validate
 
 ## Package Update
 
-`@api3/chains` is a shared package that is used across multiple API3 projects. When updating this package, it is important to follow the [changeset](https://github.com/api3dao/tasks/blob/main/API3%20Packages/changeset.md) guidelines.
+`@api3/chains` is a shared package that is used across multiple API3 projects. When updating this package, it is important to follow the [changeset](https://github.com/api3dao/chains/.changeset) guidelines.
