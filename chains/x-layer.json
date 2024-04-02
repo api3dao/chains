@@ -1,0 +1,18 @@
+{
+  "alias": "x-layer",
+  "blockTimeMs": 2999,
+  "decimals": 18,
+  "explorer": {
+    "browserUrl": "https://www.okx.com/explorer/xlayer"
+  },
+  "id": "196",
+  "name": "X Layer",
+  "providers": [
+    {
+      "alias": "default",
+      "rpcUrl": "https://rpc.xlayer.tech/"
+    }
+  ],
+  "symbol": "OKB",
+  "testnet": false
+}
