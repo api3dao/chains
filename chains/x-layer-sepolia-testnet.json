@@ -1,0 +1,18 @@
+{
+  "alias": "x-layer-sepolia-testnet",
+  "blockTimeMs": 2435,
+  "decimals": 18,
+  "explorer": {
+    "browserUrl": "https://www.okx.com/explorer/xlayer-test"
+  },
+  "id": "195",
+  "name": "X Layer Sepolia testnet",
+  "providers": [
+    {
+      "alias": "default",
+      "rpcUrl": "https://testrpc.xlayer.tech/"
+    }
+  ],
+  "symbol": "OKB",
+  "testnet": true
+}
