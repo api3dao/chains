@@ -6,14 +6,14 @@ on:
     branches:
       - production
 
-env:
-  NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
 jobs:
   release:
     name: Release
     runs-on: ubuntu-latest
     permissions:
+      contents: write
+      id-token: write
       packages: write
       pull-requests: write
     steps:
@@ -54,6 +54,8 @@ jobs:
           title: 'ci: release chains v${{ env.NEW_VERSION }}'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NPM_CONFIG_PROVENANCE: true
       - name: Create pull request
         if: steps.changesets.outputs.published == 'true'
         run: gh pr create -B main -H production --title 'Merge production into main' --body 'Merges production into main' --reviewer hiletmis
