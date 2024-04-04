@@ -5,11 +5,11 @@
   "explorer": {
     "api": {
       "key": {
-        "required": false
+        "required": true
       },
-      "url": "https://api.routescan.io/v2/network/testnet/evm/168587773/etherscan/api"
+      "url": "https://api-sepolia.blastscan.io/api"
     },
-    "browserUrl": "https://testnet.blastscan.io/"
+    "browserUrl": "https://sepolia.blastscan.io/"
   },
   "id": "168587773",
   "name": "Blast Sepolia Testnet",

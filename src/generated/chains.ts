@@ -220,8 +220,8 @@ export const CHAINS: Chain[] = [
     blockTimeMs: 2000,
     decimals: 18,
     explorer: {
-      api: { key: { required: false }, url: 'https://api.routescan.io/v2/network/testnet/evm/168587773/etherscan/api' },
-      browserUrl: 'https://testnet.blastscan.io/',
+      api: { key: { required: true }, url: 'https://api-sepolia.blastscan.io/api' },
+      browserUrl: 'https://sepolia.blastscan.io/',
     },
     id: '168587773',
     name: 'Blast Sepolia Testnet',
