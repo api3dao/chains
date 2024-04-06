@@ -77,7 +77,7 @@ jobs:
         run: pnpm install --frozen-lockfile
 
       - name: Check for changeset
-        run: pnpm changeset status --since=main
+        run: pnpm changeset status --since=origin/main
 
   required-checks-passed:
     name: All required checks passed
