@@ -57,7 +57,6 @@ export function etherscan(): HardhatEtherscanConfig {
 
       etherscan.apiKey[chain.alias] = apiKeyValue;
 
-      // TEMPORARY COMMENT TO TEST CI FAILURE
       return etherscan;
     },
     { apiKey: {}, customChains: [] } as HardhatEtherscanConfig
