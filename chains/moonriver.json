@@ -20,12 +20,16 @@
       "rpcUrl": "https://rpc.api.moonriver.moonbeam.network"
     },
     {
-      "alias": "reblok",
-      "homepageUrl": "https://reblok.io"
+      "alias": "blastapi",
+      "homepageUrl": "https://blastapi.io"
     },
     {
       "alias": "drpc",
       "homepageUrl": "https://drpc.org/"
+    },
+    {
+      "alias": "reblok",
+      "homepageUrl": "https://reblok.io"
     }
   ],
   "symbol": "MOVR",
