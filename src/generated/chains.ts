@@ -528,8 +528,9 @@ export const CHAINS: Chain[] = [
     name: 'Kava',
     providers: [
       { alias: 'default', rpcUrl: 'https://evm.kava.io/' },
-      { alias: 'reblok', homepageUrl: 'https://reblok.io' },
       { alias: 'drpc', homepageUrl: 'https://drpc.org/' },
+      { alias: 'nodies', homepageUrl: 'https://nodies.app/' },
+      { alias: 'reblok', homepageUrl: 'https://reblok.io' },
     ],
     symbol: 'KAVA',
     testnet: false,
