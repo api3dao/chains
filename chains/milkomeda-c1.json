@@ -17,10 +17,6 @@
     {
       "alias": "default",
       "rpcUrl": "https://rpc-mainnet-cardano-evm.c1.milkomeda.com"
-    },
-    {
-      "alias": "reblok",
-      "homepageUrl": "https://reblok.io"
     }
   ],
   "symbol": "ADA",

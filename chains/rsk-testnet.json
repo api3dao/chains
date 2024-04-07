@@ -11,10 +11,6 @@
     {
       "alias": "default",
       "rpcUrl": "https://public-node.testnet.rsk.co"
-    },
-    {
-      "alias": "reblok",
-      "homepageUrl": "https://reblok.io"
     }
   ],
   "symbol": "RBTC",
