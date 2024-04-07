@@ -11,6 +11,10 @@
     {
       "alias": "default",
       "rpcUrl": "https://rpc.xlayer.tech/"
+    },
+    {
+      "alias": "okx",
+      "rpcUrl": "https://xlayerrpc.okx.com/"
     }
   ],
   "symbol": "OKB",

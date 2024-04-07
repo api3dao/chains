@@ -1058,7 +1058,10 @@ export const CHAINS: Chain[] = [
     explorer: { browserUrl: 'https://www.okx.com/explorer/xlayer-test' },
     id: '195',
     name: 'X Layer Sepolia testnet',
-    providers: [{ alias: 'default', rpcUrl: 'https://testrpc.xlayer.tech/' }],
+    providers: [
+      { alias: 'default', rpcUrl: 'https://testrpc.xlayer.tech/' },
+      { alias: 'okx', rpcUrl: 'https://xlayertestrpc.okx.com/' },
+    ],
     symbol: 'OKB',
     testnet: true,
   },
@@ -1069,7 +1072,10 @@ export const CHAINS: Chain[] = [
     explorer: { browserUrl: 'https://www.okx.com/explorer/xlayer' },
     id: '196',
     name: 'X Layer',
-    providers: [{ alias: 'default', rpcUrl: 'https://rpc.xlayer.tech/' }],
+    providers: [
+      { alias: 'default', rpcUrl: 'https://rpc.xlayer.tech/' },
+      { alias: 'okx', rpcUrl: 'https://xlayerrpc.okx.com/' },
+    ],
     symbol: 'OKB',
     testnet: false,
   },
