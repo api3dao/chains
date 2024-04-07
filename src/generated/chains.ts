@@ -228,7 +228,13 @@ export const CHAINS: Chain[] = [
     },
     id: '168587773',
     name: 'Blast Sepolia Testnet',
-    providers: [{ alias: 'default', rpcUrl: 'https://sepolia.blast.io' }],
+    providers: [
+      { alias: 'default', rpcUrl: 'https://sepolia.blast.io' },
+      {
+        alias: 'drpc-freemium',
+        rpcUrl: 'https://lb.drpc.org/ogrpc?network=blast-sepolia&dkey=AiPHJac9aUX2s7ELd131NuwSeHqkUW8R7oQiFnomaLKw',
+      },
+    ],
     skipProviderCheck: false,
     symbol: 'ETH',
     testnet: true,
@@ -500,7 +506,13 @@ export const CHAINS: Chain[] = [
     },
     id: '2221',
     name: 'Kava testnet',
-    providers: [{ alias: 'default', rpcUrl: 'https://evm.testnet.kava.io/' }],
+    providers: [
+      { alias: 'default', rpcUrl: 'https://evm.testnet.kava.io/' },
+      {
+        alias: 'drpc-freemium',
+        rpcUrl: 'https://lb.drpc.org/ogrpc?network=kava-testnet&dkey=AiPHJac9aUX2s7ELd131NuwSeHqkUW8R7oQiFnomaLKw',
+      },
+    ],
     symbol: 'KAVA',
     testnet: true,
   },
@@ -615,7 +627,13 @@ export const CHAINS: Chain[] = [
     },
     id: '5003',
     name: 'Mantle Sepolia testnet',
-    providers: [{ alias: 'default', rpcUrl: 'https://rpc.sepolia.mantle.xyz' }],
+    providers: [
+      { alias: 'default', rpcUrl: 'https://rpc.sepolia.mantle.xyz' },
+      {
+        alias: 'drpc-freemium',
+        rpcUrl: 'https://lb.drpc.org/ogrpc?network=mantle-sepolia&dkey=AiPHJac9aUX2s7ELd131NuwSeHqkUW8R7oQiFnomaLKw',
+      },
+    ],
     symbol: 'MNT',
     testnet: true,
   },
@@ -726,7 +744,13 @@ export const CHAINS: Chain[] = [
     },
     id: '1287',
     name: 'Moonbeam testnet',
-    providers: [{ alias: 'default', rpcUrl: 'https://rpc.api.moonbase.moonbeam.network' }],
+    providers: [
+      { alias: 'default', rpcUrl: 'https://rpc.api.moonbase.moonbeam.network' },
+      {
+        alias: 'drpc-freemium',
+        rpcUrl: 'https://lb.drpc.org/ogrpc?network=moonbase-alpha&dkey=AiPHJac9aUX2s7ELd131NuwSeHqkUW8R7oQiFnomaLKw',
+      },
+    ],
     symbol: 'GLMR',
     testnet: true,
   },
