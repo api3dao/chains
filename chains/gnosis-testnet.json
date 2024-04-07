@@ -21,7 +21,7 @@
     },
     {
       "alias": "publicnode",
-      "rpcUrl": "https://gnosis-chiado.publicnode.com"
+      "rpcUrl": "https://gnosis-chiado-rpc.publicnode.com"
     }
   ],
   "symbol": "xDAI",

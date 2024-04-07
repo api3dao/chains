@@ -134,7 +134,7 @@ export const CHAINS: Chain[] = [
     name: 'Avalanche testnet',
     providers: [
       { alias: 'default', rpcUrl: 'https://api.avax-test.network/ext/bc/C/rpc' },
-      { alias: 'publicnode', rpcUrl: 'https://avalanche-fuji-c-chain.publicnode.com' },
+      { alias: 'publicnode', rpcUrl: 'https://avalanche-fuji-c-chain-rpc.publicnode.com' },
       { alias: 'reblok', homepageUrl: 'https://reblok.io' },
     ],
     symbol: 'AVAX',
@@ -193,7 +193,7 @@ export const CHAINS: Chain[] = [
     name: 'Base Sepolia testnet',
     providers: [
       { alias: 'default', rpcUrl: 'https://sepolia.base.org' },
-      { alias: 'publicnode', rpcUrl: 'https://base-sepolia.publicnode.com' },
+      { alias: 'publicnode', rpcUrl: 'https://base-sepolia-rpc.publicnode.com' },
     ],
     symbol: 'ETH',
     testnet: true,
@@ -294,7 +294,7 @@ export const CHAINS: Chain[] = [
     name: 'BNB Smart Chain testnet',
     providers: [
       { alias: 'default', rpcUrl: 'https://data-seed-prebsc-1-s3.binance.org:8545/' },
-      { alias: 'publicnode', rpcUrl: 'https://bsc-testnet.publicnode.com' },
+      { alias: 'publicnode', rpcUrl: 'https://bsc-testnet-rpc.publicnode.com' },
       { alias: 'reblok', homepageUrl: 'https://reblok.io' },
     ],
     symbol: 'BNB',
@@ -365,7 +365,7 @@ export const CHAINS: Chain[] = [
     name: 'Ethereum Sepolia testnet',
     providers: [
       { alias: 'default', rpcUrl: 'https://sepolia.gateway.tenderly.co' },
-      { alias: 'publicnode', rpcUrl: 'https://ethereum-sepolia.publicnode.com' },
+      { alias: 'publicnode', rpcUrl: 'https://ethereum-sepolia-rpc.publicnode.com' },
       { alias: 'reblok', homepageUrl: 'https://reblok.io' },
     ],
     symbol: 'ETH',
@@ -403,7 +403,7 @@ export const CHAINS: Chain[] = [
     name: 'Fantom testnet',
     providers: [
       { alias: 'default', rpcUrl: 'https://rpc.testnet.fantom.network' },
-      { alias: 'publicnode', rpcUrl: 'https://fantom-testnet.publicnode.com' },
+      { alias: 'publicnode', rpcUrl: 'https://fantom-testnet-rpc.publicnode.com' },
     ],
     symbol: 'FTM',
     testnet: true,
@@ -443,7 +443,7 @@ export const CHAINS: Chain[] = [
     name: 'Gnosis Chain testnet',
     providers: [
       { alias: 'default', rpcUrl: 'https://rpc.chiadochain.net' },
-      { alias: 'publicnode', rpcUrl: 'https://gnosis-chiado.publicnode.com' },
+      { alias: 'publicnode', rpcUrl: 'https://gnosis-chiado-rpc.publicnode.com' },
     ],
     symbol: 'xDAI',
     testnet: true,
@@ -838,7 +838,7 @@ export const CHAINS: Chain[] = [
     name: 'Optimism Sepolia testnet',
     providers: [
       { alias: 'default', rpcUrl: 'https://sepolia.optimism.io' },
-      { alias: 'publicnode', rpcUrl: 'https://optimism-sepolia.publicnode.com' },
+      { alias: 'publicnode', rpcUrl: 'https://optimism-sepolia-rpc.publicnode.com' },
     ],
     symbol: 'ETH',
     testnet: true,
@@ -881,7 +881,7 @@ export const CHAINS: Chain[] = [
     name: 'Polygon testnet',
     providers: [
       { alias: 'default', rpcUrl: 'https://rpc-mumbai.polygon.technology' },
-      { alias: 'publicnode', rpcUrl: 'https://polygon-mumbai-bor.publicnode.com' },
+      { alias: 'publicnode', rpcUrl: 'https://polygon-mumbai-bor-rpc.publicnode.com' },
       { alias: 'reblok', homepageUrl: 'https://reblok.io' },
     ],
     symbol: 'MATIC',

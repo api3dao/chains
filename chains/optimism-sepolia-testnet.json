@@ -20,7 +20,7 @@
     },
     {
       "alias": "publicnode",
-      "rpcUrl": "https://optimism-sepolia.publicnode.com"
+      "rpcUrl": "https://optimism-sepolia-rpc.publicnode.com"
     }
   ],
   "symbol": "ETH",
