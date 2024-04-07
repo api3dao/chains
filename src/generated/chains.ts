@@ -1106,11 +1106,7 @@ export const CHAINS: Chain[] = [
     },
     id: '324',
     name: 'zkSync',
-    providers: [
-      { alias: 'default', rpcUrl: 'https://mainnet.era.zksync.io' },
-      { alias: 'quicknode', homepageUrl: 'https://quicknode.com' },
-      { alias: 'drpc', homepageUrl: 'https://drpc.org/' },
-    ],
+    providers: [{ alias: 'default', rpcUrl: 'https://mainnet.era.zksync.io' }],
     symbol: 'ETH',
     testnet: false,
   },
