@@ -246,6 +246,8 @@ export const CHAINS: Chain[] = [
     providers: [
       { alias: 'default', rpcUrl: 'https://rpc.blast.io' },
       { alias: 'blastapi', homepageUrl: 'https://blastapi.io' },
+      { alias: 'drpc', homepageUrl: 'https://drpc.org' },
+      { alias: 'quicknode', homepageUrl: 'https://quicknode.com' },
       { alias: 'reblok', homepageUrl: 'https://reblok.io' },
     ],
     skipProviderCheck: false,
