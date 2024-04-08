@@ -19,16 +19,20 @@
       "rpcUrl": "https://mainnet.base.org"
     },
     {
-      "alias": "reblok",
-      "homepageUrl": "https://reblok.io"
+      "alias": "blastapi",
+      "homepageUrl": "https://blastapi.io"
+    },
+    {
+      "alias": "drpc",
+      "homepageUrl": "https://drpc.org"
     },
     {
       "alias": "quicknode",
       "homepageUrl": "https://quicknode.com"
     },
     {
-      "alias": "drpc",
-      "homepageUrl": "https://drpc.org/"
+      "alias": "reblok",
+      "homepageUrl": "https://reblok.io"
     }
   ],
   "symbol": "ETH",

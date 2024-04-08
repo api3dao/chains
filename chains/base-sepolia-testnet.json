@@ -20,7 +20,7 @@
     },
     {
       "alias": "publicnode",
-      "rpcUrl": "https://base-sepolia.publicnode.com"
+      "rpcUrl": "https://base-sepolia-rpc.publicnode.com"
     }
   ],
   "symbol": "ETH",

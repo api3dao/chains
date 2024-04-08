@@ -21,7 +21,7 @@
     },
     {
       "alias": "publicnode",
-      "rpcUrl": "https://avalanche-fuji-c-chain.publicnode.com"
+      "rpcUrl": "https://avalanche-fuji-c-chain-rpc.publicnode.com"
     },
     {
       "alias": "reblok",

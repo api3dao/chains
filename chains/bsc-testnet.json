@@ -21,7 +21,7 @@
     },
     {
       "alias": "publicnode",
-      "rpcUrl": "https://bsc-testnet.publicnode.com"
+      "rpcUrl": "https://bsc-testnet-rpc.publicnode.com"
     },
     {
       "alias": "reblok",

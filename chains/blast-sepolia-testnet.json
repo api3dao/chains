@@ -17,6 +17,10 @@
     {
       "alias": "default",
       "rpcUrl": "https://sepolia.blast.io"
+    },
+    {
+      "alias": "drpc-freemium",
+      "rpcUrl": "https://lb.drpc.org/ogrpc?network=blast-sepolia&dkey=AiPHJac9aUX2s7ELd131NuwSeHqkUW8R7oQiFnomaLKw"
     }
   ],
   "skipProviderCheck": false,

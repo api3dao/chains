@@ -17,6 +17,14 @@
     {
       "alias": "default",
       "rpcUrl": "https://rpc.sepolia.mantle.xyz"
+    },
+    {
+      "alias": "drpc-freemium",
+      "rpcUrl": "https://lb.drpc.org/ogrpc?network=mantle-sepolia&dkey=AiPHJac9aUX2s7ELd131NuwSeHqkUW8R7oQiFnomaLKw"
+    },
+    {
+      "alias": "reblok",
+      "homepageUrl": "https://reblok.io"
     }
   ],
   "symbol": "MNT",

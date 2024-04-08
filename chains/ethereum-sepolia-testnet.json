@@ -21,7 +21,7 @@
     },
     {
       "alias": "publicnode",
-      "rpcUrl": "https://ethereum-sepolia.publicnode.com"
+      "rpcUrl": "https://ethereum-sepolia-rpc.publicnode.com"
     },
     {
       "alias": "reblok",

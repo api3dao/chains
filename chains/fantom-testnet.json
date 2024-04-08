@@ -21,7 +21,7 @@
     },
     {
       "alias": "publicnode",
-      "rpcUrl": "https://fantom-testnet.publicnode.com"
+      "rpcUrl": "https://fantom-testnet-rpc.publicnode.com"
     }
   ],
   "symbol": "FTM",
