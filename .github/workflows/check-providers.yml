@@ -3,7 +3,7 @@ name: Check Providers
 on:
   schedule:
     # Run every day at 12:00
-    - cron: "0 12 * * *"
+    - cron: '0 12 * * *'
   pull_request:
     branches:
       - main
@@ -34,8 +34,7 @@ jobs:
           cache: 'pnpm'
 
       - name: Install dependencies
-        run: pnpm install --frozen-lockfile
+        run: pnpm install
 
       - name: Run providers:ping
         run: pnpm providers:ping
-
