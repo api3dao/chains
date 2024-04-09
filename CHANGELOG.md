@@ -1,5 +1,11 @@
 # @api3/chains
 
+## 4.17.0
+
+### Minor Changes
+
+- a3b8858: Adds fraxtal, fraxtal-holesky-testnet, linea-sepolia-testnet, mode-sepolia-testnet, mode
+
 ## 4.16.2
 
 ### Patch Changes
