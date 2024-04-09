@@ -791,7 +791,7 @@ export const CHAINS: Chain[] = [
     blockTimeMs: 2000,
     decimals: 18,
     explorer: {
-      api: { key: { required: true }, url: 'https://explorer.mode.network/api/' },
+      api: { key: { required: false }, url: 'https://explorer.mode.network/api/' },
       browserUrl: 'https://explorer.mode.network/',
     },
     id: '34443',
