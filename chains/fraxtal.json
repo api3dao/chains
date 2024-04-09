@@ -1,0 +1,24 @@
+{
+  "alias": "fraxtal",
+  "blockTimeMs": 2000,
+  "decimals": 18,
+  "explorer": {
+    "api": {
+      "key": {
+        "required": true
+      },
+      "url": "https://api.fraxscan.com/api/"
+    },
+    "browserUrl": "https://fraxscan.com/"
+  },
+  "id": "252",
+  "name": "Fraxtal",
+  "providers": [
+    {
+      "alias": "default",
+      "rpcUrl": "https://rpc.frax.com"
+    }
+  ],
+  "symbol": "ETH",
+  "testnet": false
+}
