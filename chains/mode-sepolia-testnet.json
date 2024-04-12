@@ -17,6 +17,14 @@
     {
       "alias": "default",
       "rpcUrl": "https://sepolia.mode.network"
+    },
+    {
+      "alias": "blastapi",
+      "homepageUrl": "https://blastapi.io"
+    },
+    {
+      "alias": "drpc",
+      "homepageUrl": "https://drpc.org/"
     }
   ],
   "symbol": "ETH",
