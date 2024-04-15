@@ -17,6 +17,10 @@
     {
       "alias": "default",
       "rpcUrl": "https://rpc.frax.com"
+    },
+    {
+      "alias": "tenderly",
+      "homepageUrl": "https://tenderly.co/"
     }
   ],
   "symbol": "ETH",

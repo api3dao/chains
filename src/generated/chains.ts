@@ -458,7 +458,10 @@ export const CHAINS: Chain[] = [
     },
     id: '252',
     name: 'Fraxtal',
-    providers: [{ alias: 'default', rpcUrl: 'https://rpc.frax.com' }],
+    providers: [
+      { alias: 'default', rpcUrl: 'https://rpc.frax.com' },
+      { alias: 'tenderly', homepageUrl: 'https://tenderly.co/' },
+    ],
     symbol: 'ETH',
     testnet: false,
   },
