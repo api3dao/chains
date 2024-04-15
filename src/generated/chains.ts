@@ -782,11 +782,7 @@ export const CHAINS: Chain[] = [
     },
     id: '919',
     name: 'Mode Sepolia testnet',
-    providers: [
-      { alias: 'default', rpcUrl: 'https://sepolia.mode.network' },
-      { alias: 'blastapi', homepageUrl: 'https://blastapi.io' },
-      { alias: 'drpc', homepageUrl: 'https://drpc.org/' },
-    ],
+    providers: [{ alias: 'default', rpcUrl: 'https://sepolia.mode.network' }],
     symbol: 'ETH',
     testnet: true,
   },
