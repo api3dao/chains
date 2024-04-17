@@ -1,5 +1,11 @@
 # @api3/chains
 
+## 4.17.1
+
+### Patch Changes
+
+- 15d396b: Adds RPC providers to `mode` and `fraxtal` chains
+
 ## 4.17.0
 
 ### Minor Changes
