@@ -2,4 +2,4 @@
 "@api3/chains": patch
 ---
 
-Adds RPC providers to `mode` and `mode-sepolia-testnet` chains
+Adds RPC providers to `mode` and `fraxtal` chains
