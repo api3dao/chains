@@ -828,28 +828,6 @@ export const CHAINS: Chain[] = [
     testnet: false,
   },
   {
-    alias: 'polygon-testnet',
-    blockTimeMs: 2217,
-    decimals: 18,
-    explorer: {
-      api: {
-        key: { hardhatEtherscanAlias: 'polygonMumbai', required: true },
-        url: 'https://api-testnet.polygonscan.com/api',
-      },
-      browserUrl: 'https://mumbai.polygonscan.com/',
-    },
-    id: '80001',
-    name: 'Polygon testnet',
-    providers: [
-      { alias: 'default', rpcUrl: 'https://rpc-mumbai.polygon.technology' },
-      { alias: 'publicnode', rpcUrl: 'https://polygon-mumbai-bor-rpc.publicnode.com' },
-      { alias: 'reblok', homepageUrl: 'https://reblok.io' },
-    ],
-    skipProviderCheck: true,
-    symbol: 'MATIC',
-    testnet: true,
-  },
-  {
     alias: 'polygon-zkevm-sepolia-testnet',
     blockTimeMs: 3005,
     decimals: 18,
