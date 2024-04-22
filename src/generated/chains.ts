@@ -984,6 +984,7 @@ export const CHAINS: Chain[] = [
       { alias: 'publicnode', rpcUrl: 'https://polygon-mumbai-bor-rpc.publicnode.com' },
       { alias: 'reblok', homepageUrl: 'https://reblok.io' },
     ],
+    skipProviderCheck: true,
     symbol: 'MATIC',
     testnet: true,
   },

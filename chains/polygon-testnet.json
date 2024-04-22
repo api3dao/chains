@@ -28,6 +28,7 @@
       "homepageUrl": "https://reblok.io"
     }
   ],
+  "skipProviderCheck": true,
   "symbol": "MATIC",
   "testnet": true
 }
