@@ -9,28 +9,6 @@ import { Chain } from '../types';
 
 export const CHAINS: Chain[] = [
   {
-    alias: 'arbitrum-goerli-testnet',
-    blockTimeMs: 4542,
-    decimals: 18,
-    explorer: {
-      api: {
-        key: { hardhatEtherscanAlias: 'arbitrumGoerli', required: true },
-        url: 'https://api-goerli.arbiscan.io/api',
-      },
-      browserUrl: 'https://testnet.arbiscan.io/',
-    },
-    id: '421613',
-    name: 'Arbitrum Goerli testnet',
-    providers: [
-      { alias: 'default', rpcUrl: 'https://goerli-rollup.arbitrum.io/rpc' },
-      { alias: 'publicnode', rpcUrl: 'https://arbitrum-goerli.publicnode.com' },
-      { alias: 'reblok', homepageUrl: 'https://reblok.io' },
-    ],
-    skipProviderCheck: true,
-    symbol: 'ETH',
-    testnet: true,
-  },
-  {
     alias: 'arbitrum-nova',
     blockTimeMs: 815,
     decimals: 18,
