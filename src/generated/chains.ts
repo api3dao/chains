@@ -9,28 +9,6 @@ import { Chain } from '../types';
 
 export const CHAINS: Chain[] = [
   {
-    alias: 'arbitrum-goerli-testnet',
-    blockTimeMs: 4542,
-    decimals: 18,
-    explorer: {
-      api: {
-        key: { hardhatEtherscanAlias: 'arbitrumGoerli', required: true },
-        url: 'https://api-goerli.arbiscan.io/api',
-      },
-      browserUrl: 'https://testnet.arbiscan.io/',
-    },
-    id: '421613',
-    name: 'Arbitrum Goerli testnet',
-    providers: [
-      { alias: 'default', rpcUrl: 'https://goerli-rollup.arbitrum.io/rpc' },
-      { alias: 'publicnode', rpcUrl: 'https://arbitrum-goerli.publicnode.com' },
-      { alias: 'reblok', homepageUrl: 'https://reblok.io' },
-    ],
-    skipProviderCheck: true,
-    symbol: 'ETH',
-    testnet: true,
-  },
-  {
     alias: 'arbitrum-nova',
     blockTimeMs: 815,
     decimals: 18,
@@ -162,24 +140,6 @@ export const CHAINS: Chain[] = [
     ],
     symbol: 'AVAX',
     testnet: false,
-  },
-  {
-    alias: 'base-goerli-testnet',
-    blockTimeMs: 2000,
-    decimals: 18,
-    explorer: {
-      api: { key: { required: false }, url: 'https://api-goerli.basescan.org/api' },
-      browserUrl: 'https://goerli.basescan.org/',
-    },
-    id: '84531',
-    name: 'Base Goerli testnet',
-    providers: [
-      { alias: 'default', rpcUrl: 'https://goerli.base.org' },
-      { alias: 'publicnode', rpcUrl: 'https://base-goerli.publicnode.com' },
-    ],
-    skipProviderCheck: true,
-    symbol: 'ETH',
-    testnet: true,
   },
   {
     alias: 'base-sepolia-testnet',
@@ -338,25 +298,6 @@ export const CHAINS: Chain[] = [
     name: 'Cronos testnet',
     providers: [{ alias: 'default', rpcUrl: 'https://evm-t3.cronos.org' }],
     symbol: 'CRO',
-    testnet: true,
-  },
-  {
-    alias: 'ethereum-goerli-testnet',
-    blockTimeMs: 16535,
-    decimals: 18,
-    explorer: {
-      api: { key: { hardhatEtherscanAlias: 'goerli', required: true }, url: 'https://api-goerli.etherscan.io/api' },
-      browserUrl: 'https://goerli.etherscan.io/',
-    },
-    id: '5',
-    name: 'Ethereum Goerli testnet',
-    providers: [
-      { alias: 'default', rpcUrl: 'https://rpc.ankr.com/eth_goerli' },
-      { alias: 'publicnode', rpcUrl: 'https://ethereum-goerli.publicnode.com' },
-      { alias: 'reblok', homepageUrl: 'https://reblok.io' },
-    ],
-    skipProviderCheck: true,
-    symbol: 'ETH',
     testnet: true,
   },
   {
@@ -567,21 +508,6 @@ export const CHAINS: Chain[] = [
     testnet: false,
   },
   {
-    alias: 'lightlink-goerli-testnet',
-    blockTimeMs: 505,
-    decimals: 18,
-    explorer: {
-      api: { key: { required: false }, url: 'https://pegasus.lightlink.io/api' },
-      browserUrl: 'https://pegasus.lightlink.io/',
-    },
-    id: '1891',
-    name: 'LightLink Goerli Testnet',
-    providers: [{ alias: 'default', rpcUrl: 'https://replicator.pegasus.lightlink.io/rpc/v1' }],
-    skipProviderCheck: true,
-    symbol: 'ETH',
-    testnet: true,
-  },
-  {
     alias: 'lightlink',
     blockTimeMs: 503,
     decimals: 18,
@@ -595,25 +521,6 @@ export const CHAINS: Chain[] = [
     skipProviderCheck: true,
     symbol: 'ETH',
     testnet: false,
-  },
-  {
-    alias: 'linea-goerli-testnet',
-    blockTimeMs: 4062,
-    decimals: 18,
-    explorer: {
-      api: { key: { required: true }, url: 'https://api-testnet.lineascan.build/api' },
-      browserUrl: 'https://goerli.lineascan.build/',
-    },
-    id: '59140',
-    name: 'Linea Goerli testnet',
-    providers: [
-      { alias: 'default', rpcUrl: 'https://rpc.goerli.linea.build' },
-      { alias: 'blockpi', rpcUrl: 'https://linea-goerli.blockpi.network/v1/rpc/public' },
-      { alias: 'reblok', homepageUrl: 'https://reblok.io' },
-    ],
-    skipProviderCheck: true,
-    symbol: 'ETH',
-    testnet: true,
   },
   {
     alias: 'linea-sepolia-testnet',
@@ -647,21 +554,6 @@ export const CHAINS: Chain[] = [
     ],
     symbol: 'ETH',
     testnet: false,
-  },
-  {
-    alias: 'mantle-goerli-testnet',
-    blockTimeMs: 2000,
-    decimals: 18,
-    explorer: {
-      api: { key: { required: false }, url: 'https://explorer.testnet.mantle.xyz/api' },
-      browserUrl: 'https://explorer.testnet.mantle.xyz/',
-    },
-    id: '5001',
-    name: 'Mantle Goerli testnet',
-    providers: [{ alias: 'default', rpcUrl: 'https://rpc.testnet.mantle.xyz' }],
-    skipProviderCheck: true,
-    symbol: 'MNT',
-    testnet: true,
   },
   {
     alias: 'mantle-sepolia-testnet',
@@ -702,21 +594,6 @@ export const CHAINS: Chain[] = [
     ],
     symbol: 'MNT',
     testnet: false,
-  },
-  {
-    alias: 'metis-goerli-testnet',
-    blockTimeMs: 24914,
-    decimals: 18,
-    explorer: {
-      api: { key: { required: false }, url: 'https://goerli.explorer.metisdevops.link/api' },
-      browserUrl: 'https://goerli.explorer.metisdevops.link/',
-    },
-    id: '599',
-    name: 'Metis Goerli testnet',
-    providers: [{ alias: 'default', rpcUrl: 'https://goerli.gateway.metisdevops.link' }],
-    skipProviderCheck: true,
-    symbol: 'METIS',
-    testnet: true,
   },
   {
     alias: 'metis-sepolia-testnet',
@@ -889,27 +766,6 @@ export const CHAINS: Chain[] = [
     testnet: true,
   },
   {
-    alias: 'optimism-goerli-testnet',
-    blockTimeMs: 2000,
-    decimals: 18,
-    explorer: {
-      api: {
-        key: { hardhatEtherscanAlias: 'optimisticGoerli', required: true },
-        url: 'https://api-goerli-optimism.etherscan.io/api',
-      },
-      browserUrl: 'https://goerli-optimism.etherscan.io/',
-    },
-    id: '420',
-    name: 'Optimism Goerli testnet',
-    providers: [
-      { alias: 'default', rpcUrl: 'https://goerli.optimism.io' },
-      { alias: 'publicnode', rpcUrl: 'https://optimism-goerli.publicnode.com' },
-    ],
-    skipProviderCheck: true,
-    symbol: 'ETH',
-    testnet: true,
-  },
-  {
     alias: 'optimism-sepolia-testnet',
     blockTimeMs: 2000,
     decimals: 18,
@@ -948,46 +804,6 @@ export const CHAINS: Chain[] = [
     ],
     symbol: 'ETH',
     testnet: false,
-  },
-  {
-    alias: 'polygon-testnet',
-    blockTimeMs: 2217,
-    decimals: 18,
-    explorer: {
-      api: {
-        key: { hardhatEtherscanAlias: 'polygonMumbai', required: true },
-        url: 'https://api-testnet.polygonscan.com/api',
-      },
-      browserUrl: 'https://mumbai.polygonscan.com/',
-    },
-    id: '80001',
-    name: 'Polygon testnet',
-    providers: [
-      { alias: 'default', rpcUrl: 'https://rpc-mumbai.polygon.technology' },
-      { alias: 'publicnode', rpcUrl: 'https://polygon-mumbai-bor-rpc.publicnode.com' },
-      { alias: 'reblok', homepageUrl: 'https://reblok.io' },
-    ],
-    skipProviderCheck: true,
-    symbol: 'MATIC',
-    testnet: true,
-  },
-  {
-    alias: 'polygon-zkevm-goerli-testnet',
-    blockTimeMs: 13280,
-    decimals: 18,
-    explorer: {
-      api: { key: { required: true }, url: 'https://api-testnet-zkevm.polygonscan.com/api' },
-      browserUrl: 'https://testnet-zkevm.polygonscan.com/',
-    },
-    id: '1442',
-    name: 'Polygon zkEVM Goerli testnet',
-    providers: [
-      { alias: 'default', rpcUrl: 'https://rpc.public.zkevm-test.net' },
-      { alias: 'reblok', homepageUrl: 'https://reblok.io' },
-    ],
-    skipProviderCheck: true,
-    symbol: 'ETH',
-    testnet: true,
   },
   {
     alias: 'polygon-zkevm-sepolia-testnet',
@@ -1070,21 +886,6 @@ export const CHAINS: Chain[] = [
     testnet: false,
   },
   {
-    alias: 'scroll-goerli-testnet',
-    blockTimeMs: 28244,
-    decimals: 18,
-    explorer: {
-      api: { key: { required: false }, url: 'https://blockscout.scroll.io/api' },
-      browserUrl: 'https://blockscout.scroll.io/',
-    },
-    id: '534353',
-    name: 'Scroll Goerli testnet',
-    providers: [{ alias: 'default', rpcUrl: 'https://alpha-rpc.scroll.io/l2' }],
-    skipProviderCheck: true,
-    symbol: 'ETH',
-    testnet: true,
-  },
-  {
     alias: 'sx-testnet',
     blockTimeMs: 2000,
     decimals: 18,
@@ -1139,25 +940,6 @@ export const CHAINS: Chain[] = [
     ],
     symbol: 'OKB',
     testnet: false,
-  },
-  {
-    alias: 'zksync-goerli-testnet',
-    blockTimeMs: 7036,
-    decimals: 18,
-    explorer: { browserUrl: 'https://goerli.explorer.zksync.io/' },
-    hardhatConfigOverrides: {
-      networks: {
-        ethNetwork: 'ethereum-goerli-testnet',
-        verifyURL: 'https://zksync2-testnet-explorer.zksync.dev/contract_verification',
-        zksync: true,
-      },
-    },
-    id: '280',
-    name: 'zkSync Goerli testnet',
-    providers: [{ alias: 'default', rpcUrl: 'https://testnet.era.zksync.dev' }],
-    skipProviderCheck: true,
-    symbol: 'ETH',
-    testnet: true,
   },
   {
     alias: 'zksync',

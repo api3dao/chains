@@ -39,9 +39,9 @@ console.log(CHAINS);
 /*
 [
   {
-    name: 'Arbitrum testnet',
-    alias: 'arbitrum-goerli-testnet',
-    id: '421613',
+    name: 'Arbitrum Sepolia testnet',
+    alias: 'arbitrum-sepolia-testnet',
+    id: '421614',
     ...
   },
   ...
@@ -60,9 +60,9 @@ import { hardhatConfig } from '@api3/chains';
 console.log(hardhatConfig.networks());
 /*
 {
-  "arbitrum-goerli-testnet": {
+  "arbitrum-sepolia-testnet": {
       accounts: { mnemonic: '' },
-      chainId: '421613',
+      chainId: '421614',
       url: 'https://...',
   },
   ...
@@ -124,8 +124,8 @@ console.log(viemConfig.chains());
 [
   {
     id: 421613,
-    name: 'arbitrum-goerli-testnet',
-    network: 'arbitrum-goerli-testnet',
+    name: 'arbitrum-sepolia-testnet',
+    network: 'arbitrum-sepolia-testnet',
     rpcUrls: { default: ..., public: ..., environment: ... }
     ...
   },
