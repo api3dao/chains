@@ -1,5 +1,20 @@
 # @api3/chains
 
+## 5.0.0
+
+### Major Changes
+
+- 10ec412: Replace OEV Sepolia testnet with OEV Sepolia Agg Testnet
+- d077a18: Remove Goerli L2s and polygon-testnet
+
+### Minor Changes
+
+- e91f950: Add ethereum-holesky-testnet, opbnb, opbnb-testnet, zircuit-sepolia-testnet
+
+### Patch Changes
+
+- 689e2dc: Skip provider check for polygon-testnet
+
 ## 4.17.1
 
 ### Patch Changes
