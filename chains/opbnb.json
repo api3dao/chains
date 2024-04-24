@@ -17,6 +17,10 @@
     {
       "alias": "default",
       "rpcUrl": "https://opbnb-mainnet-rpc.bnbchain.org"
+    },
+    {
+      "alias": "publicnode",
+      "rpcUrl": "https://opbnb.publicnode.com"
     }
   ],
   "symbol": "BNB",

@@ -17,6 +17,10 @@
     {
       "alias": "default",
       "rpcUrl": "https://opbnb-testnet-rpc.bnbchain.org/"
+    },
+    {
+      "alias": "publicnode",
+      "rpcUrl": "https://opbnb-testnet.publicnode.com"
     }
   ],
   "symbol": "BNB",
