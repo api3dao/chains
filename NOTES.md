@@ -6,7 +6,7 @@
 
 ## Deployment
 
-- `metis-goerli-testnet` and `metis` do not support deterministic deployment.
+- `metis` does not support deterministic deployment.
 
 ## hardhat-etherscan
 

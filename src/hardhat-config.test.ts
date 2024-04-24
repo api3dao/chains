@@ -244,17 +244,6 @@ describe(networks.name, () => {
   });
 
   describe('hardhatConfigOverrides', () => {
-    test('zksync-goerli-testnet', () => {
-      expect(networks()['zksync-goerli-testnet']).toEqual({
-        accounts: { mnemonic: '' },
-        chainId: 280,
-        ethNetwork: 'ethereum-goerli-testnet',
-        url: 'https://testnet.era.zksync.dev',
-        verifyURL: 'https://zksync2-testnet-explorer.zksync.dev/contract_verification',
-        zksync: true,
-      });
-    });
-
     test('zksync', () => {
       expect(networks()['zksync']).toEqual({
         accounts: { mnemonic: '' },

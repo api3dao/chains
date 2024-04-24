@@ -9,28 +9,6 @@ import { Chain } from '../types';
 
 export const CHAINS: Chain[] = [
   {
-    alias: 'arbitrum-goerli-testnet',
-    blockTimeMs: 4542,
-    decimals: 18,
-    explorer: {
-      api: {
-        key: { hardhatEtherscanAlias: 'arbitrumGoerli', required: true },
-        url: 'https://api-goerli.arbiscan.io/api',
-      },
-      browserUrl: 'https://testnet.arbiscan.io/',
-    },
-    id: '421613',
-    name: 'Arbitrum Goerli testnet',
-    providers: [
-      { alias: 'default', rpcUrl: 'https://goerli-rollup.arbitrum.io/rpc' },
-      { alias: 'publicnode', rpcUrl: 'https://arbitrum-goerli.publicnode.com' },
-      { alias: 'reblok', homepageUrl: 'https://reblok.io' },
-    ],
-    skipProviderCheck: true,
-    symbol: 'ETH',
-    testnet: true,
-  },
-  {
     alias: 'arbitrum-nova',
     blockTimeMs: 815,
     decimals: 18,
@@ -162,24 +140,6 @@ export const CHAINS: Chain[] = [
     ],
     symbol: 'AVAX',
     testnet: false,
-  },
-  {
-    alias: 'base-goerli-testnet',
-    blockTimeMs: 2000,
-    decimals: 18,
-    explorer: {
-      api: { key: { required: false }, url: 'https://api-goerli.basescan.org/api' },
-      browserUrl: 'https://goerli.basescan.org/',
-    },
-    id: '84531',
-    name: 'Base Goerli testnet',
-    providers: [
-      { alias: 'default', rpcUrl: 'https://goerli.base.org' },
-      { alias: 'publicnode', rpcUrl: 'https://base-goerli.publicnode.com' },
-    ],
-    skipProviderCheck: true,
-    symbol: 'ETH',
-    testnet: true,
   },
   {
     alias: 'base-sepolia-testnet',
@@ -341,6 +301,7 @@ export const CHAINS: Chain[] = [
     testnet: true,
   },
   {
+<<<<<<< HEAD
     alias: 'ethereum-goerli-testnet',
     blockTimeMs: 16535,
     decimals: 18,
@@ -374,6 +335,8 @@ export const CHAINS: Chain[] = [
     testnet: true,
   },
   {
+=======
+>>>>>>> main
     alias: 'ethereum-sepolia-testnet',
     blockTimeMs: 12679,
     decimals: 18,
@@ -581,21 +544,6 @@ export const CHAINS: Chain[] = [
     testnet: false,
   },
   {
-    alias: 'lightlink-goerli-testnet',
-    blockTimeMs: 505,
-    decimals: 18,
-    explorer: {
-      api: { key: { required: false }, url: 'https://pegasus.lightlink.io/api' },
-      browserUrl: 'https://pegasus.lightlink.io/',
-    },
-    id: '1891',
-    name: 'LightLink Goerli Testnet',
-    providers: [{ alias: 'default', rpcUrl: 'https://replicator.pegasus.lightlink.io/rpc/v1' }],
-    skipProviderCheck: true,
-    symbol: 'ETH',
-    testnet: true,
-  },
-  {
     alias: 'lightlink',
     blockTimeMs: 503,
     decimals: 18,
@@ -609,25 +557,6 @@ export const CHAINS: Chain[] = [
     skipProviderCheck: true,
     symbol: 'ETH',
     testnet: false,
-  },
-  {
-    alias: 'linea-goerli-testnet',
-    blockTimeMs: 4062,
-    decimals: 18,
-    explorer: {
-      api: { key: { required: true }, url: 'https://api-testnet.lineascan.build/api' },
-      browserUrl: 'https://goerli.lineascan.build/',
-    },
-    id: '59140',
-    name: 'Linea Goerli testnet',
-    providers: [
-      { alias: 'default', rpcUrl: 'https://rpc.goerli.linea.build' },
-      { alias: 'blockpi', rpcUrl: 'https://linea-goerli.blockpi.network/v1/rpc/public' },
-      { alias: 'reblok', homepageUrl: 'https://reblok.io' },
-    ],
-    skipProviderCheck: true,
-    symbol: 'ETH',
-    testnet: true,
   },
   {
     alias: 'linea-sepolia-testnet',
@@ -661,21 +590,6 @@ export const CHAINS: Chain[] = [
     ],
     symbol: 'ETH',
     testnet: false,
-  },
-  {
-    alias: 'mantle-goerli-testnet',
-    blockTimeMs: 2000,
-    decimals: 18,
-    explorer: {
-      api: { key: { required: false }, url: 'https://explorer.testnet.mantle.xyz/api' },
-      browserUrl: 'https://explorer.testnet.mantle.xyz/',
-    },
-    id: '5001',
-    name: 'Mantle Goerli testnet',
-    providers: [{ alias: 'default', rpcUrl: 'https://rpc.testnet.mantle.xyz' }],
-    skipProviderCheck: true,
-    symbol: 'MNT',
-    testnet: true,
   },
   {
     alias: 'mantle-sepolia-testnet',
@@ -716,21 +630,6 @@ export const CHAINS: Chain[] = [
     ],
     symbol: 'MNT',
     testnet: false,
-  },
-  {
-    alias: 'metis-goerli-testnet',
-    blockTimeMs: 24914,
-    decimals: 18,
-    explorer: {
-      api: { key: { required: false }, url: 'https://goerli.explorer.metisdevops.link/api' },
-      browserUrl: 'https://goerli.explorer.metisdevops.link/',
-    },
-    id: '599',
-    name: 'Metis Goerli testnet',
-    providers: [{ alias: 'default', rpcUrl: 'https://goerli.gateway.metisdevops.link' }],
-    skipProviderCheck: true,
-    symbol: 'METIS',
-    testnet: true,
   },
   {
     alias: 'metis-sepolia-testnet',
@@ -886,7 +785,7 @@ export const CHAINS: Chain[] = [
     testnet: false,
   },
   {
-    alias: 'oev-network-agg-sepolia-testnet',
+    alias: 'oev-network-sepolia-testnet',
     blockTimeMs: 1686780,
     decimals: 18,
     explorer: {
@@ -897,24 +796,8 @@ export const CHAINS: Chain[] = [
       browserUrl: 'https://oev-network-sepolia-testnet-agg-blockscout.eu-north-2.gateway.fm/',
     },
     id: '879490799',
-    name: 'OEV Network Sepolia testnet (AggLayer)',
-    providers: [{ alias: 'default', rpcUrl: 'https://oev-network-sepolia-testnet-agg-rpc.eu-north-2.gateway.fm' }],
-    symbol: 'ETH',
-    testnet: true,
-  },
-  {
-    alias: 'oev-network-sepolia-testnet',
-    blockTimeMs: 1686780,
-    decimals: 18,
-    explorer: {
-      api: {
-        key: { required: false },
-        url: 'https://oev-network-sepolia-testnet-blockscout.eu-north-2.gateway.fm/api/',
-      },
-      browserUrl: 'https://oev-network-sepolia-testnet-blockscout.eu-north-2.gateway.fm/',
-    },
-    id: '736160594',
     name: 'OEV Network Sepolia testnet',
+<<<<<<< HEAD
     providers: [{ alias: 'default', rpcUrl: 'https://oev-network-sepolia-testnet-rpc.eu-north-2.gateway.fm' }],
     symbol: 'ETH',
     testnet: true,
@@ -965,6 +848,9 @@ export const CHAINS: Chain[] = [
       { alias: 'publicnode', rpcUrl: 'https://optimism-goerli.publicnode.com' },
     ],
     skipProviderCheck: true,
+=======
+    providers: [{ alias: 'default', rpcUrl: 'https://oev-network-sepolia-testnet-agg-rpc.eu-north-2.gateway.fm' }],
+>>>>>>> main
     symbol: 'ETH',
     testnet: true,
   },
@@ -1007,45 +893,6 @@ export const CHAINS: Chain[] = [
     ],
     symbol: 'ETH',
     testnet: false,
-  },
-  {
-    alias: 'polygon-testnet',
-    blockTimeMs: 2217,
-    decimals: 18,
-    explorer: {
-      api: {
-        key: { hardhatEtherscanAlias: 'polygonMumbai', required: true },
-        url: 'https://api-testnet.polygonscan.com/api',
-      },
-      browserUrl: 'https://mumbai.polygonscan.com/',
-    },
-    id: '80001',
-    name: 'Polygon testnet',
-    providers: [
-      { alias: 'default', rpcUrl: 'https://rpc-mumbai.polygon.technology' },
-      { alias: 'publicnode', rpcUrl: 'https://polygon-mumbai-bor-rpc.publicnode.com' },
-      { alias: 'reblok', homepageUrl: 'https://reblok.io' },
-    ],
-    symbol: 'MATIC',
-    testnet: true,
-  },
-  {
-    alias: 'polygon-zkevm-goerli-testnet',
-    blockTimeMs: 13280,
-    decimals: 18,
-    explorer: {
-      api: { key: { required: true }, url: 'https://api-testnet-zkevm.polygonscan.com/api' },
-      browserUrl: 'https://testnet-zkevm.polygonscan.com/',
-    },
-    id: '1442',
-    name: 'Polygon zkEVM Goerli testnet',
-    providers: [
-      { alias: 'default', rpcUrl: 'https://rpc.public.zkevm-test.net' },
-      { alias: 'reblok', homepageUrl: 'https://reblok.io' },
-    ],
-    skipProviderCheck: true,
-    symbol: 'ETH',
-    testnet: true,
   },
   {
     alias: 'polygon-zkevm-sepolia-testnet',
@@ -1128,21 +975,6 @@ export const CHAINS: Chain[] = [
     testnet: false,
   },
   {
-    alias: 'scroll-goerli-testnet',
-    blockTimeMs: 28244,
-    decimals: 18,
-    explorer: {
-      api: { key: { required: false }, url: 'https://blockscout.scroll.io/api' },
-      browserUrl: 'https://blockscout.scroll.io/',
-    },
-    id: '534353',
-    name: 'Scroll Goerli testnet',
-    providers: [{ alias: 'default', rpcUrl: 'https://alpha-rpc.scroll.io/l2' }],
-    skipProviderCheck: true,
-    symbol: 'ETH',
-    testnet: true,
-  },
-  {
     alias: 'sx-testnet',
     blockTimeMs: 2000,
     decimals: 18,
@@ -1199,6 +1031,7 @@ export const CHAINS: Chain[] = [
     testnet: false,
   },
   {
+<<<<<<< HEAD
     alias: 'zircuit-sepolia-testnet',
     blockTimeMs: 2000,
     decimals: 18,
@@ -1232,6 +1065,8 @@ export const CHAINS: Chain[] = [
     testnet: true,
   },
   {
+=======
+>>>>>>> main
     alias: 'zksync',
     blockTimeMs: 1055,
     decimals: 18,

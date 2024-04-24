@@ -39,9 +39,9 @@ console.log(CHAINS);
 /*
 [
   {
-    name: 'Arbitrum testnet',
-    alias: 'arbitrum-goerli-testnet',
-    id: '421613',
+    name: 'Arbitrum Sepolia testnet',
+    alias: 'arbitrum-sepolia-testnet',
+    id: '421614',
     ...
   },
   ...
@@ -53,16 +53,16 @@ console.log(CHAINS);
 
 Returns an object where the key is each chain's alias and the value is an object that can be used as the `networks` field of [`hardhat.config.js`](https://hardhat.org/hardhat-runner/docs/config).
 
-The default `url` values can be overridden with chain specific environment variables. These environment variables take the form of `HARDHAT_HTTP_RPC_URL_${toUpperSnakeCase(chain.alias)}`. e.g. `HARDHAT_HTTP_RPC_URL_ARBITRUM_GOERLI_TESTNET`.
+The default `url` values can be overridden with chain specific environment variables. These environment variables take the form of `HARDHAT_HTTP_RPC_URL_${toUpperSnakeCase(chain.alias)}`. e.g. `HARDHAT_HTTP_RPC_URL_ARBITRUM_SEPOLIA_TESTNET`.
 
 ```ts
 import { hardhatConfig } from '@api3/chains';
 console.log(hardhatConfig.networks());
 /*
 {
-  "arbitrum-goerli-testnet": {
+  "arbitrum-sepolia-testnet": {
       accounts: { mnemonic: '' },
-      chainId: '421613',
+      chainId: '421614',
       url: 'https://...',
   },
   ...
@@ -82,7 +82,7 @@ console.log(hardhatConfig.etherscan());
 /*
 {
   apiKey: {
-    'arbitrumGoerli': { ... }
+    'arbitrumSepolia': { ... }
   },
   customChains: [
     ...
@@ -103,9 +103,9 @@ console.log(hardhatConfig.getEnvVariableNames());
 /*
 [
   'MNEMONIC',
-  'ETHERSCAN_API_KEY_ARBITRUM_GOERLI_TESTNET',
+  'ETHERSCAN_API_KEY_ARBITRUM_SEPOLIA_TESTNET',
   ...
-  'HARDHAT_HTTP_RPC_URL_ARBITRUM_GOERLI_TESTNET',
+  'HARDHAT_HTTP_RPC_URL_ARBITRUM_SEPOLIA_TESTNET',
   ...
 ]
 */
@@ -124,8 +124,8 @@ console.log(viemConfig.chains());
 [
   {
     id: 421613,
-    name: 'arbitrum-goerli-testnet',
-    network: 'arbitrum-goerli-testnet',
+    name: 'arbitrum-sepolia-testnet',
+    network: 'arbitrum-sepolia-testnet',
     rpcUrls: { default: ..., public: ..., environment: ... }
     ...
   },
