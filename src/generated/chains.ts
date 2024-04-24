@@ -310,7 +310,13 @@ export const CHAINS: Chain[] = [
     },
     id: '17000',
     name: 'Ethereum Holesky testnet',
-    providers: [{ alias: 'default', rpcUrl: 'https://ethereum-holesky-rpc.publicnode.com' }],
+    providers: [
+      { alias: 'default', rpcUrl: 'https://ethereum-holesky-rpc.publicnode.com' },
+      {
+        alias: 'drpc-freemium',
+        rpcUrl: 'https://lb.drpc.org/ogrpc?network=ethereum-holesky&dkey=AiPHJac9aUX2s7ELd131NuwSeHqkUW8R7oQiFnomaLKw',
+      },
+    ],
     symbol: 'ETH',
     testnet: true,
   },
@@ -789,7 +795,10 @@ export const CHAINS: Chain[] = [
     },
     id: '5611',
     name: 'opBNB testnet',
-    providers: [{ alias: 'default', rpcUrl: 'https://opbnb-testnet-rpc.bnbchain.org/' }],
+    providers: [
+      { alias: 'default', rpcUrl: 'https://opbnb-testnet-rpc.bnbchain.org/' },
+      { alias: 'publicnode', rpcUrl: 'https://opbnb-testnet.publicnode.com' },
+    ],
     symbol: 'BNB',
     testnet: true,
   },
@@ -803,7 +812,10 @@ export const CHAINS: Chain[] = [
     },
     id: '204',
     name: 'opBNB',
-    providers: [{ alias: 'default', rpcUrl: 'https://opbnb-mainnet-rpc.bnbchain.org' }],
+    providers: [
+      { alias: 'default', rpcUrl: 'https://opbnb-mainnet-rpc.bnbchain.org' },
+      { alias: 'publicnode', rpcUrl: 'https://opbnb.publicnode.com' },
+    ],
     symbol: 'BNB',
     testnet: false,
   },
@@ -979,6 +991,7 @@ export const CHAINS: Chain[] = [
     providers: [
       { alias: 'default', rpcUrl: 'https://rpc.xlayer.tech/' },
       { alias: 'okx', rpcUrl: 'https://xlayerrpc.okx.com/' },
+      { alias: 'omnia', rpcUrl: 'https://endpoints.omniatech.io/' },
     ],
     symbol: 'OKB',
     testnet: false,
