@@ -301,26 +301,6 @@ export const CHAINS: Chain[] = [
     testnet: true,
   },
   {
-<<<<<<< HEAD
-    alias: 'ethereum-goerli-testnet',
-    blockTimeMs: 16535,
-    decimals: 18,
-    explorer: {
-      api: { key: { hardhatEtherscanAlias: 'goerli', required: true }, url: 'https://api-goerli.etherscan.io/api' },
-      browserUrl: 'https://goerli.etherscan.io/',
-    },
-    id: '5',
-    name: 'Ethereum Goerli testnet',
-    providers: [
-      { alias: 'default', rpcUrl: 'https://rpc.ankr.com/eth_goerli' },
-      { alias: 'publicnode', rpcUrl: 'https://ethereum-goerli.publicnode.com' },
-      { alias: 'reblok', homepageUrl: 'https://reblok.io' },
-    ],
-    skipProviderCheck: true,
-    symbol: 'ETH',
-    testnet: true,
-  },
-  {
     alias: 'ethereum-holesky-testnet',
     blockTimeMs: 12973,
     decimals: 18,
@@ -335,8 +315,6 @@ export const CHAINS: Chain[] = [
     testnet: true,
   },
   {
-=======
->>>>>>> main
     alias: 'ethereum-sepolia-testnet',
     blockTimeMs: 12679,
     decimals: 18,
@@ -797,8 +775,7 @@ export const CHAINS: Chain[] = [
     },
     id: '879490799',
     name: 'OEV Network Sepolia testnet',
-<<<<<<< HEAD
-    providers: [{ alias: 'default', rpcUrl: 'https://oev-network-sepolia-testnet-rpc.eu-north-2.gateway.fm' }],
+    providers: [{ alias: 'default', rpcUrl: 'https://oev-network-sepolia-testnet-agg-rpc.eu-north-2.gateway.fm' }],
     symbol: 'ETH',
     testnet: true,
   },
@@ -829,30 +806,6 @@ export const CHAINS: Chain[] = [
     providers: [{ alias: 'default', rpcUrl: 'https://opbnb-mainnet-rpc.bnbchain.org' }],
     symbol: 'BNB',
     testnet: false,
-  },
-  {
-    alias: 'optimism-goerli-testnet',
-    blockTimeMs: 2000,
-    decimals: 18,
-    explorer: {
-      api: {
-        key: { hardhatEtherscanAlias: 'optimisticGoerli', required: true },
-        url: 'https://api-goerli-optimism.etherscan.io/api',
-      },
-      browserUrl: 'https://goerli-optimism.etherscan.io/',
-    },
-    id: '420',
-    name: 'Optimism Goerli testnet',
-    providers: [
-      { alias: 'default', rpcUrl: 'https://goerli.optimism.io' },
-      { alias: 'publicnode', rpcUrl: 'https://optimism-goerli.publicnode.com' },
-    ],
-    skipProviderCheck: true,
-=======
-    providers: [{ alias: 'default', rpcUrl: 'https://oev-network-sepolia-testnet-agg-rpc.eu-north-2.gateway.fm' }],
->>>>>>> main
-    symbol: 'ETH',
-    testnet: true,
   },
   {
     alias: 'optimism-sepolia-testnet',
@@ -1031,7 +984,6 @@ export const CHAINS: Chain[] = [
     testnet: false,
   },
   {
-<<<<<<< HEAD
     alias: 'zircuit-sepolia-testnet',
     blockTimeMs: 2000,
     decimals: 18,
@@ -1046,27 +998,6 @@ export const CHAINS: Chain[] = [
     testnet: true,
   },
   {
-    alias: 'zksync-goerli-testnet',
-    blockTimeMs: 7036,
-    decimals: 18,
-    explorer: { browserUrl: 'https://goerli.explorer.zksync.io/' },
-    hardhatConfigOverrides: {
-      networks: {
-        ethNetwork: 'ethereum-goerli-testnet',
-        verifyURL: 'https://zksync2-testnet-explorer.zksync.dev/contract_verification',
-        zksync: true,
-      },
-    },
-    id: '280',
-    name: 'zkSync Goerli testnet',
-    providers: [{ alias: 'default', rpcUrl: 'https://testnet.era.zksync.dev' }],
-    skipProviderCheck: true,
-    symbol: 'ETH',
-    testnet: true,
-  },
-  {
-=======
->>>>>>> main
     alias: 'zksync',
     blockTimeMs: 1055,
     decimals: 18,
