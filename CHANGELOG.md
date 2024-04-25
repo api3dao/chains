@@ -1,5 +1,11 @@
 # @api3/chains
 
+## 5.1.0
+
+### Minor Changes
+
+- 19a5d56: Add merlin and merlin-testnet
+
 ## 5.0.0
 
 ### Major Changes
