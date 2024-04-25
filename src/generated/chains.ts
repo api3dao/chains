@@ -815,6 +815,10 @@ export const CHAINS: Chain[] = [
     providers: [
       { alias: 'default', rpcUrl: 'https://opbnb-mainnet-rpc.bnbchain.org' },
       { alias: 'publicnode', rpcUrl: 'https://opbnb.publicnode.com' },
+      {
+        alias: 'drpc-freemium',
+        rpcUrl: 'https://lb.drpc.org/ogrpc?network=opbnb&dkey=AiPHJac9aUX2s7ELd131NuwSeHqkUW8R7oQiFnomaLKw',
+      },
     ],
     symbol: 'BNB',
     testnet: false,
