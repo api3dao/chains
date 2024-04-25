@@ -625,10 +625,7 @@ export const CHAINS: Chain[] = [
     },
     id: '686868',
     name: 'Merlin testnet',
-    providers: [
-      { alias: 'default', rpcUrl: 'https://testnet-rpc.merlinchain.io' },
-      { alias: 'unifra-freemium', rpcUrl: 'https://merlin-testnet.unifra.io/v1/09a57bcf863b43a9a77d4ae3dcedbaff' },
-    ],
+    providers: [{ alias: 'default', rpcUrl: 'https://testnet-rpc.merlinchain.io' }],
     symbol: 'BTC',
     testnet: true,
   },
@@ -642,10 +639,7 @@ export const CHAINS: Chain[] = [
     },
     id: '4200',
     name: 'Merlin',
-    providers: [
-      { alias: 'default', rpcUrl: 'https://rpc.merlinchain.io' },
-      { alias: 'unifra-freemium', rpcUrl: 'https://merlin-mainnet.unifra.io/v1/2e6d4bd1ad0c4943b2f02815cc7c570a' },
-    ],
+    providers: [{ alias: 'default', rpcUrl: 'https://rpc.merlinchain.io' }],
     symbol: 'BTC',
     testnet: false,
   },
@@ -835,7 +829,7 @@ export const CHAINS: Chain[] = [
     name: 'opBNB testnet',
     providers: [
       { alias: 'default', rpcUrl: 'https://opbnb-testnet-rpc.bnbchain.org/' },
-      { alias: 'publicnode', rpcUrl: 'https://opbnb-testnet.publicnode.com' },
+      { alias: 'publicnode', rpcUrl: 'https://opbnb-testnet-rpc.publicnode.com' },
     ],
     symbol: 'BNB',
     testnet: true,
@@ -852,7 +846,7 @@ export const CHAINS: Chain[] = [
     name: 'opBNB',
     providers: [
       { alias: 'default', rpcUrl: 'https://opbnb-mainnet-rpc.bnbchain.org' },
-      { alias: 'publicnode', rpcUrl: 'https://opbnb.publicnode.com' },
+      { alias: 'publicnode', rpcUrl: 'https://opbnb-rpc.publicnode.com' },
       {
         alias: 'drpc-freemium',
         rpcUrl: 'https://lb.drpc.org/ogrpc?network=opbnb&dkey=AiPHJac9aUX2s7ELd131NuwSeHqkUW8R7oQiFnomaLKw',
@@ -1033,7 +1027,7 @@ export const CHAINS: Chain[] = [
     providers: [
       { alias: 'default', rpcUrl: 'https://rpc.xlayer.tech/' },
       { alias: 'okx', rpcUrl: 'https://xlayerrpc.okx.com/' },
-      { alias: 'omnia', rpcUrl: 'https://endpoints.omniatech.io/' },
+      { alias: 'omnia', homepageUrl: 'https://omniatech.io' },
     ],
     symbol: 'OKB',
     testnet: false,

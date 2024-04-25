@@ -20,7 +20,7 @@
     },
     {
       "alias": "publicnode",
-      "rpcUrl": "https://opbnb.publicnode.com"
+      "rpcUrl": "https://opbnb-rpc.publicnode.com"
     },
     {
       "alias": "drpc-freemium",

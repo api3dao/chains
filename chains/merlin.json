@@ -17,10 +17,6 @@
     {
       "alias": "default",
       "rpcUrl": "https://rpc.merlinchain.io"
-    },
-    {
-      "alias": "unifra-freemium",
-      "rpcUrl": "https://merlin-mainnet.unifra.io/v1/2e6d4bd1ad0c4943b2f02815cc7c570a"
     }
   ],
   "symbol": "BTC",

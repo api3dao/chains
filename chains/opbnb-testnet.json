@@ -20,7 +20,7 @@
     },
     {
       "alias": "publicnode",
-      "rpcUrl": "https://opbnb-testnet.publicnode.com"
+      "rpcUrl": "https://opbnb-testnet-rpc.publicnode.com"
     }
   ],
   "symbol": "BNB",
