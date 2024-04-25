@@ -1,5 +1,11 @@
 # @api3/chains
 
+## 5.1.1
+
+### Patch Changes
+
+- 33bc6da: Adds additional RPCs to `x-layer`, `ethereum-holesky-testnet`, `opbnb`, `opbnb-testnet`, `merlin`, `merlin-testnet`, `metis`
+
 ## 5.1.0
 
 ### Minor Changes
