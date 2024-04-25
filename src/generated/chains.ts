@@ -625,7 +625,10 @@ export const CHAINS: Chain[] = [
     },
     id: '686868',
     name: 'Merlin testnet',
-    providers: [{ alias: 'default', rpcUrl: 'https://testnet-rpc.merlinchain.io' }],
+    providers: [
+      { alias: 'default', rpcUrl: 'https://testnet-rpc.merlinchain.io' },
+      { alias: 'unifra-freemium', rpcUrl: 'https://merlin-mainnet.unifra.io/v1/2e6d4bd1ad0c4943b2f02815cc7c570a' },
+    ],
     symbol: 'BTC',
     testnet: true,
   },
@@ -639,7 +642,10 @@ export const CHAINS: Chain[] = [
     },
     id: '4200',
     name: 'Merlin',
-    providers: [{ alias: 'default', rpcUrl: 'https://rpc.merlinchain.io' }],
+    providers: [
+      { alias: 'default', rpcUrl: 'https://rpc.merlinchain.io' },
+      { alias: 'unifra-freemium', rpcUrl: 'https://merlin-testnet.unifra.io/v1/09a57bcf863b43a9a77d4ae3dcedbaff' },
+    ],
     symbol: 'BTC',
     testnet: false,
   },
