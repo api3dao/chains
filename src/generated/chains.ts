@@ -310,7 +310,13 @@ export const CHAINS: Chain[] = [
     },
     id: '17000',
     name: 'Ethereum Holesky testnet',
-    providers: [{ alias: 'default', rpcUrl: 'https://ethereum-holesky-rpc.publicnode.com' }],
+    providers: [
+      { alias: 'default', rpcUrl: 'https://ethereum-holesky-rpc.publicnode.com' },
+      {
+        alias: 'drpc-freemium',
+        rpcUrl: 'https://lb.drpc.org/ogrpc?network=ethereum-holesky&dkey=AiPHJac9aUX2s7ELd131NuwSeHqkUW8R7oQiFnomaLKw',
+      },
+    ],
     symbol: 'ETH',
     testnet: true,
   },
@@ -662,7 +668,11 @@ export const CHAINS: Chain[] = [
     },
     id: '1088',
     name: 'Metis',
-    providers: [{ alias: 'default', rpcUrl: 'https://andromeda.metis.io/?owner=1088' }],
+    providers: [
+      { alias: 'default', rpcUrl: 'https://andromeda.metis.io/?owner=1088' },
+      { alias: 'blastapi', homepageUrl: 'https://blastapi.io' },
+      { alias: 'drpc', homepageUrl: 'https://drpc.org' },
+    ],
     symbol: 'METIS',
     testnet: false,
   },
@@ -817,7 +827,10 @@ export const CHAINS: Chain[] = [
     },
     id: '5611',
     name: 'opBNB testnet',
-    providers: [{ alias: 'default', rpcUrl: 'https://opbnb-testnet-rpc.bnbchain.org/' }],
+    providers: [
+      { alias: 'default', rpcUrl: 'https://opbnb-testnet-rpc.bnbchain.org/' },
+      { alias: 'publicnode', rpcUrl: 'https://opbnb-testnet-rpc.publicnode.com' },
+    ],
     symbol: 'BNB',
     testnet: true,
   },
@@ -831,7 +844,14 @@ export const CHAINS: Chain[] = [
     },
     id: '204',
     name: 'opBNB',
-    providers: [{ alias: 'default', rpcUrl: 'https://opbnb-mainnet-rpc.bnbchain.org' }],
+    providers: [
+      { alias: 'default', rpcUrl: 'https://opbnb-mainnet-rpc.bnbchain.org' },
+      { alias: 'publicnode', rpcUrl: 'https://opbnb-rpc.publicnode.com' },
+      {
+        alias: 'drpc-freemium',
+        rpcUrl: 'https://lb.drpc.org/ogrpc?network=opbnb&dkey=AiPHJac9aUX2s7ELd131NuwSeHqkUW8R7oQiFnomaLKw',
+      },
+    ],
     symbol: 'BNB',
     testnet: false,
   },
@@ -1007,6 +1027,7 @@ export const CHAINS: Chain[] = [
     providers: [
       { alias: 'default', rpcUrl: 'https://rpc.xlayer.tech/' },
       { alias: 'okx', rpcUrl: 'https://xlayerrpc.okx.com/' },
+      { alias: 'omnia', homepageUrl: 'https://omniatech.io' },
     ],
     symbol: 'OKB',
     testnet: false,
