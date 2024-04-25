@@ -18,7 +18,7 @@
     },
     {
       "alias": "omnia",
-      "rpcUrl": "https://endpoints.omniatech.io/"
+      "homepageUrl": "https://omniatech.io"
     }
   ],
   "symbol": "OKB",
