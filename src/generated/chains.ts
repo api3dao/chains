@@ -674,7 +674,11 @@ export const CHAINS: Chain[] = [
     },
     id: '1088',
     name: 'Metis',
-    providers: [{ alias: 'default', rpcUrl: 'https://andromeda.metis.io/?owner=1088' }],
+    providers: [
+      { alias: 'default', rpcUrl: 'https://andromeda.metis.io/?owner=1088' },
+      { alias: 'blastapi', homepageUrl: 'https://blastapi.io' },
+      { alias: 'drpc', homepageUrl: 'https://drpc.org' },
+    ],
     symbol: 'METIS',
     testnet: false,
   },
