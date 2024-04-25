@@ -17,6 +17,14 @@
     {
       "alias": "default",
       "rpcUrl": "https://andromeda.metis.io/?owner=1088"
+    },
+    {
+      "alias": "blastapi",
+      "homepageUrl": "https://blastapi.io"
+    },
+    {
+      "alias": "drpc",
+      "homepageUrl": "https://drpc.org"
     }
   ],
   "symbol": "METIS",
