@@ -1,0 +1,25 @@
+{
+  "alias": "lightlink-sepolia-testnet",
+  "blockTimeMs": 503,
+  "decimals": 18,
+  "explorer": {
+    "api": {
+      "key": {
+        "required": false
+      },
+      "url": "https://pegasus.lightlink.io/api"
+    },
+    "browserUrl": "https://pegasus.lightlink.io/"
+  },
+  "id": "1891",
+  "name": "LightLink",
+  "providers": [
+    {
+      "alias": "default",
+      "rpcUrl": "https://replicator.pegasus.lightlink.io/rpc/v1"
+    }
+  ],
+  "skipProviderCheck": true,
+  "symbol": "ETH",
+  "testnet": true
+}
