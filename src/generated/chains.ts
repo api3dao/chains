@@ -232,7 +232,7 @@ export const CHAINS: Chain[] = [
     name: 'Bob Sepolia testnet',
     providers: [{ alias: 'default', rpcUrl: 'https://testnet.rpc.gobob.xyz/' }],
     skipProviderCheck: true,
-    symbol: 'ETL',
+    symbol: 'BOB',
     testnet: true,
   },
   {
