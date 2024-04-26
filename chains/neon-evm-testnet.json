@@ -1,0 +1,25 @@
+{
+  "alias": "neon-evm-testnet",
+  "blockTimeMs": 2951,
+  "decimals": 18,
+  "explorer": {
+    "api": {
+      "key": {
+        "required": false
+      },
+      "url": "https://devnet-api.neonscan.org/hardhat/verify"
+    },
+    "browserUrl": "https://devnet.neonscan.org/"
+  },
+  "id": "245022926",
+  "name": "Neon EVM testnet",
+  "providers": [
+    {
+      "alias": "default",
+      "rpcUrl": "https://devnet.neonevm.org"
+    }
+  ],
+  "skipProviderCheck": false,
+  "symbol": "NEON",
+  "testnet": true
+}
