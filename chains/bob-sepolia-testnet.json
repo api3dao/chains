@@ -19,7 +19,6 @@
       "rpcUrl": "https://testnet.rpc.gobob.xyz/"
     }
   ],
-  "skipProviderCheck": true,
   "symbol": "ETH",
   "testnet": true
 }
