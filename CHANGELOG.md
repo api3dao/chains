@@ -1,5 +1,17 @@
 # @api3/chains
 
+## 5.2.0
+
+### Minor Changes
+
+- 81878cf: Adds following chains;
+
+  - `bob-sepolia-testnet`
+  - `lightlink`
+  - `lightlink-sepolia-testnet`
+  - `neon-evm`
+  - `neon-evm-testnet`
+
 ## 5.1.1
 
 ### Patch Changes
