@@ -1,0 +1,25 @@
+{
+  "alias": "bob-sepolia-testnet",
+  "blockTimeMs": 503,
+  "decimals": 18,
+  "explorer": {
+    "api": {
+      "key": {
+        "required": false
+      },
+      "url": "https://testnet-explorer.gobob.xyz/api"
+    },
+    "browserUrl": "https://testnet-explorer.gobob.xyz/"
+  },
+  "id": "111",
+  "name": "Bob Sepolia testnet",
+  "providers": [
+    {
+      "alias": "default",
+      "rpcUrl": "https://testnet.rpc.gobob.xyz/"
+    }
+  ],
+  "skipProviderCheck": true,
+  "symbol": "ETL",
+  "testnet": true
+}
