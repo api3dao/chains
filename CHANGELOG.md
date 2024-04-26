@@ -1,5 +1,11 @@
 # @api3/chains
 
+## 5.2.2
+
+### Patch Changes
+
+- a4a88cd: Fix `lightlink-sepolia-testnet` name as LightLink Sepolia testnet
+
 ## 5.2.1
 
 ### Patch Changes
