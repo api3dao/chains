@@ -550,7 +550,7 @@ export const CHAINS: Chain[] = [
       browserUrl: 'https://pegasus.lightlink.io/',
     },
     id: '1891',
-    name: 'LightLink',
+    name: 'LightLink Sepolia testnet',
     providers: [{ alias: 'default', rpcUrl: 'https://replicator.pegasus.lightlink.io/rpc/v1' }],
     symbol: 'ETH',
     testnet: true,
