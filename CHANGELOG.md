@@ -1,5 +1,11 @@
 # @api3/chains
 
+## 5.2.1
+
+### Patch Changes
+
+- acd28ee: Fix skipping provider check for `bob-sepolia-testnet`, `lightlink-sepolia-testnet`, `lightlink`
+
 ## 5.2.0
 
 ### Minor Changes
