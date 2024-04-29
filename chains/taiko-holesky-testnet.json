@@ -1,0 +1,25 @@
+{
+  "alias": "taiko-holesky-testnet",
+  "blockTimeMs": 2951,
+  "decimals": 18,
+  "explorer": {
+    "api": {
+      "key": {
+        "required": false
+      },
+      "url": "https://blockscoutapi.hekla.taiko.xyz/api"
+    },
+    "browserUrl": "https://blockscoutapi.hekla.taiko.xyz/"
+  },
+  "id": "167009",
+  "name": "Taiko Holesky testnet",
+  "providers": [
+    {
+      "alias": "default",
+      "rpcUrl": "https://rpc.hekla.taiko.xyz"
+    }
+  ],
+  "skipProviderCheck": false,
+  "symbol": "ETH",
+  "testnet": true
+}

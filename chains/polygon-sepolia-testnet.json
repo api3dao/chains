@@ -1,0 +1,24 @@
+{
+  "alias": "polygon-sepolia-testnet",
+  "blockTimeMs": 2211,
+  "decimals": 18,
+  "explorer": {
+    "api": {
+      "key": {
+        "required": false
+      },
+      "url": "https://www.oklink.com/api/v5/explorer/contract/verify-source-code-plugin/amoy_testnet"
+    },
+    "browserUrl": "https://www.oklink.com/amoy"
+  },
+  "id": "80002",
+  "name": "Polygon Amoy testnet",
+  "providers": [
+    {
+      "alias": "default",
+      "rpcUrl": "https://rpc-amoy.polygon.technology"
+    }
+  ],
+  "symbol": "MATIC",
+  "testnet": false
+}

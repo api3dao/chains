@@ -1,0 +1,28 @@
+{
+  "alias": "bsquared",
+  "blockTimeMs": 2000,
+  "decimals": 18,
+  "explorer": {
+    "api": {
+      "key": {
+        "required": false
+      },
+      "url": "https://bsquared.l2scan.co/api"
+    },
+    "browserUrl": "https://bsquared.l2scan.co/"
+  },
+  "id": "223",
+  "name": "BSquared",
+  "providers": [
+    {
+      "alias": "default",
+      "rpcUrl": "https://rpc.bsquared.network"
+    },
+    {
+      "alias": "publicnode",
+      "rpcUrl": "https://b2-mainnet.alt.technology"
+    }
+  ],
+  "symbol": "BTC",
+  "testnet": false
+}
