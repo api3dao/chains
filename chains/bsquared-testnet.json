@@ -10,7 +10,7 @@
   "providers": [
     {
       "alias": "default",
-      "rpcUrl": " https://b2-testnet.alt.technology"
+      "rpcUrl": "https://b2-testnet.alt.technology"
     }
   ],
   "symbol": "BTC",

@@ -307,7 +307,7 @@ export const CHAINS: Chain[] = [
     explorer: { browserUrl: 'https://bsquared-testnet.l2scan.co/' },
     id: '1123',
     name: 'BSquared testnet',
-    providers: [{ alias: 'default', rpcUrl: ' https://b2-testnet.alt.technology' }],
+    providers: [{ alias: 'default', rpcUrl: 'https://b2-testnet.alt.technology' }],
     symbol: 'BTC',
     testnet: true,
   },
