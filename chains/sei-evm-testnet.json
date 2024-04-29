@@ -16,7 +16,7 @@
   "providers": [
     {
       "alias": "default",
-      "rpcUrl": " https://evm-rpc-arctic-1.sei-apis.com"
+      "rpcUrl": "https://evm-rpc-arctic-1.sei-apis.com"
     },
     {
       "alias": "publicnode",
