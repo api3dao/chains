@@ -301,18 +301,18 @@ export const CHAINS: Chain[] = [
     testnet: false,
   },
   {
-    alias: 'bsquared-testnet',
+    alias: 'bsquared-network-testnet',
     blockTimeMs: 2000,
     decimals: 18,
     explorer: { browserUrl: 'https://bsquared-testnet.l2scan.co/' },
     id: '1123',
-    name: 'BSquared testnet',
+    name: 'Bsquared Network testnet',
     providers: [{ alias: 'default', rpcUrl: 'https://b2-testnet.alt.technology' }],
     symbol: 'BTC',
     testnet: true,
   },
   {
-    alias: 'bsquared',
+    alias: 'bsquared-network',
     blockTimeMs: 2000,
     decimals: 18,
     explorer: {
