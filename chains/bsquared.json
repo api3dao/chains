@@ -12,14 +12,14 @@
     "browserUrl": "https://bsquared.l2scan.co/"
   },
   "id": "223",
-  "name": "BSquared",
+  "name": "Bsquared Network",
   "providers": [
     {
       "alias": "default",
       "rpcUrl": "https://rpc.bsquared.network"
     },
     {
-      "alias": "publicnode",
+      "alias": "public",
       "rpcUrl": "https://b2-mainnet.alt.technology"
     }
   ],

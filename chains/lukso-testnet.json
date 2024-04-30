@@ -19,7 +19,6 @@
       "rpcUrl": "https://rpc.testnet.lukso.network"
     }
   ],
-  "skipProviderCheck": false,
   "symbol": "LYXt",
   "testnet": true
 }

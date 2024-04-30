@@ -5,11 +5,11 @@
   "explorer": {
     "api": {
       "key": {
-        "required": false
+        "required": true
       },
-      "url": "https://www.oklink.com/api/v5/explorer/contract/verify-source-code-plugin/amoy_testnet"
+      "url": "https://api-amoy.polygonscan.com/api"
     },
-    "browserUrl": "https://www.oklink.com/amoy"
+    "browserUrl": "https://amoy.polygonscan.com"
   },
   "id": "80002",
   "name": "Polygon Amoy testnet",
@@ -17,8 +17,12 @@
     {
       "alias": "default",
       "rpcUrl": "https://rpc-amoy.polygon.technology"
+    },
+    {
+      "alias": "publicnode",
+      "rpcUrl": "https://polygon-amoy-bor-rpc.publicnode.com"
     }
   ],
   "symbol": "MATIC",
-  "testnet": false
+  "testnet": true
 }
