@@ -6,10 +6,6 @@ import { CHAINS, Chain } from '../src';
 const specifiedChain = CHAINS.find((chain) => chain.alias === process.env.CHAIN);
 const chains = specifiedChain ? [specifiedChain] : CHAINS;
 
-// A somewhat arbitrary multiplier applied to the average block ms to determine whether
-// or not the reported latest block is recent or not
-const BLOCK_TOLERANCE_MULTIPLIER = 8;
-
 // Set the following environment variables to also notify to Slack
 const slackToken = process.env.SLACK_TOKEN;
 const slackChannel = process.env.SLACK_CHANNEL;
@@ -50,9 +46,8 @@ async function validateLatestBlock(client: PublicClient, chain: Chain): Promise<
   const block = blockRes.data;
   const blockTimestamp = block.timestamp;
   const deltaTime = Number(BigInt(Math.floor(new Date().getTime() / 1000)) - blockTimestamp);
-  // The block time in seconds multiplied by an arbitrary tolerance multiplier
-  const tolerance = (chain.blockTimeMs / 1_000) * BLOCK_TOLERANCE_MULTIPLIER;
-  if (Math.abs(deltaTime) > tolerance) {
+  const cutoff = 60 * 5; // Arbitrary cutoff of 5 minutes
+  if (Math.abs(deltaTime) > cutoff) {
     throw new Error(`${chain.alias} latest block timestamp is ${deltaTime} seconds behind the system clock`);
   }
 }

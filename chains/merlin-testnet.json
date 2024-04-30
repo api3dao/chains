@@ -1,6 +1,5 @@
 {
   "alias": "merlin-testnet",
-  "blockTimeMs": 3154,
   "decimals": 18,
   "explorer": {
     "api": {

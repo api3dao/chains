@@ -1,6 +1,5 @@
 {
   "alias": "oev-network-sepolia-testnet",
-  "blockTimeMs": 1686780,
   "decimals": 18,
   "explorer": {
     "api": {

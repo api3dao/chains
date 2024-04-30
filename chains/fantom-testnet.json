@@ -1,6 +1,5 @@
 {
   "alias": "fantom-testnet",
-  "blockTimeMs": 4590,
   "decimals": 18,
   "explorer": {
     "api": {

@@ -1,6 +1,5 @@
 {
   "alias": "linea-sepolia-testnet",
-  "blockTimeMs": 17936,
   "decimals": 18,
   "explorer": {
     "api": {

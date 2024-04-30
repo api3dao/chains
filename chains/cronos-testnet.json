@@ -1,6 +1,5 @@
 {
   "alias": "cronos-testnet",
-  "blockTimeMs": 2605,
   "decimals": 18,
   "explorer": {
     "api": {

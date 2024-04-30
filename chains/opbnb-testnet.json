@@ -1,6 +1,5 @@
 {
   "alias": "opbnb-testnet",
-  "blockTimeMs": 1000,
   "decimals": 18,
   "explorer": {
     "api": {

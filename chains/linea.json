@@ -1,6 +1,5 @@
 {
   "alias": "linea",
-  "blockTimeMs": 4003,
   "decimals": 18,
   "explorer": {
     "api": {
