@@ -5,12 +5,12 @@
 ### Minor Changes
 
 - 352f7ec: Adds following chains
-  - `bsquared`
-  - `bsquared-testnet`
+  - `bsquared-network`
+  - `bsquared-network-testnet`
   - `lukso`
   - `lukso-testnet`
   - `polygon-sepolia-testnet`
-  - `sei-evm-testnet`
+  - `sei-testnet`
   - `taiko-holesky-testnet`
 
 ## 5.2.2
