@@ -1,5 +1,5 @@
 {
-  "alias": "sei-evm-testnet",
+  "alias": "sei-testnet",
   "blockTimeMs": 2951,
   "decimals": 18,
   "explorer": {
@@ -12,14 +12,14 @@
     "browserUrl": "https://seitrace.com/"
   },
   "id": "713715",
-  "name": "Sei EVM testnet",
+  "name": "Sei EVM devnet",
   "providers": [
     {
       "alias": "default",
       "rpcUrl": "https://evm-rpc-arctic-1.sei-apis.com"
     },
     {
-      "alias": "publicnode",
+      "alias": "public",
       "rpcUrl": "https://evm-rpc.arctic-1.seinetwork.io"
     }
   ],
