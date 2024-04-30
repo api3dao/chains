@@ -12,7 +12,7 @@
     "browserUrl": "https://blockscoutapi.hekla.taiko.xyz/"
   },
   "id": "167009",
-  "name": "Taiko Holesky testnet",
+  "name": "Taiko Hekla testnet",
   "providers": [
     {
       "alias": "default",
