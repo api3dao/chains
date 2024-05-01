@@ -285,7 +285,7 @@ export const CHAINS: Chain[] = [
     testnet: false,
   },
   {
-    alias: 'bsquared-network-testnet',
+    alias: 'bsquared-testnet',
     decimals: 18,
     explorer: { browserUrl: 'https://bsquared-testnet.l2scan.co/' },
     id: '1123',
@@ -295,7 +295,7 @@ export const CHAINS: Chain[] = [
     testnet: true,
   },
   {
-    alias: 'bsquared-network',
+    alias: 'bsquared',
     decimals: 18,
     explorer: {
       api: { key: { required: false }, url: 'https://bsquared.l2scan.co/api' },
