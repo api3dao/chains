@@ -1,5 +1,15 @@
 # @api3/chains
 
+## 6.0.0
+
+### Major Changes
+
+- ca8c648: Remove blockTimeMs field
+
+### Patch Changes
+
+- b326d5f: Fix BSquared name and alias
+
 ## 5.3.0
 
 ### Minor Changes
