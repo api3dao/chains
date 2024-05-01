@@ -1,6 +1,5 @@
 {
   "alias": "bsquared-network-testnet",
-  "blockTimeMs": 2000,
   "decimals": 18,
   "explorer": {
     "browserUrl": "https://bsquared-testnet.l2scan.co/"

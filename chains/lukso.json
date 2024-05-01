@@ -1,6 +1,5 @@
 {
   "alias": "lukso",
-  "blockTimeMs": 12498,
   "decimals": 18,
   "explorer": {
     "api": {

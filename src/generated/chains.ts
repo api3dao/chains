@@ -286,7 +286,6 @@ export const CHAINS: Chain[] = [
   },
   {
     alias: 'bsquared-network-testnet',
-    blockTimeMs: 2000,
     decimals: 18,
     explorer: { browserUrl: 'https://bsquared-testnet.l2scan.co/' },
     id: '1123',
@@ -297,7 +296,6 @@ export const CHAINS: Chain[] = [
   },
   {
     alias: 'bsquared-network',
-    blockTimeMs: 2000,
     decimals: 18,
     explorer: {
       api: { key: { required: false }, url: 'https://bsquared.l2scan.co/api' },
@@ -598,7 +596,6 @@ export const CHAINS: Chain[] = [
   },
   {
     alias: 'lukso-testnet',
-    blockTimeMs: 12485,
     decimals: 18,
     explorer: {
       api: { key: { required: false }, url: 'https://explorer.execution.testnet.lukso.network/api/' },
@@ -612,7 +609,6 @@ export const CHAINS: Chain[] = [
   },
   {
     alias: 'lukso',
-    blockTimeMs: 12498,
     decimals: 18,
     explorer: {
       api: { key: { required: false }, url: 'https://explorer.execution.mainnet.lukso.network/api/' },
@@ -958,7 +954,6 @@ export const CHAINS: Chain[] = [
   },
   {
     alias: 'polygon-sepolia-testnet',
-    blockTimeMs: 2211,
     decimals: 18,
     explorer: {
       api: { key: { required: true }, url: 'https://api-amoy.polygonscan.com/api' },
@@ -1050,7 +1045,6 @@ export const CHAINS: Chain[] = [
   },
   {
     alias: 'sei-testnet',
-    blockTimeMs: 2951,
     decimals: 18,
     explorer: {
       api: { key: { required: false }, url: 'https://seitrace.com/api' },
@@ -1093,7 +1087,6 @@ export const CHAINS: Chain[] = [
   },
   {
     alias: 'taiko-holesky-testnet',
-    blockTimeMs: 2951,
     decimals: 18,
     explorer: {
       api: { key: { required: false }, url: 'https://blockscoutapi.hekla.taiko.xyz/api' },
