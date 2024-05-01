@@ -1,6 +1,5 @@
 {
   "alias": "lightlink",
-  "blockTimeMs": 505,
   "decimals": 18,
   "explorer": {
     "api": {

@@ -1,6 +1,5 @@
 {
   "alias": "taiko-holesky-testnet",
-  "blockTimeMs": 2951,
   "decimals": 18,
   "explorer": {
     "api": {

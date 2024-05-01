@@ -1,6 +1,5 @@
 {
   "alias": "lukso-testnet",
-  "blockTimeMs": 12485,
   "decimals": 18,
   "explorer": {
     "api": {

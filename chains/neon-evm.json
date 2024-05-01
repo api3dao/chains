@@ -1,6 +1,5 @@
 {
   "alias": "neon-evm",
-  "blockTimeMs": 2149,
   "decimals": 18,
   "explorer": {
     "api": {

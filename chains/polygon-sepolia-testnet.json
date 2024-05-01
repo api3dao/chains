@@ -1,6 +1,5 @@
 {
   "alias": "polygon-sepolia-testnet",
-  "blockTimeMs": 2211,
   "decimals": 18,
   "explorer": {
     "api": {

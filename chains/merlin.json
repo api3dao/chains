@@ -1,6 +1,5 @@
 {
   "alias": "merlin",
-  "blockTimeMs": 1033,
   "decimals": 18,
   "explorer": {
     "api": {

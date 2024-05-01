@@ -72,7 +72,6 @@ export const chainSchema = z.object({
   decimals: z.number().positive(),
   testnet: z.boolean(),
   explorer: chainExplorerSchema,
-  blockTimeMs: z.number().positive(),
   hardhatConfigOverrides: hardhatConfigOverrides.optional(),
   skipProviderCheck: z.boolean().optional(), // For chains not supporting dAPIs
 });
