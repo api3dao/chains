@@ -29,7 +29,6 @@
     "prepublishOnly": "pnpm validate:chains && pnpm build",
     "prettier": "prettier --write \"./**/*.{ts,js,md,json}\"",
     "providers:ping": "ts-node scripts/ping-providers.ts",
-    "providers:time": "ts-node scripts/calculate-average-block-times.ts",
     "release": "pnpm changeset publish",
     "test": "jest",
     "validate": "pnpm validate:chains",
