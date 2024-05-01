@@ -1,6 +1,5 @@
 {
   "alias": "gnosis",
-  "blockTimeMs": 5227,
   "decimals": 18,
   "explorer": {
     "api": {

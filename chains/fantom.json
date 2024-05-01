@@ -1,6 +1,5 @@
 {
   "alias": "fantom",
-  "blockTimeMs": 1361,
   "decimals": 18,
   "explorer": {
     "api": {

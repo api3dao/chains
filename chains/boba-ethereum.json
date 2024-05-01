@@ -1,6 +1,5 @@
 {
   "alias": "boba-ethereum",
-  "blockTimeMs": 133773,
   "decimals": 18,
   "explorer": {
     "api": {

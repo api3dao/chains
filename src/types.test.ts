@@ -4,7 +4,6 @@ import { Chain, chainSchema } from './types';
 describe('chainSchema', () => {
   const validChain: Chain = {
     alias: 'ethereum',
-    blockTimeMs: 12118,
     decimals: 18,
     explorer: {
       api: {

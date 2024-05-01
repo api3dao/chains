@@ -1,6 +1,5 @@
 {
   "alias": "kava",
-  "blockTimeMs": 6213,
   "decimals": 18,
   "explorer": {
     "api": {

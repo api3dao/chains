@@ -1,6 +1,5 @@
 {
   "alias": "x-layer-sepolia-testnet",
-  "blockTimeMs": 2435,
   "decimals": 18,
   "explorer": {
     "browserUrl": "https://www.okx.com/explorer/xlayer-test"

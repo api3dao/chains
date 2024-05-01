@@ -1,6 +1,5 @@
 {
   "alias": "ethereum-holesky-testnet",
-  "blockTimeMs": 12973,
   "decimals": 18,
   "explorer": {
     "api": {

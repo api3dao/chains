@@ -1,6 +1,5 @@
 {
-  "alias": "bsquared-network",
-  "blockTimeMs": 2000,
+  "alias": "bsquared",
   "decimals": 18,
   "explorer": {
     "api": {
@@ -12,7 +11,7 @@
     "browserUrl": "https://bsquared.l2scan.co/"
   },
   "id": "223",
-  "name": "Bsquared Network",
+  "name": "BSquared Network",
   "providers": [
     {
       "alias": "default",

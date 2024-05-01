@@ -1,6 +1,5 @@
 {
   "alias": "arbitrum-sepolia-testnet",
-  "blockTimeMs": 252,
   "decimals": 18,
   "explorer": {
     "api": {

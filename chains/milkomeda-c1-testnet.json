@@ -1,6 +1,5 @@
 {
   "alias": "milkomeda-c1-testnet",
-  "blockTimeMs": 2000,
   "decimals": 18,
   "explorer": {
     "api": {
