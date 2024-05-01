@@ -289,7 +289,7 @@ export const CHAINS: Chain[] = [
     decimals: 18,
     explorer: { browserUrl: 'https://bsquared-testnet.l2scan.co/' },
     id: '1123',
-    name: 'Bsquared Network testnet',
+    name: 'BSquared Network testnet',
     providers: [{ alias: 'default', rpcUrl: 'https://b2-testnet.alt.technology' }],
     symbol: 'BTC',
     testnet: true,
@@ -302,7 +302,7 @@ export const CHAINS: Chain[] = [
       browserUrl: 'https://bsquared.l2scan.co/',
     },
     id: '223',
-    name: 'Bsquared Network',
+    name: 'BSquared Network',
     providers: [
       { alias: 'default', rpcUrl: 'https://rpc.bsquared.network' },
       { alias: 'public', rpcUrl: 'https://b2-mainnet.alt.technology' },
