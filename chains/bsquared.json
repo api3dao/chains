@@ -11,7 +11,7 @@
     "browserUrl": "https://bsquared.l2scan.co/"
   },
   "id": "223",
-  "name": "Bsquared Network",
+  "name": "BSquared Network",
   "providers": [
     {
       "alias": "default",

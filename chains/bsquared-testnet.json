@@ -5,7 +5,7 @@
     "browserUrl": "https://bsquared-testnet.l2scan.co/"
   },
   "id": "1123",
-  "name": "Bsquared Network testnet",
+  "name": "BSquared Network testnet",
   "providers": [
     {
       "alias": "default",
