@@ -1,5 +1,18 @@
 # @api3/chains
 
+## 5.3.0
+
+### Minor Changes
+
+- 352f7ec: Adds following chains
+  - `bsquared-network`
+  - `bsquared-network-testnet`
+  - `lukso`
+  - `lukso-testnet`
+  - `polygon-sepolia-testnet`
+  - `sei-testnet`
+  - `taiko-holesky-testnet`
+
 ## 5.2.2
 
 ### Patch Changes

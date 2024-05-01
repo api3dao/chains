@@ -285,6 +285,34 @@ export const CHAINS: Chain[] = [
     testnet: false,
   },
   {
+    alias: 'bsquared-network-testnet',
+    blockTimeMs: 2000,
+    decimals: 18,
+    explorer: { browserUrl: 'https://bsquared-testnet.l2scan.co/' },
+    id: '1123',
+    name: 'Bsquared Network testnet',
+    providers: [{ alias: 'default', rpcUrl: 'https://b2-testnet.alt.technology' }],
+    symbol: 'BTC',
+    testnet: true,
+  },
+  {
+    alias: 'bsquared-network',
+    blockTimeMs: 2000,
+    decimals: 18,
+    explorer: {
+      api: { key: { required: false }, url: 'https://bsquared.l2scan.co/api' },
+      browserUrl: 'https://bsquared.l2scan.co/',
+    },
+    id: '223',
+    name: 'Bsquared Network',
+    providers: [
+      { alias: 'default', rpcUrl: 'https://rpc.bsquared.network' },
+      { alias: 'public', rpcUrl: 'https://b2-mainnet.alt.technology' },
+    ],
+    symbol: 'BTC',
+    testnet: false,
+  },
+  {
     alias: 'cronos-testnet',
     decimals: 18,
     explorer: {
@@ -566,6 +594,34 @@ export const CHAINS: Chain[] = [
       { alias: 'reblok', homepageUrl: 'https://reblok.io' },
     ],
     symbol: 'ETH',
+    testnet: false,
+  },
+  {
+    alias: 'lukso-testnet',
+    blockTimeMs: 12485,
+    decimals: 18,
+    explorer: {
+      api: { key: { required: false }, url: 'https://explorer.execution.testnet.lukso.network/api/' },
+      browserUrl: 'https://explorer.execution.testnet.lukso.network/',
+    },
+    id: '4201',
+    name: 'Lukso testnet',
+    providers: [{ alias: 'default', rpcUrl: 'https://rpc.testnet.lukso.network' }],
+    symbol: 'LYXt',
+    testnet: true,
+  },
+  {
+    alias: 'lukso',
+    blockTimeMs: 12498,
+    decimals: 18,
+    explorer: {
+      api: { key: { required: false }, url: 'https://explorer.execution.mainnet.lukso.network/api/' },
+      browserUrl: 'https://explorer.execution.mainnet.lukso.network/',
+    },
+    id: '42',
+    name: 'Lukso',
+    providers: [{ alias: 'default', rpcUrl: 'https://rpc.mainnet.lukso.network' }],
+    symbol: 'LYX',
     testnet: false,
   },
   {
@@ -901,6 +957,23 @@ export const CHAINS: Chain[] = [
     testnet: false,
   },
   {
+    alias: 'polygon-sepolia-testnet',
+    blockTimeMs: 2211,
+    decimals: 18,
+    explorer: {
+      api: { key: { required: true }, url: 'https://api-amoy.polygonscan.com/api' },
+      browserUrl: 'https://amoy.polygonscan.com',
+    },
+    id: '80002',
+    name: 'Polygon Amoy testnet',
+    providers: [
+      { alias: 'default', rpcUrl: 'https://rpc-amoy.polygon.technology' },
+      { alias: 'publicnode', rpcUrl: 'https://polygon-amoy-bor-rpc.publicnode.com' },
+    ],
+    symbol: 'MATIC',
+    testnet: true,
+  },
+  {
     alias: 'polygon-zkevm-sepolia-testnet',
     decimals: 18,
     explorer: {
@@ -976,6 +1049,23 @@ export const CHAINS: Chain[] = [
     testnet: false,
   },
   {
+    alias: 'sei-testnet',
+    blockTimeMs: 2951,
+    decimals: 18,
+    explorer: {
+      api: { key: { required: false }, url: 'https://seitrace.com/api' },
+      browserUrl: 'https://seitrace.com/',
+    },
+    id: '713715',
+    name: 'Sei EVM devnet',
+    providers: [
+      { alias: 'default', rpcUrl: 'https://evm-rpc-arctic-1.sei-apis.com' },
+      { alias: 'public', rpcUrl: 'https://evm-rpc.arctic-1.seinetwork.io' },
+    ],
+    symbol: 'SEI',
+    testnet: true,
+  },
+  {
     alias: 'sx-testnet',
     decimals: 18,
     explorer: {
@@ -1000,6 +1090,21 @@ export const CHAINS: Chain[] = [
     providers: [{ alias: 'default', rpcUrl: 'https://rpc.sx.technology' }],
     symbol: 'SX',
     testnet: false,
+  },
+  {
+    alias: 'taiko-holesky-testnet',
+    blockTimeMs: 2951,
+    decimals: 18,
+    explorer: {
+      api: { key: { required: false }, url: 'https://blockscoutapi.hekla.taiko.xyz/api' },
+      browserUrl: 'https://blockscoutapi.hekla.taiko.xyz/',
+    },
+    id: '167009',
+    name: 'Taiko Hekla testnet',
+    providers: [{ alias: 'default', rpcUrl: 'https://rpc.hekla.taiko.xyz' }],
+    skipProviderCheck: false,
+    symbol: 'ETH',
+    testnet: true,
   },
   {
     alias: 'x-layer-sepolia-testnet',
