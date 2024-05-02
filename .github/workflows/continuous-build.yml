@@ -55,6 +55,7 @@ jobs:
         run: pnpm test
 
   require-changeset:
+    if: github.actor != 'renovate[bot]'
     runs-on: ubuntu-latest
     steps:
       - name: Clone @api3/chains
