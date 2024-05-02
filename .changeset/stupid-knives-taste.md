@@ -6,4 +6,4 @@ Add following chains;
 * kroma
 * kroma-sepolia-testnet
 * inevm
-* inevm-sepolia-testnet
+* inevm-testnet

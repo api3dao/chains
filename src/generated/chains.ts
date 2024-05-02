@@ -501,14 +501,14 @@ export const CHAINS: Chain[] = [
     testnet: false,
   },
   {
-    alias: 'inevm-sepolia-testnet',
+    alias: 'inevm-testnet',
     decimals: 18,
     explorer: {
       api: { key: { required: false }, url: 'https://testnet.explorer.inevm.com/api' },
       browserUrl: 'https://testnet.explorer.inevm.com/',
     },
     id: '2424',
-    name: 'inEVM Sepolia testnet',
+    name: 'inEVM testnet',
     providers: [{ alias: 'default', rpcUrl: 'https://testnet.rpc.inevm.com/http' }],
     symbol: 'INJ',
     testnet: true,
