@@ -501,6 +501,32 @@ export const CHAINS: Chain[] = [
     testnet: false,
   },
   {
+    alias: 'inevm-testnet',
+    decimals: 18,
+    explorer: {
+      api: { key: { required: false }, url: 'https://testnet.explorer.inevm.com/api' },
+      browserUrl: 'https://testnet.explorer.inevm.com/',
+    },
+    id: '2424',
+    name: 'inEVM testnet',
+    providers: [{ alias: 'default', rpcUrl: 'https://testnet.rpc.inevm.com/http' }],
+    symbol: 'INJ',
+    testnet: true,
+  },
+  {
+    alias: 'inevm',
+    decimals: 18,
+    explorer: {
+      api: { key: { required: false }, url: 'https://explorer.inevm.com/api' },
+      browserUrl: 'https://explorer.inevm.com/',
+    },
+    id: '2525',
+    name: 'inEVM',
+    providers: [{ alias: 'default', rpcUrl: 'https://mainnet.rpc.inevm.com/http' }],
+    symbol: 'INJ',
+    testnet: false,
+  },
+  {
     alias: 'kava-testnet',
     decimals: 18,
     explorer: {
@@ -535,6 +561,32 @@ export const CHAINS: Chain[] = [
       { alias: 'reblok', homepageUrl: 'https://reblok.io' },
     ],
     symbol: 'KAVA',
+    testnet: false,
+  },
+  {
+    alias: 'kroma-sepolia-testnet',
+    decimals: 18,
+    explorer: {
+      api: { key: { required: true }, url: 'https://api-sepolia.kromascan.com/api' },
+      browserUrl: 'https://sepolia.kromascan.com/',
+    },
+    id: '2358',
+    name: 'Kroma Sepolia testnet',
+    providers: [{ alias: 'default', rpcUrl: 'https://api.sepolia.kroma.network/' }],
+    symbol: 'ETH',
+    testnet: true,
+  },
+  {
+    alias: 'kroma',
+    decimals: 18,
+    explorer: {
+      api: { key: { required: true }, url: 'https://api.kromascan.com/api' },
+      browserUrl: 'https://kromascan.com/',
+    },
+    id: '255',
+    name: 'Kroma',
+    providers: [{ alias: 'default', rpcUrl: 'https://api.kroma.network/' }],
+    symbol: 'ETH',
     testnet: false,
   },
   {
