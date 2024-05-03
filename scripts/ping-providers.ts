@@ -21,7 +21,13 @@ async function main(): Promise<PromiseSettledResult<void>[]> {
     const client = createPublicClient({ transport: http(defaultProvider.rpcUrl!) });
 
     await validateChain(client, chain);
-    await go(() => validateLatestBlock(client, chain), { retries: 3, delay: { type: 'static', delayMs: 60_000 } });
+    const latestRes = await go(() => validateLatestBlock(client, chain), {
+      retries: 3,
+      delay: { type: 'static', delayMs: 60_000 },
+    });
+    if (!latestRes.success) {
+      throw latestRes.error;
+    }
   });
 
   return await Promise.allSettled(promises);
