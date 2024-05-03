@@ -35,17 +35,17 @@
     "validate:chains": "ts-node scripts/validate-chains.ts"
   },
   "dependencies": {
-    "viem": "^2.9.6",
-    "zod": "^3.22.4"
+    "viem": "^2.9.29",
+    "zod": "^3.23.5"
   },
   "devDependencies": {
     "@api3/promise-utils": "^0.4.0",
-    "@slack/web-api": "^7.0.2",
+    "@slack/web-api": "^7.0.4",
     "@types/jest": "^29.5.12",
     "@changesets/cli": "^2.27.1",
-    "@types/node": "^20.12.2",
-    "@typescript-eslint/eslint-plugin": "^7.4.0",
-    "@typescript-eslint/parser": "^7.4.0",
+    "@types/node": "^20.12.7",
+    "@typescript-eslint/eslint-plugin": "^7.8.0",
+    "@typescript-eslint/parser": "^7.8.0",
     "eslint": "^8.57.0",
     "eslint-plugin-import": "^2.29.1",
     "husky": "^9.0.11",
@@ -55,6 +55,6 @@
     "rimraf": "^5.0.5",
     "ts-jest": "^29.1.2",
     "ts-node": "^10.9.2",
-    "typescript": "^5.4.3"
+    "typescript": "^5.4.5"
   }
 }

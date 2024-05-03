@@ -1,0 +1,23 @@
+{
+  "alias": "kroma",
+  "decimals": 18,
+  "explorer": {
+    "api": {
+      "key": {
+        "required": true
+      },
+      "url": "https://api.kromascan.com/api"
+    },
+    "browserUrl": "https://kromascan.com/"
+  },
+  "id": "255",
+  "name": "Kroma",
+  "providers": [
+    {
+      "alias": "default",
+      "rpcUrl": "https://api.kroma.network/"
+    }
+  ],
+  "symbol": "ETH",
+  "testnet": false
+}
