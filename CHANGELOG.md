@@ -1,5 +1,19 @@
 # @api3/chains
 
+## 6.1.0
+
+### Minor Changes
+
+- 7ba1524: Add following chains;
+  - kroma
+  - kroma-sepolia-testnet
+  - inevm
+  - inevm-testnet
+
+### Patch Changes
+
+- fc119be: Fix ping-providers script validateLatestBlock error handling
+
 ## 6.0.0
 
 ### Major Changes
