@@ -747,7 +747,7 @@ export const CHAINS: Chain[] = [
     name: 'Metis Sepolia testnet',
     providers: [{ alias: 'default', rpcUrl: 'https://sepolia.metisdevops.link' }],
     skipProviderCheck: false,
-    symbol: 'tMetis',
+    symbol: 'METIS',
     testnet: true,
   },
   {
