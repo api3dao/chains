@@ -1,5 +1,11 @@
 # @api3/chains
 
+## 6.1.1
+
+### Patch Changes
+
+- 57f4845: Fix `metis-sepolia-testnet` symbol name
+
 ## 6.1.0
 
 ### Minor Changes
