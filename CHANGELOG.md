@@ -1,5 +1,21 @@
 # @api3/chains
 
+## 6.2.0
+
+### Minor Changes
+
+- 4a89344: Add new chains;
+  - `rarichain`
+  - `berachain-testnet`
+  - `bob`
+
+### Patch Changes
+
+- 9fb59d5: Fix polygon-sepolia-testnet name
+- 6c7edff: Fix taiko-holesky-testnet name
+- 135706e: Fix bob-sepolia-testnet name
+- 22a180e: Fix sei-testnet name
+
 ## 6.1.1
 
 ### Patch Changes
