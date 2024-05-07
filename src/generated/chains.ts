@@ -227,7 +227,7 @@ export const CHAINS: Chain[] = [
       browserUrl: 'https://testnet-explorer.gobob.xyz/',
     },
     id: '111',
-    name: 'Bob Sepolia testnet',
+    name: 'BOB Sepolia testnet',
     providers: [{ alias: 'default', rpcUrl: 'https://testnet.rpc.gobob.xyz/' }],
     symbol: 'ETH',
     testnet: true,
