@@ -1136,7 +1136,7 @@ export const CHAINS: Chain[] = [
       browserUrl: 'https://seitrace.com/',
     },
     id: '713715',
-    name: 'Sei EVM devnet',
+    name: 'Sei testnet',
     providers: [
       { alias: 'default', rpcUrl: 'https://evm-rpc-arctic-1.sei-apis.com' },
       { alias: 'public', rpcUrl: 'https://evm-rpc.arctic-1.seinetwork.io' },
