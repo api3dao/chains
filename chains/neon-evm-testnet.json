@@ -18,7 +18,6 @@
       "rpcUrl": "https://devnet.neonevm.org"
     }
   ],
-  "skipProviderCheck": false,
   "symbol": "NEON",
   "testnet": true
 }

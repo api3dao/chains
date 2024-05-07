@@ -18,7 +18,6 @@
       "rpcUrl": "https://sepolia.metisdevops.link"
     }
   ],
-  "skipProviderCheck": false,
   "symbol": "METIS",
   "testnet": true
 }

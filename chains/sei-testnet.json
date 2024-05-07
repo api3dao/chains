@@ -11,7 +11,7 @@
     "browserUrl": "https://seitrace.com/"
   },
   "id": "713715",
-  "name": "Sei EVM devnet",
+  "name": "Sei testnet",
   "providers": [
     {
       "alias": "default",

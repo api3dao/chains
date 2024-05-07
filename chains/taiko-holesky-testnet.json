@@ -11,14 +11,13 @@
     "browserUrl": "https://blockscoutapi.hekla.taiko.xyz/"
   },
   "id": "167009",
-  "name": "Taiko Hekla testnet",
+  "name": "Taiko Holesky testnet",
   "providers": [
     {
       "alias": "default",
       "rpcUrl": "https://rpc.hekla.taiko.xyz"
     }
   ],
-  "skipProviderCheck": false,
   "symbol": "ETH",
   "testnet": true
 }
