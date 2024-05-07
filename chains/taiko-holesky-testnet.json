@@ -18,7 +18,6 @@
       "rpcUrl": "https://rpc.hekla.taiko.xyz"
     }
   ],
-  "skipProviderCheck": false,
   "symbol": "ETH",
   "testnet": true
 }
