@@ -553,19 +553,6 @@ export const CHAINS: Chain[] = [
     testnet: false,
   },
   {
-    alias: 'kakarot-sepolia-testnet',
-    decimals: 18,
-    explorer: {
-      api: { key: { required: false }, url: 'https://sepolia.kakarotscan.org/api' },
-      browserUrl: 'https://sepolia.kakarotscan.org/',
-    },
-    id: '1802203764',
-    name: 'Kakarot Sepolia testnet',
-    providers: [{ alias: 'default', rpcUrl: 'https://sepolia-rpc.kakarot.org/' }],
-    symbol: 'ETH',
-    testnet: true,
-  },
-  {
     alias: 'kava-testnet',
     decimals: 18,
     explorer: {

@@ -6,4 +6,3 @@ Add new chains;
 * `rarichain`
 * `berachain-testnet`
 * `bob`
-* `kakarot-sepolia-testnet`
