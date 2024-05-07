@@ -176,7 +176,7 @@ export const CHAINS: Chain[] = [
       browserUrl: 'https://artio.beratrail.io/',
     },
     id: '80085',
-    name: 'Berachain Artio testnet',
+    name: 'Berachain testnet',
     providers: [{ alias: 'default', rpcUrl: 'https://artio.rpc.berachain.com' }],
     symbol: 'BERA',
     testnet: true,
