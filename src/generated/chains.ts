@@ -1100,7 +1100,7 @@ export const CHAINS: Chain[] = [
       browserUrl: 'https://mainnet.explorer.rarichain.org/',
     },
     id: '1380012617',
-    name: 'Rari',
+    name: 'Rari Chain',
     providers: [{ alias: 'default', rpcUrl: 'https://mainnet.rpc.rarichain.org/http/' }],
     symbol: 'ETH',
     testnet: false,

@@ -11,7 +11,7 @@
     "browserUrl": "https://mainnet.explorer.rarichain.org/"
   },
   "id": "1380012617",
-  "name": "Rari",
+  "name": "Rari Chain",
   "providers": [
     {
       "alias": "default",
