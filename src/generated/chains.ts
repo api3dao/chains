@@ -1033,7 +1033,7 @@ export const CHAINS: Chain[] = [
       browserUrl: 'https://amoy.polygonscan.com',
     },
     id: '80002',
-    name: 'Polygon Amoy testnet',
+    name: 'Polygon Sepolia testnet',
     providers: [
       { alias: 'default', rpcUrl: 'https://rpc-amoy.polygon.technology' },
       { alias: 'publicnode', rpcUrl: 'https://polygon-amoy-bor-rpc.publicnode.com' },
