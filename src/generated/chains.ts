@@ -240,7 +240,7 @@ export const CHAINS: Chain[] = [
       browserUrl: 'https://explorer.gobob.xyz/',
     },
     id: '60808',
-    name: 'Bob',
+    name: 'BOB',
     providers: [{ alias: 'default', rpcUrl: 'https://rpc.gobob.xyz/' }],
     symbol: 'ETH',
     testnet: false,
