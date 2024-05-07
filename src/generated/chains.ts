@@ -170,6 +170,19 @@ export const CHAINS: Chain[] = [
     testnet: false,
   },
   {
+    alias: 'berachain-testnet',
+    decimals: 18,
+    explorer: {
+      api: { key: { required: false }, url: 'https://api.routescan.io/v2/network/testnet/evm/80085/etherscan/api' },
+      browserUrl: 'https://artio.beratrail.io/',
+    },
+    id: '80085',
+    name: 'Berachain testnet',
+    providers: [{ alias: 'default', rpcUrl: 'https://artio.rpc.berachain.com' }],
+    symbol: 'BERA',
+    testnet: true,
+  },
+  {
     alias: 'blast-sepolia-testnet',
     decimals: 18,
     explorer: {
@@ -221,6 +234,19 @@ export const CHAINS: Chain[] = [
     providers: [{ alias: 'default', rpcUrl: 'https://testnet.rpc.gobob.xyz/' }],
     symbol: 'ETH',
     testnet: true,
+  },
+  {
+    alias: 'bob',
+    decimals: 18,
+    explorer: {
+      api: { key: { required: false }, url: 'https://explorer.gobob.xyz/api' },
+      browserUrl: 'https://explorer.gobob.xyz/',
+    },
+    id: '60808',
+    name: 'Bob',
+    providers: [{ alias: 'default', rpcUrl: 'https://rpc.gobob.xyz/' }],
+    symbol: 'ETH',
+    testnet: false,
   },
   {
     alias: 'boba-bnb',
@@ -1070,6 +1096,19 @@ export const CHAINS: Chain[] = [
       { alias: 'reblok', homepageUrl: 'https://reblok.io' },
     ],
     symbol: 'MATIC',
+    testnet: false,
+  },
+  {
+    alias: 'rari',
+    decimals: 18,
+    explorer: {
+      api: { key: { required: false }, url: 'https://mainnet.explorer.rarichain.org/api' },
+      browserUrl: 'https://mainnet.explorer.rarichain.org/',
+    },
+    id: '1380012617',
+    name: 'Rari',
+    providers: [{ alias: 'default', rpcUrl: 'https://mainnet.rpc.rarichain.org/http/' }],
+    symbol: 'ETH',
     testnet: false,
   },
   {
