@@ -4,7 +4,8 @@
 
 ### Patch Changes
 
-- b9f2ae6: \* Update `default` provider of `ethereum-sepolia-testnet`
+- b9f2ae6: Update providers
+  - Update `default` provider of `ethereum-sepolia-testnet`
   - Update `default` provider of `fantom`
   - Add private provider for `fraxtal`
   - Add private provider for `merlin`
