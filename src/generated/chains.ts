@@ -375,7 +375,7 @@ export const CHAINS: Chain[] = [
     id: '11155111',
     name: 'Ethereum Sepolia testnet',
     providers: [
-      { alias: 'default', rpcUrl: 'https://sepolia.gateway.tenderly.co' },
+      { alias: 'default', rpcUrl: 'https://rpc2.sepolia.org' },
       { alias: 'publicnode', rpcUrl: 'https://ethereum-sepolia-rpc.publicnode.com' },
       { alias: 'reblok', homepageUrl: 'https://reblok.io' },
     ],
@@ -427,7 +427,7 @@ export const CHAINS: Chain[] = [
     id: '250',
     name: 'Fantom',
     providers: [
-      { alias: 'default', rpcUrl: 'https://rpcapi.fantom.network/' },
+      { alias: 'default', rpcUrl: 'https://rpc3.fantom.network/' },
       { alias: 'blastapi', homepageUrl: 'https://blastapi.io' },
       { alias: 'drpc', homepageUrl: 'https://drpc.org' },
       { alias: 'quicknode', homepageUrl: 'https://quicknode.com' },
@@ -461,6 +461,7 @@ export const CHAINS: Chain[] = [
     providers: [
       { alias: 'default', rpcUrl: 'https://rpc.frax.com' },
       { alias: 'tenderly', homepageUrl: 'https://tenderly.co/' },
+      { alias: 'grove', homepageUrl: 'https://grove.city/' },
     ],
     symbol: 'ETH',
     testnet: false,
@@ -755,7 +756,10 @@ export const CHAINS: Chain[] = [
     },
     id: '4200',
     name: 'Merlin',
-    providers: [{ alias: 'default', rpcUrl: 'https://rpc.merlinchain.io' }],
+    providers: [
+      { alias: 'default', rpcUrl: 'https://rpc.merlinchain.io' },
+      { alias: 'blockpi', homepageUrl: 'https://blockpi.io' },
+    ],
     symbol: 'BTC',
     testnet: false,
   },
@@ -1205,7 +1209,6 @@ export const CHAINS: Chain[] = [
     providers: [
       { alias: 'default', rpcUrl: 'https://rpc.xlayer.tech/' },
       { alias: 'okx', rpcUrl: 'https://xlayerrpc.okx.com/' },
-      { alias: 'omnia', homepageUrl: 'https://omniatech.io' },
     ],
     symbol: 'OKB',
     testnet: false,
