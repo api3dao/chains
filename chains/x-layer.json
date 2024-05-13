@@ -14,10 +14,6 @@
     {
       "alias": "okx",
       "rpcUrl": "https://xlayerrpc.okx.com/"
-    },
-    {
-      "alias": "omnia",
-      "homepageUrl": "https://omniatech.io"
     }
   ],
   "symbol": "OKB",

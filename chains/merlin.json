@@ -16,6 +16,10 @@
     {
       "alias": "default",
       "rpcUrl": "https://rpc.merlinchain.io"
+    },
+    {
+      "alias": "blockpi",
+      "homepageUrl": "https://blockpi.io"
     }
   ],
   "symbol": "BTC",
