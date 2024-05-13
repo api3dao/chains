@@ -1,5 +1,15 @@
 # @api3/chains
 
+## 6.2.1
+
+### Patch Changes
+
+- b9f2ae6: \* Update `default` provider of `ethereum-sepolia-testnet`
+  - Update `default` provider of `fantom`
+  - Add private provider for `fraxtal`
+  - Add private provider for `merlin`
+  - Remove unreliable provider from `x-layer`
+
 ## 6.2.0
 
 ### Minor Changes
