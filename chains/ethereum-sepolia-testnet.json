@@ -16,7 +16,7 @@
   "providers": [
     {
       "alias": "default",
-      "rpcUrl": "https://sepolia.gateway.tenderly.co"
+      "rpcUrl": "https://rpc2.sepolia.org"
     },
     {
       "alias": "publicnode",
