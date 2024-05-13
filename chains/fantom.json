@@ -16,7 +16,7 @@
   "providers": [
     {
       "alias": "default",
-      "rpcUrl": "https://rpcapi.fantom.network/"
+      "rpcUrl": "https://rpc3.fantom.network/"
     },
     {
       "alias": "blastapi",
