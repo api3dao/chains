@@ -16,7 +16,7 @@ export const CHAINS: Chain[] = [
       browserUrl: 'https://jenkins.explorer.caldera.xyz/',
     },
     id: '1798',
-    name: 'Jenkins testnet',
+    name: 'ApeChain testnet',
     providers: [{ alias: 'default', rpcUrl: 'https://jenkins.rpc.caldera.xyz/http' }],
     symbol: 'APE',
     testnet: true,

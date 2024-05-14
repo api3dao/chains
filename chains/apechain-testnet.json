@@ -11,7 +11,7 @@
     "browserUrl": "https://jenkins.explorer.caldera.xyz/"
   },
   "id": "1798",
-  "name": "Jenkins testnet",
+  "name": "ApeChain testnet",
   "providers": [
     {
       "alias": "default",
