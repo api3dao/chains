@@ -1,0 +1,27 @@
+{
+  "alias": "core-chain",
+  "decimals": 18,
+  "explorer": {
+    "api": {
+      "key": {
+        "required": true
+      },
+      "url": "https://openapi.coredao.org/api"
+    },
+    "browserUrl": "https://scan.coredao.org/"
+  },
+  "id": "1116",
+  "name": "Core Chain",
+  "providers": [
+    {
+      "alias": "default",
+      "rpcUrl": "https://rpc.coredao.org/"
+    },
+    {
+      "alias": "drpc",
+      "homepageUrl": "https://drpc.org"
+    }
+  ],
+  "symbol": "CORE",
+  "testnet": false
+}
