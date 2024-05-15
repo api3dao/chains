@@ -9,6 +9,19 @@ import { Chain } from '../types';
 
 export const CHAINS: Chain[] = [
   {
+    alias: 'apechain-testnet',
+    decimals: 18,
+    explorer: {
+      api: { key: { required: false }, url: 'https://jenkins.explorer.caldera.xyz/api' },
+      browserUrl: 'https://jenkins.explorer.caldera.xyz/',
+    },
+    id: '1798',
+    name: 'ApeChain testnet',
+    providers: [{ alias: 'default', rpcUrl: 'https://jenkins.rpc.caldera.xyz/http' }],
+    symbol: 'APE',
+    testnet: true,
+  },
+  {
     alias: 'arbitrum-nova',
     decimals: 18,
     explorer: {
@@ -55,6 +68,38 @@ export const CHAINS: Chain[] = [
       { alias: 'drpc', homepageUrl: 'https://drpc.org' },
       { alias: 'quicknode', homepageUrl: 'https://quicknode.com' },
       { alias: 'reblok', homepageUrl: 'https://reblok.io' },
+    ],
+    symbol: 'ETH',
+    testnet: false,
+  },
+  {
+    alias: 'astar-zkevm-sepolia-testnet',
+    decimals: 18,
+    explorer: {
+      api: { key: { required: false }, url: 'https://zkyoto.explorer.startale.com/api' },
+      browserUrl: 'https://zkyoto.explorer.startale.com/',
+    },
+    id: '6038361',
+    name: 'Astar zkEVM Sepolia testnet',
+    providers: [
+      { alias: 'default', rpcUrl: 'https://rpc.startale.com/zkyoto' },
+      { alias: 'public', rpcUrl: 'https://rpc.zkyoto.gelato.digital' },
+    ],
+    symbol: 'ETH',
+    testnet: true,
+  },
+  {
+    alias: 'astar-zkevm',
+    decimals: 18,
+    explorer: {
+      api: { key: { required: false }, url: 'https://astar-zkevm.explorer.startale.com/api' },
+      browserUrl: 'https://astar-zkevm.explorer.startale.com/',
+    },
+    id: '3776',
+    name: 'Astar zkEVM',
+    providers: [
+      { alias: 'default', rpcUrl: 'https://rpc.startale.com/astar-zkevm' },
+      { alias: 'dwellir', homepageUrl: 'https://dwellir.com/' },
     ],
     symbol: 'ETH',
     testnet: false,
@@ -334,6 +379,22 @@ export const CHAINS: Chain[] = [
     testnet: false,
   },
   {
+    alias: 'core',
+    decimals: 18,
+    explorer: {
+      api: { key: { required: true }, url: 'https://openapi.coredao.org/api' },
+      browserUrl: 'https://scan.coredao.org/',
+    },
+    id: '1116',
+    name: 'Core',
+    providers: [
+      { alias: 'default', rpcUrl: 'https://rpc.coredao.org/' },
+      { alias: 'drpc', homepageUrl: 'https://drpc.org' },
+    ],
+    symbol: 'CORE',
+    testnet: false,
+  },
+  {
     alias: 'cronos-testnet',
     decimals: 18,
     explorer: {
@@ -523,6 +584,19 @@ export const CHAINS: Chain[] = [
     providers: [{ alias: 'default', rpcUrl: 'https://v1.mainnet.godwoken.io/rpc' }],
     symbol: 'pCKB',
     testnet: false,
+  },
+  {
+    alias: 'immutable-zkevm-sepolia-testnet',
+    decimals: 18,
+    explorer: {
+      api: { key: { required: false }, url: 'https://explorer.testnet.immutable.com/api' },
+      browserUrl: 'https://explorer.testnet.immutable.com/',
+    },
+    id: '13473',
+    name: 'Immutable zkEVM Sepolia testnet',
+    providers: [{ alias: 'default', rpcUrl: 'https://rpc.testnet.immutable.com' }],
+    symbol: 'IMX',
+    testnet: true,
   },
   {
     alias: 'inevm-testnet',
