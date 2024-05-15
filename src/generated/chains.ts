@@ -81,7 +81,10 @@ export const CHAINS: Chain[] = [
     },
     id: '6038361',
     name: 'Astar zkEVM Sepolia testnet',
-    providers: [{ alias: 'default', rpcUrl: 'https://rpc.startale.com/zkyoto' }],
+    providers: [
+      { alias: 'default', rpcUrl: 'https://rpc.startale.com/zkyoto' },
+      { alias: 'public', rpcUrl: 'https://rpc.zkyoto.gelato.digital' },
+    ],
     symbol: 'ETH',
     testnet: true,
   },
@@ -94,7 +97,10 @@ export const CHAINS: Chain[] = [
     },
     id: '3776',
     name: 'Astar zkEVM',
-    providers: [{ alias: 'default', rpcUrl: 'https://rpc.startale.com/astar-zkevm' }],
+    providers: [
+      { alias: 'default', rpcUrl: 'https://rpc.startale.com/astar-zkevm' },
+      { alias: 'dwellir', homepageUrl: 'https://dwellir.com/' },
+    ],
     symbol: 'ETH',
     testnet: false,
   },
@@ -373,14 +379,14 @@ export const CHAINS: Chain[] = [
     testnet: false,
   },
   {
-    alias: 'core-chain',
+    alias: 'core',
     decimals: 18,
     explorer: {
       api: { key: { required: true }, url: 'https://openapi.coredao.org/api' },
       browserUrl: 'https://scan.coredao.org/',
     },
     id: '1116',
-    name: 'Core Chain',
+    name: 'Core',
     providers: [
       { alias: 'default', rpcUrl: 'https://rpc.coredao.org/' },
       { alias: 'drpc', homepageUrl: 'https://drpc.org' },

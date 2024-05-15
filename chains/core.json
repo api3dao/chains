@@ -1,5 +1,5 @@
 {
-  "alias": "core-chain",
+  "alias": "core",
   "decimals": 18,
   "explorer": {
     "api": {
@@ -11,7 +11,7 @@
     "browserUrl": "https://scan.coredao.org/"
   },
   "id": "1116",
-  "name": "Core Chain",
+  "name": "Core",
   "providers": [
     {
       "alias": "default",

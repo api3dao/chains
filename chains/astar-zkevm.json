@@ -16,6 +16,10 @@
     {
       "alias": "default",
       "rpcUrl": "https://rpc.startale.com/astar-zkevm"
+    },
+    {
+      "alias": "dwellir",
+      "homepageUrl": "https://dwellir.com/"
     }
   ],
   "symbol": "ETH",
