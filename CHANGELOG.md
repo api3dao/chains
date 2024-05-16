@@ -1,5 +1,17 @@
 # @api3/chains
 
+## 6.3.0
+
+### Minor Changes
+
+- 238cb82: Add OEV Network
+- e10373f: Adds following chains;
+  - Immutable zkEVM Sepolia testnet
+  - Astar zkEVM Sepolia testnet
+  - Astar zkEVM
+  - Core Chain
+  - ApeChain Arbitrum Sepolia testnet
+
 ## 6.2.1
 
 ### Patch Changes
