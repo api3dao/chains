@@ -1030,6 +1030,19 @@ export const CHAINS: Chain[] = [
     testnet: true,
   },
   {
+    alias: 'oev-network',
+    decimals: 18,
+    explorer: {
+      api: { key: { required: false }, url: 'https://oev-network.calderaexplorer.xyz/api/' },
+      browserUrl: 'https://oev-network.calderaexplorer.xyz/',
+    },
+    id: '4913',
+    name: 'OEV Network',
+    providers: [{ alias: 'default', rpcUrl: 'https://oev-network.calderachain.xyz/http' }],
+    symbol: 'ETH',
+    testnet: false,
+  },
+  {
     alias: 'opbnb-testnet',
     decimals: 18,
     explorer: {
