@@ -1030,7 +1030,7 @@ export const CHAINS: Chain[] = [
     testnet: true,
   },
   {
-    alias: 'OEV Network',
+    alias: 'oev-network',
     decimals: 18,
     explorer: {
       api: { key: { required: false }, url: 'https://oev-network.calderaexplorer.xyz/api/' },
