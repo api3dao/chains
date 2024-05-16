@@ -9,14 +9,14 @@ import { Chain } from '../types';
 
 export const CHAINS: Chain[] = [
   {
-    alias: 'apechain-testnet',
+    alias: 'apechain-arbitrum-sepolia-testnet',
     decimals: 18,
     explorer: {
       api: { key: { required: false }, url: 'https://jenkins.explorer.caldera.xyz/api' },
       browserUrl: 'https://jenkins.explorer.caldera.xyz/',
     },
     id: '1798',
-    name: 'ApeChain testnet',
+    name: 'ApeChain Arbitrum Sepolia testnet',
     providers: [{ alias: 'default', rpcUrl: 'https://jenkins.rpc.caldera.xyz/http' }],
     symbol: 'APE',
     testnet: true,

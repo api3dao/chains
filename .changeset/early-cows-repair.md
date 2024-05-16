@@ -7,4 +7,4 @@ Adds following chains;
 * Astar zkEVM Sepolia testnet
 * Astar zkEVM
 * Core Chain
-* ApeChain testnet
+* ApeChain Arbitrum Sepolia testnet

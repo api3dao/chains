@@ -1,5 +1,5 @@
 {
-  "alias": "apechain-testnet",
+  "alias": "apechain-arbitrum-sepolia-testnet",
   "decimals": 18,
   "explorer": {
     "api": {
@@ -11,7 +11,7 @@
     "browserUrl": "https://jenkins.explorer.caldera.xyz/"
   },
   "id": "1798",
-  "name": "ApeChain testnet",
+  "name": "ApeChain Arbitrum Sepolia testnet",
   "providers": [
     {
       "alias": "default",
