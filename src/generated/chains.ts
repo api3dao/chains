@@ -73,7 +73,7 @@ export const CHAINS: Chain[] = [
     testnet: false,
   },
   {
-    alias: 'astar-zkevm-sepolia-testnet',
+    alias: 'astar-sepolia-testnet',
     decimals: 18,
     explorer: {
       api: { key: { required: false }, url: 'https://zkyoto.explorer.startale.com/api' },
@@ -89,7 +89,7 @@ export const CHAINS: Chain[] = [
     testnet: true,
   },
   {
-    alias: 'astar-zkevm',
+    alias: 'astar',
     decimals: 18,
     explorer: {
       api: { key: { required: false }, url: 'https://astar-zkevm.explorer.startale.com/api' },
@@ -586,7 +586,7 @@ export const CHAINS: Chain[] = [
     testnet: false,
   },
   {
-    alias: 'immutable-zkevm-sepolia-testnet',
+    alias: 'immutable-sepolia-testnet',
     decimals: 18,
     explorer: {
       api: { key: { required: false }, url: 'https://explorer.testnet.immutable.com/api' },
