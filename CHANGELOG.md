@@ -1,5 +1,11 @@
 # @api3/chains
 
+## 6.3.1
+
+### Patch Changes
+
+- b934e80: Fix astar and immutable aliases
+
 ## 6.3.0
 
 ### Minor Changes
