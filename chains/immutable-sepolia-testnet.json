@@ -1,5 +1,5 @@
 {
-  "alias": "immutable-zkevm-sepolia-testnet",
+  "alias": "immutable-sepolia-testnet",
   "decimals": 18,
   "explorer": {
     "api": {
