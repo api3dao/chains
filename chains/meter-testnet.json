@@ -1,0 +1,17 @@
+{
+  "alias": "meter-testnet",
+  "decimals": 18,
+  "explorer": {
+    "browserUrl": "https://scan-warringstakes.meter.io/"
+  },
+  "id": "83",
+  "name": "Meter testnet",
+  "providers": [
+    {
+      "alias": "default",
+      "rpcUrl": "https://rpctest.meter.io/"
+    }
+  ],
+  "symbol": "MTR",
+  "testnet": true
+}
