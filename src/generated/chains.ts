@@ -1326,7 +1326,7 @@ export const CHAINS: Chain[] = [
   {
     alias: 'x-layer-sepolia-testnet',
     decimals: 18,
-    explorer: { browserUrl: 'https://www.okx.com/explorer/xlayer-test' },
+    explorer: { browserUrl: 'https://www.okx.com/explorer/xlayer-test/' },
     id: '195',
     name: 'X Layer Sepolia testnet',
     providers: [
@@ -1339,7 +1339,7 @@ export const CHAINS: Chain[] = [
   {
     alias: 'x-layer',
     decimals: 18,
-    explorer: { browserUrl: 'https://www.okx.com/explorer/xlayer' },
+    explorer: { browserUrl: 'https://www.okx.com/explorer/xlayer/' },
     id: '196',
     name: 'X Layer',
     providers: [

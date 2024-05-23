@@ -2,7 +2,7 @@
   "alias": "x-layer",
   "decimals": 18,
   "explorer": {
-    "browserUrl": "https://www.okx.com/explorer/xlayer"
+    "browserUrl": "https://www.okx.com/explorer/xlayer/"
   },
   "id": "196",
   "name": "X Layer",
