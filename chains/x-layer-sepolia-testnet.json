@@ -2,7 +2,7 @@
   "alias": "x-layer-sepolia-testnet",
   "decimals": 18,
   "explorer": {
-    "browserUrl": "https://www.okx.com/explorer/xlayer-test"
+    "browserUrl": "https://www.okx.com/explorer/xlayer-test/"
   },
   "id": "195",
   "name": "X Layer Sepolia testnet",

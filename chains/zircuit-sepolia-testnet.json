@@ -8,7 +8,7 @@
       },
       "url": "https://explorer.zircuit.com/api/contractVerifyHardhat"
     },
-    "browserUrl": "https://explorer.zircuit.com"
+    "browserUrl": "https://explorer.zircuit.com/"
   },
   "id": "48899",
   "name": "Zircuit Sepolia testnet",
