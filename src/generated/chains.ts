@@ -379,6 +379,19 @@ export const CHAINS: Chain[] = [
     testnet: false,
   },
   {
+    alias: 'core-testnet',
+    decimals: 18,
+    explorer: {
+      api: { key: { required: true }, url: 'https://api.test.btcs.network/api' },
+      browserUrl: 'https://scan.test.btcs.network/',
+    },
+    id: '1115',
+    name: 'Core testnet',
+    providers: [{ alias: 'default', rpcUrl: 'https://rpc.test.btcs.network/' }],
+    symbol: 'CORE',
+    testnet: true,
+  },
+  {
     alias: 'core',
     decimals: 18,
     explorer: {
@@ -838,6 +851,29 @@ export const CHAINS: Chain[] = [
     testnet: false,
   },
   {
+    alias: 'meter-testnet',
+    decimals: 18,
+    explorer: { browserUrl: 'https://scan-warringstakes.meter.io/' },
+    id: '83',
+    name: 'Meter testnet',
+    providers: [{ alias: 'default', rpcUrl: 'https://rpctest.meter.io/' }],
+    symbol: 'MTR',
+    testnet: true,
+  },
+  {
+    alias: 'meter',
+    decimals: 18,
+    explorer: { browserUrl: 'https://scan.meter.io/' },
+    id: '82',
+    name: 'Meter',
+    providers: [
+      { alias: 'default', rpcUrl: 'https://rpc.meter.io/' },
+      { alias: 'blockpi', homepageUrl: 'https://blockpi.io' },
+    ],
+    symbol: 'MTR',
+    testnet: false,
+  },
+  {
     alias: 'metis-sepolia-testnet',
     decimals: 18,
     explorer: {
@@ -1014,22 +1050,6 @@ export const CHAINS: Chain[] = [
     testnet: false,
   },
   {
-    alias: 'oev-network-sepolia-testnet',
-    decimals: 18,
-    explorer: {
-      api: {
-        key: { required: false },
-        url: 'https://oev-network-sepolia-testnet-agg-blockscout.eu-north-2.gateway.fm/api/',
-      },
-      browserUrl: 'https://oev-network-sepolia-testnet-agg-blockscout.eu-north-2.gateway.fm/',
-    },
-    id: '879490799',
-    name: 'OEV Network Sepolia testnet',
-    providers: [{ alias: 'default', rpcUrl: 'https://oev-network-sepolia-testnet-agg-rpc.eu-north-2.gateway.fm' }],
-    symbol: 'ETH',
-    testnet: true,
-  },
-  {
     alias: 'oev-network',
     decimals: 18,
     explorer: {
@@ -1121,7 +1141,7 @@ export const CHAINS: Chain[] = [
     decimals: 18,
     explorer: {
       api: { key: { required: true }, url: 'https://api-amoy.polygonscan.com/api' },
-      browserUrl: 'https://amoy.polygonscan.com',
+      browserUrl: 'https://amoy.polygonscan.com/',
     },
     id: '80002',
     name: 'Polygon Sepolia testnet',
@@ -1184,6 +1204,19 @@ export const CHAINS: Chain[] = [
     testnet: false,
   },
   {
+    alias: 'rari-arbitrum-sepolia-testnet',
+    decimals: 18,
+    explorer: {
+      api: { key: { required: false }, url: 'https://testnet.explorer.rarichain.org/api' },
+      browserUrl: 'https://testnet.explorer.rarichain.org/',
+    },
+    id: '1918988905',
+    name: 'RARI Arbitrum Sepolia testnet',
+    providers: [{ alias: 'default', rpcUrl: 'https://testnet.rpc.rarichain.org/http/' }],
+    symbol: 'ETH',
+    testnet: true,
+  },
+  {
     alias: 'rari',
     decimals: 18,
     explorer: {
@@ -1191,7 +1224,7 @@ export const CHAINS: Chain[] = [
       browserUrl: 'https://mainnet.explorer.rarichain.org/',
     },
     id: '1380012617',
-    name: 'Rari Chain',
+    name: 'RARI Chain',
     providers: [{ alias: 'default', rpcUrl: 'https://mainnet.rpc.rarichain.org/http/' }],
     symbol: 'ETH',
     testnet: false,
@@ -1277,7 +1310,7 @@ export const CHAINS: Chain[] = [
   {
     alias: 'x-layer-sepolia-testnet',
     decimals: 18,
-    explorer: { browserUrl: 'https://www.okx.com/explorer/xlayer-test' },
+    explorer: { browserUrl: 'https://www.okx.com/explorer/xlayer-test/' },
     id: '195',
     name: 'X Layer Sepolia testnet',
     providers: [
@@ -1290,7 +1323,7 @@ export const CHAINS: Chain[] = [
   {
     alias: 'x-layer',
     decimals: 18,
-    explorer: { browserUrl: 'https://www.okx.com/explorer/xlayer' },
+    explorer: { browserUrl: 'https://www.okx.com/explorer/xlayer/' },
     id: '196',
     name: 'X Layer',
     providers: [
@@ -1305,7 +1338,7 @@ export const CHAINS: Chain[] = [
     decimals: 18,
     explorer: {
       api: { key: { required: true }, url: 'https://explorer.zircuit.com/api/contractVerifyHardhat' },
-      browserUrl: 'https://explorer.zircuit.com',
+      browserUrl: 'https://explorer.zircuit.com/',
     },
     id: '48899',
     name: 'Zircuit Sepolia testnet',
