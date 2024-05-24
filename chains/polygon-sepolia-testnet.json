@@ -8,7 +8,7 @@
       },
       "url": "https://api-amoy.polygonscan.com/api"
     },
-    "browserUrl": "https://amoy.polygonscan.com"
+    "browserUrl": "https://amoy.polygonscan.com/"
   },
   "id": "80002",
   "name": "Polygon Sepolia testnet",

@@ -1157,7 +1157,7 @@ export const CHAINS: Chain[] = [
     decimals: 18,
     explorer: {
       api: { key: { required: true }, url: 'https://api-amoy.polygonscan.com/api' },
-      browserUrl: 'https://amoy.polygonscan.com',
+      browserUrl: 'https://amoy.polygonscan.com/',
     },
     id: '80002',
     name: 'Polygon Sepolia testnet',
@@ -1354,7 +1354,7 @@ export const CHAINS: Chain[] = [
     decimals: 18,
     explorer: {
       api: { key: { required: true }, url: 'https://explorer.zircuit.com/api/contractVerifyHardhat' },
-      browserUrl: 'https://explorer.zircuit.com',
+      browserUrl: 'https://explorer.zircuit.com/',
     },
     id: '48899',
     name: 'Zircuit Sepolia testnet',

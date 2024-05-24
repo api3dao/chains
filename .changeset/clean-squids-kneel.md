@@ -2,4 +2,4 @@
 "@api3/chains": patch
 ---
 
-Fix `x-layer` and `x-layer-sepolia-testnet` browser urls
+Fix `polygon-sepolia-testnet`, `zircuit-sepolia-testnet`, `x-layer` and `x-layer-sepolia-testnet` browser urls
