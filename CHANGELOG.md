@@ -1,5 +1,26 @@
 # @api3/chains
 
+## 7.0.0
+
+### Major Changes
+
+- 5f9b476: Remove `oev-network-sepolia-testnet` chain
+
+### Minor Changes
+
+- 6240e9a: Adds following chains;
+
+  - Core testnet
+  - Meter
+  - Meter testnet
+  - RARI Arbitrum Sepolia testnet
+
+  Fixed RARI Chain name
+
+### Patch Changes
+
+- b27a9c0: Fix `polygon-sepolia-testnet`, `zircuit-sepolia-testnet`, `x-layer` and `x-layer-sepolia-testnet` browser urls
+
 ## 6.3.1
 
 ### Patch Changes
