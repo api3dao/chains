@@ -18,11 +18,11 @@
       "rpcUrl": "https://canto.slingshot.finance/"
     },
     {
-      "alias": "public",
+      "alias": "ansybl",
       "rpcUrl": "https://canto-rpc.ansybl.io/"
     },
     {
-      "alias": "alternative",
+      "alias": "gravitychain",
       "rpcUrl": "https://canto.gravitychain.io/"
     }
   ],
