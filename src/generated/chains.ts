@@ -1257,7 +1257,7 @@ export const CHAINS: Chain[] = [
     id: '137',
     name: 'Polygon',
     providers: [
-      { alias: 'default', rpcUrl: 'https://rpc-mainnet.maticvigil.com' },
+      { alias: 'default', rpcUrl: 'https://polygon-bor-rpc.publicnode.com' },
       { alias: 'blastapi', homepageUrl: 'https://blastapi.io' },
       { alias: 'drpc', homepageUrl: 'https://drpc.org' },
       { alias: 'quicknode', homepageUrl: 'https://quicknode.com' },
