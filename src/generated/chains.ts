@@ -379,6 +379,36 @@ export const CHAINS: Chain[] = [
     testnet: false,
   },
   {
+    alias: 'canto-testnet',
+    decimals: 18,
+    explorer: {
+      api: { key: { required: false }, url: 'https://testnet.tuber.build/api' },
+      browserUrl: 'https://testnet.tuber.build/',
+    },
+    id: '7701',
+    name: 'Canto testnet',
+    providers: [{ alias: 'default', rpcUrl: 'https://canto-testnet.plexnode.wtf/' }],
+    symbol: 'CANTO',
+    testnet: true,
+  },
+  {
+    alias: 'canto',
+    decimals: 18,
+    explorer: {
+      api: { key: { required: false }, url: 'https://www.oklink.com/api/explorer/v1/contract/verify/async/api/canto' },
+      browserUrl: 'https://www.oklink.com/canto/',
+    },
+    id: '7700',
+    name: 'Canto',
+    providers: [
+      { alias: 'default', rpcUrl: 'https://canto.slingshot.finance/' },
+      { alias: 'ansybl', rpcUrl: 'https://canto-rpc.ansybl.io/' },
+      { alias: 'gravitychain', rpcUrl: 'https://canto.gravitychain.io/' },
+    ],
+    symbol: 'CANTO',
+    testnet: false,
+  },
+  {
     alias: 'core-testnet',
     decimals: 18,
     explorer: {
@@ -822,6 +852,26 @@ export const CHAINS: Chain[] = [
     testnet: false,
   },
   {
+    alias: 'meld-testnet',
+    decimals: 18,
+    explorer: { browserUrl: 'https://testnet.meldscan.io/' },
+    id: '222000222',
+    name: 'Meld testnet',
+    providers: [{ alias: 'default', rpcUrl: 'https://testnet-rpc.meld.com/' }],
+    symbol: 'MELD',
+    testnet: true,
+  },
+  {
+    alias: 'meld',
+    decimals: 18,
+    explorer: { browserUrl: 'https://meldscan.io/' },
+    id: '333000333',
+    name: 'Meld',
+    providers: [{ alias: 'default', rpcUrl: 'https://rpc-1.meld.com/' }],
+    symbol: 'MELD',
+    testnet: false,
+  },
+  {
     alias: 'merlin-testnet',
     decimals: 18,
     explorer: {
@@ -848,6 +898,19 @@ export const CHAINS: Chain[] = [
       { alias: 'blockpi', homepageUrl: 'https://blockpi.io' },
     ],
     symbol: 'BTC',
+    testnet: false,
+  },
+  {
+    alias: 'metal',
+    decimals: 18,
+    explorer: {
+      api: { key: { required: false }, url: 'https://explorer.metall2.com/api' },
+      browserUrl: 'https://explorer.metall2.com/',
+    },
+    id: '1750',
+    name: 'Metal L2',
+    providers: [{ alias: 'default', rpcUrl: 'https://rpc.metall2.com/' }],
+    symbol: 'ETH',
     testnet: false,
   },
   {
