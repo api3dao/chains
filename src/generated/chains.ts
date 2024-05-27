@@ -400,7 +400,11 @@ export const CHAINS: Chain[] = [
     },
     id: '7700',
     name: 'Canto',
-    providers: [{ alias: 'default', rpcUrl: 'https://canto.slingshot.finance/' }],
+    providers: [
+      { alias: 'default', rpcUrl: 'https://canto.slingshot.finance/' },
+      { alias: 'public', rpcUrl: 'https://canto-rpc.ansybl.io/' },
+      { alias: 'alternative', rpcUrl: 'https://canto.gravitychain.io/' },
+    ],
     symbol: 'CANTO',
     testnet: false,
   },

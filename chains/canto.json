@@ -16,6 +16,14 @@
     {
       "alias": "default",
       "rpcUrl": "https://canto.slingshot.finance/"
+    },
+    {
+      "alias": "public",
+      "rpcUrl": "https://canto-rpc.ansybl.io/"
+    },
+    {
+      "alias": "alternative",
+      "rpcUrl": "https://canto.gravitychain.io/"
     }
   ],
   "symbol": "CANTO",
