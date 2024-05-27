@@ -1,0 +1,17 @@
+{
+  "alias": "sei",
+  "decimals": 18,
+  "explorer": {
+    "browserUrl": "https://seitrace.com/"
+  },
+  "id": "1329",
+  "name": "Sei",
+  "providers": [
+    {
+      "alias": "default",
+      "rpcUrl": "https://evm-rpc.sei-apis.com/"
+    }
+  ],
+  "symbol": "SEI",
+  "testnet": false
+}
