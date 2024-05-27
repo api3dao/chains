@@ -2,7 +2,7 @@
 "@api3/chains": minor
 ---
 
-Adds following chains;
+Adds following chains:
 * Canto
 * Canto Testnet
 * Meld
