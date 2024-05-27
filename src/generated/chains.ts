@@ -1318,10 +1318,7 @@ export const CHAINS: Chain[] = [
   {
     alias: 'sei-testnet',
     decimals: 18,
-    explorer: {
-      api: { key: { required: false }, url: 'https://seitrace.com/api' },
-      browserUrl: 'https://seitrace.com/',
-    },
+    explorer: { browserUrl: 'https://devnet.seistream.app/' },
     id: '713715',
     name: 'Sei testnet',
     providers: [
@@ -1330,6 +1327,16 @@ export const CHAINS: Chain[] = [
     ],
     symbol: 'SEI',
     testnet: true,
+  },
+  {
+    alias: 'sei',
+    decimals: 18,
+    explorer: { browserUrl: 'https://seitrace.com/' },
+    id: '1329',
+    name: 'Sei',
+    providers: [{ alias: 'default', rpcUrl: 'https://evm-rpc.sei-apis.com/' }],
+    symbol: 'SEI',
+    testnet: false,
   },
   {
     alias: 'sx-testnet',
@@ -1369,6 +1376,19 @@ export const CHAINS: Chain[] = [
     providers: [{ alias: 'default', rpcUrl: 'https://rpc.hekla.taiko.xyz' }],
     symbol: 'ETH',
     testnet: true,
+  },
+  {
+    alias: 'taiko',
+    decimals: 18,
+    explorer: {
+      api: { key: { required: true }, url: 'https://api.taikoscan.io/api' },
+      browserUrl: 'https://taikoscan.io/',
+    },
+    id: '167000',
+    name: 'Taiko',
+    providers: [{ alias: 'default', rpcUrl: 'https://rpc.taiko.xyz' }],
+    symbol: 'ETH',
+    testnet: false,
   },
   {
     alias: 'x-layer-sepolia-testnet',
