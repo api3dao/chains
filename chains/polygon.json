@@ -16,7 +16,7 @@
   "providers": [
     {
       "alias": "default",
-      "rpcUrl": "https://rpc-mainnet.maticvigil.com"
+      "rpcUrl": "https://polygon-bor-rpc.publicnode.com"
     },
     {
       "alias": "blastapi",
