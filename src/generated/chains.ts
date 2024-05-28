@@ -1334,7 +1334,10 @@ export const CHAINS: Chain[] = [
     explorer: { browserUrl: 'https://seitrace.com/' },
     id: '1329',
     name: 'Sei',
-    providers: [{ alias: 'default', rpcUrl: 'https://evm-rpc.sei-apis.com/' }],
+    providers: [
+      { alias: 'default', rpcUrl: 'https://evm-rpc.sei-apis.com/' },
+      { alias: 'quicknode', homepageUrl: 'https://quicknode.com' },
+    ],
     symbol: 'SEI',
     testnet: false,
   },
@@ -1386,7 +1389,10 @@ export const CHAINS: Chain[] = [
     },
     id: '167000',
     name: 'Taiko',
-    providers: [{ alias: 'default', rpcUrl: 'https://rpc.taiko.xyz' }],
+    providers: [
+      { alias: 'default', rpcUrl: 'https://rpc.taiko.xyz' },
+      { alias: 'drpc', homepageUrl: 'https://drpc.org' },
+    ],
     symbol: 'ETH',
     testnet: false,
   },

@@ -16,6 +16,10 @@
     {
       "alias": "default",
       "rpcUrl": "https://rpc.taiko.xyz"
+    },
+    {
+      "alias": "drpc",
+      "homepageUrl": "https://drpc.org"
     }
   ],
   "symbol": "ETH",
