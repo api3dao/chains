@@ -1,5 +1,28 @@
 # @api3/chains
 
+## 7.1.0
+
+### Minor Changes
+
+- d7bf4b0: Adds following chains:
+  - Canto
+  - Canto Testnet
+  - Meld
+  - Meld Testnet
+  - Metal L2
+- 36b6d96: Add following chains:
+
+  - Sei
+  - Taiko
+
+  Update explorer links for the following chains:
+
+  - Sei testnet
+
+### Patch Changes
+
+- f6c71d3: Update default provider of polygon
+
 ## 7.0.0
 
 ### Major Changes
