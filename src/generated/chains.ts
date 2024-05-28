@@ -379,6 +379,36 @@ export const CHAINS: Chain[] = [
     testnet: false,
   },
   {
+    alias: 'canto-testnet',
+    decimals: 18,
+    explorer: {
+      api: { key: { required: false }, url: 'https://testnet.tuber.build/api' },
+      browserUrl: 'https://testnet.tuber.build/',
+    },
+    id: '7701',
+    name: 'Canto testnet',
+    providers: [{ alias: 'default', rpcUrl: 'https://canto-testnet.plexnode.wtf/' }],
+    symbol: 'CANTO',
+    testnet: true,
+  },
+  {
+    alias: 'canto',
+    decimals: 18,
+    explorer: {
+      api: { key: { required: false }, url: 'https://www.oklink.com/api/explorer/v1/contract/verify/async/api/canto' },
+      browserUrl: 'https://www.oklink.com/canto/',
+    },
+    id: '7700',
+    name: 'Canto',
+    providers: [
+      { alias: 'default', rpcUrl: 'https://canto.slingshot.finance/' },
+      { alias: 'ansybl', rpcUrl: 'https://canto-rpc.ansybl.io/' },
+      { alias: 'gravitychain', rpcUrl: 'https://canto.gravitychain.io/' },
+    ],
+    symbol: 'CANTO',
+    testnet: false,
+  },
+  {
     alias: 'core-testnet',
     decimals: 18,
     explorer: {
@@ -822,6 +852,26 @@ export const CHAINS: Chain[] = [
     testnet: false,
   },
   {
+    alias: 'meld-testnet',
+    decimals: 18,
+    explorer: { browserUrl: 'https://testnet.meldscan.io/' },
+    id: '222000222',
+    name: 'Meld testnet',
+    providers: [{ alias: 'default', rpcUrl: 'https://testnet-rpc.meld.com/' }],
+    symbol: 'MELD',
+    testnet: true,
+  },
+  {
+    alias: 'meld',
+    decimals: 18,
+    explorer: { browserUrl: 'https://meldscan.io/' },
+    id: '333000333',
+    name: 'Meld',
+    providers: [{ alias: 'default', rpcUrl: 'https://rpc-1.meld.com/' }],
+    symbol: 'MELD',
+    testnet: false,
+  },
+  {
     alias: 'merlin-testnet',
     decimals: 18,
     explorer: {
@@ -848,6 +898,19 @@ export const CHAINS: Chain[] = [
       { alias: 'blockpi', homepageUrl: 'https://blockpi.io' },
     ],
     symbol: 'BTC',
+    testnet: false,
+  },
+  {
+    alias: 'metal',
+    decimals: 18,
+    explorer: {
+      api: { key: { required: false }, url: 'https://explorer.metall2.com/api' },
+      browserUrl: 'https://explorer.metall2.com/',
+    },
+    id: '1750',
+    name: 'Metal L2',
+    providers: [{ alias: 'default', rpcUrl: 'https://rpc.metall2.com/' }],
+    symbol: 'ETH',
     testnet: false,
   },
   {
@@ -1194,7 +1257,7 @@ export const CHAINS: Chain[] = [
     id: '137',
     name: 'Polygon',
     providers: [
-      { alias: 'default', rpcUrl: 'https://rpc-mainnet.maticvigil.com' },
+      { alias: 'default', rpcUrl: 'https://polygon-bor-rpc.publicnode.com' },
       { alias: 'blastapi', homepageUrl: 'https://blastapi.io' },
       { alias: 'drpc', homepageUrl: 'https://drpc.org' },
       { alias: 'quicknode', homepageUrl: 'https://quicknode.com' },
@@ -1255,10 +1318,7 @@ export const CHAINS: Chain[] = [
   {
     alias: 'sei-testnet',
     decimals: 18,
-    explorer: {
-      api: { key: { required: false }, url: 'https://seitrace.com/api' },
-      browserUrl: 'https://seitrace.com/',
-    },
+    explorer: { browserUrl: 'https://devnet.seistream.app/' },
     id: '713715',
     name: 'Sei testnet',
     providers: [
@@ -1267,6 +1327,19 @@ export const CHAINS: Chain[] = [
     ],
     symbol: 'SEI',
     testnet: true,
+  },
+  {
+    alias: 'sei',
+    decimals: 18,
+    explorer: { browserUrl: 'https://seitrace.com/' },
+    id: '1329',
+    name: 'Sei',
+    providers: [
+      { alias: 'default', rpcUrl: 'https://evm-rpc.sei-apis.com/' },
+      { alias: 'quicknode', homepageUrl: 'https://quicknode.com' },
+    ],
+    symbol: 'SEI',
+    testnet: false,
   },
   {
     alias: 'sx-testnet',
@@ -1306,6 +1379,22 @@ export const CHAINS: Chain[] = [
     providers: [{ alias: 'default', rpcUrl: 'https://rpc.hekla.taiko.xyz' }],
     symbol: 'ETH',
     testnet: true,
+  },
+  {
+    alias: 'taiko',
+    decimals: 18,
+    explorer: {
+      api: { key: { required: true }, url: 'https://api.taikoscan.io/api' },
+      browserUrl: 'https://taikoscan.io/',
+    },
+    id: '167000',
+    name: 'Taiko',
+    providers: [
+      { alias: 'default', rpcUrl: 'https://rpc.taiko.xyz' },
+      { alias: 'drpc', homepageUrl: 'https://drpc.org' },
+    ],
+    symbol: 'ETH',
+    testnet: false,
   },
   {
     alias: 'x-layer-sepolia-testnet',

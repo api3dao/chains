@@ -2,13 +2,7 @@
   "alias": "sei-testnet",
   "decimals": 18,
   "explorer": {
-    "api": {
-      "key": {
-        "required": false
-      },
-      "url": "https://seitrace.com/api"
-    },
-    "browserUrl": "https://seitrace.com/"
+    "browserUrl": "https://devnet.seistream.app/"
   },
   "id": "713715",
   "name": "Sei testnet",
