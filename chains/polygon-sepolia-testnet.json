@@ -11,7 +11,7 @@
     "browserUrl": "https://amoy.polygonscan.com/"
   },
   "id": "80002",
-  "name": "Polygon Sepolia testnet",
+  "name": "Polygon testnet",
   "providers": [
     {
       "alias": "default",

@@ -11,7 +11,7 @@
     "browserUrl": "https://explorer.testnet.immutable.com/"
   },
   "id": "13473",
-  "name": "Immutable zkEVM Sepolia testnet",
+  "name": "Immutable zkEVM testnet",
   "providers": [
     {
       "alias": "default",

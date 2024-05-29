@@ -11,7 +11,7 @@
     "browserUrl": "https://sepolia.blastscan.io/"
   },
   "id": "168587773",
-  "name": "Blast Sepolia Testnet",
+  "name": "Blast Testnet",
   "providers": [
     {
       "alias": "default",

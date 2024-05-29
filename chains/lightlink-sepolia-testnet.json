@@ -11,7 +11,7 @@
     "browserUrl": "https://pegasus.lightlink.io/"
   },
   "id": "1891",
-  "name": "LightLink Sepolia testnet",
+  "name": "LightLink testnet",
   "providers": [
     {
       "alias": "default",

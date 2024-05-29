@@ -11,7 +11,7 @@
     "browserUrl": "https://explorer.sepolia.mantle.xyz/"
   },
   "id": "5003",
-  "name": "Mantle Sepolia testnet",
+  "name": "Mantle testnet",
   "providers": [
     {
       "alias": "default",

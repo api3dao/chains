@@ -11,7 +11,7 @@
     "browserUrl": "https://sepolia.lineascan.build/"
   },
   "id": "59141",
-  "name": "Linea Sepolia testnet",
+  "name": "Linea testnet",
   "providers": [
     {
       "alias": "default",

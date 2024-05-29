@@ -11,7 +11,7 @@
     "browserUrl": "https://sepolia.basescan.org/"
   },
   "id": "84532",
-  "name": "Base Sepolia testnet",
+  "name": "Base testnet",
   "providers": [
     {
       "alias": "default",
