@@ -12,7 +12,7 @@
     "browserUrl": "https://sepolia.arbiscan.io/"
   },
   "id": "421614",
-  "name": "Arbitrum Sepolia testnet",
+  "name": "Arbitrum testnet",
   "providers": [
     {
       "alias": "default",

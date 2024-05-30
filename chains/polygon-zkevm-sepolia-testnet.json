@@ -11,7 +11,7 @@
     "browserUrl": "https://cardona-zkevm.polygonscan.com/"
   },
   "id": "2442",
-  "name": "Polygon zkEVM Sepolia testnet",
+  "name": "Polygon zkEVM testnet",
   "providers": [
     {
       "alias": "default",

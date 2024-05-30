@@ -11,7 +11,7 @@
     "browserUrl": "https://zkyoto.explorer.startale.com/"
   },
   "id": "6038361",
-  "name": "Astar zkEVM Sepolia testnet",
+  "name": "Astar zkEVM testnet",
   "providers": [
     {
       "alias": "default",

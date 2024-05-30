@@ -11,7 +11,7 @@
     "browserUrl": "https://explorer.zircuit.com/"
   },
   "id": "48899",
-  "name": "Zircuit Sepolia testnet",
+  "name": "Zircuit testnet",
   "providers": [
     {
       "alias": "default",

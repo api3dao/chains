@@ -11,7 +11,7 @@
     "browserUrl": "https://sepolia.kromascan.com/"
   },
   "id": "2358",
-  "name": "Kroma Sepolia testnet",
+  "name": "Kroma testnet",
   "providers": [
     {
       "alias": "default",

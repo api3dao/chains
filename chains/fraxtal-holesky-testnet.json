@@ -11,7 +11,7 @@
     "browserUrl": "https://holesky.fraxscan.com/"
   },
   "id": "2522",
-  "name": "Fraxtal Holesky testnet",
+  "name": "Fraxtal testnet",
   "providers": [
     {
       "alias": "default",

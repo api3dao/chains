@@ -11,7 +11,7 @@
     "browserUrl": "https://sepolia.explorer.mode.network/"
   },
   "id": "919",
-  "name": "Mode Sepolia testnet",
+  "name": "Mode testnet",
   "providers": [
     {
       "alias": "default",
