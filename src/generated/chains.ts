@@ -797,7 +797,7 @@ export const CHAINS: Chain[] = [
     id: '4201',
     name: 'Lukso testnet',
     providers: [{ alias: 'default', rpcUrl: 'https://rpc.testnet.lukso.network' }],
-    symbol: 'LYXt',
+    symbol: 'LYX',
     testnet: true,
   },
   {
