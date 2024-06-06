@@ -1,5 +1,12 @@
 # @api3/chains
 
+## 7.1.1
+
+### Patch Changes
+
+- 0ca3e14: Fix `lukso-testnet` symbol name
+- 948fa11: Update L2 names according to the new convention
+
 ## 7.1.0
 
 ### Minor Changes
