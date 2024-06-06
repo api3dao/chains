@@ -11,7 +11,7 @@
     "browserUrl": "https://sepolia-explorer.metisdevops.link/"
   },
   "id": "59902",
-  "name": "Metis Sepolia testnet",
+  "name": "Metis testnet",
   "providers": [
     {
       "alias": "default",

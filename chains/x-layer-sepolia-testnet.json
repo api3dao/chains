@@ -5,7 +5,7 @@
     "browserUrl": "https://www.okx.com/explorer/xlayer-test/"
   },
   "id": "195",
-  "name": "X Layer Sepolia testnet",
+  "name": "X Layer testnet",
   "providers": [
     {
       "alias": "default",

@@ -11,7 +11,7 @@
     "browserUrl": "https://testnet-explorer.gobob.xyz/"
   },
   "id": "111",
-  "name": "BOB Sepolia testnet",
+  "name": "BOB testnet",
   "providers": [
     {
       "alias": "default",
