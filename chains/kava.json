@@ -18,6 +18,10 @@
       "rpcUrl": "https://evm.kava.io/"
     },
     {
+      "alias": "ankr",
+      "homepageUrl": "https://ankr.com"
+    },
+    {
       "alias": "drpc",
       "homepageUrl": "https://drpc.org/"
     },

@@ -12,6 +12,10 @@
       "rpcUrl": "https://rpc.xlayer.tech/"
     },
     {
+      "alias": "ankr",
+      "homepageUrl": "https://ankr.com"
+    },
+    {
       "alias": "okx",
       "rpcUrl": "https://xlayerrpc.okx.com/"
     }

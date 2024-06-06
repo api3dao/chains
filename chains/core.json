@@ -18,6 +18,14 @@
       "rpcUrl": "https://rpc.coredao.org/"
     },
     {
+      "alias": "1rpc",
+      "homepageUrl": "https://1rpc.io/"
+    },
+    {
+      "alias": "ankr",
+      "homepageUrl": "https://ankr.com"
+    },
+    {
       "alias": "drpc",
       "homepageUrl": "https://drpc.org"
     }

@@ -18,6 +18,10 @@
       "rpcUrl": "https://rpc.bsquared.network"
     },
     {
+      "alias": "ankr",
+      "homepageUrl": "https://ankr.com"
+    },
+    {
       "alias": "public",
       "rpcUrl": "https://b2-mainnet.alt.technology"
     }
