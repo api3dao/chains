@@ -1,5 +1,11 @@
 # @api3/chains
 
+## 7.1.2
+
+### Patch Changes
+
+- 228f89e: Temporarily change the default Taiko RPC until the official one is fixed
+
 ## 7.1.1
 
 ### Patch Changes
