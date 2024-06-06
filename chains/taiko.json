@@ -15,7 +15,7 @@
   "providers": [
     {
       "alias": "default",
-      "rpcUrl": "https://rpc.taiko.xyz"
+      "rpcUrl": "https://rpc.taiko.tools"
     },
     {
       "alias": "drpc",
