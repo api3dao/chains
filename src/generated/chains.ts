@@ -1390,7 +1390,7 @@ export const CHAINS: Chain[] = [
     id: '167000',
     name: 'Taiko',
     providers: [
-      { alias: 'default', rpcUrl: 'https://rpc.taiko.xyz' },
+      { alias: 'default', rpcUrl: 'https://rpc.taiko.tools' },
       { alias: 'drpc', homepageUrl: 'https://drpc.org' },
     ],
     symbol: 'ETH',
