@@ -1,5 +1,24 @@
 # @api3/chains
 
+## 7.1.3
+
+### Patch Changes
+
+- e05a799: Add providers for the following chains:
+
+  - astar
+  - bob
+  - bsquared
+  - core
+  - kava
+  - kroma
+  - mantle
+  - metis
+  - mode
+  - opbnb
+  - taiko
+  - x-layer
+
 ## 7.1.2
 
 ### Patch Changes
