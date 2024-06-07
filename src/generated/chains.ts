@@ -228,6 +228,40 @@ export const CHAINS: Chain[] = [
     testnet: true,
   },
   {
+    alias: 'bitlayer-testnet',
+    decimals: 18,
+    explorer: {
+      api: { key: { required: false }, url: 'https://api-testnet.btrscan.com/scan/api' },
+      browserUrl: 'https://testnet.btrscan.com/',
+    },
+    id: '200810',
+    name: 'Bitlayer testnet',
+    providers: [
+      { alias: 'default', rpcUrl: 'https://testnet-rpc.bitlayer.org' },
+      { alias: 'public', rpcUrl: 'https://testnet-rpc.bitlayer-rpc.com' },
+    ],
+    symbol: 'BTC',
+    testnet: true,
+  },
+  {
+    alias: 'bitlayer',
+    decimals: 18,
+    explorer: {
+      api: { key: { required: false }, url: 'https://api.btrscan.com/scan/api' },
+      browserUrl: 'https://www.btrscan.com/',
+    },
+    id: '200901',
+    name: 'Bitlayer',
+    providers: [
+      { alias: 'default', rpcUrl: 'https://rpc.bitlayer.org' },
+      { alias: 'public', rpcUrl: 'https://rpc.bitlayer-rpc.com' },
+      { alias: 'ankr', homepageUrl: 'https://ankr.com' },
+      { alias: 'rockx', homepageUrl: 'https://rockx.com/' },
+    ],
+    symbol: 'BTC',
+    testnet: false,
+  },
+  {
     alias: 'blast-sepolia-testnet',
     decimals: 18,
     explorer: {
@@ -235,7 +269,7 @@ export const CHAINS: Chain[] = [
       browserUrl: 'https://sepolia.blastscan.io/',
     },
     id: '168587773',
-    name: 'Blast Testnet',
+    name: 'Blast testnet',
     providers: [
       { alias: 'default', rpcUrl: 'https://sepolia.blast.io' },
       {
@@ -1327,6 +1361,44 @@ export const CHAINS: Chain[] = [
       { alias: 'reblok', homepageUrl: 'https://reblok.io' },
     ],
     symbol: 'RBTC',
+    testnet: false,
+  },
+  {
+    alias: 'scroll-sepolia-testnet',
+    decimals: 18,
+    explorer: {
+      api: { key: { required: true }, url: 'https://api-sepolia.scrollscan.com/api' },
+      browserUrl: 'https://sepolia.scrollscan.com/',
+    },
+    id: '534351',
+    name: 'Scroll testnet',
+    providers: [
+      { alias: 'default', rpcUrl: 'https://sepolia-rpc.scroll.io' },
+      {
+        alias: 'drpc-freemium',
+        rpcUrl: 'https://lb.drpc.org/ogrpc?network=scroll-sepolia&dkey=AiPHJac9aUX2s7ELd131NuwSeHqkUW8R7oQiFnomaLKw',
+      },
+    ],
+    symbol: 'ETH',
+    testnet: true,
+  },
+  {
+    alias: 'scroll',
+    decimals: 18,
+    explorer: {
+      api: { key: { required: true }, url: 'https://api.scrollscan.com/api' },
+      browserUrl: 'https://scrollscan.com/',
+    },
+    id: '534352',
+    name: 'Scroll',
+    providers: [
+      { alias: 'default', rpcUrl: 'https://rpc.scroll.io' },
+      { alias: 'drpc', homepageUrl: 'https://drpc.org' },
+      { alias: 'blockpi', homepageUrl: 'https://blockpi.io' },
+      { alias: 'blastapi', homepageUrl: 'https://blastapi.io' },
+      { alias: 'quicknode', homepageUrl: 'https://quicknode.com' },
+    ],
+    symbol: 'ETH',
     testnet: false,
   },
   {
