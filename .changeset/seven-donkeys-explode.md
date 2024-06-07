@@ -11,7 +11,6 @@ Add providers for the following chains:
 * kava
 * kroma
 * mantle
-* merlin
 * metis
 * mode
 * opbnb

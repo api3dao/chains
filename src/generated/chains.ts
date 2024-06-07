@@ -910,7 +910,6 @@ export const CHAINS: Chain[] = [
     providers: [
       { alias: 'default', rpcUrl: 'https://rpc.merlinchain.io' },
       { alias: 'blockpi', homepageUrl: 'https://blockpi.io' },
-      { alias: 'rockx', homepageUrl: 'https://rockx.com/' },
     ],
     symbol: 'BTC',
     testnet: false,
