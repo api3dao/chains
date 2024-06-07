@@ -18,12 +18,16 @@
       "rpcUrl": "https://opbnb-mainnet-rpc.bnbchain.org"
     },
     {
-      "alias": "publicnode",
-      "rpcUrl": "https://opbnb-rpc.publicnode.com"
+      "alias": "blastapi",
+      "homepageUrl": "https://blastapi.io"
     },
     {
-      "alias": "drpc-freemium",
-      "rpcUrl": "https://lb.drpc.org/ogrpc?network=opbnb&dkey=AiPHJac9aUX2s7ELd131NuwSeHqkUW8R7oQiFnomaLKw"
+      "alias": "drpc",
+      "homepageUrl": "https://drpc.org/"
+    },
+    {
+      "alias": "publicnode",
+      "rpcUrl": "https://opbnb-rpc.publicnode.com"
     }
   ],
   "symbol": "BNB",
