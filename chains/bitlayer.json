@@ -24,6 +24,10 @@
     {
       "alias": "ankr",
       "homepageUrl": "https://ankr.com"
+    },
+    {
+      "alias": "rockx",
+      "homepageUrl": "https://rockx.com/"
     }
   ],
   "symbol": "BTC",
