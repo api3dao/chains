@@ -269,7 +269,7 @@ export const CHAINS: Chain[] = [
       browserUrl: 'https://sepolia.blastscan.io/',
     },
     id: '168587773',
-    name: 'Blast Testnet',
+    name: 'Blast testnet',
     providers: [
       { alias: 'default', rpcUrl: 'https://sepolia.blast.io' },
       {
