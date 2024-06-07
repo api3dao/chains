@@ -24,6 +24,10 @@
     {
       "alias": "drpc",
       "homepageUrl": "https://drpc.org"
+    },
+    {
+      "alias": "grove",
+      "homepageUrl": "https://grove.city/"
     }
   ],
   "symbol": "METIS",
