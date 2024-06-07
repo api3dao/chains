@@ -1,5 +1,20 @@
 # @api3/chains
 
+## 7.2.0
+
+### Minor Changes
+
+- b192647: Adds following chains:
+
+  - `bitlayer`
+  - `bitlayer-testnet`
+  - `scroll`
+  - `scroll-sepolia-testnet`
+
+### Patch Changes
+
+- 688f9d6: Update name of blast-sepolia-testnet
+
 ## 7.1.3
 
 ### Patch Changes
