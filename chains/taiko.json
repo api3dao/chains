@@ -18,6 +18,10 @@
       "rpcUrl": "https://rpc.taiko.tools"
     },
     {
+      "alias": "public",
+      "rpcUrl": "https://rpc.mainnet.taiko.xyz"
+    },
+    {
       "alias": "ankr",
       "homepageUrl": "https://ankr.com"
     },
