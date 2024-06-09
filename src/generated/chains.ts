@@ -1479,7 +1479,6 @@ export const CHAINS: Chain[] = [
       { alias: 'default', rpcUrl: 'https://rpc.taiko.tools' },
       { alias: 'public', rpcUrl: 'https://rpc.mainnet.taiko.xyz' },
       { alias: 'ankr', homepageUrl: 'https://ankr.com' },
-      { alias: 'blockpi', homepageUrl: 'https://blockpi.io' },
       { alias: 'drpc', homepageUrl: 'https://drpc.org' },
     ],
     symbol: 'ETH',
