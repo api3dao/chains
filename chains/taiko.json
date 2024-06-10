@@ -18,12 +18,12 @@
       "rpcUrl": "https://rpc.taiko.tools"
     },
     {
-      "alias": "ankr",
-      "homepageUrl": "https://ankr.com"
+      "alias": "public",
+      "rpcUrl": "https://rpc.mainnet.taiko.xyz"
     },
     {
-      "alias": "blockpi",
-      "homepageUrl": "https://blockpi.io"
+      "alias": "ankr",
+      "homepageUrl": "https://ankr.com"
     },
     {
       "alias": "drpc",
