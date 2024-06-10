@@ -4,7 +4,8 @@
 
 ### Patch Changes
 
-- 3efbd6f: \* Add official public provider for taiko
+- 3efbd6f:
+  - Add official public provider for taiko
   - Remove blockpi from taiko due to excessive gas price
 
 ## 7.2.0
