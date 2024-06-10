@@ -1,5 +1,12 @@
 # @api3/chains
 
+## 7.2.1
+
+### Patch Changes
+
+- 3efbd6f: \* Add official public provider for taiko
+  - Remove blockpi from taiko due to excessive gas price
+
 ## 7.2.0
 
 ### Minor Changes
