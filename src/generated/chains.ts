@@ -472,7 +472,6 @@ export const CHAINS: Chain[] = [
     name: 'Core',
     providers: [
       { alias: 'default', rpcUrl: 'https://rpc.coredao.org/' },
-      { alias: '1rpc', homepageUrl: 'https://1rpc.io/' },
       { alias: 'ankr', homepageUrl: 'https://ankr.com' },
       { alias: 'drpc', homepageUrl: 'https://drpc.org' },
     ],
@@ -771,7 +770,6 @@ export const CHAINS: Chain[] = [
     name: 'Kroma',
     providers: [
       { alias: 'default', rpcUrl: 'https://api.kroma.network/' },
-      { alias: '1rpc', homepageUrl: 'https://1rpc.io/' },
       { alias: 'rockx', homepageUrl: 'https://rockx.com/' },
     ],
     symbol: 'ETH',
@@ -1065,7 +1063,6 @@ export const CHAINS: Chain[] = [
     name: 'Mode',
     providers: [
       { alias: 'default', rpcUrl: 'https://mainnet.mode.network' },
-      { alias: '1rpc', homepageUrl: 'https://1rpc.io/' },
       { alias: 'blastapi', homepageUrl: 'https://blastapi.io' },
       { alias: 'drpc', homepageUrl: 'https://drpc.org/' },
     ],
