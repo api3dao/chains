@@ -537,7 +537,7 @@ export const CHAINS: Chain[] = [
     id: '1',
     name: 'Ethereum',
     providers: [
-      { alias: 'default', rpcUrl: 'https://cloudflare-eth.com' },
+      { alias: 'default', rpcUrl: 'https://ethereum-rpc.publicnode.com' },
       { alias: 'blastapi', homepageUrl: 'https://blastapi.io' },
       { alias: 'drpc', homepageUrl: 'https://drpc.org' },
       { alias: 'quicknode', homepageUrl: 'https://quicknode.com' },
