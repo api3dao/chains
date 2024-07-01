@@ -23,7 +23,7 @@ jobs:
     strategy:
       matrix:
         node-version: [18, 20, latest]
-        pnpm-version: [8]
+        pnpm-version: [9]
     steps:
       - name: Clone @api3/chains
         uses: actions/checkout@v4
