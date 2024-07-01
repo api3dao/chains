@@ -40,9 +40,9 @@
   },
   "devDependencies": {
     "@api3/promise-utils": "^0.4.0",
+    "@changesets/cli": "^2.27.7",
     "@slack/web-api": "^7.2.0",
     "@types/jest": "^29.5.12",
-    "@changesets/cli": "^2.27.6",
     "@types/node": "^20.14.9",
     "@typescript-eslint/eslint-plugin": "^7.14.1",
     "@typescript-eslint/parser": "^7.14.1",
