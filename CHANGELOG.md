@@ -1,5 +1,19 @@
 # @api3/chains
 
+## 8.0.0
+
+### Major Changes
+
+- 85fc553: Update URLs and chain id for `berachain-testnet`
+
+### Patch Changes
+
+- 7dc9afc: Remove provider `1rpc` from the existing chains
+- 2e44149: Remove hyperlink on the badge for `download per week`
+- 175fdd5: Regenerate pnpm-lock.yaml for pnpm v9
+- f25bbbc: Update dependencies
+- e7528a5: Update default provider for etheruem
+
 ## 7.2.1
 
 ### Patch Changes
