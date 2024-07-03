@@ -16,7 +16,7 @@
   "providers": [
     {
       "alias": "default",
-      "rpcUrl": "https://cloudflare-eth.com"
+      "rpcUrl": "https://ethereum-rpc.publicnode.com"
     },
     {
       "alias": "blastapi",
