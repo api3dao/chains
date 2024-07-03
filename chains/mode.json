@@ -18,10 +18,6 @@
       "rpcUrl": "https://mainnet.mode.network"
     },
     {
-      "alias": "1rpc",
-      "homepageUrl": "https://1rpc.io/"
-    },
-    {
       "alias": "blastapi",
       "homepageUrl": "https://blastapi.io"
     },

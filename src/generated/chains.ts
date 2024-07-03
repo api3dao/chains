@@ -218,12 +218,12 @@ export const CHAINS: Chain[] = [
     alias: 'berachain-testnet',
     decimals: 18,
     explorer: {
-      api: { key: { required: false }, url: 'https://api.routescan.io/v2/network/testnet/evm/80085/etherscan/api' },
-      browserUrl: 'https://artio.beratrail.io/',
+      api: { key: { required: false }, url: 'https://api.routescan.io/v2/network/testnet/evm/80084/etherscan/api' },
+      browserUrl: 'https://bartio.beratrail.io/',
     },
-    id: '80085',
+    id: '80084',
     name: 'Berachain testnet',
-    providers: [{ alias: 'default', rpcUrl: 'https://artio.rpc.berachain.com' }],
+    providers: [{ alias: 'default', rpcUrl: 'https://bartio.rpc.berachain.com/' }],
     symbol: 'BERA',
     testnet: true,
   },
@@ -472,7 +472,6 @@ export const CHAINS: Chain[] = [
     name: 'Core',
     providers: [
       { alias: 'default', rpcUrl: 'https://rpc.coredao.org/' },
-      { alias: '1rpc', homepageUrl: 'https://1rpc.io/' },
       { alias: 'ankr', homepageUrl: 'https://ankr.com' },
       { alias: 'drpc', homepageUrl: 'https://drpc.org' },
     ],
@@ -538,7 +537,7 @@ export const CHAINS: Chain[] = [
     id: '1',
     name: 'Ethereum',
     providers: [
-      { alias: 'default', rpcUrl: 'https://cloudflare-eth.com' },
+      { alias: 'default', rpcUrl: 'https://ethereum-rpc.publicnode.com' },
       { alias: 'blastapi', homepageUrl: 'https://blastapi.io' },
       { alias: 'drpc', homepageUrl: 'https://drpc.org' },
       { alias: 'quicknode', homepageUrl: 'https://quicknode.com' },
@@ -771,7 +770,6 @@ export const CHAINS: Chain[] = [
     name: 'Kroma',
     providers: [
       { alias: 'default', rpcUrl: 'https://api.kroma.network/' },
-      { alias: '1rpc', homepageUrl: 'https://1rpc.io/' },
       { alias: 'rockx', homepageUrl: 'https://rockx.com/' },
     ],
     symbol: 'ETH',
@@ -1065,7 +1063,6 @@ export const CHAINS: Chain[] = [
     name: 'Mode',
     providers: [
       { alias: 'default', rpcUrl: 'https://mainnet.mode.network' },
-      { alias: '1rpc', homepageUrl: 'https://1rpc.io/' },
       { alias: 'blastapi', homepageUrl: 'https://blastapi.io' },
       { alias: 'drpc', homepageUrl: 'https://drpc.org/' },
     ],
