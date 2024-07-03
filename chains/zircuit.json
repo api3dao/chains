@@ -9,11 +9,7 @@
   "providers": [
     {
       "alias": "default",
-      "rpcUrl": "https://zircuit1.com/"
-    },
-    {
-      "alias": "reblok",
-      "homepageUrl": "https://reblok.io"
+      "rpcUrl": "https://rpc.reblok.io/zircuit"
     }
   ],
   "symbol": "ETH",
