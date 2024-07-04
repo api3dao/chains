@@ -1,5 +1,11 @@
 # @api3/chains
 
+## 8.1.0
+
+### Minor Changes
+
+- 0f8f38a: Add `zircuit` chain
+
 ## 8.0.0
 
 ### Major Changes
