@@ -1522,6 +1522,16 @@ export const CHAINS: Chain[] = [
     testnet: true,
   },
   {
+    alias: 'zircuit',
+    decimals: 18,
+    explorer: { browserUrl: 'https://explorer.zircuit.com/' },
+    id: '48900',
+    name: 'Zircuit',
+    providers: [{ alias: 'default', rpcUrl: 'https://rpc.reblok.io/zircuit' }],
+    symbol: 'ETH',
+    testnet: false,
+  },
+  {
     alias: 'zksync',
     decimals: 18,
     explorer: { browserUrl: 'https://explorer.zksync.io/' },
