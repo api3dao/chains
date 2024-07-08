@@ -1524,7 +1524,7 @@ export const CHAINS: Chain[] = [
   {
     alias: 'zircuit',
     decimals: 18,
-    explorer: { browserUrl: 'https://explorer.zircuit.com/' },
+    explorer: { browserUrl: 'https://explorermainnet.zircuit.com/' },
     id: '48900',
     name: 'Zircuit',
     providers: [{ alias: 'default', rpcUrl: 'https://rpc.reblok.io/zircuit' }],

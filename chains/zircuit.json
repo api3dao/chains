@@ -2,7 +2,7 @@
   "alias": "zircuit",
   "decimals": 18,
   "explorer": {
-    "browserUrl": "https://explorer.zircuit.com/"
+    "browserUrl": "https://explorermainnet.zircuit.com/"
   },
   "id": "48900",
   "name": "Zircuit",
