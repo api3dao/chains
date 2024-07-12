@@ -19,16 +19,16 @@
       "rpcUrl": "https://rpc.api.moonbeam.network"
     },
     {
+      "alias": "publicnode",
+      "rpcUrl": "https://moonbeam-rpc.publicnode.com"
+    },
+    {
       "alias": "blastapi",
       "homepageUrl": "https://blastapi.io"
     },
     {
       "alias": "drpc",
       "homepageUrl": "https://drpc.org/"
-    },
-    {
-      "alias": "reblok",
-      "homepageUrl": "https://reblok.io"
     }
   ],
   "symbol": "GLMR",
