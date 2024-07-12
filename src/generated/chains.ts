@@ -1090,6 +1090,7 @@ export const CHAINS: Chain[] = [
     name: 'Moonbeam',
     providers: [
       { alias: 'default', rpcUrl: 'https://rpc.api.moonbeam.network' },
+      { alias: 'publicnode', rpcUrl: 'https://moonbeam-rpc.publicnode.com' },
       { alias: 'blastapi', homepageUrl: 'https://blastapi.io' },
       { alias: 'drpc', homepageUrl: 'https://drpc.org/' },
     ],
@@ -1110,6 +1111,7 @@ export const CHAINS: Chain[] = [
     name: 'Moonriver',
     providers: [
       { alias: 'default', rpcUrl: 'https://rpc.api.moonriver.moonbeam.network' },
+      { alias: 'publicnode', rpcUrl: 'https://moonriver-rpc.publicnode.com' },
       { alias: 'blastapi', homepageUrl: 'https://blastapi.io' },
       { alias: 'drpc', homepageUrl: 'https://drpc.org/' },
     ],
