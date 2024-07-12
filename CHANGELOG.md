@@ -1,5 +1,12 @@
 # @api3/chains
 
+## 8.1.1
+
+### Patch Changes
+
+- 9204efa: Drop Reblok support
+- 27563f0: Update `zircuit` explorer link
+
 ## 8.1.0
 
 ### Minor Changes
