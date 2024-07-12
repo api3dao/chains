@@ -21,10 +21,6 @@
     {
       "alias": "publicnode",
       "rpcUrl": "https://ethereum-sepolia-rpc.publicnode.com"
-    },
-    {
-      "alias": "reblok",
-      "homepageUrl": "https://reblok.io"
     }
   ],
   "symbol": "ETH",
