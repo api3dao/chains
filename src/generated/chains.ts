@@ -1159,7 +1159,7 @@ export const CHAINS: Chain[] = [
     },
     id: '4913',
     name: 'OEV Network',
-    providers: [{ alias: 'default', rpcUrl: 'https://oev-network.calderachain.xyz/http' }],
+    providers: [{ alias: 'default', rpcUrl: 'https://oev.rpc.api3.org/http' }],
     symbol: 'ETH',
     testnet: false,
   },
