@@ -1386,13 +1386,10 @@ export const CHAINS: Chain[] = [
   {
     alias: 'sei-testnet',
     decimals: 18,
-    explorer: { browserUrl: 'https://devnet.seistream.app/' },
-    id: '713715',
+    explorer: { browserUrl: 'https://testnet.seistream.app/' },
+    id: '1328',
     name: 'Sei testnet',
-    providers: [
-      { alias: 'default', rpcUrl: 'https://evm-rpc-arctic-1.sei-apis.com' },
-      { alias: 'public', rpcUrl: 'https://evm-rpc.arctic-1.seinetwork.io' },
-    ],
+    providers: [{ alias: 'default', rpcUrl: 'https://evm-rpc-testnet.sei-apis.com' }],
     symbol: 'SEI',
     testnet: true,
   },
