@@ -415,6 +415,19 @@ export const CHAINS: Chain[] = [
     testnet: false,
   },
   {
+    alias: 'camp-sepolia-testnet',
+    decimals: 18,
+    explorer: {
+      api: { key: { required: false }, url: 'https://camp-network-testnet.blockscout.com/api' },
+      browserUrl: 'https://camp-network-testnet.blockscout.com/',
+    },
+    id: '325000',
+    name: 'Camp testnet',
+    providers: [{ alias: 'default', rpcUrl: 'https://rpc.camp-network-testnet.gelato.digital/' }],
+    symbol: 'ETH',
+    testnet: true,
+  },
+  {
     alias: 'canto-testnet',
     decimals: 18,
     explorer: {
