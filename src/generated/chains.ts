@@ -422,7 +422,7 @@ export const CHAINS: Chain[] = [
       browserUrl: 'https://camp-network-testnet.blockscout.com/',
     },
     id: '325000',
-    name: 'Camp testnet',
+    name: 'Camp Network testnet',
     providers: [{ alias: 'default', rpcUrl: 'https://rpc.camp-network-testnet.gelato.digital/' }],
     symbol: 'ETH',
     testnet: true,
