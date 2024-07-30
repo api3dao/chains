@@ -15,7 +15,7 @@
   "providers": [
     {
       "alias": "default",
-      "rpcUrl": "https://oev-network.calderachain.xyz/http"
+      "rpcUrl": "https://oev.rpc.api3.org/http"
     }
   ],
   "symbol": "ETH",
