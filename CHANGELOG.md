@@ -1,5 +1,20 @@
 # @api3/chains
 
+## 9.0.0
+
+### Major Changes
+
+- 132f74b: Update ApeChain testnet to `curtis` deployment
+- 49742f6: Update Sei testnet to atlantic-2 deployment (testnet)
+
+### Minor Changes
+
+- 1724216: Add `camp-sepolia-testnet` chain
+
+### Patch Changes
+
+- 605ec42: Update OEV Network RPC url
+
 ## 8.1.1
 
 ### Patch Changes
