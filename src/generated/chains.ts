@@ -1522,7 +1522,11 @@ export const CHAINS: Chain[] = [
     explorer: { browserUrl: 'https://explorermainnet.zircuit.com/' },
     id: '48900',
     name: 'Zircuit',
-    providers: [{ alias: 'default', rpcUrl: 'https://rpc.reblok.io/zircuit' }],
+    providers: [
+      { alias: 'default', rpcUrl: 'https://zircuit1-mainnet.p2pify.com/' },
+      { alias: 'liquify', homepageUrl: 'https://zircuit1-mainnet.liquify.com' },
+      { alias: 'drpc', homepageUrl: 'https://drpc.org' },
+    ],
     symbol: 'ETH',
     testnet: false,
   },
