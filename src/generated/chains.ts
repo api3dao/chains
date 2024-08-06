@@ -864,27 +864,27 @@ export const CHAINS: Chain[] = [
     testnet: false,
   },
   {
-    alias: 'manta-pacific-sepolia-testnet',
+    alias: 'manta-sepolia-testnet',
     decimals: 18,
     explorer: {
       api: { key: { required: false }, url: 'https://pacific-explorer.sepolia-testnet.manta.network/api/' },
       browserUrl: 'https://pacific-explorer.sepolia-testnet.manta.network/',
     },
     id: '3441006',
-    name: 'Manta Pacific testnet',
+    name: 'Manta testnet',
     providers: [{ alias: 'default', rpcUrl: 'https://pacific-rpc.sepolia-testnet.manta.network/http' }],
     symbol: 'ETH',
     testnet: true,
   },
   {
-    alias: 'manta-pacific',
+    alias: 'manta',
     decimals: 18,
     explorer: {
       api: { key: { required: false }, url: 'https://pacific-explorer.manta.network/api/' },
       browserUrl: 'https://pacific-explorer.manta.network/',
     },
     id: '169',
-    name: 'Manta Pacific',
+    name: 'Manta',
     providers: [
       { alias: 'default', rpcUrl: 'https://pacific-rpc.manta.network/http' },
       { alias: 'public', rpcUrl: 'https://r1.pacific.manta.systems/http' },

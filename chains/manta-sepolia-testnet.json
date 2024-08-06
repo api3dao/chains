@@ -1,5 +1,5 @@
 {
-  "alias": "manta-pacific-sepolia-testnet",
+  "alias": "manta-sepolia-testnet",
   "decimals": 18,
   "explorer": {
     "api": {
@@ -11,7 +11,7 @@
     "browserUrl": "https://pacific-explorer.sepolia-testnet.manta.network/"
   },
   "id": "3441006",
-  "name": "Manta Pacific testnet",
+  "name": "Manta testnet",
   "providers": [
     {
       "alias": "default",

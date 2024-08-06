@@ -1,5 +1,5 @@
 {
-  "alias": "manta-pacific",
+  "alias": "manta",
   "decimals": 18,
   "explorer": {
     "api": {
@@ -11,7 +11,7 @@
     "browserUrl": "https://pacific-explorer.manta.network/"
   },
   "id": "169",
-  "name": "Manta Pacific",
+  "name": "Manta",
   "providers": [
     {
       "alias": "default",
