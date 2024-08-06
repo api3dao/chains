@@ -4,5 +4,5 @@
 
 Adds following chains:
 
-- Manta Pacific
-- Manta Pacific testnet
+- Manta
+- Manta testnet
