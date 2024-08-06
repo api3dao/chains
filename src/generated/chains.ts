@@ -864,6 +864,38 @@ export const CHAINS: Chain[] = [
     testnet: false,
   },
   {
+    alias: 'manta-sepolia-testnet',
+    decimals: 18,
+    explorer: {
+      api: { key: { required: false }, url: 'https://pacific-explorer.sepolia-testnet.manta.network/api/' },
+      browserUrl: 'https://pacific-explorer.sepolia-testnet.manta.network/',
+    },
+    id: '3441006',
+    name: 'Manta testnet',
+    providers: [{ alias: 'default', rpcUrl: 'https://pacific-rpc.sepolia-testnet.manta.network/http' }],
+    symbol: 'ETH',
+    testnet: true,
+  },
+  {
+    alias: 'manta',
+    decimals: 18,
+    explorer: {
+      api: { key: { required: false }, url: 'https://pacific-explorer.manta.network/api/' },
+      browserUrl: 'https://pacific-explorer.manta.network/',
+    },
+    id: '169',
+    name: 'Manta',
+    providers: [
+      { alias: 'default', rpcUrl: 'https://pacific-rpc.manta.network/http' },
+      { alias: 'public', rpcUrl: 'https://r1.pacific.manta.systems/http' },
+      { alias: 'nirvanalabs', rpcUrl: 'https://manta.nirvanalabs.xyz/mantapublic' },
+      { alias: 'tencentcloud', rpcUrl: 'https://www.tencentcloud-rpc.com/v2/manta/manta-rpc' },
+      { alias: 'drpc', homepageUrl: 'https://drpc.org' },
+    ],
+    symbol: 'ETH',
+    testnet: false,
+  },
+  {
     alias: 'mantle-sepolia-testnet',
     decimals: 18,
     explorer: {
