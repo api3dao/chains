@@ -13,7 +13,7 @@
     },
     {
       "alias": "liquify",
-      "homepageUrl": "https://zircuit1-mainnet.liquify.com"
+      "rpcUrl": "https://zircuit1-mainnet.liquify.com"
     },
     {
       "alias": "drpc",

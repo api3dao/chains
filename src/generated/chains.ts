@@ -1590,7 +1590,7 @@ export const CHAINS: Chain[] = [
     name: 'Zircuit',
     providers: [
       { alias: 'default', rpcUrl: 'https://zircuit1-mainnet.p2pify.com/' },
-      { alias: 'liquify', homepageUrl: 'https://zircuit1-mainnet.liquify.com' },
+      { alias: 'liquify', rpcUrl: 'https://zircuit1-mainnet.liquify.com' },
       { alias: 'drpc', homepageUrl: 'https://drpc.org' },
     ],
     symbol: 'ETH',
