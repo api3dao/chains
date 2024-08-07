@@ -1,5 +1,19 @@
 # @api3/chains
 
+## 9.1.0
+
+### Minor Changes
+
+- 354d39c: Adds following chains:
+
+  - Manta
+  - Manta testnet
+
+### Patch Changes
+
+- adf6888: Update RPC urls for `zircuit` chain
+- abe127d: Update dependencies
+
 ## 9.0.0
 
 ### Major Changes
