@@ -1,5 +1,16 @@
 # @api3/chains
 
+## 9.2.0
+
+### Minor Changes
+
+- 6113e03: Add conflux and conflux-testnet chains
+
+### Patch Changes
+
+- 16b4c55: Remove inconsistent RPCs from manta and zircuit chains
+- b4b954b: Fix Zircuit RPC URL
+
 ## 9.1.0
 
 ### Minor Changes
