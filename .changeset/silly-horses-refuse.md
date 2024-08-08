@@ -2,4 +2,4 @@
 "@api3/chains": minor
 ---
 
-Add conflux and conflux-tesnet chains
+Add conflux-espace and conflux-espace-testnet chains
