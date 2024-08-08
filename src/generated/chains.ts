@@ -458,14 +458,14 @@ export const CHAINS: Chain[] = [
     testnet: false,
   },
   {
-    alias: 'conflux-testnet',
+    alias: 'conflux-espace-testnet',
     decimals: 18,
     explorer: {
       api: { key: { required: false }, url: 'https://evmapi-testnet.confluxscan.io/api/' },
       browserUrl: 'https://evmtestnet.confluxscan.io/',
     },
     id: '71',
-    name: 'Conflux testnet',
+    name: 'Conflux eSpace testnet',
     providers: [
       { alias: 'default', rpcUrl: 'https://evmtestnet.confluxrpc.com/' },
       { alias: 'public', rpcUrl: 'https://evmtest.confluxrpc.com/' },
@@ -475,14 +475,14 @@ export const CHAINS: Chain[] = [
     testnet: true,
   },
   {
-    alias: 'conflux',
+    alias: 'conflux-espace',
     decimals: 18,
     explorer: {
       api: { key: { required: false }, url: 'https://evmapi.confluxscan.io/api/' },
       browserUrl: 'https://evm.confluxscan.io/',
     },
     id: '1030',
-    name: 'Conflux',
+    name: 'Conflux eSpace',
     providers: [
       { alias: 'default', rpcUrl: 'https://evm.confluxrpc.com/' },
       { alias: 'public', rpcUrl: 'https://evmmain-global.confluxrpc.com/' },

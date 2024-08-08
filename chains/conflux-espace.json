@@ -1,5 +1,5 @@
 {
-  "alias": "conflux",
+  "alias": "conflux-espace",
   "decimals": 18,
   "explorer": {
     "api": {
@@ -11,7 +11,7 @@
     "browserUrl": "https://evm.confluxscan.io/"
   },
   "id": "1030",
-  "name": "Conflux",
+  "name": "Conflux eSpace",
   "providers": [
     {
       "alias": "default",

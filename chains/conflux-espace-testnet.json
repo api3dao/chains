@@ -1,5 +1,5 @@
 {
-  "alias": "conflux-testnet",
+  "alias": "conflux-espace-testnet",
   "decimals": 18,
   "explorer": {
     "api": {
@@ -11,7 +11,7 @@
     "browserUrl": "https://evmtestnet.confluxscan.io/"
   },
   "id": "71",
-  "name": "Conflux testnet",
+  "name": "Conflux eSpace testnet",
   "providers": [
     {
       "alias": "default",
