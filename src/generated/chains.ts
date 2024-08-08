@@ -458,7 +458,7 @@ export const CHAINS: Chain[] = [
     testnet: false,
   },
   {
-    alias: 'conflux-espace-testnet',
+    alias: 'conflux-testnet',
     decimals: 18,
     explorer: {
       api: { key: { required: false }, url: 'https://evmapi-testnet.confluxscan.io/api/' },
@@ -475,7 +475,7 @@ export const CHAINS: Chain[] = [
     testnet: true,
   },
   {
-    alias: 'conflux-espace',
+    alias: 'conflux',
     decimals: 18,
     explorer: {
       api: { key: { required: false }, url: 'https://evmapi.confluxscan.io/api/' },
