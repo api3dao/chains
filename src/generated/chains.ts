@@ -920,10 +920,8 @@ export const CHAINS: Chain[] = [
     id: '169',
     name: 'Manta',
     providers: [
-      { alias: 'default', rpcUrl: 'https://pacific-rpc.manta.network/http' },
-      { alias: 'public', rpcUrl: 'https://r1.pacific.manta.systems/http' },
+      { alias: 'default', rpcUrl: 'https://r1.pacific.manta.systems/http' },
       { alias: 'nirvanalabs', rpcUrl: 'https://manta.nirvanalabs.xyz/mantapublic' },
-      { alias: 'tencentcloud', rpcUrl: 'https://www.tencentcloud-rpc.com/v2/manta/manta-rpc' },
       { alias: 'drpc', homepageUrl: 'https://drpc.org' },
     ],
     symbol: 'ETH',
@@ -1590,7 +1588,6 @@ export const CHAINS: Chain[] = [
     name: 'Zircuit',
     providers: [
       { alias: 'default', rpcUrl: 'https://zircuit1-mainnet.p2pify.com/' },
-      { alias: 'liquify', rpcUrl: 'https://zircuit1-mainnet.liquify.com' },
       { alias: 'drpc', homepageUrl: 'https://drpc.org' },
     ],
     symbol: 'ETH',
