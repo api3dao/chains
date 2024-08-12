@@ -1,5 +1,11 @@
 # @api3/chains
 
+## 9.2.1
+
+### Patch Changes
+
+- 6546372: Update default provider for canto
+
 ## 9.2.0
 
 ### Minor Changes
