@@ -1,5 +1,18 @@
 # @api3/chains
 
+## 10.0.0
+
+### Major Changes
+
+- e4b1ca4: Update URLs and chain id for `bob-sepolia-testnet`
+
+### Minor Changes
+
+- 88757db: Add following chains:
+
+  - Lumia
+  - Lumia testnet
+
 ## 9.2.1
 
 ### Patch Changes
