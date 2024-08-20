@@ -898,7 +898,7 @@ export const CHAINS: Chain[] = [
     testnet: false,
   },
   {
-    alias: 'lumia-testnet',
+    alias: 'lumia-sepolia-testnet',
     decimals: 18,
     explorer: {
       api: { key: { required: false }, url: 'https://testnet-explorer.lumia.org/api/' },

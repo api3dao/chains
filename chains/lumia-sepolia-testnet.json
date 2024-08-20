@@ -1,5 +1,5 @@
 {
-  "alias": "lumia-testnet",
+  "alias": "lumia-sepolia-testnet",
   "decimals": 18,
   "explorer": {
     "api": {
