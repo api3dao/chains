@@ -1,4 +1,16 @@
 # https://github.com/changesets/action
+
+########################################################################################
+# The following secrets are required:
+#
+# 1. NPM_TOKEN - A "fine-grained personal access token" generated through the
+#    npmjs.com UI. Tokens are generated at the user level, rather than organisation
+#    level. Each token is also scoped to the specific package.
+#
+#    The following minimum permissions are required:
+#      Read & write - access to package & scope
+########################################################################################
+
 name: Release
 
 on:
