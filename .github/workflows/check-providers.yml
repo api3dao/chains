@@ -17,15 +17,12 @@ jobs:
     strategy:
       matrix:
         node-version: [20]
-        pnpm-version: [9]
     steps:
       - name: Clone @api3/chains
         uses: actions/checkout@v4
 
-      - name: Setup pnpm ${{ matrix.pnpm-version }}
-        uses: pnpm/action-setup@v3
-        with:
-          version: ${{ matrix.pnpm-version }}
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
 
       - name: Setup Node ${{ matrix.node-version }}
         uses: actions/setup-node@v4
