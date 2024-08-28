@@ -1510,6 +1510,16 @@ export const CHAINS: Chain[] = [
     testnet: false,
   },
   {
+    alias: 'sonic-testnet',
+    decimals: 18,
+    explorer: { browserUrl: 'https://public-sonic.fantom.network/' },
+    id: '64165',
+    name: 'Sonic testnet',
+    providers: [{ alias: 'default', rpcUrl: 'https://rpc.sonic.fantom.network' }],
+    symbol: 'FTM',
+    testnet: true,
+  },
+  {
     alias: 'sx-testnet',
     decimals: 18,
     explorer: {
