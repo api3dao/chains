@@ -1516,7 +1516,7 @@ export const CHAINS: Chain[] = [
     id: '64165',
     name: 'Sonic testnet',
     providers: [{ alias: 'default', rpcUrl: 'https://rpc.sonic.fantom.network' }],
-    symbol: 'FTM',
+    symbol: 'S',
     testnet: true,
   },
   {
