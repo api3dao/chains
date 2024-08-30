@@ -17,6 +17,7 @@
     "dist",
     "src"
   ],
+  "packageManager": "pnpm@9.8.0",
   "scripts": {
     "build": "pnpm clean && pnpm generate:chains && tsc -p tsconfig.build.json",
     "changeset": "changeset",

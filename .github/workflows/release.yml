@@ -1,4 +1,18 @@
-# https://github.com/changesets/action
+#also has a specific scope https://github.com/changesets/action
+
+########################################################################################
+# The following secrets are required:
+#
+# 1. NPM_TOKEN - A "fine-grained personal access token" generated through the
+#    npmjs.com UI. Tokens are generated at the user level, rather than organisation
+#    level. Each token is also scoped to the specific package.
+#
+#    The following minimum permissions are required:
+#      Read & write - access to package & scope
+#
+# 2. GITHUB_TOKEN - automatically provided by Github to workflow runs. 
+########################################################################################
+
 name: Release
 
 on:
@@ -22,9 +36,7 @@ jobs:
           fetch-depth: 0
 
       - name: Setup pnpm
-        uses: pnpm/action-setup@v3
-        with:
-          version: 9
+        uses: pnpm/action-setup@v4
 
       - uses: actions/setup-node@v4
         with:
