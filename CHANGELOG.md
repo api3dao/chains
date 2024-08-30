@@ -1,5 +1,12 @@
 # @api3/chains
 
+## 10.1.0
+
+### Minor Changes
+
+- 228e2f8: Adds following chain:
+  - sonic-testnet
+
 ## 10.0.0
 
 ### Major Changes
