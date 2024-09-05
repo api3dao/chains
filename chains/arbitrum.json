@@ -19,6 +19,10 @@
       "rpcUrl": "https://arb1.arbitrum.io/rpc"
     },
     {
+      "alias": "publicnode",
+      "rpcUrl": "https://arbitrum-one-rpc.publicnode.com/"
+    },
+    {
       "alias": "blastapi",
       "homepageUrl": "https://blastapi.io"
     },

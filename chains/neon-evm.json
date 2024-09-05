@@ -18,8 +18,8 @@
       "rpcUrl": "https://neon-proxy-mainnet.solana.p2p.org"
     },
     {
-      "alias": "drpc",
-      "homepageUrl": "https://drpc.org"
+      "alias": "everstake",
+      "rpcUrl": "https://neon-mainnet.everstake.one"
     }
   ],
   "symbol": "NEON",

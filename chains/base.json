@@ -18,6 +18,10 @@
       "rpcUrl": "https://mainnet.base.org"
     },
     {
+      "alias": "publicnode",
+      "rpcUrl": "https://base-rpc.publicnode.com/"
+    },
+    {
       "alias": "blastapi",
       "homepageUrl": "https://blastapi.io"
     },
