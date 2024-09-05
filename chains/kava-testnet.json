@@ -16,10 +16,6 @@
     {
       "alias": "default",
       "rpcUrl": "https://evm.testnet.kava.io/"
-    },
-    {
-      "alias": "drpc-freemium",
-      "rpcUrl": "https://lb.drpc.org/ogrpc?network=kava-testnet&dkey=AiPHJac9aUX2s7ELd131NuwSeHqkUW8R7oQiFnomaLKw"
     }
   ],
   "symbol": "KAVA",

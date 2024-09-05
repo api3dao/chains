@@ -24,6 +24,10 @@
     {
       "alias": "backup",
       "rpcUrl": "https://evm.confluxrpc.org/"
+    },
+    {
+      "alias": "blockpi",
+      "homepageUrl": "https://blockpi.io"
     }
   ],
   "symbol": "CFX",

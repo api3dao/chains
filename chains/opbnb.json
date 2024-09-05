@@ -18,16 +18,16 @@
       "rpcUrl": "https://opbnb-mainnet-rpc.bnbchain.org"
     },
     {
+      "alias": "publicnode",
+      "rpcUrl": "https://opbnb-rpc.publicnode.com"
+    },
+    {
       "alias": "blastapi",
       "homepageUrl": "https://blastapi.io"
     },
     {
       "alias": "drpc",
       "homepageUrl": "https://drpc.org/"
-    },
-    {
-      "alias": "publicnode",
-      "rpcUrl": "https://opbnb-rpc.publicnode.com"
     }
   ],
   "symbol": "BNB",

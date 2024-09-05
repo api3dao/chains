@@ -18,6 +18,10 @@
       "rpcUrl": "https://api.kroma.network/"
     },
     {
+      "alias": "drpc",
+      "homepageUrl": "https://drpc.org"
+    },
+    {
       "alias": "rockx",
       "homepageUrl": "https://rockx.com/"
     }

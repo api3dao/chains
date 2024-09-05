@@ -19,6 +19,10 @@
       "rpcUrl": "https://rpc3.fantom.network/"
     },
     {
+      "alias": "publicnode",
+      "rpcUrl": "https://fantom-rpc.publicnode.com/"
+    },
+    {
       "alias": "blastapi",
       "homepageUrl": "https://blastapi.io"
     },

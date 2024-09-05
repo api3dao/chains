@@ -18,6 +18,10 @@
       "rpcUrl": "https://evm.kava.io/"
     },
     {
+      "alias": "publicnode",
+      "rpcUrl": "https://kava-evm-rpc.publicnode.com/"
+    },
+    {
       "alias": "ankr",
       "homepageUrl": "https://ankr.com"
     },

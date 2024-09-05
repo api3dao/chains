@@ -64,6 +64,7 @@ export const CHAINS: Chain[] = [
     name: 'Arbitrum One',
     providers: [
       { alias: 'default', rpcUrl: 'https://arb1.arbitrum.io/rpc' },
+      { alias: 'publicnode', rpcUrl: 'https://arbitrum-one-rpc.publicnode.com/' },
       { alias: 'blastapi', homepageUrl: 'https://blastapi.io' },
       { alias: 'drpc', homepageUrl: 'https://drpc.org' },
       { alias: 'quicknode', homepageUrl: 'https://quicknode.com' },
@@ -204,6 +205,7 @@ export const CHAINS: Chain[] = [
     name: 'Base',
     providers: [
       { alias: 'default', rpcUrl: 'https://mainnet.base.org' },
+      { alias: 'publicnode', rpcUrl: 'https://base-rpc.publicnode.com/' },
       { alias: 'blastapi', homepageUrl: 'https://blastapi.io' },
       { alias: 'drpc', homepageUrl: 'https://drpc.org' },
       { alias: 'quicknode', homepageUrl: 'https://quicknode.com' },
@@ -321,6 +323,7 @@ export const CHAINS: Chain[] = [
     providers: [
       { alias: 'default', rpcUrl: 'https://rpc.gobob.xyz/' },
       { alias: 'blastapi', homepageUrl: 'https://blastapi.io' },
+      { alias: 'drpc', homepageUrl: 'https://drpc.org' },
       { alias: 'tenderly', homepageUrl: 'https://tenderly.co/' },
     ],
     symbol: 'ETH',
@@ -408,7 +411,6 @@ export const CHAINS: Chain[] = [
     name: 'BSquared Network',
     providers: [
       { alias: 'default', rpcUrl: 'https://rpc.bsquared.network' },
-      { alias: 'ankr', homepageUrl: 'https://ankr.com' },
       { alias: 'public', rpcUrl: 'https://b2-mainnet.alt.technology' },
     ],
     symbol: 'BTC',
@@ -487,6 +489,7 @@ export const CHAINS: Chain[] = [
       { alias: 'default', rpcUrl: 'https://evm.confluxrpc.com/' },
       { alias: 'public', rpcUrl: 'https://evmmain-global.confluxrpc.com/' },
       { alias: 'backup', rpcUrl: 'https://evm.confluxrpc.org/' },
+      { alias: 'blockpi', homepageUrl: 'https://blockpi.io' },
     ],
     symbol: 'CFX',
     testnet: false,
@@ -515,6 +518,7 @@ export const CHAINS: Chain[] = [
     name: 'Core',
     providers: [
       { alias: 'default', rpcUrl: 'https://rpc.coredao.org/' },
+      { alias: 'icecreamswap', rpcUrl: 'https://rpc-core.icecreamswap.com/' },
       { alias: 'ankr', homepageUrl: 'https://ankr.com' },
       { alias: 'drpc', homepageUrl: 'https://drpc.org' },
     ],
@@ -615,6 +619,7 @@ export const CHAINS: Chain[] = [
     name: 'Fantom',
     providers: [
       { alias: 'default', rpcUrl: 'https://rpc3.fantom.network/' },
+      { alias: 'publicnode', rpcUrl: 'https://fantom-rpc.publicnode.com/' },
       { alias: 'blastapi', homepageUrl: 'https://blastapi.io' },
       { alias: 'drpc', homepageUrl: 'https://drpc.org' },
       { alias: 'quicknode', homepageUrl: 'https://quicknode.com' },
@@ -646,8 +651,9 @@ export const CHAINS: Chain[] = [
     name: 'Fraxtal',
     providers: [
       { alias: 'default', rpcUrl: 'https://rpc.frax.com' },
-      { alias: 'tenderly', homepageUrl: 'https://tenderly.co/' },
+      { alias: 'drpc', homepageUrl: 'https://drpc.org' },
       { alias: 'grove', homepageUrl: 'https://grove.city/' },
+      { alias: 'tenderly', homepageUrl: 'https://tenderly.co/' },
     ],
     symbol: 'ETH',
     testnet: false,
@@ -682,6 +688,7 @@ export const CHAINS: Chain[] = [
     name: 'Gnosis Chain',
     providers: [
       { alias: 'default', rpcUrl: 'https://rpc.gnosischain.com' },
+      { alias: 'publicnode', rpcUrl: 'https://gnosis-rpc.publicnode.com/' },
       { alias: 'blastapi', homepageUrl: 'https://blastapi.io' },
       { alias: 'drpc', homepageUrl: 'https://drpc.org' },
       { alias: 'quicknode', homepageUrl: 'https://quicknode.com' },
@@ -757,13 +764,7 @@ export const CHAINS: Chain[] = [
     },
     id: '2221',
     name: 'Kava testnet',
-    providers: [
-      { alias: 'default', rpcUrl: 'https://evm.testnet.kava.io/' },
-      {
-        alias: 'drpc-freemium',
-        rpcUrl: 'https://lb.drpc.org/ogrpc?network=kava-testnet&dkey=AiPHJac9aUX2s7ELd131NuwSeHqkUW8R7oQiFnomaLKw',
-      },
-    ],
+    providers: [{ alias: 'default', rpcUrl: 'https://evm.testnet.kava.io/' }],
     symbol: 'KAVA',
     testnet: true,
   },
@@ -778,6 +779,7 @@ export const CHAINS: Chain[] = [
     name: 'Kava',
     providers: [
       { alias: 'default', rpcUrl: 'https://evm.kava.io/' },
+      { alias: 'publicnode', rpcUrl: 'https://kava-evm-rpc.publicnode.com/' },
       { alias: 'ankr', homepageUrl: 'https://ankr.com' },
       { alias: 'drpc', homepageUrl: 'https://drpc.org/' },
       { alias: 'nodies', homepageUrl: 'https://nodies.app/' },
@@ -809,6 +811,7 @@ export const CHAINS: Chain[] = [
     name: 'Kroma',
     providers: [
       { alias: 'default', rpcUrl: 'https://api.kroma.network/' },
+      { alias: 'drpc', homepageUrl: 'https://drpc.org' },
       { alias: 'rockx', homepageUrl: 'https://rockx.com/' },
     ],
     symbol: 'ETH',
@@ -866,6 +869,7 @@ export const CHAINS: Chain[] = [
       { alias: 'default', rpcUrl: 'https://rpc.linea.build' },
       { alias: 'blastapi', homepageUrl: 'https://blastapi.io' },
       { alias: 'drpc', homepageUrl: 'https://drpc.org/' },
+      { alias: 'quicknode', homepageUrl: 'https://quicknode.com' },
       { alias: 'reblok', homepageUrl: 'https://reblok.io' },
     ],
     symbol: 'ETH',
@@ -893,7 +897,10 @@ export const CHAINS: Chain[] = [
     },
     id: '42',
     name: 'Lukso',
-    providers: [{ alias: 'default', rpcUrl: 'https://rpc.mainnet.lukso.network' }],
+    providers: [
+      { alias: 'default', rpcUrl: 'https://rpc.mainnet.lukso.network' },
+      { alias: 'sigmacore', rpcUrl: 'https://rpc.lukso.sigmacore.io/' },
+    ],
     symbol: 'LYX',
     testnet: false,
   },
@@ -946,7 +953,8 @@ export const CHAINS: Chain[] = [
     id: '169',
     name: 'Manta',
     providers: [
-      { alias: 'default', rpcUrl: 'https://r1.pacific.manta.systems/http' },
+      { alias: 'default', rpcUrl: 'https://pacific-rpc.manta.network/http' },
+      { alias: 'public', rpcUrl: 'https://r1.pacific.manta.systems/http' },
       { alias: 'nirvanalabs', rpcUrl: 'https://manta.nirvanalabs.xyz/mantapublic' },
       { alias: 'drpc', homepageUrl: 'https://drpc.org' },
     ],
@@ -1049,7 +1057,10 @@ export const CHAINS: Chain[] = [
     },
     id: '1750',
     name: 'Metal L2',
-    providers: [{ alias: 'default', rpcUrl: 'https://rpc.metall2.com/' }],
+    providers: [
+      { alias: 'default', rpcUrl: 'https://rpc.metall2.com/' },
+      { alias: 'drpc', homepageUrl: 'https://drpc.org' },
+    ],
     symbol: 'ETH',
     testnet: false,
   },
@@ -1100,6 +1111,7 @@ export const CHAINS: Chain[] = [
     name: 'Metis',
     providers: [
       { alias: 'default', rpcUrl: 'https://andromeda.metis.io/?owner=1088' },
+      { alias: 'ankr', homepageUrl: 'https://ankr.com' },
       { alias: 'blastapi', homepageUrl: 'https://blastapi.io' },
       { alias: 'drpc', homepageUrl: 'https://drpc.org' },
       { alias: 'grove', homepageUrl: 'https://grove.city/' },
@@ -1196,6 +1208,7 @@ export const CHAINS: Chain[] = [
     name: 'Moonbeam',
     providers: [
       { alias: 'default', rpcUrl: 'https://rpc.api.moonbeam.network' },
+      { alias: 'ankr', homepageUrl: 'https://ankr.com' },
       { alias: 'publicnode', rpcUrl: 'https://moonbeam-rpc.publicnode.com' },
       { alias: 'blastapi', homepageUrl: 'https://blastapi.io' },
       { alias: 'drpc', homepageUrl: 'https://drpc.org/' },
@@ -1248,7 +1261,7 @@ export const CHAINS: Chain[] = [
     name: 'Neon EVM',
     providers: [
       { alias: 'default', rpcUrl: 'https://neon-proxy-mainnet.solana.p2p.org' },
-      { alias: 'drpc', homepageUrl: 'https://drpc.org' },
+      { alias: 'everstake', rpcUrl: 'https://neon-mainnet.everstake.one' },
     ],
     symbol: 'NEON',
     testnet: false,
@@ -1293,9 +1306,9 @@ export const CHAINS: Chain[] = [
     name: 'opBNB',
     providers: [
       { alias: 'default', rpcUrl: 'https://opbnb-mainnet-rpc.bnbchain.org' },
+      { alias: 'publicnode', rpcUrl: 'https://opbnb-rpc.publicnode.com' },
       { alias: 'blastapi', homepageUrl: 'https://blastapi.io' },
       { alias: 'drpc', homepageUrl: 'https://drpc.org/' },
-      { alias: 'publicnode', rpcUrl: 'https://opbnb-rpc.publicnode.com' },
     ],
     symbol: 'BNB',
     testnet: false,
@@ -1330,6 +1343,7 @@ export const CHAINS: Chain[] = [
     name: 'Optimism',
     providers: [
       { alias: 'default', rpcUrl: 'https://mainnet.optimism.io' },
+      { alias: 'publicnode', rpcUrl: 'https://optimism-rpc.publicnode.com/' },
       { alias: 'blastapi', homepageUrl: 'https://blastapi.io' },
       { alias: 'drpc', homepageUrl: 'https://drpc.org' },
       { alias: 'quicknode', homepageUrl: 'https://quicknode.com' },
@@ -1457,13 +1471,7 @@ export const CHAINS: Chain[] = [
     },
     id: '534351',
     name: 'Scroll testnet',
-    providers: [
-      { alias: 'default', rpcUrl: 'https://sepolia-rpc.scroll.io' },
-      {
-        alias: 'drpc-freemium',
-        rpcUrl: 'https://lb.drpc.org/ogrpc?network=scroll-sepolia&dkey=AiPHJac9aUX2s7ELd131NuwSeHqkUW8R7oQiFnomaLKw',
-      },
-    ],
+    providers: [{ alias: 'default', rpcUrl: 'https://sepolia-rpc.scroll.io' }],
     symbol: 'ETH',
     testnet: true,
   },
@@ -1624,6 +1632,7 @@ export const CHAINS: Chain[] = [
     name: 'Zircuit',
     providers: [
       { alias: 'default', rpcUrl: 'https://zircuit1-mainnet.p2pify.com/' },
+      { alias: 'public', rpcUrl: 'https://zircuit1-mainnet.liquify.com' },
       { alias: 'drpc', homepageUrl: 'https://drpc.org' },
     ],
     symbol: 'ETH',
