@@ -1,5 +1,12 @@
 # @api3/chains
 
+## 10.1.1
+
+### Patch Changes
+
+- 5959c22: Fix prettier import
+- e1e7cd5: Update providers
+
 ## 10.1.0
 
 ### Minor Changes
