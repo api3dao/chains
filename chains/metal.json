@@ -16,6 +16,10 @@
     {
       "alias": "default",
       "rpcUrl": "https://rpc.metall2.com/"
+    },
+    {
+      "alias": "drpc",
+      "homepageUrl": "https://drpc.org"
     }
   ],
   "symbol": "ETH",

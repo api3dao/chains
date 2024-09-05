@@ -19,6 +19,10 @@
       "rpcUrl": "https://rpc.gnosischain.com"
     },
     {
+      "alias": "publicnode",
+      "rpcUrl": "https://gnosis-rpc.publicnode.com/"
+    },
+    {
       "alias": "blastapi",
       "homepageUrl": "https://blastapi.io"
     },

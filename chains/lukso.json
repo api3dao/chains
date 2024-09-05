@@ -16,6 +16,10 @@
     {
       "alias": "default",
       "rpcUrl": "https://rpc.mainnet.lukso.network"
+    },
+    {
+      "alias": "sigmacore",
+      "rpcUrl": "https://rpc.lukso.sigmacore.io/"
     }
   ],
   "symbol": "LYX",

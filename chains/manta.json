@@ -15,6 +15,10 @@
   "providers": [
     {
       "alias": "default",
+      "rpcUrl": "https://pacific-rpc.manta.network/http"
+    },
+    {
+      "alias": "public",
       "rpcUrl": "https://r1.pacific.manta.systems/http"
     },
     {
