@@ -1510,6 +1510,19 @@ export const CHAINS: Chain[] = [
     testnet: false,
   },
   {
+    alias: 'soneium-sepolia-testnet',
+    decimals: 18,
+    explorer: {
+      api: { key: { required: false }, url: 'https://explorer-testnet.soneium.org/api' },
+      browserUrl: 'https://explorer-testnet.soneium.org/',
+    },
+    id: '1946',
+    name: 'Soneium testnet',
+    providers: [{ alias: 'default', rpcUrl: 'https://rpc.minato.soneium.org/' }],
+    symbol: 'ETH',
+    testnet: true,
+  },
+  {
     alias: 'sonic-testnet',
     decimals: 18,
     explorer: { browserUrl: 'https://public-sonic.fantom.network/' },
