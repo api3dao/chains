@@ -1,5 +1,12 @@
 # @api3/chains
 
+## 10.2.0
+
+### Minor Changes
+
+- 5b47c81: Add following chain:
+  - soneium-sepolia-testnet
+
 ## 10.1.1
 
 ### Patch Changes
