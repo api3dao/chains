@@ -3,4 +3,4 @@
 ---
 
 Add following chain:
-* Soneium Testnet
+* soneium-sepolia-testnet
