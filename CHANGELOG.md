@@ -1,5 +1,12 @@
 # @api3/chains
 
+## 10.2.1
+
+### Patch Changes
+
+- 7ec6dbf: Fix sonic-testnet rpcUrl and browserUrl
+- 087d9e7: Fix zircuit and zircuit-sepolia-testnet browserUrl
+
 ## 10.2.0
 
 ### Minor Changes
