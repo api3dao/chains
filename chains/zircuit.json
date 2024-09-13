@@ -2,7 +2,13 @@
   "alias": "zircuit",
   "decimals": 18,
   "explorer": {
-    "browserUrl": "https://explorermainnet.zircuit.com/"
+    "api": {
+      "key": {
+        "required": true
+      },
+      "url": "https://explorer.zircuit.com/api/contractVerifyHardhat"
+    },
+    "browserUrl": "https://explorer.zircuit.com/"
   },
   "id": "48900",
   "name": "Zircuit",

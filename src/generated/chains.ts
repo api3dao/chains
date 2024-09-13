@@ -1533,10 +1533,10 @@ export const CHAINS: Chain[] = [
   {
     alias: 'sonic-testnet',
     decimals: 18,
-    explorer: { browserUrl: 'https://public-sonic.fantom.network/' },
+    explorer: { browserUrl: 'https://testnet.soniclabs.com/' },
     id: '64165',
     name: 'Sonic testnet',
-    providers: [{ alias: 'default', rpcUrl: 'https://rpc.sonic.fantom.network' }],
+    providers: [{ alias: 'default', rpcUrl: 'https://rpc.testnet.soniclabs.com' }],
     symbol: 'S',
     testnet: true,
   },
@@ -1628,8 +1628,8 @@ export const CHAINS: Chain[] = [
     alias: 'zircuit-sepolia-testnet',
     decimals: 18,
     explorer: {
-      api: { key: { required: true }, url: 'https://explorer.zircuit.com/api/contractVerifyHardhat' },
-      browserUrl: 'https://explorer.zircuit.com/',
+      api: { key: { required: true }, url: 'https://explorer.testnet.zircuit.com/api/contractVerifyHardhat' },
+      browserUrl: 'https://explorer.testnet.zircuit.com/',
     },
     id: '48899',
     name: 'Zircuit testnet',
@@ -1640,7 +1640,10 @@ export const CHAINS: Chain[] = [
   {
     alias: 'zircuit',
     decimals: 18,
-    explorer: { browserUrl: 'https://explorermainnet.zircuit.com/' },
+    explorer: {
+      api: { key: { required: true }, url: 'https://explorer.zircuit.com/api/contractVerifyHardhat' },
+      browserUrl: 'https://explorer.zircuit.com/',
+    },
     id: '48900',
     name: 'Zircuit',
     providers: [
