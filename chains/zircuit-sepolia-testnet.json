@@ -6,9 +6,9 @@
       "key": {
         "required": true
       },
-      "url": "https://explorer.zircuit.com/api/contractVerifyHardhat"
+      "url": "https://explorer.testnet.zircuit.com/api/contractVerifyHardhat"
     },
-    "browserUrl": "https://explorer.zircuit.com/"
+    "browserUrl": "https://explorer.testnet.zircuit.com/"
   },
   "id": "48899",
   "name": "Zircuit testnet",
