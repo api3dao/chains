@@ -1364,7 +1364,7 @@ export const CHAINS: Chain[] = [
       { alias: 'default', rpcUrl: 'https://rpc-amoy.polygon.technology' },
       { alias: 'publicnode', rpcUrl: 'https://polygon-amoy-bor-rpc.publicnode.com' },
     ],
-    symbol: 'MATIC',
+    symbol: 'POL',
     testnet: true,
   },
   {
@@ -1413,7 +1413,7 @@ export const CHAINS: Chain[] = [
       { alias: 'drpc', homepageUrl: 'https://drpc.org' },
       { alias: 'quicknode', homepageUrl: 'https://quicknode.com' },
     ],
-    symbol: 'MATIC',
+    symbol: 'POL',
     testnet: false,
   },
   {
