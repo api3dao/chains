@@ -22,6 +22,6 @@
       "rpcUrl": "https://polygon-amoy-bor-rpc.publicnode.com"
     }
   ],
-  "symbol": "MATIC",
+  "symbol": "POL",
   "testnet": true
 }
