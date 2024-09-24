@@ -1,5 +1,11 @@
 # @api3/chains
 
+## 10.2.2
+
+### Patch Changes
+
+- e6f4193: Migrate Polygon and Polygon testnet to POL from MATIC
+
 ## 10.2.1
 
 ### Patch Changes
