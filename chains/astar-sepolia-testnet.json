@@ -16,10 +16,6 @@
     {
       "alias": "default",
       "rpcUrl": "https://rpc.startale.com/zkyoto"
-    },
-    {
-      "alias": "public",
-      "rpcUrl": "https://rpc.zkyoto.gelato.digital"
     }
   ],
   "symbol": "ETH",
