@@ -20,10 +20,6 @@
     {
       "alias": "dwellir",
       "homepageUrl": "https://dwellir.com/"
-    },
-    {
-      "alias": "gelato",
-      "rpcUrl": "https://rpc.astar-zkevm.gelato.digital"
     }
   ],
   "symbol": "ETH",

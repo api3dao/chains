@@ -81,10 +81,7 @@ export const CHAINS: Chain[] = [
     },
     id: '6038361',
     name: 'Astar zkEVM testnet',
-    providers: [
-      { alias: 'default', rpcUrl: 'https://rpc.startale.com/zkyoto' },
-      { alias: 'public', rpcUrl: 'https://rpc.zkyoto.gelato.digital' },
-    ],
+    providers: [{ alias: 'default', rpcUrl: 'https://rpc.startale.com/zkyoto' }],
     symbol: 'ETH',
     testnet: true,
   },
@@ -100,7 +97,6 @@ export const CHAINS: Chain[] = [
     providers: [
       { alias: 'default', rpcUrl: 'https://rpc.startale.com/astar-zkevm' },
       { alias: 'dwellir', homepageUrl: 'https://dwellir.com/' },
-      { alias: 'gelato', rpcUrl: 'https://rpc.astar-zkevm.gelato.digital' },
     ],
     symbol: 'ETH',
     testnet: false,
