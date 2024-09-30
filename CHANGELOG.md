@@ -1,5 +1,11 @@
 # @api3/chains
 
+## 10.2.3
+
+### Patch Changes
+
+- bb4fcde: Remove Gelato provider from Astar zkEVM and Astar zkEVM testnet
+
 ## 10.2.2
 
 ### Patch Changes
