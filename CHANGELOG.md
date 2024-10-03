@@ -1,5 +1,11 @@
 # @api3/chains
 
+## 10.2.4
+
+### Patch Changes
+
+- c03db2a: Swap out block explorer URL for OEV Network
+
 ## 10.2.3
 
 ### Patch Changes
