@@ -1266,8 +1266,8 @@ export const CHAINS: Chain[] = [
     alias: 'oev-network',
     decimals: 18,
     explorer: {
-      api: { key: { required: false }, url: 'https://oev-network.calderaexplorer.xyz/api/' },
-      browserUrl: 'https://oev-network.calderaexplorer.xyz/',
+      api: { key: { required: false }, url: 'https://oev.explorer.api3.org/api/' },
+      browserUrl: 'https://oev.explorer.api3.org/',
     },
     id: '4913',
     name: 'OEV Network',
