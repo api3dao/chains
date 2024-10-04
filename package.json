@@ -40,6 +40,7 @@
     "zod": "^3.23.8"
   },
   "devDependencies": {
+    "@api3/eslint-plugin-commons": "3.0.0",
     "@api3/promise-utils": "^0.4.0",
     "@changesets/cli": "^2.27.7",
     "@slack/web-api": "^7.3.4",

@@ -1,6 +1,6 @@
 import { CHAINS } from './generated/chains';
 import { toUpperSnakeCase } from './utils/strings';
-import { Chain, HardhatEtherscanConfig, HardhatNetworksConfig } from './types';
+import { type Chain, type HardhatEtherscanConfig, type HardhatNetworksConfig } from './types';
 
 export function getEnvVariableNames(): string[] {
   const apiKeyEnvNames = CHAINS.filter((chain) => chain.explorer?.api?.key?.required).map((chain) =>
@@ -39,7 +39,7 @@ export function etherscan(): HardhatEtherscanConfig {
       const apiKey = chain.explorer.api.key;
 
       const apiKeyEnvName = etherscanApiKeyName(chain);
-      const apiKeyValue = apiKey.required ? process.env[apiKeyEnvName] || 'NOT_FOUND' : 'DUMMY_VALUE';
+      const apiKeyValue = apiKey.required ? (process.env[apiKeyEnvName] ?? 'NOT_FOUND') : 'DUMMY_VALUE';
 
       if (apiKey.hardhatEtherscanAlias) {
         etherscan.apiKey[apiKey.hardhatEtherscanAlias] = apiKeyValue;
@@ -70,12 +70,12 @@ export function networks(): HardhatNetworksConfig {
 
   return CHAINS.reduce((networks, chain) => {
     const defaultProvider = chain.providers.find((p) => p.alias === 'default');
-    const overrides = chain.hardhatConfigOverrides?.networks || {};
+    const overrides = chain.hardhatConfigOverrides?.networks ?? {};
 
     networks[chain.alias] = {
-      accounts: { mnemonic: process.env.MNEMONIC || '' },
+      accounts: { mnemonic: process.env.MNEMONIC ?? '' },
       chainId: Number(chain.id),
-      url: process.env[networkHttpRpcUrlName(chain)] || defaultProvider!.rpcUrl!,
+      url: process.env[networkHttpRpcUrlName(chain)] ?? defaultProvider!.rpcUrl!,
       ...overrides,
     };
     return networks;

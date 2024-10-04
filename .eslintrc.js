@@ -3,33 +3,16 @@ module.exports = {
     es6: true,
     node: true,
   },
-  parser: '@typescript-eslint/parser',
-  extends: [
-    'eslint:recommended',
-    'plugin:@typescript-eslint/recommended',
-    'plugin:@typescript-eslint/eslint-recommended',
-    'plugin:import/recommended',
-    'plugin:import/typescript',
-  ],
-  plugins: ['@typescript-eslint', 'import'],
+  extends: ['plugin:@api3/eslint-plugin-commons/universal', 'plugin:@api3/eslint-plugin-commons/jest'],
+  parserOptions: {
+    project: ['./tsconfig.json', './tsconfig.eslint.json'],
+  },
   rules: {
     // TypeScript
     '@typescript-eslint/ban-ts-comment': 0,
     '@typescript-eslint/ban-ts-ignore': 0,
     '@typescript-eslint/ban-types': 0,
     '@typescript-eslint/camelcase': 0,
-    '@typescript-eslint/explicit-function-return-type': 0,
-    '@typescript-eslint/explicit-module-boundary-types': 0,
-    // Turning off, because it conflicts with prettier
-    '@typescript-eslint/indent': ['off'],
-    '@typescript-eslint/no-empty-function': 0,
-    '@typescript-eslint/no-explicit-any': 0,
-    '@typescript-eslint/no-non-null-assertion': 0,
-    // Leave vars as 'all' to force everything to be handled when pattern matching
-    // Variables can be ignored by prefixing with an '_'
-    '@typescript-eslint/no-unused-vars': ['error', { argsIgnorePattern: '^_', varsIgnorePattern: '^_', vars: 'all' }],
-    '@typescript-eslint/no-use-before-define': 0,
-    '@typescript-eslint/no-var-requires': 0,
 
     // eslint-plugin-import
     'import/namespace': [2, { allowComputed: true }],
@@ -42,9 +25,6 @@ module.exports = {
     ],
 
     // ESLint
-    'comma-dangle': [2, 'only-multiline'],
-    eqeqeq: ['error', 'smart'],
-    indent: 'off',
     'no-console': 0,
     'no-useless-escape': 0,
     semi: 2,
@@ -54,5 +34,16 @@ module.exports = {
         ignoreDeclarationSort: true,
       },
     ],
+
+    // Jest
+    'jest/no-conditional-in-test': 0,
+
+    // Unicorn
+    'unicorn/prefer-string-replace-all': 0,
+    'unicorn/prefer-type-error': 0,
+
+    // Lodash
+    'lodash/prefer-lodash-typecheck': 0,
+    'lodash/prefer-noop': 0,
   },
 };
