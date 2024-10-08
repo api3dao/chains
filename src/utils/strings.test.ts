@@ -1,43 +1,43 @@
 import { toUpperSnakeCase } from './strings';
 
 describe(toUpperSnakeCase.name, () => {
-  test('converts simple words', () => {
+  it('converts simple words', () => {
     const result = toUpperSnakeCase('hello world');
-    expect(result).toEqual('HELLO_WORLD');
+    expect(result).toBe('HELLO_WORLD');
   });
 
-  test('keeps numbers in the string', () => {
+  it('keeps numbers in the string', () => {
     const result = toUpperSnakeCase('hello world 4');
-    expect(result).toEqual('HELLO_WORLD_4');
+    expect(result).toBe('HELLO_WORLD_4');
   });
 
-  test('trims leading and trailing whitespaces', () => {
+  it('trims leading and trailing whitespaces', () => {
     const result = toUpperSnakeCase('  hello world  ');
-    expect(result).toEqual('HELLO_WORLD');
+    expect(result).toBe('HELLO_WORLD');
   });
 
-  test('converts special characters to underscores', () => {
+  it('converts special characters to underscores', () => {
     const result = toUpperSnakeCase('hello,world!');
-    expect(result).toEqual('HELLO_WORLD');
+    expect(result).toBe('HELLO_WORLD');
   });
 
-  test('converts special characters and spaces to underscores', () => {
+  it('converts special characters and spaces to underscores', () => {
     const result = toUpperSnakeCase('hello, world!');
-    expect(result).toEqual('HELLO_WORLD');
+    expect(result).toBe('HELLO_WORLD');
   });
 
-  test('converts multiple spaces to single underscores', () => {
+  it('converts multiple spaces to single underscores', () => {
     const result = toUpperSnakeCase('hello  world');
-    expect(result).toEqual('HELLO_WORLD');
+    expect(result).toBe('HELLO_WORLD');
   });
 
-  test('returns an empty string when given an empty string', () => {
+  it('returns an empty string when given an empty string', () => {
     const result = toUpperSnakeCase('');
-    expect(result).toEqual('');
+    expect(result).toBe('');
   });
 
-  test('converts mixed case strings', () => {
+  it('converts mixed case strings', () => {
     const result = toUpperSnakeCase('Hello World');
-    expect(result).toEqual('HELLO_WORLD');
+    expect(result).toBe('HELLO_WORLD');
   });
 });

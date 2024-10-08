@@ -1,5 +1,5 @@
-import fs from 'fs';
-import path from 'path';
+import fs from 'node:fs';
+import path from 'node:path';
 import { format } from 'prettier';
 
 const PRETTIER_CONFIG = path.join(__dirname, '../.prettierrc');
@@ -14,7 +14,7 @@ const HEADER_CONTENT = `// =====================================================
 // See: scripts/generate-chains.ts for more information
 // ===========================================================================
 
-import { Chain } from '../types';
+import { type Chain } from '../types';
 `;
 
 async function mergeJsonFiles(): Promise<void> {
@@ -24,14 +24,14 @@ async function mergeJsonFiles(): Promise<void> {
 
   for (const jsonFile of jsonFiles) {
     const filePath = path.join(INPUT_DIR, jsonFile);
-    const fileContentRaw = fs.readFileSync(filePath, 'utf-8');
+    const fileContentRaw = fs.readFileSync(filePath, 'utf8');
     const fileContent = JSON.parse(fileContentRaw);
     combinedChains.push(fileContent);
   }
 
   const rawContent = `${HEADER_CONTENT}\nexport const CHAINS: Chain[] = ${JSON.stringify(combinedChains)};\n\n`;
 
-  const prettierConfig = JSON.parse(fs.readFileSync(PRETTIER_CONFIG, 'utf-8'));
+  const prettierConfig = JSON.parse(fs.readFileSync(PRETTIER_CONFIG, 'utf8'));
   const formattedContent = await format(rawContent, { ...prettierConfig, parser: 'typescript' });
 
   if (!fs.existsSync(OUTPUT_DIR)) {

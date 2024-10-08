@@ -1,5 +1,5 @@
 import { etherscan, etherscanApiKeyName, getEnvVariableNames, networkHttpRpcUrlName, networks } from './hardhat-config';
-import { Chain } from './types';
+import { type Chain } from './types';
 import { CHAINS } from './generated/chains';
 import { toUpperSnakeCase } from './utils/strings';
 
@@ -19,18 +19,18 @@ afterAll(() => {
 });
 
 describe(getEnvVariableNames.name, () => {
-  test('returns an array with expected env variables', () => {
+  it('returns an array with expected env variables', () => {
     const apiKeyEnvNames = CHAINS.filter((chain) => chain.explorer?.api?.key?.required).map((chain) =>
       etherscanApiKeyName(chain)
     );
     const networkRpcUrlNames = CHAINS.map((chain) => networkHttpRpcUrlName(chain));
     const expected = ['MNEMONIC', ...apiKeyEnvNames, ...networkRpcUrlNames];
-    expect(getEnvVariableNames()).toEqual(expected);
+    expect(getEnvVariableNames()).toStrictEqual(expected);
   });
 });
 
 describe(etherscanApiKeyName.name, () => {
-  test('returns the expected Etherscan API key name', () => {
+  it('returns the expected Etherscan API key name', () => {
     const randomChain = getRandomChain();
     const expected = `ETHERSCAN_API_KEY_${toUpperSnakeCase(randomChain!.alias)}`;
     expect(etherscanApiKeyName(randomChain!)).toStrictEqual(expected);
@@ -38,7 +38,7 @@ describe(etherscanApiKeyName.name, () => {
 });
 
 describe(networkHttpRpcUrlName.name, () => {
-  test('returns the expected HTTP RPC URL name', () => {
+  it('returns the expected HTTP RPC URL name', () => {
     const randomChain = getRandomChain();
     const expected = `ETHERSCAN_API_KEY_${toUpperSnakeCase(randomChain!.alias)}`;
     expect(etherscanApiKeyName(randomChain!)).toStrictEqual(expected);
@@ -47,6 +47,7 @@ describe(networkHttpRpcUrlName.name, () => {
 
 describe(etherscan.name, () => {
   beforeEach(() => {
+    // eslint-disable-next-line jest/no-standalone-expect
     expect((global as any).window).toBeUndefined();
   });
 
@@ -54,13 +55,13 @@ describe(etherscan.name, () => {
     delete (global as any).window;
   });
 
-  test('throws an error if called in a browser-like environment', () => {
+  it('throws an error if called in a browser-like environment', () => {
     (global as any).window = {};
     expect(() => etherscan()).toThrow('Cannot be called outside of a Node.js environment');
   });
 
   describe('customChains', () => {
-    test('ignores chains without an explorer', () => {
+    it('ignores chains without an explorer', () => {
       const { customChains } = etherscan();
       const ids = CHAINS.filter((c) => !c.explorer).map((c) => c.id);
       customChains.forEach((c) => {
@@ -68,7 +69,7 @@ describe(etherscan.name, () => {
       });
     });
 
-    test('ignores chains without an explorer API', () => {
+    it('ignores chains without an explorer API', () => {
       const { customChains } = etherscan();
       const ids = CHAINS.filter((c) => !!c.explorer && !c.explorer.api).map((c) => c.id);
       customChains.forEach((c) => {
@@ -76,7 +77,7 @@ describe(etherscan.name, () => {
       });
     });
 
-    test('ignores chains with a hardhat etherscan alias', () => {
+    it('ignores chains with a hardhat etherscan alias', () => {
       const { customChains } = etherscan();
       const chains = CHAINS.filter((c) => !!c.explorer && !!c.explorer.api);
       const ids = chains.filter((c) => c.explorer.api!.key.hardhatEtherscanAlias).map((c) => c.id);
@@ -86,14 +87,14 @@ describe(etherscan.name, () => {
       });
     });
 
-    test('includes all other chains', () => {
+    it('includes all other chains', () => {
       const { customChains } = etherscan();
       const chains = CHAINS.filter((c) => !!c.explorer && !!c.explorer.api);
       const chainsWithoutAlias = chains.filter((c) => !c.explorer.api!.key.hardhatEtherscanAlias);
 
       customChains.forEach((customChain) => {
         const chain = chainsWithoutAlias.find((c) => c.id === customChain.chainId.toString())!;
-        expect(customChain).toEqual({
+        expect(customChain).toStrictEqual({
           network: chain.alias,
           chainId: Number(chain.id),
           urls: {
@@ -106,7 +107,7 @@ describe(etherscan.name, () => {
   });
 
   describe('apiKey', () => {
-    test('ignores chains without an explorer', () => {
+    it('ignores chains without an explorer', () => {
       const { apiKey } = etherscan();
       const aliases = CHAINS.filter((c) => !c.explorer).map((c) => c.alias);
       Object.keys(apiKey).forEach((key) => {
@@ -114,7 +115,7 @@ describe(etherscan.name, () => {
       });
     });
 
-    test('ignores chains without an explorer API', () => {
+    it('ignores chains without an explorer API', () => {
       const { apiKey } = etherscan();
       const aliases = CHAINS.filter((c) => !!c.explorer && !c.explorer.api).map((c) => c.alias);
       Object.keys(apiKey).forEach((key) => {
@@ -122,7 +123,7 @@ describe(etherscan.name, () => {
       });
     });
 
-    test('sets the API key value to dummy value for chains with a hardhat alias', () => {
+    it('sets the API key value to dummy value for chains with a hardhat alias', () => {
       const chains = CHAINS.filter((c) => !!c.explorer && !!c.explorer.api);
       const chainsWithAlias = chains.filter((c) => {
         return (
@@ -133,11 +134,11 @@ describe(etherscan.name, () => {
 
       const { apiKey } = etherscan();
       chainsWithAlias.forEach((chain) => {
-        expect(apiKey[chain.explorer.api!.key.hardhatEtherscanAlias!]).toEqual('DUMMY_VALUE');
+        expect(apiKey[chain.explorer.api!.key.hardhatEtherscanAlias!]).toBe('DUMMY_VALUE');
       });
     });
 
-    test('sets the API key value to not found for chains with a hardhat alias', () => {
+    it('sets the API key value to not found for chains with a hardhat alias', () => {
       const chains = CHAINS.filter((c) => !!c.explorer && !!c.explorer.api);
       const chainsWithAlias = chains.filter((c) => {
         return (
@@ -148,11 +149,11 @@ describe(etherscan.name, () => {
 
       const { apiKey } = etherscan();
       chainsWithAlias.forEach((chain) => {
-        expect(apiKey[chain.explorer.api!.key.hardhatEtherscanAlias!]).toEqual('NOT_FOUND');
+        expect(apiKey[chain.explorer.api!.key.hardhatEtherscanAlias!]).toBe('NOT_FOUND');
       });
     });
 
-    test('sets the API value to the env variable value for chains with a hardhat alias', () => {
+    it('sets the API value to the env variable value for chains with a hardhat alias', () => {
       const chains = CHAINS.filter((c) => !!c.explorer && !!c.explorer.api);
       const chainsWithAlias = chains.filter((c) => {
         return (
@@ -170,7 +171,7 @@ describe(etherscan.name, () => {
       const { apiKey } = etherscan();
 
       chainsWithAlias.forEach((chain) => {
-        expect(apiKey[chain.explorer.api!.key.hardhatEtherscanAlias!]).toEqual(`api-key-${chain.id}`);
+        expect(apiKey[chain.explorer.api!.key.hardhatEtherscanAlias!]).toBe(`api-key-${chain.id}`);
       });
     });
   });
@@ -178,6 +179,7 @@ describe(etherscan.name, () => {
 
 describe(networks.name, () => {
   beforeEach(() => {
+    // eslint-disable-next-line jest/no-standalone-expect
     expect((global as any).window).toBeUndefined();
   });
 
@@ -185,20 +187,20 @@ describe(networks.name, () => {
     delete (global as any).window;
   });
 
-  test('throws an error if called in a browser-like environment', () => {
+  it('throws an error if called in a browser-like environment', () => {
     (global as any).window = {};
     expect(() => networks()).toThrow('Cannot be called outside of a Node.js environment');
   });
 
-  test('builds a network object for each chain', () => {
+  it('builds a network object for each chain', () => {
     const result = networks();
-    expect(Object.keys(result).length).toEqual(CHAINS.length);
+    expect(Object.keys(result)).toHaveLength(CHAINS.length);
 
     CHAINS.forEach((chain) => {
       const defaultProvider = chain.providers.find((p) => p.alias === 'default')!;
-      const overrides = chain.hardhatConfigOverrides?.networks || {};
+      const overrides = chain.hardhatConfigOverrides?.networks ?? {};
 
-      expect(result[chain.alias]).toEqual({
+      expect(result[chain.alias]).toStrictEqual({
         accounts: { mnemonic: '' },
         chainId: Number(chain.id),
         url: defaultProvider.rpcUrl,
@@ -207,14 +209,14 @@ describe(networks.name, () => {
     });
   });
 
-  test('sets the mnemonic using the MNEMONIC env variable if it exists', () => {
+  it('sets the mnemonic using the MNEMONIC env variable if it exists', () => {
     process.env.MNEMONIC = 'test test test test test test test test test test test junk';
     const result = networks();
     CHAINS.forEach((chain) => {
       const defaultProvider = chain.providers.find((p) => p.alias === 'default')!;
-      const overrides = chain.hardhatConfigOverrides?.networks || {};
+      const overrides = chain.hardhatConfigOverrides?.networks ?? {};
 
-      expect(result[chain.alias]).toEqual({
+      expect(result[chain.alias]).toStrictEqual({
         accounts: { mnemonic: 'test test test test test test test test test test test junk' },
         chainId: Number(chain.id),
         url: defaultProvider.rpcUrl,
@@ -223,7 +225,7 @@ describe(networks.name, () => {
     });
   });
 
-  test('sets the provider URL using the chain alias env variable if it exists', () => {
+  it('sets the provider URL using the chain alias env variable if it exists', () => {
     CHAINS.forEach((chain) => {
       const alias = toUpperSnakeCase(chain.alias);
       process.env[`HARDHAT_HTTP_RPC_URL_${alias}`] = `https://${chain.id}.xyz`;
@@ -232,9 +234,9 @@ describe(networks.name, () => {
     const result = networks();
 
     CHAINS.forEach((chain) => {
-      const overrides = chain.hardhatConfigOverrides?.networks || {};
+      const overrides = chain.hardhatConfigOverrides?.networks ?? {};
 
-      expect(result[chain.alias]).toEqual({
+      expect(result[chain.alias]).toStrictEqual({
         accounts: { mnemonic: '' },
         chainId: Number(chain.id),
         url: `https://${chain.id}.xyz`,
@@ -244,8 +246,8 @@ describe(networks.name, () => {
   });
 
   describe('hardhatConfigOverrides', () => {
-    test('zksync', () => {
-      expect(networks()['zksync']).toEqual({
+    it('zksync', () => {
+      expect(networks()['zksync']).toStrictEqual({
         accounts: { mnemonic: '' },
         chainId: 324,
         ethNetwork: 'ethereum',

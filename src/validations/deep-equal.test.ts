@@ -1,7 +1,7 @@
 import { deepEqual } from './deep-equal';
 
 describe('deepEqual', () => {
-  test('primitive values', () => {
+  it('primitive values', () => {
     expect(deepEqual(1, 1)).toBe(true);
     expect(deepEqual('hello', 'hello')).toBe(true);
     expect(deepEqual(true, true)).toBe(true);
@@ -10,7 +10,7 @@ describe('deepEqual', () => {
     expect(deepEqual(true, 1)).toBe(false);
   });
 
-  test('arrays', () => {
+  it('arrays', () => {
     expect(deepEqual([1, 2, 3], [1, 2, 3])).toBe(true);
     expect(deepEqual([1, [2, 3]], [1, [2, 3]])).toBe(true);
 
@@ -18,7 +18,7 @@ describe('deepEqual', () => {
     expect(deepEqual([1, [2, 3]], [1, [2, 4]])).toBe(false);
   });
 
-  test('objects', () => {
+  it('objects', () => {
     const obj1 = { a: 1, b: { c: 2, d: { e: 3 } } };
     const obj2 = { a: 1, b: { c: 2, d: { e: 3 } } };
     const obj3 = { a: 1, b: { c: 2, d: { e: 4 } } };
@@ -27,14 +27,14 @@ describe('deepEqual', () => {
     expect(deepEqual(obj1, obj3)).toBe(false);
   });
 
-  test('objects with different key orders', () => {
+  it('objects with different key orders', () => {
     const obj1 = { a: 1, b: 2, c: 3 };
     const obj2 = { b: 2, a: 1, c: 3 };
 
     expect(deepEqual(obj1, obj2)).toBe(true);
   });
 
-  test('null and undefined values', () => {
+  it('null and undefined values', () => {
     expect(deepEqual(null, null)).toBe(true);
     expect(deepEqual(undefined, undefined)).toBe(true);
     expect(deepEqual({ a: null }, { a: null })).toBe(true);
@@ -43,7 +43,7 @@ describe('deepEqual', () => {
     expect(deepEqual({ a: null }, { a: undefined })).toBe(false);
   });
 
-  test('function values', () => {
+  it('function values', () => {
     const func1 = (): void => {};
     const func2 = (): void => {};
 
