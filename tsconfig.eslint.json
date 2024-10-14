@@ -1,0 +1,5 @@
+{
+  "exclude": ["chains"],
+  "extends": "./tsconfig.json",
+  "include": ["scripts"]
+}

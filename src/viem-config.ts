@@ -1,5 +1,5 @@
 import { defineChain } from 'viem';
-import { Chain } from './types';
+import { type Chain } from './types';
 import { CHAINS } from './generated/chains';
 import { toUpperSnakeCase } from './utils/strings';
 
@@ -53,7 +53,7 @@ export function chains() {
 
 function buildName(chain: Chain): string {
   if (chain.testnet) {
-    const symbolWithoutPrefix = chain.symbol.replace(/^(test\.)/, '');
+    const symbolWithoutPrefix = chain.symbol.replace(/^test\./, '');
     return `Testnet ${symbolWithoutPrefix}`;
   }
   return chain.symbol;

@@ -5,7 +5,7 @@
 // See: scripts/generate-chains.ts for more information
 // ===========================================================================
 
-import { Chain } from '../types';
+import { type Chain } from '../types';
 
 export const CHAINS: Chain[] = [
   {
@@ -1592,6 +1592,19 @@ export const CHAINS: Chain[] = [
     ],
     symbol: 'ETH',
     testnet: false,
+  },
+  {
+    alias: 'unichain-sepolia-testnet',
+    decimals: 18,
+    explorer: {
+      api: { key: { required: true }, url: 'https://api-sepolia.uniscan.xyz/api' },
+      browserUrl: 'https://sepolia.uniscan.xyz/',
+    },
+    id: '1301',
+    name: 'Unichain testnet',
+    providers: [{ alias: 'default', rpcUrl: 'https://sepolia.unichain.org' }],
+    symbol: 'ETH',
+    testnet: true,
   },
   {
     alias: 'x-layer-sepolia-testnet',

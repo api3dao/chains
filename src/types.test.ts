@@ -1,5 +1,5 @@
 import { z } from 'zod';
-import { Chain, chainSchema } from './types';
+import { type Chain, chainSchema } from './types';
 
 describe('chainSchema', () => {
   const validChain: Chain = {

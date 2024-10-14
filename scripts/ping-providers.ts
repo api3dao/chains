@@ -1,7 +1,7 @@
 import { WebClient } from '@slack/web-api';
-import { PublicClient, createPublicClient, http } from 'viem';
+import { type PublicClient, createPublicClient, http } from 'viem';
 import { go } from '@api3/promise-utils';
-import { CHAINS, Chain } from '../src';
+import { CHAINS, type Chain } from '../src';
 
 const specifiedChain = CHAINS.find((chain) => chain.alias === process.env.CHAIN);
 const chains = specifiedChain ? [specifiedChain] : CHAINS;
@@ -51,7 +51,7 @@ async function validateLatestBlock(client: PublicClient, chain: Chain): Promise<
   }
   const block = blockRes.data;
   const blockTimestamp = block.timestamp;
-  const deltaTime = Number(BigInt(Math.floor(new Date().getTime() / 1000)) - blockTimestamp);
+  const deltaTime = Number(BigInt(Math.floor(Date.now() / 1000)) - blockTimestamp);
   const cutoff = 60 * 5; // Arbitrary cutoff of 5 minutes
   if (Math.abs(deltaTime) > cutoff) {
     throw new Error(`${chain.alias} latest block timestamp is ${deltaTime} seconds behind the system clock`);
@@ -79,6 +79,7 @@ main()
       });
       throw new Error('At least one chain did not pass all provider checks');
     }
+    return;
   })
   .then(() => process.exit(0))
   .catch((error) => {
