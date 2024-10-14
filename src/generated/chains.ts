@@ -1594,6 +1594,19 @@ export const CHAINS: Chain[] = [
     testnet: false,
   },
   {
+    alias: 'unichain-sepolia-testnet',
+    decimals: 18,
+    explorer: {
+      api: { key: { required: true }, url: 'https://api-sepolia.uniscan.xyz/api' },
+      browserUrl: 'https://sepolia.uniscan.xyz/',
+    },
+    id: '1301',
+    name: 'Unichain testnet',
+    providers: [{ alias: 'default', rpcUrl: 'https://sepolia.unichain.org' }],
+    symbol: 'ETH',
+    testnet: true,
+  },
+  {
     alias: 'x-layer-sepolia-testnet',
     decimals: 18,
     explorer: { browserUrl: 'https://www.okx.com/explorer/xlayer-test/' },
