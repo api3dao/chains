@@ -1,5 +1,16 @@
 # @api3/chains
 
+## 10.3.0
+
+### Minor Changes
+
+- 2675c3a: Adds following chain:
+  - unichain-sepolia-testnet
+
+### Patch Changes
+
+- 2d0c683: Use api3/eslint-plugin-commons and apply lints
+
 ## 10.2.4
 
 ### Patch Changes
