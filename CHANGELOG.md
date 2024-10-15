@@ -1,5 +1,12 @@
 # @api3/chains
 
+## 10.4.0
+
+### Minor Changes
+
+- 7eb8e6f: Adds following chain:
+  - odyssey-sepolia-testnet
+
 ## 10.3.0
 
 ### Minor Changes
