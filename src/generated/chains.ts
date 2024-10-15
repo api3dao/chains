@@ -1263,6 +1263,19 @@ export const CHAINS: Chain[] = [
     testnet: false,
   },
   {
+    alias: 'odyssey-sepolia-testnet',
+    decimals: 18,
+    explorer: {
+      api: { key: { required: false }, url: 'https://odyssey-explorer.ithaca.xyz/api' },
+      browserUrl: 'https://odyssey-explorer.ithaca.xyz/',
+    },
+    id: '911867',
+    name: 'Odyssey testnet',
+    providers: [{ alias: 'default', rpcUrl: 'https://odyssey.ithaca.xyz' }],
+    symbol: 'ETH',
+    testnet: true,
+  },
+  {
     alias: 'oev-network',
     decimals: 18,
     explorer: {
