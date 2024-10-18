@@ -53,7 +53,7 @@ jobs:
 
   require-changeset:
     runs-on: ubuntu-latest
-    if: github.actor != 'renovate[bot]' && github.ref != 'refs/heads/main'
+    if: github.actor != 'renovate[bot]' && github.actor != 'dependabot[bot]' && github.ref != 'refs/heads/main'
     steps:
       - name: Clone @api3/chains
         uses: actions/checkout@v4
