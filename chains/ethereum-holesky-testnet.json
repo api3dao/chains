@@ -17,10 +17,6 @@
     {
       "alias": "default",
       "rpcUrl": "https://ethereum-holesky-rpc.publicnode.com"
-    },
-    {
-      "alias": "publicnode",
-      "rpcUrl": "https://ethereum-holesky-rpc.publicnode.com"
     }
   ],
   "symbol": "ETH",

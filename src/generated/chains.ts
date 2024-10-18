@@ -540,10 +540,7 @@ export const CHAINS: Chain[] = [
     },
     id: '17000',
     name: 'Ethereum Holesky testnet',
-    providers: [
-      { alias: 'default', rpcUrl: 'https://ethereum-holesky-rpc.publicnode.com' },
-      { alias: 'publicnode', rpcUrl: 'https://ethereum-holesky-rpc.publicnode.com' },
-    ],
+    providers: [{ alias: 'default', rpcUrl: 'https://ethereum-holesky-rpc.publicnode.com' }],
     symbol: 'ETH',
     testnet: true,
   },
