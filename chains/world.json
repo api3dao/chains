@@ -1,0 +1,23 @@
+{
+  "alias": "world",
+  "decimals": 18,
+  "explorer": {
+    "api": {
+      "key": {
+        "required": false
+      },
+      "url": "https://worldchain-mainnet.explorer.alchemy.com/api"
+    },
+    "browserUrl": "https://worldchain-mainnet.explorer.alchemy.com/"
+  },
+  "id": "480",
+  "name": "World Chain",
+  "providers": [
+    {
+      "alias": "default",
+      "rpcUrl": "https://worldchain-mainnet.g.alchemy.com/public"
+    }
+  ],
+  "symbol": "ETH",
+  "testnet": false
+}

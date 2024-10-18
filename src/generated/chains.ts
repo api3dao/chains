@@ -1623,6 +1623,32 @@ export const CHAINS: Chain[] = [
     testnet: true,
   },
   {
+    alias: 'world-sepolia-testnet',
+    decimals: 18,
+    explorer: {
+      api: { key: { required: false }, url: 'https://worldchain-sepolia.explorer.alchemy.com/api' },
+      browserUrl: 'https://worldchain-sepolia.explorer.alchemy.com/',
+    },
+    id: '4801',
+    name: 'World Chain testnet',
+    providers: [{ alias: 'default', rpcUrl: 'https://worldchain-sepolia.g.alchemy.com/public' }],
+    symbol: 'ETH',
+    testnet: true,
+  },
+  {
+    alias: 'world',
+    decimals: 18,
+    explorer: {
+      api: { key: { required: false }, url: 'https://worldchain-mainnet.explorer.alchemy.com/api' },
+      browserUrl: 'https://worldchain-mainnet.explorer.alchemy.com/',
+    },
+    id: '480',
+    name: 'World Chain',
+    providers: [{ alias: 'default', rpcUrl: 'https://worldchain-mainnet.g.alchemy.com/public' }],
+    symbol: 'ETH',
+    testnet: false,
+  },
+  {
     alias: 'x-layer-sepolia-testnet',
     decimals: 18,
     explorer: { browserUrl: 'https://www.okx.com/explorer/xlayer-test/' },
