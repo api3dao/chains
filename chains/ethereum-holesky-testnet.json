@@ -19,8 +19,8 @@
       "rpcUrl": "https://ethereum-holesky-rpc.publicnode.com"
     },
     {
-      "alias": "drpc-freemium",
-      "rpcUrl": "https://lb.drpc.org/ogrpc?network=ethereum-holesky&dkey=AiPHJac9aUX2s7ELd131NuwSeHqkUW8R7oQiFnomaLKw"
+      "alias": "publicnode",
+      "rpcUrl": "https://ethereum-holesky-rpc.publicnode.com"
     }
   ],
   "symbol": "ETH",
