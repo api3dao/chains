@@ -16,6 +16,10 @@
     {
       "alias": "default",
       "rpcUrl": "https://rpc.sepolia.linea.build"
+    },
+    {
+      "alias": "publicnode",
+      "rpcUrl": "https://linea-sepolia-rpc.publicnode.com"
     }
   ],
   "symbol": "ETH",

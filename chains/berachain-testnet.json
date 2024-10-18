@@ -16,6 +16,10 @@
     {
       "alias": "default",
       "rpcUrl": "https://bartio.rpc.berachain.com/"
+    },
+    {
+      "alias": "publicnode",
+      "rpcUrl": "https://berachain-testnet-evm-rpc.publicnode.com"
     }
   ],
   "symbol": "BERA",
