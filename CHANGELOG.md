@@ -1,5 +1,11 @@
 # @api3/chains
 
+## 10.4.1
+
+### Patch Changes
+
+- 07063e5: Update providers
+
 ## 10.4.0
 
 ### Minor Changes
