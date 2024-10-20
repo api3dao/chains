@@ -15,7 +15,11 @@
   "providers": [
     {
       "alias": "default",
-      "rpcUrl": "https://zircuit1.p2pify.com/"
+      "rpcUrl": "https://zircuit1-testnet.p2pify.com/"
+    },
+    {
+      "alias": "public",
+      "rpcUrl": "https://zircuit1-testnet.liquify.com"
     }
   ],
   "symbol": "ETH",

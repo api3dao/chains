@@ -22,6 +22,10 @@
       "rpcUrl": "https://rpc.mainnet.taiko.xyz"
     },
     {
+      "alias": "publicnode",
+      "rpcUrl": "https://taiko-rpc.publicnode.com"
+    },
+    {
       "alias": "ankr",
       "homepageUrl": "https://ankr.com"
     },
