@@ -4,11 +4,11 @@
   "explorer": {
     "api": {
       "key": {
-        "required": false
+        "required": true
       },
-      "url": "https://worldchain-mainnet.explorer.alchemy.com/api"
+      "url": "https://api.worldscan.org/api"
     },
-    "browserUrl": "https://worldchain-mainnet.explorer.alchemy.com/"
+    "browserUrl": "https://worldscan.org/"
   },
   "id": "480",
   "name": "World Chain",
@@ -16,6 +16,10 @@
     {
       "alias": "default",
       "rpcUrl": "https://worldchain-mainnet.g.alchemy.com/public"
+    },
+    {
+      "alias": "tenderly",
+      "homepageUrl": "https://tenderly.co/"
     }
   ],
   "symbol": "ETH",

@@ -1639,12 +1639,15 @@ export const CHAINS: Chain[] = [
     alias: 'world',
     decimals: 18,
     explorer: {
-      api: { key: { required: false }, url: 'https://worldchain-mainnet.explorer.alchemy.com/api' },
-      browserUrl: 'https://worldchain-mainnet.explorer.alchemy.com/',
+      api: { key: { required: true }, url: 'https://api.worldscan.org/api' },
+      browserUrl: 'https://worldscan.org/',
     },
     id: '480',
     name: 'World Chain',
-    providers: [{ alias: 'default', rpcUrl: 'https://worldchain-mainnet.g.alchemy.com/public' }],
+    providers: [
+      { alias: 'default', rpcUrl: 'https://worldchain-mainnet.g.alchemy.com/public' },
+      { alias: 'tenderly', homepageUrl: 'https://tenderly.co/' },
+    ],
     symbol: 'ETH',
     testnet: false,
   },
