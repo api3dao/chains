@@ -1,5 +1,13 @@
 # @api3/chains
 
+## 10.5.0
+
+### Minor Changes
+
+- 8476aac: Adds following chains:
+  - world
+  - world-sepolia-testnet
+
 ## 10.4.1
 
 ### Patch Changes
