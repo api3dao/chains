@@ -18,6 +18,7 @@
       "rpcUrl": "https://lightning-replica.boba.network/"
     }
   ],
+  "skipProviderCheck": true,
   "symbol": "BOBA",
   "testnet": false
 }

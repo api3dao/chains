@@ -12,6 +12,7 @@
       "rpcUrl": "https://b2-testnet.alt.technology"
     }
   ],
+  "skipProviderCheck": true,
   "symbol": "BTC",
   "testnet": true
 }
