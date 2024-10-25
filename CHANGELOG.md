@@ -1,5 +1,12 @@
 # @api3/chains
 
+## 10.6.0
+
+### Minor Changes
+
+- ba184e2: Adds following chain:
+  - apechain
+
 ## 10.5.0
 
 ### Minor Changes
