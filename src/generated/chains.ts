@@ -22,6 +22,22 @@ export const CHAINS: Chain[] = [
     testnet: true,
   },
   {
+    alias: 'apechain',
+    decimals: 18,
+    explorer: {
+      api: { key: { required: true }, url: 'https://api.apescan.io/api' },
+      browserUrl: 'https://apescan.io/',
+    },
+    id: '33139',
+    name: 'ApeChain',
+    providers: [
+      { alias: 'default', rpcUrl: 'https://rpc.apechain.com/http' },
+      { alias: 'public', rpcUrl: 'https://apechain.calderachain.xyz/http' },
+    ],
+    symbol: 'APE',
+    testnet: false,
+  },
+  {
     alias: 'arbitrum-nova',
     decimals: 18,
     explorer: {
