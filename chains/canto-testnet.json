@@ -18,6 +18,7 @@
       "rpcUrl": "https://canto-testnet.plexnode.wtf/"
     }
   ],
+  "skipProviderCheck": true,
   "symbol": "CANTO",
   "testnet": true
 }

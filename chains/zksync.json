@@ -19,6 +19,7 @@
       "rpcUrl": "https://mainnet.era.zksync.io"
     }
   ],
+  "skipProviderCheck": true,
   "symbol": "ETH",
   "testnet": false
 }

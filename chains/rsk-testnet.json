@@ -12,6 +12,7 @@
       "rpcUrl": "https://public-node.testnet.rsk.co"
     }
   ],
+  "skipProviderCheck": true,
   "symbol": "RBTC",
   "testnet": true
 }

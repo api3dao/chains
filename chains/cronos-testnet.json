@@ -18,6 +18,7 @@
       "rpcUrl": "https://evm-t3.cronos.org"
     }
   ],
+  "skipProviderCheck": true,
   "symbol": "CRO",
   "testnet": true
 }

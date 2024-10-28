@@ -12,6 +12,7 @@
       "rpcUrl": "https://rpc-1.meld.com/"
     }
   ],
+  "skipProviderCheck": true,
   "symbol": "MELD",
   "testnet": false
 }

@@ -12,6 +12,7 @@
       "rpcUrl": "https://v1.mainnet.godwoken.io/rpc"
     }
   ],
+  "skipProviderCheck": true,
   "symbol": "pCKB",
   "testnet": false
 }

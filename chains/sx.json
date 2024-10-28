@@ -18,6 +18,7 @@
       "rpcUrl": "https://rpc.sx.technology"
     }
   ],
+  "skipProviderCheck": true,
   "symbol": "SX",
   "testnet": false
 }

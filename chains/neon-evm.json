@@ -22,6 +22,7 @@
       "rpcUrl": "https://neon-mainnet.everstake.one"
     }
   ],
+  "skipProviderCheck": true,
   "symbol": "NEON",
   "testnet": false
 }

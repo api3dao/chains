@@ -18,6 +18,7 @@
       "rpcUrl": "https://rpc-devnet-cardano-evm.c1.milkomeda.com"
     }
   ],
+  "skipProviderCheck": true,
   "symbol": "ADA",
   "testnet": true
 }

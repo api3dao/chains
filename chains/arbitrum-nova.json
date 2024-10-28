@@ -18,6 +18,7 @@
       "rpcUrl": "https://nova.arbitrum.io/rpc"
     }
   ],
+  "skipProviderCheck": true,
   "symbol": "ETH",
   "testnet": false
 }

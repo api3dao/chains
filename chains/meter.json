@@ -16,6 +16,7 @@
       "homepageUrl": "https://blockpi.io"
     }
   ],
+  "skipProviderCheck": true,
   "symbol": "MTR",
   "testnet": false
 }
