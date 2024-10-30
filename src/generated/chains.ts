@@ -644,7 +644,7 @@ export const CHAINS: Chain[] = [
     alias: 'fraxtal-holesky-testnet',
     decimals: 18,
     explorer: {
-      api: { key: { required: false }, url: 'https://api-holesky.fraxscan.com/api/' },
+      api: { key: { required: true }, url: 'https://api-holesky.fraxscan.com/api/' },
       browserUrl: 'https://holesky.fraxscan.com/',
     },
     id: '2522',
@@ -694,7 +694,7 @@ export const CHAINS: Chain[] = [
     alias: 'gnosis',
     decimals: 18,
     explorer: {
-      api: { key: { hardhatEtherscanAlias: 'gnosis', required: true }, url: 'https://api.gnosisscan.io/api' },
+      api: { key: { hardhatEtherscanAlias: 'xdai', required: true }, url: 'https://api.gnosisscan.io/api' },
       browserUrl: 'https://gnosisscan.io/',
     },
     id: '100',
@@ -774,7 +774,7 @@ export const CHAINS: Chain[] = [
     alias: 'kava-testnet',
     decimals: 18,
     explorer: {
-      api: { key: { required: false }, url: 'https://testnet.kavascan.com/api' },
+      api: { key: { required: false }, url: 'https://api.verify.mintscan.io/evm/api/0x8ad' },
       browserUrl: 'https://testnet.kavascan.com/',
     },
     id: '2221',
@@ -787,7 +787,7 @@ export const CHAINS: Chain[] = [
     alias: 'kava',
     decimals: 18,
     explorer: {
-      api: { key: { required: false }, url: 'https://kavascan.com/api' },
+      api: { key: { required: false }, url: 'https://api.verify.mintscan.io/evm/api/0x8ae' },
       browserUrl: 'https://kavascan.com/',
     },
     id: '2222',
@@ -1618,8 +1618,8 @@ export const CHAINS: Chain[] = [
     alias: 'taiko-holesky-testnet',
     decimals: 18,
     explorer: {
-      api: { key: { required: false }, url: 'https://blockscoutapi.hekla.taiko.xyz/api' },
-      browserUrl: 'https://blockscoutapi.hekla.taiko.xyz/',
+      api: { key: { required: true }, url: 'https://api-hekla.taikoscan.io/api' },
+      browserUrl: 'https://hekla.taikoscan.io/',
     },
     id: '167009',
     name: 'Taiko testnet',
