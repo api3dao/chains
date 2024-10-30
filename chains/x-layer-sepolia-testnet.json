@@ -2,6 +2,12 @@
   "alias": "x-layer-sepolia-testnet",
   "decimals": 18,
   "explorer": {
+    "api": {
+      "key": {
+        "required": false
+      },
+      "url": "https://www.oklink.com/api/v5/explorer/contract/verify-source-code-plugin/XLAYER_TESTNET"
+    },
     "browserUrl": "https://www.okx.com/explorer/xlayer-test/"
   },
   "id": "195",
