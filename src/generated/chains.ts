@@ -579,10 +579,7 @@ export const CHAINS: Chain[] = [
     },
     id: '11155111',
     name: 'Ethereum Sepolia testnet',
-    providers: [
-      { alias: 'default', rpcUrl: 'https://rpc2.sepolia.org' },
-      { alias: 'publicnode', rpcUrl: 'https://ethereum-sepolia-rpc.publicnode.com' },
-    ],
+    providers: [{ alias: 'default', rpcUrl: 'https://ethereum-sepolia-rpc.publicnode.com' }],
     symbol: 'ETH',
     testnet: true,
   },
@@ -1640,8 +1637,8 @@ export const CHAINS: Chain[] = [
     id: '167000',
     name: 'Taiko',
     providers: [
-      { alias: 'default', rpcUrl: 'https://rpc.taiko.tools' },
-      { alias: 'public', rpcUrl: 'https://rpc.mainnet.taiko.xyz' },
+      { alias: 'default', rpcUrl: 'https://rpc.mainnet.taiko.xyz' },
+      { alias: 'public', rpcUrl: 'https://rpc.taiko.tools' },
       { alias: 'publicnode', rpcUrl: 'https://taiko-rpc.publicnode.com' },
       { alias: 'ankr', homepageUrl: 'https://ankr.com' },
       { alias: 'drpc', homepageUrl: 'https://drpc.org' },

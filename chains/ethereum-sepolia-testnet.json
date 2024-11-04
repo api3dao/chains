@@ -16,10 +16,6 @@
   "providers": [
     {
       "alias": "default",
-      "rpcUrl": "https://rpc2.sepolia.org"
-    },
-    {
-      "alias": "publicnode",
       "rpcUrl": "https://ethereum-sepolia-rpc.publicnode.com"
     }
   ],
