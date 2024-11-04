@@ -489,7 +489,6 @@ export const CHAINS: Chain[] = [
     providers: [
       { alias: 'default', rpcUrl: 'https://evmtestnet.confluxrpc.com/' },
       { alias: 'public', rpcUrl: 'https://evmtest.confluxrpc.com/' },
-      { alias: 'backup', rpcUrl: 'https://evmtestnet.confluxrpc.org/' },
     ],
     symbol: 'CFX',
     testnet: true,

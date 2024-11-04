@@ -3,6 +3,8 @@
 ---
 
 Fixes following issues:
+* conflux-testnet
+  - Remove inconsistent rpc url
 * ethereum-sepolia-testnet
   - Remove inconsistent rpc url
 * fraxtal-holesky-testnet

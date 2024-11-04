@@ -20,10 +20,6 @@
     {
       "alias": "public",
       "rpcUrl": "https://evmtest.confluxrpc.com/"
-    },
-    {
-      "alias": "backup",
-      "rpcUrl": "https://evmtestnet.confluxrpc.org/"
     }
   ],
   "symbol": "CFX",
