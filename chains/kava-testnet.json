@@ -6,7 +6,7 @@
       "key": {
         "required": false
       },
-      "url": "https://testnet.kavascan.com/api"
+      "url": "https://api.verify.mintscan.io/evm/api/0x8ad"
     },
     "browserUrl": "https://testnet.kavascan.com/"
   },

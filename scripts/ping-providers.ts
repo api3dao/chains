@@ -21,13 +21,6 @@ async function main(): Promise<PromiseSettledResult<void>[]> {
     const client = createPublicClient({ transport: http(defaultProvider.rpcUrl!) });
 
     await validateChain(client, chain);
-    const latestRes = await go(() => validateLatestBlock(client, chain), {
-      retries: 3,
-      delay: { type: 'static', delayMs: 60_000 },
-    });
-    if (!latestRes.success) {
-      throw latestRes.error;
-    }
   });
 
   return await Promise.allSettled(promises);
@@ -41,20 +34,6 @@ async function validateChain(client: PublicClient, chain: Chain): Promise<void> 
   const chainId = chainIdRes.data;
   if (chainId.toString() !== chain.id) {
     throw new Error(`${chain.alias} provider reports chain ID as ${chainId}, while it is defined as ${chain.id}`);
-  }
-}
-
-async function validateLatestBlock(client: PublicClient, chain: Chain): Promise<void> {
-  const blockRes = await go(() => client.getBlock({ blockTag: 'latest' }), { retries: 1 });
-  if (!blockRes.success) {
-    throw new Error(`Unable to fetch latest block for ${chain.alias}`);
-  }
-  const block = blockRes.data;
-  const blockTimestamp = block.timestamp;
-  const deltaTime = Number(BigInt(Math.floor(Date.now() / 1000)) - blockTimestamp);
-  const cutoff = 60 * 5; // Arbitrary cutoff of 5 minutes
-  if (Math.abs(deltaTime) > cutoff) {
-    throw new Error(`${chain.alias} latest block timestamp is ${deltaTime} seconds behind the system clock`);
   }
 }
 

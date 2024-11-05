@@ -4,11 +4,11 @@
   "explorer": {
     "api": {
       "key": {
-        "required": false
+        "required": true
       },
-      "url": "https://blockscoutapi.hekla.taiko.xyz/api"
+      "url": "https://api-hekla.taikoscan.io/api"
     },
-    "browserUrl": "https://blockscoutapi.hekla.taiko.xyz/"
+    "browserUrl": "https://hekla.taikoscan.io/"
   },
   "id": "167009",
   "name": "Taiko testnet",
