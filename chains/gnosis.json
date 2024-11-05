@@ -4,7 +4,7 @@
   "explorer": {
     "api": {
       "key": {
-        "hardhatEtherscanAlias": "gnosis",
+        "hardhatEtherscanAlias": "xdai",
         "required": true
       },
       "url": "https://api.gnosisscan.io/api"

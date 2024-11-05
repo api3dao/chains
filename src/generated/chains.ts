@@ -489,7 +489,6 @@ export const CHAINS: Chain[] = [
     providers: [
       { alias: 'default', rpcUrl: 'https://evmtestnet.confluxrpc.com/' },
       { alias: 'public', rpcUrl: 'https://evmtest.confluxrpc.com/' },
-      { alias: 'backup', rpcUrl: 'https://evmtestnet.confluxrpc.org/' },
     ],
     symbol: 'CFX',
     testnet: true,
@@ -579,10 +578,7 @@ export const CHAINS: Chain[] = [
     },
     id: '11155111',
     name: 'Ethereum Sepolia testnet',
-    providers: [
-      { alias: 'default', rpcUrl: 'https://rpc2.sepolia.org' },
-      { alias: 'publicnode', rpcUrl: 'https://ethereum-sepolia-rpc.publicnode.com' },
-    ],
+    providers: [{ alias: 'default', rpcUrl: 'https://ethereum-sepolia-rpc.publicnode.com' }],
     symbol: 'ETH',
     testnet: true,
   },
@@ -644,7 +640,7 @@ export const CHAINS: Chain[] = [
     alias: 'fraxtal-holesky-testnet',
     decimals: 18,
     explorer: {
-      api: { key: { required: false }, url: 'https://api-holesky.fraxscan.com/api/' },
+      api: { key: { required: true }, url: 'https://api-holesky.fraxscan.com/api/' },
       browserUrl: 'https://holesky.fraxscan.com/',
     },
     id: '2522',
@@ -694,7 +690,7 @@ export const CHAINS: Chain[] = [
     alias: 'gnosis',
     decimals: 18,
     explorer: {
-      api: { key: { hardhatEtherscanAlias: 'gnosis', required: true }, url: 'https://api.gnosisscan.io/api' },
+      api: { key: { hardhatEtherscanAlias: 'xdai', required: true }, url: 'https://api.gnosisscan.io/api' },
       browserUrl: 'https://gnosisscan.io/',
     },
     id: '100',
@@ -774,7 +770,7 @@ export const CHAINS: Chain[] = [
     alias: 'kava-testnet',
     decimals: 18,
     explorer: {
-      api: { key: { required: false }, url: 'https://testnet.kavascan.com/api' },
+      api: { key: { required: false }, url: 'https://api.verify.mintscan.io/evm/api/0x8ad' },
       browserUrl: 'https://testnet.kavascan.com/',
     },
     id: '2221',
@@ -787,7 +783,7 @@ export const CHAINS: Chain[] = [
     alias: 'kava',
     decimals: 18,
     explorer: {
-      api: { key: { required: false }, url: 'https://kavascan.com/api' },
+      api: { key: { required: false }, url: 'https://api.verify.mintscan.io/evm/api/0x8ae' },
       browserUrl: 'https://kavascan.com/',
     },
     id: '2222',
@@ -1618,8 +1614,8 @@ export const CHAINS: Chain[] = [
     alias: 'taiko-holesky-testnet',
     decimals: 18,
     explorer: {
-      api: { key: { required: false }, url: 'https://blockscoutapi.hekla.taiko.xyz/api' },
-      browserUrl: 'https://blockscoutapi.hekla.taiko.xyz/',
+      api: { key: { required: true }, url: 'https://api-hekla.taikoscan.io/api' },
+      browserUrl: 'https://hekla.taikoscan.io/',
     },
     id: '167009',
     name: 'Taiko testnet',
@@ -1640,8 +1636,8 @@ export const CHAINS: Chain[] = [
     id: '167000',
     name: 'Taiko',
     providers: [
-      { alias: 'default', rpcUrl: 'https://rpc.taiko.tools' },
-      { alias: 'public', rpcUrl: 'https://rpc.mainnet.taiko.xyz' },
+      { alias: 'default', rpcUrl: 'https://rpc.mainnet.taiko.xyz' },
+      { alias: 'public', rpcUrl: 'https://rpc.taiko.tools' },
       { alias: 'publicnode', rpcUrl: 'https://taiko-rpc.publicnode.com' },
       { alias: 'ankr', homepageUrl: 'https://ankr.com' },
       { alias: 'drpc', homepageUrl: 'https://drpc.org' },
@@ -1694,7 +1690,13 @@ export const CHAINS: Chain[] = [
   {
     alias: 'x-layer-sepolia-testnet',
     decimals: 18,
-    explorer: { browserUrl: 'https://www.okx.com/explorer/xlayer-test/' },
+    explorer: {
+      api: {
+        key: { required: false },
+        url: 'https://www.oklink.com/api/v5/explorer/contract/verify-source-code-plugin/XLAYER_TESTNET',
+      },
+      browserUrl: 'https://www.okx.com/explorer/xlayer-test/',
+    },
     id: '195',
     name: 'X Layer testnet',
     providers: [
@@ -1707,7 +1709,13 @@ export const CHAINS: Chain[] = [
   {
     alias: 'x-layer',
     decimals: 18,
-    explorer: { browserUrl: 'https://www.okx.com/explorer/xlayer/' },
+    explorer: {
+      api: {
+        key: { required: false },
+        url: 'https://www.oklink.com/api/v5/explorer/contract/verify-source-code-plugin/XLAYER',
+      },
+      browserUrl: 'https://www.okx.com/explorer/xlayer/',
+    },
     id: '196',
     name: 'X Layer',
     providers: [
