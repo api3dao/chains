@@ -119,7 +119,7 @@ export const CHAINS: Chain[] = [
     testnet: false,
   },
   {
-    alias: 'atleta-sepolia-testnet',
+    alias: 'atleta-testnet',
     decimals: 18,
     explorer: {
       api: { key: { required: false }, url: 'https://blockscout.testnet-v2.atleta.network/api' },

@@ -3,4 +3,4 @@
 ---
 
 Adds following chain:
-* atleta-sepolia-testnet
+* atleta-testnet
