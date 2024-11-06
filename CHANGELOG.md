@@ -1,5 +1,12 @@
 # @api3/chains
 
+## 10.7.0
+
+### Minor Changes
+
+- 04bd582: Adds following chain:
+  - atleta-testnet
+
 ## 10.6.1
 
 ### Patch Changes
