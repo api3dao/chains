@@ -119,6 +119,19 @@ export const CHAINS: Chain[] = [
     testnet: false,
   },
   {
+    alias: 'atleta-sepolia-testnet',
+    decimals: 18,
+    explorer: {
+      api: { key: { required: false }, url: 'https://blockscout.testnet-v2.atleta.network/api' },
+      browserUrl: 'https://blockscout.testnet-v2.atleta.network/',
+    },
+    id: '2340',
+    name: 'Atleta testnet',
+    providers: [{ alias: 'default', rpcUrl: 'https://rpc.testnet-v2.atleta.network:9944' }],
+    symbol: 'ATLA',
+    testnet: true,
+  },
+  {
     alias: 'aurora-testnet',
     decimals: 18,
     explorer: {
