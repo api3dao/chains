@@ -8,7 +8,7 @@ API3 chains
 ![downloads per week](https://img.shields.io/npm/dw/%40api3%2Fchains)
 [![continuous build](https://img.shields.io/github/actions/workflow/status/api3dao/chains/continuous-build.yml?label=build)](https://github.com/api3dao/chains/actions/workflows/continuous-build.yml)
 [![provider checks](https://img.shields.io/github/actions/workflow/status/api3dao/chains/check-providers.yml?label=provider%20checks)](https://github.com/api3dao/chains/actions/workflows/check-providers.yml)
-[![license](https://img.shields.io/npm/l/%40api3%2Fchains)](https://www.npmjs.com/package/@api3/chains)
+[![license](https://img.shields.io/npm/l/%40api3%2Fchains)](https://github.com/api3dao/chains/blob/main/LICENSE)
 
 </div>
 
