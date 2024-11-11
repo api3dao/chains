@@ -674,7 +674,6 @@ export const CHAINS: Chain[] = [
     providers: [
       { alias: 'default', rpcUrl: 'https://rpc.frax.com' },
       { alias: 'drpc', homepageUrl: 'https://drpc.org' },
-      { alias: 'grove', homepageUrl: 'https://grove.city/' },
       { alias: 'tenderly', homepageUrl: 'https://tenderly.co/' },
     ],
     symbol: 'ETH',
@@ -1144,7 +1143,6 @@ export const CHAINS: Chain[] = [
       { alias: 'ankr', homepageUrl: 'https://ankr.com' },
       { alias: 'blastapi', homepageUrl: 'https://blastapi.io' },
       { alias: 'drpc', homepageUrl: 'https://drpc.org' },
-      { alias: 'grove', homepageUrl: 'https://grove.city/' },
     ],
     symbol: 'METIS',
     testnet: false,
