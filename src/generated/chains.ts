@@ -1526,8 +1526,8 @@ export const CHAINS: Chain[] = [
     name: 'Scroll',
     providers: [
       { alias: 'default', rpcUrl: 'https://rpc.scroll.io' },
+      { alias: 'publicnode', rpcUrl: 'https://scroll-rpc.publicnode.com' },
       { alias: 'drpc', homepageUrl: 'https://drpc.org' },
-      { alias: 'blockpi', homepageUrl: 'https://blockpi.io' },
       { alias: 'blastapi', homepageUrl: 'https://blastapi.io' },
       { alias: 'quicknode', homepageUrl: 'https://quicknode.com' },
     ],
