@@ -1552,6 +1552,7 @@ export const CHAINS: Chain[] = [
     name: 'Sei',
     providers: [
       { alias: 'default', rpcUrl: 'https://evm-rpc.sei-apis.com/' },
+      { alias: 'publicnode', rpcUrl: 'https://sei-evm-rpc.publicnode.com' },
       { alias: 'drpc', homepageUrl: 'https://drpc.org' },
       { alias: 'quicknode', homepageUrl: 'https://quicknode.com' },
     ],
