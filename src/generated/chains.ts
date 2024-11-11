@@ -995,13 +995,7 @@ export const CHAINS: Chain[] = [
     },
     id: '5003',
     name: 'Mantle testnet',
-    providers: [
-      { alias: 'default', rpcUrl: 'https://rpc.sepolia.mantle.xyz' },
-      {
-        alias: 'drpc-freemium',
-        rpcUrl: 'https://lb.drpc.org/ogrpc?network=mantle-sepolia&dkey=AiPHJac9aUX2s7ELd131NuwSeHqkUW8R7oQiFnomaLKw',
-      },
-    ],
+    providers: [{ alias: 'default', rpcUrl: 'https://rpc.sepolia.mantle.xyz' }],
     symbol: 'MNT',
     testnet: true,
   },
@@ -1217,13 +1211,7 @@ export const CHAINS: Chain[] = [
     },
     id: '1287',
     name: 'Moonbeam testnet',
-    providers: [
-      { alias: 'default', rpcUrl: 'https://rpc.api.moonbase.moonbeam.network' },
-      {
-        alias: 'drpc-freemium',
-        rpcUrl: 'https://lb.drpc.org/ogrpc?network=moonbase-alpha&dkey=AiPHJac9aUX2s7ELd131NuwSeHqkUW8R7oQiFnomaLKw',
-      },
-    ],
+    providers: [{ alias: 'default', rpcUrl: 'https://rpc.api.moonbase.moonbeam.network' }],
     symbol: 'GLMR',
     testnet: true,
   },
