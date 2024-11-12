@@ -674,7 +674,6 @@ export const CHAINS: Chain[] = [
     providers: [
       { alias: 'default', rpcUrl: 'https://rpc.frax.com' },
       { alias: 'drpc', homepageUrl: 'https://drpc.org' },
-      { alias: 'grove', homepageUrl: 'https://grove.city/' },
       { alias: 'tenderly', homepageUrl: 'https://tenderly.co/' },
     ],
     symbol: 'ETH',
@@ -996,13 +995,7 @@ export const CHAINS: Chain[] = [
     },
     id: '5003',
     name: 'Mantle testnet',
-    providers: [
-      { alias: 'default', rpcUrl: 'https://rpc.sepolia.mantle.xyz' },
-      {
-        alias: 'drpc-freemium',
-        rpcUrl: 'https://lb.drpc.org/ogrpc?network=mantle-sepolia&dkey=AiPHJac9aUX2s7ELd131NuwSeHqkUW8R7oQiFnomaLKw',
-      },
-    ],
+    providers: [{ alias: 'default', rpcUrl: 'https://rpc.sepolia.mantle.xyz' }],
     symbol: 'MNT',
     testnet: true,
   },
@@ -1144,7 +1137,6 @@ export const CHAINS: Chain[] = [
       { alias: 'ankr', homepageUrl: 'https://ankr.com' },
       { alias: 'blastapi', homepageUrl: 'https://blastapi.io' },
       { alias: 'drpc', homepageUrl: 'https://drpc.org' },
-      { alias: 'grove', homepageUrl: 'https://grove.city/' },
     ],
     symbol: 'METIS',
     testnet: false,
@@ -1219,13 +1211,7 @@ export const CHAINS: Chain[] = [
     },
     id: '1287',
     name: 'Moonbeam testnet',
-    providers: [
-      { alias: 'default', rpcUrl: 'https://rpc.api.moonbase.moonbeam.network' },
-      {
-        alias: 'drpc-freemium',
-        rpcUrl: 'https://lb.drpc.org/ogrpc?network=moonbase-alpha&dkey=AiPHJac9aUX2s7ELd131NuwSeHqkUW8R7oQiFnomaLKw',
-      },
-    ],
+    providers: [{ alias: 'default', rpcUrl: 'https://rpc.api.moonbase.moonbeam.network' }],
     symbol: 'GLMR',
     testnet: true,
   },
@@ -1540,8 +1526,8 @@ export const CHAINS: Chain[] = [
     name: 'Scroll',
     providers: [
       { alias: 'default', rpcUrl: 'https://rpc.scroll.io' },
+      { alias: 'publicnode', rpcUrl: 'https://scroll-rpc.publicnode.com' },
       { alias: 'drpc', homepageUrl: 'https://drpc.org' },
-      { alias: 'blockpi', homepageUrl: 'https://blockpi.io' },
       { alias: 'blastapi', homepageUrl: 'https://blastapi.io' },
       { alias: 'quicknode', homepageUrl: 'https://quicknode.com' },
     ],
@@ -1566,6 +1552,7 @@ export const CHAINS: Chain[] = [
     name: 'Sei',
     providers: [
       { alias: 'default', rpcUrl: 'https://evm-rpc.sei-apis.com/' },
+      { alias: 'publicnode', rpcUrl: 'https://sei-evm-rpc.publicnode.com' },
       { alias: 'drpc', homepageUrl: 'https://drpc.org' },
       { alias: 'quicknode', homepageUrl: 'https://quicknode.com' },
     ],

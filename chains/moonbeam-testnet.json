@@ -17,10 +17,6 @@
     {
       "alias": "default",
       "rpcUrl": "https://rpc.api.moonbase.moonbeam.network"
-    },
-    {
-      "alias": "drpc-freemium",
-      "rpcUrl": "https://lb.drpc.org/ogrpc?network=moonbase-alpha&dkey=AiPHJac9aUX2s7ELd131NuwSeHqkUW8R7oQiFnomaLKw"
     }
   ],
   "symbol": "GLMR",
