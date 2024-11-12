@@ -1,5 +1,11 @@
 # @api3/chains
 
+## 10.7.1
+
+### Patch Changes
+
+- 411ce73: Update providers
+
 ## 10.7.0
 
 ### Minor Changes
