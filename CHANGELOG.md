@@ -1,5 +1,12 @@
 # @api3/chains
 
+## 10.8.0
+
+### Minor Changes
+
+- 44c7437: Adds following chain:
+  - ink-sepolia-testnet
+
 ## 10.7.1
 
 ### Patch Changes
