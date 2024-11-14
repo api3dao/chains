@@ -779,6 +779,19 @@ export const CHAINS: Chain[] = [
     testnet: false,
   },
   {
+    alias: 'ink-sepolia-testnet',
+    decimals: 18,
+    explorer: {
+      api: { key: { required: false }, url: 'https://explorer-sepolia.inkonchain.com/api' },
+      browserUrl: 'https://explorer-sepolia.inkonchain.com/',
+    },
+    id: '763373',
+    name: 'Ink testnet',
+    providers: [{ alias: 'default', rpcUrl: 'https://rpc-qnd-sepolia.inkonchain.com' }],
+    symbol: 'ETH',
+    testnet: true,
+  },
+  {
     alias: 'kava-testnet',
     decimals: 18,
     explorer: {
