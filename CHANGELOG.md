@@ -1,5 +1,11 @@
 # @api3/chains
 
+## 10.8.1
+
+### Patch Changes
+
+- 6355f22: Fix fantom-testnet default rpc
+
 ## 10.8.0
 
 ### Minor Changes
