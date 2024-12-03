@@ -16,10 +16,6 @@
   "providers": [
     {
       "alias": "default",
-      "rpcUrl": "https://rpc.testnet.fantom.network"
-    },
-    {
-      "alias": "publicnode",
       "rpcUrl": "https://fantom-testnet-rpc.publicnode.com"
     }
   ],
