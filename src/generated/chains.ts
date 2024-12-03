@@ -623,10 +623,7 @@ export const CHAINS: Chain[] = [
     },
     id: '4002',
     name: 'Fantom testnet',
-    providers: [
-      { alias: 'default', rpcUrl: 'https://rpc.testnet.fantom.network' },
-      { alias: 'publicnode', rpcUrl: 'https://fantom-testnet-rpc.publicnode.com' },
-    ],
+    providers: [{ alias: 'default', rpcUrl: 'https://fantom-testnet-rpc.publicnode.com' }],
     symbol: 'FTM',
     testnet: true,
   },
