@@ -1,5 +1,11 @@
 # @api3/chains
 
+## 11.0.0
+
+### Major Changes
+
+- 2cb6f23: Update URLs and chain id for `sonic-testnet`
+
 ## 10.8.1
 
 ### Patch Changes
