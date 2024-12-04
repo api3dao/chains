@@ -1585,10 +1585,10 @@ export const CHAINS: Chain[] = [
   {
     alias: 'sonic-testnet',
     decimals: 18,
-    explorer: { browserUrl: 'https://testnet.soniclabs.com/' },
-    id: '64165',
+    explorer: { browserUrl: 'https://blaze.soniclabs.com/' },
+    id: '57054',
     name: 'Sonic testnet',
-    providers: [{ alias: 'default', rpcUrl: 'https://rpc.testnet.soniclabs.com' }],
+    providers: [{ alias: 'default', rpcUrl: 'https://rpc.blaze.soniclabs.com' }],
     symbol: 'S',
     testnet: true,
   },
