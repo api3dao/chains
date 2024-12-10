@@ -18,10 +18,6 @@
       "rpcUrl": "https://mainnet.base.org"
     },
     {
-      "alias": "publicnode",
-      "rpcUrl": "https://base-rpc.publicnode.com/"
-    },
-    {
       "alias": "blastapi",
       "homepageUrl": "https://blastapi.io"
     },
@@ -32,6 +28,10 @@
     {
       "alias": "quicknode",
       "homepageUrl": "https://quicknode.com"
+    },
+    {
+      "alias": "reblok",
+      "homepageUrl": "https://reblok.io"
     }
   ],
   "symbol": "ETH",
