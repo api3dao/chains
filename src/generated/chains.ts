@@ -1593,6 +1593,16 @@ export const CHAINS: Chain[] = [
     testnet: true,
   },
   {
+    alias: 'sonic',
+    decimals: 18,
+    explorer: { browserUrl: 'https://explorer.soniclabs.com/' },
+    id: '146',
+    name: 'Sonic',
+    providers: [{ alias: 'default', rpcUrl: 'https://rpc.sonic.soniclabs.com' }],
+    symbol: 'S',
+    testnet: false,
+  },
+  {
     alias: 'sx-testnet',
     decimals: 18,
     explorer: {
