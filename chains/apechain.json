@@ -20,6 +20,14 @@
     {
       "alias": "public",
       "rpcUrl": "https://apechain.calderachain.xyz/http"
+    },
+    {
+      "alias": "blastapi",
+      "homepageUrl": "https://blastapi.io"
+    },
+    {
+      "alias": "drpc",
+      "homepageUrl": "https://drpc.org"
     }
   ],
   "symbol": "APE",
