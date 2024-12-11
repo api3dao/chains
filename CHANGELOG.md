@@ -1,5 +1,24 @@
 # @api3/chains
 
+## 11.1.0
+
+### Minor Changes
+
+- 42306d2: Adds following chains:
+  - sonic
+
+### Patch Changes
+
+- d3f576b: Update providers:
+
+  - Add provider `reblok` for `lumia` and `oev-network`
+  - Replace provider `publicnode` with `reblok` for `arbitrum` and `base`
+  - Replace provider `publicnode` with `ankr` for `optimism`
+  - Replace provider `public` with `reblok` for `taiko`
+  - Add providers `blastapi` and `drpc` for `apechain`
+  - Add providers `blastapi`, `drpc`, and `quicknode` for `world`
+  - Add provider `drpc` for `x-layer`
+
 ## 11.0.0
 
 ### Major Changes
