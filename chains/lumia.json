@@ -16,6 +16,10 @@
     {
       "alias": "default",
       "rpcUrl": "https://mainnet-rpc.lumia.org"
+    },
+    {
+      "alias": "reblok",
+      "homepageUrl": "https://reblok.io"
     }
   ],
   "symbol": "LUMIA",

@@ -18,10 +18,6 @@
       "rpcUrl": "https://rpc.mainnet.taiko.xyz"
     },
     {
-      "alias": "public",
-      "rpcUrl": "https://rpc.taiko.tools"
-    },
-    {
       "alias": "publicnode",
       "rpcUrl": "https://taiko-rpc.publicnode.com"
     },
@@ -32,6 +28,10 @@
     {
       "alias": "drpc",
       "homepageUrl": "https://drpc.org"
+    },
+    {
+      "alias": "reblok",
+      "homepageUrl": "https://reblok.io"
     }
   ],
   "symbol": "ETH",

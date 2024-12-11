@@ -18,6 +18,18 @@
       "rpcUrl": "https://worldchain-mainnet.g.alchemy.com/public"
     },
     {
+      "alias": "blastapi",
+      "homepageUrl": "https://blastapi.io"
+    },
+    {
+      "alias": "drpc",
+      "homepageUrl": "https://drpc.org"
+    },
+    {
+      "alias": "quicknode",
+      "homepageUrl": "https://quicknode.com"
+    },
+    {
       "alias": "tenderly",
       "homepageUrl": "https://tenderly.co/"
     }
