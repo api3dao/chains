@@ -19,8 +19,8 @@
       "rpcUrl": "https://mainnet.optimism.io"
     },
     {
-      "alias": "publicnode",
-      "rpcUrl": "https://optimism-rpc.publicnode.com/"
+      "alias": "ankr",
+      "homepageUrl": "https://ankr.com"
     },
     {
       "alias": "blastapi",

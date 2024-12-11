@@ -16,6 +16,10 @@
     {
       "alias": "default",
       "rpcUrl": "https://oev.rpc.api3.org/http"
+    },
+    {
+      "alias": "reblok",
+      "homepageUrl": "https://reblok.io"
     }
   ],
   "symbol": "ETH",
