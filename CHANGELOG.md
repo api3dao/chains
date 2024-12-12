@@ -1,5 +1,11 @@
 # @api3/chains
 
+## 11.1.1
+
+### Patch Changes
+
+- 2ad5a43: Replace quicknode with publicnode for linea
+
 ## 11.1.0
 
 ### Minor Changes
