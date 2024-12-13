@@ -1461,7 +1461,6 @@ export const CHAINS: Chain[] = [
     name: 'Polygon',
     providers: [
       { alias: 'default', rpcUrl: 'https://polygon-bor-rpc.publicnode.com' },
-      { alias: 'ankr', homepageUrl: 'https://ankr.com' },
       { alias: 'blastapi', homepageUrl: 'https://blastapi.io' },
       { alias: 'drpc', homepageUrl: 'https://drpc.org' },
       { alias: 'quicknode', homepageUrl: 'https://quicknode.com' },
