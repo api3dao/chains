@@ -3,4 +3,4 @@
 ---
 
 Adds following chains:
-  - hashkey-testnet
+  - hashkey-sepolia-testnet
