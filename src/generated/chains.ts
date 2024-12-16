@@ -739,6 +739,19 @@ export const CHAINS: Chain[] = [
     testnet: false,
   },
   {
+    alias: 'hashkey-sepolia-testnet',
+    decimals: 18,
+    explorer: {
+      api: { key: { required: false }, url: 'https://hashkeychain-testnet-explorer.alt.technology/api' },
+      browserUrl: 'https://hashkeychain-testnet-explorer.alt.technology/',
+    },
+    id: '133',
+    name: 'HashKey testnet',
+    providers: [{ alias: 'default', rpcUrl: 'https://hashkeychain-testnet.alt.technology' }],
+    symbol: 'HSK',
+    testnet: true,
+  },
+  {
     alias: 'immutable-sepolia-testnet',
     decimals: 18,
     explorer: {
@@ -1461,7 +1474,6 @@ export const CHAINS: Chain[] = [
     name: 'Polygon',
     providers: [
       { alias: 'default', rpcUrl: 'https://polygon-bor-rpc.publicnode.com' },
-      { alias: 'ankr', homepageUrl: 'https://ankr.com' },
       { alias: 'blastapi', homepageUrl: 'https://blastapi.io' },
       { alias: 'drpc', homepageUrl: 'https://drpc.org' },
       { alias: 'quicknode', homepageUrl: 'https://quicknode.com' },
