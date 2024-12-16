@@ -739,7 +739,7 @@ export const CHAINS: Chain[] = [
     testnet: false,
   },
   {
-    alias: 'hashkey-testnet',
+    alias: 'hashkey-sepolia-testnet',
     decimals: 18,
     explorer: {
       api: { key: { required: false }, url: 'https://hashkeychain-testnet-explorer.alt.technology/api' },
