@@ -1,5 +1,16 @@
 # @api3/chains
 
+## 11.2.0
+
+### Minor Changes
+
+- 49152c2: Adds following chains:
+  - hashkey-sepolia-testnet
+
+### Patch Changes
+
+- 532ee17: Remove ankr provider from Polygon
+
 ## 11.1.1
 
 ### Patch Changes
