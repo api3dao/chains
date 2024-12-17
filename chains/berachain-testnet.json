@@ -18,7 +18,7 @@
       "rpcUrl": "https://berachain-testnet-evm-rpc.publicnode.com"
     },
     {
-      "alias": "publicnode",
+      "alias": "official",
       "rpcUrl": "https://bartio.rpc.berachain.com"
     }
   ],
