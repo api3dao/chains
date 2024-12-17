@@ -1623,6 +1623,7 @@ export const CHAINS: Chain[] = [
     name: 'Sonic',
     providers: [
       { alias: 'default', rpcUrl: 'https://rpc.sonic.soniclabs.com' },
+      { alias: 'ankr', homepageUrl: 'https://ankr.com' },
       { alias: 'alchemy', homepageUrl: 'https://alchemy.com' },
     ],
     symbol: 'S',
