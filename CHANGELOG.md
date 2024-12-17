@@ -1,5 +1,11 @@
 # @api3/chains
 
+## 11.2.2
+
+### Patch Changes
+
+- 10717ce: Update Atleta testnet RPC url
+
 ## 11.2.1
 
 ### Patch Changes
