@@ -1,5 +1,13 @@
 # @api3/chains
 
+## 11.2.1
+
+### Patch Changes
+
+- 2e3aab2: Add alchemy RPC provider to sonic
+- 35e69ab: Swap Berachain testnet RPC URLs
+- a909366: Swap Polygon zkEVM testnet deafult RPC URL
+
 ## 11.2.0
 
 ### Minor Changes
