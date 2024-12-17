@@ -253,8 +253,8 @@ export const CHAINS: Chain[] = [
     id: '80084',
     name: 'Berachain testnet',
     providers: [
-      { alias: 'default', rpcUrl: 'https://bartio.rpc.berachain.com/' },
-      { alias: 'publicnode', rpcUrl: 'https://berachain-testnet-evm-rpc.publicnode.com' },
+      { alias: 'default', rpcUrl: 'https://berachain-testnet-evm-rpc.publicnode.com' },
+      { alias: 'official', rpcUrl: 'https://bartio.rpc.berachain.com' },
     ],
     symbol: 'BERA',
     testnet: true,
@@ -1440,7 +1440,10 @@ export const CHAINS: Chain[] = [
     },
     id: '2442',
     name: 'Polygon zkEVM testnet',
-    providers: [{ alias: 'default', rpcUrl: 'https://rpc.cardona.zkevm-rpc.com' }],
+    providers: [
+      { alias: 'default', rpcUrl: 'https://endpoints.omniatech.io/v1/polygon-zkevm/testnet/public' },
+      { alias: 'official', rpcUrl: 'https://rpc.cardona.zkevm-rpc.com' },
+    ],
     symbol: 'ETH',
     testnet: true,
   },
