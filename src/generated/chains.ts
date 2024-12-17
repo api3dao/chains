@@ -1621,7 +1621,11 @@ export const CHAINS: Chain[] = [
     explorer: { browserUrl: 'https://explorer.soniclabs.com/' },
     id: '146',
     name: 'Sonic',
-    providers: [{ alias: 'default', rpcUrl: 'https://rpc.sonic.soniclabs.com' }],
+    providers: [
+      { alias: 'default', rpcUrl: 'https://rpc.sonic.soniclabs.com' },
+      { alias: 'ankr', homepageUrl: 'https://ankr.com' },
+      { alias: 'alchemy', homepageUrl: 'https://alchemy.com' },
+    ],
     symbol: 'S',
     testnet: false,
   },
