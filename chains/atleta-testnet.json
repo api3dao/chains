@@ -15,7 +15,7 @@
   "providers": [
     {
       "alias": "default",
-      "rpcUrl": "https://rpc.testnet-v2.atleta.network:9944"
+      "rpcUrl": "https://rpc.testnet-v2.atleta.network"
     }
   ],
   "symbol": "ATLA",
