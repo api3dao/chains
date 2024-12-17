@@ -15,11 +15,11 @@
   "providers": [
     {
       "alias": "default",
-      "rpcUrl": "https://bartio.rpc.berachain.com/"
+      "rpcUrl": "https://berachain-testnet-evm-rpc.publicnode.com"
     },
     {
       "alias": "publicnode",
-      "rpcUrl": "https://berachain-testnet-evm-rpc.publicnode.com"
+      "rpcUrl": "https://bartio.rpc.berachain.com"
     }
   ],
   "symbol": "BERA",
