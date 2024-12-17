@@ -129,7 +129,7 @@ export const CHAINS: Chain[] = [
     },
     id: '2340',
     name: 'Atleta testnet',
-    providers: [{ alias: 'default', rpcUrl: 'https://rpc.testnet-v2.atleta.network:9944' }],
+    providers: [{ alias: 'default', rpcUrl: 'https://rpc.testnet-v2.atleta.network' }],
     symbol: 'ATLA',
     testnet: true,
   },
