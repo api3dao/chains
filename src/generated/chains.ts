@@ -752,6 +752,19 @@ export const CHAINS: Chain[] = [
     testnet: true,
   },
   {
+    alias: 'hashkey',
+    decimals: 18,
+    explorer: {
+      api: { key: { required: false }, url: 'https://explorer.hsk.xyz/api' },
+      browserUrl: 'https://explorer.hsk.xyz/',
+    },
+    id: '177',
+    name: 'HashKey',
+    providers: [{ alias: 'default', rpcUrl: 'https://mainnet.hsk.xyz' }],
+    symbol: 'HSK',
+    testnet: false,
+  },
+  {
     alias: 'immutable-sepolia-testnet',
     decimals: 18,
     explorer: {
