@@ -1,5 +1,23 @@
 # @api3/chains
 
+## 11.3.0
+
+### Minor Changes
+
+- d1ee867: Adds following chain:
+  - hashkey
+
+### Patch Changes
+
+- 33fb7fd: Update following RPC providers:
+
+  - sonic:
+    - drpc added
+  - camp-sepolia-testnet:
+    - default RPC changed to `https://rpc-campnetwork.xyz`
+  - polygon-zkevm-sepolia-testnet:
+    - Official RPC set as default RPC
+
 ## 11.2.2
 
 ### Patch Changes

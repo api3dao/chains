@@ -1,7 +1,7 @@
 {
   "name": "@api3/chains",
   "license": "MIT",
-  "version": "11.2.2",
+  "version": "11.3.0",
   "author": "API3 DAO",
   "private": false,
   "sideEffects": false,
