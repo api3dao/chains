@@ -18,6 +18,10 @@
     {
       "alias": "alchemy",
       "homepageUrl": "https://alchemy.com"
+    },
+    {
+      "alias": "drpc",
+      "homepageUrl": "https://drpc.com"
     }
   ],
   "symbol": "S",

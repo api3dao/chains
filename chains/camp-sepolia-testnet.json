@@ -15,7 +15,7 @@
   "providers": [
     {
       "alias": "default",
-      "rpcUrl": "https://rpc.camp-network-testnet.gelato.digital/"
+      "rpcUrl": "https://rpc-campnetwork.xyz/"
     }
   ],
   "symbol": "ETH",
