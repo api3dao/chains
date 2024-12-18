@@ -16,10 +16,6 @@
     {
       "alias": "default",
       "rpcUrl": "https://rpc.cardona.zkevm-rpc.com"
-    },
-    {
-      "alias": "publicnode",
-      "rpcUrl": "https://endpoints.omniatech.io/v1/polygon-zkevm/testnet/public"
     }
   ],
   "symbol": "ETH",
