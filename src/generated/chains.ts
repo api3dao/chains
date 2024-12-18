@@ -760,7 +760,7 @@ export const CHAINS: Chain[] = [
     },
     id: '177',
     name: 'HashKey',
-    providers: [{ alias: 'default', rpcUrl: 'https://hashkeychain-mainnet.alt.technology' }],
+    providers: [{ alias: 'default', rpcUrl: 'https://mainnet.hsk.xyz' }],
     symbol: 'HSK',
     testnet: false,
   },

@@ -15,7 +15,7 @@
   "providers": [
     {
       "alias": "default",
-      "rpcUrl": "https://hashkeychain-mainnet.alt.technology"
+      "rpcUrl": "https://mainnet.hsk.xyz"
     }
   ],
   "symbol": "HSK",
