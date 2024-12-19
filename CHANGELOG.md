@@ -1,5 +1,12 @@
 # @api3/chains
 
+## 11.4.0
+
+### Minor Changes
+
+- 0b4dec4: Adds following chain:
+  - ink
+
 ## 11.3.0
 
 ### Minor Changes
