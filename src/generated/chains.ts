@@ -830,6 +830,7 @@ export const CHAINS: Chain[] = [
       { alias: 'public', rpcUrl: 'https://rpc-qnd.inkonchain.com' },
       { alias: 'tenderly', homepageUrl: 'https://tenderly.co/' },
       { alias: 'alchemy', homepageUrl: 'https://alchemy.com' },
+      { alias: 'quicknode', homepageUrl: 'https://quicknode.com' },
     ],
     symbol: 'ETH',
     testnet: false,
