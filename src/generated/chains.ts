@@ -102,6 +102,7 @@ export const CHAINS: Chain[] = [
     name: 'Astar zkEVM testnet',
     providers: [{ alias: 'default', rpcUrl: 'https://rpc.startale.com/zkyoto' }],
     symbol: 'ETH',
+    skipProviderCheck: true,
     testnet: true,
   },
   {
