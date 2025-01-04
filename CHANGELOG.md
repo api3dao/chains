@@ -1,5 +1,13 @@
 # @api3/chains
 
+## 11.4.1
+
+### Patch Changes
+
+- 1a89207: \* Add `quicknode` to `ink`
+  - Update browser and RPC URLs for `sonic` and `sonic-testnet`
+  - Check `skipProviderCheck` flag to true for `astar-sepolia-testnet`
+
 ## 11.4.0
 
 ### Minor Changes
