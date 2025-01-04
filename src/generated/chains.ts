@@ -102,6 +102,7 @@ export const CHAINS: Chain[] = [
     name: 'Astar zkEVM testnet',
     providers: [{ alias: 'default', rpcUrl: 'https://rpc.startale.com/zkyoto' }],
     symbol: 'ETH',
+    skipProviderCheck: true,
     testnet: true,
   },
   {
@@ -830,6 +831,7 @@ export const CHAINS: Chain[] = [
       { alias: 'public', rpcUrl: 'https://rpc-qnd.inkonchain.com' },
       { alias: 'tenderly', homepageUrl: 'https://tenderly.co/' },
       { alias: 'alchemy', homepageUrl: 'https://alchemy.com' },
+      { alias: 'quicknode', homepageUrl: 'https://quicknode.com' },
     ],
     symbol: 'ETH',
     testnet: false,
@@ -1636,7 +1638,10 @@ export const CHAINS: Chain[] = [
   {
     alias: 'sonic-testnet',
     decimals: 18,
-    explorer: { browserUrl: 'https://blaze.soniclabs.com/' },
+    explorer: {
+      api: { key: { required: true }, url: 'https://api-testnet.sonicscan.org/api' },
+      browserUrl: 'https://testnet.sonicscan.org/',
+    },
     id: '57054',
     name: 'Sonic testnet',
     providers: [{ alias: 'default', rpcUrl: 'https://rpc.blaze.soniclabs.com' }],
@@ -1646,11 +1651,14 @@ export const CHAINS: Chain[] = [
   {
     alias: 'sonic',
     decimals: 18,
-    explorer: { browserUrl: 'https://explorer.soniclabs.com/' },
+    explorer: {
+      api: { key: { required: true }, url: 'https://api.sonicscan.org/api' },
+      browserUrl: 'https://sonicscan.org/',
+    },
     id: '146',
     name: 'Sonic',
     providers: [
-      { alias: 'default', rpcUrl: 'https://rpc.sonic.soniclabs.com' },
+      { alias: 'default', rpcUrl: 'https://rpc.soniclabs.com' },
       { alias: 'ankr', homepageUrl: 'https://ankr.com' },
       { alias: 'alchemy', homepageUrl: 'https://alchemy.com' },
       { alias: 'drpc', homepageUrl: 'https://drpc.com' },
