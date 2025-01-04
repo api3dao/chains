@@ -18,6 +18,7 @@
       "rpcUrl": "https://rpc.startale.com/zkyoto"
     }
   ],
+  "skipProviderCheck": true,
   "symbol": "ETH",
   "testnet": true
 }
