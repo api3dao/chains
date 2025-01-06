@@ -1,5 +1,11 @@
 # @api3/chains
 
+## 11.4.2
+
+### Patch Changes
+
+- 0e6ae3e: Update block explorer for kroma
+
 ## 11.4.1
 
 ### Patch Changes
