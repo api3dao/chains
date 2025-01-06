@@ -101,8 +101,8 @@ export const CHAINS: Chain[] = [
     id: '6038361',
     name: 'Astar zkEVM testnet',
     providers: [{ alias: 'default', rpcUrl: 'https://rpc.startale.com/zkyoto' }],
-    symbol: 'ETH',
     skipProviderCheck: true,
+    symbol: 'ETH',
     testnet: true,
   },
   {
@@ -884,8 +884,8 @@ export const CHAINS: Chain[] = [
     alias: 'kroma',
     decimals: 18,
     explorer: {
-      api: { key: { required: true }, url: 'https://api.kromascan.com/api' },
-      browserUrl: 'https://kromascan.com/',
+      api: { key: { required: false }, url: 'https://api.routescan.io/v2/network/mainnet/evm/255/etherscan' },
+      browserUrl: 'https://kroscan.io/',
     },
     id: '255',
     name: 'Kroma',

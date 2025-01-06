@@ -4,11 +4,11 @@
   "explorer": {
     "api": {
       "key": {
-        "required": true
+        "required": false
       },
-      "url": "https://api.kromascan.com/api"
+      "url": "https://api.routescan.io/v2/network/mainnet/evm/255/etherscan"
     },
-    "browserUrl": "https://kromascan.com/"
+    "browserUrl": "https://kroscan.io/"
   },
   "id": "255",
   "name": "Kroma",
