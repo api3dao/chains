@@ -1,5 +1,16 @@
 # @api3/chains
 
+## 11.5.0
+
+### Minor Changes
+
+- 9609453: Adds following chain:
+  - soneium
+
+### Patch Changes
+
+- 77cbc20: Update block explorer for mantle and mantle-sepolia-testnet
+
 ## 11.4.2
 
 ### Patch Changes
