@@ -4,11 +4,11 @@
   "explorer": {
     "api": {
       "key": {
-        "required": false
+        "required": true
       },
-      "url": "https://explorer.mantle.xyz/api"
+      "url": "https://api.mantlescan.xyz/api"
     },
-    "browserUrl": "https://explorer.mantle.xyz/"
+    "browserUrl": "https://mantlescan.xyz/"
   },
   "id": "5000",
   "name": "Mantle",
