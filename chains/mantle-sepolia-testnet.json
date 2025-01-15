@@ -4,11 +4,11 @@
   "explorer": {
     "api": {
       "key": {
-        "required": false
+        "required": true
       },
-      "url": "https://explorer.sepolia.mantle.xyz/api"
+      "url": "https://api-sepolia.mantlescan.xyz/api"
     },
-    "browserUrl": "https://explorer.sepolia.mantle.xyz/"
+    "browserUrl": "https://sepolia.mantlescan.xyz/"
   },
   "id": "5003",
   "name": "Mantle testnet",
