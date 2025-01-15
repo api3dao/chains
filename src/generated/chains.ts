@@ -1051,8 +1051,8 @@ export const CHAINS: Chain[] = [
     alias: 'mantle-sepolia-testnet',
     decimals: 18,
     explorer: {
-      api: { key: { required: false }, url: 'https://explorer.sepolia.mantle.xyz/api' },
-      browserUrl: 'https://explorer.sepolia.mantle.xyz/',
+      api: { key: { required: true }, url: 'https://api-sepolia.mantlescan.xyz/api' },
+      browserUrl: 'https://sepolia.mantlescan.xyz/',
     },
     id: '5003',
     name: 'Mantle testnet',
@@ -1064,8 +1064,8 @@ export const CHAINS: Chain[] = [
     alias: 'mantle',
     decimals: 18,
     explorer: {
-      api: { key: { required: false }, url: 'https://explorer.mantle.xyz/api' },
-      browserUrl: 'https://explorer.mantle.xyz/',
+      api: { key: { required: true }, url: 'https://api.mantlescan.xyz/api' },
+      browserUrl: 'https://mantlescan.xyz/',
     },
     id: '5000',
     name: 'Mantle',
@@ -1634,6 +1634,23 @@ export const CHAINS: Chain[] = [
     providers: [{ alias: 'default', rpcUrl: 'https://rpc.minato.soneium.org/' }],
     symbol: 'ETH',
     testnet: true,
+  },
+  {
+    alias: 'soneium',
+    decimals: 18,
+    explorer: {
+      api: { key: { required: false }, url: 'https://soneium.blockscout.com/api' },
+      browserUrl: 'https://soneium.blockscout.com/',
+    },
+    id: '1868',
+    name: 'Soneium',
+    providers: [
+      { alias: 'default', rpcUrl: 'https://rpc.soneium.org/' },
+      { alias: 'alchemy', homepageUrl: 'https://alchemy.com' },
+      { alias: 'tenderly', homepageUrl: 'https://tenderly.co/' },
+    ],
+    symbol: 'ETH',
+    testnet: false,
   },
   {
     alias: 'sonic-testnet',
