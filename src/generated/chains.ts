@@ -1636,6 +1636,23 @@ export const CHAINS: Chain[] = [
     testnet: true,
   },
   {
+    alias: 'soneium',
+    decimals: 18,
+    explorer: {
+      api: { key: { required: false }, url: 'https://soneium.blockscout.com/api' },
+      browserUrl: 'https://soneium.blockscout.com/',
+    },
+    id: '1868',
+    name: 'Soneium',
+    providers: [
+      { alias: 'default', rpcUrl: 'https://rpc.soneium.org/' },
+      { alias: 'alchemy', homepageUrl: 'https://alchemy.com' },
+      { alias: 'tenderly', homepageUrl: 'https://tenderly.co/' },
+    ],
+    symbol: 'ETH',
+    testnet: false,
+  },
+  {
     alias: 'sonic-testnet',
     decimals: 18,
     explorer: {
