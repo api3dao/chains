@@ -15,10 +15,6 @@
   "providers": [
     {
       "alias": "default",
-      "rpcUrl": "https://berachain-testnet-evm-rpc.publicnode.com"
-    },
-    {
-      "alias": "official",
       "rpcUrl": "https://bartio.rpc.berachain.com"
     }
   ],
