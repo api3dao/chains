@@ -1,5 +1,11 @@
 # @api3/chains
 
+## 11.5.1
+
+### Patch Changes
+
+- 12f61bb: Update default provider for berachain-testnet
+
 ## 11.5.0
 
 ### Minor Changes
