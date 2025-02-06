@@ -258,6 +258,23 @@ export const CHAINS: Chain[] = [
     testnet: true,
   },
   {
+    alias: 'berachain',
+    decimals: 18,
+    explorer: {
+      api: { key: { required: true }, url: 'https://api.berascan.com/api' },
+      browserUrl: 'https://berascan.com/',
+    },
+    id: '80094',
+    name: 'Berachain',
+    providers: [
+      { alias: 'default', rpcUrl: 'https://rpc.berachain.com/' },
+      { alias: 'alchemy', homepageUrl: 'https://alchemy.com' },
+      { alias: 'quicknode', homepageUrl: 'https://quicknode.com' },
+    ],
+    symbol: 'BERA',
+    testnet: false,
+  },
+  {
     alias: 'bitlayer-testnet',
     decimals: 18,
     explorer: {
