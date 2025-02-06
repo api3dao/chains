@@ -1,5 +1,12 @@
 # @api3/chains
 
+## 11.6.0
+
+### Minor Changes
+
+- 29a8ba4: Adds following chain:
+  - berachain
+
 ## 11.5.1
 
 ### Patch Changes
