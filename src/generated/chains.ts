@@ -1774,6 +1774,23 @@ export const CHAINS: Chain[] = [
     testnet: true,
   },
   {
+    alias: 'unichain',
+    decimals: 18,
+    explorer: {
+      api: { key: { required: true }, url: 'https://api.uniscan.xyz/api' },
+      browserUrl: 'https://uniscan.xyz/',
+    },
+    id: '130',
+    name: 'Unichain',
+    providers: [
+      { alias: 'default', rpcUrl: 'https://mainnet.unichain.org/' },
+      { alias: 'alchemy', homepageUrl: 'https://alchemy.com' },
+      { alias: 'quicknode', homepageUrl: 'https://quicknode.com' },
+    ],
+    symbol: 'ETH',
+    testnet: false,
+  },
+  {
     alias: 'world-sepolia-testnet',
     decimals: 18,
     explorer: {
