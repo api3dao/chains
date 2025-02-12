@@ -1,5 +1,12 @@
 # @api3/chains
 
+## 11.7.0
+
+### Minor Changes
+
+- e537072: Adds following chain:
+  - unichain
+
 ## 11.6.0
 
 ### Minor Changes
