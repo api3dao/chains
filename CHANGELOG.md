@@ -1,5 +1,17 @@
 # @api3/chains
 
+## 11.8.0
+
+### Minor Changes
+
+- 007abee: Add following chains:
+  - ronin
+  - ronin-testnet
+
+### Patch Changes
+
+- 6f4b843: Add the provider reblok for sonic
+
 ## 11.7.0
 
 ### Minor Changes
