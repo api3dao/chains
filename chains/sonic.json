@@ -28,6 +28,10 @@
     {
       "alias": "drpc",
       "homepageUrl": "https://drpc.com"
+    },
+    {
+      "alias": "reblok",
+      "homepageUrl": "https://reblok.io"
     }
   ],
   "symbol": "S",

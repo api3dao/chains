@@ -1693,6 +1693,7 @@ export const CHAINS: Chain[] = [
       { alias: 'ankr', homepageUrl: 'https://ankr.com' },
       { alias: 'alchemy', homepageUrl: 'https://alchemy.com' },
       { alias: 'drpc', homepageUrl: 'https://drpc.com' },
+      { alias: 'reblok', homepageUrl: 'https://reblok.io' },
     ],
     symbol: 'S',
     testnet: false,
